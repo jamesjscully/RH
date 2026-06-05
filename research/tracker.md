@@ -234,15 +234,26 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
 
 ### Workstream H additions
 
-- [ ] **H4** `todo` *(review #2 — second harness wall)* — "Fails for DH" is **necessary but
-      not sufficient**. Having an Euler product does *not* imply RH: **Epstein zeta functions**
-      of class-number-`>1` quadratic forms have a functional equation and a Dirichlet series yet
-      provably carry zeros off the line and in `σ>1` (Potter–Titchmarsh 1935). Add a **second
-      wall**: an Euler-product-bearing (or product-like) object that still violates RH. A
-      critical-path lemma must fail for *both* DH (no Euler product) and the second wall (Euler
-      product, wrong RH status) — together they pin the load-bearing property to the full
-      Selberg-class package (primitive, degree 1, Ramanujan-bounded), not the bare existence of a
-      product. Promotes the dormant "degree-2 Selberg" battery row (§2) to a concrete object.
+- [~] **H4** `partial` *(review #2 — second harness wall; implemented)* — "Fails for DH" is
+      **necessary but not sufficient**: having product structure does not imply RH. Implemented
+      the second wall as `EpsteinZeta` (`witness/objects.py`) — the Epstein zeta of the
+      non-principal disc-`−23` form `Q1=(2,1,3)`, class number 3 — via a validated Chowla–Selberg
+      / Terras incomplete-gamma evaluator (matches the naive lattice sum and
+      `Z_{m²+n²}=4ζβ`). `witness/second_wall.py` (wired into the harness as Check 1b) certifies
+      the wall **structurally**, no zero-hunt needed:
+      (1) `Z_Q1` has **no single Euler product** — `r_Q1(1)=0`, `r(2)r(3)=4≠r(6)=2`
+      (non-multiplicative);
+      (2) yet the **genus sum is `ζ_K=ζ·L`**: `(1/2)(r₀+2r₁)(n)=Σ_{d|n}(−23/d)` for all `n≤40`,
+      and analytically `(1/2)(Z_{Q0}+2Z_{Q1})(s)=ζ(s)L(s,χ₋₂₃)` (verified to `1e-7..1e-11`) — a
+      product of two functions that *do* have Euler products;
+      (3) `Z_Q1` is **RH-false** (Davenport–Heilbronn 1936: zeros in `Re s>1`).
+      So a critical-path lemma must fail here too, where product-bearing constituents are present
+      but the global RH-structure is wrong — pinning the lever to the full Selberg-class package
+      (primitive, degree 1, Ramanujan), not bare product existence. **Remaining:** a numeric
+      off-line zero is not cached — the disc-`−23` `σ>1` zeros are sparse and high (a scan over
+      `Re s∈[0.55,1.4]`, `|Im s|≤80` finds none; floor `~0.14`); pinning one via a high-height
+      argument-principle search is a follow-up. (Promotes the dormant "degree-2 Selberg" battery
+      row to a concrete object.)
 
 ### Workstream L — Lean formalization (follows the math, does not lead it)
 - [x] **L1** `done` — Contradiction theorem de-tautologized: `RH/Witness/`

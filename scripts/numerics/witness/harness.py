@@ -116,6 +116,14 @@ def _report():
     print("  VERDICT: the reverse/Hardy spine cannot distinguish zeta from DH;")
     print("           only the Euler product (zero locations) can. Spine is DH-blind.")
 
+    print("\n[Check 1b] Second wall (Epstein zeta, disc -23) -- 'has Euler product' is")
+    print("           necessary but NOT sufficient")
+    try:
+        from . import second_wall as SW
+        SW.summary()
+    except Exception as e:
+        print("   (second_wall module pending: %s)" % e)
+
     print("\n[Check 2] RH-content tag")
     # example: 'has a functional equation' is RH-neutral; both zeta and DH do.
     fe = check2_rh_content(lambda o: o.functional_equation)
