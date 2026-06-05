@@ -30,10 +30,40 @@ proof of anything, but it is a real, reusable map: it says where *not* to spend 
 (reformulations, descent topology, bare hyperbolicity) and concentrates the difficulty into one
 precise place.
 
-## The one underexplored route — de Bruijn–Newman / dynamical
+## The de Bruijn–Newman / dynamical route — now examined (`dbn_route.py`)
 
-Conspicuously, one route is **not** in the table because we have not pushed it, and by the
-program's own criteria it is the **most promising**:
+By the program's own criteria it is the **most promising** route, and a kill-test confirms it is
+a genuine RH-content criterion with real reverse force:
+
+- **Kill-test passed.** The heat flow `H_t = e^{−tD²}` realizes complex zeros; `Λ(f)=inf{t:H_t f
+  all-real}` satisfies **`Λ>0 ⟺ off-line zeros present`** (verified: all-real → `Λ=0`; one complex
+  pair → `Λ=0.16`; `x²+1` → `0.5`; far-off-line → `1.76`, growing with distance off the line). So
+  the dBN criterion **fails for DH/Epstein** (off-line zeros ⇒ `Λ>0`).
+- **Real reverse force + a real unconditional theorem.** The flow *forces* zeros real; Rodgers–Tao
+  proved `Λ≥0` unconditionally — the only theorem of its kind, using **dynamics + zero statistics
+  (Montgomery)**, *not* the arithmetic surface. So dBN's hard endpoint is **different** from the
+  geometric routes'.
+- **Honest catch.** `Λ≥0` is the RH-*independent* direction ("RH barely true if true"); RH is
+  `Λ≤0`, open and hard, and the dynamical method gives the wrong-direction bound. Forcing `Λ≤0`
+  (controlling the backward flow) is where Rodgers–Tao + Polymath stalled.
+
+**The two genuine frontiers are now distinct and named:** (a) the **missing arithmetic object**
+(geometric/analytic routes → positive Green form / Scaling Site `C×C`), and (b) **forcing `Λ≤0`
+via dynamics** (dBN). Neither is a reformulation; neither is reachable by relabeling RH.
+
+**…but they share one structure.** The heat flow `e^{−tD²}` *generates the Hermite polynomials*
+(`H_d` = heat-evolved monomials), and the Jensen polynomials converge to exactly those `H_d`
+(GORZ; verified in real ζ, `xi_jensen.py`). So the **metric/Arakelov slack** (= the Hermite
+discriminant, P1a) and the **dBN dynamics** are the *same Hermite / heat-flow / GUE object* seen
+two ways — the slack is the *static* discriminant of the heat-flow fixed shape, the dBN flow is its
+*dynamic* version. The two frontiers are not independent; they meet at the Hermite/semicircle
+universality that also governs the zeros' pair correlation. If there is a non-obvious move left, it
+is most likely *here* — at the junction where the static height and the dynamic flow are the same
+object.
+
+### (historical note — the original "underexplored" framing)
+Before the kill-test the dBN route looked simply most-promising; the analysis above confirms it is
+a genuine forcing structure but with its own RH-hard endpoint (`Λ≤0`).
 
 - **Real reverse force.** The dBN heat flow `H_t` (a first-order log-gas on the zeros) *forces*
   zeros real for `t ≥ Λ`. This is a genuine dynamical forcing structure, not a reformulation.
@@ -53,10 +83,31 @@ unexamined direction.
 
 ## Bottom line
 
-No proof, and our work says plainly why none is near: every reformulation route lands on the
-missing arithmetic object. What we *have* is valuable and honest: a precise graveyard map, a
-fully-grounded metric/Arakelov candidate with its exact RH-hard endpoint (BGS §6.3) and a
-certified energy constant tied to GUE universality, a reusable kill-test + nerve + height toolkit,
-and a clear identification of the one route worth examining next (dBN dynamics). The verifiability
-discipline (§8) held throughout — it caught and retracted two of my own over-claims (the `(3/2)ln2`
-slack constant, the exponential slack rate). That is the program working as intended.
+No proof, and our work says plainly why none is near: every **reformulation** route lands on the
+missing arithmetic object, and the one **dynamical** route (dBN) has its own distinct RH-hard
+endpoint (forcing `Λ≤0`). What we *have* is valuable and honest:
+
+- a precise **graveyard map** — which routes are dispersing/decoration and why;
+- a fully-grounded **metric/Arakelov candidate** with its exact RH-hard endpoint (BGS §6.3) and a
+  certified energy constant `(3/2)ln2 + ½ln n` tied to **GUE universality**;
+- the dBN route **examined**: a genuine forcing structure with real reverse force, a real
+  unconditional theorem (`Λ≥0`), and a hard endpoint *not* through the missing object;
+- the observation that the **two frontiers meet at the Hermite/heat-flow/GUE structure** — the
+  static slack (Hermite discriminant) and the dynamic flow are one object — which is the most
+  likely place a non-obvious move hides;
+- a reusable **kill-test + nerve + height + dynamics toolkit**, all grounded in real ζ.
+
+The verifiability discipline (§8) held throughout — it caught and retracted two of my own
+over-claims (the `(3/2)ln2` slack constant; the exponential slack rate). That is the program
+working as intended: an honest map of a hard problem, not a false summit.
+
+## Suggested next moves (for whoever picks this up)
+
+1. **The Hermite junction** (highest-leverage, novel): make precise the identity "static slack =
+   discriminant of the heat-flow fixed shape; dBN flow = its dynamic version," and ask whether the
+   dynamics give a bound on the *slack's* evolution that the static height cannot — i.e. whether the
+   flow controls the uniform-in-`d` slack. This is the one place the two hard endpoints might
+   collapse to one tractable one.
+2. **dBN `Λ≤0` sub-pieces** — the genuine frontier with the best track record (Rodgers–Tao, Polymath).
+3. Treat the geometric endpoint (positive Green form / `C×C`) as the *literature* frontier (Connes–
+   Consani, Arakelov), not a computation — it is the arithmetic-geometry open problem.
