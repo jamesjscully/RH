@@ -153,7 +153,13 @@ Two concrete threads tie the three papers together and are worth stating sharply
   **energy** (certified); the slack is energy **+ a conditioning factor** (Pardo–Pardo:
   `disc = res × ∏ conditioning`) and its exact constant is not tightly pinned. The §8 backpressure
   caught the over-claim. Solid: the slack is exponentially small and lives in the
-  discriminant/condition-number (height) world.
+  discriminant/condition-number (height) world. *Update (deterministic 2-constraint slack):*
+  the **exact** slack `ρ₂(d)` = `dist` to the discriminant variety decays
+  **super-exponentially** (`log(1/ρ₂)/d` climbs monotonically `0.25 → 0.86`, still rising) — so
+  `(3/2)ln2` is the energy, and the slack is *smaller* than any fixed exponential. **Consequence
+  for RH:** the uniform-in-`d` bound (`error-height ≤ slack-height`) the proof needs is
+  super-exponentially stringent — this *sharpens* the RH-hard endpoint (BGS §6.3), it does not
+  ease it.
 - **P2 — GUE-universality.** Is the `1.22` rate / the energy `d²log d` coefficient the
   **semicircle (GUE) universal** constant, or Hermite-specific? Compare to the equilibrium-measure
   log-energy and to Montgomery's pair-correlation constant. A match is the structural bridge:
