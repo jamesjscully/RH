@@ -34,21 +34,41 @@ variety — the condition number, our `ρ(d)` — is a **height** (linear). So:
 > **The slack is (the exponential of minus) an Arakelov height of the discriminant variety,
 > and its leading energy is the semicircle = GUE-universal.**
 
-This is a real, computed bridge — not an analogy. References below make the
-condition-number/height identity precise.
+This is a real, computed bridge — not an analogy. The papers below make it precise, and
+fix the metric: the height theory uses the **Bombieri–Weyl norm** (`‖Σ a_k X^k‖² = Σ a_k²/C(d,k)`,
+the unitarily-invariant one), not naive L². Recomputing the slack in the BW metric gives a
+**cleaner, recognizable rate**:
+
+> `log(1/ρ_BW(d)) ≈ 0.93–1.04 · d` (range-dependent over `d ≤ 12…16`),  and  `(3/2)·ln 2 = 1.0397`.
+
+i.e. the BW-metric slack rate is **consistent with the Hermite-discriminant structural constant**
+(`disc(H_n)` carries a `2^{3n(n−1)/2}` factor → `(3/2)ln2` per degree), and is cleaner than the
+messy `1.22` of naive L². The slack is the condition-number = `1/(distance to the discriminant
+variety)` in the BW metric (Pardo–Pardo), an Arakelov-height quantity. The match is suggestive,
+not yet tight: the random-direction stability radius is a noisy proxy — **P1 (certify the exact
+BW distance to the discriminant) is what nails the constant.** `(jensen_real.py: stability_radius_bw.)`
 
 ## 2. Literature map (real, with access notes)
 
 **Slack = height of discriminant (the linchpin).**
-- *On the zeta Mahler measure function of the Jacobian determinant, condition numbers and the
-  height of the generic discriminant*, Applicable Algebra in Eng. Comm. Comp. (2016),
-  doi:10.1007/s00200-016-0284-9 — **the** paper connecting condition numbers, (zeta) Mahler
-  measure, and the **arithmetic height of the discriminant variety**. *Likely paywalled — want
-  full access.*
+- **Pardo–Pardo**, *On the zeta Mahler measure function … condition numbers and the height of
+  the generic discriminant* (AAECC 2016). **Read** (`research/papers/`). What it gives:
+  (i) the slack is the **normalized condition number** `μ_norm(f,ζ)=‖f‖_Δ‖Diag(dᵢ^{−½})Df†‖` in
+  the **Bombieri–Weyl** norm `‖·‖_Δ` (= Demmel's `‖A‖_F‖A†‖` in the matrix case); (ii) the
+  **discriminant factors** as `|Disc(f)| ∝ |Res| · ∏_{ζ}|det(Df Df*)|^{½}/(1+‖ζ‖²)^{½}` (Prop 3.5)
+  — discriminant = resultant × ∏(conditioning at each zero); (iii) the **arithmetic height of the
+  discriminant variety** = the average `log μ_norm` = a **Gamma/digamma/harmonic-number** closed
+  form (e.g. expected `log`-norm of solutions `= ½ H_n`, Cor 5.4). So the slack is a pointwise
+  height; the discriminant height is its average.
 - *Heights of polynomials over lemniscates*, arXiv:2101.06708 — heights as `L^p` energies
   against **equilibrium measures**; `p=0` = Mahler measure. *Open.*
-- Bost–Gillet–Soulé, *Heights of projective varieties and positive Green forms*, JAMS 1994 —
-  Arakelov heights + **positive Green forms** (the positivity). *Paywalled — want access.*
+- **Bost–Gillet–Soulé**, *Heights of projective varieties and positive Green forms*, JAMS 1994.
+  **Read** (`research/papers/`). What it gives: the **arithmetic height `h(X) ≥ 0`** (`=0` iff a
+  linear subspace) — the basic positivity; the **arithmetic Bézout** inequality
+  `h(X·Y) ≤ h(X)deg(Y)+deg(X)h(Y)+c·deg·deg`; **positive Green forms** as the analytic
+  positivity, **with an explicit obstruction to their existence** (§6.3) — the Arakelov
+  obstruction-theory analogue; and the **resultant height** `log‖R‖ = ½(∏dᵢ)((N+1)H_N − N)+ε`
+  — again a **harmonic number** (the archimedean digamma).
 - Pengo, *Mahler measures: from small heights to big conjectures* (survey) — Mahler/heights/
   L-functions (Beilinson). *Open PDF.*
 
@@ -59,9 +79,15 @@ condition-number/height identity precise.
   equilibrium/potential structure as the Hermite slack. *Open.*
 
 **Metric arithmetic geometry aimed at RH (Option 1, already built).**
-- Connes–Consani, *Weil positivity and the trace formula, the archimedean place*,
-  arXiv:2006.13771 — the **archimedean** contribution to Weil positivity (prolate-spheroidal /
-  potential-theoretic). *Open; PDF didn't text-extract — want a readable copy.*
+- **Connes–Consani**, *Weil positivity and the trace formula, the archimedean place*,
+  arXiv:2006.13771. **Read** (`research/papers/`). What it gives: the archimedean Weil
+  positivity is recast as the positivity of a **trace of the compressed scaling action**,
+  `W_∞(g∗g*) ≥ Tr(ϑ(g) S ϑ(g)*)` (Thm 1), with `S` the projection onto **Sonin's space**
+  (functions vanishing with their Fourier transform on `[−1,1]`); the gap is controlled by
+  **prolate-spheroidal wave functions** and **Hermitian Toeplitz matrices**. The vanishing at
+  `±i/2` is the analogue of the `H¹` contribution in the Lefschetz trace formula; the geometry
+  is the **square of the Scaling Site** (the missing `C×C`, over the tropical/idempotent base).
+  This is the RH-specific forcing positivity, in operator/metric form.
 - Connes–Consani, *The Weil proof and the geometry of the adeles class space*, arXiv:math/0703392;
   the **arithmetic site** is over the **tropical** semifield `ℝ` (metric/idempotent geometry).
 - Connes, *An essay on the RH* arXiv:1509.05576; *RH: Past, Present and a Letter Through Time*
@@ -97,6 +123,20 @@ Arakelov-height machinery. The bridge in §1 appears unexplored and is computabl
 The connective tissue across the whole column is **potential theory** (equilibrium measures,
 log-energy, Green's functions) — the same object governs the Hermite slack, the dBN flow, the
 Arakelov archimedean place, and the GUE universality.
+
+Two concrete threads tie the three papers together and are worth stating sharply:
+
+- **The harmonic-number / digamma thread.** The archimedean term of the Weil explicit formula
+  is a digamma `ψ`; the resultant height (BGS) is `½(∏dᵢ)((N+1)H_N − N)`; the expected
+  log-norm of solutions (Pardo–Pardo) is `½ H_n`. *The same `H_n`/`ψ` closed form is the
+  archimedean height in all of them* — the slack's height and the Weil archimedean term are the
+  same kind of object.
+- **The obstruction is already Arakelov.** BGS §6.3 — *an obstruction to the existence of
+  positive Green forms* — is the metric analogue of the descent obstruction we found
+  topologically trivial. The forcing structure (positive Green form / `h(X) ≥ 0` / archimedean
+  trace positivity) and its obstruction live in the *same* Arakelov framework. This is precisely
+  the "obstruction whose marginal vanishing is the forcing structure" (STRATEGY §3), realized
+  with the metric, not the topology.
 
 ## 4. The expanded probe (gated, certifiable)
 
@@ -134,9 +174,18 @@ Arakelov archimedean place, and the GUE universality.
   reduces, under kill-test, to a known dispersing positivity (then we have mapped another graveyard
   edge precisely, the win-win of STRATEGY §7.3).
 
-## 6. Papers to access (help wanted)
+## 6. Papers (read)
 
-Priority for full text (open ones I can fetch myself; these are the gated/awkward ones):
-1. AAECC 2016, condition numbers / height of the generic discriminant (doi:10.1007/s00200-016-0284-9) — **the linchpin identity.**
-2. Bost–Gillet–Soulé, *Heights of projective varieties and positive Green forms*, JAMS 1994 — the positivity.
-3. Connes–Consani, arXiv:2006.13771 — a text-extractable copy (the PDF did not parse).
+All three obtained and read — `research/papers/` (gitignored, local):
+1. Pardo–Pardo, *condition numbers / height of the generic discriminant* (AAECC 2016) — the
+   linchpin: slack = condition number (Bombieri–Weyl) = `1/dist` to the discriminant variety;
+   discriminant = resultant × ∏(conditioning); height of the discriminant = `½ H_n`/Gamma form.
+2. Bost–Gillet–Soulé, *Heights of projective varieties and positive Green forms* (JAMS 1994) —
+   `h(X) ≥ 0` positivity; arithmetic Bézout; **positive Green forms + obstruction (§6.3)**;
+   resultant height `= ½(∏dᵢ)((N+1)H_N − N)`.
+3. Connes–Consani, *Weil positivity … the archimedean place* (arXiv:2006.13771) — archimedean
+   Weil positivity = trace of the compressed scaling action on Sonin's space; prolate-spheroidal
+   / Toeplitz control; `H¹`-Lefschetz analogue; square of the Scaling Site.
+
+**Next read (open):** Pengo's Mahler-measure/heights survey; Connes–Consani *adeles class space*
+(math/0703392) and the *Scaling Site* papers for the intersection theory on `C×C`.

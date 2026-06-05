@@ -27,3 +27,6 @@ notebooks/**/.ipynb_checkpoints/
 # Python caches
 __pycache__/
 *.pyc
+
+# local reference PDFs (not tracked)
+research/papers/
