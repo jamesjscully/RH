@@ -129,7 +129,28 @@ A candidate forcing structure / bridge is admitted only if it:
    dispersing equivalence — strong evidence that all analytic obstructions factor through the
    missing `𝔽₁` object. The negative result is itself worth proving.
 
-## 8. References (load-bearing)
+## 8. Verifiability commitment (formal backpressure)
+
+Exploratory research is informal and numeric by necessity — but the project commits to a
+**verifiable path**, so we cannot fool ourselves. Backpressure applied *now*, before any
+formalization:
+
+- **Certified, not floating.** Every numeric claim is a python-flint ball-arithmetic
+  enclosure (a certified interval), never a bare float.
+- **Exact structure.** Every structural claim (nerve `H¹`, slack monodromy, ranks) is exact
+  linear algebra over `ℤ/ℚ`, not a numerical threshold.
+- **Gated.** Every candidate runs the kill-test gates (§5) and the descent criterion (§4).
+- **No "proved" without a certificate.** A claim is established only as a certified
+  inequality or (later) a checked proof — never as "the numerics look right."
+
+**Commit trigger.** The moment exploration yields a concrete candidate that passes all
+kill-tests *and* carries a non-trivial descent obstruction (the first genuine
+forcing-structure candidate), **re-introduce a formal substrate** (Lean, or a proof-checked
+certificate format) and migrate the spine into it before building further. Formalizing
+earlier is premature (§6); formalizing never is self-deception. This is the pre-commitment
+that forbids both — once exploratory research concludes, the path becomes verifiable.
+
+## 9. References (load-bearing)
 
 - **Farmer** — criteria for RH-equivalences; Jensen polynomials disperse information.
 - **Bombieri** — Weil positivity; **Li (1997)**, **Bombieri–Lagarias (1999)** — Li coefficients.
