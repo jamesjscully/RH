@@ -77,6 +77,7 @@ the conclusion refutes (or exposes the hidden hypothesis of) the lemma.
 | Dirichlet `L(s,χ)` | ✓ | ✓ | ✓ | true (GRH) | uses Euler product, maybe not ζ-specific structure |
 | **planted-zero "fake ζ"** | partial | ✓ | broken | false by construction | does forward machinery **correctly fail to converge**? |
 | truncated Euler product `∏_{p≤P}` | ✗ | ✓ | finite | — | isolates the arithmetic depth the lemma needs |
+| **Epstein zeta (class no. >1)** | ✓ | ✓ | product-like | **false** (zeros, Re>1) | **second wall**: has product structure yet violates RH → "fails for DH" alone is not enough (H4) |
 | degree-2 Selberg-class member | ✓ | ✓ | ✓ | open | tests reliance on degree-1 specialness |
 
 **Check 2 — RH-content tag (catches circularity).** Does the statement, if true,
@@ -174,6 +175,22 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
       `τ↓½` for `τ<1`; crude bound diverges at `τ→1`. **Open (the real crux):** bound
       the off-diagonal Mertens sum for a fixed `τ₀<1` using `μ`-cancellation. See
       [`forward-theorem.md`](forward-theorem.md) §F4.
+      **Correction (review #2):** the "tractable sub-target at fixed `τ₀<1`" is *not*
+      tractable — no fixed `τ₀<1` half-plane is known zero-free (§6, fact 5), and the
+      short-interval Möbius shortcut is dead (§6, dead-end D1). F4-as-posed is RH-complete
+      for every fixed `τ₀`. Superseded as the lead forward item by **F5**.
+- [ ] **F5** `todo` *(review #2 — the structural fix; now the lead forward item)* —
+      **Reformulate the forward target as height-localized, not fixed-`τ`.** Fixed half-planes
+      have **no intermediate rung**: `Re s>1` is free, the next fixed-`τ` result is already
+      RH-strength. All 120 years of unconditional zero-free progress lives in the
+      *height-dependent* region `σ>1−c/(log t)^θ`. Introduce a `T`-windowed forward problem
+      (bounded norm on `|Im s|≤T` with controlled `T`-growth, ↔ a zero-free region of shape
+      `σ>1−c/log T`) so the machinery can engage de la Vallée Poussin / Vinogradov–Korobov.
+      **Go/no-go:** can the windowed criterion *reproduce* the classical zero-free region? If
+      not, the machinery is weaker than 1899 and the route is dead. If yes, the real target is
+      *improving* a zero-free region — a publishable sub-RH result the fixed-`τ` form
+      structurally cannot offer. The kernel already carries `T`-dependence (`‖k_ρ‖²=1/(2(β−τ))`,
+      `|u(ρ)|∼1/T`).
 
 ### Workstream P — Power Test (go/no-go before aiming at RH)
 - [x] **P1** `done` — Target chosen: Littlewood `M_N→1/ζ` above the 1-line / the
@@ -204,6 +221,28 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
       archimedean term via `acb.digamma`) and exhibit a test function where it is `≥0`
       for ζ but `<0` for DH (using DH's off-line zeros). Promotes Check 4 from
       prime-side-signature to genuine positivity.
+- [ ] **E4** `todo` *(review #2 — weigh as the primary engine, not just a discriminator)* —
+      **Li/Weil-positivity spike.** The program's own theorem says the Hilbert-distance
+      reformulation is RH-neutral; the places where RH becomes concrete, partially-provable
+      *positivity* (Li coefficients `λ_n≥0 ⟺ RH`) or *dynamical* constraints (de Bruijn–Newman
+      `Λ≤0 ⟺ RH`, with `Λ≥0` proved unconditionally by Rodgers–Tao 2020) are where Euler-product
+      content is genuinely load-bearing and where partial unconditional results exist. One
+      experiment: assemble a finite Li/Weil functional (`acb` zero sum + archimedean digamma
+      term) and test whether the witness coordinates add anything the bare explicit formula does
+      not. If they don't, this is the signal to pivot primary effort here, away from `μᵀGμ`
+      (now shown RH-complete with no shortcut, §6 dead-end D1).
+
+### Workstream H additions
+
+- [ ] **H4** `todo` *(review #2 — second harness wall)* — "Fails for DH" is **necessary but
+      not sufficient**. Having an Euler product does *not* imply RH: **Epstein zeta functions**
+      of class-number-`>1` quadratic forms have a functional equation and a Dirichlet series yet
+      provably carry zeros off the line and in `σ>1` (Potter–Titchmarsh 1935). Add a **second
+      wall**: an Euler-product-bearing (or product-like) object that still violates RH. A
+      critical-path lemma must fail for *both* DH (no Euler product) and the second wall (Euler
+      product, wrong RH status) — together they pin the load-bearing property to the full
+      Selberg-class package (primitive, degree 1, Ramanujan-bounded), not the bare existence of a
+      product. Promotes the dormant "degree-2 Selberg" battery row (§2) to a concrete object.
 
 ### Workstream L — Lean formalization (follows the math, does not lead it)
 - [x] **L1** `done` — Contradiction theorem de-tautologized: `RH/Witness/`
@@ -257,6 +296,30 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
 - **Formula corrections.** `h_k(z) = (1/k)·(1/(1−z))·log((1+z+⋯+z^{k−1})/k)` — the
   leading `1/k` was missing. The half-plane disk criterion (GKNS Thm 4.8) is
   **one-directional** (`1 ∈ closure ⟹ zero-free`); the iff is the `τ=1/2` Ge form.
+- **(review #2) No fixed `τ₀<1` half-plane is known zero-free.** Every unconditional
+  zero-free result (de la Vallée Poussin 1899 → Vinogradov–Korobov 1958) is a
+  *height-dependent region* `σ>1−c/(log t)^θ` narrowing to the line; none yields a fixed
+  `τ₀<1`. Consequence: the fixed-`τ` Wei–Wu/Ge criterion has **no rung between `Re s>1`
+  (free) and RH**. Engaging real frontier results requires the height-localized
+  reformulation (F5). The "even one fixed `τ₀∈(1/2,1)` would beat all known regions" note
+  above is correct but understates it — *any* such result is already RH-strength, not a
+  stepping stone.
+- **(review #2) Dead-end D1 — short-interval Möbius does not help.** Hypothesis: the
+  forward norm `μᵀGμ` localizes to the near-diagonal (`m≈n`), making it controllable by
+  unconditional short-correlation Möbius cancellation (Matomäki–Radziwiłł 2016; Tao
+  log-Chowla). **Refuted numerically** (review #2 probe, τ=0.7, N=60): the kernel `J` is
+  *broad* (`J(x)≈½J(0)` only at `|log(m/n)|≈2`, decay `~e^{−(1−τ)|x|}` set by `φ_τ`'s pole
+  strip), and the norm is a near-total cancellation between a `+351%` diagonal and a
+  `−198%` *far* off-diagonal band (`|log(m/n)|>1`). The required cancellation is long-range
+  and multiplicative — the full `1/ζ` structure — not short-interval. Do not retry this.
+- **(review #2) "Has an Euler product" ≠ RH.** Epstein zeta of class-number-`>1` forms has
+  a functional equation and Dirichlet series yet zeros off-line and in `σ>1` (Potter–
+  Titchmarsh 1935). So "fails for DH" is necessary but not sufficient; the load-bearing
+  property is the full Selberg-class package (primitive, degree 1, Ramanujan). See H4.
+- **(review #2) Honesty ledger.** Absent the F5 reformulation *or* a pivot to Li/Weil
+  positivity (E4), the program has **no falsifiable target strictly between `Re s>1` (done)
+  and RH (open)**. F4-as-posed is RH-complete. State this plainly so no future effort
+  mistakes RH-neutral reformulation for progress.
 
 ---
 
@@ -281,6 +344,16 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
   product, off-line zeros incl. `Re s > 1`. The barrier object.
 - **Weil explicit formula / Weil positivity** — the conservation law coupling zeros
   and primes; finite positivity = backpressure oracle (Workstream E).
+- **Li (1997)** — `RH ⟺ λ_n ≥ 0 ∀n`, `λ_n` an explicit prime+archimedean sum (E4).
+- **de Bruijn–Newman / Rodgers–Tao (2020)**, *Research in the Math. Sciences* — `RH ⟺
+  Λ ≤ 0`; `Λ ≥ 0` proved unconditionally. A two-sided unconditional handle on RH from
+  zero-flow dynamics, distinct from the Hilbert route (E4).
+- **Potter–Titchmarsh (1935)**; **Epstein zeta** — functional equation + Dirichlet
+  series with product-like structure, yet zeros off-line and in `σ>1`. The *second wall*
+  (H4): "has an Euler product" is not sufficient for RH.
+- **Matomäki–Radziwiłł (2016)**, *Ann. of Math.*; **Tao (2016)** log-Chowla —
+  unconditional short-interval / short-correlation Möbius cancellation. Checked as a
+  forward tool and found inapplicable (§6 dead-end D1).
 
 ---
 
@@ -303,3 +376,18 @@ Log of changes made to the rest of the repo to match this tracker (2026-06-05):
 - `research/bibliography.md` — fixed attributions (Ge for the operator criterion);
   added Burnol, Balazard–de Roton, GKNS 2024, Davenport–Heilbronn, explicit formula.
 - `README.md` — updated the Immediate Goal to the corrected plan; pointer to this file.
+
+### Review #2 (2026-06-05) — folded in
+
+- §4 Workstream F — added **F5** (height-localized criterion; now the lead forward item)
+  and annotated F4 as RH-complete-as-posed.
+- §4 Workstream E — added **E4** (Li/Weil-positivity spike; weigh as primary engine).
+- §4 Workstream H — added **H4** (second harness wall: Epstein zeta).
+- §2 battery table — added the Epstein second-wall row.
+- §6 settled facts — added: no fixed `τ₀<1` half-plane known; dead-end **D1**
+  (short-interval Möbius refuted numerically); "Euler product ≠ RH" (Epstein); the
+  **honesty ledger** (no falsifiable target between `Re s>1` and RH without F5 or E4).
+- §7 anchors — added Li, de Bruijn–Newman/Rodgers–Tao, Potter–Titchmarsh/Epstein,
+  Matomäki–Radziwiłł/Tao.
+- `research/log/2026-06-05-review2.md` — full review with the kernel/band-decomposition
+  numerics.
