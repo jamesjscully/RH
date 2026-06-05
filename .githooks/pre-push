@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Pre-push gate: no broken builds reach the remote.
+# Requires `lake exe cache get` (Mathlib dependency). Bypass with --no-verify.
+set -euo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+"$ROOT/scripts/automation/check-stubs.sh"
+cd "$ROOT"
+lake build
