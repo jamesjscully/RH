@@ -129,7 +129,19 @@ A candidate forcing structure / bridge is admitted only if it:
    `ζ^{(2n)}(½)` asymptotic error be driven below `ρ(d)` **uniformly in `d`**? RH-hard exactly
    where `ρ(d) → 0`. **Live target:** a certified uniform-in-`d` error-vs-`ρ(d)` bound — the
    metric enrichment (§3), not the topology.
-3. **Win-win framing.** Either a structured family's limit obstruction is a *provable*
+
+3. **Metric/Arakelov direction** (`research/metric-arakelov-probe.md`). The slack is
+   potential-theoretic, and potential theory *is* the archimedean place of Arakelov geometry —
+   so Option 1 ("metric replaces topology") already exists (Arakelov heights, the Connes–Consani
+   tropical arithmetic site, Berkovich/condensed analytic geometry). Computed bridge:
+   `log(1/ρ(d)) ~ 1.22 d` is **a height** (linear), while the bare Hermite discriminant grows
+   like `d² log d` (the **semicircle = GUE-universal** log-energy) — i.e. the slack is the
+   condition-number = **arithmetic height of the discriminant variety**. Next: P2 (is the rate
+   GUE-universal?) and P4 (recast "error-height ≤ slack-height uniformly in `d`" as an
+   arithmetic-Hodge-index positivity, then kill-test it). Honest caveat: the forcing endpoints
+   (positive Green forms, archimedean Weil positivity, Connes–Consani) are RH-hard open; the
+   one cheap, novel, computable thing is the Jensen-slack ↔ height bridge.
+4. **Win-win framing.** Either a structured family's limit obstruction is a *provable*
    forcing structure (→ a real step toward RH), or every analytic family converges to a
    dispersing equivalence — strong evidence that all analytic obstructions factor through the
    missing `𝔽₁` object. The negative result is itself worth proving.
