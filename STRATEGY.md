@@ -121,9 +121,14 @@ A candidate forcing structure / bridge is admitted only if it:
 1. **Forcing-structure search via the obstruction calculus** (§3): enumerate *structured*
    template families, compute each limit obstruction, kill-test it (§5), and check it is not
    Weil-positivity-in-disguise.
-2. **Jensen-cover nerve computation** (`jensen_nerve.py`): does the Jensen cert/tail/bridge
-   structure have descent teeth (shared sub-problems + slack monodromy) or is it a tree
-   (trivial, same fate as NB-BD)?
+2. **Jensen path — resolved on real data** (`jensen_nerve.py`, `jensen_real.py`;
+   log `2026-06-05-jensen-real.md`). A *correct* Jensen proof has filled diamonds →
+   constant-coefficient `H¹ = 0` → **descent topology is decoration here too**. The real
+   obstruction is **metric**: the Hermite stability radius `ρ(d) ~ e^{−1.22 d}` (computed) —
+   the slack vanishes exponentially. The forcing-structure question, made precise: can the
+   `ζ^{(2n)}(½)` asymptotic error be driven below `ρ(d)` **uniformly in `d`**? RH-hard exactly
+   where `ρ(d) → 0`. **Live target:** a certified uniform-in-`d` error-vs-`ρ(d)` bound — the
+   metric enrichment (§3), not the topology.
 3. **Win-win framing.** Either a structured family's limit obstruction is a *provable*
    forcing structure (→ a real step toward RH), or every analytic family converges to a
    dispersing equivalence — strong evidence that all analytic obstructions factor through the
