@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Atomic-commit guard (fast, no deps): forbid vacuous spine stubs / sorry / axiom.
-# See CONTRIBUTING.md. Bypass with --no-verify only in emergencies.
+# Futility guard (fast, no deps): keep the tree from drifting back into the deleted
+# NB-Beurling / forward-convergence apparatus.  See STRATEGY.md. Bypass: --no-verify.
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
-"$ROOT/scripts/automation/check-stubs.sh"
+"$ROOT/scripts/automation/guard.sh"

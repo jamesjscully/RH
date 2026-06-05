@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# Pre-push gate: no broken builds reach the remote.
-# Requires `lake exe cache get` (Mathlib dependency). Bypass with --no-verify.
+# Pre-push gate: futility guard + the kept python modules must import.
+# Bypass with --no-verify.
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
-"$ROOT/scripts/automation/check-stubs.sh"
+"$ROOT/scripts/automation/guard.sh"
 cd "$ROOT"
-lake build
+python3 -c "import scripts.numerics.witness.harness, scripts.numerics.witness.descent_test, scripts.numerics.witness.jensen_nerve, scripts.numerics.witness.li_positivity, scripts.numerics.witness.second_wall, scripts.numerics.witness.explicit_formula, scripts.numerics.witness.objects" \
+  && echo "import smoke: OK"

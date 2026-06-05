@@ -90,16 +90,19 @@ def demo_additivity(R: float = 8.0):
 # ---- nerve cohomology (the descent obstruction = H^1 of the cover nerve) ----
 def cech_h1(V: int, edges, triangles=()):
     """dim H^1 of a simplicial complex (Cech nerve), via coboundary ranks.
-    C^0 --d0--> C^1 --d1--> C^2 ;  H^1 = ker d1 / im d0."""
-    E = list(edges)
-    eidx = {e: i for i, e in enumerate(E)}
+    C^0 --d0--> C^1 --d1--> C^2 ;  H^1 = ker d1 / im d0.
+    Edges are canonicalized to sorted tuples, so orientation of the input is irrelevant;
+    every triangle's three edges must be present in `edges`."""
+    E = sorted({tuple(sorted(e)) for e in edges})
+    eidx = {e: r for r, e in enumerate(E)}
     d0 = np.zeros((len(E), V))
-    for (i, j), r in eidx.items():
+    for (i, j), r in eidx.items():       # i < j
         d0[r, i] = -1.0
         d0[r, j] = 1.0
     if triangles:
         d1 = np.zeros((len(triangles), len(E)))
-        for t, (i, j, k) in enumerate(triangles):
+        for t, tri in enumerate(triangles):
+            i, j, k = sorted(tri)
             d1[t, eidx[(i, j)]] += 1.0
             d1[t, eidx[(j, k)]] += 1.0
             d1[t, eidx[(i, k)]] -= 1.0
