@@ -145,9 +145,15 @@ Two concrete threads tie the three papers together and are worth stating sharply
   resultant) ⇒ `log|disc(H_n)|/n² → ½ln n + ((3/2)ln2 − ¼)`. The `½ln n` is the **semicircle
   (GUE) log-energy**; the **`(3/2)ln2 = 1.0397` is the exact 2-power structural constant** — the
   recognizable constant the BW-slack rate (~1.04) reflects. The discriminant (the energy/height)
-  is pinned exactly, with the GUE-universal semicircle part. *P1b (next):* the slack *distance*
-  to the discriminant variety also carries the gradient/conditioning factor — certify it
-  two-sided (certified roots + `H_n'` values, ball arithmetic) to pin the slack constant itself.
+  is pinned exactly, with the GUE-universal semicircle part. *P1b DONE (`jensen_p1b.py`),
+  honest correction:* the slack-*distance* constant is **NOT** cleanly `(3/2)ln2`. A certified
+  lower bound (sufficient hyperbolicity condition, certified acb roots) is **edge-dominated and
+  loose** (super-exponential, dominated by the outer critical point where `(1+s²)^{d/2}~(2d)^{d/2}`);
+  a direct search gives the slack `~e^{−1.04 d}` (heuristic). So `(3/2)ln2` is the discriminant
+  **energy** (certified); the slack is energy **+ a conditioning factor** (Pardo–Pardo:
+  `disc = res × ∏ conditioning`) and its exact constant is not tightly pinned. The §8 backpressure
+  caught the over-claim. Solid: the slack is exponentially small and lives in the
+  discriminant/condition-number (height) world.
 - **P2 — GUE-universality.** Is the `1.22` rate / the energy `d²log d` coefficient the
   **semicircle (GUE) universal** constant, or Hermite-specific? Compare to the equilibrium-measure
   log-energy and to Montgomery's pair-correlation constant. A match is the structural bridge:
@@ -155,12 +161,18 @@ Two concrete threads tie the three papers together and are worth stating sharply
 - **P3 — potential-theory unification.** Put the Hermite/semicircle equilibrium (Jensen) and the
   arithmetic-progression equilibrium (dBN log-gas) in one frame; identify `ρ(d) → 0` and `Λ = 0`
   as the same critical/marginal point of a log-gas.
-- **P4 — the forcing reframe (the payoff).** Recast "drive the `ζ^{(2n)}(½)` asymptotic error
-  below `ρ(d)` uniformly in `d`" as a **positivity of a difference of heights** (error-height
-  ≤ slack-height) — an arithmetic-Hodge-index-flavored inequality. Then **kill-test** the recast
-  statement (must fail for DH and Epstein; survive Weil positivity; not be Weil-positivity-in-
-  disguise). If it passes, it is the first forcing-structure candidate in Arakelov language → §8
-  formalization trigger.
+- **P4 — the forcing reframe — DONE (`jensen_p4.py`).** Recast: `RH ⟺ dist_BW(Jensen point,
+  discriminant variety) > 0 uniformly in d` = a **positive-Green-form / arithmetic-Bézout
+  positivity** (BGS); its obstruction is **BGS §6.3** (obstruction to positive Green forms) — the
+  RH-hard endpoint. **Kill-tests passed:** the Jensen/hyperbolicity criterion **detects off-line
+  zeros** (demonstrated: `J(1+x²)` non-hyperbolic, `J(1−x²)` hyperbolic; a planted complex pair is
+  detected) ⇒ it **fails for DH/Epstein** → genuine RH-content, not trivially dispersing; it is
+  **not Weil-positivity-in-disguise** (xi's Taylor coefficients + discriminant geometry, a distinct
+  positivity); honest **dispersion caveat** (Farmer): fixed-`d` hyperbolicity is RH-independent, so
+  the reverse force sits **only** in the uniform-in-`d` limit = the §6.3 obstruction. **Outcome:** a
+  legitimate forcing-structure candidate in height language, passing the object-level gates, not a
+  shortcut. A certified uniform bound (a positive Green form for the Jensen-vs-discriminant
+  configuration) is the §8 formalization trigger.
 - **P5 — literature deepening.** Read the linchpin papers (condition-number/height-of-discriminant;
   Connes–Consani archimedean; lemniscate heights; positive Green forms) and extract the exact
   height/condition-number identity to make P1/P4 rigorous.
