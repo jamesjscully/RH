@@ -217,20 +217,31 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
 - [x] **E2** `done` — Discriminates ζ from DH: DH's prime side has negative coeffs
       (`c(3)=−0.31, c(9)=−2.29`) and support off prime powers (`c(6)=+1.94`). Check 4
       passes (FAILS for DH).
-- [ ] **E3** `todo` — Deeper: assemble the full finite Weil functional (zero sum +
-      archimedean term via `acb.digamma`) and exhibit a test function where it is `≥0`
-      for ζ but `<0` for DH (using DH's off-line zeros). Promotes Check 4 from
-      prime-side-signature to genuine positivity.
-- [ ] **E4** `todo` *(review #2 — weigh as the primary engine, not just a discriminator)* —
+- [x] **E3** `done` — Genuine positivity achieved via the **Li/Weil criterion**
+      (`witness/li_positivity.py`, harness Check 4b), which is cleaner and more robust than a
+      bespoke test-function explicit formula. `RH ⟺ λ_n≥0`, `λ_n=Σ_ρ[1−(1−1/ρ)ⁿ]`. Mechanism
+      made transparent: a zero is on the line `⟺ |1−1/ρ|=|ρ−1|/|ρ|=1` *exactly* `⟺` each
+      conjugate pair contributes `2Re[1−(1−1/ρ)ⁿ]∈[0,4]≥0`; `Re ρ<½ ⟺ |1−1/ρ|>1 ⟺` contribution
+      unbounded below. Numerics: ζ's first-150-zero `λ_n` are positive & increasing
+      (`0.021,0.083,…`, matching the known Li coefficients), per-pair contributions in `[0,4]`;
+      **DH's off-line mate** (`Re=0.1915<½`, the functional-equation partner of its
+      `β=0.8085` zero) drives its contribution **negative at n=521** and to `≈−3.9×10⁷` by
+      `n≈4×10⁵`. So Weil positivity holds for ζ and fails for DH — read off the zeros, not the
+      prime-side signature.
+- [~] **E4** `partial` *(review #2 — weigh as the primary engine, not just a discriminator)* —
       **Li/Weil-positivity spike.** The program's own theorem says the Hilbert-distance
       reformulation is RH-neutral; the places where RH becomes concrete, partially-provable
       *positivity* (Li coefficients `λ_n≥0 ⟺ RH`) or *dynamical* constraints (de Bruijn–Newman
       `Λ≤0 ⟺ RH`, with `Λ≥0` proved unconditionally by Rodgers–Tao 2020) are where Euler-product
-      content is genuinely load-bearing and where partial unconditional results exist. One
-      experiment: assemble a finite Li/Weil functional (`acb` zero sum + archimedean digamma
-      term) and test whether the witness coordinates add anything the bare explicit formula does
-      not. If they don't, this is the signal to pivot primary effort here, away from `μᵀGμ`
-      (now shown RH-complete with no shortcut, §6 dead-end D1).
+      content is genuinely load-bearing. **Done:** the Li functional is built and computing
+      (E3); it discriminates ζ from DH directly on the zeros (`li_positivity.py`). **Finding:**
+      the discriminating content here is the **location of the zeros** (`|1−1/ρ|` vs 1) — i.e.
+      the same arithmetic the forward problem encodes, reached *without* the Hilbert/witness
+      coordinates. So the witness coordinates add nothing the explicit formula doesn't already
+      give; this is positive evidence for pivoting primary effort to the positivity/dynamical
+      route (Li/Bombieri–Lagarias, de Bruijn–Newman) over `μᵀGμ` (RH-complete, §6 D1).
+      **Open:** make a *partial unconditional* statement about `λ_n` (e.g. a finite-prime lower
+      bound) — the genuinely novel target on this route.
 
 ### Workstream H additions
 

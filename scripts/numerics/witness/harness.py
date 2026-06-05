@@ -146,6 +146,13 @@ def _report():
         print("  ", c4)
     except Exception as e:
         print("   (explicit_formula module pending: %s)" % e)
+
+    print("\n[Check 4b] Li / Weil positivity (genuine positivity, read off the zeros)")
+    try:
+        from . import li_positivity as LP
+        LP.summary(quick=True)
+    except Exception as e:
+        print("   (li_positivity module pending: %s)" % e)
     print("=" * 72)
 
 
