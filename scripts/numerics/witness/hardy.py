@@ -138,6 +138,50 @@ def certify_gram_entry(obj: TestObject, n: int, m: int, tau: float,
     return val  # acb enclosure (the certified window value)
 
 
+# --- certified Gram tail bound (tracker N4) --------------------------------
+def certify_gram_tail_bound(n: int, m: int, tau: float, T: float, prec: int = 120):
+    """Rigorous upper bound on the Gram tail |Err_{n,m}| = |(nm)^{-tau} (1/2pi)
+    int_{|t|>T} |phi_tau|^2 e^{it log(m/n)} dt|, VALID FOR tau > 1.
+
+    For tau > 1, |zeta(tau+it)| <= zeta(tau) (Dirichlet series), so with
+    |phi_tau(tau+it)|^2 = ((tau-1)^2+t^2)/(tau^2+t^2)^2 * |zeta(tau+it)|^2 and the
+    elementary majorant (tau^2+t^2)^2 >= t^4:
+        (1/2pi) int_{|t|>T} |phi_tau|^2 dt
+          <= (zeta(tau)^2/pi) int_T^inf ((tau-1)^2+t^2)/t^4 dt
+           = (zeta(tau)^2/pi) ( (tau-1)^2/(3 T^3) + 1/T ).
+    Multiply by (nm)^{-tau} (|e^{itx}|=1).  Returned as an arb upper bound.
+
+    For 1/2 < tau <= 1 this returns None: zeta is unbounded on the line there, so a
+    rigorous tail needs a WINDOWED SECOND MOMENT  int_{|t|>T}|zeta(tau+it)|^2/t^2 dt
+    near the 1-line -- the same analytic input the F5 height-localized criterion needs,
+    and the genuinely open sub-task (see forward-theorem.md §F5).
+    """
+    if tau <= 1.0:
+        return None
+    old = ctx.prec
+    ctx.prec = prec
+    t = arb(tau)
+    zeta_tau = arb(tau).zeta()
+    tail_factor = (zeta_tau ** 2 / arb.pi()) * ((t - 1) ** 2 / (3 * arb(T) ** 3) + 1 / arb(T))
+    bound = arb(n * m) ** (-t) * 2 * tail_factor
+    ctx.prec = old
+    return bound  # arb: certified upper bound on |Err_{n,m}|, tau>1
+
+
+def certify_gram_entry_full(obj: TestObject, n: int, m: int, tau: float,
+                            T: float = 60.0, prec: int = 80):
+    """Fully certified G[n,m] enclosure for tau>1: the rigorous finite window
+    (certify_gram_entry) widened by the rigorous tail bound.  Returns an acb whose
+    ball contains the true G[n,m].  Returns None for tau<=1 (tail not yet certifiable)."""
+    tail = certify_gram_tail_bound(n, m, tau, T, prec)
+    if tail is None:
+        return None
+    window = certify_gram_entry(obj, n, m, tau, T=T, prec=prec)
+    # widen the window enclosure by a real error ball of radius |tail| (Err is real)
+    rad = float(tail.abs_upper())
+    return window + acb(arb(0, rad))
+
+
 # --- barrier oracle (tracker B) --------------------------------------------
 def kernel_norm2(beta: float, tau: float) -> float:
     """||k_rho^{(tau)}||^2 = 1/(2(beta-tau)) for rho=beta+iT, beta>tau."""

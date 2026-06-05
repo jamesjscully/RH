@@ -131,12 +131,17 @@ Each milestone is written to be **falsifiable**.
       `ρ≈0.808517+85.699348i` located.
 - [x] **N3** `done` — Hardy-module engine (`witness/hardy.py`): sampled Gram/target/
       distance, closed-form `‖u‖²`, barrier bound. Validated.
-- [~] **N4** `partial` — Certified upgrades **demonstrated**: `hardy.certify_gram_entry`
-      gives rigorous `G[n,m]` enclosures over `|t|≤T` via `acb.integral` (e.g.
-      `G[1,1]=0.63936858186645976 ± 9e-18` over [−30,30]); `κ` certified via
-      `acb_mat.eig`. **Remaining:** certify the Gram tail `Err_{N,τ}=∫_{|t|>T}` (needs
-      an explicit `|ζ(τ+it)|` bound — `acb_dirichlet_zeta_bound`, via C API). The
-      float-vs-certified gap (~0.022 for `G[1,1]`, T=30) *is* `Err`, made concrete.
+- [~] **N4** `partial` — Certified upgrades: `hardy.certify_gram_entry` gives rigorous
+      `G[n,m]` enclosures over `|t|≤T` via `acb.integral` (e.g.
+      `G[1,1]=0.63936858186645976 ± 9e-18` over [−30,30]); `κ` certified via `acb_mat.eig`.
+      **Tail now certified for `τ>1`** (`certify_gram_tail_bound`, `certify_gram_entry_full`):
+      `|Err_{n,m}| ≤ 2(nm)^{−τ}ζ(τ)²((τ−1)²/(3T³)+1/T)` using `|ζ(τ+it)|≤ζ(τ)` and
+      `(τ²+t²)²≥t⁴` — rigorous (verified `bound≥actual` at `T=30,60,120`), `O(1/T)`. So `G[n,m]`
+      is fully certified (window + tail) for `τ>1`. **Remaining (the real gap):** `½<τ≤1`, where
+      `ζ` is unbounded on the line — needs a rigorous **windowed second moment**
+      `∫_{|t|>T}|ζ(τ+it)|²/t² dt`. This is exactly the analytic input F5 needs (forward-theorem.md
+      §F5); the code path is identical once that majorant is supplied. (The crude `τ>1` bound can
+      be tightened by keeping `b²` and a sharper `|ζ|` majorant — a refinement, not the crux.)
 
 ### Workstream H — Refutation Harness  *(do first; it pays for itself immediately)*
 - [x] **H1** `done` — Test-object battery implemented (see N2).
