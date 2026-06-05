@@ -282,7 +282,16 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
       inner-product space: `IsLeast (range fun a => ‖u−a•v‖²) (‖u‖²−⟪u,v⟫²/⟪v,v⟫)` —
       i.e. the min over the line equals the one-term Gram expression. Fully proved
       (`toy_finite_compression`, `norm_sub_smul_sq`). Build now needs `lake exe cache
-      get`. Next: generalize to `N×N` (`Matrix`/`G⁻¹`).
+      get`.
+- [x] **L4** `done` *(the `N×N` generalization)* — `RH/Experiments/ToyGram.lean`
+      `finite_compression`: for *any* subspace `K` with `[K.HasOrthogonalProjection]` (in
+      particular every finite-dim `V_N(τ)`), `IsLeast (range fun w:K => ‖u−w‖²)
+      (‖u−K.starProjection u‖²)` — the orthogonal projection minimizes the distance, the
+      general Theorem A. Proof by Pythagoras on `u−w=(u−p)+(p−w)` with `u−p ⊥ (p−w)∈K`
+      (`starProjection_inner_eq_zero`). Uses Mathlib `Projection.Basic` (v4.30.0 split the old
+      `Projection` module into a dir; the API is now `Submodule.starProjection`). Builds green
+      (`lake build RH`, 3018 jobs). The explicit `‖u‖²−bᵀG⁻¹b` value is the coordinate form of
+      `‖u−p‖²` in a basis — a downstream nicety, not needed for the minimization itself.
 
 ---
 
