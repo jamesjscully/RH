@@ -137,3 +137,17 @@ where classical zero-free-region technology (the `zeta'/zeta` bound, Borel-Carat
 + the second moment) would be imported. That import -- not the Hilbert geometry -- is the
 load-bearing step. Status: `active` (scoped; the windowed second moment is the next
 concrete sub-task).
+
+**Reduction (this session).** The N4 tail for `1/2 < tau < 1` reduces cleanly to the
+classical *mean square*. With `|phi_tau|^2 <= |zeta(tau+it)|^2 / t^2` for large `t` and
+`F(t) := int_0^t |zeta(tau+iu)|^2 du`, integrate by parts:
+```
+int_T^inf |zeta(tau+it)|^2 / t^2 dt = [F(t)/t^2]_T^inf + int_T^inf 2 F(t)/t^3 dt.
+```
+If `F(t) <= C(tau) * t` for all `t` (the Hardy-Littlewood/Ingham mean square,
+`F(t) ~ zeta(2 tau) t` for `1/2<tau<1`), the boundary term vanishes and the tail is
+`<= 2 C(tau)/T`.  So the ENTIRE remaining requirement for N4 (`tau<1`) and the F5 window
+is a single rigorous constant: **`C(tau)` with `int_0^t |zeta(tau+iu)|^2 du <= C(tau) t`
+for all `t>0`.**  python-flint can certify `F(t)` on any finite range via `acb.integral`
+(so `C(tau)` is empirically `~ zeta(2 tau)`); making it hold for ALL `t` is the classical
+explicit second-moment bound to import. This is the precise, isolated open input.
