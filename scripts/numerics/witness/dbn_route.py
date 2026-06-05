@@ -77,6 +77,30 @@ def dbn_lambda(coeffs):
     return hi
 
 
+def backward_margin(coeffs):
+    """Dynamic margin Lambda_- = sup{s>=0 : H_{-s} p still all-real} -- how far p can flow
+    BACKWARD before losing hyperbolicity.  The Hermite-junction probe: for the real-xi Jensen
+    polynomials this SHRINKS as (d,n) grow (toward the heat-flow fixed shape / the full xi),
+    quantifying the de Bruijn-Newman Lambda=0 ('RH barely true') by degree and shift -- and it
+    is ANTI-correlated with the static separation margin (which grows toward the Hermite limit).
+    Static height and dynamic flow are the same Hermite object seen two ways."""
+    c = np.array(coeffs, float)
+    if not _all_real(c):
+        return 0.0
+    lo, hi = 0.0, 0.001
+    while _all_real(heat_flow(c, -hi)):
+        hi *= 2
+        if hi > 1e6:
+            return np.inf
+    for _ in range(50):
+        mid = 0.5 * (lo + hi)
+        if _all_real(heat_flow(c, -mid)):
+            lo = mid
+        else:
+            hi = mid
+    return lo
+
+
 def _from_roots(roots):
     p = np.array([1.0 + 0j])
     for r in roots:
