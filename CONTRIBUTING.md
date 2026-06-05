@@ -1,59 +1,49 @@
 # Contributing
 
+## Before you write anything
+
+Check the work against [STRATEGY.md](STRATEGY.md) — especially §5 (kill-tests) and §6
+(the do-not list). The project's failure mode is drifting back into RH-neutral
+reformulations. A new direction is admissible only if it could carry a **forcing
+structure** (reverse force), not just another equivalence to RH.
+
 ## Atomic commit policy
 
-This repository uses **atomic commits**. Each commit is one logical, self-contained
-change that leaves the repo in a working state.
+Each commit is one logical, self-contained change that leaves the repo working.
 
-**Rules**
-
-1. **One concern per commit.** A commit does exactly one thing: a single feature, fix,
-   refactor, doc change, or experiment. Don't mix unrelated changes. Don't split one
-   logical change across several commits.
-2. **Each commit builds green.** At every commit, `lake build` succeeds and
-   `scripts/automation/check-stubs.sh` passes (no `:= True` spine stubs, no
-   `sorry`/`axiom`). Never commit a known-broken state "to fix later".
-3. **Proof discipline carries over.** A commit that adds a "theorem" proving `True`, or
-   a numeric claim with no path to a certified inequality, is not a self-contained unit
-   of progress — see `research-program.md` §12.
-4. **Message format.** Imperative subject ≤ ~72 chars, optionally area-prefixed
-   (`lean:`, `numerics:`, `research:`, `automation:`); a body explaining *why* when it
-   isn't obvious. Example:
-
-   ```
-   lean: de-tautologize the contradiction theorem
-
-   The old theorem assumed an `incompatible` hypothesis equal to its
-   conclusion. Replace with `forward_reverse_incompatible`, which derives
-   False from order facts on a rational distance sequence.
-   ```
-
+1. **One concern per commit.** A single experiment, fix, doc change, or refactor.
+2. **Each commit is consistent.** The kept python modules import and run; no half-deleted
+   state. Run the relevant module (`python3 -m scripts.numerics.witness.<name>`) before
+   committing.
+3. **No futility.** A commit that adds an RH-equivalent reformulation with no path to
+   reverse force, or that resurrects the deleted NB-Beurling / forward-convergence
+   apparatus, is not progress — see STRATEGY.md §2/§6.
+4. **Message format.** Imperative subject ≤ ~72 chars, area-prefixed
+   (`numerics:`, `research:`, `docs:`); a body explaining *why* when it isn't obvious.
 5. **AI-assisted commits** include a `Co-Authored-By:` trailer for the assisting model.
 
-**Why atomic.** Each commit is independently reviewable, revertible, and bisectable —
-which matters here because the program advances by small, falsifiable steps and
-regularly converts failures into obstruction results. A clean history *is* the loss
-ledger.
+A clean history *is* the loss ledger — each commit independently reviewable and revertible.
 
 ## Enforcement (tracked git hooks)
 
-Hooks live in `.githooks/` (tracked, shared). Enable them once per clone:
+Enable once per clone: `git config core.hooksPath .githooks`
 
-```bash
-git config core.hooksPath .githooks
-```
+- **pre-commit** — `scripts/automation/guard.sh`: fails if any deleted futility file
+  (NB-BD docs, `hardy.py`/`forward_bound.py`/`power_test.py`, the Lean witness tree)
+  reappears. Fast, no dependencies.
+- **pre-push** — the guard plus an import smoke-test of the kept modules.
 
-- **pre-commit** — runs `scripts/automation/check-stubs.sh` (fast, no deps): blocks
-  `:= True` spine stubs, `sorry`, and `axiom`.
-- **pre-push** — runs the stub guard and `lake build` (requires `lake exe cache get`
-  first, since the Lean library depends on Mathlib): blocks pushing code that doesn't
-  build.
-
-Bypass in a genuine emergency with `git commit --no-verify` / `git push --no-verify`,
-but the next commit must restore a green state.
+Bypass in a genuine emergency with `--no-verify`, then restore a clean state.
 
 ## Prerequisites
 
-- **Lean**: `lake exe cache get` then `lake build` (Mathlib dependency).
-- **Numerics**: `pip install --user --break-system-packages python-flint mpmath scipy`
-  (numpy preinstalled); run `python3 -m scripts.numerics.witness.harness`.
+```bash
+pip install --user --break-system-packages python-flint numpy   # mpmath/scipy optional
+```
+
+Run an experiment:
+```bash
+python3 -m scripts.numerics.witness.harness        # kill-test gates
+python3 -m scripts.numerics.witness.descent_test   # nerve criterion
+python3 -m scripts.numerics.witness.jensen_nerve   # Jensen cover nerve
+```
