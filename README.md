@@ -8,13 +8,21 @@ The project has two synchronized tracks:
 2. A research-log track for theorem agendas, informal mathematics, numerical experiments, failures, and bibliography notes.
 3. A local automation track using WhippleScript for durable agent orchestration and Loft for event-sourced issue/work state.
 
-The current proof spine is described in [research-program.md](research-program.md). The raw source conversation is preserved in [chat.md](chat.md).
+The corrected strategy is described in [research-program.md](research-program.md); the live work breakdown, status, and discipline are in [research/tracker.md](research/tracker.md), which is the source of truth. The raw source conversation is preserved in [chat.md](chat.md).
 
 ## Build
 
+The Lean library now depends on Mathlib (for the analytic toy theorems). Fetch the
+prebuilt Mathlib cache first, then build:
+
 ```bash
+lake exe cache get   # download Mathlib oleans (first time / after a Mathlib bump)
 lake build
 ```
+
+Numerics use a Python stack (FLINT/Arb): `pip install --user --break-system-packages
+python-flint mpmath scipy` (numpy preinstalled). Run the refutation harness with
+`python3 -m scripts.numerics.witness.harness`.
 
 ## Automation Dependencies
 
@@ -33,6 +41,12 @@ scripts/automation/check.sh
 ```
 
 See [automation/README.md](automation/README.md) for details.
+
+## Contributing
+
+This repo uses an **atomic-commit policy** with tracked git hooks — see
+[CONTRIBUTING.md](CONTRIBUTING.md). Enable the hooks once: `git config core.hooksPath
+.githooks`.
 
 ## Layout
 
@@ -71,8 +85,18 @@ workflows/
 
 ## Immediate Goal
 
-The first formal milestone is an abstract Lean contradiction theorem:
+The corrected architecture (see [research/tracker.md](research/tracker.md)) recognizes
+that **reverse visibility is the easy, classical direction** (an `N`-uniform evaluation
+bound), while the **forward/arithmetic convergence theorem is the bottleneck and is RH**
+— so it must be powered by the **Euler product**, validated against the
+**Davenport–Heilbronn barrier** (any argument blind to the Euler product would "prove"
+RH for DH, which is false).
 
-> forward convergence + same-coordinate reverse obstruction + positive reverse gap rules out a hypothetical off-critical zero.
+The first two milestones are therefore:
 
-The first analytic milestone is to derive the finite half-plane Gram matrix and raw evaluation-kernel lower bound for the Hardy-module witness spaces.
+1. **Refutation harness** — a test-object battery (ζ, Davenport–Heilbronn, a
+   planted-zero "fake ζ", a truncated Euler product) plus four cheap checks that keep
+   the forward search from proving false or RH-neutral statements.
+2. **Power test** — demonstrate the machinery can unconditionally reprove a *known*
+   result (the classical zero-free region, a zero-density estimate, or
+   `M_N → 1/ζ` for `Re s > 1`) before aiming at RH.

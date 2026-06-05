@@ -1,34 +1,41 @@
 # Open Questions
 
-## Foundational
+Live questions under the corrected architecture ([`tracker.md`](tracker.md)). The
+former "reverse visibility" questions are largely resolved (the reverse bound is the
+trivial `N`-uniform evaluation bound) or dropped (resolution `R_τ(N)`).
 
-1. Should the Lean project depend on Mathlib immediately, or should the abstract skeleton remain pure Lean until the first analytic target is clear?
-2. What is the minimal formal definition of a witness system that still makes the contradiction mechanism nontrivial?
-3. How should same-coordinate visibility be represented formally: as a shared finite index set, a shared Gram matrix, or a categorical pullback of data?
+## Critical path (forward / arithmetic)
 
-## Hardy-Module Base Class
+1. **Where exactly must the Euler product enter** to make forward convergence
+   unconditional? (Any candidate mechanism must *fail* for Davenport–Heilbronn.)
+2. What is the stall point of the Balazard–de Roton conditional upper bound
+   `d_N² ≪ (log N)^{−1/2+o(1)}`, and can the witness machinery move an *unconditional*
+   frontier there?
+3. Do the extremal forward coefficients provably lock onto `−μ(n)` in the half-plane
+   module avatar (not just the BD avatar)?
 
-1. What exact \(H^2(\Omega_\tau)\) norm convention should be used?
-2. What are the exact Gram matrix entries for \(\|\phi_\tau D_N\|^2\)?
-3. How does the target vector for \(u\) depend on \(\tau\)?
-4. What is the condition-number growth of \(G_{N,\tau}\) as \(\tau\downarrow1/2\)?
+## Power test
 
-## Reverse Visibility
+4. Which known unconditional result is the best first target — the classical zero-free
+   region, a zero-density estimate `N(σ,T)`, or `M_N → 1/ζ` for `Re s > 1`?
+5. Can the machinery reprove it **unconditionally**? (If not even the classical
+   zero-free region, the program lacks demonstrated proving power.)
 
-1. What is the exact raw evaluation lower bound at a zero \(\rho\)?
-2. How fast does the raw lower bound decay with \(T\)?
-3. Can projected kernel packets improve the height dependence?
-4. What is the correct resolution function \(R_\tau(N)\)?
-5. Does reverse visibility naturally involve \(N^{\beta-\tau}\), \((\beta-\tau)\log N\), or another scale?
+## Refutation harness
 
-## Coupled Path
+6. Minimal faithful numerical model of Davenport–Heilbronn and a planted-zero "fake ζ"
+   for the battery (env: Python only, no scipy/mpmath yet).
+7. What finite truncation of the Weil explicit formula gives a usable, DH-discriminating
+   positivity check?
 
-1. What candidate scalings \(N_m,\tau_m\) are plausible?
-2. Can conditioning loss be kept below reverse signal?
-3. Does the path fail for intrinsic reasons in the base class?
+## Finite compression (bookkeeping)
 
-## Secondary Tracks
+8. Exact `H²(Ω_τ)` norm convention; is `u ∈ H²(Ω_τ)` uniform as `τ ↓ 1/2`?
+9. Exact Gram entries for `‖φ_τ D_N‖²` and the conditioning growth of `G_{N,τ}`.
 
-1. Which kernel/co-Poisson normal forms preserve finite margins?
-2. Can the Bohr lift reveal arithmetic locking in a finite-coordinate way?
-3. Is there a concrete intertwiner from Hardy-module coordinates to Weil positivity tests?
+## Foundational / Lean
+
+10. Add Mathlib now, or after the first analytic target is concrete? (Needed for a real
+    Theorem A.)
+11. How to rewrite the contradiction theorem so it derives `False` from the evaluation
+    obstruction rather than assuming incompatibility?
