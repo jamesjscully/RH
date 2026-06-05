@@ -140,9 +140,14 @@ Two concrete threads tie the three papers together and are worth stating sharply
 
 ## 4. The expanded probe (gated, certifiable)
 
-- **P1 — slack as a height (compute).** Certify `ρ(d)`, `disc(H_d)` (closed form), `Mahler(H_d)`,
-  the semicircle log-energy. Establish `log(1/ρ(d)) = (height term, linear) − (energy, cancelled)`
-  rigorously. *Status: grounded numerically (§1); upgrade to certified intervals (FLINT).*
+- **P1 — slack as a height.** *P1a DONE (certified, `jensen_p1.py`):*
+  `disc(H_n) = 2^{3n(n−1)/2} ∏ₖ kᵏ` **exactly** (verified n≤12, exact integers via FLINT
+  resultant) ⇒ `log|disc(H_n)|/n² → ½ln n + ((3/2)ln2 − ¼)`. The `½ln n` is the **semicircle
+  (GUE) log-energy**; the **`(3/2)ln2 = 1.0397` is the exact 2-power structural constant** — the
+  recognizable constant the BW-slack rate (~1.04) reflects. The discriminant (the energy/height)
+  is pinned exactly, with the GUE-universal semicircle part. *P1b (next):* the slack *distance*
+  to the discriminant variety also carries the gradient/conditioning factor — certify it
+  two-sided (certified roots + `H_n'` values, ball arithmetic) to pin the slack constant itself.
 - **P2 — GUE-universality.** Is the `1.22` rate / the energy `d²log d` coefficient the
   **semicircle (GUE) universal** constant, or Hermite-specific? Compare to the equilibrium-measure
   log-energy and to Montgomery's pair-correlation constant. A match is the structural bridge:
