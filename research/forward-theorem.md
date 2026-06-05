@@ -85,3 +85,55 @@ the explicit decay of the kernel `J`. **This is the first genuinely non-circular
 and the precise crux of the forward theorem.** It is, honestly, of RH difficulty for
 `tau_0` near `1/2`; the tractable sub-target is to push *any* unconditional bounded-norm
 result to a fixed `tau_0 < 1` (which would already be a new zero-free region).
+
+**Correction (review #2).** That "tractable sub-target" is NOT tractable: there is no
+fixed `tau_0 < 1` half-plane known zero-free at all (see §F5). The fixed-`tau`
+formulation has no rung between `tau=1` (done) and RH. And the short-interval Mobius
+route is dead (the kernel `J` is broad; the Mertens cancellation is long-range, not
+near-diagonal -- review #2, dead-end D1). So F4-as-posed is RH-complete; the productive
+move is F5.
+
+## F5 -- height-localized criterion (the lead forward target)
+
+**Why fixed-`tau` is the wrong frame.** Wei-Wu/Ge is a *fixed half-plane* statement:
+`||phi_tau M_N||` bounded `<=>` zeta zero-free in `Re s > tau`. But **no fixed
+`tau_0 < 1` half-plane is known zero-free** -- every unconditional zero-free result,
+from de la Vallee Poussin (1899) to Vinogradov-Korobov (1958), is a *height-dependent
+region*
+
+>   `zeta(s) != 0` for `sigma > 1 - c / (log |t|)^{2/3} (log log |t|)^{1/3}`  (VK),
+
+narrowing to the line as `|t| -> infinity`. The whole 120-year frontier lives there.
+So the fixed-`tau` forward problem is all-or-nothing (`tau=1` free, next rung = RH);
+to touch real progress the criterion must be *height-localized*.
+
+**Proposed criterion (to be made precise).** Localize the witness problem to a height
+window and let `tau` approach `1` with `T`. Concretely, for a window `|Im s| <= T` and a
+threshold `tau(T) = 1 - c/log T`, study the windowed forward quantity
+`d_{N,T} = dist_{H^2, |t|<=T}(u, V_N(tau(T)))` (inner product restricted to the band, or
+a smooth height cutoff `w_T(t)` of Beurling-Selberg type to keep it an honest RKHS).
+Target statement:
+
+>   for every fixed `c < c_0`, `d_{N(T), T} -> 0` as `T -> infinity` along a suitable
+>   `N(T)`, with constants depending only on `c`  ==>  zeta zero-free in the region
+>   `sigma > 1 - c/log T` -- i.e. an unconditional zero-free region of de la Vallee
+>   Poussin type, reproved in bounded-norm form.
+
+The Euler product must enter exactly as in F2 (coefficients `-> mu(n)`; the bounded-norm
+condition = a truncated `M_N -> 1/zeta`), and the statement must FAIL for DH and for the
+Epstein second wall (harness Checks 1, 1b).
+
+**Go/no-go.** The machinery already reproves `sigma > 1` in bounded-norm form (F4 prop).
+The first milestone is to recover the **classical zero-free region** (`sigma > 1 -
+c/log|t|`) windowed -- if the windowed witness problem cannot even reach de la Vallee
+Poussin, the route is weaker than 1899 and is dead. If it can, the open frontier is to
+*widen* the region (toward VK or beyond) unconditionally -- a publishable result short of
+RH, which the fixed-`tau` form structurally cannot produce.
+
+**What this needs (the real analytic input).** A rigorous handle on
+`int_{|t|<=T} |zeta(tau(T)+it)|^2 w_T(t) dt` -- a *windowed second moment* of zeta near
+the 1-line. This is the same ingredient N4 needs for the certified Gram tail, and it is
+where classical zero-free-region technology (the `zeta'/zeta` bound, Borel-Caratheodory
++ the second moment) would be imported. That import -- not the Hilbert geometry -- is the
+load-bearing step. Status: `active` (scoped; the windowed second moment is the next
+concrete sub-task).

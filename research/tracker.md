@@ -179,7 +179,8 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
       tractable — no fixed `τ₀<1` half-plane is known zero-free (§6, fact 5), and the
       short-interval Möbius shortcut is dead (§6, dead-end D1). F4-as-posed is RH-complete
       for every fixed `τ₀`. Superseded as the lead forward item by **F5**.
-- [ ] **F5** `todo` *(review #2 — the structural fix; now the lead forward item)* —
+- [~] **F5** `active` *(review #2 — the structural fix; now the lead forward item; scoped in
+      [`forward-theorem.md`](forward-theorem.md) §F5)* —
       **Reformulate the forward target as height-localized, not fixed-`τ`.** Fixed half-planes
       have **no intermediate rung**: `Re s>1` is free, the next fixed-`τ` result is already
       RH-strength. All 120 years of unconditional zero-free progress lives in the
@@ -190,7 +191,10 @@ Scoping note: [`forward-theorem.md`](forward-theorem.md).
       not, the machinery is weaker than 1899 and the route is dead. If yes, the real target is
       *improving* a zero-free region — a publishable sub-RH result the fixed-`τ` form
       structurally cannot offer. The kernel already carries `T`-dependence (`‖k_ρ‖²=1/(2(β−τ))`,
-      `|u(ρ)|∼1/T`).
+      `|u(ρ)|∼1/T`). **Scoped** (forward-theorem.md §F5): precise windowed-criterion statement
+      written; next concrete sub-task is the **windowed second moment**
+      `∫_{|t|≤T}|ζ(τ(T)+it)|²w_T(t)dt` near the 1-line — the same analytic input N4 needs, and
+      the actual load-bearing step (not the Hilbert geometry).
 
 ### Workstream P — Power Test (go/no-go before aiming at RH)
 - [x] **P1** `done` — Target chosen: Littlewood `M_N→1/ζ` above the 1-line / the
