@@ -1,0 +1,26 @@
+[tools.whipplescript]
+kind = "cargo-bin"
+name = "whip"
+repo = "../whipplescript"
+manifest = "../whipplescript/Cargo.toml"
+install_path = "../whipplescript/crates/whipplescript-cli"
+version = "0.1.0"
+purpose = "Durable multi-agent workflow orchestration for research automation."
+
+[tools.loft]
+kind = "cargo-bin"
+name = "loft"
+repo = "../loft"
+manifest = "../loft/Cargo.toml"
+install_path = "../loft"
+version = "0.1.0"
+purpose = "Event-sourced local issue/work kernel for research tasks, dependencies, leases, and evidence."
+
+[state.whipplescript]
+store = ".whipplescript/research.sqlite"
+workflow_dir = "workflows"
+
+[state.loft]
+repo = ".loft"
+canonical = [".loft/config.toml", ".loft/tx/**/*.json"]
+runtime_ignored = [".loft/index.sqlite", ".loft/runtime.sqlite", ".loft/locks", ".loft/tmp"]

@@ -1,0 +1,23 @@
+schema_version = 1
+
+[project]
+name = "RH"
+id = "prj_01kt47pe9xhg2qcjq46h8nhrdx"
+
+[ids]
+issue_prefix = "iss"
+transaction_prefix = "tx"
+event_prefix = "evt"
+comment_prefix = "cmt"
+evidence_prefix = "evd"
+lease_prefix = "lea"
+
+[defaults]
+priority = 2
+type = "task"
+
+[labels]
+max_labels_per_issue = 64
+
+[runtime]
+default_lease_ttl_seconds = 1800

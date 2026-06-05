@@ -1,0 +1,25 @@
+.lake/
+build/
+*.olean
+*.ilean
+*.c
+*.trace
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Experiment outputs can be regenerated unless explicitly promoted.
+scripts/**/outputs/
+notebooks/**/.ipynb_checkpoints/
+
+# WhippleScript durable local stores are runtime state.
+.whipplescript/*.sqlite
+.whipplescript/*.sqlite-*
+
+# Loft canonical transactions are commit-worthy; projections/runtime are not.
+.loft/index.sqlite
+.loft/runtime.sqlite
+.loft/locks/
+.loft/tmp/
