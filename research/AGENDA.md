@@ -65,22 +65,26 @@ but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽
 constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
 
-R7. **[CONSTRUCTION · the archimedean degenerating FAMILY `𝒮_t` of `S²/ℤ` — NOW THE TOP ITEM (R6 DONE:
-   honest negative, obstruction RECURS one dim up)]** R6 (DONE) DECIDED R5's lead: the surface supplies the
-   **rank room** (`gr^W_2 = H^1⊗H^1`, rank `(2g)² ≥ 4`) but **NOT the degeneration** — the **smooth** surface
-   `C×C`/`S²/ℤ` has `gr^W_2` **PURE** of weight 2 (`|αᵢαⱼ|=q` exactly, Weil II), monodromy `N=0`, `M(0)` a
-   single weight, **no symmetric split**, exactly as the smooth orbit (R4/R5). A nonzero `N` is **not** a
-   property of a smooth fiber of ANY dimension; it is the log-monodromy of a **degenerating family** with a
-   special fiber. So the `𝔽₁`/no-special-fiber obstruction is **NOT relieved by `orbit→surface`; it is
-   RELOCATED to `surface→family-of-surfaces`** (same atom, one dim up). **R7's task:** does an **archimedean
-   degenerating family `𝒮_t` of `S²/ℤ`** (a 1-parameter family over an archimedean disk acquiring a
-   singularity, with a **special fiber over a finite base size** at `t=0`) exist at `∞` — the analogue of
-   `C×C`'s node-degeneration — supplying the nearby-cycle `N` with `M(N)=W` that the *static* smooth surface
-   provably cannot? Anchor on `𝔽_q`: the `C×C` node lives in a FAMILY with a special fiber over a finite
-   residue field (base size `q`); does the archimedean `𝒮_t` inherit a special fiber, or is "no special fiber
-   over a finite base at `∞`" the irreducible `𝔽₁`-terminus the four discretizations (R3/R3b/R4) and the
-   dimension lift (R5/R6) all converge on? (falsify: the family must be DH-vacuous — no `H^1` ⟹ no `H^1⊗H^1`
-   ⟹ no surface ⟹ no family to degenerate, two levels before the radius.)
+R8. **[CONSTRUCTION · supply the FINITE residue-field cardinality `|κ(t=0)|=q` at the archimedean special
+   fiber — NOW THE TOP ITEM (R7 DONE: the family + `N` + `M(N)=W` are all FREE; the residue is ONE
+   cardinality)]** R7 (DONE) decided R6's lead and REFINED it: the archimedean degenerating family `𝒮_t` of
+   `S²/ℤ` **EXISTS** and **carries the nearby-cycle `N` with `M(N)=W` for FREE** (Schmid's nilpotent orbit
+   theorem at `∞`) — R6's "the family is missing" was too strong. The radius `q^{w/2}` is supplied by
+   **neither `N` nor `M(N)=W`** (both free integer-weight data) but by the **cardinality of the residue field
+   of the closed point** `t=0`: finite `𝔽_q` over a function field (radius `=√q`, MARKED, via the geometric
+   Frobenius of `𝔽_q`) vs the continuum `ℂ` at `∞` (no Frobenius, no `q`, radius UNMARKED). So the `𝔽₁` atom
+   is now in its **FINAL FORM** — a single cardinality invariant `|κ(t=0)|`, i.e. "the archimedean place of
+   `Spec ℤ` has no finite residue field at its compactified point." **R8's task:** does the Connes–Consani
+   `𝔽₁`-geometry / scaling site / the `q→1` limit SUPPLY a finite closed-point cardinality at the archimedean
+   special fiber of `𝒮_t` (the missing `|κ(t=0)|=q`-analogue that converts the free weight `w` to the radius
+   `q^{w/2}`), or is "no finite residue-field cardinality at `∞`" the **proven irreducible terminus** = the
+   precise `𝔽₁`-content of RH? Anchor on `𝔽_q`: there the special fiber's residue field `𝔽_q` IS the base
+   size that marks the radius; the question is whether the `𝔽₁`/scaling-site machinery (R3's `ℝ_{>0}^×`
+   grading, R3b's `{log p}` edge, R3b-BC's `ℕˣ` — all the free pieces) can be assembled into a **finite
+   `|κ|`** at `t=0`, or whether `𝔽₁` is exactly "the `q→1` limit DELETES the ground-field cardinality"
+   (R3b-BC's verdict), making the radius irreducibly unmarked. (falsify: the supplied cardinality must be
+   DH-distinguishing — DH has no `H^1` ⟹ no surface ⟹ no family ⟹ no special fiber ⟹ no `|κ(t=0)|` to set,
+   three levels before the radius.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -311,6 +315,44 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R7 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the archimedean degenerating
+  FAMILY `𝒮_t` of `S²/ℤ` EXISTS and carries `N` with `M(N)=W` for FREE (Schmid); what is missing is the
+  FINITE RESIDUE FIELD of its special fiber — the residue reaches its FINAL FORM, a single cardinality
+  `|κ(t=0)|`.** [DECISION · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R7-archimedean-degenerating-family.md`,
+  `scripts/numerics/witness/archimedean_degenerating_family.py` (+1 `falsify.py` row → 43rd wall,
+  DISPERSING-by-design = terminus-characterizer, Euler-silent like R1–R6). **What got DECIDED (exact
+  `𝔽_q`-vs-`∞` residue-field linear algebra, no zeros assumed):** R6's "the family is missing" was **too
+  strong**. R7 separates, at the special fiber, two data R6 conflated. **[A]** the family's **nearby-cycle
+  `N=log T_unip` EXISTS and `M(N)=W` HOLDS at `∞`** — Schmid's **nilpotent orbit theorem** (1973) produces a
+  limit MHS with `N` whose monodromy filtration `=W`; the Jordan-2 nearby cycle on `gr^W_2` gives the
+  symmetric split `M(N)={1:1,3:1}` (computed), **base-field-FREE**, present at `𝔽_q` AND `∞`. The family + `N`
+  + the integer weight grading cost **nothing**. **[B]** over `𝔽_q` the closed point `t=0` has a **FINITE**
+  residue field `𝔽_q`; `T` = geometric Frobenius; the radius `q^{w/2}` IS the residue-field cardinality
+  (computed `q=4,9,25` → radius `√q=2,3,5`, MARKED). **[C]** at `∞` the closed point of the complex disk
+  `𝔻={|t|<1}` has residue field `κ=ℂ` — the **continuum**, char `0`, INFINITE, NOT a finite `𝔽_q`: `N` +
+  `M(N)=W` are present (the grading is free) but there is **no Frobenius of `ℂ`, no `q`, no `q^{w/2}`** — the
+  radius is **UNMARKED** (the `SL(2)`/Schmid splitting places graded pieces by `(p,q)`-Hodge type, not at a
+  metric radius read off a finite `|κ|`). **[D]** DH-vacuous THREE levels before the radius: no `H¹` ⟹ no
+  `H¹⊗H¹` ⟹ no surface ⟹ no family. **Falsifier verdict:** EULER-BORNE NO on this pass (characterizes the
+  residue via `𝔽_q`-vs-`∞` residue-field algebra; not a `ℤ`-positivity), SEES-ZEROS YES (radius `q^{w/2}` =
+  even split = purity = where the zeros sit), INDEPENDENT NO (radius `= M(N)=W` = Weil II = the solved case;
+  over `ℤ` this is RH) → DISPERSING-by-design. **Ladder `DH < ζ < FF`:** DH no `H¹` (three levels before the
+  family); `ζ` an archimedean family `𝒮_t` WITH `N` and `M(N)=W` (Schmid, FREE) but residue field `ℂ` at
+  `t=0`, radius UNMARKED; FF a family `C×C` over `𝔽_q[[t]]` WITH `N`, `M(N)=W`, AND a finite residue field
+  `𝔽_q`, Frobenius converting `w → q^{w/2}`, radius MARKED by `|κ|=q`. **NEW content (REFINES R6):** the
+  construction does **NOT fail to exist** (family + `N` exist) — it fails to be **MARKED**. The radius is
+  supplied by **neither `N` nor `M(N)=W`** but by `|κ(t=0)|`; the whole R-thread (R3 scaling, R3b length,
+  R3b-BC `ℕˣ`, R4 orbit-`N`, R6 surface, R7 family) supplies the grading/phase/discreteness/edge/nilpotent/
+  `M(N)=W` ALL free, and converges on **ONE** missing datum: a finite residue-field cardinality. **RH over
+  `ℤ` = "the archimedean special fiber acquires a finite base size"** = the `𝔽₁`/`\overline{Spec ℤ}` missing
+  closed-point cardinality. **Not overclaimed:** R7 does not prove no finite base size can be manufactured at
+  `∞`; it pins the open problem to the sharpest target — a single cardinality invariant `|κ(t=0)|`.
+  **Successor:** R8 promoted to TOP ITEM [CONSTRUCTION — does the Connes–Consani `𝔽₁`-geometry / scaling site
+  / the `q→1` limit SUPPLY a finite closed-point cardinality `|κ(t=0)|=q` at the archimedean special fiber, or
+  is "no finite residue-field cardinality at `∞`" the proven irreducible `𝔽₁`-terminus = the precise content
+  of RH?].
 
 - **2026-06-06 — R6 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the SURFACE `S²/ℤ` does NOT
   relieve R5's lead — the no-special-fiber (`𝔽₁`) obstruction RECURS in dimension 2.** [DECISION · DEF ·
