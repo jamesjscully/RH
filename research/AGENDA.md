@@ -32,39 +32,24 @@ the strongest naming of the wall yet [THM]: **Sylvester's law of inertia holds f
 plant pairs against must itself DEPEND ON THE ZERO LOCATIONS** = the operator domination `A ⪰ P` /
 `W_∞ ≥ Σ_p W_p` directly, NOT any congruence/self-pairing of a fixed form.
 
-1. **[CONSTRUCT · load-bearing — candidate (b) is the ONLY surviving form-carries-zeros object: the
-   RESONANCE KERNEL `K_ij = Σ_ρ φ̂(γ_ρ; cᵢ) φ̂(γ_ρ; cⱼ)` summed over the ACTUAL zero set]** Item #1's
-   candidate (a) — the Weil form `W = A − P` — was REFUTED (`operator_domination.py`, DONE top): for the
-   Euler-borne arithmetic `P` (built from `Λ(n)`) the form is zero-location-INDEPENDENT (RH-silent —
-   `Λ(n)` is a property of the Euler PRODUCT, not of where the zeros sit; verified `P` has no `β` knob);
-   for the zero-bearing spectral `P_spec` it IS the zero side = the Weil positivity (circular). NO single
-   `P` is both Euler-borne-independent AND zero-bearing. **The remaining named candidate is (b): a Gram of
-   the ZEROS themselves**, `K_ij = Σ_ρ φ̂(γ_ρ; cᵢ) φ̂(γ_ρ; cⱼ)`, whose signature is `(0,N,0)` (PSD) iff all
-   `γ_ρ` real. This DOES carry the zero locations by construction — but the falsifier must decide whether
-   it is **independent** or merely `= weil_form.py`'s spectral side (= the Weil/Li positivity, CIRCULAR).
-   The honest prior (from `operator_domination.py`): any object reading the zero LOCATIONS directly will
-   BE the zero side = circular; the discriminator is whether `K` has an INDEPENDENT positivity certificate
-   (a reason `γ_ρ` are real that is not "assume the Gram is PSD"). Build `K`, run `falsify.py`; if circular
-   (likely), that CLOSES the entire "form-carries-the-zeros" branch — wall fully named: zero locations live
-   in the zeros, Euler data in the primes, coupling them = the missing object (no finite-rank real/complex
-   form bridges them).
-2. **[ANALYTIC · load-bearing — the cross-place coupling as an INEQUALITY over a POSITIVITY CONE, not a
-   one-place Gram; the place-COUNT accumulation]** `operator_domination.py` found `A ⪰ P` does not
-   discriminate ζ from DH at one place (both `W` indefinite, like `semilocal_2.py`) — the prime
-   perturbation is too weak at one place. Sharpen: test the SCALAR Weil inequality `W_∞(h) ≥ Σ_p W_p(h)`
-   as `h` ranges over the POSITIVITY-CONSTRAINED test cone `{ĥ ≥ 0}` (the Cohn–Elkies/Beurling–Selberg
-   cone — `fourier_optimization.py`). Sweep the place set `S = {2,3,5,…}`: find `|S|` where the
-   cone-optimal `W_∞ − Σ_{p∈S} W_p` first goes NEGATIVE for DH (mixed-sign `c_DH`) while staying `≥0` for
-   ζ (`Λ ≥ 0`) — the accumulation Worker C named (`positivity-program.md` §K: DH fails first at Li index
-   `n≈521` = many primes). This is the value-gap-becomes-a-sign question, now over the cone. `falsify.py`.
-3. **[CONSTRUCT · the form must DEPEND ON zero locations — now ONLY via the zeros (candidate (b)), all
-   prime-side routes closed]** Superseded by the new #1 (the resonance-kernel candidate (b) is its
-   executable head). The structural lesson `operator_domination.py` locked in: the unified self-pairing
-   wall (Sylvester locks every congruence, 26 confs) AND the non-congruence difference `A−P` (this work)
-   BOTH fail to produce a `P`/form that is simultaneously Euler-borne, independent, and zero-tracking.
-   The Euler-borne prime data is structurally zero-location-blind; the only zero-tracking object is the
-   zero side (circular). Keep as the standing frame for #1.
-3. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
+1. **[ANALYTIC · load-bearing — the cross-place coupling as an INEQUALITY over a POSITIVITY CONE, not a
+   one-place Gram; the place-COUNT accumulation. NOW THE TOP LIVE ROUTE: both single-form branches are
+   closed (candidate (a) prime side RH-silent, candidate (b) zero side circular+not-Euler-borne —
+   `resonance_kernel.py`, DONE top). The coupling is an INEQUALITY between the two sides, not a single
+   form.]** `operator_domination.py` found `A ⪰ P` does not discriminate ζ from DH at one place (both
+   `W` indefinite, like `semilocal_2.py`) — the prime perturbation is too weak at one place. Sharpen:
+   test the SCALAR Weil inequality `W_∞(h) ≥ Σ_p W_p(h)` as `h` ranges over the POSITIVITY-CONSTRAINED
+   test cone `{ĥ ≥ 0}` (the Cohn–Elkies/Beurling–Selberg cone — `fourier_optimization.py`). Sweep the
+   place set `S = {2,3,5,…}`: find `|S|` where the cone-optimal `W_∞ − Σ_{p∈S} W_p` first goes NEGATIVE
+   for DH (mixed-sign `c_DH`) while staying `≥0` for ζ (`Λ ≥ 0`) — the accumulation Worker C named
+   (`positivity-program.md` §K: DH fails first at Li index `n≈521` = many primes). This is the
+   value-gap-becomes-a-sign question, now over the cone. `falsify.py`. **Why this is now the head:** the
+   resonance-kernel close pinned that no single finite-rank form is simultaneously Euler-borne (primes),
+   independent, AND zero-tracking (zeros). The coupling MUST be the INEQUALITY relating the Euler-borne
+   prime side `Σ_p W_p` to the zero-tracking archimedean+zero side `W_∞` — exactly this cone-domination,
+   where the Euler-borne `Λ ≥ 0` (vs mixed-sign `c_DH`) is what makes ζ satisfy a bound DH violates. This
+   is the FIRST candidate that is BOTH sides at once (an inequality, not a form).
+2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
 4. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
@@ -82,6 +67,37 @@ plant pairs against must itself DEPEND ON THE ZERO LOCATIONS** = the operator do
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Built NEXT #1's candidate (b), the RESONANCE KERNEL `K = VᵀV` (a Gram of the ZEROS,
+  `V_{ρ,i}=φ̂(γ_ρ;cᵢ)`), and CLOSED the entire "form-carries-the-zeros" branch: `K` SEES the zeros but IS
+  the Weil zero side (circular) AND reads the zeros directly, agnostic to the Euler product (NOT
+  Euler-borne) — the dual of candidate (a)'s prime side, the two PINCER the wall.** [CONSTRUCT ·
+  load-bearing → both single-form branches closed; the coupling is an INEQUALITY between the two sides,
+  not a single form]. `scripts/numerics/witness/resonance_kernel.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-resonance-kernel.md`. **Finding [THM+computed]:** `K = VᵀV` is the
+  **SYMMETRIC** Gram (NOT Hermitian `V*V` — the Weil form uses the even `ĥ(γ_ρ)`, no conjugation; this
+  is load-bearing: symmetric off-line min eig `−0.0024` vs Hermitian `+1.4e-7` which would MISS the
+  flip). **COMPUTED (5 centers, width 0.05, 200 ζ zeros):** TRUE zeros `sig(K)=(5,0,0)` PSD, min eig
+  `+0.0067` (a Gram of REAL vectors); plant off-line `β=0.8` → one row of `V` COMPLEX, contribution
+  `v vᵀ+v̄ v̄ᵀ=2(a aᵀ−b bᵀ)` INDEFINITE, `sig→(4,0,1)`, min eig `−0.0024<0` — **SEES-ZEROS YES**. **THE
+  DECISIVE IDENTITY (verified to `1.4e-17`):** for any `x`, `xᵀKx=Σ_ρ g(γ_ρ)²` with
+  `g(γ)=Σ_i x_i φ̂(γ;cᵢ)` — EXACTLY the Weil explicit-formula ZERO SIDE = `weil_form.py`'s spectral form.
+  `K` is its Gram representation; PSD-ness of `K`= "every `γ_ρ` real" = RH, with NO independent
+  certificate (`K=VᵀV` PSD iff `V` real iff zeros real; a certificate would BE a proof of RH) →
+  **INDEPENDENT NO / CIRCULAR**. **AND NOT EULER-BORNE:** `K` is built from the ZEROS ONLY, never
+  references `Λ(n)`; a DH-like zero multiset (off-line zeros, no Euler product) is equally constructible
+  and gives `K` indefinite `(4,0,1)`, min eig `−0.009` — `K` reads whatever zeros it is handed, a
+  ZERO-SIDE detector (like the Li coefficients), NOT an Euler-product detector. **Verdict: Euler-borne
+  NO, sees-zeros YES, independent NO → DISPERSING (Euler axis) / CIRCULAR. 28th confirmation.**
+  **DECISIVE LESSON — the two candidates PINCER the wall, branch CLOSED:** candidate (a) = the prime
+  side `A−P` (Euler-borne YES, zero-location-blind, RH-silent); candidate (b) = the zero side `K=VᵀV`
+  (sees-zeros YES, circular, NOT Euler-borne). **No finite-rank real/complex form is simultaneously
+  Euler-borne, independent, AND zero-tracking** — zero locations live in the ZEROS, Euler data in the
+  PRIMES; the only object coupling them is the INEQUALITY `W_∞ ≥ Σ_p W_p` (= the missing object).
+  Re-promotes the cone-optimized scalar `W_∞ ≥ Σ_p W_p` place-count sweep to NEXT #1 as the FIRST
+  candidate that is BOTH sides at once (an inequality, not a form). Honest subtlety: the flip needs a
+  test-basis non-vanishing at `γ≈14–50` (`width 0.05`, not the wide `0.35` of `operator_domination.py`
+  which collapses `K` to `O(1e-12)`); load-bearing EXACT facts are the identity `1.4e-17`, the
+  symmetric/Hermitian split, the on→off flip `(5,0,0)→(4,0,1)`, and the DH-constructibility `(4,0,1)`.
 - **2026-06-06 — Built NEXT #1's CORRECTED target DIRECTLY (the operator inequality `A ⪰ P`, the form
   `W = A − P` being NON-congruence so Sylvester is inapplicable) and REFUTED the agenda's hope: the
   arithmetic prime form `P` is zero-location-INDEPENDENT (`Λ(n)` is a property of the Euler PRODUCT, not
