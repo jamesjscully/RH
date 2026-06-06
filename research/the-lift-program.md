@@ -100,3 +100,27 @@ Concretely next: (a) write the scattering kernel of the scale-invariant boundary
 its resonance condition; (b) feed ζ's and DH's archimedean+Euler data through it; (c) certify on real
 ζ whether the resonances land on the line for ζ and off for DH. That is step 1 of actually building
 the object — not characterizing the wall, building the first stone.
+
+## 7. Construction status — the stones (updated 2026-06-06)
+
+The construction was attempted, stone by stone, each kill-tested. (Logs: `2026-06-06-scattering-
+stone1.md`, `-stone2.md`, `-stone3.md`.)
+
+- **Stone 1 — `S(s) = Λ(2s−1)/Λ(2s)` [BUILT, `scattering.py`].** The conformal-boundary scattering
+  operator: resonances = zeros, unitary on `Re ½`. **Kill-test result:** the unitary/self-adjoint
+  structure is **RH-neutral** (holds verbatim for an off-line-zero function) — `S(s)` *reflects* the
+  zeros but does not *force* them. (Lax–Phillips obstruction, made precise; 4th confirmation the
+  archimedean/FE data is RH-neutral.)
+- **Stone 2 — the forcing functional [BUILT, `scattering_forcing.py`].** `λ_n = Σ_ρ[1−(1−1/ρ)^n] ≥ 0
+  ∀n ⟺ RH`, Euler-product-borne, **passes the kill-test** (off-line quadruple drives `λ_n<0`). But
+  `λ_n ≥ 0` *for ζ* **is RH itself** (Li 1997) — a correct forcing functional whose positivity is the
+  unproven core, **not a free proof**.
+- **Stone 3 — the positive Green form / metric `h_∞` [FRONTIER, `2026-06-06-stone3.md`].** A geometric
+  proof of `λ_n ≥ 0` = the missing object. Reduces (reliably, via `weil_form.py`'s PSD result) to:
+  **the archimedean positivity (CC20's `W_∞ ≥ Tr(ϑSϑ*) ≥ 0`) must dominate the prime sum, uniformly
+  and equivariantly.** CC20 did one place; the global/equivariant/prime extension is open = RH = BGS
+  §6.3 (positive Green forms can fail). This is where computation hands off to theory; the kill-test
+  scaffold (`scattering_forcing.py`, `S_offline`) is in place to test future candidates.
+
+**Net:** the construction has a built, kill-test-passing spine (stones 1–2), with the entire
+difficulty isolated to stone 3 — one geometric positivity — and a precise spec + graveyard for it.
