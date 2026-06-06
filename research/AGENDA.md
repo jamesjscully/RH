@@ -50,22 +50,25 @@ ONE positivity. **It is NOT circular to attack** because in classical Hodge theo
 **Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
 zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
 
-K2r-split. **[KEYSTONE · the relocated residue — load-bearing, HIGH priority]** K2r (DONE) FACTORED the
-   radius assembly: the Euler assembly of the Satake products supplies the weight-2 **EDGE** = the
-   determinant `|α(p)β(p)|=p^{k−1}`, UNIFORM across all primes, Euler-borne, **RH-FREE** (the cross-place
-   coupling is the FREE half) — but NOT the **even split** `|α|=|β|=p^{(k−1)/2}` (= the purity `(·)^{1/2}` =
-   Ramanujan/RH). The residue RELOCATED to the **per-prime even-splitting** of the assembled edge. ATTACK:
-   is the even split of the determinant line `p^{k−1}` into two EQUAL weight-1 factors forced by ANY
-   geometric/condensed structure on the weight-2 carrier (a real structure / `*`-involution on the
-   determinant line whose fixed locus is `|α|=|β|`), or is it the irreducible RH? (falsify: the forcing
-   structure must be Euler-borne + DH-absent + see the off-Ramanujan plant the determinant edge is blind to.)
+K2r-fix. **[KEYSTONE · the reality datum — load-bearing, HIGH priority]** K2r-split (DONE) showed the
+   `*`-involution `σ_d(z)=d/\bar z` (the polarization DUALITY on the determinant line) EXISTS FOR FREE from
+   the Euler-borne determinant edge `d=p^{k−1}`, is `*`-clean (NOT a metric, §0-compliant), and its fixed
+   locus IS the even split `|α|=|β|=√d` — **but a duality does NOT force its own fixed points**: an
+   off-Ramanujan plant (same `d`, same `σ_d`) is NOT `σ_d`-fixed. The residue RELOCATED to the **reality
+   condition "Frobenius ∈ `Fix(σ_d)`"** = `|α|=√d` = RH; over `𝔽_q` this is the `q`-Weil-number theorem
+   (Frobenius commutes with geometric conjugation = the **reality of the realization**, Deligne purity).
+   ATTACK: is there a **condensed/real structure** on the weight-2 carrier over `ℤ` whose **descent datum**
+   (the real points / the `c`-fixed locus, M3b's `κ`) *forces* the Satake pair to be `σ_d`-fixed — or is
+   that real structure itself only available AFTER purity? (falsify: the reality datum must be Euler-borne +
+   DH-absent + see the off-Ramanujan plant the determinant edge / `σ_d` is blind to.)
 K2. **[KEYSTONE · condensed — the live framework, RE-POINTED by K1]** Realize the archimedean Kähler form in
    **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms + the "archimedean
    Deligne–Illusie ⟶ Kähler" open question) — **as a canonical Weil operator `C_W` (K1's finding), NOT a
-   Green form**. The condensed object must PRODUCE the **EVEN SPLIT** of the Euler-assembled weight-2
-   determinant edge `p^{k−1}` (K2r: the edge assembles for FREE; the residue is the even split into two
-   equal weight-1 factors), not a metric — `C_W`'s radius = that split. This is the one framework the audit
-   flagged as right-kind-untried — now with the determinant-edge even-split as the precise target.
+   Green form**. The condensed object must produce NOT the `*`-involution `σ_d` (K2r-split: free from the
+   determinant edge) but the **reality/fixed-point condition "Frobenius ∈ `Fix(σ_d)`"** — the `q`-Weil-number
+   analogue over `ℤ` (Frobenius commutes with geometric conjugation), `C_W`'s radius = that fixedness. This
+   is the one framework the audit flagged as right-kind-untried — now with the Frobenius-fixedness/reality
+   datum (not the free involution, not the free edge) as the precise target.
 K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1]** The forcing lemma "archimedean Kähler ⟹ `c=D`" is
    the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT here).
    BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
@@ -224,6 +227,42 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — K2r-split [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: attacked the relocated
+  residue with the charter §0 design law (the polarization must be a `*`-INVOLUTION / duality, NOT a metric)
+  and found the §0 duality is the FREE half — the `*`-involution `σ_d(z)=d/\bar z` (the polarization/Rosati
+  adjoint on the weight-2 determinant line) EXISTS FOR FREE from the Euler-borne determinant edge `d=p^{k−1}`,
+  is `*`-clean (involutive + antilinear, NOT a metric), and its fixed locus IS the even split — BUT its
+  existence does NOT FORCE the Frobenius/Satake pair onto `Fix(σ_d)`; "the pair lies on `Fix(σ_d)`" is the
+  irreducible RH.** [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ].
+  `research/construction/K2r-split-even-split-involution.md`,
+  `scripts/numerics/witness/cw_even_split_involution.py` (+1 `falsify.py` row → 52, CIRCULAR). **What got
+  CHECKED (f=Δ, arithmetic Satake, exact mpmath 40dps, primes 2..19; 5 Weil curves; DH type-level):** **[1]**
+  `σ_d(z)=d/\bar z` is a GENUINE `*`-involution — `σ_d∘σ_d=id` to `~1e-34`, ANTILINEAR (a `*`-structure, the
+  thing a metric is NOT, §0), definable from the determinant `d=p^{k−1}` (K2r's Euler-borne edge) ALONE with
+  NO radius input, `Fix(σ_d)={|z|=√d}`=the even-split radius → **the DUALITY is the FREE half**. **[2]**
+  `Fix(σ_d)` on a det-`d` pair == the even split `|α|=|β|=√d`; the genuine Ramanujan pair LIES on `Fix(σ_d)`
+  (True all primes = Deligne) but this is a SEPARATE condition `|α|=√d`, NOT forced by `σ_d`'s existence.
+  **[3]** PLANT off-Ramanujan at `p=11` (`δ=0.3`): determinant `285311670611=p^{11}` PRESERVED → `σ_d`
+  UNCHANGED (exists verbatim), but `|α′|=1065761≠|β′|=267707≠√d=534146` → pair NOT on `Fix(σ_d)`: the duality
+  EXISTS but does NOT FORCE the pair onto its fixed locus. **[4]** FF ANCHOR: over `𝔽_q` the pair is on
+  `Fix(σ_q)` UNCONDITIONALLY — but NOT because `σ_q` forces it: because the Frobenius is a `q`-WEIL NUMBER
+  (`|α|=√q`), Deligne's purity = RH for the curve, a THEOREM EXTERNAL to `σ_q` (5 curves). **[5]** DH: no
+  Euler product → no Satake → no determinant `d` → `σ_d` has EMPTY DOMAIN (it is BUILT from `d`): even the
+  FREE half (the duality) does not exist for DH; carrier ladder DH<ζ<FF. **Falsifier verdict
+  (anchor/coherence):** EULER-BORNE YES (`σ_d` built from `d`; DH no `d`→no `σ_d`), SEES-ZEROS YES (pair-on-
+  `Fix` moves under the plant; `σ_d` itself blind), INDEPENDENT NO (pair-on-`Fix`=`|α|=√d`=Ramanujan/RH) →
+  **CIRCULAR**, sharpened to "the DUALITY is free and `*`-clean; the Frobenius's FIXEDNESS under it is the
+  irreducible RH". **NEW content:** the charter §0 design law shows its TEETH — a `*`-involution (duality,
+  not metric) is exactly the right structure and is FREE from the Euler-borne determinant edge, but **a
+  duality cannot force its own fixed points**; RH RELOCATES to its sharpest form: **"the Frobenius/Satake
+  pair is a FIXED POINT of the polarization duality `σ_d`"**, over `𝔽_q` the `q`-Weil-number theorem
+  (Frobenius commutes with geometric conjugation = the reality of the realization), over `ℤ` the open RH.
+  **Successors added:** K2r-fix [the reality datum — is "Frobenius ∈ `Fix(σ_d)`" a `Gal`/descent condition
+  supplied by a condensed/real structure (M3b's `κ`, the `c`-fixed locus) over `ℤ`, or only available after
+  purity?]; K2 re-pointed (the condensed object must produce the FIXED-POINT/reality condition, not the free
+  involution `σ_d` nor the free edge); K3 unchanged (forcing free given `C_W`; `C_W`'s radius = the
+  Frobenius's `σ_d`-fixedness).
 
 - **2026-06-06 — K2r [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: executed the named residue —
   assemble `C_W`'s RADIUS over `ℤ` from the per-prime Satake products `αᵢ(p)αⱼ(p)` — and FACTORED the
