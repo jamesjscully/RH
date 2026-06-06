@@ -67,6 +67,16 @@ sequence flow shows finite Jensen polynomials are robustly hyperbolic; criticali
 
 ## 5. The two genuine frontiers (both RH-hard, open)
 
+> **The missing object is now characterized precisely** — `research/literature/the-missing-object.md`
+> (synthesis) and the three deep-dives (`arakelov-arithmetic-surface.md`,
+> `connes-consani-scaling-site.md`, `deninger-spectral-cohomology.md`), plus its computable analytic
+> shadow (`weil_form.py`: the Weil form is the demonstrated RH-detector). All three programs build the
+> object's points, Frobenius flow, and Lefschetz/trace identity, and converge on the **same
+> irreducible gap**: the **`H¹` on the square `S²` (the arithmetic `C×C`) carrying the zeros — and
+> its intersection positivity (`= RH`) — does not exist**, and (BGS §6.3) cannot hold for formal
+> reasons, so a genuine geometry over `Spec ℤ` (`𝔽₁`) is required.
+
+
 1. **The missing arithmetic object** — the geometric/analytic routes all land here: a positive Green
    form (BGS §6.3) / the archimedean Weil positivity / the intersection positivity on `C×C`. This is
    the `𝔽₁` / Connes–Consani / Deninger program — the deepest open problem in the subject.
