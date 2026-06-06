@@ -74,30 +74,33 @@ furnish a finite `|constant field|`. The residue is now: "`Spec ℤ` has no fini
 Borger Λ-ring/big-Witt ghosts, the Connes–Consani `\overline{Spec ℤ}` archimedean component — and the
 obstruction RECURRED: every named 𝔽₁ field of constants is INFINITE (`μ_∞=ℚ/ℤ` countable, the Witt ghosts
 an `ℕ`-indexed product with one Frobenius per prime, the Arakelov `∞`-component `ℝ/ℂ` a continuum). The
-sharpened residue: not merely "wrong type" but "every named 𝔽₁-constant object is INFINITE." R10 (TOP) asks
-whether the finiteness can be FORCED by COMPACTNESS rather than read off a constant field — the spectral/
-trace-class route (a finite-trace operator / a determinant), the one direction a colimit/product/completion
-cannot block.**
+sharpened residue: not merely "wrong type" but "every named 𝔽₁-constant object is INFINITE." R10 (DONE)
+asked whether finiteness can be FORCED by COMPACTNESS rather than a constant field — and found compactness
+SUPPLIES a finiteness cardinality could not (Connes' regularized trace = the explicit formula = the LOCATION
+count) but SPLITS on the radius: `det_∞` is FE-symmetric so the radius is the FE-fixed locus; the radius =
+purity is a SEPARATE input (finite-rank is radius-silent — the off-circle perturbation stays nuclear). The
+residue is now "purity ON Connes' discrete spectrum" = the archimedean `N` (R1) ON the trace-class carrier
+(R10) = the SAME object the K-thread's Hodge–Riemann `P_∞ ⪰ 0` names. R11 (TOP) fuses them.**
 
-R10. **[CONSTRUCTION · the COMPACTNESS reading — can FINITENESS be forced by a finite-trace (compact/
-   nuclear) structure at `∞` instead of a constant-field cardinality? — NOW THE TOP ITEM (R9 DONE: every
-   named 𝔽₁-tower constant field is INFINITE; the obstruction RECURRED)]** R9 (DONE) verified the three
-   constructions that most directly PROPOSE a field of constants for `Spec ℤ` are each INFINITE — `μ_∞=ℚ/ℤ`
-   (countable colimit), the big-Witt ghosts (`ℕ`-indexed product, one Frobenius per prime), the Arakelov
-   `∞`-component (`ℝ/ℂ`, a continuum + a metric, doubly dead by §0). So a **finite cardinality** is NOT
-   suppliable by any 𝔽₁ field-of-constants tower. **R10's reframing:** the radius `q^{w/2}` needs a FINITE
-   datum, but finiteness need not be a *cardinality* — over `𝔽_q` the radius is the trace/determinant of a
-   single Frobenius (`Tr(Fr|H^1)`, `det(1−Fr·T)`), a **finite-rank / finite-trace** datum. At `∞` the analogue
-   is a **nuclear/trace-class operator** (Connes' trace formula: the zeros as the spectrum of an action on the
-   adele-class space; the "finite size" = a regularized determinant, not a `|field|`). R10's task: is there a
-   **compact/finite-trace** archimedean structure whose regularized determinant MARKS the radius `q^{w/2}`
-   without invoking a constant field — i.e. does COMPACTNESS (the one finiteness a colimit/product/continuum
-   cannot block) supply what the cardinality could not? Anchor on `𝔽_q`: there `det(1−Fr·T|H^1)` is the
-   numerator of the zeta factor, a FINITE polynomial whose roots have `|α|=q^{w/2}` — a finite-TRACE datum, NOT
-   a cardinality of constants; the question is whether the archimedean regularized determinant `det_∞` is
-   ALSO finite-trace (Connes' `H^1_∞` = a nuclear space?) and marks the same radius. (falsify: the trace-class
-   structure must be DH-distinguishing — DH has no Euler product ⟹ no Frobenius ⟹ no `det(1−Fr·T)` ⟹ no
-   numerator polynomial ⟹ nothing for a regularized determinant to be the `∞`-analogue OF.)
+R11. **[CONSTRUCTION · the R/K convergence — supply PURITY (the modulus bound) ON Connes' trace-class
+   spectrum as a Hodge–Riemann positivity, NOT the location count — NOW THE TOP ITEM (R10 DONE: compactness
+   supplies the trace/count, RADIUS-SILENT; finite-rank does not force purity)]** R10 (DONE) classified the
+   compactness reading: the regularized trace `det_∞` EXISTS (a finiteness colimit/product/continuum cannot
+   block) and reproduces the Weil explicit formula = the LOCATION/count, but it is FE-symmetric so the radius
+   `Re s=½` it would mark is the FE-fixed locus (DH-shared, free); finite-RANK is RADIUS-SILENT (the off-circle
+   non-pure perturbation stays nuclear, COMPUTED). The radius = purity = `M(N)=W` is a SEPARATE input the
+   trace/determinant does not carry. **R11's fusion:** the residue "purity ON the discrete archimedean
+   spectrum" is named IDENTICALLY by two threads — the R-thread's archimedean `N` (R1) ON Connes' spectrum,
+   and the K-thread's keystone `P_∞ ⪰ 0` (K3/K7, the Hodge–Riemann modulus bound, NOT a count). R11's task:
+   realize M3's Weil/Hodge `C_W` (the `(p,q)` polarization at `∞`) as an operator ON Connes' trace-class
+   adele-class spectrum, so the Hodge–Riemann positivity `E(C_W·,·̄) ⪰ 0` IS the modulus bound `|α|=q^{w/2}`
+   on that spectrum (the radius), supplied as a *spectral positivity* distinct from the FE-symmetric trace
+   (the count). Anchor on `𝔽_q`: there the Hodge index ON `H¹` (the Weil pairing `Tr(φφ†)`) IS the purity
+   `|αᵢ|=√q` — a positivity ON the finite spectrum that is the radius, NOT the point-count trace; R11 must
+   build the `∞`-analogue ON Connes' (infinite, nuclear) spectrum. (falsify: the spectral positivity must be
+   DH-distinguishing — DH has no Frobenius spectrum ⟹ no `C_W` ⟹ no Hodge–Riemann form ⟹ nothing for the
+   modulus bound to be positive ON; and it must SEE the zero locations via `c=D` while being radius-marking,
+   not the FE-shared count.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -328,6 +331,57 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R10 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the COMPACTNESS reading —
+  can a finite-TRACE (nuclear / regularized-determinant) structure at `∞` force the radius where a
+  constant-field CARDINALITY (R8/R9) could not? COMPACTNESS SUPPLIES a finiteness the cardinality route
+  could not (Connes' regularized trace = the Weil explicit formula = the LOCATION/count, a finiteness a
+  colimit/product/continuum cannot block) but SPLITS on the RADIUS: `det_∞` is FE-symmetric ⟹ the radius
+  `Re s=½` is the FE-fixed locus; finite-RANK is RADIUS-SILENT (the off-circle non-pure perturbation stays
+  nuclear, COMPUTED). The radius = purity is a SEPARATE input the trace/determinant does not carry.**
+  [DECISION · DEF · coherence-checked vs 𝔽_q]. `research/construction/R10-regularized-determinant-radius.md`,
+  `scripts/numerics/witness/regularized_determinant_radius.py` (+1 `falsify.py` row → 46th wall,
+  DISPERSING-by-design = terminus-characterizer at the trace-class level, Euler-silent like R1–R9).
+  **What got DECIDED (FF finite-rank determinant COMPUTED; off-circle perturbation COMPUTED; `det_∞`
+  TYPE-CHECKED; no zeros assumed on the radius axis):** R8/R9 closed the CARDINALITY route (every named 𝔽₁
+  field-of-constants tower at `∞` is INFINITE). R10 reframes: the radius `q^{w/2}` needs a FINITE datum, but
+  finiteness need not be a cardinality — over `𝔽_q` it is `det(1−Fr·T|H¹)`, a finite-RANK datum (`H¹` is
+  finite-dim ⟹ Fr automatically trace-class). **TWO data live in that finite determinant, and they DIFFER:**
+  (a) the **TRACE** `Tr(Fr)=Σαᵢ` = the Lefschetz point-count = the explicit-formula / LOCATION (computed:
+  recovers `#C(𝔽_{q^n})` for P¹, supersingular/ordinary elliptic, genus-2); (b) the **RADIUS** `|αᵢ|=q^{w/2}`
+  = PURITY (Weil II), the MODULUS bound (computed: radius-dev `0` for the pure configs). **(a) does NOT imply
+  (b):** the off-circle non-pure perturbation (COMPUTED — radius-dev `0→0.67` for `E/𝔽₅`, `0→0.42` for
+  genus-2) keeps the determinant a finite-degree polynomial (same trace-class TYPE) while BREAKING purity, so
+  **finite-RANK (compactness) is RADIUS-SILENT.** At `∞` Connes' `det_∞` (the idele-class action on the
+  adele-class space `L²(𝔸_ℚ/ℚˣ)₀`): the regularized **trace EXISTS** (a) — COMPACTNESS DELIVERS the
+  location/count, a finiteness a colimit/product/continuum cannot block (R10's genuine gain over cardinality)
+  — but `det_∞` is **FE-symmetric** (`det_∞(s)=det_∞(1−s)`) ⟹ the radius `Re s=½` it would mark is the
+  **FE-fixed locus** (DH-shared, free); pinning the discrete spectrum TO it is Weil's positivity = RH (Connes),
+  NOT independent. **Falsifier verdict:** EULER-BORNE NO on this pass (type-checks `det_∞` + computes the FF
+  finite-rank determinant; not a ℤ-positivity; DH structural verdict SHARP — no Euler product ⟹ no Frobenius
+  ⟹ no `det(1−Fr·T)` numerator ⟹ NOTHING for `det_∞` to be the analogue OF, unposable), SEES-ZEROS YES (the
+  regularized determinant's zeros ARE the zeta zeros; radius = even split = purity), INDEPENDENT NO (radius-
+  marking input = Weil positivity = RH; `det_∞` FE-symmetric ⟹ radius = FE-fixed = solved-case axis) →
+  DISPERSING-by-design. **Ladder `DH < ζ < FF`:** DH no Frobenius ⟹ no `det(1−Fr·T)` ⟹ no regularized-
+  determinant analogue (unposable); `ζ` — the regularized trace EXISTS (Connes — compactness supplies the
+  location/count) but `det_∞` FE-symmetric ⟹ the radius is the FE-fixed locus, UNMARKED; FF — `H¹` finite-dim,
+  Fr finite-rank, `det(1−Fr·T)` a finite polynomial whose roots have radius `q^{w/2}`, but the radius is
+  PURITY (a SEPARATE input the off-circle perturbation shows finite-rank does NOT force). **NEW content
+  (REFINES R8/R9):** the obstruction is no longer "no finite cardinality" — compactness DOES supply a
+  finiteness (a regularized trace) cardinality could not; it sharpens to "the finite datum at `∞` is the
+  LOCATION/COUNT, and the RADIUS (purity) is a SEPARATE input the trace/determinant does not carry" — the
+  same *count vs radius* / *discreteness vs modulus bound* split the whole R-thread keeps producing (R3b-BC's
+  "discreteness ≠ finite base size"), now at the nuclear/determinant level. **Not overclaimed:** R10
+  classifies the compactness reading (trace YES / radius NO) and confirms the off-circle perturbation stays
+  nuclear; it does NOT prove no future nuclear structure could carry purity — it pins the open problem:
+  "supply the archimedean `N` / purity ON the discrete spectrum the regularized trace gives." **Successor:**
+  R11 promoted to TOP ITEM [CONSTRUCTION — the R/K convergence: realize M3's Weil/Hodge `C_W` ON Connes'
+  trace-class adele-class spectrum so the Hodge–Riemann positivity `E(C_W·,·̄) ⪰ 0` IS the modulus bound
+  `|α|=q^{w/2}` (the radius), supplied as a SPECTRAL positivity distinct from the FE-symmetric trace (the
+  count); anchor on `𝔽_q` where the Hodge index ON `H¹` IS purity, not the point-count. This is the
+  convergence point of the R-thread (archimedean `N`, R1) with the K-thread keystone (`P_∞ ⪰ 0`, K3/K7) —
+  both now name the SAME object: a positivity that is the modulus bound on a discrete archimedean spectrum,
+  not the location count].
 
 - **2026-06-06 — R9 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: every NAMED 𝔽₁-tower field of
   constants at `∞` is INFINITE — the R8 TYPE obstruction RECURS one level deeper; `μ_∞=ℚ/ℤ` (countable), the
