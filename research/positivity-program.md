@@ -49,9 +49,10 @@ the assumed `λ_n ≥ 0` (circular) or to a known graveyard route. Scaffold: `sc
 | de Branges reproducing-kernel | over-proves | **falsified** (Conrey–Li 2000) |
 | Nyman–Beurling / Hardy | holds for DH | **dispersing** |
 | naive Yamabe / conformal Laplacian | wrong sign | **dead** (object is negatively curved) |
-| reflection positivity (OS/QFT) | *thread 1* | **untested** — most promising unexplored source |
-| automorphic / RTF positivity | *thread 4* | **untested** |
-| QSM / KMS (BC system) | *thread 5* | **untested** |
+| reflection positivity (OS/QFT) | *thread 1* | **RH-neutral UNLESS the reflection acts on the prime/adelic structure**; the Weil form is already a Hankel-positivity problem (CC20). The prime-place reflection `θ` is the open object — **live** |
+| automorphic / RTF positivity | *thread 4* | **dispersing** — period/Waldspurger positivity is central-value (`L(½)≥0`), not zeros; not Euler-borne; fails DH (termwise on the GL(1) summands). DEMOTED |
+| QSM / KMS (Bost–Connes) | *thread 5* | **the one new lever** — Euler-borne AND *DH-refusing* (QSM can't represent DH at all). But real-axis, **RH-silent** (doesn't see the zeros). **Live, the strongest candidate** |
+| naive Yamabe / conformal Laplacian | wrong sign | dead (negative curvature) |
 
 ## D. Honest framing
 This is decades-deep foundations work; we are not going to construct `h_∞` in an afternoon. The point
@@ -59,3 +60,55 @@ of this file is to (1) keep every live thread, (2) grow the auditor so we always
 structures transfer and where they break, and (3) run every candidate positivity through the kill-test
 so we never re-walk a locked door. When a thread surfaces a genuine new positivity lever, it goes
 through the scaffold *first*.
+
+---
+
+## E. Durable lessons from the thread audit (2026-06-06)
+
+1. **The Euler product is the *sole* discriminator — now 6 independent confirmations.** Archimedean,
+   functional-equation, spectral (self-adjoint), period/automorphic, GUE/determinantal, and conformal
+   data are ALL RH-neutral — they hold verbatim for Davenport–Heilbronn. **Corollary (a hard filter):
+   any positivity not built on the Euler product is dispersing.** Every thread re-derived this.
+2. **The knife-edge (thread 0, the cleanest statement of *why*).** CC20's archimedean positivity is
+   NOT self-sufficient: it *loses* positivity on intervals and is restored **only by the exact prime
+   `p=2`** — the sign fails outside a window of size `<10⁻³` around `p=2`. It needs the *actual
+   arithmetic prime, not a nearby real*. That is the BGS §6.3 corner obstruction, localized.
+3. **QSM/KMS is the only genuinely new lever (thread 5).** The Bost–Connes free-energy positivity with
+   `Z(β)=ζ(β)=∏_p(1−p⁻ᵝ)⁻¹` is the *only* candidate that is Euler-borne **and** DH-*refusing* (it
+   doesn't represent DH at all). Its limit: it lives on the real `β`-axis and is **RH-silent**.
+4. **Reflection positivity needs a prime-place reflection (thread 1).** RP is RH-neutral on the
+   archimedean/scaling geometry; the open object is an involution `θ` acting on the **prime** places
+   making the Weil form `W=⟨θh,h⟩` an OS pairing. The Weil form is already a Hankel-positivity problem.
+5. **Geometry home = condensed; prismatic is orthogonal to `∞` (threads 2+3).** The condensed
+   stack-of-norms over the extended Berkovich spectrum is the closest existing compactified corner
+   (with archimedean coherent duality + an "archimedean Deligne–Illusie ⟶ Kähler" open question that
+   is *our* target). Prismatic/q-de Rham is a **finite-place** theory (`q=1` = cyclotomic, not `∞`) —
+   **shelved**.
+6. **RTF/Langlands is dispersing for *zeros* (thread 4).** Its positivity is central-value, downstream
+   of RH; beyond-endoscopy reaches poles, not zeros. Demoted.
+
+## F. The convergent lead, and the next directions
+
+**Threads 1, 5, and 6 converge on one target:**
+
+> **A reflection-positive continuation of the Euler-product free energy `F(β) = −log ζ(β)` from the
+> real `β`-axis (where its KMS/convexity positivity is Euler-borne and DH-refusing) to the critical
+> line — made to *see the zeros*, with a DH surrogate that *breaks* it.**
+
+This is the first new, Euler-borne, DH-refusing, kill-testable lever the audit produced. Next
+directions (workers spawned 2026-06-06):
+
+- **(A) The convergent lead — QSM free-energy reflection positivity.** Build `F(β)=−log ζ(β)`, its
+  real-axis KMS convexity, the continuation through `β=1` toward the symmetric point, the reflection
+  structure, and the DH-surrogate kill-test. *Does it see the zeros, or stall on the real axis?*
+- **(B) The prime-place reflection / adelic Hankel form.** Write `W = W_∞ + Σ_p W_p` as a Gram/Hankel
+  matrix; search for the prime-place involution `θ` making it OS; kill-test against DH on the existing
+  scaffold.
+- **(C) Semilocal `{∞,2}` positivity (CC20 extension).** The minimal place-crossing: does the `ℚ_2`
+  term enter CC20's trace-remainder with the sign keeping `Id−K` positive? Kill-test: ζ has `(1−2⁻ˢ)`,
+  DH does not → predicted to fail for DH.
+- **(deferred) Δ·Δ on the condensed stack of norms** — the geometric home; more abstract, queued.
+
+The unifying question across A/B/C: **how does the Euler product enter a positivity that sees the
+zeros** — the place-crossing. All three are kill-testable against DH on `weil_form.py` /
+`scattering_forcing.py`.
