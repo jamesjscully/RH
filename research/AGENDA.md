@@ -15,18 +15,18 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[BACK UP TO PASS TWO · HIGH · load-bearing]** **A5 is refuted in the function field** (see DONE #1):
-   the Weil self-intersection forcing the line is an **Euler characteristic times `q`** (`Δ·Δ=2−2g`,
-   `Γ_q·Γ_q=q(2−2g)`), **NOT** the Petersson norm `‖f‖²`; `‖f‖²` is a *separate* RS L-value
-   (Yun–Zhang `=L^{(r)}(1/2)` on Shtukas, or the Arakelov `s=1` residue) that is **Gross–Zagier /
-   RH-silent**. So the pass-two axiom "self-intersection `=‖f‖²`" pins the surface to the **wrong
-   number**. **Re-run `method.md` step 2 with the CORRECTED mechanism:** the line-forcing object is the
-   **`q`-scaled Euler characteristic / the `Γ_q·Γ_q = q·Δ·Δ` relation** (the degree of Frobenius),
-   *not* a Petersson norm. Re-axiomatize: what over `ℤ` plays the role of `Γ_q·Γ_q = q·(Δ·Δ)` — the
-   self-intersection that **carries the factor `q=#𝔽_q` whose root is the line**? (This is the
-   continuous-Frobenius `Δ·Δ=∞` corner, auditor row 1 — but now we know the *right target number*: a
-   `q`-scaled self-intersection, not `‖f‖²`.) Where does `‖f‖²` legitimately enter, if at all (it may
-   be RH-silent scaffolding, not the forcing input)?
+1. **[CONSTRUCT · load-bearing · the relocated target]** **The line is forced by a FORM's SIGNATURE,
+   not a self-intersection NUMBER** (see DONE #1). Both `‖f‖²` (pass two, refuted) and its correction
+   `deg(F)·(Δ·Δ)` (DONE #1, shown RH-silent *and not even Euler-borne*) fail because the self-intersection
+   *number* is the wrong kind of object. The genuine Weil mechanism is the **Hodge index theorem**: the
+   intersection form on `NS(S)`/`H¹_prim` has signature `(1, ρ−1)` and RH `⟺` it is **negative-definite
+   on the primitive part** (verified on `E×E`: Gram `[[0,1,1],[1,0,1],[1,1,0]]`, signature `(1,2)`).
+   **Re-run `method.md` step 4 (REPAIR + UNIVERSAL PROPERTY) with the SIGNATURE target:** what object
+   over `ℤ` carries a self-dual pairing on a `ρ`-dim space whose **signature** is `(1, ρ−1)` and whose
+   negative part forces the zeros? This is the OS/reflection-positivity thread re-stated (a signature
+   *is* a positivity) but with the geometric object corrected — NOT a Petersson norm, NOT `deg·χ`, but
+   the **negative-definite intersection FORM on `H¹_prim` of a (hypothetical) arithmetic surface**.
+   Does the falsifier change verdict when the candidate is a *form's signature* rather than a *number*?
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -43,14 +43,32 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 7. **[DEFORM]** Trace the `C×C` Hodge index through the `q→1` degeneration explicitly; identify the
    **obstruction-cocycle** (what breaks) — that names the next axiom (pass-four input).
 
-> **CAVEAT on items 3–7 (post DONE #1):** all five were written with the **`‖f‖²` self-intersection
-> target**, which DONE #1 refuted. Their "self-intersection `=‖f‖²`" target must be replaced by the
-> **corrected target from item 1** (the `q`-scaled Euler-characteristic self-intersection `Γ_q·Γ_q =
-> q·Δ·Δ`). Do item 1 FIRST; then these become "construct the *corrected* target."
+> **CAVEAT on items 3–7 (post DONE #1 + #2):** all five were written with the **`‖f‖²`
+> self-intersection target**, which was refuted (DONE #1), and its first correction `deg·χ` (a NUMBER)
+> was then shown RH-silent + not-even-Euler-borne (DONE #2). The corrected target is **the signature
+> `(1, ρ−1)` of the negative-definite intersection FORM on `H¹_prim`** (item 1), *not any number*. So
+> for items 3–7: the construction must realize an object whose intersection FORM has the Hodge-index
+> SIGNATURE — replace every "self-intersection `=‖f‖²`" with "intersection form has signature
+> `(1, ρ−1)`, negative-definite on the primitive part."
 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Re-ran step 2 with the corrected mechanism: the line is a FORM's SIGNATURE, not a
+  NUMBER.** [BACK UP · load-bearing → honest negative + relocation].
+  `scripts/numerics/witness/a5_corrected.py`, `research/log/2026-06-06-a5-corrected-mechanism.md`.
+  **Finding [THM+computed]:** the corrected forcing input `Γ_F·Γ_F = deg(F)·(Δ·Δ)` (verified exactly:
+  ratio `= deg(F)` for `F∈{id,Frob_q,Frob_{q²},[2],[3]}`, line `= log(q^{1/2})/log q = ½` for every
+  `q`) is, on the falsifier, **RH-SILENT *and not even Euler-borne*** — `deg·χ` is pure
+  topology×base-field-size, carried by DH too (strictly **worse** than `‖f‖²`, which at least
+  DH-refused). The decisive relocation: the RH content is the **Hodge-index SIGNATURE `(1, ρ−1)`** —
+  negative-definiteness of the intersection FORM on the primitive part — verified on `E×E` (Gram
+  `[[0,1,1],[1,0,1],[1,1,0]]`, eigenvalues `{−1,−1,2}`, signature `(1,2)`). The self-intersection
+  *number* (`‖f‖²` OR `deg·χ`) is merely a value the form is evaluated on. **Both the `‖f‖²` axiom and
+  its correction are the WRONG KIND of object: the line is forced by a FORM's signature, not a NUMBER.**
+  `‖f‖²` confirmed RH-silent scaffolding (enters only as a lattice value, never as forcing). 10th wall
+  confirmation; relocates the target to the negative-definite `H¹_prim` form over `ℤ` (NEXT #1, reconnects
+  to the OS/reflection-positivity thread).
 - **2026-06-06 — A5 in the function-field case: REFUTED (false weld).** [ANCHOR · load-bearing →
   honest negative]. `scripts/numerics/witness/a5_function_field.py`,
   `research/log/2026-06-06-a5-function-field-refuted.md`. **Finding [THM+computed]:** Weil's
