@@ -30,24 +30,64 @@ the cross-place coupling. The **dynamical** route (dBN heat flow `H_t=e^{−tD²
 structurally DIFFERENT: Rodgers–Tao proved `Λ≥0` *unconditionally* using the **dynamics + Montgomery zero
 statistics**, NOT the arithmetic surface. Audit it with the same rigor; transfer the loop's lessons.
 
-1. **[dBN · anchor · load-bearing]** Map exactly where forcing `Λ≤0` stalls. `Λ≥0` (Rodgers–Tao) is the
-   wrong direction; `Λ≤0`=RH is open. Is the obstruction the SAME cross-place coupling `W_∞≥Σ_p W_p` as
-   the static routes, or a genuinely distinct dynamical endpoint (a flow-monotonicity / entropy)? Be
-   precise about Rodgers–Tao's mechanism and why it gives `≥` not `≤`.
-2. **[dBN · transfer]** Do the closed-branch lessons constrain the flow? (i) **modulus≠phase** — is the
-   dynamical "phase" (the flow's action on `arg`) available where the static one wasn't? (ii) **Sylvester
-   inertia-lock** — does the flow's generator evade `*`-congruence-invariance (it's a genuine 1-param
-   group, not a congruence)? Run falsify.py on any flow functional.
-3. **[dBN · positivity]** Is there a Lyapunov/monotone functional under the flow that FORCES `Λ≤0`,
-   Euler-borne AND sees-zeros AND independent? Or does it too split (modulus-monotone but phase-blind)?
-4. **[dBN · the GUE handle]** Rodgers–Tao use Montgomery pair correlation (GUE). Is the zero-statistics
-   input a genuinely NEW, ζ-intrinsic, Euler-borne lever the static routes lacked — or RH-silent
-   (GUE is universal, shared with DH-like)?  ← decisive kill-test.
-5. **[dBN · synthesis]** Verdict: is the dynamical branch a genuinely distinct frontier (new endpoint), or
-   does it reduce to the same wall? If distinct, the most concrete next probe; if same, close it cleanly.
+1. **[dBN · positivity · load-bearing]** The anchor (DONE #0) found the dBN branch is genuinely DISTINCT
+   on the INERTIA axis (the flow `e^{−tD²}` escapes the Sylvester `*`-congruence lock — it changes the
+   real-root count), but its only unconditional lever (GUE pair correlation) is universal/RH-silent and
+   wrong-direction. The OPEN object it names: **is there a flow functional built from `Λ(n)` (the Euler
+   data) that is MONOTONE toward reality under the flow** — a *dynamical* `W_∞≥Σ_p W_p`? Such a functional
+   would force `Λ≤0` while being Euler-borne. Construct a candidate and run falsify.py. Likely outcome to
+   pre-test: does it split (modulus-monotone but phase/`sign Im`-blind) like every static functional?
+2. **[dBN · the prime↔flow coupling]** The flow ODE `d/dt x_j = −2Σ 1/(x_k−x_j)` is the Euler-FREE
+   log-gas; the Euler product enters dBN ONLY through the INITIAL datum (`Φ`, the theta/`Λ(n)` series),
+   not the generator. Make this executable: is the `Λ(n)` content of the initial `Φ` recoverable from the
+   flow's action, or does the heat smoothing immediately wash it into the universal GUE bulk (= why the
+   unconditional handle is RH-silent)? This is the precise dynamical form of "Euler data lives in the
+   primes, zero locations in the zeros, the flow does not couple them".
+3. **[dBN · synthesis / close-or-continue]** If #1 splits (no Euler-borne reality-monotone functional),
+   CLOSE the dynamical branch cleanly with the one-line reason (distinct endpoint on inertia, same wall on
+   the Euler/location axis) and return the program to the static frontier (the sursurviving NEXT below).
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — Did the dBN ANCHOR (NEXT #1) and folded in the GUE kill-test (NEXT #4): mapped
+  Rodgers–Tao's mechanism precisely, made the forward/backward asymmetry and the GUE-universality
+  EXECUTABLE, and reached the verdict — the dynamical branch is genuinely DISTINCT on the INERTIA
+  axis (the flow `e^{−tD²}` ESCAPES the Sylvester `*`-congruence lock that closed every static form),
+  but its only unconditional lever (GUE/Montgomery pair correlation) is UNIVERSAL/RH-silent and
+  wrong-direction, so `Λ≤0`=RH reduces to the SAME per-zero location/phase wall `W_∞≥Σ_p W_p`.**
+  [ANCHOR · load-bearing → dBN branch audited; distinct endpoint, same wall].
+  `scripts/numerics/witness/dbn_anchor.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-dbn-anchor.md`. **Finding [THM+computed, falsifier DISPERSING]:**
+  RT (arXiv:1801.05914) prove `Λ≥0` by CONTRADICTION — assume `Λ<0`, the backward log-gas flow
+  `d/dt x_j=−2Σ 1/(x_k−x_j)` forces local equilibrium (AP/picket-fence spacing) at `t=0`, contradicted
+  by Montgomery GUE pair correlation `1−(sin πu/πu)²` (zeros too repulsive/rigid to have equilibrated).
+  **WHY `≥` NOT `≤`:** `≥` is a LOWER-bound-on-disorder = a STATISTICS (bulk/2-point/MODULUS) bound;
+  RH=`Λ≤0` forbids a SINGLE off-line pair = a zero-LOCATION (`sign Im`/PHASE) bound a 2-point statistic
+  cannot see (one off-line pair is measure-zero in pair correlation) — the SAME modulus/phase split that
+  closed the static forms. **[Q1 COMPUTED] forward/backward asymmetry:** `Var(roots)` monotone in flow
+  time (`2.500,2.580,2.660,2.740,2.820` at `t=−.02..+.02`); forward DISPERSES (`dVar=+0.16`), backward
+  CONTRACTS (`−0.16`) — forward flow has NO Lyapunov purchase on reality. **[Q2 COMPUTED] the flow
+  ESCAPES Sylvester:** `e^{−tD²}` is a 1-param semigroup on the POLYNOMIAL, not a `*`-congruence
+  `Tᵀ(·)T`; it CHANGES the real-root count (a complex pair → all-real after flow, `Λ=0.186`) — the ONE
+  place the dynamical branch is structurally NEW vs the closed static family. **[Q4 DECISIVE KILL-TEST]
+  the GUE lever is UNIVERSAL, NOT Euler-borne:** computed small-gap depletion (level repulsion)
+  `P(gap<0.25·mean)` = GUE `0.020` (pure Hermitian random matrix, NO Euler product) vs Poisson `0.220`
+  (~11×) vs AP `0.000` — GUE-without-arithmetic carries the EXACT repulsion the RT contradiction needs
+  ⟹ RH-silent on the Euler axis (lit.: DH off-line zeros have "essentially different" stats, but the
+  GUE INPUT is the universality class). **Verdict: Λ sees-zeros YES, flow escapes Sylvester YES
+  (distinct endpoint), BUT the unconditional lever Euler-borne NO (universal GUE), wrong-direction →
+  DISPERSING; `Λ≤0` reduces to the SAME wall `W_∞≥Σ_p W_p` read dynamically. 29th confirmation, now
+  from the dynamical side.** **DECISIVE LESSON:** the dBN route is NOT a reformulation (it has a genuinely
+  different, non-inertia-locked endpoint — the flow is the first object in the whole audit to change the
+  realness-count), but it stalls at the SAME place for the SAME reason: no Euler-borne object controls
+  zero LOCATIONS. The precise open object it leaves = a **flow functional built from `Λ(n)` monotone
+  toward reality** (a dynamical `W_∞≥Σ_p W_p`), which RT do NOT supply (their lever is the universal
+  GUE statistics). Surfaces NEXT #1 (construct/falsify that functional), #2 (the prime↔flow coupling —
+  Euler data enters dBN only via the initial datum, washed into the GUE bulk by the smoothing), #3
+  (close-or-continue). Honest subtlety: variance/Sylvester demos use small synthetic polynomials (flow
+  exact on polynomials; the structural facts — count-change, dispersion, GUE depletion `0.020` vs
+  `0.220` — are robust + lit.-matched); the `≥`/`≤` asymmetry and GUE-universality are [THM]/literature.
 
 - **2026-06-06 — Built NEXT #1's candidate (b), the RESONANCE KERNEL `K = VᵀV` (a Gram of the ZEROS,
   `V_{ρ,i}=φ̂(γ_ρ;cᵢ)`), and CLOSED the entire "form-carries-the-zeros" branch: `K` SEES the zeros but IS
