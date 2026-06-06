@@ -51,28 +51,20 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M4B. **[BUILD/REPRESENT · the WEIGHT-2 NS LATTICE over `ℤ` · load-bearing · from M4A]** M4A decided the
-   carrier the descent must supply is **`gr^W_2`** — the **weight-2 Néron–Severi lattice `H^1(C)⊗H^1(C)`
-   of the self-product surface `S²/ℤ`** (eigenvalues `αᵢαⱼ`, `|αᵢαⱼ|=q`), **not** the `gr^W_1` M2d named
-   (which is a redundant double of the curve's `H^1`). **The task:** specify, as a REPRESENTABILITY
-   problem, what represents the **self-intersection of the arithmetic diagonal** of `S²/ℤ` on the
-   weight-2 lattice — the global object M2d proved no single prime supplies, Euler-assembled from
-   **products `αᵢ(p)αⱼ(p)` across all primes**. ANCHOR FIRST: confirm the FF lattice `NS(C×C)` carries
-   `Δ` and `Γ_F` with `Δ·Γ_{Fⁿ}=#C(𝔽_{qⁿ})`, then ask what arithmetic object plays `NS` over `ℤ`
-   (candidates: the `S²/ℤ` of `F-sym2-os-bridge.md`; the Connes–Consani `H²` over `𝔽₁`; a condensed
-   weight-2 piece). **Falsifier in advance:** the lattice must be Euler-assembled (DH has no `f×f̄`
-   product ⟹ no weight-2 lattice ⟹ `S²/DH` is not a carrier) and its Hodge index on primitives must SEE
-   the zeros (negative-definite ⟺ `|αᵢ|=√q` ⟺ RH). **NOTE the purity is now typed:** the edge is
-   weight 2 (`|αᵢαⱼ|=q` = the Petersson pole of `L(s,f×f̄)` at `s=1`, `Res=‖f‖²`), and `(·)^{1/2}`
-   descends it to the centre weight 1 (`|αᵢ|=√q`, `Re s=½`). **Beware** `square_representability.py`
-   (DONE) already closed the NAIVE product `S×S` (its `H^1⊗H^1` factorizes as base⊗base, RH-silent) —
-   M4B must build the lattice as a genuine `gr^W_2` carrier with an INDECOMPOSABLE diagonal, not a
-   tensor-product form.
-M4C. **[COHERENCE · from M4A]** the Hodge index / polarization on `gr^W_2`-primitives as the **categorical
-   duality pairing** of M1's C4, realized **on the weight-2 NS lattice** (not the weight-1 `H^1`): check it
-   is the canonical evaluation of the duality `D` (NOT a metric, §0), that `D∘D≅id` on the lattice, and
-   that the off-circle inertia flip `(0,1,1)→(1,0,1)` of M2/`euler_movable_inertia.py` is the
-   weight-2-lattice Hodge index. Anchor on `g=1,2` self-products (lattice ranks `4`, `16`).
+M4C. **[COHERENCE · from M4A/M4B]** the Hodge index / polarization on `gr^W_2`-primitives as the
+   **categorical duality pairing** of M1's C4, realized **on the weight-2 NS lattice** (not the weight-1
+   `H^1`), **now with M4B's explicit intersection form `(*)` `a·b=d₁e₂+d₂e₁−Tr(z∘w)` and the Rosati
+   polarization `Tr(z w^†)` in hand**: check the primitive Hodge index is the canonical evaluation of the
+   duality `D` (NOT a metric, §0) on the lattice — i.e. that `−Tr(F₀F₀^†)` (M4B) equals `ev∘(1⊗φ_{FE})`
+   on the `End(H^1)` part the way `P_duality=P_gram` did on `H^1` in M2 — that `D∘D≅id` on the lattice,
+   and that the off-circle inertia flip `(0,1,1)→(1,0,1)` of M2/M4B is that weight-2-lattice Hodge index.
+   Anchor on `g=1,2` self-products (lattice ranks `4`, `16`).
+M4D. **[BUILD · the `g=2` rank-16 NS anchor · from M4B]** Build the FF `g=2` weight-2 NS lattice
+   (`End(H^1)` rank `(2g)²=16`, genuinely non-semidefinite) and confirm M4B's three facts persist at
+   real rank: `Δ·Γ_{Fⁿ}=#C(𝔽_{qⁿ})`, the diagonal `Δ=(1,Id,1)` indecomposable, and the primitive Hodge
+   index via Rosati flips on/off-circle — confirming the `g=1` `(0,1,1)` semidefiniteness was the
+   trace-kernel artifact (the M2c concern), not structure. Use the `q=2` `g=2` Weil polynomial
+   `T⁴−T³+2T²−2T+4` already in `weight_carrier.py`/`conjugation_parity_ff.py`.
 M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
    tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
    matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
@@ -174,6 +166,38 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M4B [BUILD/REPRESENT · anchored vs 𝔽_q]: specified the SELF-INTERSECTION of the
+  arithmetic DIAGONAL of `S²/ℤ` on M4A's weight-2 NS lattice as a REPRESENTABILITY functor `rep_NS`,
+  with the explicit intersection form `(*)` and the diagonal proven INDECOMPOSABLE — avoiding the
+  closed naive-product trap.** [BUILD/REPRESENT · anchored vs 𝔽_q].
+  `research/construction/M4B-ns-diagonal-representability.md`,
+  `scripts/numerics/witness/ns_diagonal_representability.py` (+1 `falsify.py` row → 45). **What got
+  BUILT (FF anchor, 5 Weil curves `g=1` `q=2,5,7,11,13`, all EXACT):** the functor `rep_NS : Corr →
+  (ℤ-lattice, form (*))`, `Z↦(d₁=Z·(pt×C), z=action on H^1, d₂=Z·(C×pt))`, with
+  `NS(C×C)⊗ℚ=⟨C×pt⟩⊕⟨pt×C⟩⊕End(H^1)` and pairing `a·b = d₁e₂+d₂e₁−Tr(z∘w)` `(*)`, diagonal `Δ=(1,Id,1)`.
+  **THREE EXACT ANCHOR FACTS:** (1) `Δ·Γ_{Fⁿ}=1·1+1·qⁿ−Tr(Fⁿ)=qⁿ+1−Σαᵢⁿ=#C(𝔽_{qⁿ})` — **the Lefschetz
+  trace IS the NS self-intersection** (verified `n=1,2,3` all curves `<1e-12`, e.g. `q=5`: `4,32,148`);
+  (2) `Δ` is **INDECOMPOSABLE** — its `End(H^1)`-component is `Id≠0` (norm `√(2g)=1.414`) while every
+  product/fiber class acts as `0` on `H^1` (`‖End(fiber)‖=0`), so `Δ∉⟨C×pt,pt×C⟩` — a genuine
+  primitive/transcendental component, **AVOIDING the `square_representability` factorization trap (this
+  is NOT a tensor form)**, `Δ·Δ=2−2g=χ(C)`; (3) the Hodge index on the primitive `End`-part via the
+  **Rosati polarization** `Tr(z w^†)` (`w^†=E^{-1}w^T E`, `F^T E F=qE` resid `0`): `Tr(F F^†)=Σ|αᵢ|²=2gq`
+  on-circle (`4,10,14,22,26`), primitive `−Tr(F₀F₀^†)` NEG on-circle (`−3.5,−8,−13.5,−17.5,−13.5`) FLIPS
+  POS off-circle plant `{r√q,√q/r}` (`+0.69,+1.74,+2.43,+3.82,+4.51`) — the `(0,1,1)→(1,0,1)` inertia
+  flip of M2/`euler_movable_inertia.py` now **READ ON the weight-2 NS lattice**, neg-def ⟺ `|αᵢ|=√q` ⟺
+  RH. **THE ℤ-QUESTION NOW SHARP:** what represents `rep_NS` for `ζ` — an object with an indecomposable
+  diagonal (`End`-component ≠ product class), a Frobenius/Hecke graph with `Δ·Γₙ=` the explicit-formula
+  trace, and the form `(*)` on `End` **Euler-assembled** from `αᵢ(p)αⱼ(p)` across ALL primes (M2d proved
+  no single prime supplies it). **Falsifier verdict (anchor, not a `ℤ`-candidate):** euler-assembled Y
+  (`Tr(Fⁿ)=Σαⁿ` Satake; DH no `f×f` ⟹ no `End`-Frobenius ⟹ `S²/DH` diagonal has no indecomposable
+  component to self-intersect), sees-zeros Y (Hodge index flips off-circle), independent N (= the Weil
+  Hodge-index theorem) → **CIRCULAR** over `ℤ`, expected. **NEW content:** the self-intersection of the
+  diagonal is the FUNCTOR `rep_NS` with explicit form `(*)`; the diagonal is INDECOMPOSABLE (avoids the
+  closed naive-product trap); `Δ·Γ_{Fⁿ}=#C` realizes the Lefschetz trace as the NS self-intersection.
+  **Successors added:** M4C re-pointed (the Hodge index as M1's C4 categorical pairing **on this lattice
+  with `(*)`+Rosati in hand**), M4D [BUILD the `g=2` rank-16 NS anchor — confirm the three facts persist
+  at genuinely non-semidefinite rank, the M2c trace-kernel check].
 
 - **2026-06-06 — M4A [DEFINE/BUILD · anchored vs 𝔽_q]: BUILT the weight-graded carrier the descent must
   supply and CORRECTED M2d's naming — the carrier is `gr^W_2` (the weight-2 Néron–Severi lattice
