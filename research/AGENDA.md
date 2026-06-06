@@ -24,12 +24,16 @@ Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction targ
 whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
 number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-1. **[CONSTRUCT · load-bearing]** The **ζ-intrinsic Frobenius reality structure**: what *geometric*
-   object gives ζ's own Frobenius the reality `θFθ=F^*` (signature `(1,ρ−1)`), coupling the available
-   modulus to the phase, ζ-intrinsically? Prime candidate: the **Arakelov self-intersection of an
-   arithmetic Frobenius correspondence on `\overline{Spec ℤ}` / the BGS positive-Green-form** — a
-   ℤ-degree CAN be defined but its positivity CAN fail (BGS §6.3). Does the Arakelov self-intersection,
-   built from ζ's own primes, carry the signature, and where exactly does §6.3 block it? falsify.py.
+1. **[CONSTRUCT · load-bearing]** The Arakelov pass (DONE #0, top) pinned the §6.3 block to TWO things:
+   (a) `bar(Spec ℤ)` is a 1-dim CURVE — the `(1,ρ−1)` signature needs the SURFACE `S²/ℤ` (still
+   missing); (b) the archimedean Kähler/positive-Green-form (Moriwaki Thm 1.1 (ii) = BGS §6.3) is the
+   ONLY positive piece and it is **DH-shared (identical Gram for ζ and DH)** — the Euler content sits
+   only in the DOMINATED finite-place prime piece. **The sharpened target: a CROSS-PLACE coupling that
+   makes the finite-place Euler positivity DOMINATE the (DH-shared) archimedean piece** = `W_∞ ≥ Σ_p W_p`
+   in arithmetic-intersection language. Concretely: is there a ζ-intrinsic *metric/Green-current
+   perturbation* (off the DH-shared `Γ_ℝ` background) that makes the finite-place `(D_F²·H)` the
+   dominant term — i.e. a positive Green form whose positivity DEPENDS on `Λ(n)` not just on `Re ψ`?
+   This is exactly where §6.3's "can fail" must become "holds ⟺ RH". falsify.py.
 2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
@@ -48,6 +52,35 @@ number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Tested NEXT #1 (the Arakelov self-intersection / arithmetic Hodge index signature
+  `(1,ρ−1)` on `bar(Spec ℤ)`, ζ-intrinsically) and located BGS §6.3 EXACTLY: the signature is REAL and
+  its negativity IS the Weil positivity, but the dominating positive piece (archimedean Kähler `Γ_ℝ`) is
+  DH-SHARED (identical Gram), so it is NOT Euler-borne — the Euler content sits only in the DOMINATED
+  finite-place prime piece.** [CONSTRUCT · load-bearing → §6.3 pinned to two named blocks].
+  `scripts/numerics/witness/arakelov_signature.py` (+ 1 `falsify.py` row + auditor row),
+  `research/log/2026-06-06-arakelov-signature.md`. **Finding [THM+computed]:** made the arithmetic
+  intersection pairing on `bar(Spec ℤ)` executable from the **Weil explicit formula** [THM: Moriwaki
+  1994 alg-geom/9403011 Thm B / Faltings–Hriljac]: its two negative pieces are exactly the two sides of
+  the explicit formula — **(i) FINITE places** `(D_F²·H)≤0` (Lemma 1.3/Zariski) `= −Σ Λ(n)h(log n)/√n`,
+  **(ii) ARCHIMEDEAN** `∫φ dd^c φ≤0` (Lemma 1.1.1, `= −∫|∂φ|²`) `= +(1/2π)∫ ĥ Re ψ(¼+ir/2)`. **DECISIVE
+  COMPUTED SPLIT:** the archimedean Kähler Gram `A` is **IDENTICAL for ζ and DH** (`max|A_ζ−A_DH|=0.0`
+  exactly — depends only on the shared `Γ_ℝ` factor `Re ψ`), so the **dominating positive piece is
+  DH-shared, NOT Euler-borne**; the Euler content is ONLY in the finite-place prime Gram `P` (signature
+  ζ `(5,0,0)` `Λ≥0` prime-power-supported vs DH `(3,0,2)` mixed-sign), which enters `W=A−P` with a MINUS
+  sign (dominated, not dominating). **WHERE §6.3 BLOCKS:** (a) `bar(Spec ℤ)` is arithmetically a CURVE
+  (1-dim base) — NO ample polarization of positive dim to carry `(1,ρ−1)`; the signature needs the
+  **surface `S²/ℤ`** (= `F-sym2-os-bridge` A5, the missing object / no `H¹(S²)` over `ℤ`); (b) even
+  granting the surface, **Moriwaki Thm 1.1 (ii) requires `c₁(H,k)` KÄHLER = a POSITIVE Green form = BGS
+  §6.3, which CAN FAIL = CC20's archimedean knife-edge** (positivity restored only by the exact prime).
+  **Verdict: Euler-borne partial (only the dominated finite piece), sees-zeros YES (it IS the Weil form),
+  independent NO → CIRCULAR.** **19th Euler-product confirmation.** Decisive lesson: the arithmetic Hodge
+  index theorem is the RIGHT `(1,ρ−1)` structure and the §6.3 positivity is RH content, but qua
+  *archimedean* positivity it is DH-shared/RH-SILENT — RH = the cross-place coupling making the
+  finite-place Euler piece DOMINATE the archimedean background (= `W_∞ ≥ Σ_p W_p` in
+  arithmetic-intersection language). Honest subtlety: the 5-dim Gaussian-basis `W` signature `(1,0,4)` is
+  a coarse finite-rank model (NOT claimed to be the exact `(1,ρ−1)`); the load-bearing EXACT facts are
+  `max|A_ζ−A_DH|=0` and the `P`-signature split. Sharpens NEXT #1 to a *Green-current/metric*
+  construction whose positivity depends on `Λ(n)`, not just `Re ψ`.
 - **2026-06-06 — Tested NEXT #1 on-ramp (a) executably with the GENUINE sym²Δ (Ramanujan τ, Satake
   product) and REFUTED it: the sym² PHASE is RH-SILENT, blind to ζ's zeros — same failure as the sym²
   MODULUS. "Euler-borne / DH-lacks" ≠ "couples to ζ's line"; the missing dominator must be
