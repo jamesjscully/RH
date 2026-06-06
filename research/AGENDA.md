@@ -50,18 +50,22 @@ ONE positivity. **It is NOT circular to attack** because in classical Hodge theo
 **Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
 zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
 
-K2r. **[KEYSTONE · the named residue — load-bearing, HIGH priority]** K1 found the Kähler forcing
-   FACTORS: `c=D` is forced by `(E, C_W)` polarized, where `E` (cup product) is free/geometric and the
-   Hodge–Riemann implication is formal — but the **Weil operator `C_W`'s RADIUS** is over `𝔽_q` literally
-   `|α|=√q` = RH (the cup product ALONE is INDEFINITE; `C_W` is what makes it definite). CONSTRUCT `C_W`'s
-   RADIUS over `ℤ` (the centre `Re s=½`) from the **Euler assembly** of the prime Satake products
-   `αᵢ(p)αⱼ(p)` — the ONE piece the geometric forcing does not supply (M3b's "radius-silent `(−1)^w`" as a
-   Hodge forcing). (= M4r in its sharpest Hodge form; falsify: the assembled radius must be DH-distinguishing.)
+K2r-split. **[KEYSTONE · the relocated residue — load-bearing, HIGH priority]** K2r (DONE) FACTORED the
+   radius assembly: the Euler assembly of the Satake products supplies the weight-2 **EDGE** = the
+   determinant `|α(p)β(p)|=p^{k−1}`, UNIFORM across all primes, Euler-borne, **RH-FREE** (the cross-place
+   coupling is the FREE half) — but NOT the **even split** `|α|=|β|=p^{(k−1)/2}` (= the purity `(·)^{1/2}` =
+   Ramanujan/RH). The residue RELOCATED to the **per-prime even-splitting** of the assembled edge. ATTACK:
+   is the even split of the determinant line `p^{k−1}` into two EQUAL weight-1 factors forced by ANY
+   geometric/condensed structure on the weight-2 carrier (a real structure / `*`-involution on the
+   determinant line whose fixed locus is `|α|=|β|`), or is it the irreducible RH? (falsify: the forcing
+   structure must be Euler-borne + DH-absent + see the off-Ramanujan plant the determinant edge is blind to.)
 K2. **[KEYSTONE · condensed — the live framework, RE-POINTED by K1]** Realize the archimedean Kähler form in
    **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms + the "archimedean
    Deligne–Illusie ⟶ Kähler" open question) — **as a canonical Weil operator `C_W` (K1's finding), NOT a
-   Green form**. The condensed object must PRODUCE `C_W` with an Euler-assembled radius (not a metric);
-   this is the one framework the audit flagged as right-kind-untried — now with `C_W`/`c=D` as the target.
+   Green form**. The condensed object must PRODUCE the **EVEN SPLIT** of the Euler-assembled weight-2
+   determinant edge `p^{k−1}` (K2r: the edge assembles for FREE; the residue is the even split into two
+   equal weight-1 factors), not a metric — `C_W`'s radius = that split. This is the one framework the audit
+   flagged as right-kind-untried — now with the determinant-edge even-split as the precise target.
 K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1]** The forcing lemma "archimedean Kähler ⟹ `c=D`" is
    the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT here).
    BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
@@ -220,6 +224,41 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — K2r [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: executed the named residue —
+  assemble `C_W`'s RADIUS over `ℤ` from the per-prime Satake products `αᵢ(p)αⱼ(p)` — and FACTORED the
+  assembly into a FREE cross-place edge and a HARD per-prime even split (sharper than the agenda's
+  "Euler-assemble the radius" framing): the weight-2 EDGE = the determinant `|α(p)β(p)|=p^{k−1}` assembles
+  UNIFORMLY across all primes, Euler-borne + RH-FREE; the residue RELOCATES to the per-prime EVEN SPLIT
+  `|α|=|β|=p^{(k−1)/2}` = the M2b purity `(·)^{1/2}` = Ramanujan/RH.** [KEYSTONE · coherence-checked ·
+  anchored vs 𝔽_q / Δ]. `research/construction/K2r-cw-radius-assembly.md`,
+  `scripts/numerics/witness/cw_radius_assembly.py` (+1 `falsify.py` row → 51, CIRCULAR). **What got CHECKED
+  (multi-prime anchor `f=Δ`, Ramanujan τ, weight 12, `H^1` weight `k−1=11`, arithmetic Satake `α,β`=roots
+  of `X²−τ(p)X+p^{k−1}`, exact mpmath 40dps, 16 primes 2..53):** **[1]** the weight-2 EDGE per prime = the
+  DETERMINANT `|α(p)β(p)|=p^{k−1}` EXACTLY (all primes `<1e-15` rel) → the edge exponent `γ=k−1=11` is
+  UNIFORM across all primes, read off the Satake matrix's DETERMINANT (no eigenvalue moduli) — Euler-borne,
+  RH-INDEPENDENT; THE CROSS-PLACE EDGE ASSEMBLES FOR FREE. **[2]** the weight-1 CENTRE radius `C_W` needs =
+  the EVEN SPLIT `|α(p)|=|β(p)|=p^{(k−1)/2}` (all primes `<1e-20` rel) = the purity square root of the
+  determinant = Ramanujan/Deligne = the RH analogue for `f`. **[3]** PLANT off-Ramanujan at `p=11` (`δ=0.3`)
+  with `α'β'=p^{k−1}` but `|α'|=p^{(k−1)/2+δ}`: determinant edge PRESERVED (`285311670611=p^11`, both sides),
+  even split BROKEN (`|α'|=1096674 ≠ |β'|=260161 ≠ √=534146`) — the assembly's EDGE is INSENSITIVE to the
+  plant; ONLY the even split sees it. **[4]** FF ANCHOR (single place): the assembly DEGENERATES (one base
+  size `q`), det edge `=q` free, even split `|α|=√q` = Deligne purity (5 curves) — WHY the FF gets the
+  radius for free: no cross-place assembly, the single place's determinant IS the edge. **[5]** DH: no Euler
+  product → no Satake → EMPTY DOMAIN, the edge cannot even be formed; carrier ladder `DH<ζ<FF`. **Falsifier
+  verdict (anchor/assembly):** EULER-ASSEMBLED SPLIT (the determinant edge IS assembled uniformly + RH-FREE;
+  the even split needs Satake but is NOT supplied by the assembly — it is the purity root), SEES-ZEROS YES
+  (only through the even split — the determinant edge is blind to the off-Ramanujan plant), INDEPENDENT NO
+  (the even split = Ramanujan/RH = Deligne purity over FF) → **CIRCULAR** over the anchor in the precise
+  sense: the even split of the assembled edge = the RH radius. **NEW content:** the cross-place coupling (the
+  determinant edge `p^{k−1}`) is the FREE half of the radius assembly (uniform across all primes,
+  RH-independent); the irreducible residue is the per-prime EVEN-SPLITTING of the assembled weight-2 edge
+  into two equal weight-1 factors — the keystone residue sharpened from "the radius" to "the even split of
+  the assembled determinant". **Successors added:** K2r-split [the relocated residue — is the even split of
+  the determinant line `p^{k−1}` forced by a geometric/condensed `*`-involution whose fixed locus is
+  `|α|=|β|`, or the irreducible RH?]; K2 re-pointed (the condensed object must produce the EVEN SPLIT of the
+  assembled determinant edge, not the edge — the edge is free); K3 unchanged (the Hodge–Riemann forcing is
+  free given `C_W`; `C_W`'s radius = the per-prime even split).
 
 - **2026-06-06 — K1 [KEYSTONE · coherence-checked · anchored vs 𝔽_q]: executed the keystone — is `P_∞⪰0`
   (`c=D`) FORCED by a Hodge–Riemann/Kähler structure? — and found the forcing FACTORS: `c=D` is NOT
