@@ -40,6 +40,61 @@ audit produced). **But it stalls at the SAME wall on the Euler/location axis**, 
   conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
   Euler/location axis.** The program returns to the static frontier below.
 
+## NEXT — CONSTRUCTION MODE  (charter: `research/construction-program.md`; method: `research/method.md`)
+
+**We are BUILDING the object — a polarized arithmetic Hodge category over `\overline{Spec ℤ}` — not
+auditing.** Each item DEFINES a structure / BUILDS a minimal model / PROVES a coherence lemma / INVENTS
+notation, and runs `falsify.py` where applicable (does the polarization depend on the zero LOCATIONS?
+does the construction FAIL to exist for DH?). **Design law (the audit's gift):** the polarization is
+**CATEGORICAL — a duality pairing — never a metric** (metrics are Sylvester-inertia-locked, dead by §0).
+**Anchor first:** nothing is admitted for `ℤ` until it is built for **function fields in the same
+language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
+*names the next*; that is convergence, not drift.
+
+M1. **[DEFINE]** Write the **universal property of the target `𝕊_ℤ`** (`construction-program.md` §1) as a
+   precise functor of points / representability statement — the six required structures (Frobenius
+   trace = explicit formula; `(p,q)` at `∞`; structural duality `D` = FE; categorical polarization;
+   positivity ⟺ RH; no object for DH), and what "representable" would mean. Output: the contract, formal.
+M2. **[ANCHOR-BUILD · load-bearing]** Build the polarized arithmetic Hodge category **for a function
+   field** (e.g. an elliptic curve over `𝔽_q`) *in this language*, and verify it **reproduces the Weil
+   RH proof** with polarization = the categorical duality pairing (NOT a metric). If it can't redo the
+   solved case, the language is wrong — say so and propose the fix. The minimal working model.
+M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/condensed duality datum at
+   `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
+   (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
+M4. **[DESCENT]** Specify the **duality-descent gluing**: how `{Euler factors at primes} ∪ {Γ_ℝ (p,q) at ∞}`
+   glue to a global object whose polarization **is** the explicit-formula quadratic form (so `W_∞≥Σ_p W_p`
+   is a descent constraint, not a hope).
+M5. **[FALSIFY]** Run M2–M4's objects through `falsify.py`: confirm sees-zeros (polarization depends on
+   zero locations) AND DH-failure (no Euler product ⟹ no object).
+
+## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
+RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
+route to it is now closed with a structural reason (logs: `2026-06-06-*pairing*.md`, `*-domination.md`):
+- **self-pairing forms** (symmetric/θ-twist/Hermitian/oriented, real OR complex plant) — **Sylvester
+  inertia-locked** for any `*`-congruence of a fixed DH-shared background. [THM-flavored]
+- **operator domination** — no operator is both Euler-borne-independent AND zero-tracking.
+- **zero-side Gram** — circular + not Euler-borne.
+The open object survives unscathed: **a structure that genuinely depends on the zero LOCATIONS** = the
+Frobenius/`(p,q)`/Deninger archimedean-Hodge action (deep construction). 28 Euler/wall confirmations.
+
+## CLOSED — the de Bruijn–Newman / `Λ≤0` (dynamical) branch (audited, pass 1–2)
+The dynamical route (`RH ⟺ Λ≤0`, dBN heat flow `e^{−tD²}`) is **genuinely DISTINCT on the INERTIA
+axis** — the flow is a 1-param semigroup, NOT a `*`-congruence, and it CHANGES the real-root count, so
+it ESCAPES the Sylvester lock that closed every static form (the one structurally new thing the whole
+audit produced). **But it stalls at the SAME wall on the Euler/location axis**, for the same reason
+(logs `2026-06-06-dbn-anchor.md`, `-dbn-flow-functional.md`):
+- **the only unconditional lever (Rodgers–Tao `Λ≥0`)** uses GUE/Montgomery pair correlation, which is
+  UNIVERSAL (a pure Hermitian random matrix with no Euler product carries the same level repulsion,
+  `P(gap<0.25mean)` GUE `0.020` vs Poisson `0.220`) — RH-silent on the Euler axis, and wrong-direction.
+- **the open object it named — an Euler-borne flow functional monotone toward reality** — was built and
+  SPLITS like every static functional: the modulus reading `Σ|Im P(γ)|` is Euler-borne + sees `|Im|` but
+  is `sign Im`-blind and `→0 ⟺ RH` (circular); the only reading that sees `sign Im` (`Σ Im P(γ)`) is
+  IDENTICALLY 0 on the FE-forced conjugate config (`+Im`/`−Im` cancel). The dBN generator is Euler-FREE;
+  the primes ride passively (initial datum only); `sign Im` is conjugation-odd, Euler functionals are
+  conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
+  Euler/location axis.** The program returns to the static frontier below.
+
 ## NEXT — the static frontier (the surviving load-bearing items)
 
 The audit's standing result: **no finite-rank form/operator AND no Euler-borne flow functional is
@@ -58,30 +113,30 @@ conjugation-ODD" was a MIS-NAMING of the inertia-degeneracy of an even form.** T
 the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE by the Euler/prime data
 (so a planted off-line pair degenerates it). The live routes, re-prioritized to that single wall:
 
-1. **[surface · Euler-MOVABLE inertia · load-bearing]** RH ⟸ a self-product surface over `Spec ℤ` whose
-   self-intersection is `‖f‖²`, Hodge index supplying the `½`-root (`F-sym2-os-bridge.md` pass 2). The
-   product surface `S×S` and the non-product Hecke correspondence are both closed (each symmetrizes to a
-   Sylvester congruence of the FE-invariant DH-shared archimedean `A`, DONE). The CORRECTED spec (drop
-   "conjugation-odd"): an EVEN positive form whose **inertia is NOT a congruence of the fixed DH-shared
-   `A`** — i.e. the form the plant pairs against must itself depend on the zero LOCATIONS, so the
-   signature DEGENERATES when an off-line Weil pair is planted (the FF mechanism: `Δ⊥·Δ⊥` goes from `<0`
-   to `=0` on-circle). Over `𝔽_q` this is `End(Jac)`'s positivity supplying the negative-definite
-   primitive part; over `ℤ` it is the missing `End(S²/ℤ)`. Make the `q→1` degeneration of the `C×C`
-   Hodge index executable in the condensed/tropical corner (Connes–Consani Scaling Site / F. Charles'
-   archimedean Deligne–Illusie), targeting an even form with Euler-movable signature. **Falsifier in
-   advance (corrected):** does the candidate's even self-pairing have its INERTIA moved by the prime data
-   (not locked to `sig(A)` by Sylvester)? That is the one test; conjugation-evenness is REQUIRED, not
-   forbidden.
-2. **[the Euler-movable-inertia object · load-bearing, sharpest]** `operator_domination.py` (DONE #27)
-   read correctly under the corrected framing: RH needs `inertia(W=A−P)` to flip with the line, and the
-   pin is that the Euler-borne `P` (from `Λ(n)`) is zero-location-BLIND while the only zero-bearing `P`
-   is the Weil form (circular). Over `𝔽_q` the analogue is NOT blind: `End(Jac)` makes the primitive
-   intersection form negative-definite, and a hypothetical off-circle Frobenius pair would VIOLATE it
-   (the signature would gain a `+`). **The precise open object:** what supplies, over `ℤ`, an
-   `End(S²/ℤ)`-style positivity whose inertia an off-line zero degenerates — the FF `Δ⊥·Δ⊥≤0` with no
-   `End(Jac)` available. Build the `𝔽_q` degeneration test: does the primitive-part NEGATIVE-DEFINITENESS
-   survive a `q→1` / archimedean limit with the prime data supplying the polarization? (This is the
-   single wall, now stated as an EVEN-form inertia question, not an odd-functional construction.)
+1. **[THE RADIUS PROBLEM · load-bearing · sharpest, replaces the abstract "Euler-movable inertia"]**
+   `euler_movable_inertia.py` (DONE, just now) EXECUTED the FF archetype and found: the even Hodge-index
+   form's inertia IS genuinely Euler-MOVABLE over `𝔽_q` (an off-circle Frobenius pair flips the
+   primitive sig `(0,1,1)→(1,0,1)`, "gains a `+`", EXACTLY `= Σ|αᵢ|²−2gq` the modulus defect), so the
+   corrected NEXT #1 spec is SATISFIABLE in the FF — BUT the moving quantity is a conjugation-EVEN
+   MODULUS measured against the **circle radius `√q`**, and `√q` is the EULER datum (the Frobenius
+   weight); a generic non-Satake pairing flips identically, so the Satake `q` only sets the radius.
+   The decisive gap, now named: **over `𝔽_q` the Euler product SETS the radius `√q`; over `ℤ` the
+   radius `Re s=½` is the FE FIXED LOCUS, Euler-INDEPENDENT (DH shares it).** So the missing object is
+   NOT "an even form with movable inertia" (the FF has one) but **an Euler datum over `ℤ` that sets the
+   critical radius `Re s=½` the way `q` sets `√q`.** THE OPEN QUESTION: is there ANY ζ-intrinsic object
+   over `ℤ` whose critical radius is read off the Euler/prime data rather than the FE? The certificate
+   ladder (`§L`) restated: the Euler product anchors the **edge `Re s=1`** (abscissa of abs.
+   convergence, Worker E); the FE anchors the **centre `Re s=½`**. Probe: does ANY Euler-product
+   feature anchor at `½` and not just `1`? **Falsifier in advance:** the candidate's critical radius
+   must be DH-distinguishing (an Euler datum), not the FE-shared `Re s=½`.
+2. **[the `q→1` degeneration WITH the radius tracked · load-bearing]** Now that the radius `√q` is
+   identified as THE Euler-borne invariant carrying the inertia-flip (DONE, `euler_movable_inertia.py`),
+   the `q→1` degeneration of the `C×C` Hodge index has a tracked target: `√q → 1`, the circle collapses
+   to the point. **What is the `q→1` image of "`√q` is the Frobenius weight"** — does the Frobenius-weight
+   radius survive as an EULER datum over `𝔽₁`/the Scaling Site, or does it become the FE locus? Make this
+   executable in the Connes–Consani Scaling Site / F. Charles' archimedean Deligne–Illusie corner, with
+   the **radius** (not the abstract inertia) as the tracked invariant. (This is the concrete `q→1`
+   question prior passes deferred, now with the load-bearing invariant pinned by DONE.)
 3. **[A5 · the reflection that pairs `s=1` to `s=½` · load-bearing]** The OS/A4 reduction
    (`F-sym2-os-bridge.md` pass 1): the sym²/Rankin–Selberg edge norm-square is anchored at `s=1`
    (`Res_{s=1}L(s,f×f̄)=‖f‖²>0`, a theorem); A5 is the structure under which it becomes OS-positive
@@ -93,6 +148,51 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — EXECUTED the corrected NEXT #1/#2 spec ("an EVEN positive form whose inertia is
+  Euler-MOVABLE — an off-line plant degenerates the signature") in the ONE place the Hodge index is a
+  THEOREM (the function field), testing the agenda's own NEXT #2 assertion, and found: the assertion is
+  LITERALLY TRUE — the FF DOES have Euler-movable inertia — BUT the three-axis falsifier locates WHY it
+  does not transport to `ℤ`: the moving quantity is a conjugation-EVEN MODULUS against the circle radius
+  `√q`, and `√q` is the EULER datum, while over `ℤ` the radius `Re s=½` is the FE FIXED LOCUS
+  (Euler-independent).** [CONSTRUCT/EXECUTE · load-bearing → first concrete realization of
+  Euler-movable inertia; gap renamed to THE RADIUS PROBLEM]. `scripts/numerics/witness/euler_movable_inertia.py`
+  (+1 `falsify.py` row), `research/log/2026-06-06-euler-movable-inertia.md`. **Finding [computed+THM,
+  exact, falsifier CIRCULAR]:** built Frobenius `F` on `H¹(E)` (companion `T²−a₁T+q`), the polarization
+  `E` (`FᵀEF=qE`, residual `<1e-15`), the Rosati adjoint `φ†=E⁻¹φᵀE` (= the FF conjugation `α↦q/α`),
+  and the PRIMITIVE Hodge-index form `−Tr(F₀F₀†)` on the trace-zero `F₀=F−(trF/2g)Id`. **(1) The
+  assertion is TRUE:** on-circle (5 RH curves `q=5,7,11,13,2`) primitive sig `(0,1,1)`, neg eig `=−2gq`
+  exactly; off-circle plant `{r√q,√q/r}` (product `q`, `|·|≠√q`) FLIPS the neg eig to POSITIVE, sig
+  `(0,1,1)→(1,0,1)`, monotone in `r` ("the signature gains a `+`") — **Euler-movable inertia is REAL in
+  the FF; the corrected spec is SATISFIABLE there (first concrete archetype).** **(2) The falsifier
+  pins the non-transport:** the flipping eigenvalue equals EXACTLY the MODULUS DEFECT `Σ|αᵢ|²−2gq`
+  (match `1e-9` every `r`) — conjugation-EVEN (symmetric under `|α|↔q/|α|`; `r` and `1/r` give identical
+  sig `(1,0,1)` — HOW FAR not WHICH SIDE, the 31-conf modulus/phase split); the flip does NOT need the
+  Satake polarization (a generic non-`q`-similitude pairing = DH-like flips identically — the Satake `q`
+  only RESCALES `E`); what the Euler data supplies is the **circle RADIUS `√q`** (the Frobenius weight =
+  base-field size, `α·α†=q` the Satake relation DH lacks; `Σ|αᵢ|²=2gq` exact on-circle). **THE DECISIVE
+  GAP, named:** over `𝔽_q` the radius `√q` is an EULER datum (Frobenius weight) so off-circle is an
+  Euler-ANCHORED modulus and inertia IS Euler-movable; over `ℤ` the analogue radius `Re s=½` is the FE
+  FIXED LOCUS, NOT supplied by any Euler datum (`Λ(n)` doesn't set it; it is the FE-invariant DH-shared
+  `A`) ⟹ the modulus defect is measured against a FE-borne radius ⟹ Sylvester-LOCKED to `A` (the 31
+  confs). So the missing `ℤ`-object is NOT "an even form with movable inertia" (the FF has one) but
+  specifically **an Euler datum over `ℤ` that SETS the critical radius `Re s=½` the way `q` sets `√q`** —
+  but `Re s=½` is the FE fixed locus, Euler-INDEPENDENT (DH-shared). = `W_∞≥Σ_p W_p` sharpest: the primes
+  must SET THE LINE, but over `ℤ` the line is set by the FE not the primes. **Verdict: Euler-borne YES
+  (radius `√q` = Frobenius weight), sees-zeros YES (off-circle flips inertia), independent NO (modulus
+  defect off the spectrum = Weil positivity) → CIRCULAR. 32nd wall confirmation — the FIRST to exhibit
+  Euler-movable inertia CONCRETELY and locate the gap as "Euler sets the radius over `𝔽_q`, the FE sets
+  it over `ℤ`."** **DECISIVE LESSON:** the corrected NEXT #1 framing was right that the FF escapes the
+  Sylvester lock (its inertia genuinely moves) but the escape is FF-specific for ONE reason — the Euler
+  product OWNS the radius `√q`. Re-specifies the program: the open object is not "movable inertia" (had)
+  but **the RADIUS being Euler-borne** (new NEXT #1: is any ζ-intrinsic critical radius read off the
+  primes not the FE? — the certificate ladder, Euler→edge `Re s=1`, FE→centre `Re s=½`); and the `q→1`
+  degeneration now tracks `√q→1` as the invariant (new NEXT #2). Honest subtlety: `g=1` (`2×2`), so
+  on-circle is the semidefinite `(0,1,1)` (the `+0` is the trace-removal kernel); load-bearing EXACT
+  facts are neg eig `=−2gq`, the flip `(0,1,1)→(1,0,1)`, the EXACT flip-eig `=Σ|αᵢ|²−2gq`, the `r↔1/r`
+  invariance, and the generic-pairing same-flip — none depend on the dimension. "Euler-movable inertia
+  is real in the FF" is a POSITIVE structural finding (refutes the alternative negative); the CIRCULAR
+  verdict is over `ℤ` (modulus defect against an Euler-set radius the primes don't supply over `ℤ`).
 
 - **2026-06-06 — Audited NEXT #1's FALSIFIER-IN-ADVANCE itself ("the missing ℤ-surface self-pairing
   must be conjugation-ODD") in the ONE place the `C×C` Hodge-index mechanism is a THEOREM (the function
