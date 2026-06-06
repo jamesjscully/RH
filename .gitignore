@@ -30,3 +30,6 @@ __pycache__/
 
 # local reference PDFs (not tracked)
 research/papers/
+
+# harness worktrees / agent state
+.claude/
