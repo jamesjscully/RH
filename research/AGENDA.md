@@ -15,20 +15,21 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · the polarization relation `F·F^†=deg·Id`]** The Frobenius self-norm
-   `⟨F,F⟩=deg(F)` does NOT have a single `ℤ`-meaning (DONE #0 this pass): it SPLITS into an unconditional
-   RH-SILENT number (algebraic Rosati `2gq` = Arakelov `ĥ_NT`, blind to the zeros) and a forcing
-   RH-conditional norm (Hilbert `Σ|α|²` = CC20 archimedean diagonal), **separated by exactly the
-   polarization relation `F^† = (deg)·F^{-1}`** (the operator identity `F·F^† = (deg)·Id` in `End(Jac)`).
-   So the wall is now a SINGLE OPERATOR RELATION, not a missing object: **build a `ℤ`-algebra `A` (the
-   would-be `End(S²/ℤ)`) with the explicit-formula prime-sum element `F` and an involution `†` s.t.
-   `F·F^† = c·Id` UNCONDITIONALLY (the polarization), with `†` POSITIVE (`F^†=F^*`, the Hilbert adjoint)
-   being RH.** Two concrete on-ramps surfaced this pass: **(1) the Bost–Connes/QSM algebra** already has
-   `ℤ`, a `ζ`-partition function, and a modular involution `σ_t` — does its `F·F^†` close to a scalar (a
-   KMS/modular relation), and is the resulting `c` the polarization degree? **(2) the CC20 Sonin/Toeplitz
-   compression** — is `S θ S = (deg)·Id` on Sonin's space the missing operator identity (`F^†=(deg)F^{-1}`
-   as the scaling-flow adjoint)? Falsifier discipline: the unconditional value is RH-SILENT (handle a/b
-   only ever supply the wrong-divisor channel); the content is the POSITIVITY `F^†=F^*` = RH.
+1. **[CONSTRUCT · load-bearing · prove the POSITIVITY `θFθ=F^*` independently]** DONE #0 (this pass)
+   showed the polarization RELATION `F·F^†=c·Id` is **NOT the wall** — at the archimedean place it IS the
+   functional equation `m(s)m(1−s)=c` (a free unitarity, RH-silent, holds for DH). The gap is localized
+   WITHIN the operator identity to its OTHER half: **prove `θFθ=F^*` (equivalently `m(1−s)=conj m(s)`,
+   the scattering resonances on `Re s=¼`/zeros on the line) INDEPENDENTLY of RH** — this is the CC20
+   Sonin-space positivity. Two concrete on-ramps surfaced: **(a)** CC20 prove the Sonin/scaling-
+   compression positivity up to a finite-rank defect (the low-lying zeros) — is that defect the SAME
+   "off-diagonal `Tr F`/prime sum" residual (`off_diagonal.py`), i.e. does `θFθ=F^*` reduce, modulo the
+   unconditional part, to the **cross-place coupling `W_∞ ≥ Σ_p W_p`**? (would UNIFY this pass with the
+   standing wall). **(b)** since the relation is the FE, `F` and `θFθ` are commuting multiplication
+   operators on the Mellin line and `θFθ=F^*` is a **reality** condition on the symbol — does the
+   **sym²/Rankin–Selberg norm-square** (A4 of `F-sym2-os-bridge`) supply that reality as a square-modulus
+   `m=|h|²·phase`, making `θFθ=F^*` automatic? (reconnects to the OS/A4 thread). Falsifier discipline:
+   the RELATION half is DISPERSING (the FE); the content is the POSITIVITY half, which is CIRCULAR until
+   an independent proof exists.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -56,6 +57,28 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Tested both on-ramps for the polarization relation `F·F^†=c·Id`: the RELATION is NOT
+  the wall — it is the (free) functional equation; the POSITIVITY `θFθ=F^*` is the whole problem.**
+  [CONSTRUCT · load-bearing → gap localized WITHIN the operator identity].
+  `scripts/numerics/witness/polarization_relation.py` (+ 2 `falsify.py` rows),
+  `research/log/2026-06-06-polarization-relation.md`. **Finding [THM+computed]:** built the archimedean
+  model `H=L²(ℝ₊*,du/u)` where on-ramp (2) lives — `θ`=inversion `f(u)↦f(1/u)`=FE `s↦1−s`, scaling flow
+  `U_λ`, `F`=Weil operator=mult by symbol `m(s)`. The polarization `F^†:=θFθ` gives `F·F^†`=mult by
+  `m(s)m(1−s)`; `=c·Id` ⟺ the **unitary functional equation** `\|m\|=√c` on the line. **Decisive split:**
+  (RELATION) `M(s)M(1−s)=1` for `M=Λ(2s−1)/Λ(2s)` verified to `~1e-31` for BOTH RH-true AND a planted
+  off-line-zero plant, AND for **Davenport–Heilbronn** (`1e-9`, incl. near its known off-line zero
+  `β=0.8085`) — it follows ONLY from the FE, so the relation holds verbatim for the RH-false function:
+  **Euler-borne NO, sees-zeros NO → DISPERSING**; (POSITIVITY) `θFθ=F^*` ⟺ `m(1−s)=conj m(s)` ⟺
+  resonances (poles of `M` at `ρ/2`) on `Re s=¼` — the off-line plant moves one to `Re=Re(ρ₀)/2=0.4≠¼`:
+  **Euler-borne YES, sees-zeros YES, independent NO → CIRCULAR**. **So the polarization RELATION
+  `F^†=(deg)F^{-1}` already EXISTS over `ℤ`/`∞` (it is the FE conjugation `θFθ`) — it is NOT a missing
+  structure; the missing object is an INDEPENDENT proof of the POSITIVITY `†=*` = the open Weil/CC20
+  positivity.** On-ramp (1) Bost–Connes `σ_t=Ad(ζ^{it})`: same split — the KMS modular unitarity is the
+  relation (RH-silent, cf. `qsm_free_energy.py`), positivity (trace/`†=*`) is RH. **15th Euler-product
+  confirmation.** First to localize the gap WITHIN the operator identity (relation-half free,
+  positivity-half = whole problem); removes "construct the polarization relation" from the wall and pins
+  the residual to `θFθ=F^*`. Surfaces NEXT #1 on-ramps: (a) is the CC20 finite-rank positivity defect
+  the same `W_∞≥Σ_p W_p`? (b) does sym² supply the reality `m=\|h\|²·phase`?
 - **2026-06-06 — Attacked the WALL `⟨F,F⟩=deg(F)`: it SPLITS into an RH-silent number and a circular
   form, separated by ONE polarization relation `F^†=(deg)·F^{-1}`.** [CONSTRUCT · load-bearing → wall
   pinned to a single operator identity]. `scripts/numerics/witness/frobenius_self_norm.py` (+ 2
