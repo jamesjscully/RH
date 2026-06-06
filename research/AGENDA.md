@@ -40,6 +40,62 @@ audit produced). **But it stalls at the SAME wall on the Euler/location axis**, 
   conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
   Euler/location axis.** The program returns to the static frontier below.
 
+## NEXT — THE RESIDUE: the archimedean weight-monodromy (the irreducible atom)
+
+**State (keystone pass complete, honest terminus reached).** The full framework is built + validated;
+RH is peeled to ONE irreducible atom: **the even split `|α|=|β|` = the Frobenius is a fixed point of the
+polarization involution = purity = the archimedean weight-monodromy.** Every framework piece (cup product
+`E`, the `*`-involution, the determinant edge `αβ=p^{k-1}`, the Hodge–Riemann implication) is FREE/Euler-
+borne; the radius is the residue. **This pass attacks the residue itself — frontier characterization, not
+an expected proof.** The precise shape: over `𝔽_q` the even split is forced by the **weight-monodromy** —
+Deligne's nilpotent `N` (geometric monodromy) whose filtration = the weight filtration (Weil II). *Is
+there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?*
+
+R1. **[RESIDUE · characterize]** State the residue as the **monodromy-weight** question: over `𝔽_q`,
+   `|α|=q^{w/2}` is forced because the geometric `N` exists and `M(N)=W` (monodromy filtration = weight
+   filtration). Pin down precisely what the archimedean `N` must be and what "`M(N)=W` forces the even
+   split" requires. Anchor: verify on the FF datum that `M(N)=W` ⟹ purity (no zeros assumed).
+R2. **[RESIDUE · Schmid SL(2)-orbit]** Connect to the **limiting mixed Hodge structure / Schmid's
+   SL(2)-orbit theorem** — where monodromy-weight IS a theorem at the archimedean place. Does the
+   SL(2)-orbit's nilpotent supply the `N` that forces `|α|=|β|`, or does it give only the (free) weight
+   *parity* `(−1)^w` and not the radius? (Expected: the M3b lesson recurs — phase free, radius residual.)
+R3. **[RESIDUE · Connes–Consani scaling site]** Connect to the **scaling action / absolute Frobenius**
+   (Riemann–Roch for `Spec ℤ`). Is the scaling generator the archimedean `N`? Does its weight filtration
+   force purity, or is the scaling action radius-silent like every other free piece?
+R4. **[RESIDUE · the missing operator, pinpointed]** State EXACTLY what an archimedean `N` forcing the
+   even split must satisfy, and locate the precise obstruction to its existence (what `ℤ` lacks that
+   `𝔽_q`'s degeneration provides). Falsify: does the putative `N` fail to exist for DH?
+R5. **[SYNTHESIS — the shape of the missing idea]** Either a genuine archimedean `N` (a real lead), or
+   the precisely-located obstruction = the single thing whose construction is the open problem. This is
+   the true terminus: the residue characterized to the atom, the missing idea's shape named.
+
+## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
+RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
+route to it is now closed with a structural reason (logs: `2026-06-06-*pairing*.md`, `*-domination.md`):
+- **self-pairing forms** (symmetric/θ-twist/Hermitian/oriented, real OR complex plant) — **Sylvester
+  inertia-locked** for any `*`-congruence of a fixed DH-shared background. [THM-flavored]
+- **operator domination** — no operator is both Euler-borne-independent AND zero-tracking.
+- **zero-side Gram** — circular + not Euler-borne.
+The open object survives unscathed: **a structure that genuinely depends on the zero LOCATIONS** = the
+Frobenius/`(p,q)`/Deninger archimedean-Hodge action (deep construction). 28 Euler/wall confirmations.
+
+## CLOSED — the de Bruijn–Newman / `Λ≤0` (dynamical) branch (audited, pass 1–2)
+The dynamical route (`RH ⟺ Λ≤0`, dBN heat flow `e^{−tD²}`) is **genuinely DISTINCT on the INERTIA
+axis** — the flow is a 1-param semigroup, NOT a `*`-congruence, and it CHANGES the real-root count, so
+it ESCAPES the Sylvester lock that closed every static form (the one structurally new thing the whole
+audit produced). **But it stalls at the SAME wall on the Euler/location axis**, for the same reason
+(logs `2026-06-06-dbn-anchor.md`, `-dbn-flow-functional.md`):
+- **the only unconditional lever (Rodgers–Tao `Λ≥0`)** uses GUE/Montgomery pair correlation, which is
+  UNIVERSAL (a pure Hermitian random matrix with no Euler product carries the same level repulsion,
+  `P(gap<0.25mean)` GUE `0.020` vs Poisson `0.220`) — RH-silent on the Euler axis, and wrong-direction.
+- **the open object it named — an Euler-borne flow functional monotone toward reality** — was built and
+  SPLITS like every static functional: the modulus reading `Σ|Im P(γ)|` is Euler-borne + sees `|Im|` but
+  is `sign Im`-blind and `→0 ⟺ RH` (circular); the only reading that sees `sign Im` (`Σ Im P(γ)`) is
+  IDENTICALLY 0 on the FE-forced conjugate config (`+Im`/`−Im` cancel). The dBN generator is Euler-FREE;
+  the primes ride passively (initial datum only); `sign Im` is conjugation-odd, Euler functionals are
+  conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
+  Euler/location axis.** The program returns to the static frontier below.
+
 ## NEXT — THE KEYSTONE: force `P_∞ ⪰ 0` (`c=D`) by an archimedean Kähler / Hodge–Riemann structure
 
 **State (build pass complete).** The whole polarized arithmetic Hodge category is BUILT and validated
