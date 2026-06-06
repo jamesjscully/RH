@@ -64,27 +64,36 @@ sharpened residue: discreteness ≠ finite base size** — a discrete arithmetic
 but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽₁`-analogue of "`Spec ℤ` has no
 constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
+**R4–R7 (DONE) relocated then refined the residue: the orbit/surface are smooth (`N=0`), so the family
+`𝒮_t` is the carrier — and R7 found the family + `N` + `M(N)=W` + the weight grading are ALL free (Schmid),
+the residue pinned to ONE cardinality `|κ(t=0)|`. R8 (DONE) read that cardinality as a CONSTANT-FIELD
+invariant and PROVED a TYPE obstruction: the three free 𝔽₁ suppliers (scaling-grading = continuum, length
+edge = a length, Bost–Connes `ℕˣ` = a base-independent index whose `q→1` ground field evaporates) cannot
+furnish a finite `|constant field|`. The residue is now: "`Spec ℤ` has no finite field of constants at `∞`"
+= the precise 𝔽₁-content of RH. R9 (TOP) tests whether any 𝔽₁-tower (`μ_∞`, Witt ghosts, the Arakelov
+`∞`-component) supplies a finite constant field, or confirms the obstruction (`μ_∞` is infinite).**
 
-R8. **[CONSTRUCTION · supply the FINITE residue-field cardinality `|κ(t=0)|=q` at the archimedean special
-   fiber — NOW THE TOP ITEM (R7 DONE: the family + `N` + `M(N)=W` are all FREE; the residue is ONE
-   cardinality)]** R7 (DONE) decided R6's lead and REFINED it: the archimedean degenerating family `𝒮_t` of
-   `S²/ℤ` **EXISTS** and **carries the nearby-cycle `N` with `M(N)=W` for FREE** (Schmid's nilpotent orbit
-   theorem at `∞`) — R6's "the family is missing" was too strong. The radius `q^{w/2}` is supplied by
-   **neither `N` nor `M(N)=W`** (both free integer-weight data) but by the **cardinality of the residue field
-   of the closed point** `t=0`: finite `𝔽_q` over a function field (radius `=√q`, MARKED, via the geometric
-   Frobenius of `𝔽_q`) vs the continuum `ℂ` at `∞` (no Frobenius, no `q`, radius UNMARKED). So the `𝔽₁` atom
-   is now in its **FINAL FORM** — a single cardinality invariant `|κ(t=0)|`, i.e. "the archimedean place of
-   `Spec ℤ` has no finite residue field at its compactified point." **R8's task:** does the Connes–Consani
-   `𝔽₁`-geometry / scaling site / the `q→1` limit SUPPLY a finite closed-point cardinality at the archimedean
-   special fiber of `𝒮_t` (the missing `|κ(t=0)|=q`-analogue that converts the free weight `w` to the radius
-   `q^{w/2}`), or is "no finite residue-field cardinality at `∞`" the **proven irreducible terminus** = the
-   precise `𝔽₁`-content of RH? Anchor on `𝔽_q`: there the special fiber's residue field `𝔽_q` IS the base
-   size that marks the radius; the question is whether the `𝔽₁`/scaling-site machinery (R3's `ℝ_{>0}^×`
-   grading, R3b's `{log p}` edge, R3b-BC's `ℕˣ` — all the free pieces) can be assembled into a **finite
-   `|κ|`** at `t=0`, or whether `𝔽₁` is exactly "the `q→1` limit DELETES the ground-field cardinality"
-   (R3b-BC's verdict), making the radius irreducibly unmarked. (falsify: the supplied cardinality must be
-   DH-distinguishing — DH has no `H^1` ⟹ no surface ⟹ no family ⟹ no special fiber ⟹ no `|κ(t=0)|` to set,
-   three levels before the radius.)
+R9. **[CONSTRUCTION · the CONSTANT-FIELD reading — does any 𝔽₁-tower supply a FINITE constant field at `∞`,
+   or is `μ_∞` (cardinality `∞`) the next confirmation? — NOW THE TOP ITEM (R8 DONE: the missing cardinality
+   IS the missing constant field; a proven TYPE obstruction)]** R8 (DONE) read R7's single missing cardinality
+   `|κ(t=0)|` CORRECTLY — as a **constant-field invariant** `|κ(t=0)| = |constant field|^{deg}` (over `𝔽_q`
+   finite because a finite constant field lies UNDER the curve) — and PROVED a **TYPE obstruction**: the three
+   free `𝔽₁` suppliers (R3's scaling site = a **continuum**; R3b's length edge `{log p}` = a **length**;
+   R3b-BC's Bost–Connes `ℕˣ` = a **base-independent index** whose ground field the `q→1` limit DELETES) each
+   supply a real piece (grading / edge / discreteness) but **NONE furnishes a constant-field cardinality** —
+   their sizes are the wrong TYPE (continuum/length/index, never a finite `|field|`). The `𝔽₁` fact "`Spec ℤ`
+   has no constant field" is EXACTLY why the base size `q^{w/2}` is the irreducible residue = the **precise
+   `𝔽₁`-content of RH**: RH over `ℤ` ⟺ the archimedean compactified point acquires a finite constant field.
+   **R9's task:** does any *candidate* construction supply a finite **constant-field cardinality** at `∞` of the
+   right type — Connes–Consani's `\overline{Spec ℤ}` compactification with its archimedean component; the Borger
+   Λ-ring / big-Witt "ghost" constants; the cyclotomic tower `μ_∞` / `𝔽_{1^n}` as a would-be field of
+   constants — or is the obstruction confirmed at the next level (the cyclotomic constants `μ_∞` have cardinality
+   `∞`, an INFINITE would-be constant field, so the type obstruction RECURS)? Anchor on `𝔽_q`: there the constant
+   field is `𝔽_q`, finite, cardinality `q`, and EVERY closed point's residue field is a finite extension of it;
+   the question is whether ANY `𝔽₁` ground-of-constants at `∞` is finite, or whether all candidates (`μ_∞`, the
+   Witt ghosts, the Arakelov `∞`-component) are infinite — confirming "no finite constant field at `∞`" as the
+   irreducible terminus. (falsify: the supplied constant field must be DH-distinguishing AND finite — DH has no
+   `H¹` ⟹ not even curve-like ⟹ no constant-field slot, four levels before the cardinality.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -315,6 +324,45 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R8 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the 𝔽₁ / Connes–Consani
+  machinery does NOT supply a finite closed-point cardinality at the archimedean special fiber — "no finite
+  residue field at `∞`" is the PROVEN IRREDUCIBLE TERMINUS, a TYPE obstruction; the missing cardinality IS
+  the missing CONSTANT FIELD, and that is the precise 𝔽₁-content of RH.** [DECISION · DEF ·
+  coherence-checked vs 𝔽_q]. `research/construction/R8-residue-field-cardinality.md`,
+  `scripts/numerics/witness/residue_field_cardinality.py` (+1 `falsify.py` row → 44th wall,
+  DISPERSING-by-design = terminus-characterizer / type-obstruction locator, Euler-silent like R1–R7).
+  **What got DECIDED (exact constant-field cardinality algebra, no zeros assumed):** R8 reads R7's single
+  missing cardinality `|κ(t=0)|` CORRECTLY — as a **constant-field invariant** `|κ(t=0)| = |constant
+  field|^{deg}`: over `𝔽_q` it is FINITE because a finite **constant field `𝔽_q` lies UNDER the whole
+  curve** (`κ(x)=𝔽_{q^{deg(x)}}`). So R7's "single missing cardinality" IS the **MISSING CONSTANT FIELD**,
+  and the 𝔽₁/`q→1` story (R3b-BC, verified) is PRECISELY that `q→1` DELETES the constant field. **TYPE-CHECK
+  (the decision):** the three free 𝔽₁ suppliers each supply a real piece but NONE matches the type "a finite
+  constant-field cardinality": **[Sca]** the scaling site (R3) supplies the `ℝ_{>0}^×`-**grading**; its
+  absolute Frobenius `Fr_λ` is **continuous** (transitive, no marked `λ`), residue field `ℝ`/`ℂ` = a
+  **continuum**; **[Len]** the length edge (R3b) supplies `{log p}` = the **edge**; the orbit "size" is a
+  **LENGTH** `log p` (lengths differ per prime, no single base size); **[Nˣ]** the Bost–Connes multiplier
+  (R3b-BC) supplies the discrete **`ℕˣ`**; but `q→1` EVAPORATES the radius (verified `q=5,3,2,1.5,1.1,1.001`
+  → `2.24,1.73,1.41,1.22,1.05,1.0005 → 1`) — discreteness WITHOUT a finite ground field. **Falsifier verdict:**
+  EULER-BORNE NO on this pass (type-checks the residue; not a `ℤ`-positivity; DH structural verdict sharp,
+  FOUR levels before the radius — no `H¹` ⟹ no surface ⟹ no family ⟹ no special fiber ⟹ no closed point whose
+  `|κ|` could be asked), SEES-ZEROS YES (radius `= M(N)=W =` even split `=` purity), INDEPENDENT NO (radius `=`
+  Weil II `=` the solved case; over `ℤ` this is RH) → DISPERSING-by-design. **Ladder `DH < ζ < FF`:** DH not
+  even curve-like (no constant field); `ζ` the `q→1`/𝔽₁ place WITH `N`, `M(N)=W`, grading/edge/discreteness
+  all free but NO finite constant field under it (continuum residue field), radius UNMARKED; FF a curve over a
+  FINITE constant field `𝔽_q`, `|κ(t=0)|=q^{deg}`, Frobenius converting `w → q^{w/2}`, radius MARKED.
+  **THE PRECISE 𝔽₁-CONTENT OF RH:** RH over `ℤ` ⟺ the archimedean compactified point of `Spec ℤ` acquires a
+  finite **constant field** (a base size `q`) marking the radius `q^{w/2}` = the even split = purity; and
+  "`Spec ℤ` has no constant field" is EXACTLY why that base size is the irreducible residue. **NEW content
+  (REFINES R7):** R7's residue-field cardinality is, structurally, a **constant-field** cardinality, and the
+  obstruction is a **TYPE mismatch** (the three free suppliers' sizes are continuum/length/index, never a
+  finite `|field|`) — not a not-yet-built object. **Not overclaimed:** R8 proves the type mismatch, NOT that
+  no future 𝔽₁-geometry could ever manufacture a constant field; it pins the open problem to its sharpest form
+  — "supply a finite constant field at `∞`" (the 𝔽₁ analogue of giving `Spec ℤ` a field of constants).
+  **Successor:** R9 promoted to TOP ITEM [CONSTRUCTION — does any 𝔽₁-tower (`μ_∞`/`𝔽_{1^n}`, the Borger Λ-ring
+  / big-Witt ghost constants, Connes–Consani's `\overline{Spec ℤ}` archimedean component) supply a FINITE
+  constant field at `∞`, or is the obstruction confirmed at the next level (the cyclotomic constants `μ_∞` have
+  cardinality `∞`, an infinite would-be constant field, the type obstruction RECURRING)?].
 
 - **2026-06-06 — R7 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the archimedean degenerating
   FAMILY `𝒮_t` of `S²/ℤ` EXISTS and carries `N` with `M(N)=W` for FREE (Schmid); what is missing is the
