@@ -51,11 +51,16 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M3. **[INVENT · now with a fully-coherent weight-2 target (M2c′ done)]** Define the **archimedean Hodge
-   polarization**: the `(p,q)`/condensed duality datum at
-   `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
-   (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
-M4. **[DESCENT · fully typed by M4A/B/C]** Specify the **duality-descent gluing**: how `{Euler factors at
+M3b. **[COHERENCE · archimedean analogue of M2c′(B)]** Prove `P_∞` is **functorial** in the Hodge datum,
+   and that the **Weil operator `C_W` commutes with the duality `D` up to the Tate twist `ℚ(−w)`** (the
+   `(p,q)`-grading conjugation `c=κ` and `D` form a coherent pair at `∞`, the archimedean mirror of M2c′
+   B1–B3). Output: `(P_∞, D, c)` a coherent triple at `∞`, with RH = the degeneration `c = D` *read
+   archimedeanly* (no Frobenius). Anchor on the polarized-HS model `archimedean_hodge_polarization.py`.
+M3c. **[INVENT · condensed upgrade]** Realize `(V, F^•, κ)` as a **condensed/analytic** object (Clausen–
+   Scholze) so the "condensed-archimedean structure Arakelov lacks" (§2 Pillar A) is explicit, not just
+   finite-dim linear algebra — the archimedean place as a condensed `(p,q)`-datum. Falsify: still
+   §0-clean (duality pairing, not a metric), still Euler-silent-by-design (the `Γ`-factor).
+M4. **[DESCENT · fully typed by M4A/B/C; archimedean input `P_∞` now built (M3)]** Specify the **duality-descent gluing**: how `{Euler factors at
    primes} ∪ {Γ_ℝ (p,q) at ∞}` glue to a global object whose polarization **is** the explicit-formula
    quadratic form (so `W_∞≥Σ_p W_p` is a descent constraint, not a hope). **Target now fully typed:** the
    global **weight-2 NS lattice `gr^W_2`** of `S²/ℤ` — a rigid dualizable lattice (M4C: `D∘D≅id`) whose
@@ -149,6 +154,47 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M3 [INVENT · anchored vs polarized-HS]: INVENTED the archimedean Hodge polarization
+  `P_∞(x,y)=S(C_W x, κ y)` — the `(p,q)`/reality datum at `∞`, FROBENIUS-FREE: the `(p,q)` grading carried
+  by the WEIL OPERATOR `C_W=i^{p−q}` (the reality the FF borrowed from Frobenius, now supplied by `(p,q)`,
+  no `q`) and the conjugation by the INTRINSIC real structure `κ`, with `P_∞` the CANONICAL pairing of the
+  cup-product duality `S` (`H=C_W^† S` exactly, NOT a metric — §0-clean), positivity reading the `(p,q)`
+  type, Frobenius-limit = the FF `c` with `q` stripped.** [INVENT · anchored vs polarized-HS].
+  `research/construction/M3-archimedean-hodge-polarization.md`,
+  `scripts/numerics/witness/archimedean_hodge_polarization.py` (+1 `falsify.py` row → 48). **The gap M3
+  fills:** M2/M2c′/M4C built `(𝒞,ω_∞,D,P)` only on the FF anchor, where `c` and the Weil op were BORROWED
+  from Frobenius (`c:α↦ᾱ` = `D:α↦q/α` on `|α|=√q`); at `∞` THERE IS NO FROBENIUS, so the `(p,q)`/reality
+  datum must be invented intrinsically, with the polarization a duality pairing not a metric (§0). **What
+  got DEFINED:** the archimedean datum `(V,F^•,D,W,c,P_∞)` — real structure `V=V_ℝ⊗ℂ` (`κ`), Hodge
+  filtration `F^•`, structural duality `D:V→V^∨(−w)` (= `S=⟨·,D·⟩`), Weil operator `C_W=i^{p−q}`,
+  conjugation `c=κ`, polarization `P_∞(x,y)=S(C_W x, κ y)=ev∘(1⊗D)∘(C_W⊗κ)` = the Hodge–Riemann form.
+  **What got BUILT (FF/Hodge anchor, weight-1 polarized HS = `H^1` of a genus-`g` curve, period matrix
+  `[I;Z]`, `Z=X+iY`, `Y>0`; `g=1,2,3`, multiple seeds, EXACT):** **(1) ANCHOR** `P_∞` POSITIVE-DEFINITE on
+  `H^{1,0}` (min eig `+2.03,+3.35,+4.72,…>0`) = the classical weight-1 Hodge–Riemann/Riemann relation,
+  reproduced; **(2) DESIGN-LAW (§0)** `H=C_W^† S` EXACTLY (factor resid `0.0e+00`) — the CANONICAL pairing
+  of the duality, NO chosen metric; `S` is the ANTISYMMETRIC cup product (`‖S+Sᵀ‖=0.0e+00`, `Sᵀ=−S`),
+  exactly what a metric is NOT; **(3) §0 NO-GO ESCAPE** `P_∞`'s positivity reads the HODGE TYPE — with `S`
+  FIXED, `Y>0` (polarized, `+2.03`) → `Y=0` (filtration degenerates) → `Y<0` (anti-polarized, `−2.03`),
+  MONOTONE flip, all `g` — the archimedean analogue of 'moved by the zero location', a flip NO `*`-
+  congruence `x^*A x` of a fixed background can produce (Sylvester-immune by CONSTRUCTION: no fixed `A` +
+  variable plant; the `(p,q)` grading IS the variable); **(4) FROBENIUS LIMIT** `κ` swaps the Hodge lines
+  `H^{1,0}↔H^{0,1}` (`‖P_{10}∘κ(H^{1,0})‖=0.0e+00/1.8e-15`) = the FF's `c` with the weight `q` STRIPPED —
+  the deformation `ℤ` needs (`ℤ` has no Frobenius weight; `Re s=½` must come from the archimedean `(p,q)`
+  structure, the open C3b). **Falsifier verdict (an INVENTED+ANCHORED archimedean datum, NOT a standalone
+  `ℤ`-candidate):** EULER-ASSEMBLED NO **BY DESIGN** — the archimedean datum is the `Γ`-factor at `∞`,
+  DH-SHARED; M3's JOB is reality/phase, NOT Euler-discrimination; the cross-place coupling is M4's descent.
+  Tabled **DISPERSING-by-design** (`euler_borne=False`) with the explicit note that it is the archimedean
+  HALF and must NOT be scored as a finished RH-form. SEES-ZEROS YES (the hodge-type flip), INDEPENDENT NO
+  on the anchor (Hodge–Riemann = Riemann relations = the solved case). **NEW content:** the `(p,q)`/reality
+  datum at `∞` is INVENTED Frobenius-free (Weil operator `C_W` + real conjugation `κ`), with `P_∞` the
+  canonical duality pairing (§0-clean, `H=C_W^† S` exact, NOT a metric) whose positivity reads the `(p,q)`
+  type and whose Frobenius limit recovers the FF `c` — the well-typed archimedean input M4's descent glues
+  to the prime Euler factors (the piece M2c′ named "the target M3's archimedean datum deforms into").
+  **Successors added:** M3b [COHERENCE — `P_∞` functorial + `C_W` commutes with `D` up to `ℚ(−w)`, the
+  archimedean mirror of M2c′(B), RH = `c=D` read archimedeanly]; M3c [condensed upgrade — `(V,F^•,κ)` as a
+  Clausen–Scholze condensed/analytic object, the "condensed-archimedean structure Arakelov lacks"]; M4
+  re-tagged (its archimedean input `P_∞` now built, ready to glue to the prime Euler factors).
 
 - **2026-06-06 — M2c′ [COHERENCE · anchored vs 𝔽_q]: completed the M2c/M4D REMAINDER — `φ_{FE}` is a
   genuine MORPHISM of the rigid tensor category (not a matrix), and `c` is COMPATIBLE with `D` up to the
