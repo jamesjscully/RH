@@ -45,35 +45,88 @@ audit produced). **But it stalls at the SAME wall on the Euler/location axis**, 
 The audit's standing result: **no finite-rank form/operator AND no Euler-borne flow functional is
 simultaneously Euler-borne, independent, AND zero-location-tracking** — `sign Im ρ` lives in the zeros,
 `Λ(n)` lives in the primes, and the only object coupling them is the INEQUALITY `W_∞ ≥ Σ_p W_p` = the
-self-intersection `‖f‖²` (the missing surface, `F-sym2-os-bridge.md`). The live routes to that object:
+self-intersection `‖f‖²` (the missing surface, `F-sym2-os-bridge.md`).
 
-1. **[surface · representability · load-bearing]** The frontier (`F-sym2-os-bridge.md` pass 2): RH ⟸ a
-   self-product surface over `Spec ℤ` whose self-intersection is the Petersson norm `‖f‖²`, Hodge index
-   supplying the `½`-square-root. The product surface `S×S` was closed (decomposable, DONE), the
-   non-product Hecke correspondence was closed (symmetrizes to an `A`-congruence, DONE). The surviving
-   spec: a NON-PRODUCT surface whose diagonal is an INDECOMPOSABLE correspondence (`End(S²/ℤ)`) AND whose
-   self-pairing is NOT a congruence of the FE-invariant archimedean `A`. Make the `q→1` degeneration of
-   the `C×C` Hodge index executable in the condensed/tropical corner (Connes–Consani Scaling Site /
-   F. Charles' archimedean Deligne–Illusie), now with the TARGET self-intersection `=‖f‖²` pinned.
-   Falsifier in advance: does the candidate's self-pairing escape BOTH the Sylvester congruence-lock AND
-   the conjugation-evenness (the two walls that closed everything so far)? It must be conjugation-ODD.
-2. **[A5 · the reflection that pairs `s=1` to `s=½` · load-bearing]** The OS/A4 reduction
+**CORRECTED FRAMING (2026-06-06, `conjugation-parity-ff`): there is ONE wall, not two.** Auditing the
+WORKING function-field proof (where the `C×C` Hodge index IS a theorem) shows Weil forces the line with
+a **conjugation-EVEN** positive form `Tr(φφ†)=Σ|αᵢ|²=2gq` (the Rosati `†:α↦q/α` IS the FF complex
+conjugation; each term `α·α†=q` exactly). He NEVER reads one zero's side (no odd functional) — he reads
+the **SIGNATURE/inertia degeneracy** of an EVEN positive-*semi*definite form (the line = its kernel
+locus). The unique conjugation-ODD datum (`u=Σ log(α²/q)`) flips sign under `†` and VANISHES on every
+FE-symmetric spectrum (the `E_signed≡0` cancellation, DONE #25/#30). **So "the missing object must be
+conjugation-ODD" was a MIS-NAMING of the inertia-degeneracy of an even form.** The real-and-only wall is
+the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE by the Euler/prime data
+(so a planted off-line pair degenerates it). The live routes, re-prioritized to that single wall:
+
+1. **[surface · Euler-MOVABLE inertia · load-bearing]** RH ⟸ a self-product surface over `Spec ℤ` whose
+   self-intersection is `‖f‖²`, Hodge index supplying the `½`-root (`F-sym2-os-bridge.md` pass 2). The
+   product surface `S×S` and the non-product Hecke correspondence are both closed (each symmetrizes to a
+   Sylvester congruence of the FE-invariant DH-shared archimedean `A`, DONE). The CORRECTED spec (drop
+   "conjugation-odd"): an EVEN positive form whose **inertia is NOT a congruence of the fixed DH-shared
+   `A`** — i.e. the form the plant pairs against must itself depend on the zero LOCATIONS, so the
+   signature DEGENERATES when an off-line Weil pair is planted (the FF mechanism: `Δ⊥·Δ⊥` goes from `<0`
+   to `=0` on-circle). Over `𝔽_q` this is `End(Jac)`'s positivity supplying the negative-definite
+   primitive part; over `ℤ` it is the missing `End(S²/ℤ)`. Make the `q→1` degeneration of the `C×C`
+   Hodge index executable in the condensed/tropical corner (Connes–Consani Scaling Site / F. Charles'
+   archimedean Deligne–Illusie), targeting an even form with Euler-movable signature. **Falsifier in
+   advance (corrected):** does the candidate's even self-pairing have its INERTIA moved by the prime data
+   (not locked to `sig(A)` by Sylvester)? That is the one test; conjugation-evenness is REQUIRED, not
+   forbidden.
+2. **[the Euler-movable-inertia object · load-bearing, sharpest]** `operator_domination.py` (DONE #27)
+   read correctly under the corrected framing: RH needs `inertia(W=A−P)` to flip with the line, and the
+   pin is that the Euler-borne `P` (from `Λ(n)`) is zero-location-BLIND while the only zero-bearing `P`
+   is the Weil form (circular). Over `𝔽_q` the analogue is NOT blind: `End(Jac)` makes the primitive
+   intersection form negative-definite, and a hypothetical off-circle Frobenius pair would VIOLATE it
+   (the signature would gain a `+`). **The precise open object:** what supplies, over `ℤ`, an
+   `End(S²/ℤ)`-style positivity whose inertia an off-line zero degenerates — the FF `Δ⊥·Δ⊥≤0` with no
+   `End(Jac)` available. Build the `𝔽_q` degeneration test: does the primitive-part NEGATIVE-DEFINITENESS
+   survive a `q→1` / archimedean limit with the prime data supplying the polarization? (This is the
+   single wall, now stated as an EVEN-form inertia question, not an odd-functional construction.)
+3. **[A5 · the reflection that pairs `s=1` to `s=½` · load-bearing]** The OS/A4 reduction
    (`F-sym2-os-bridge.md` pass 1): the sym²/Rankin–Selberg edge norm-square is anchored at `s=1`
    (`Res_{s=1}L(s,f×f̄)=‖f‖²>0`, a theorem); A5 is the structure under which it becomes OS-positive
    across `s=½`. Axiomatize what *represents* the pairing of the `s=1` residue to the `s=½` form (the
    `h_∞` corner-compactification in OS language) and test whether ANY natural pairing carries the
    Petersson residue from `s=1` to a positive form at `s=½`, for sym²Δ vs the DH-surrogate. The
    informative probe is structural (A5), NOT the circular min-eig of `B(θ·,·)` (which is `>0 ⟺ RH`).
-3. **[cross-cut · the conjugation-odd object]** The two walls now named precisely: (Sylvester) any
-   `*`-congruence preserves inertia; (conjugation) `sign Im ρ` is conjugation-ODD and every real/Euler
-   functional is conjugation-EVEN. The missing object must be BOTH non-congruence AND conjugation-odd.
-   The Hodge `(1,0)`-form / chosen polarization orientation is the named candidate structure (the
-   oriented form `Q=−iω` collapsed because it was still a fixed Hermitian background, DONE). Ask: is
-   there a polarization whose orientation is DICTATED BY the prime data `Λ(n)` (so it is conjugation-odd
-   AND Euler-borne)? This is the precise shape of the surviving open object — pursue it on the surface.
+   Note: this is an EVEN-form positivity (consistent with the corrected framing).
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — Audited NEXT #1's FALSIFIER-IN-ADVANCE itself ("the missing ℤ-surface self-pairing
+  must be conjugation-ODD") in the ONE place the `C×C` Hodge-index mechanism is a THEOREM (the function
+  field) and REFUTED it as a requirement: Weil forces the line with a conjugation-EVEN positive form.
+  The agenda's "two walls (Sylvester + conjugation-evenness)" collapse to ONE — the conjugation wall was
+  a MIS-NAMING of the inertia-degeneracy of an even form.** [META/STRUCTURAL · load-bearing → corrects the
+  agenda's framing; ONE wall = Sylvester inertia]. `scripts/numerics/witness/conjugation_parity_ff.py`
+  (+ 1 `falsify.py` row), `research/log/2026-06-06-conjugation-parity-ff.md`. **Finding [THM-flavored +
+  computed, EXACT integer Weil polynomials, 4 curves g=1,2 over `𝔽_{2,5,7,11}`]:** (1) the **Rosati
+  involution `†:α↦q/α` IS the FF complex conjugation** — on `|α|=√q`, `q/α=ᾱ`, verified `α†=conj(α)` all
+  eigenvalues — so it is EXACTLY the agenda's "conjugation" (`ρ↔ρ̄`), and RH ⟺ `α†=ᾱ ∀i`. (2) **Weil's
+  line-forcing form `Tr(φφ†)` is maximally conjugation-EVEN:** its Frobenius diagonal
+  `⟨F,F⟩=Σᵢαᵢαᵢ†=Σᵢq=2gq` (each term `α·(q/α)=q` EXACTLY, RH-blind constant `10,14,22,8`); odd part
+  identically 0, `F_even` invariant under `J:α↦q/α` verified. (3) **the unique conjugation-ODD spectral
+  datum `u=Σ log(α²/q)` (the orientation) FLIPS sign under `†`** (`u(J-set)=−u(set)` verified) **and
+  VANISHES on every FE-symmetric Weil spectrum** (`Re u≈10⁻¹⁶`, all 4 curves) — the SAME `E_signed≡0`
+  conjugation cancellation that closed the static (DONE #25) AND dynamical (DONE #30) branches.
+  **DECISIVE CORRECTION:** the agenda's "must be conjugation-ODD" is REFUTED — the archetype that WORKS
+  forces the line with an EVEN form. Weil reads the **SIGNATURE/inertia degeneration** of an even
+  positive-SEMIdefinite form (line = its kernel locus, `Δ⊥·Δ⊥` from `<0` to `=0` on-circle), NEVER one
+  zero's side (no odd functional exists in his proof). "Conjugation-odd" was a MIS-NAMING of the
+  inertia-degeneracy of an even form; the two "walls" are NOT independent. **Verdict (meta-audit, not a
+  positivity candidate): the FF archetype is itself CIRCULAR over `ℤ`; the load-bearing output is the
+  PARITY structural fact. 31st wall confirmation, the first to correct the agenda's framing to ONE wall
+  (Sylvester inertia).** **DECISIVE LESSON:** RH needs an EVEN positive form whose **inertia is MOVABLE
+  by the Euler/prime data** (so a planted off-line pair degenerates the signature), NOT a conjugation-odd
+  form. Re-specifies NEXT #1 (drop "conjugation-odd"; the test is "inertia not Sylvester-locked to the
+  DH-shared `A`, but moved by the primes") and re-reads `operator_domination.py` (DONE #27) as the
+  sharpest statement of the single wall (new NEXT #2: build the `𝔽_q→1` degeneration of the
+  primitive-part negative-definiteness with the prime data supplying the polarization). Honest subtlety:
+  the parity facts are EXACT identities (`α·α†=q`, `r∘J=1/r`), curve-independent; the genus-2
+  `T⁴−T³+2T²−2T+4` is a valid `q=2` real Weil polynomial; the `2πi` branch ambiguity sits in `Im u`,
+  irrelevant to the (modulus-orientation) parity; this resurrects NO closed candidate, it re-specifies
+  the OPEN target more accurately.
 
 - **2026-06-06 — Built the dBN open object (NEXT #1): a FLOW FUNCTIONAL built from `Λ(n)` that should
   be MONOTONE toward reality under the dBN flow (a *dynamical* `W_∞≥Σ_p W_p`, escaping both defects of
