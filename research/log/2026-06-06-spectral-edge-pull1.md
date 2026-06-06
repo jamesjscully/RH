@@ -33,10 +33,36 @@ Why the `+`/high-zero side: the Jensen polynomial is the Gaussian/Hermite (centr
 of ξ's local data; the deviation is largest where that approximation is weakest — the edge of the
 moment window — i.e. the Airy/Tracy–Widom edge.
 
-## Next (steps 2–3 of the pull)
+## Step 2 — edge vs bulk convergence rate
 
-2. The edge-deviation SCALING in `(d,n)`: is `|J_{d,n}−H_d|` at the edge governed by the Airy
-   function / Tracy–Widom edge scaling (`~ d^{−1/6}` fluctuation scale)? If yes, the Tracy–Widom
-   framing is real and we have a universal handle; if not, it's decoration.
-3. The dBN flow's TRANSVERSE action on the edge deviation: does the flow (a pure dilation along
-   the fixed shape) suppress the edge deviation one-sidedly (`Λ≥0`-compatibly)?
+For fixed `d`, the edge (largest-root) deviation from Hermite is consistently **~1.85× the bulk**
+(central-root) deviation, and **both decay at the same slow rate** in `n` (`~n^{−0.2}` / `e^{−0.02n}`
+— extremely slow, consistent with GORZ's `n ≳ e^d`; at `n=28, d=10` the edge deviation is still
+0.38). So the edge is uniformly the *largest* deviation but not a separately-slower mode. ("Tracy–
+Widom" per se does not apply — ξ is deterministic, so the relevant object is the deterministic
+**Airy** edge, not a fluctuation distribution.)
+
+## Step 3 — the DYNAMIC edge test (the clean result)
+
+Under the **backward** dBN flow `H_{−s}` (the direction that destroys hyperbolicity), the root
+that goes complex **first is always at the EDGE** (standardized loc `±1`, the outermost pair) — in
+*every* `(d,n)` tested. So the de Bruijn–Newman hyperbolicity-loss (the `Λ` mechanism) is
+**edge-localized**, and the backward margin decays fast with `d` (`1.1e-2 → 7e-4` over `d=6→12`).
+
+## Conclusion of the first pull
+
+**The spectral edge is the RH-critical region in BOTH senses:** the static deviation `J_{d,n}−H_d`
+is edge-concentrated (steps 1–2), AND the dynamic `Λ` mechanism (backward-flow hyperbolicity loss)
+is edge-localized (step 3). This **localizes the uniform-in-`d` problem to the edge root pair under
+the flow** — a genuine (if modest) structural reduction on real ζ: from "control `J_{d,n}`
+everywhere" to "control the outermost root pair under the dBN flow." The flow's action is
+**one-sided** (forward preserves hyperbolicity = the `Λ≥0` direction; backward breaks it at the
+edge). It does not prove anything — the edge backward-margin still decays fast in `d` — but it
+reduces the target to a **single edge degree of freedom**.
+
+## Next
+
+- The exact `d`-law of the **edge backward-margin** (certify it; is it the same super-exponential
+  `½ d log d` as the static slack, now edge-localized?).
+- Whether the **forward** (`Λ≥0`) direction, combined with the edge localization, yields a
+  *uniform one-sided edge bound* — the genuine frontier the pull has sharpened to.
