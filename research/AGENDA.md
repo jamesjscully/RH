@@ -62,9 +62,12 @@ R3. **[RESIDUE · Connes–Consani scaling site — NOW THE TOP ITEM, sharpened 
    scaling site) the archimedean `N` (R1's (N1)–(N4)) — and crucially, does its action carry an
    **arithmetic scale `q` at `∞`** (a `ℝ_{>0}^×`-grading / the `|·|_∞` size), forcing **(N4)** the radius
    `q^{k/2}` = `Re s=½`? Or, like Schmid's `N`, does it deliver only the parity, with the scale still free?
-   (Success criterion, sharpened by R2: the scaling `N` must supply the modulus `q`, the one thing the
-   Hodge SL(2)-orbit cannot. Falsify: the scale must be DH-distinguishing — DH has no Euler product, so no
-   archimedean scale to match.)
+   (Success criterion, sharpened by R2's norm-estimate closure to THREE requirements the SL(2)-orbit fails:
+   the scaling `N`'s radius must be **(a) categorical not metric** — evade §0, unlike Schmid's Hodge norm;
+   **(b) a finite value not a divergent rate** — unlike Schmid's `(log 1/|t|)^{k−w}→∞`; **(c) new beyond
+   the centering exponent `k−w`** — not just the `M(N)`-weight relabelled. The scaling site's generator is
+   literally the `q→1`/absolute Frobenius, so it is the right place to test (a)–(c). Falsify: the scale
+   must be DH-distinguishing — DH has no Euler product, so no archimedean scale to match.)
 R3b. **[RESIDUE · the arithmetic scale at `∞`, named by R2]** R2 named the missing object precisely: a
    structure coupling the `(p,q)`-grading to an **arithmetic base size `q` at infinity**. This is the same
    gap as M3b's `(−1)^w`-vs-`q` and K2r-fix's phase-vs-scale, now localized to the monodromy `N`: the
@@ -347,6 +350,20 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
   centering); R3b [the arithmetic scale at `∞` as an `ℝ_{>0}`-graded line / valuation, connecting to
   `𝔽₁`/GANTM and the K6 non-metric degree — does any archimedean grading reproduce the FF Frobenius scale
   `q^{k/2}`?].
+  **HARDENING (later same-day pass — the norm-estimate loophole CLOSED):** the original R2 argued "no `q`
+  at `∞`" but did not engage **Schmid's NORM ESTIMATE** `‖v‖²_t ∼ (log 1/|t|)^{k−w}`, which superficially
+  *is* an archimedean scale and could have rescued (N4). Added `[3b]` to the module + doc proving it
+  **fails (N4) three independent ways** (exact, executed): **(i)** the growth exponent `k−w` *equals* the
+  `M(N)`-weight shift = the `sl_2` `h`-eigenvalue — the SAME datum as the centering, no new info (verified
+  `gr^M_{0,1,2}→` exponents `−1,0,1`); **(ii)** it is a DIVERGENT RATE, not a value — `(log 1/|t|)^1 =
+  2.30, 6.91, 11.5` for `t=10^{−1},10^{−3},10^{−5}` (`→∞`, never `3` or `5`); renormalizing to a finite
+  radius needs a FREE positive constant Schmid does not fix (`exponent_pinned=True, radius_free=True`) =
+  exactly the missing `q`; **(iii)** it is a **METRIC** — Sylvester-inertia-locked by charter §0
+  (DH-shared background) = the FORBIDDEN kind of scale. **Net:** R2's verdict is now rigorous against the
+  obvious objection, and the R3 success criterion is **sharpened to three requirements** the SL(2)-orbit
+  fails — the scaling `N`'s radius must be **(a) categorical not metric** (evade §0), **(b) a finite value
+  not a divergent rate**, **(c) new beyond the centering exponent `k−w`**. (36th wall confirmation row
+  updated accordingly; no new row.)
 
 - **2026-06-06 — R1 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: STATED the residue as the
   MONODROMY-WEIGHT question and ANCHORED the mechanism on 𝔽_q with NO zeros assumed — over `𝔽_q` the even

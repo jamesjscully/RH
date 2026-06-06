@@ -60,6 +60,35 @@ Frobenius supplies `q` (radius). At infinity the second factor is missing.
 
 ---
 
+## [3b] The norm-estimate objection, met head-on (this pass's load-bearing addition)
+
+The slogan "no `q` at `∞`" glosses the genuinely hard part: **Schmid's SL(2)-orbit theorem IS a metric
+estimate.** For a section `v ∈ gr^M_k`, the degenerating Hodge norm satisfies the Schmid norm estimate
+`‖v‖²_t ∼ (log 1/|t|)^{k−w}`. So Schmid **does** carry a real-analytic *scale* — the growth exponent
+`k−w` — and one might think this supplies (N4)'s radius. It does **not**, for three independent and
+decisive reasons, all executed in the module:
+
+1. **It is the SAME datum as the centering.** The growth exponent `k−w` *equals* the `M(N)`-weight
+   shift = the `sl_2` `h`-eigenvalue — already counted in (N1)–(N3). Verified: `gr^M_{0,1,2}` give
+   exponents `−1,0,1`. No new information beyond the filtration/parity.
+2. **It is a RATE, not a VALUE — and it DIVERGES.** `(log 1/|t|)^{k−w} → ∞` (`k>w`) or `0` (`k<w`) as
+   `t→0`; it is an asymptotic rate in the limit parameter, not the fixed number `q^{k/2}` attached to a
+   central fibre. Verified: at `k=2`, `‖v‖²_t = 2.30, 6.91, 11.5` for `t=10^{−1},10^{−3},10^{−5}` (→∞,
+   never `3` or `5`). Extracting a *finite* radius requires **renormalizing** by the divergent
+   `(log 1/|t|)^{k−w}`, and the renormalization **constant is a free positive scalar** Schmid does not
+   fix (`exponent_pinned=True`, `radius_constant_free=True`) — *that free constant is exactly the
+   missing `q`*.
+3. **It is a METRIC.** `‖·‖_t` is the Hodge metric — exactly the DH-shared archimedean background. By
+   **charter §0**, a polarization that is a `*`-congruence of a fixed metric is **Sylvester-inertia-
+   locked = dead**. So even where Schmid carries a scale, it is the **forbidden (metric) kind** — not
+   the categorical/arithmetic radius (N4) requires.
+
+**Conclusion:** the SL(2)-orbit's only radius-like datum is the metric growth **exponent** —
+parity-equivalent, free, and metric — **not** the categorical arithmetic **value** `q^{k/2}`. This
+closes the one loophole the bare "no `q`" argument left open.
+
+---
+
 ## Verdict — the M3b lesson RECURS (phase free, radius residual)
 
 > **[DEF · R2 verdict].** Schmid's `SL(2)`-orbit theorem delivers **(N1),(N2),(N3) at the archimedean
@@ -100,10 +129,14 @@ SL(2)-orbit datum* (both share it) `< FF` (which adds the arithmetic Frobenius).
 place (a genuine archimedean weight-monodromy theorem) and the free weight parity `(−1)^w`, but NOT (N4),
 the radius** — verified exactly: the `sl_2` symmetry of `M(N)=W` is pure filtration data (no `q`); the
 parity is a sign, radius-silent (`q=9` vs `q=25`, same parity, different radius); over `𝔽_q` the radius is
-forced by the *arithmetic Frobenius*, the factor `∞` lacks. **Not overclaimed:** this decides the R2
-question (Schmid = parity, not radius) and does not build the radius-carrying `N`. **Successor named:** R3 —
-the Connes–Consani scaling site / absolute Frobenius is the candidate to supply the missing *arithmetic
-scale `q` at infinity*; the success criterion (sharpened from R1's): does the scaling generator's `N` carry
-the **radius (N4)**, or — like Schmid's — only the parity? R2 isolates precisely what R3 must provide: not
-another `(p,q)` centering (free, DH-shared) but an **archimedean base size `q`** coupling the grading to a
-modulus.
+forced by the *arithmetic Frobenius*, the factor `∞` lacks. **The norm-estimate loophole is closed:** the
+one real-analytic scale Schmid does carry — the Hodge-norm growth exponent `k−w` — is (i) the centering
+datum itself, (ii) a divergent rate whose renormalization needs a free constant = the missing `q`, and
+(iii) a metric (§0-dead). **Not overclaimed:** this decides the R2 question (Schmid = parity + a free
+divergent metric rate, not the radius) and does not build the radius-carrying `N`. **Successor sharpened:**
+R3 — the Connes–Consani scaling site / absolute Frobenius is the candidate to supply the missing
+*arithmetic scale `q` at infinity*; R2 pins the success criterion to three requirements the SL(2)-orbit
+fails — the scaling `N`'s radius must be **(a) categorical not metric** (evading §0), **(b) a finite value
+not a divergent rate**, **(c) new beyond the centering exponent `k−w`** — i.e. not another `(p,q)`
+centering (free, DH-shared, metric) but an **archimedean base size `q`** coupling the grading to a
+*categorical, finite* modulus.
