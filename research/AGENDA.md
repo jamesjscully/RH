@@ -65,30 +65,20 @@ but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽
 constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
 
-R5. **[SYNTHESIS — the shape of the missing idea, NOW THE TOP ITEM (R4 DONE pinned the obstruction)]**
-   R4 (DONE) decided the orbit-`N` existence question: there is **NO** archimedean `N` (R1's N1–N4) on the
-   orbit cohomology `H^1(C_p)`, and the obstruction is PINNED to a precise object — **a missing special
-   fiber / finite residue field / degeneration locus at the archimedean place** (the `𝔽₁`-analogue of
-   "`Spec ℤ` has no finite residue field at `∞`"): the orbit `C_p` is a smooth circle (rank-1 `H^1`, free
-   scaling, no singular fiber), so the only nilpotent is `N=0` and the monodromy mechanism is vacuous.
-   The four R-passes now exhaust the standard archimedean structures (Schmid SL(2)-orbit, continuous
-   scaling, orbit length, Bost–Connes multiplier, and the orbit-`N` itself) — all give the grading/phase/
-   discreteness/edge for free, NONE gives a finite base size / degeneration locus. **R5's task:** STATE the
-   shape of the missing idea as the single object whose construction is the open problem — a `q→1`/`𝔽₁`
-   special-fiber structure at `∞` — and judge: real lead (build next) or irreducible terminus? Either is the
-   honest endpoint: the residue characterized to the atom, the missing idea's shape named. (falsify: the
-   special-fiber structure must be DH-vacuous — DH has no orbits `C_p` and no `W`; the special fiber must be
-   Euler-borne.)
-R6. **[CONSTRUCTION · the special fiber as a property of the SURFACE, not the orbit — named by R4]** R4
-   showed the bare scaling ORBIT `C_p` (a smooth circle, rank-1 `H^1`) cannot carry the degeneration `N` —
-   a Jordan-2 block needs `dim ≥ 2`. Does the would-be `S²/ℤ` surface (M2d, the self-product whose
-   self-intersection is `‖f‖²`) supply, at its ARCHIMEDEAN FIBER, a degeneration `N` the orbit cannot —
-   i.e. is the special fiber a property of the 2-dimensional surface (where `H^1⊗H^1` has rank `≥2`, room
-   for a Jordan-2 block) rather than the 1-dimensional orbit? Anchor on `𝔽_q`: the surface `C×C` over `𝔽_q`
-   DOES carry a transverse degeneration (a node in the family) supplying `N`; does the archimedean `S²/ℤ`
-   fiber inherit it, or is the surface's archimedean fiber ALSO smooth (no special fiber)? (falsify: the
-   surface's archimedean degeneration must be DH-vacuous — no Euler product ⟹ no `S²` motive ⟹ no surface
-   to degenerate.)
+R6. **[CONSTRUCTION · the special fiber as a property of the SURFACE, not the orbit — NOW THE TOP ITEM
+   (R5 DONE: real lead, not terminus)]** R5 (DONE) PROVED R4's "missing special fiber" is a **rank fact, not
+   vague continuity**, and a **REAL LEAD**: the bare scaling orbit `C_p` has rank-1 `H^1` (only `N=0`, `M(N)`
+   a single weight, no symmetric split); the minimal carrier of a nonzero degeneration `N` with a symmetric
+   split `M(N)` is **dimension 2** (the Jordan-2 block, `M(N)={0:1,2:1}` about `w=1`); and the surface `S²/ℤ`
+   supplies exactly that room — `gr^W_2 = H^1⊗H^1` has rank `(2g)² ≥ 4 ≥ 2` (M4A/B/C). **R6's task:** does the
+   would-be `S²/ℤ` surface (M2d, the self-product whose self-intersection is `‖f‖²`) supply, at its
+   ARCHIMEDEAN FIBER, a nonzero degeneration `N` on `gr^W_2` the orbit cannot — i.e. is the special fiber a
+   property of the 2-dimensional surface rather than the 1-dimensional orbit? Anchor on `𝔽_q`: the surface
+   `C×C` over `𝔽_q` DOES carry a transverse degeneration (a node in the family) supplying `N`; does the
+   archimedean `S²/ℤ` fiber INHERIT it (lead relieved), or is the surface's archimedean fiber ALSO smooth
+   (the `𝔽₁`/no-special-fiber obstruction RECURRING in dimension 2)? (falsify: the surface's archimedean
+   degeneration must be DH-vacuous — no Euler product ⟹ no `H^1` ⟹ no `H^1⊗H^1` ⟹ no surface to degenerate,
+   one level before the radius.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -319,6 +309,35 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R5 [RESIDUE · SYNTHESIS · DEF · coherence-checked vs 𝔽_q]: R4's "missing special fiber at
+  `∞`" is a REAL LEAD, NOT an irreducible terminus — its exact content is a RANK fact, and the correct
+  carrier is the SURFACE, not the orbit.** [SYNTHESIS · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R5-missing-special-fiber-synthesis.md`,
+  `scripts/numerics/witness/missing_special_fiber.py` (+1 `falsify.py` row → 41st wall, DISPERSING-by-design
+  = lead/obstruction-locator, Euler-silent like R1–R4). **What got CHECKED (exact integer linear algebra, no
+  zeros assumed):** **[A]** the orbit's rank-1 `H^1(C_p)` admits ONLY `N=0`; `M(0)={1:1}` is a SINGLE weight
+  ⟹ NO `0↔2` Hard-Lefschetz pairing, the symmetric-split mechanism is VACUOUS (reproduces R4 exactly, but as
+  a RANK fact). **[B]** the minimal nonzero nilpotent with a SYMMETRIC, nontrivially-split `M(N)` is the
+  **Jordan-2 block on `ℂ²`**, `M(N)={0:1,2:1}` symmetric about `w=1` — **dimension 2 is the minimal carrier**
+  (computed: dim 1 → no split; dim 2 → split; dim 3,4 → split). So R4's obstruction is precisely "**the
+  1-dim orbit is too small to carry the Jordan-2 block**." **[C]** the surface `S²/ℤ` (M2d, purity is
+  intrinsically GLOBAL for `ζ`) has `gr^W_2 = H^1⊗H^1` of rank `(2g)² = 4,16,36 ≥ 2` for `g=1,2,3` — it
+  SUPPLIES exactly the room the orbit lacks. **Falsifier verdict:** EULER-BORNE NO on this pass (lead-locator,
+  anchored on `𝔽_q` rank counts), but the DH structural verdict is SHARP and **one level earlier than for
+  `ζ`**: DH has no `H^1` ⟹ no `H^1⊗H^1` ⟹ no surface special fiber to degenerate (fails at the carrier,
+  before the radius); SEES-ZEROS YES (radius = `M(N)=W` = purity = where the zeros sit); INDEPENDENT NO
+  (radius = Weil II = the solved case) → DISPERSING-by-design. Ladder `DH < ζ < FF`: DH no `H^1` (no carrier
+  at all); `ζ` a surface `S²/ℤ` with an OPEN archimedean `N` on rank-`(2g)²` `gr^W_2`; FF a surface `C×C`
+  with a GEOMETRIC node + base size `q`. **NEW content:** R4's terminus-candidate is DECIDED — it is a REAL
+  LEAD, because the obstruction (rank 1) is *explicitly relieved* by the correct carrier (the surface, rank
+  `≥2`). The missing idea is named as ONE object with a DECIDABLE existence question: **an archimedean
+  transverse degeneration of the SURFACE `S²/ℤ` supplying a nonzero `N` on `gr^W_2` with `M(N)=W` forcing the
+  radius** — exactly R6. **Not overclaimed:** R5 relieves the rank obstruction and names the carrier; it does
+  NOT construct the surface's `N` (R6's open question — the `𝔽₁` obstruction may recur in dimension 2, or
+  relieve). **Successor:** R6 promoted to TOP ITEM [CONSTRUCTION — does the surface's archimedean fiber carry
+  the nonzero `N` (inherit `C×C`'s node), or is it ALSO smooth (the no-special-fiber obstruction recurring in
+  dim 2)?].
 
 - **2026-06-06 — R4 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: there is NO archimedean nilpotent `N`
   (R1's N1–N4) on the orbit cohomology `H^1(C_p)` forcing the radius `p^{w/2}`, and the obstruction is
