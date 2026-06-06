@@ -51,14 +51,23 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M1. **[DEFINE]** Write the **universal property of the target `𝕊_ℤ`** (`construction-program.md` §1) as a
-   precise functor of points / representability statement — the six required structures (Frobenius
-   trace = explicit formula; `(p,q)` at `∞`; structural duality `D` = FE; categorical polarization;
-   positivity ⟺ RH; no object for DH), and what "representable" would mean. Output: the contract, formal.
 M2. **[ANCHOR-BUILD · load-bearing]** Build the polarized arithmetic Hodge category **for a function
    field** (e.g. an elliptic curve over `𝔽_q`) *in this language*, and verify it **reproduces the Weil
    RH proof** with polarization = the categorical duality pairing (NOT a metric). If it can't redo the
    solved case, the language is wrong — say so and propose the fix. The minimal working model.
+   **CONTRACT TO HIT (M1, `construction/M1-universal-property-S_Z.md`):** exhibit `H^•(C/𝔽_q)` as a
+   `ζ`-Hodge datum satisfying clauses **C1–C6**; the FF columns of M1's table are the acceptance test
+   (C1 Lefschetz trace; C2 `c=†`Rosati, positivity `c`-EVEN; C3a Weil pairing `Φ^TEΦ=qE`; **C3b `μ=√q`
+   = the Frobenius weight**; C4 `⟨φ,ψ⟩=Tr(φψ†)` = canonical pairing of `D`, no metric; C5 signature flip
+   `(0,1,1)→(1,0,1)`). Verify the C4 pairing is built as the Poincaré-duality evaluation, NOT a chosen
+   Gram metric — that distinction is the whole point of the language.
+M2b. **[DEFINE · the hinge clause C3b]** M1 self-localized ALL residual `ℤ`-hardness into **C3b: the
+   critical radius `μ` (=`Re s=½`) must be Euler-borne**, the way `μ=√q` is the Frobenius weight over
+   `𝔽_q` (DONE #32). Define, precisely, what it would MEAN for a `ζ`-intrinsic object's similitude
+   multiplier `μ` in `Φ^*φ_{FE}Φ=μφ_{FE}` to be **read off the local Euler factors `{L_p}`** rather than
+   the FE — i.e. write C3b as a representability sub-problem (the radius datum as a functor of the local
+   factors). This is the prize AND the DH-falsifier (C6) in one clause; sharpen it before M4 tries to
+   construct it.
 M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/condensed duality datum at
    `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
@@ -148,6 +157,36 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M1 [DEFINE]: wrote the universal property of `𝕊_ℤ` as a representing-object contract
+  C1–C6 over `ζ`-Hodge data, with the polarization CATEGORICAL (C4 = canonical evaluation pairing of the
+  duality `D` pre-composed with the FE iso, NO metric — §0-clean by construction) and the one-line lemma
+  C5 `axioms ⟹ RH` made formal.** [DEF · the contract, formal].
+  `research/construction/M1-universal-property-S_Z.md`. **What got DEFINED:** the functor of points
+  `𝔖(𝒞,ω_∞,D,P) = {X satisfying C1–C6}/≅`, with `𝕊_ℤ` its representing object; the ambient
+  polarizable/`(p,q)`-graded/`𝕊`-linear/condensed-archimedean 2-category (the §2 Pillar-A glue), with
+  **no metric anywhere** (the pairing lives in `𝒞` via `D`; the Hodge functor only grades + supplies `c`).
+  Six clauses, each stated as a condition on `X` with the FF THEOREM beside it as the anchor: **C1** `Φ`
+  with `spec=zeros`, `Tr=`explicit formula (FF: Lefschetz); **C2** `(p,q)` grading + `c` anti-linear
+  exchanging `H^{p,q}↔H^{q,p}` (FF: `c=†`Rosati, verified `1e-9`; load-bearing correction DONE #31 baked
+  in — positivity must be `c`-EVEN inertia, NOT a `c`-odd functional); **C3** `D(X)≅X` = FE, **split into
+  C3a** (the relation `Φ^*φ_{FE}Φ=μφ_{FE}`, FE-borne/DH-shared/RH-silent-if-alone) **and C3b** (the VALUE
+  `μ`=critical radius must be Euler-borne); **C4** `⟨x,y⟩_D=`ev∘(1⊗φ_{FE}) = canonical pairing of `D` (FF:
+  Rosati `Tr(φψ†)`); **C5** `⟨·,·⟩_pol>0` on `H^1_prim` ⟺ RH; **C6** no object for DH (no Euler product ⟹
+  no `μ`). **THE DECISIVE STRUCTURAL OUTPUT:** the contract **self-localizes** — C1/C2/C4/C6 are
+  definitions we can make (theorems in the FF), the one-line lemma makes C5 `axioms⟹RH` formal, and **ALL
+  residual hardness collapses into C3b** ("the Euler product sets `Re s=½` the way `q` sets `√q`"). This is
+  NOT new hardness: it is the program's 32-confirmation wall, now sitting in its correct place as a SINGLE
+  CLAUSE of a universal property, where a definition (M4 descent: construct `μ` from the local factors) can
+  attack it — and **the same clause C3b is the prize AND the built-in DH-falsifier (C6)**, exactly as the
+  audit predicted (Euler-borne axis is now a contract clause, not an after-the-fact test). FF columns
+  re-verified live: on-circle sig `(0,1,1)`, off-circle flip `(1,0,1)`, flip-eig `=Σ|αᵢ|²−2gq` (`match=True`
+  every `r`). **No falsifier run (M1 is a definition, not a candidate object);** falsifier-bearing clauses
+  C3b/C6 written so M2–M5's OBJECTS are testable against a fixed standard. **Honest residue:** C5's lemma
+  is only as strong as C3b, which is not yet constructed — that is the point (hardness correctly PLACED,
+  not hidden). **Successors added:** M2b [DEFINE the hinge clause C3b as a representability sub-problem —
+  the radius datum as a functor of the local Euler factors] inserted after M2; M2's acceptance test pinned
+  to the M1 contract table.
 
 - **2026-06-06 — EXECUTED the corrected NEXT #1/#2 spec ("an EVEN positive form whose inertia is
   Euler-MOVABLE — an off-line plant degenerates the signature") in the ONE place the Hodge index is a
