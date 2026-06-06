@@ -15,22 +15,20 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · the Frobenius self-norm]** **RH-conditional entry = the DIAGONAL
-   `⟨F,F⟩=deg(F)`, the Frobenius self-norm — NOT the off-diagonal** (corrected this pass, DONE #1
-   below). `off_diagonal.py` showed: the off-diagonal `Tr F` IS available over `ℤ` (= the von Mangoldt
-   PRIME SUM, the arithmetic side of the explicit formula, RH-independent); `⟨Id,Id⟩=‖f‖²` is available
-   (Siegel). The ONE entry with no unconditional `ℤ`-meaning is the **second diagonal `⟨F,F⟩=deg(F)`**:
-   over `𝔽_q` it is `2q` (self-pairing of the Frobenius CORRESPONDENCE); over `ℤ` it is only a SUM OVER
-   ZEROS, a norm iff RH. **This unifies "missing off-diagonal" + "missing correspondence-algebra" into
-   one object: the Frobenius self-norm = the diagonal SELF-INTERSECTION of a correspondence over `ℤ`**
-   — directly the signature/Hodge-index thread (DONE #2: the self-intersection FORM on `H¹_prim`). So
-   the next pass must attack THIS: **what gives `deg(F)`=`⟨F,F⟩` an unconditional `ℤ`-meaning (a
-   Frobenius self-intersection/degree) independent of the zeros?** Candidate handles: (a) Arakelov
-   self-intersection of an arithmetic correspondence / the BGS positive-Green-form (where a `ℤ`-degree
-   can be *defined* but its positivity can *fail* — BGS §6.3); (b) the `q→1`/condensed limit of the
-   `𝔽_q` degree `2q` (item 3/5 below, now with `deg(F)` as the target NUMBER, but watch DONE #2's
-   caveat: it must enter as a self-intersection FORM's diagonal, not a bare scalar). Falsifier
-   discipline: CIRCULAR until `⟨F,F⟩` is given an RH-independent value; a restatement is not a proof.
+1. **[CONSTRUCT · load-bearing · the polarization relation `F·F^†=deg·Id`]** The Frobenius self-norm
+   `⟨F,F⟩=deg(F)` does NOT have a single `ℤ`-meaning (DONE #0 this pass): it SPLITS into an unconditional
+   RH-SILENT number (algebraic Rosati `2gq` = Arakelov `ĥ_NT`, blind to the zeros) and a forcing
+   RH-conditional norm (Hilbert `Σ|α|²` = CC20 archimedean diagonal), **separated by exactly the
+   polarization relation `F^† = (deg)·F^{-1}`** (the operator identity `F·F^† = (deg)·Id` in `End(Jac)`).
+   So the wall is now a SINGLE OPERATOR RELATION, not a missing object: **build a `ℤ`-algebra `A` (the
+   would-be `End(S²/ℤ)`) with the explicit-formula prime-sum element `F` and an involution `†` s.t.
+   `F·F^† = c·Id` UNCONDITIONALLY (the polarization), with `†` POSITIVE (`F^†=F^*`, the Hilbert adjoint)
+   being RH.** Two concrete on-ramps surfaced this pass: **(1) the Bost–Connes/QSM algebra** already has
+   `ℤ`, a `ζ`-partition function, and a modular involution `σ_t` — does its `F·F^†` close to a scalar (a
+   KMS/modular relation), and is the resulting `c` the polarization degree? **(2) the CC20 Sonin/Toeplitz
+   compression** — is `S θ S = (deg)·Id` on Sonin's space the missing operator identity (`F^†=(deg)F^{-1}`
+   as the scaling-flow adjoint)? Falsifier discipline: the unconditional value is RH-SILENT (handle a/b
+   only ever supply the wrong-divisor channel); the content is the POSITIVITY `F^†=F^*` = RH.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -58,6 +56,26 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Attacked the WALL `⟨F,F⟩=deg(F)`: it SPLITS into an RH-silent number and a circular
+  form, separated by ONE polarization relation `F^†=(deg)·F^{-1}`.** [CONSTRUCT · load-bearing → wall
+  pinned to a single operator identity]. `scripts/numerics/witness/frobenius_self_norm.py` (+ 2
+  `falsify.py` rows), `research/log/2026-06-06-frobenius-self-norm.md`. **Finding [THM+computed]:**
+  `⟨F,F⟩=deg(F)` has no single `ℤ`-meaning — it is TWO inequivalent objects coinciding over `𝔽_q` *only
+  because RH holds there*: (i) **ALGEBRAIC/Rosati** `Tr(F·qF^{-1})=2gq` (uses ONLY the polarization `q`,
+  RH-BLIND — verified: a planted off-line zero leaves it `28.0→28.0`) `=` Faltings–Hriljac `ĥ_NT`, an
+  unconditional `ℤ`-number but the height of a point on a FIXED curve's `J(X_K)` with no `ζ` in it (the
+  "wrong divisor") → **RH-SILENT**; (ii) **HILBERT/spectral** `Tr(F·F^*)=Σ|α|²` `=` CC20 archimedean
+  diagonal `W_∞`, SEES the zero (`28.0→30.25` off-line) but `algebraic=Hilbert` (`F^†=F^*`) IS RH →
+  **CIRCULAR**. Adjunction control exact (`Γ_F·Γ_F=q(2−2g)`, `g∈{1,2,3} q∈{5,7,9}`). **The two are
+  separated by EXACTLY the operator identity `F·F^†=(deg)·Id` (`F^†=qF^{-1}`, the deg-`q` polarization),
+  provided over `𝔽_q` by `End(Jac)` and missing over `ℤ`.** So "give `⟨F,F⟩` an unconditional meaning"
+  = "construct `End(S²/ℤ)` with a POSITIVE Rosati `F^†=(deg)F^{-1}`" — the same missing
+  correspondence-algebra, now pinned to ONE relation. **Both named handles classified:** (a) Arakelov
+  `ĥ_NT` = unconditional value but RH-silent channel; CC20 `Δ·Δ_arch` = sees-zeros but BGS §6.3-open
+  (circular); (b) `q→1` of `2gq` = RH-silent scalar unless it enters as a form's diagonal (then
+  circular). **14th Euler-product confirmation.** Sharpens the wall from "the self-norm is missing" to
+  "the POLARIZATION RELATION `F^†=(deg)F^{-1}` is missing"; surfaces two on-ramps (Bost–Connes modular
+  `σ_t`; CC20 Sonin `SθS=(deg)Id`) → NEXT #1.
 - **2026-06-06 — Attacked the single missing Rosati entry: it is NOT the off-diagonal — the off-diagonal
   is available (the prime sum); the WALL is the OTHER diagonal `⟨F,F⟩=deg(F)`, the Frobenius
   self-norm.** [CONSTRUCT · load-bearing → DONE #1 corrected by one index].
