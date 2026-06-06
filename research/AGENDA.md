@@ -49,32 +49,37 @@ polarization involution = purity = the archimedean weight-monodromy.** Every fra
 borne; the radius is the residue. **This pass attacks the residue itself — frontier characterization, not
 an expected proof.** The precise shape: over `𝔽_q` the even split is forced by the **weight-monodromy** —
 Deligne's nilpotent `N` (geometric monodromy) whose filtration = the weight filtration (Weil II). *Is
-there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?*
+there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?* **R3 (DONE) converted the
+residue once more:** the Connes–Consani scaling site SUPPLIES the `ℝ_{>0}^×`-grading R2 named-missing, yet
+its radius is the FE/Haar self-dual axis (DH-shared, free), not the arithmetic `q` — over `𝔽_q` the `q` is
+the DISCRETE Frobenius gap, while the archimedean scaling is CONTINUOUS. The residue is now the
+**DISCRETE/GAPPED base size at `∞`** = the analogue of "the residue field is finite" (`|𝔽_q|=q`).
 
-R3. **[RESIDUE · Connes–Consani scaling site — NOW THE TOP ITEM, sharpened by R2]** R2 (DONE) PROVED
-   Schmid's SL(2)-orbit `N` supplies **(N1)–(N3)** + the FREE weight parity `(−1)^w` but **NOT (N4) the
-   radius**: a real/complex polarized Hodge structure carries no Frobenius eigenvalue / no base size `q`,
-   so the radius is the *arithmetic* datum absent at `∞` (over `𝔽_q` the radius is forced by the `ℓ`-adic
-   Frobenius, the EXTRA factor `∞` lacks; the SL(2)-orbit datum is DH-shared). **R2 isolated EXACTLY what
-   R3 must supply: not another `(p,q)` centering (free, DH-shared, radius-silent) but an ARCHIMEDEAN BASE
-   SIZE `q` coupling the grading to a modulus.** Connect to the **scaling action / absolute Frobenius**
-   (Connes–Consani, Riemann–Roch for `Spec ℤ`): is the scaling generator `t∂_t` (or `Frob_∞` on the
-   scaling site) the archimedean `N` (R1's (N1)–(N4)) — and crucially, does its action carry an
-   **arithmetic scale `q` at `∞`** (a `ℝ_{>0}^×`-grading / the `|·|_∞` size), forcing **(N4)** the radius
-   `q^{k/2}` = `Re s=½`? Or, like Schmid's `N`, does it deliver only the parity, with the scale still free?
-   (Success criterion, sharpened by R2's norm-estimate closure to THREE requirements the SL(2)-orbit fails:
-   the scaling `N`'s radius must be **(a) categorical not metric** — evade §0, unlike Schmid's Hodge norm;
-   **(b) a finite value not a divergent rate** — unlike Schmid's `(log 1/|t|)^{k−w}→∞`; **(c) new beyond
-   the centering exponent `k−w`** — not just the `M(N)`-weight relabelled. The scaling site's generator is
-   literally the `q→1`/absolute Frobenius, so it is the right place to test (a)–(c). Falsify: the scale
-   must be DH-distinguishing — DH has no Euler product, so no archimedean scale to match.)
-R3b. **[RESIDUE · the arithmetic scale at `∞`, named by R2]** R2 named the missing object precisely: a
-   structure coupling the `(p,q)`-grading to an **arithmetic base size `q` at infinity**. This is the same
-   gap as M3b's `(−1)^w`-vs-`q` and K2r-fix's phase-vs-scale, now localized to the monodromy `N`: the
-   archimedean `N` exists Hodge-theoretically (Schmid) but is **scale-free**; the residue is the
-   `ℝ_{>0}`-graded line / valuation supplying `q^{w/2}` at `∞` that is NOT a `(p,q)` datum. Connect to
-   `𝔽₁`/GANTM and the K6 non-metric degree (a `ℚ_{>0}`-graded line). Anchor: does ANY archimedean
-   `ℝ_{>0}`-grading reproduce the FF Frobenius scale `q^{k/2}` on `gr^M_k`?
+R3b. **[RESIDUE · the DISCRETE/GAPPED base size at `∞` — NOW THE TOP ITEM, sharpened by R3]** R3 (DONE)
+   PROVED the Connes–Consani scaling site **DOES** carry R2's named-missing `ℝ_{>0}^×`-grading (`θ=t∂_t`,
+   the absolute Frobenius `Fr_λ`) AND marks a distinguished radius `Re s=½` — but that radius is the
+   **FE/Haar SELF-DUAL axis** (DH-shared: the DH surrogate has a FE ⟹ the same `½`), **NOT** the arithmetic
+   `q`: over `𝔽_q` the scale `q=|𝔽_q|` is the **DISCRETE Frobenius GAP** (the marked generator of `q^ℤ`),
+   while the archimedean scaling `ℝ_{>0}^×` is **CONTINUOUS / homogeneous** (no marked generator, gapless
+   spectrum `t^{iτ}`). **R3 CONVERTED the residue:** it is NOT "an `ℝ_{>0}^×`-grading" (the scaling site
+   supplies it) but a **DISCRETE/GAPPED refinement carrying a finite base size — the archimedean analogue
+   of "the residue field is FINITE" (`|𝔽_q|=q`)**. The continuum-to-discrete datum: a *spectral gap* at `∞`
+   playing the role `|𝔽_q|=q` plays over `𝔽_q`. **R3b's task:** is there ANY archimedean spectral gap / a
+   discrete refinement of the scaling action (a `ℚ_{>0}`-graded line à la `𝔽₁`/GANTM, the K6 non-metric
+   degree, a Bost–Connes-type discrete-multiplier on the scaling site) reproducing the FF Frobenius gap
+   `q^{k/2}` on `gr^M_k`? Anchor: build the FF discrete `q^ℤ` in the same language; deform `q→1` and ask
+   what survives. (Falsify: the gap must be DH-distinguishing — DH's continuous scaling has the same
+   gapless self-dual axis, no gap to match.)
+R4. **[RESIDUE · the missing operator — PARTLY DONE by R1, residual = the EXISTENCE/construction; re-pointed
+   by R3 to the CONTINUITY obstruction]** R1 STATED the four axioms (N1)–(N4) AND located the obstruction;
+   R2/R3 showed both candidate archimedean structures (Schmid's Hodge `N`, the scaling generator `θ`) supply
+   (N1)–(N3)+a FREE marked radius but NOT the arithmetic `q`, for the SAME reason: the archimedean place is
+   **continuous** (no finite residue field). The residual R4 question, re-pointed: is there ANY construction
+   supplying a `q`-carrying archimedean object — a degeneration of the would-be motive of `ζ` (`S²/ℤ`, M2d),
+   a discrete refinement of the scaling site (R3b), a Bost–Connes / quantum-statistical `q`-multiplier — or
+   is the **continuity of the archimedean scaling** (the `𝔽₁`-analogue of "`Spec ℤ` has no constant field /
+   no finite residue field at `∞`") the precisely-located irreducible obstruction? Falsify: the putative `N`
+   must fail to exist for DH
 R4. **[RESIDUE · the missing operator — PARTLY DONE by R1, residual = the EXISTENCE/construction]** R1
    already STATED the four axioms (N1)–(N4) an archimedean `N` must satisfy AND located the obstruction
    (`ℤ` lacks the geometric degeneration `𝔽_q` uses to supply `N`; DH fails at (N3): no `W`). The residual
@@ -316,6 +321,45 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R3 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: PROVED the Connes–Consani scaling site
+  SUPPLIES R2's named-missing `ℝ_{>0}^×`-grading (`θ=t∂_t`, the absolute Frobenius) AND marks a
+  distinguished radius `Re s=½`, but that radius is the FE/Haar SELF-DUAL axis (DH-shared, FREE), NOT the
+  arithmetic `q` — over `𝔽_q` the `q=|𝔽_q|` is the DISCRETE Frobenius GAP, while the archimedean scaling
+  `ℝ_{>0}^×` is CONTINUOUS/homogeneous (gapless, no marked `q`); the residue CONVERTS from "an
+  `ℝ_{>0}^×`-grading" to a "DISCRETE/GAPPED base size at `∞`" = the analogue of "the residue field is
+  finite" (`|𝔽_q|=q`).** [RESIDUE · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R3-scaling-site-radius.md`, `scripts/numerics/witness/scaling_site_radius.py`
+  (+1 `falsify.py` row → 37th wall, DISPERSING-by-design = Euler-silent characterization, like R1/R2/M2d).
+  **What got CHECKED (exact mpmath 40dps; `w=1`):** **[A]** the scaling site carries the `ℝ_{>0}^×`-grading
+  Schmid's `N` lacked — `θ(t^s)=s·t^s` verified (`|lhs−rhs|~1e-20` at `s=½, ½+14.13i, 2`), and the
+  `|·|^{1/2}`-normalized unitary axis MARKS `Re s=½` (fixed point of `s↔1−s`). R2's demand "produce a
+  SCALE not just a centering" is MET. **[B]** but `½` is the FE/Haar SELF-DUAL point: Haar `d*t=dt/t`
+  inversion-symmetric (density ratio `==1`), and the SAME scaling site / self-dual `½` arises for the DH
+  surrogate (FE, no Euler product) — `ζ`-axis `= DH`-axis `= ½` exactly, DH-SHARED. **[C]** FF contrast:
+  over `𝔽_q` the scaling is the DISCRETE `q^ℤ`, `q=|𝔽_q|≥2` the residue-field cardinality MARKING the scale
+  and forcing `|α|=q^{w/2}` (computed `2,3,5` for `q=4,9,25`); the archimedean `ℝ_{>0}^×` is
+  HOMOGENEOUS/transitive (verified `marked_q_exists=False`), gapless spectrum `t^{iτ}` (all modulus 1) — no
+  marked `q`. The crux: **`q` is the SPECTRAL GAP of the discrete Frobenius `q^ℤ`; the archimedean scaling
+  has CONTINUOUS spectrum (no gap)**. **[D]** the Connes–Consani spectral realization (zeros = scaling
+  spectrum, RH = "spectrum on the axis `½`"; on-line all-on-axis, off-line max dev `0.2`) is EQUIVALENT to
+  RH, not a proof — the site supplies the grading + marks the axis (N1–N3), leaves OPEN whether the spectrum
+  sits on it (N4). **Falsifier verdict:** EULER-BORNE NO on this pass (the scaling-`½` is the FE/Haar
+  self-dual point, DH-shared — DH has a FE hence the same axis, CANNOT be the discriminator; the
+  DH-distinguishing datum is the arithmetic gap `q` the continuous scaling lacks), SEES-ZEROS YES (only via
+  "spectrum on the axis" = N4 = RH), INDEPENDENT NO (the realization = RH = the solved case over `𝔽_q` via
+  the discrete Frobenius) → DISPERSING-by-design, DH ladder `DH=ζ` on the scaling self-dual axis `< FF`
+  (which adds the discrete Frobenius gap `q`). **NEW content:** the M3b/R2 lesson made precise at the
+  scaling-site / `𝔽₁` altitude — the scaling site reaches *exactly as far as Schmid* (the grading + a FREE
+  marked radius) and the irreducible residue is the same atom but now sharply named: an **arithmetic,
+  finite, GAPPED base size at `∞`** (the analogue of `|𝔽_q|=q`), which neither the continuous archimedean
+  scaling nor the Hodge SL(2)-orbit supplies. The obstruction is the **continuity of the archimedean place**
+  (the `𝔽₁`-analogue of "`Spec ℤ` has no finite residue field at `∞`"). **Successors added:** R3b promoted
+  to TOP ITEM [the DISCRETE/GAPPED base size at `∞`: is there an archimedean spectral gap / discrete
+  refinement of the scaling action — a `ℚ_{>0}`-graded line, the K6 non-metric degree, a Bost–Connes-type
+  discrete multiplier — reproducing the FF Frobenius gap `q^{k/2}`?]; R4 re-pointed to the CONTINUITY
+  obstruction (both archimedean candidates fail for the same reason: the archimedean place is continuous /
+  has no finite residue field).
 
 - **2026-06-06 — R2 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: PROVED Schmid's SL(2)-orbit `N`
   supplies (N1)–(N3) + the FREE weight parity `(−1)^w` but NOT (N4) the radius — the M3b lesson recurs;
