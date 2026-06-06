@@ -50,25 +50,30 @@ ONE positivity. **It is NOT circular to attack** because in classical Hodge theo
 **Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
 zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
 
-K2r-fix. **[KEYSTONE · the reality datum — load-bearing, HIGH priority]** K2r-split (DONE) showed the
-   `*`-involution `σ_d(z)=d/\bar z` (the polarization DUALITY on the determinant line) EXISTS FOR FREE from
-   the Euler-borne determinant edge `d=p^{k−1}`, is `*`-clean (NOT a metric, §0-compliant), and its fixed
-   locus IS the even split `|α|=|β|=√d` — **but a duality does NOT force its own fixed points**: an
-   off-Ramanujan plant (same `d`, same `σ_d`) is NOT `σ_d`-fixed. The residue RELOCATED to the **reality
-   condition "Frobenius ∈ `Fix(σ_d)`"** = `|α|=√d` = RH; over `𝔽_q` this is the `q`-Weil-number theorem
-   (Frobenius commutes with geometric conjugation = the **reality of the realization**, Deligne purity).
-   ATTACK: is there a **condensed/real structure** on the weight-2 carrier over `ℤ` whose **descent datum**
-   (the real points / the `c`-fixed locus, M3b's `κ`) *forces* the Satake pair to be `σ_d`-fixed — or is
-   that real structure itself only available AFTER purity? (falsify: the reality datum must be Euler-borne +
-   DH-absent + see the off-Ramanujan plant the determinant edge / `σ_d` is blind to.)
-K2. **[KEYSTONE · condensed — the live framework, RE-POINTED by K1]** Realize the archimedean Kähler form in
-   **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms + the "archimedean
-   Deligne–Illusie ⟶ Kähler" open question) — **as a canonical Weil operator `C_W` (K1's finding), NOT a
-   Green form**. The condensed object must produce NOT the `*`-involution `σ_d` (K2r-split: free from the
-   determinant edge) but the **reality/fixed-point condition "Frobenius ∈ `Fix(σ_d)`"** — the `q`-Weil-number
-   analogue over `ℤ` (Frobenius commutes with geometric conjugation), `C_W`'s radius = that fixedness. This
-   is the one framework the audit flagged as right-kind-untried — now with the Frobenius-fixedness/reality
-   datum (not the free involution, not the free edge) as the precise target.
+M4r. **[KEYSTONE · the radius assembly — NOW THE SOLE LIVE KEYSTONE, sharpened by K2r-fix]** K2r-fix (DONE)
+   resolved the reality/radius fork: the real structure `κ`=`c_0` (the conjugation, M3b's real points) is
+   available over `ℤ` **for free** (FORK 2 FALSE) and forces the **phase-reality** (the FE / conjugate-pairing
+   `β=\barα`) — **but it is RADIUS-SILENT BY A THEOREM** (every conjugation `c(z)=μ\bar z` is involutive iff
+   `|μ|=1`, fixed locus = a PHASE `θ=2φ`, never a radius). The radius `|α|=√d` is `σ_d`'s **SCALE `d`**
+   (`σ_d(z)=(d/|z|²)z`, a radial inversion, conj cancels), **ORTHOGONAL to every conjugation**. So the reality
+   half is SETTLED (free, radius-silent); the radius is the irreducible residue. SPECIFY, in the M4 gluing, the
+   precise map by which the per-prime SCALE/radius data (`√d`-analogues, an Euler datum, NOT a conjugation)
+   ASSEMBLE the global centre `Re s=½` against the radius-silent `(P_∞,D,c)` at `∞`. (falsify: the assembled
+   radius must be DH-distinguishing — DH has no determinant `d` → no scale → no radius.)
+K6. **[KEYSTONE · the scale as a NON-METRIC DEGREE, named by K2r-fix]** Since the radius is `σ_d`'s **scale
+   `d`** — a 1-dim *radial/degree* datum, NOT a phase and NOT (yet) a Gram form — and §0 forbids metrics: is
+   there a **non-metric** Euler-borne structure (a *valuation* / a *graded line with a degree* — e.g. the
+   determinant of Frobenius as a `ℚ_{>0}`-graded `𝔽₁`/GANTM datum, Connes–Consani) whose per-prime "size" is
+   `√d` WITHOUT being a `*`-congruence of a fixed background? A degree on a graded line is NOT a metric — it
+   may EVADE the Sylvester inertia-lock where a metric cannot. (falsify: Euler-borne, DH-absent, sees the
+   radius plant the conjugation `κ` is blind to.)
+K2. **[KEYSTONE · condensed — RE-POINTED by K2r-fix: the RADIUS/DEGREE carrier, not the reality datum]** Realize
+   the archimedean structure in **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms).
+   K2r-fix settled the reality datum: the condensed object supplies `c_0` (the phase, FREE, radius-silent) — it
+   must ADDITIONALLY carry the **scale/degree `√d`**, which is NOT a conjugation. So the condensed framework's
+   contribution to the keystone is the **radius/degree carrier** (the canonical Weil operator `C_W`'s RADIUS,
+   not its phase `(−1)^w`, and not the free involution `σ_d`). This is the one framework flagged right-kind-
+   untried — now with the radius/scale (not the reality, now settled free) as the precise target.
 K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1]** The forcing lemma "archimedean Kähler ⟹ `c=D`" is
    the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT here).
    BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
@@ -227,6 +232,38 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — K2r-fix [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: resolved the reality/radius
+  fork with the ALGEBRA OF CONJUGATIONS — the real/condensed structure `κ` (M3b's `c_0`) IS available over `ℤ`
+  FOR FREE (FORK 2 FALSE) and forces the PHASE-reality (the FE / conjugate-pairing `β=\barα`), but it is
+  RADIUS-SILENT BY A THEOREM, and the radius `|α|=√d` (the even split = purity = RH) is `σ_d`'s SCALE `d`,
+  ORTHOGONAL to every conjugation — `κ` is FREE but the WRONG HALF.** [KEYSTONE · coherence-checked · anchored
+  vs 𝔽_q / Δ]. `research/construction/K2r-fix-reality-datum-kappa.md`,
+  `scripts/numerics/witness/reality_datum_kappa.py` (+1 `falsify.py` row → 53, DISPERSING-on-the-reality-half).
+  **What got CHECKED (exact mpmath 40dps; `f=Δ`; 5 Weil curves; DH type-level):** **[1]** every antilinear
+  involution `c(z)=μ\bar z` is involutive IFF `|μ|=1`, and `Fix(c)` is a PHASE condition `θ=2φ`, NEVER a
+  radius — verified all 3 radii `{0.5,3,100}` on the fixed ray are `c`-fixed (err `~0`), off-ray moved; so
+  `κ` is RADIUS-SILENT by a THEOREM (sharpens M3b's `(−1)^w`-radius-silence). **[2]** `σ_d(z)=d/\bar z=(d/|z|²)z`
+  EXACTLY (conj CANCELS, residual `~1e-35`): a pure RADIAL inversion about `√d`; its radius is the Euler-borne
+  SCALE `d`, NOT a conjugation — reality (`κ`) and radius (scale `d`) ORTHOGONAL. **[3]** THE FORK: `[c_0,F]=0`
+  (`c_0`=swap∘conj realizing the FE) `⟺ β=\barα` = the FE/phase-reality, holds at ANY radius — a PLANTED
+  off-radius conjugate-paired pair (`|α'|=1065761≠√d=534146`) STILL satisfies `[c_0,F]=0`: `κ` BLIND to the
+  radius defect. **[4]** FF anchor (5 curves): `[c_0,F]=0` is the FE (free), `|α|=√q` the SEPARATE Deligne-purity
+  theorem; `κ` free + radius-silent, the radius is the theorem. **[5]** DH: `c_0` EXISTS (DH has a FE ⟹
+  conjugate-pairing holds) ⟹ `κ` DH-SHARED + radius-silent; DH has no `d` ⟹ no radius to match (even-split
+  VACUOUS); the radius is the ONLY DH-distinguisher and `κ` does not carry it. Carrier ladder `DH(c_0,no d) <
+  ζ(c_0+d) < FF(c_0+d+purity)`. **Falsifier verdict (a coherence check on the reality half):** EULER-BORNE NO
+  on the reality half (`κ=c_0` exists for DH) → DISPERSING; SEES-ZEROS YES (only the radius half, via `σ_d`'s
+  scale; `κ` itself blind); INDEPENDENT NO (radius = even split = RH). Tabled **DISPERSING-on-the-reality-half**
+  (`euler_borne=False`): the keystone is NOT the reality datum — `κ` is the WRONG HALF (phase, free,
+  radius-silent). **NEW content:** a THEOREM — the archimedean reality datum is radius-silent BECAUSE
+  conjugations (`|μ|=1`) carry only phase, never a radius — resolving the reality/radius fork as an
+  ORTHOGONALITY: `κ` (the FE/phase) is free over `ℤ` (FORK 2 FALSE) and DH-shared; the radius (the even split =
+  purity = RH) is the SCALE `d`, an Euler datum orthogonal to every conjugation, which must be Euler-ASSEMBLED
+  (M4r), NOT supplied by a real structure. **Successors added:** M4r promoted to SOLE LIVE KEYSTONE (assemble the
+  per-prime SCALE/radius `√d` against the radius-silent `(P_∞,D,c)`); K6 [the scale as a NON-METRIC DEGREE — a
+  valuation / `ℚ_{>0}`-graded `𝔽₁` line whose size is `√d`, not a Gram form, may evade Sylvester]; K2 re-pointed
+  (condensed object supplies `c_0` free + radius-silent; it must carry the SCALE/degree `√d`, not the reality).
 
 - **2026-06-06 — K2r-split [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: attacked the relocated
   residue with the charter §0 design law (the polarization must be a `*`-INVOLUTION / duality, NOT a metric)
