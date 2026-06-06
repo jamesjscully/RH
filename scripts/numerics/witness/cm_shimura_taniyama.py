@@ -280,6 +280,42 @@ def falsify_dh():
     }
 
 
+def falsifier_verdict():
+    """Three-axis falsify on the CM/Shimura-Taniyama candidate for THE RADIUS."""
+    return {
+        "candidate": "RADIUS via CM type: |alpha|^2 = N(pi) = q FORCED because the endomorphism field is "
+                     "imaginary-quadratic (CM) => Rosati involution = complex conjugation => N=|.|^2",
+        "radius FORCED or ASSUMED (the decisive axis)": (
+            "FORCED for CM objects.  |alpha|^2 = q = N(pi) is the constant term of the Frobenius char poly "
+            "(= the degree, free), and N(pi) = pi * sigma(pi) with sigma = Galois.  The CM (imaginary "
+            "quadratic) condition makes sigma = COMPLEX CONJUGATION, so N(pi) = |pi|^2.  a^2 < 4q (on-line) "
+            "is FORCED by N(pi)=q with pi irrational (b != 0, the ordinary/split condition), NOT assumed: "
+            "a^2 = 4q - d b^2 < 4q whenever b != 0.  NO zero-location input.  Shimura-Taniyama is a THEOREM."),
+        "euler-borne?": (
+            "YES -- the CM mechanism needs a Frobenius pi / Satake parameters in an endomorphism field; DH "
+            "(no Euler product) has no pi, no End, no CM type.  DH-failing by design."),
+        "sees-zeros?": (
+            "YES -- a^2<4q (complex-conjugate roots, |alpha|=sqrt q) vs a^2>4q (real distinct roots, "
+            "off-circle) is exactly the radius; CM forces the former.  Off-line would need a REAL quadratic "
+            "End field, where Galois conj != complex conj => not a CM/purity structure."),
+        "applies to ZETA?": (
+            "NO -- zeta is GL(1): motive Q(0), Hodge type (0,0), no Frobenius pi, no endomorphism field, "
+            "no CM type.  The generic Rankin-Selberg / weight-2 NS piece is NON-CM (CM forms are a "
+            "measure-zero family).  The infinity-type that forces purity needs a Frobenius eigenvalue in a "
+            "CM endomorphism field to act on; zeta supplies none.  The forcing is REAL but the carrier is "
+            "ABSENT for zeta."),
+        "VERDICT": (
+            "GENUINE (non-circular) forcing of the radius FOR CM OBJECTS -- but INAPPLICABLE to zeta.  "
+            "Shimura-Taniyama really does force |alpha|=sqrt q without RH, via the structural fact that a "
+            "CM (imaginary-quadratic) endomorphism field makes the Rosati involution = complex conjugation, "
+            "hence N(pi) = |pi|^2 = q.  This is the SAME positivity the general AV needs, but here it is "
+            "AUTOMATIC from the large archimedean-typed endomorphism algebra.  zeta has no such algebra, and "
+            "the relevant Rankin-Selberg carrier is non-CM, so the escape route is real for CM curves and "
+            "EMPTY for zeta.  The very feature that forces the radius (a CM endomorphism field) is exactly "
+            "what zeta lacks -- this is WHY zeta is hard and the CM case is not."),
+    }
+
+
 def summary():
     mp.mp.dps = 30
     print(__doc__)
@@ -313,6 +349,10 @@ def summary():
     print("=" * 100)
     print("[5] DH falsify\n")
     for k, v in falsify_dh().items():
+        print(f"    {k}:\n        {v}\n")
+    print("=" * 100)
+    print("[6] FALSIFIER VERDICT\n")
+    for k, v in falsifier_verdict().items():
         print(f"    {k}:\n        {v}\n")
 
 
