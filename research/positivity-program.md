@@ -112,3 +112,22 @@ directions (workers spawned 2026-06-06):
 The unifying question across A/B/C: **how does the Euler product enter a positivity that sees the
 zeros** — the place-crossing. All three are kill-testable against DH on `weil_form.py` /
 `scattering_forcing.py`.
+
+## G. Thread 6 (two-worlds merger) — folded in
+The merger (Connes–Consani Arithmetic⊕Scaling Site; Deninger foliated systems) is genuinely both
+worlds, and the two positivities **unify at "trace = intersection"**: `Q(f) = −(D_f·D_f) = ‖Pf‖²`
+makes Hodge-index negativity and operator self-adjointness the *same number* — **proven at the single
+archimedean place (CC20)**. It does **not** globalize: the merger **inherits both obstructions and they
+coincide** — no `H¹(S²)` (geometric), continuous-Frobenius `Δ·Δ=∞` (the Janus corner), resonances ≠
+self-adjoint eigenvalues (non-compact; Selberg-RH needs *compact*). Net: the merger is the **tightest
+localization** of the wall — RH ⟺ globalize CC20 past one place — triangulated from three directions
+(Hodge square / Selberg spectral / scattering resonances) onto one functional. **Concrete kill-test
+(thread 6):** express `Q(f)` two ways — (A) scaling-compression trace `Tr(ϑSϑ*)`, (B) Birman–Krein
+scattering-phase `d/dt arg S(½+it)` — and test the equality `(A)=(B)` against `S_offline`. If the
+off-line control passes both, the bridge is RH-neutral and the forcing is pinned to a specific
+**cross-place term** of the semilocal trace formula; if it fails, that term is the first Euler-borne
+forcing object. Needs no `H¹(S²)`; immediately falsifiable.
+
+**All roads now lead to one place:** the **cross-place (archimedean↔prime) term** of the semilocal
+trace formula — the Euler-product coupling that must enter a positivity seeing the zeros. Workers
+A/B/C are three on-ramps to it.
