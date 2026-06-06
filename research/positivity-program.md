@@ -219,3 +219,27 @@ eigenform** (Euler product built in) supply the dual certificate? That is the sh
 **Queued probe (worker D):** build the DH interpolation basis (BRS extends to it) and confirm it
 differs from ζ's *only* in the functional values `W Uₙ = signed c_DH(n)` — mechanically pinning the
 discriminator to `sign Λ`.
+
+## K. Worker C (semilocal {∞,2}) — the Euler product enters the VALUES, not yet the SIGN (2026-06-06)
+
+`semilocal_2.py`, `research/work/C-semilocal-2.md`. Built `W_{∞,2}` as a Gram form on the Sonin
+(Fourier-vanishing) subspace via the reliable spectral side (explicit formula verified to 4e-13;
+`Q = W_∞ − P_2 − P_other = spectral` closes to 3e-8). Findings:
+
+1. **`W_{∞,2} ⪰ 0` for ζ: YES** (= the PSD spectral sum-of-squares).
+2. **The knife-edge does NOT appear in the natural Gram form — honest correction to thread 0.** `W_∞`
+   alone is already `≥ spectral ≥ 0`; the `p=2` term is a `~10⁻⁴` *downward* correction, not a sign-
+   flipping rescue. The dramatic "`W_∞` restored only by `p=2`" belongs to CC20's *specific*
+   `Tr(ϑSϑ*)` compression (the `δ'`-jump at `ρ=1`), **not** to `W_∞ − P_2` as a quadratic form.
+3. **The `<10⁻³` sensitivity is real — in the form-RECOVERY sense:** only the exact integer prime
+   `p=2` makes `W_∞ − P_2` equal the true spectral form (gap `2.9e-8` at `δ=0`, `~1` order/decade off).
+4. **DH kill-test: the form SEES the Euler product in its VALUES** (ζ and DH Gram matrices provably
+   differ, tracking `Λ(2)=0.693` vs `c_DH(2)=0.197`) **but BOTH stay PSD** — no positivity
+   discrimination at one place. **Falsifier verdict: RH-SILENT at `{∞,2}`.**
+
+**The lesson:** `{∞,2}` is the first object carrying the Euler product in its *matrix entries*, but its
+*positivity* is RH-neutral — the prime perturbation is `O(10⁻⁴)` against an `O(1)` archimedean form,
+far too weak to flip a sign. **The forcing is a VALUE GAP `‖P_ζ − P_DH‖` that must ACCUMULATE over
+places before it becomes a SIGN** (consistent with `li_positivity.py`: DH's failure first appears at
+Li index `n≈521` = *many* primes). Next: sweep `S={∞,2,3,5,…}` for the place-count `|S|` where DH's min
+eigenvalue first goes negative while ζ stays PSD.

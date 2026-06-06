@@ -72,6 +72,7 @@ REGISTRY = [
     ("Birman–Krein phase winding", True, True, False, "worker B: detects off-line zero, but counts not forces"),
     ("Beurling–Selberg / Cohn–Elkies majorant", True, False, False, "worker D: a sup over {ĝ≥0}, RH-agnostic bound"),
     ("BRS modular interpolation (primes+zeros nodes)", True, True, False, "worker D: records RH (frame⟺RH); Eisenstein dual cert = archimedean"),
+    ("semilocal {∞,2} Weil form", True, False, False, "worker C: sees Euler product in VALUES, but PSD for both ζ and DH at one place"),
     ("scattering unitarity |S|=1", False, False, False, "stone 1: holds for off-line control too"),
     ("self-adjointness (Hilbert–Pólya)", False, False, False, "reflects, does not force"),
     ("de Branges reproducing kernel", False, True, False, "falsified, Conrey–Li 2000"),
