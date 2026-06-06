@@ -51,17 +51,19 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M2b. **[DEFINE · the hinge clause C3b · load-bearing]** M1+M2 self-localized ALL residual `ℤ`-hardness
-   into **C3b: the critical radius `μ` (=`Re s=½`) must be Euler-borne**, the way `μ=q` (radius `√q`) is
-   the Frobenius weight over `𝔽_q` (DONE #32, now confirmed in the M2 working model as the SOLE
-   non-categorical residue — every other clause C1/C2/C3a/C4/C5 is a categorical structure on one object).
-   Define, precisely, what it would MEAN for a `ζ`-intrinsic object's similitude multiplier `μ` in
-   `Φ^*φ_{FE}Φ=μφ_{FE}` to be **read off the local Euler factors `{L_p}`** rather than the FE — i.e. write
-   C3b as a representability sub-problem (the radius datum as a functor of the local factors). **Sharpened
-   target from M2:** in the FF, `μ=q` enters via the *similitude relation* `FᵀEF=μE` AND that same `μ`
-   sets the radius `√μ` the zeros sit on — define the `ℤ`-functor `{L_p} ↦ μ` and check whether the FE's
-   `μ=1` (the `s↔1-s` similitude is multiplier-1) can be *upgraded* to an Euler-read `μ` distinct from the
-   FE value. This is the prize AND the DH-falsifier (C6) in one clause; sharpen it before M4 constructs it.
+M2d. **[DEFINE · the PURITY functor · load-bearing · from M2b]** M2b refined C3b to
+   `rad = (·)^{1/2} ∘ (edge-abscissa) : LocFac → 𝔾_m`, so **`ℤ`-C3b = "`ζ`'s local Euler factors `{L_p}`
+   are PURE of weight 1"** (the centre = `√(edge)`). The edge datum is FF-clean (`q = #𝔸¹`, the abscissa,
+   read off the local product, EXACT, functorial under base change); the open piece is the
+   **square-root/purity step over `ℤ`**. DEFINE the weight/purity structure a single local factor
+   `L_p(s) = (1−p^{-s})^{-1}` must carry: what is the `ζ`-analogue of "`H^1` pure of weight 1" when each
+   `L_p` has degree-0 numerator (`ζ` has no `H^1` at a single prime — the weight-1 part is *global*)?
+   **The trap to name precisely:** over `𝔽_q` purity is a property of `H^1(C)`, which exists because the
+   *curve* supplies a weight-1 cohomology; over `ℤ` the abscissa `Re s=1` is clean but there is no per-prime
+   weight-1 object to be pure — so purity must be a property of the *global glued* factor (the M4 descent
+   object). Decide: is `rad : LocFac → 𝔾_m` even well-typed for `ζ`, or does the edge→centre square-root
+   require the surface `S²/ℤ` (the missing `H^1`, `F-sym2-os-bridge.md`) before purity has a carrier? This
+   re-routes M4: the descent must FIRST supply the weight-1 carrier, THEN purity sets `Re s=½`.
 M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
    tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
    matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
@@ -74,7 +76,10 @@ M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/cond
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
 M4. **[DESCENT]** Specify the **duality-descent gluing**: how `{Euler factors at primes} ∪ {Γ_ℝ (p,q) at ∞}`
    glue to a global object whose polarization **is** the explicit-formula quadratic form (so `W_∞≥Σ_p W_p`
-   is a descent constraint, not a hope).
+   is a descent constraint, not a hope). **Re-routed by M2b/M2d:** the descent must produce the **weight-1
+   carrier** (the global `H^1` no single prime supplies) on which the **purity functor**
+   `rad=(·)^{1/2}∘(edge-abscissa)` sets the centre `Re s=½ = (edge `Re s=1`)^{1/2}`. So C3b becomes a descent
+   constraint *on the weight filtration of the glued object*, Euler-sourced, NOT borrowed from the FE.
 M5. **[FALSIFY]** Run M2–M4's objects through `falsify.py`: confirm sees-zeros (polarization depends on
    zero locations) AND DH-failure (no Euler product ⟹ no object).
 
@@ -158,6 +163,34 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M2b [DEFINE · anchored]: wrote the hinge clause C3b as a REPRESENTABILITY sub-problem —
+  the radius datum is a FUNCTOR `rad : LocFac → 𝔾_m` of the local Euler factors `{L_p}` — and ANCHORED it
+  in the FF, where it REFINES to a PURITY functor `rad=(·)^{1/2}∘(edge-abscissa)`: the Euler product gives
+  the EDGE `q` directly (exact, functorial), the CENTRE `√q` via DELIGNE PURITY.** [DEF · anchored vs 𝔽_q].
+  `research/construction/M2b-radius-functor-C3b.md`, `scripts/numerics/witness/radius_functor.py`
+  (+1 `falsify.py` row). **What got DEFINED:** C3b holds for `X` iff there is a functor `rad : LocFac → 𝔾_m`
+  (LocFac = local-Euler-factor data) with a natural iso `rad({L_p(X)})≅μ(X)` **factoring through the local
+  product** (= "Euler-borne"); C6/DH built in (LocFac empty for DH ⟹ no input ⟹ no `μ`). **What got BUILT
+  (FF anchor, 5 Weil curves `q=2,5,7,11,13`, all PASS):** `rad_edge:{L_x}↦q` = the abscissa / rightmost pole
+  `T=1/q` of `Z_C=∏_x L_x` (`q=#𝔸¹(𝔽_q)`, purely local, EXACT, no zeros used), verified a genuine FUNCTOR —
+  naturality under base change `C/𝔽_q→C/𝔽_{q^k}` exact (`rad_edge(C/𝔽_{q^k})=q^k`, `k=1,2,3`); read the hard
+  way `N_n^{1/n}→q` with subleading `O(q^{n/2})` = the `√q` zeros. **THE DECISIVE STRUCTURAL OUTPUT — C3b
+  refines to a PURITY functor:** `rad_edge` gives only the EDGE `q` (Worker E's `Re s=1`); the CENTRE radius
+  `√q=(edge)^{1/2}` comes via **Deligne purity** (`H^1` pure of weight 1, `(rad_edge)^{1/2}=|α|` to machine
+  prec all 5 curves). So **`ℤ`-C3b = "`ζ`'s local factors are PURE of weight 1"**; the radius functor is
+  `(·)^{1/2}∘(edge-abscissa)`. **Answers M2's question** (upgrade the FE's `μ=1`?): the upgrade is NOT a new
+  multiplier (`μ` stays `1` for `s↔1−s`, C3a DH-shared) but a **SEPARATE Euler datum — the edge abscissa `q`
+  — whose square root via purity sets the centre.** **C6/DH now TYPE-LEVEL:** `rad_edge`'s domain LocFac is
+  EMPTY for DH (no product ⟹ no `{L_p}`), so the functor doesn't type-check, while `rad_FE=1` survives
+  (DH-shared) — the cleanest C6 yet. **Falsifier verdict (anchor, not `ℤ`-candidate):** Euler-borne Y
+  (`rad_edge` reads the local product), sees-zeros Y (purity `(edge)^{1/2}=√q` = where the zeros sit),
+  independent N (purity=Deligne=FF Weil positivity) → CIRCULAR over `ℤ`, expected (`𝔽_q` owns the radius via
+  purity). **Not overclaimed:** defines/anchors the functor; the `ℤ` problem is untouched and now reads
+  "construct an Euler-sourced weight/purity structure on `ζ`'s local factors". **Successors added:** M2d
+  [DEFINE the per-prime weight/purity structure — `ζ` has no `H^1` at a single prime, so purity needs the
+  GLOBAL glued carrier; decide if `rad:LocFac→𝔾_m` is even well-typed for `ζ` or needs the surface `S²/ℤ`
+  first]; M4 re-routed (the descent must FIRST supply the weight-1 carrier, THEN purity sets `Re s=½`).
 
 - **2026-06-06 — M2 [ANCHOR-BUILD]: assembled `H^•(C/𝔽_q)` as ONE categorical `ζ`-Hodge datum
   `(𝒞,ω_∞,D,P)` satisfying the M1 contract C1–C6, reproducing the Weil RH proof with the polarization =
