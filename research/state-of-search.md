@@ -101,13 +101,32 @@ The verifiability discipline (§8) held throughout — it caught and retracted t
 over-claims (the `(3/2)ln2` slack constant; the exponential slack rate). That is the program
 working as intended: an honest map of a hard problem, not a false summit.
 
+## The Hermite junction — mapped (three angles, 2026-06-05)
+
+Three fresh angles were run as parallel subagents (log: `2026-06-05-junction-synthesis.md`;
+modules `totally_positive.py`, `renormalization.py`, `lambda_height.py`). They triangulated:
+
+- **Total positivity** is the right *language* but not a fresher *coordinate* — the slack is
+  super-exponential in every TP coordinate too (Angle 1, NO-GO).
+- The **dBN flow acts on the Hermite fixed shape as a pure dilation** — exactly marginal,
+  `e^{−tD²}H_n=(1+4t)^{n/2}H_n(x/√(1+4t))` (Angle 2, exact identity); but there is no fixed-point
+  recursion — the slack is a marginal `½ d log d` law, **spectral-edge / Airy-controlled**.
+- The fixed shape's archimedean energy is **one digamma `Γ_ℝ` object** shared by the dBN, Weil,
+  and Arakelov-height archimedean terms (Angle 3, exact: `2 Re E_Ξ = h₊`) — but it is **shared
+  with Davenport–Heilbronn, hence RH-neutral**.
+
+**Converged conclusion:** the static/archimedean side of the junction is now fully understood
+**and fully RH-neutral**. The RH content lives in the **deviation from the fixed shape** —
+*transverse* to the marginal flow, at the **spectral edge (Tracy–Widom/Airy)**, on the
+**non-archimedean/dynamical/Euler-product** side. The junction is mapped to the line.
+
 ## Suggested next moves (for whoever picks this up)
 
-1. **The Hermite junction** (highest-leverage, novel): make precise the identity "static slack =
-   discriminant of the heat-flow fixed shape; dBN flow = its dynamic version," and ask whether the
-   dynamics give a bound on the *slack's* evolution that the static height cannot — i.e. whether the
-   flow controls the uniform-in-`d` slack. This is the one place the two hard endpoints might
-   collapse to one tractable one.
+1. **The transverse / spectral-edge thread** (the one survivor): does the **Tracy–Widom edge
+   fluctuation** of `J_{d,n} − H_d` admit a one-sided (`Λ≥0`-compatible) bound under the dBN flow,
+   *uniform in `d`*? The slack is edge-controlled, the flow is marginal along the fixed shape (so
+   its action is transverse), and this is exactly where the GUE universality Rodgers–Tao exploit
+   meets the slack — a sharper target than "uniform-in-`d` slack bound."
 2. **dBN `Λ≤0` sub-pieces** — the genuine frontier with the best track record (Rodgers–Tao, Polymath).
 3. Treat the geometric endpoint (positive Green form / `C×C`) as the *literature* frontier (Connes–
    Consani, Arakelov), not a computation — it is the arithmetic-geometry open problem.
