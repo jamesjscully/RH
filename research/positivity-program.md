@@ -131,3 +131,33 @@ forcing object. Needs no `H¹(S²)`; immediately falsifiable.
 **All roads now lead to one place:** the **cross-place (archimedean↔prime) term** of the semilocal
 trace formula — the Euler-product coupling that must enter a positivity seeing the zeros. Workers
 A/B/C are three on-ramps to it.
+
+## H. Worker results A/B + the falsifier upgrade (2026-06-06)
+
+**Worker A (QSM free energy)** — `qsm_free_energy.py`, `research/work/A-qsm-free-energy.md`.
+Real-axis KMS positivity of `F(β)=−log ζ(β)` is **certified, Euler-borne, DH-refusing** — but the
+continuation does NOT see the zeros (the OS-positive KMS correlator is positive from `Λ(n)≥0` alone,
+independent of where ζ vanishes). **Verdict: RH-SILENT.**
+
+**Worker B (prime-place reflection)** — `prime_reflection.py`, `research/work/B-prime-reflection.md`.
+No prime-place involution `θ` exists: `u↦−u` is exactly the archimedean reflection; the only reflection
+the primes carry is the Gram doubling `W_p=P_pP_pᵀ` whose OS-positivity is identically `sign Λ` — the
+Euler product in a Hankel skin. Discriminates ζ/DH but at the coefficient level. **Verdict: RH-SILENT
+(thread-1 prime-`θ` closed negatively, 6th Euler-product confirmation).** Bonus: the Birman–Krein
+phase winding `(1/2π)∮ d arg S(½+it)` DOES see an off-line zero (ζ:−12.96, off-line:−14.92) — counts,
+doesn't force.
+
+**Both hand off to the same object:** the cross-place margin `W_∞ ≥ Σ_p W_p` continued to the critical
+line (= thread 0 / Worker C).
+
+**The falsifier upgrade — `scripts/numerics/witness/falsify.py`.** The audit forced a third axis. A
+candidate is now scored on:
+1. **Euler-borne** (fails for DH) — necessary, *cheap*;
+2. **sees-zeros** (sensitive to a planted off-line zero — depends on zero LOCATIONS, not just real-axis
+   coefficients) — the **new, decisive axis** (`offline_sensitivity`);
+3. **independent** (provable without assuming RH).
+
+Verdicts: **DISPERSING** / **RH-SILENT** (Euler-borne but blind to the zeros — the new category that
+catches QSM & prime-Gram) / **CIRCULAR** (= Weil/Li) / **FORCING** (the prize, still empty). Lesson
+baked into tooling: *passing the DH kill-test is necessary but cheap; the content is sees-zeros.* Run
+every future candidate through all three axes via `falsify.py` before believing it.
