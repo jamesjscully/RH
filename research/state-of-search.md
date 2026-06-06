@@ -1,132 +1,116 @@
-# State of the search — honest assessment (2026-06-05)
+# State of the search — a map of RH's resistance (finalized 2026-06-06)
 
-A step back over everything examined, the convergent finding, and where the genuine frontier is.
-This is the "win-win negative" payoff of STRATEGY §7.3, made explicit.
+The durable product of this program: an honest, comprehensive map of *why* the Riemann Hypothesis
+resists analytic attack, where exactly the irreducible difficulty sits, and which routes are dead
+and why. Not a proof. Read with `STRATEGY.md` (the charter) and the dated logs in `research/log/`.
 
-## The convergent finding
+---
 
-**Every analytic route we examined factors through the same missing object** — the arithmetic
-`C×C` (Connes–Consani Scaling Site / the surface whose intersection positivity proves RH over
-function fields), manifest analytically as *a positivity that is only known to be equivalent to
-RH, never independently provable*. The routes and where each lands:
+## 1. The one-paragraph conclusion
 
-| route | status | lands on |
+Every route we examined confirms, with increasing precision, the same thing: **the RH content is
+the subleading Euler-product / zero-distribution structure of `ζ`, and it is not reachable through
+any leading / archimedean / functional-equation / metric / edge reformulation.** Every such
+reformulation is either *dispersing* (RH-neutral — it holds for Davenport–Heilbronn, which has the
+same functional equation but no Euler product and provable off-line zeros) or it lands on the
+*missing arithmetic object* (the surface `C×C` whose intersection positivity proves RH over
+function fields, with no analogue over `Spec ℤ`). The two genuine frontiers are research-grade open
+problems; we found no fresh finite handle into either.
+
+## 2. The route map
+
+| route | verdict | where it lands |
 |---|---|---|
-| **Nyman–Beurling / witness** (forward convergence) | dispersing (RH-neutral); descent-trivial | nothing — it's a reformulation |
-| **Descent / obstruction calculus** | constant-coeff nerve contractible → `H¹=0` (decoration); obstruction is *metric*, not topological | the metric enrichment (Arakelov) |
-| **Jensen / hyperbolicity / metric-Arakelov** | legitimate forcing-structure candidate (fails for DH/Epstein, not Weil-disguise); slack = height of discriminant, super-exp small, GUE energy; grounded in real ζ | **BGS §6.3** (positive Green form for Jensen–discriminant) = RH-hard |
-| **Weil positivity / explicit formula** | RH ⟺ it, but only known equivalent (dispersing); our kill-test discriminator | Connes–Consani archimedean trace on the **Scaling Site** `C×C` |
+| **Nyman–Beurling / witness** (forward convergence = `d_N→0`) | **dispersing** (RH-neutral; holds for DH); descent-trivial | a reformulation — nothing |
+| **Descent / obstruction calculus** (nerve `H¹` of a template cover) | **decoration**: additive families → contractible nerve → `H¹=0`; obstruction is *metric*, not topological | the metric enrichment (Arakelov) |
+| **Jensen / hyperbolicity / metric-Arakelov** | genuine forcing-structure *candidate* (fails for DH/Epstein, not Weil-disguise); slack = condition-number = arithmetic **height of the discriminant**, super-exp, GUE energy; grounded in real `ζ` | **BGS §6.3** positive-Green-form obstruction = RH-hard |
+| **Weil positivity / explicit formula** | RH `⟺` it, but **only known equivalent** (dispersing); our kill-test discriminator | Connes–Consani archimedean trace on the Scaling Site `C×C` |
+| **de Bruijn–Newman / dynamical** | genuine forcing structure with **real reverse force**; `Λ≥0` proved unconditionally (Rodgers–Tao, via dynamics+statistics, *not* the missing object) | **forcing `Λ≤0`** — a distinct RH-hard endpoint |
+| **Spectral edge** (deviation `J_{d,n}−H_d` at the Airy edge) | the large edge deviation is **dispersing** — set by the leading functional-equation kernel, independent of the arithmetic (verified `~1e-8`) | a functional-equation feature — no reverse force |
 
-The Jensen/metric route was the one with a real shot — a genuine forcing structure in height
-language — and three independent passes (the descent micro-test, the kill-tests, and the real-ζ
-grounding) all show it lands on the missing object: the uniform-in-`d` slack bound, the positive
-Green form (BGS §6.3), and the archimedean Weil positivity are *the same difficulty wearing
-different clothes*. The connective tissue is **potential theory** (log-energy, Green's functions,
-equilibrium measures) and the **GUE/semicircle universality** shared by the slack and the zeros.
+Three independent passes on the **Jensen/metric** route (the descent micro-test, the kill-tests,
+the real-`ζ` grounding) all show its frontiers — the uniform-in-`d` slack bound, the positive Green
+form (BGS §6.3), the archimedean Weil positivity — are *the same difficulty in different clothes*.
 
-**Honest reading:** this is strong, structured evidence that **RH is not reachable by analytic
-reformulation alone** — it requires the geometric object (the arithmetic surface). That is not a
-proof of anything, but it is a real, reusable map: it says where *not* to spend effort
-(reformulations, descent topology, bare hyperbolicity) and concentrates the difficulty into one
-precise place.
+## 3. The Hermite junction — where the routes meet, fully mapped
 
-## The de Bruijn–Newman / dynamical route — now examined (`dbn_route.py`)
+The Jensen polynomials converge to Hermite (`J_{d,n}→H_d`, GORZ; verified in real `ζ`,
+`xi_jensen.py`), and the dBN flow `e^{−tD²}` *generates* Hermite. So the static metric slack and the
+dynamic flow are **one Hermite/heat-flow/GUE object**. Three fresh angles (parallel subagents,
+`{totally_positive,renormalization,lambda_height}.py`) mapped it:
 
-By the program's own criteria it is the **most promising** route, and a kill-test confirms it is
-a genuine RH-content criterion with real reverse force:
+- **Total positivity** (Angle 1): the right *language* (Pólya-frequency / Aissen–Schoenberg–Whitney,
+  dBN as a variation-diminishing TP semigroup) but **not a fresher coordinate** — the slack is
+  super-exponential in every TP coordinate too.
+- **Renormalization** (Angle 2): the dBN flow acts on the Hermite fixed shape as a **pure dilation**
+  `e^{−tD²}H_n=(1+4t)^{n/2}H_n(x/√(1+4t))` — *exactly marginal* (a precise "Λ=0 at the fixed point");
+  but no fixed-point recursion — the slack is a marginal `½ d log d` law, spectral-edge controlled.
+- **Λ as a height** (Angle 3): the dBN, Weil, and Arakelov-height archimedean terms are **one digamma
+  `Γ_ℝ` object** (exact: `2 Re E_Ξ = h₊`) — but it is **shared with Davenport–Heilbronn ⇒ RH-neutral**.
 
-- **Kill-test passed.** The heat flow `H_t = e^{−tD²}` realizes complex zeros; `Λ(f)=inf{t:H_t f
-  all-real}` satisfies **`Λ>0 ⟺ off-line zeros present`** (verified: all-real → `Λ=0`; one complex
-  pair → `Λ=0.16`; `x²+1` → `0.5`; far-off-line → `1.76`, growing with distance off the line). So
-  the dBN criterion **fails for DH/Epstein** (off-line zeros ⇒ `Λ>0`).
-- **Real reverse force + a real unconditional theorem.** The flow *forces* zeros real; Rodgers–Tao
-  proved `Λ≥0` unconditionally — the only theorem of its kind, using **dynamics + zero statistics
-  (Montgomery)**, *not* the arithmetic surface. So dBN's hard endpoint is **different** from the
-  geometric routes'.
-- **Honest catch.** `Λ≥0` is the RH-*independent* direction ("RH barely true if true"); RH is
-  `Λ≤0`, open and hard, and the dynamical method gives the wrong-direction bound. Forcing `Λ≤0`
-  (controlling the backward flow) is where Rodgers–Tao + Polymath stalled.
+**Conclusion:** the static / archimedean / fixed-shape side of the junction is **fully understood
+and fully RH-neutral**. The RH content is the *deviation* from the fixed shape — and (the spectral-
+edge pull) that deviation is **largest at the edge but the edge is dispersing** (leading functional-
+equation structure); the genuine RH content (the arithmetic) is the **subleading** part, at the
+shoulder/bulk, tiny at accessible `(d,n)`.
 
-**The two genuine frontiers are now distinct and named:** (a) the **missing arithmetic object**
-(geometric/analytic routes → positive Green form / Scaling Site `C×C`), and (b) **forcing `Λ≤0`
-via dynamics** (dBN). Neither is a reformulation; neither is reachable by relabeling RH.
+## 4. The precise location of the difficulty
 
-**…but they share one structure.** The heat flow `e^{−tD²}` *generates the Hermite polynomials*
-(`H_d` = heat-evolved monomials), and the Jensen polynomials converge to exactly those `H_d`
-(GORZ; verified in real ζ, `xi_jensen.py`). So the **metric/Arakelov slack** (= the Hermite
-discriminant, P1a) and the **dBN dynamics** are the *same Hermite / heat-flow / GUE object* seen
-two ways — the slack is the *static* discriminant of the heat-flow fixed shape, the dBN flow is its
-*dynamic* version. The two frontiers are not independent; they meet at the Hermite/semicircle
-universality that also governs the zeros' pair correlation. If there is a non-obvious move left, it
-is most likely *here* — at the junction where the static height and the dynamic flow are the same
-object.
+Stripped to the line: the leading / archimedean / functional-equation / edge structure is
+**dispersing** — confirmed in *three independent places*: the shared digamma `Γ_ℝ` factor (Angle 3),
+the descent triviality, and the dispersing edge. The RH content is the **subleading Euler-product /
+zero-distribution structure** — the part that distinguishes RH-true `ζ` from RH-false DH/Epstein. It
+is exactly the content of **Weil positivity** (only-known-equivalent) and the **missing arithmetic
+object** (BGS §6.3 / the Scaling Site `C×C`). It is asymptotic / not finitely accessible (the dBN
+sequence flow shows finite Jensen polynomials are robustly hyperbolic; criticality is the
+`(d,n)→∞` limit, consistent with GORZ's `n ≳ e^d`).
 
-### (historical note — the original "underexplored" framing)
-Before the kill-test the dBN route looked simply most-promising; the analysis above confirms it is
-a genuine forcing structure but with its own RH-hard endpoint (`Λ≤0`).
+## 5. The two genuine frontiers (both RH-hard, open)
 
-- **Real reverse force.** The dBN heat flow `H_t` (a first-order log-gas on the zeros) *forces*
-  zeros real for `t ≥ Λ`. This is a genuine dynamical forcing structure, not a reformulation.
-- **Recent unconditional progress.** Rodgers–Tao (2020) proved `Λ ≥ 0` — a real theorem about
-  RH, the only one of its kind, `RH ⟺ Λ ≤ 0`.
-- **It may not factor through the missing object.** Rodgers–Tao use the *dynamics* + the actual
-  zero statistics (Montgomery pair correlation), **not** the arithmetic surface. So the dBN route
-  is structurally different from all four above — it might offer a handle the reformulations
-  cannot.
+1. **The missing arithmetic object** — the geometric/analytic routes all land here: a positive Green
+   form (BGS §6.3) / the archimedean Weil positivity / the intersection positivity on `C×C`. This is
+   the `𝔽₁` / Connes–Consani / Deninger program — the deepest open problem in the subject.
+2. **Forcing `Λ ≤ 0`** (de Bruijn–Newman) — distinct, dynamical, the best track record
+   (Rodgers–Tao proved the *opposite* direction `Λ≥0`; Polymath). Uses zero statistics, not the
+   missing object. Controlling the backward flow is open.
 
-The honest caveat: the RH direction (`Λ ≤ 0`) is still open and hard, and `Λ ≥ 0` is the
-"RH-independent" direction (so dBN may yet be Farmer-dispersing in the same way). But it is the
-genuine gap in our analysis and the route with the best track record. **Next:** kill-test the dBN
-criterion (does the flow detect off-line zeros — DH/Epstein?), analyze whether its reverse force is
-real or dispersing, and locate its specific hard endpoint. That is the honestly-highest-value
-unexamined direction.
+## 6. What the program produced
 
-## Bottom line
+- **A precise graveyard map** (§2–§4): which routes disperse / are decoration, and why — reusable to
+  avoid re-walking them.
+- **Reusable, kill-test-disciplined tooling**, all grounded in real `ζ`: the kill-tests
+  (`explicit_formula.py`, `li_positivity.py`, `second_wall.py` — DH wall, Epstein wall, Weil/Li
+  positivity); the descent nerve criterion (`descent_test.py`); the height machinery
+  (`jensen_p1.py`, `jensen_p1b.py`); the dynamics (`dbn_route.py`, `xi_jensen.py`); the harness
+  (`harness.py`).
+- **Clean exact results banked:** `disc(H_n)=2^{3n(n−1)/2}∏kᵏ` with energy `(3/2)ln2 + ½ln n`
+  (semicircle/GUE), certified (P1a); the pure-dilation identity (Angle 2B); the archimedean digamma
+  unification `2 Re E_Ξ = h₊` (Angle 3); the Epstein second wall (`ζ_K=ζ·L`, RH-false constituents).
+- **The verifiability discipline (§8) held** — it caught and retracted **three** of my own
+  over-claims: the `(3/2)ln2` slack constant, the exponential slack rate, and the "polynomial dBN
+  margin" (which was the heat flow on the polynomial, not the dBN sequence flow on `Ξ`). The honest
+  map is the result, not a false summit.
 
-No proof, and our work says plainly why none is near: every **reformulation** route lands on the
-missing arithmetic object, and the one **dynamical** route (dBN) has its own distinct RH-hard
-endpoint (forcing `Λ≤0`). What we *have* is valuable and honest:
+## 7. Do-not-revisit (the dead ends, with the reason)
 
-- a precise **graveyard map** — which routes are dispersing/decoration and why;
-- a fully-grounded **metric/Arakelov candidate** with its exact RH-hard endpoint (BGS §6.3) and a
-  certified energy constant `(3/2)ln2 + ½ln n` tied to **GUE universality**;
-- the dBN route **examined**: a genuine forcing structure with real reverse force, a real
-  unconditional theorem (`Λ≥0`), and a hard endpoint *not* through the missing object;
-- the observation that the **two frontiers meet at the Hermite/heat-flow/GUE structure** — the
-  static slack (Hermite discriminant) and the dynamic flow are one object — which is the most
-  likely place a non-obvious move hides;
-- a reusable **kill-test + nerve + height + dynamics toolkit**, all grounded in real ζ.
+- Re-encoding RH as an approximation/closure/positivity criterion — **dispersing** (holds for DH).
+- Descent *topology* on additive template families — **decoration** (`H¹=0`); the obstruction is metric.
+- Bare Jensen hyperbolicity, or the static BW slack as if RH-relevant — the slack is partly a
+  height-metric artifact; the *physical* margin is milder, and neither bridges to `Λ`.
+- The archimedean / functional-equation / `Γ_ℝ` / spectral-edge structure — **RH-neutral** (shared
+  with DH), in three independent confirmations.
+- Heat flow on the Jensen *polynomial* mistaken for the dBN flow on `Ξ` (the correct dBN flow is the
+  *sequence* flow `γ→γ_t`, `xi_jensen.jensen_sequence_flowed`).
 
-The verifiability discipline (§8) held throughout — it caught and retracted two of my own
-over-claims (the `(3/2)ln2` slack constant; the exponential slack rate). That is the program
-working as intended: an honest map of a hard problem, not a false summit.
+## 8. If someone picks this up
 
-## The Hermite junction — mapped (three angles, 2026-06-05)
+There is **no fresh finite handle** left in our toolkit. Genuine progress requires engaging one of
+the two §5 frontiers as the research problem it is:
+- the missing object — a *literature/theory* frontier (Connes–Consani Scaling Site, Arakelov
+  positivity, `𝔽₁`), not a computation;
+- `Λ≤0` — the dynamical frontier (Rodgers–Tao, Polymath), where zero-statistics control of the
+  backward flow is the open question.
 
-Three fresh angles were run as parallel subagents (log: `2026-06-05-junction-synthesis.md`;
-modules `totally_positive.py`, `renormalization.py`, `lambda_height.py`). They triangulated:
-
-- **Total positivity** is the right *language* but not a fresher *coordinate* — the slack is
-  super-exponential in every TP coordinate too (Angle 1, NO-GO).
-- The **dBN flow acts on the Hermite fixed shape as a pure dilation** — exactly marginal,
-  `e^{−tD²}H_n=(1+4t)^{n/2}H_n(x/√(1+4t))` (Angle 2, exact identity); but there is no fixed-point
-  recursion — the slack is a marginal `½ d log d` law, **spectral-edge / Airy-controlled**.
-- The fixed shape's archimedean energy is **one digamma `Γ_ℝ` object** shared by the dBN, Weil,
-  and Arakelov-height archimedean terms (Angle 3, exact: `2 Re E_Ξ = h₊`) — but it is **shared
-  with Davenport–Heilbronn, hence RH-neutral**.
-
-**Converged conclusion:** the static/archimedean side of the junction is now fully understood
-**and fully RH-neutral**. The RH content lives in the **deviation from the fixed shape** —
-*transverse* to the marginal flow, at the **spectral edge (Tracy–Widom/Airy)**, on the
-**non-archimedean/dynamical/Euler-product** side. The junction is mapped to the line.
-
-## Suggested next moves (for whoever picks this up)
-
-1. **The transverse / spectral-edge thread** (the one survivor): does the **Tracy–Widom edge
-   fluctuation** of `J_{d,n} − H_d` admit a one-sided (`Λ≥0`-compatible) bound under the dBN flow,
-   *uniform in `d`*? The slack is edge-controlled, the flow is marginal along the fixed shape (so
-   its action is transverse), and this is exactly where the GUE universality Rodgers–Tao exploit
-   meets the slack — a sharper target than "uniform-in-`d` slack bound."
-2. **dBN `Λ≤0` sub-pieces** — the genuine frontier with the best track record (Rodgers–Tao, Polymath).
-3. Treat the geometric endpoint (positive Green form / `C×C`) as the *literature* frontier (Connes–
-   Consani, Arakelov), not a computation — it is the arithmetic-geometry open problem.
+The reusable contribution is the map and the discipline: any new candidate must pass the kill-tests
+(fail for DH **and** Epstein, not be Weil-positivity-in-disguise, carry the subleading Euler-product
+content, not be dispersing/edge/archimedean), or it is already in the graveyard above.

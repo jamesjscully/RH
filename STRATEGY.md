@@ -118,17 +118,16 @@ A candidate forcing structure / bridge is admitted only if it:
 
 ## 7. The live work
 
-0. **THE ACTIVE THREAD — the spectral edge** (`research/spectral-edge.md`;
-   `research/state-of-search.md`). The Hermite junction is now mapped: its static/archimedean
-   side is understood **and RH-neutral** (the dBN flow is a pure dilation on the Hermite fixed
-   shape = exactly marginal; the fixed shape's archimedean energy is the shared digamma `Γ_ℝ`
-   factor, identical for ξ and Davenport–Heilbronn ⇒ dispersing; the slack is super-exponential
-   in every coordinate). So the RH content is in the **deviation from the fixed shape** —
-   *transverse* to the marginal flow, at the **spectral edge (Tracy–Widom/Airy)**, on the
-   dynamical/Euler-product side. **Precise question:** does the edge fluctuation of `J_{d,n} − H_d`
-   admit a one-sided (`Λ≥0`-compatible) bound under the dBN flow, uniform in `d`? **First pull:**
-   resolve edge-vs-bulk on the *real* ξ data (the BW height is edge-dominated but root collision
-   is bulk — §8 says verify, don't assume).
+0. **THE MAP IS FINALIZED — `research/state-of-search.md`.** Every route is examined; there is **no
+   fresh finite handle** left in the toolkit. The spectral-edge thread (once the active frontier) is
+   **closed: the edge is dispersing** (the large deviation `J_{d,n}−H_d` is set by the leading
+   functional-equation kernel, independent of the arithmetic — verified `~1e-8`; the RH content is
+   the subleading Euler-product part at the shoulder/bulk). The RH content sits, robustly and in
+   three independent confirmations, in the **subleading Euler-product / zero-distribution
+   structure**; the leading/archimedean/edge structure is RH-neutral. The two genuine frontiers are
+   the **missing arithmetic object** (BGS §6.3 / Scaling Site `C×C`) and **forcing `Λ≤0`** (dBN) —
+   both research-grade open problems. Engaging either is the only honest way forward; the items
+   below remain the reusable methodology, not live computations.
 
 1. **Forcing-structure search via the obstruction calculus** (§3): enumerate *structured*
    template families, compute each limit obstruction, kill-test it (§5), and check it is not
