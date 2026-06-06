@@ -50,23 +50,29 @@ ONE positivity. **It is NOT circular to attack** because in classical Hodge theo
 **Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
 zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
 
-M4r. **[KEYSTONE · the radius assembly — NOW THE SOLE LIVE KEYSTONE, sharpened by K2r-fix]** K2r-fix (DONE)
-   resolved the reality/radius fork: the real structure `κ`=`c_0` (the conjugation, M3b's real points) is
-   available over `ℤ` **for free** (FORK 2 FALSE) and forces the **phase-reality** (the FE / conjugate-pairing
-   `β=\barα`) — **but it is RADIUS-SILENT BY A THEOREM** (every conjugation `c(z)=μ\bar z` is involutive iff
-   `|μ|=1`, fixed locus = a PHASE `θ=2φ`, never a radius). The radius `|α|=√d` is `σ_d`'s **SCALE `d`**
-   (`σ_d(z)=(d/|z|²)z`, a radial inversion, conj cancels), **ORTHOGONAL to every conjugation**. So the reality
-   half is SETTLED (free, radius-silent); the radius is the irreducible residue. SPECIFY, in the M4 gluing, the
-   precise map by which the per-prime SCALE/radius data (`√d`-analogues, an Euler datum, NOT a conjugation)
-   ASSEMBLE the global centre `Re s=½` against the radius-silent `(P_∞,D,c)` at `∞`. (falsify: the assembled
-   radius must be DH-distinguishing — DH has no determinant `d` → no scale → no radius.)
-K6. **[KEYSTONE · the scale as a NON-METRIC DEGREE, named by K2r-fix]** Since the radius is `σ_d`'s **scale
-   `d`** — a 1-dim *radial/degree* datum, NOT a phase and NOT (yet) a Gram form — and §0 forbids metrics: is
-   there a **non-metric** Euler-borne structure (a *valuation* / a *graded line with a degree* — e.g. the
-   determinant of Frobenius as a `ℚ_{>0}`-graded `𝔽₁`/GANTM datum, Connes–Consani) whose per-prime "size" is
-   `√d` WITHOUT being a `*`-congruence of a fixed background? A degree on a graded line is NOT a metric — it
-   may EVADE the Sylvester inertia-lock where a metric cannot. (falsify: Euler-borne, DH-absent, sees the
-   radius plant the conjugation `κ` is blind to.)
+K7. **[KEYSTONE · the redistribution falsifier — NOW THE SOLE LIVE KEYSTONE, named by M4r]** M4r (DONE)
+   PROVED a no-go on the descent: the global even split (`Re s=½`) is a **CONJUNCTION, NOT a rigidity** — a
+   determinant-neutral, pairing-neutral **modulus redistribution** moves eigenvalues OFF the even split at
+   several places while preserving EVERY Euler/FE datum (the global determinant `q^g` AND every Poincaré
+   pairing). So the descent **cannot** read the centre off the Euler/FE data, and the radius relocates ENTIRELY
+   onto the archimedean positivity `P_∞ ⪰ 0` — **the unique structure that fails under the redistribution.**
+   MAKE THIS THE EXECUTABLE KEYSTONE TEST: on the FF anchor, compute `P_∞`/the Hodge–Riemann form on the
+   redistributed (off-even) global `H^1` and confirm it goes INDEFINITE while the genuine (even) one is
+   definite — establishing `P_∞ ⪰ 0` is the **ONLY discriminator** of the redistribution, hence `c=D ⟺` (no
+   redistribution) `⟺` uniform `C_W` radius `⟺` RH. The keystone is now precisely: **force the uniformity of
+   the `C_W` radius** (= "no balanced redistribution"), the one thing the descent provably cannot supply.
+   (falsify: the redistribution must be DH-vacuous — DH has no `H^1`/determinant → no eigenvalues to
+   redistribute → the discriminator `P_∞` has empty domain.)
+K6. **[KEYSTONE · the scale as a NON-METRIC DEGREE, named by K2r-fix — RE-SCOPED by M4r]** Since the radius is
+   `σ_d`'s **scale `d`** — a 1-dim *radial/degree* datum, NOT a phase and NOT (yet) a Gram form — and §0 forbids
+   metrics: is there a **non-metric** Euler-borne structure (a *valuation* / a *graded line with a degree* — e.g.
+   the determinant of Frobenius as a `ℚ_{>0}`-graded `𝔽₁`/GANTM datum, Connes–Consani) whose per-prime "size" is
+   `√d` WITHOUT being a `*`-congruence of a fixed background? **M4r SHARPENED the bar:** a *degree* on a graded
+   line is a function of the determinant (the PRODUCT of moduli), and M4r proved the product is invisible to the
+   redistribution — so a *degree alone is RADIUS-SILENT for the same reason `κ` is.* K6 must therefore supply a
+   per-place degree that is NOT a function of the global determinant (it must see the INDIVIDUAL moduli, which
+   the redistribution shows no FE/Euler scalar does) — i.e. K6 collapses INTO K7 unless the graded structure
+   carries a positivity. (falsify: must distinguish the redistributed config the determinant cannot.)
 K2. **[KEYSTONE · condensed — RE-POINTED by K2r-fix: the RADIUS/DEGREE carrier, not the reality datum]** Realize
    the archimedean structure in **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms).
    K2r-fix settled the reality datum: the condensed object supplies `c_0` (the phase, FREE, radius-silent) — it
@@ -74,11 +80,15 @@ K2. **[KEYSTONE · condensed — RE-POINTED by K2r-fix: the RADIUS/DEGREE carrie
    contribution to the keystone is the **radius/degree carrier** (the canonical Weil operator `C_W`'s RADIUS,
    not its phase `(−1)^w`, and not the free involution `σ_d`). This is the one framework flagged right-kind-
    untried — now with the radius/scale (not the reality, now settled free) as the precise target.
-K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1]** The forcing lemma "archimedean Kähler ⟹ `c=D`" is
-   the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT here).
-   BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
-   not a metric — but the hardness RELOCATES into supplying `C_W`'s radius (K2r). State K3 as: the forcing
-   is free GIVEN `C_W`; the open problem is entirely `C_W`'s radius.
+K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1, then by M4r]** The forcing lemma "archimedean Kähler ⟹
+   `c=D`" is the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT
+   here). BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
+   not a metric — but the hardness RELOCATES into supplying `C_W`'s radius (K2r). **M4r pins the hypothesis
+   exactly:** the forcing lemma's input "`C_W` has UNIFORM radius" is precisely "no balanced modulus
+   redistribution", and M4r proved that uniformity is NOT a function of the determinant/FE data — so K3's open
+   problem is entirely: **force the uniformity of the `C_W` radius**, identical to K7. State K3 as: the forcing
+   is free GIVEN `C_W`'s uniform radius; the open problem is supplying that uniformity (the redistribution-free
+   condition), which the descent provably cannot.
 K4. **[FALSIFY]** `P_∞` / the Kähler class for **Davenport–Heilbronn**: does it FAIL to exist (no Euler
    product ⟹ no Frobenius weight ⟹ no `C_W` ⟹ no Kähler)? Run `falsify.py`: sees-zeros (via `c=D`),
    DH-failure (structural).
@@ -232,6 +242,45 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M4r [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: executed the radius-DESCENT
+  assembly at the GLOBAL altitude M2d proved is the right one (the single glued weight-1 carrier `gr^W_1`,
+  not per-prime) and found a THEOREM-grade no-go: the global even split (`Re s=½`) is a CONJUNCTION, NOT a
+  RIGIDITY — a determinant-neutral, pairing-neutral modulus REDISTRIBUTION breaks the even split at several
+  places while preserving EVERY Euler/FE datum, so the descent CANNOT read the centre off the Euler/FE data;
+  the radius relocates ENTIRELY onto the archimedean positivity `P_∞ ⪰ 0`.** [KEYSTONE · coherence-checked ·
+  anchored vs 𝔽_q / Δ]. `research/construction/M4r-radius-descent-assembly.md`,
+  `scripts/numerics/witness/radius_descent_assembly.py` (+1 `falsify.py` row → 34th wall confirmation, CIRCULAR
+  with a no-go-on-the-descent). **The gap closed:** K2r/-split/-fix all worked PER PRIME (each prime's even
+  split = Ramanujan/RH, circular per prime); M2d proved purity is intrinsically GLOBAL for `ζ` (no single prime
+  carries `gr^W_1`). M4r asks the descent question at the right altitude: is the GLOBAL even split a RIGIDITY
+  (radii at different places linked by Euler/FE, descent ADDS content) or a CONJUNCTION (radii independent,
+  descent adds nothing)? **What got CHECKED (exact mpmath 40dps):** FF genus-2/`q=9`, `H^1` eigenvalues in 2
+  conjugate-dual pairs. A balanced modulus redistribution (`|α_1|=r√q,|α_3|=√q/r`; `|α_2|=√q/r,|α_4|=r√q`)
+  preserves the global determinant `∏α_i=q^g=81` AND both Poincaré pairings `{9,9}`, yet breaks the even split
+  at 2 places (moduli `{4.475,2.011,2.011,4.475}` vs `√q=3`): (det PRESERVED) ∧ (pairing PRESERVED) ∧ (even
+  split BROKEN) ⟹ the global even split is NOT forced by (determinant+pairing) — a CONJUNCTION, not a rigidity.
+  The FE fixes the PRODUCT of moduli (`=q^g`, the global edge, FREE) but NOT the individual moduli. `ζ` MIRROR
+  (`f=Δ`, `p=5,7`, `δ=0.3`): plant off-even at BOTH primes preserving each determinant `p^{k−1}`; the global
+  determinant product is UNTOUCHED (`9.65e16` before=after), both off-even — the global FE `s↔k−1−s` couples NO
+  two primes' moduli, primes modulus-INDEPENDENT. DH: no Euler product ⟹ empty domain at step 0 (no edge, no
+  carrier), strictly before the rigidity question; ladder `DH<ζ<FF`. **Falsifier verdict:** EULER-BORNE YES
+  (the product/edge assembles; DH empty domain), SEES-ZEROS YES (only through the positivity that fails under
+  redistribution; the determinant/pairing data are BLIND to it), INDEPENDENT NO (the discriminator `P_∞⪰0` =
+  Weil/Hodge = RH) → **CIRCULAR**, with NEW content a **NO-GO ON THE DESCENT**: the radius is not a descent
+  constraint at all — no determinant/FE quantity is a function of the individual radii. **NEW content:** the
+  descent assembles the global determinant (the PRODUCT of radii = the edge `Re s=1`, the `‖f‖²` pole),
+  Euler-borne RH-free, but the radius RESIDUE (the global even split = the centre `Re s=½`) has NO cross-place
+  rigidity — the FE/Euler data couple the PRODUCT of radii, never the individual radii. This is K2r-fix's "the
+  radius must be Euler-assembled" made PRECISE and then BOUNDED: the assembly gives the product, never the
+  split. The unique structure distinguishing the redistributed (off-even) from the genuine (even) config —
+  both with identical determinant and pairings — is `P_∞⪰0`, the archimedean keystone, which is NOT a function
+  of the determinant. **Successors added:** K7 promoted to SOLE LIVE KEYSTONE [the redistribution falsifier —
+  compute `P_∞` on the redistributed global `H^1`, confirm it goes indefinite while the even one is definite,
+  establishing `P_∞⪰0` is the ONLY discriminator; the keystone is now FORCE THE UNIFORMITY OF THE `C_W`
+  RADIUS]; K3 sharpened (the forcing lemma's hypothesis "`C_W` has uniform radius" = "no redistribution",
+  identical to K7); K6 re-scoped (a *degree* is a function of the determinant = the product, hence
+  radius-silent like `κ` — K6 collapses into K7 unless the graded structure carries a positivity).
 
 - **2026-06-06 — K2r-fix [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: resolved the reality/radius
   fork with the ALGEBRA OF CONJUGATIONS — the real/condensed structure `κ` (M3b's `c_0`) IS available over `ℤ`
