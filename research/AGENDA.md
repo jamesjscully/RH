@@ -15,18 +15,19 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · the relocated target]** **The line is forced by a FORM's SIGNATURE,
-   not a self-intersection NUMBER** (see DONE #1). Both `‖f‖²` (pass two, refuted) and its correction
-   `deg(F)·(Δ·Δ)` (DONE #1, shown RH-silent *and not even Euler-borne*) fail because the self-intersection
-   *number* is the wrong kind of object. The genuine Weil mechanism is the **Hodge index theorem**: the
-   intersection form on `NS(S)`/`H¹_prim` has signature `(1, ρ−1)` and RH `⟺` it is **negative-definite
-   on the primitive part** (verified on `E×E`: Gram `[[0,1,1],[1,0,1],[1,1,0]]`, signature `(1,2)`).
-   **Re-run `method.md` step 4 (REPAIR + UNIVERSAL PROPERTY) with the SIGNATURE target:** what object
-   over `ℤ` carries a self-dual pairing on a `ρ`-dim space whose **signature** is `(1, ρ−1)` and whose
-   negative part forces the zeros? This is the OS/reflection-positivity thread re-stated (a signature
-   *is* a positivity) but with the geometric object corrected — NOT a Petersson norm, NOT `deg·χ`, but
-   the **negative-definite intersection FORM on `H¹_prim` of a (hypothetical) arithmetic surface**.
-   Does the falsifier change verdict when the candidate is a *form's signature* rather than a *number*?
+1. **[CONSTRUCT · load-bearing · the unified positivity]** **The geometric Hodge-index signature and
+   the analytic OS/sym² positivity (A4) are THE SAME positive-definite form on the primitive part**
+   (DONE #1: `−1×`(intersection form on `H¹_prim`) is pos-def `⟺` an inner product `⟺` the OS/GNS
+   Hilbert space). The signature relocation landed in the **CIRCULAR box = Weil positivity over `ℤ`**,
+   side by side with the Weil/Li form (`signature_forcing.py`). So the next pass must attack the **one
+   shared positivity**, NOT two parallel threads. The genuine open implication, now sharply named and
+   identical on both sides: **(sym² coefficients form a norm-square at the edge `s=1`) ⟹ (the `H¹_prim`
+   intersection form is negative-definite / the OS form is positive across `s=½`)**. Re-run `method.md`
+   step 2 with this *unified* axiom: is there a **reflection/involution under which the edge norm-square
+   becomes the negative-definite primitive form at the centre**? Falsifier discipline: this is CIRCULAR
+   (= RH) until the *implication* is supplied independently; do NOT mistake a restatement for a proof.
+   Candidate levers for the implication itself: Rosati positivity (`F*F=q` over `𝔽_q` is a THEOREM —
+   what is its `ℤ`-analog?); the BGS positive-Green-form obstruction (auditor row, where it can fail).
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -54,6 +55,23 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Ran the SIGNATURE through the falsifier (method.md step 4): the verdict DOES change,
+  NUMBER→FORM moves RH-SILENT→CIRCULAR, and the geometric/OS threads UNIFY.** [CONSTRUCT · load-bearing
+  → relocation confirmed + thread unification]. `scripts/numerics/witness/signature_forcing.py` (+
+  `falsify.py` registry row), `research/log/2026-06-06-signature-forcing.md`. **Finding [THM+computed]:**
+  Made the Hodge-index signature *executable* via the genuine Weil RH-defect form `P=diag(|α_k|²−q)`
+  (Rosati `F*F=q`): under RH identically zero, signature `(0,2g,0)`; planting one off-circle eigenvalue
+  *with its FE-forced Weil partner* (`q/β̄`, opposite side of `q`) flips it to `(1,2g−2,1)` — so a
+  **SIGNATURE SEES ZEROS** (computed q=7,g=2, all blow factors) where a NUMBER cannot. Euler-borne YES
+  (the form needs a Satake lattice DH lacks; strictly stronger than `deg·χ`). So the falsifier verdict
+  **changes**: `RH-SILENT` (both numbers) → **`CIRCULAR`** (the signature = Weil positivity over `ℤ`),
+  the SAME box as the canonical Weil/Li form — *not* the prize, but the correct forcing functional with
+  only the independent proof missing. **Decisive step-4 identification:** by Sylvester, signature
+  `(1,ρ−1)` `⟺` neg-def primitive part `⟺` `−1×`(form) is pos-def `⟺` an inner product `⟺` **the OS/GNS
+  Hilbert space (A4 of `F-sym2-os-bridge`)** — the geometric Hodge-index target and the analytic OS/sym²
+  target are **ONE positive-definite form**. 11th wall confirmation, first to *unify* the two threads;
+  collapses NEXT to a single shared positivity. First model (naive Gram `Re(u_iū_j)`) failed honestly
+  (rank≤2, blind to the circle) and was corrected to the Rosati form.
 - **2026-06-06 — Re-ran step 2 with the corrected mechanism: the line is a FORM's SIGNATURE, not a
   NUMBER.** [BACK UP · load-bearing → honest negative + relocation].
   `scripts/numerics/witness/a5_corrected.py`, `research/log/2026-06-06-a5-corrected-mechanism.md`.

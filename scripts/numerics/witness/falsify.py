@@ -75,6 +75,7 @@ REGISTRY = [
     ("semilocal {∞,2} Weil form", True, False, False, "worker C: sees Euler product in VALUES, but PSD for both ζ and DH at one place"),
     ("Hecke L Li-positivity (route I)", True, True, False, "worker E: = GRH for L(s,π); circular"),
     ("sym²/Rankin–Selberg L(1,sym²) (route II)", True, False, True, "worker E: FIRST to clear independent (unconditional Siegel bound) -- but EDGE s=1, not line; RH-silent"),
+    ("Hodge-index SIGNATURE of intersection form on H¹_prim", True, True, False, "signature_forcing.py: a FORM not a NUMBER -- Euler-borne (needs Satake lattice, DH-refuses) AND sees-zeros (off-circle Weil pair flips (0,2g,0)->(1,2g-2,1)); == Weil positivity over Z, CIRCULAR. Relocates ||f||²/deg·χ out of RH-SILENT"),
     ("scattering unitarity |S|=1", False, False, False, "stone 1: holds for off-line control too"),
     ("self-adjointness (Hilbert–Pólya)", False, False, False, "reflects, does not force"),
     ("de Branges reproducing kernel", False, True, False, "falsified, Conrey–Li 2000"),
