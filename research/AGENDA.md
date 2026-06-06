@@ -40,6 +40,63 @@ audit produced). **But it stalls at the SAME wall on the Euler/location axis**, 
   conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
   Euler/location axis.** The program returns to the static frontier below.
 
+## NEXT — THE KEYSTONE: force `P_∞ ⪰ 0` (`c=D`) by an archimedean Kähler / Hodge–Riemann structure
+
+**State (build pass complete).** The whole polarized arithmetic Hodge category is BUILT and validated
+on the FF anchor (M1–M4, to genus 2). The genuinely-new structure is invented: `P_∞(x,y)=S(C_W x,κ y)`
+(M3) — the archimedean `(p,q)` polarization via the Weil/Hodge `C`-operator `C_W`, categorical (NOT a
+metric), Frobenius-free. **RH = archimedean `c=D` = `P_∞ ⪰ 0` (M3b).** The entire edifice now rests on
+ONE positivity. **It is NOT circular to attack** because in classical Hodge theory `c=D` is *forced* by a
+**Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
+zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
+
+K1. **[KEYSTONE · load-bearing]** Is `P_∞ ⪰ 0` (= `c=D`) **forced by a Hodge–Riemann/Kähler structure**?
+   Set up: a polarized Hodge structure has `c=D` automatically (Hodge–Riemann), the polarization coming
+   from a **Kähler class**. ANCHOR: over `𝔽_q` the "Kähler class" = the ample class / cup product, and
+   `c=D` is automatic — verify `P_∞`'s positivity follows from the ample class on the FF datum, no zeros
+   assumed. Then state precisely what an **archimedean Kähler class on `S²/ℤ`** must be.
+K2. **[KEYSTONE · condensed — the live framework]** Realize the archimedean Kähler form in
+   **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms + the "archimedean
+   Deligne–Illusie ⟶ Kähler" open question). Does the condensed archimedean structure supply the Kähler
+   class / Hodge–Riemann positivity that Arakelov's metric (Sylvester-locked) cannot? This is the one
+   framework the audit flagged as right-kind-untried — now with `P_∞`/`c=D` as the precise target.
+K3. **[KEYSTONE · the forcing lemma]** Prove, or locate the exact obstruction to, **"archimedean Kähler
+   ⟹ `c=D`"** — the Hodge–Riemann mechanism applied to `P_∞`. Where precisely does BGS §6.3 (positive
+   Green form can fail) enter, and is it evaded by the *categorical* (non-metric) `P_∞`?
+K4. **[FALSIFY]** `P_∞` / the Kähler class for **Davenport–Heilbronn**: does it FAIL to exist (no Euler
+   product ⟹ no Frobenius weight ⟹ no `C_W` ⟹ no Kähler)? Run `falsify.py`: sees-zeros (via `c=D`),
+   DH-failure (structural).
+K5. **[SYNTHESIS]** Verdict: does the archimedean-Kähler keystone **force RH**, or does it locate the
+   single irreducible geometric residue (the one form whose existence is the open problem)? Either is the
+   honest terminus of the construction.
+
+## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
+RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
+route to it is now closed with a structural reason (logs: `2026-06-06-*pairing*.md`, `*-domination.md`):
+- **self-pairing forms** (symmetric/θ-twist/Hermitian/oriented, real OR complex plant) — **Sylvester
+  inertia-locked** for any `*`-congruence of a fixed DH-shared background. [THM-flavored]
+- **operator domination** — no operator is both Euler-borne-independent AND zero-tracking.
+- **zero-side Gram** — circular + not Euler-borne.
+The open object survives unscathed: **a structure that genuinely depends on the zero LOCATIONS** = the
+Frobenius/`(p,q)`/Deninger archimedean-Hodge action (deep construction). 28 Euler/wall confirmations.
+
+## CLOSED — the de Bruijn–Newman / `Λ≤0` (dynamical) branch (audited, pass 1–2)
+The dynamical route (`RH ⟺ Λ≤0`, dBN heat flow `e^{−tD²}`) is **genuinely DISTINCT on the INERTIA
+axis** — the flow is a 1-param semigroup, NOT a `*`-congruence, and it CHANGES the real-root count, so
+it ESCAPES the Sylvester lock that closed every static form (the one structurally new thing the whole
+audit produced). **But it stalls at the SAME wall on the Euler/location axis**, for the same reason
+(logs `2026-06-06-dbn-anchor.md`, `-dbn-flow-functional.md`):
+- **the only unconditional lever (Rodgers–Tao `Λ≥0`)** uses GUE/Montgomery pair correlation, which is
+  UNIVERSAL (a pure Hermitian random matrix with no Euler product carries the same level repulsion,
+  `P(gap<0.25mean)` GUE `0.020` vs Poisson `0.220`) — RH-silent on the Euler axis, and wrong-direction.
+- **the open object it named — an Euler-borne flow functional monotone toward reality** — was built and
+  SPLITS like every static functional: the modulus reading `Σ|Im P(γ)|` is Euler-borne + sees `|Im|` but
+  is `sign Im`-blind and `→0 ⟺ RH` (circular); the only reading that sees `sign Im` (`Σ Im P(γ)`) is
+  IDENTICALLY 0 on the FE-forced conjugate config (`+Im`/`−Im` cancel). The dBN generator is Euler-FREE;
+  the primes ride passively (initial datum only); `sign Im` is conjugation-odd, Euler functionals are
+  conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
+  Euler/location axis.** The program returns to the static frontier below.
+
 ## NEXT — CONSTRUCTION MODE  (charter: `research/construction-program.md`; method: `research/method.md`)
 
 **We are BUILDING the object — a polarized arithmetic Hodge category over `\overline{Spec ℤ}` — not
