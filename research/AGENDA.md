@@ -51,21 +51,28 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M4A. **[DEFINE/BUILD · the WEIGHT-1 CARRIER · load-bearing · from M2d]** M2d decided M2d's typing
-   question: `rad = (·)^{1/2}∘(edge) : LocFac → 𝔾_m` is **NOT well-typed per-prime** for `ζ` — the
-   `(·)^{1/2}` (purity) step needs a weight-1 graded piece `gr^W_1` (local-factor numerator degree `>0`),
-   and `ζ`'s prime factor `(1−p^{-s})^{-1}` has numerator degree `0`, **identical** to an FF closed point.
-   The FF gets `gr^W_1` GLOBALLY (the curve's `H^1`, rank `2g`, assembled from local factors via Lefschetz);
-   `ζ` has **no** geometric weight-1 carrier — that missing carrier IS the surface `S²/ℤ`
-   (`F-sym2-os-bridge.md`). So C3b is NOT per-prime; purity is **intrinsically global** for `ζ`, a condition
-   on the **weight filtration of the glued object**. **The task:** DEFINE the weight-1 carrier `gr^W_1` the
-   descent must supply BEFORE purity acts — what is the `ζ`-analogue of `H^1(C)` (rank `2g`) that the local
-   `{L_p}` should assemble? Candidates to type-check: (a) the `H^1` of the self-product surface `S²/ℤ`
-   (Petersson-norm self-intersection, `F-sym2-os-bridge.md`); (b) the Connes–Consani `H^•` over `𝔽₁`
-   (Scaling Site); (c) a condensed/analytic weight filtration on the completed `ξ`. ANCHOR FIRST: show the
-   candidate carrier reproduces the FF's rank-`2g` `H^1` under `q→` finite, then ask if it types over `ℤ`.
-   **Falsifier in advance:** the carrier must be Euler-ASSEMBLED (DH supplies no `gr^W_1` — no product to
-   assemble from) and its purity must SEE the zeros (`gr^W_1` pure of weight 1 ⟺ zeros on `Re s=½`).
+M4B. **[BUILD/REPRESENT · the WEIGHT-2 NS LATTICE over `ℤ` · load-bearing · from M4A]** M4A decided the
+   carrier the descent must supply is **`gr^W_2`** — the **weight-2 Néron–Severi lattice `H^1(C)⊗H^1(C)`
+   of the self-product surface `S²/ℤ`** (eigenvalues `αᵢαⱼ`, `|αᵢαⱼ|=q`), **not** the `gr^W_1` M2d named
+   (which is a redundant double of the curve's `H^1`). **The task:** specify, as a REPRESENTABILITY
+   problem, what represents the **self-intersection of the arithmetic diagonal** of `S²/ℤ` on the
+   weight-2 lattice — the global object M2d proved no single prime supplies, Euler-assembled from
+   **products `αᵢ(p)αⱼ(p)` across all primes**. ANCHOR FIRST: confirm the FF lattice `NS(C×C)` carries
+   `Δ` and `Γ_F` with `Δ·Γ_{Fⁿ}=#C(𝔽_{qⁿ})`, then ask what arithmetic object plays `NS` over `ℤ`
+   (candidates: the `S²/ℤ` of `F-sym2-os-bridge.md`; the Connes–Consani `H²` over `𝔽₁`; a condensed
+   weight-2 piece). **Falsifier in advance:** the lattice must be Euler-assembled (DH has no `f×f̄`
+   product ⟹ no weight-2 lattice ⟹ `S²/DH` is not a carrier) and its Hodge index on primitives must SEE
+   the zeros (negative-definite ⟺ `|αᵢ|=√q` ⟺ RH). **NOTE the purity is now typed:** the edge is
+   weight 2 (`|αᵢαⱼ|=q` = the Petersson pole of `L(s,f×f̄)` at `s=1`, `Res=‖f‖²`), and `(·)^{1/2}`
+   descends it to the centre weight 1 (`|αᵢ|=√q`, `Re s=½`). **Beware** `square_representability.py`
+   (DONE) already closed the NAIVE product `S×S` (its `H^1⊗H^1` factorizes as base⊗base, RH-silent) —
+   M4B must build the lattice as a genuine `gr^W_2` carrier with an INDECOMPOSABLE diagonal, not a
+   tensor-product form.
+M4C. **[COHERENCE · from M4A]** the Hodge index / polarization on `gr^W_2`-primitives as the **categorical
+   duality pairing** of M1's C4, realized **on the weight-2 NS lattice** (not the weight-1 `H^1`): check it
+   is the canonical evaluation of the duality `D` (NOT a metric, §0), that `D∘D≅id` on the lattice, and
+   that the off-circle inertia flip `(0,1,1)→(1,0,1)` of M2/`euler_movable_inertia.py` is the
+   weight-2-lattice Hodge index. Anchor on `g=1,2` self-products (lattice ranks `4`, `16`).
 M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
    tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
    matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
@@ -78,10 +85,12 @@ M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/cond
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
 M4. **[DESCENT]** Specify the **duality-descent gluing**: how `{Euler factors at primes} ∪ {Γ_ℝ (p,q) at ∞}`
    glue to a global object whose polarization **is** the explicit-formula quadratic form (so `W_∞≥Σ_p W_p`
-   is a descent constraint, not a hope). **Re-routed by M2b/M2d:** the descent must produce the **weight-1
-   carrier** (the global `H^1` no single prime supplies) on which the **purity functor**
-   `rad=(·)^{1/2}∘(edge-abscissa)` sets the centre `Re s=½ = (edge `Re s=1`)^{1/2}`. So C3b becomes a descent
-   constraint *on the weight filtration of the glued object*, Euler-sourced, NOT borrowed from the FE.
+   is a descent constraint, not a hope). **Re-routed by M2b/M2d/M4A:** the descent must produce the
+   **weight-2 NS lattice `gr^W_2`** of `S²/ℤ` (the global self-intersection lattice `H^1⊗H^1` no single
+   prime supplies, Euler-assembled from products `αᵢ(p)αⱼ(p)`) on which the **purity functor**
+   `(·)^{1/2}` descends the weight-2 edge `|αᵢαⱼ|=q` (`Re s=1` of `f×f̄`, the Petersson pole) to the
+   weight-1 centre `|αᵢ|=√q` (`Re s=½`). So C3b becomes a descent constraint *on the weight-2 piece of
+   the weight filtration of the glued object*, Euler-sourced, NOT borrowed from the FE.
 M5. **[FALSIFY]** Run M2–M4's objects through `falsify.py`: confirm sees-zeros (polarization depends on
    zero locations) AND DH-failure (no Euler product ⟹ no object).
 
@@ -165,6 +174,37 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M4A [DEFINE/BUILD · anchored vs 𝔽_q]: BUILT the weight-graded carrier the descent must
+  supply and CORRECTED M2d's naming — the carrier is `gr^W_2` (the weight-2 Néron–Severi lattice
+  `H^1⊗H^1` of the self-product surface, eigs `αᵢαⱼ`, `|αᵢαⱼ|=q`), NOT the `gr^W_1` M2d named (a
+  redundant double of the curve's `H^1`). The M2b/M2d purity square root is correctly typed
+  weight-2 → weight-1: Petersson edge `|αᵢαⱼ|=q` (`Re s=1` of `f×f̄`) → line `|αᵢ|=√q` (`Re s=½`).**
+  [DEFINE/BUILD · anchored vs 𝔽_q]. `research/construction/M4A-weight-carrier.md`,
+  `scripts/numerics/witness/weight_carrier.py` (+1 `falsify.py` row → 44). **What got BUILT (FF anchor,
+  6 Weil curves `g=1` `q=2,5,7,11,13` and `g=2` `q=2`, all PASS exact to `<1e-14`):** via Künneth
+  `H^n(C×C)=⊕_{i+j=n}H^i⊗H^j` + Deligne purity (`weight(H^i⊗H^j)=i+j`), the self-product surface `S=C×C`
+  supplies TWO graded carriers: (i) `gr^W_1 H^•(C×C)=H^0⊗H^1⊕H^1⊗H^0`, rank `4g`, eigs `{1·αᵢ}` = **two
+  copies of the curve's `H^1`** (NO new content), and (ii) the WEIGHT-2 middle `H^1(C)⊗H^1(C)⊂H^2(C×C)`,
+  rank `4g²`, eigs `{αᵢαⱼ}`, `|αᵢαⱼ|=q` — the **NS lattice** where the diagonal `Δ` and graph `Γ_F`
+  live, `Δ·Γ_{Fⁿ}=#C(𝔽_{qⁿ})`, and Weil's Hodge-index (= RH) operates. **THE DECISIVE M4A FINDING (the
+  loop correcting the agenda):** M2d asked for `gr^W_1`, but the self-product surface delivers its RH
+  content at WEIGHT 2 (`gr^W_2`), whose eigenvalues are PRODUCTS `αᵢαⱼ`, NOT the single zeros `αᵢ`. The
+  "weight-1 carrier" is the SHADOW (diagonal pullback `C↪C×C`) of the weight-2 lattice. This explains
+  WHY M2d found no per-prime weight-1 carrier: the load-bearing carrier is the GLOBAL weight-2 lattice,
+  Euler-assembled from products `αᵢ(p)αⱼ(p)` across ALL primes, never one prime. **THE PURITY SQUARE ROOT
+  CORRECTLY TYPED weight-2 → weight-1:** the surface's edge is weight 2 (`|αᵢαⱼ|=q` = the Petersson pole
+  of `L(s,f×f̄)=ζ·L(s,sym²f)` at `s=1`, `Res=‖f‖²>0`, `F-sym2-os-bridge.md`); `(·)^{1/2}` descends it to
+  the curve's weight-1 centre `|αᵢ|=√q` (`Re s=½`), verified `√q=|αᵢ|` all 6 curves. M2d's per-prime
+  search looked one weight too low. **Falsifier verdict (anchor, not a `ℤ`-candidate):** euler-assembled
+  Y (`αᵢαⱼ` products of Satake `αᵢ`; DH no `sym²`/`f×f̄` ⟹ no weight-2 lattice ⟹ `S²/DH` not a carrier),
+  sees-zeros Y (purity `|αᵢαⱼ|=q ⟺ |αᵢ|=√q ⟺ RH`; NS Hodge index flips when a zero leaves the line),
+  independent N (FF Hodge index=Deligne=Weil) → CIRCULAR over `ℤ`, expected. NEW content: the carrier
+  WEIGHT is 2 not 1; the purity sqrt is weight-2 → weight-1; the carrier is the global self-product NS
+  lattice. **Successors added:** M4B [BUILD/REPRESENT the weight-2 NS lattice over `ℤ` — what represents
+  the self-intersection of the arithmetic diagonal of `S²/ℤ`; beware `square_representability.py` closed
+  the NAIVE product, the diagonal must be INDECOMPOSABLE], M4C [the Hodge index on `gr^W_2`-primitives as
+  M1's C4 categorical duality pairing, on the weight-2 lattice]; M4 re-targeted to the weight-2 piece.
 
 - **2026-06-06 — M2d [DEFINE · coherence-checked]: DECIDED the typing question M2b left open — the purity
   functor `rad=(·)^{1/2}∘(edge) : LocFac→𝔾_m` is NOT well-typed PER-PRIME for `ζ`, because the `(·)^{1/2}`
