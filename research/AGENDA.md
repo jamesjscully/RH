@@ -65,20 +65,22 @@ but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽
 constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
 
-R6. **[CONSTRUCTION · the special fiber as a property of the SURFACE, not the orbit — NOW THE TOP ITEM
-   (R5 DONE: real lead, not terminus)]** R5 (DONE) PROVED R4's "missing special fiber" is a **rank fact, not
-   vague continuity**, and a **REAL LEAD**: the bare scaling orbit `C_p` has rank-1 `H^1` (only `N=0`, `M(N)`
-   a single weight, no symmetric split); the minimal carrier of a nonzero degeneration `N` with a symmetric
-   split `M(N)` is **dimension 2** (the Jordan-2 block, `M(N)={0:1,2:1}` about `w=1`); and the surface `S²/ℤ`
-   supplies exactly that room — `gr^W_2 = H^1⊗H^1` has rank `(2g)² ≥ 4 ≥ 2` (M4A/B/C). **R6's task:** does the
-   would-be `S²/ℤ` surface (M2d, the self-product whose self-intersection is `‖f‖²`) supply, at its
-   ARCHIMEDEAN FIBER, a nonzero degeneration `N` on `gr^W_2` the orbit cannot — i.e. is the special fiber a
-   property of the 2-dimensional surface rather than the 1-dimensional orbit? Anchor on `𝔽_q`: the surface
-   `C×C` over `𝔽_q` DOES carry a transverse degeneration (a node in the family) supplying `N`; does the
-   archimedean `S²/ℤ` fiber INHERIT it (lead relieved), or is the surface's archimedean fiber ALSO smooth
-   (the `𝔽₁`/no-special-fiber obstruction RECURRING in dimension 2)? (falsify: the surface's archimedean
-   degeneration must be DH-vacuous — no Euler product ⟹ no `H^1` ⟹ no `H^1⊗H^1` ⟹ no surface to degenerate,
-   one level before the radius.)
+R7. **[CONSTRUCTION · the archimedean degenerating FAMILY `𝒮_t` of `S²/ℤ` — NOW THE TOP ITEM (R6 DONE:
+   honest negative, obstruction RECURS one dim up)]** R6 (DONE) DECIDED R5's lead: the surface supplies the
+   **rank room** (`gr^W_2 = H^1⊗H^1`, rank `(2g)² ≥ 4`) but **NOT the degeneration** — the **smooth** surface
+   `C×C`/`S²/ℤ` has `gr^W_2` **PURE** of weight 2 (`|αᵢαⱼ|=q` exactly, Weil II), monodromy `N=0`, `M(0)` a
+   single weight, **no symmetric split**, exactly as the smooth orbit (R4/R5). A nonzero `N` is **not** a
+   property of a smooth fiber of ANY dimension; it is the log-monodromy of a **degenerating family** with a
+   special fiber. So the `𝔽₁`/no-special-fiber obstruction is **NOT relieved by `orbit→surface`; it is
+   RELOCATED to `surface→family-of-surfaces`** (same atom, one dim up). **R7's task:** does an **archimedean
+   degenerating family `𝒮_t` of `S²/ℤ`** (a 1-parameter family over an archimedean disk acquiring a
+   singularity, with a **special fiber over a finite base size** at `t=0`) exist at `∞` — the analogue of
+   `C×C`'s node-degeneration — supplying the nearby-cycle `N` with `M(N)=W` that the *static* smooth surface
+   provably cannot? Anchor on `𝔽_q`: the `C×C` node lives in a FAMILY with a special fiber over a finite
+   residue field (base size `q`); does the archimedean `𝒮_t` inherit a special fiber, or is "no special fiber
+   over a finite base at `∞`" the irreducible `𝔽₁`-terminus the four discretizations (R3/R3b/R4) and the
+   dimension lift (R5/R6) all converge on? (falsify: the family must be DH-vacuous — no `H^1` ⟹ no `H^1⊗H^1`
+   ⟹ no surface ⟹ no family to degenerate, two levels before the radius.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -309,6 +311,40 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R6 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the SURFACE `S²/ℤ` does NOT
+  relieve R5's lead — the no-special-fiber (`𝔽₁`) obstruction RECURS in dimension 2.** [DECISION · DEF ·
+  coherence-checked vs 𝔽_q]. `research/construction/R6-surface-archimedean-N.md`,
+  `scripts/numerics/witness/surface_archimedean_N.py` (+1 `falsify.py` row → 42nd wall, DISPERSING-by-design
+  = decision/obstruction-locator, Euler-silent like R1–R5). **What got DECIDED (exact `𝔽_q` weight/rank
+  linear algebra, no zeros assumed):** R5 conflated **ROOM** (a rank fact — `gr^W_2 = H^1⊗H^1` has rank
+  `(2g)² ≥ 2`, a Jordan-2 home) with **USAGE** (a degeneration fact — a nonzero `N` actually acts). R6
+  separates them: **[A]** `C×C` over `𝔽_q` (the FF anchor of `S²/ℤ`) is a **product of smooth curves** =
+  **smooth & proper**, so `gr^W_2 = H^1⊗H^1` is **PURE of weight 2** — Künneth gives `|αᵢαⱼ| = √q·√q = q`
+  exactly (computed, all `(2g)²` moduli `= q`), the monodromy nilpotent is `N=0`, `M(0)={2:(2g)²}` a SINGLE
+  weight, **no symmetric split** — exactly as the smooth orbit (R4/R5); the radius `|αᵢ|=√q` is a Weil
+  THEOREM about the smooth curve, NOT produced by any `N` on `C×C`. **[B]** R5's room is real (`g=1,2,3`:
+  rank `4,16,36 ≥ 2`) but **EMPTY** on the smooth fiber (`N=0`, split not realized) — room ≠ usage. **[C]** a
+  nonzero `N` is **not** a property of a smooth fiber of any dimension; it is the **log-monodromy of a
+  DEGENERATING FAMILY** (SGA7/Schmid/Steenbrink nearby cycles) — the minimal sufficient datum is a Jordan-2
+  nearby-cycle `N` giving `M(N)={1:1,3:1}` about weight 2 (computed), and a FAMILY has a **special fiber over
+  a finite residue field** (base size `q`) = exactly R4's missing object. **[D]** DH-vacuous **TWO levels**
+  before the radius: no `H^1` ⟹ no `H^1⊗H^1` ⟹ no surface ⟹ no family. **Falsifier verdict:** EULER-BORNE NO
+  on this pass (decides the existence question on `𝔽_q` rank/weight; not a `ℤ`-positivity), SEES-ZEROS YES
+  (sought radius = even split = purity = where the zeros sit), INDEPENDENT NO (radius = `M(N)=W` = Weil II =
+  the solved case; over `ℤ` this is RH) → DISPERSING-by-design. **Ladder `DH < ζ < FF`:** DH no `H^1`; `ζ` a
+  **smooth** surface `S²/ℤ` with the rank room but `N=0` (pure) on the smooth archimedean fiber + the
+  degeneration FAMILY still missing; FF a smooth `C×C` (also pure, `N=0`) PLUS an external degenerating
+  node-family with a special fiber over the finite base `q`. **NEW content:** R5's "the surface supplies the
+  room" is correct as a RANK fact but **room ≠ usage** — the *static* surface is the WRONG carrier for the
+  SAME reason the static orbit was (smooth ⟹ pure ⟹ `N=0`); the `𝔽₁`/no-special-fiber atom is **NOT
+  relieved** by the dimension lift, only **RELOCATED** from `orbit→surface` to `surface→family-of-surfaces`.
+  **Not overclaimed:** R6 does not prove no archimedean degeneration EXISTS — it proves the *static* surface
+  fiber is pure (room empty) and that a nonzero `N` requires a *family* with a special fiber; R5's rank-relief
+  is genuine (the room now exists), only the family is missing. **Successor:** R7 promoted to TOP ITEM
+  [CONSTRUCTION — does an archimedean degenerating FAMILY `𝒮_t` of `S²/ℤ` with a special fiber over a finite
+  base exist at `∞`, or is "no special fiber over a finite base at `∞`" the irreducible `𝔽₁`-terminus the
+  four discretizations + the dimension lift all converge on?].
 
 - **2026-06-06 — R5 [RESIDUE · SYNTHESIS · DEF · coherence-checked vs 𝔽_q]: R4's "missing special fiber at
   `∞`" is a REAL LEAD, NOT an irreducible terminus — its exact content is a RANK fact, and the correct
