@@ -18,18 +18,22 @@ Two computed facts:
    `Δ·Δ = ∫ K_∞` near `0` is **log-divergent** (`~ −log ε`): the diagonal's self-intersection at the
    archimedean place is `−∞` (the "infinite arithmetic genus").
 
-**The fusion (tropical ↔ spectral), now precise.** A `−1/|u|` (scale-invariant / conformal) kernel
-at the fixed point is exactly the locus where the **scaling/dilation Hamiltonian needs a self-adjoint
-extension** (conformal quantum mechanics; Berry–Keating `xp`; Connes' scaling operator). So:
+**The fusion (tropical ↔ spectral) — and the honest correction.** A `−1/|u|` (scale-invariant /
+conformal) kernel at the fixed point is the locus where one would *hope* to make the scaling/dilation
+Hamiltonian self-adjoint (Berry–Keating `xp`; the naive Hilbert–Pólya hope: compactify the corner ⟺
+choose a self-adjoint extension). **That hope is false in the actual construction.** Connes–Consani
+(2006.13771) show the corner cutoff (the `Λ=1` prolate/Sonin projection that compactifies the corner)
+*"lack[s] invariance under the scaling action"* and *"the scaling action ϑ does not restrict to
+[Sonin's] space"* — so the self-adjoint restriction is **obstructed, not chosen**. They retreat to a
+**positive projection `S`**, giving the *weaker* "corner cutoff ⟹ `Tr(ϑ(g)Sϑ(g)*) ≥ 0`", not a
+self-adjoint generator with spectrum = the zeros. See research/literature/geometry-of-the-square.md §2.
 
-  *compactify the corner* (regularize the `−1/(2|u|)` / the log-divergent `Δ·Δ`)
-      ⟺  *choose a self-adjoint extension* (a boundary condition at `u=0`) of the scaling operator.
-
-"Corner compact ⟺ spectrum self-adjoint" is therefore **one object seen twice**: the tropical
-diagonal self-intersection `Δ·Δ` and the spectral self-adjointness defect are both governed by the
-same `−1/(2|u|)` corner kernel. RH = the extension whose spectrum is the zeros (equivalently the
-regularization that makes `Δ·Δ` give the Hodge-index sign). This is a precise *location* of the
-fusion, not a proof — the extension/sign is the open BGS §6.3 / Hilbert–Pólya question.
+So the precise, corrected picture: the tropical `Δ·Δ` divergence and the spectral side **meet at this
+`−1/(2|u|)` corner kernel**, but "corner-compact AND self-adjoint" is exactly the pair that is in
+**tension** — the cutoff that tames the corner breaks the invariance needed for self-adjointness. That
+tension *is* the difficulty; the reverse force would be a construction achieving both at once, and none
+exists. RH-signed `Δ·Δ` on the square (equiv. a genuine self-adjoint generator) is the open
+BGS §6.3 / Hilbert–Pólya question. This module computes the corner; it does not resolve the tension.
 
 Run:  python3 -m scripts.numerics.witness.corner_defect
 """
@@ -76,11 +80,13 @@ def summary():
         k = corner_kernel(u)
         print(f"   {u:.2f}   {k:+.4f}     {k * abs(u):+.4f}")
 
-    print("\n[fusion] the −1/(2|u|) corner kernel is the scale-invariant (conformal) locus where the")
-    print("  scaling Hamiltonian needs a self-adjoint extension. Compactifying the corner (regularizing")
-    print("  Δ·Δ ~ −log ε) ⟺ choosing that extension (a boundary condition at u=0). The tropical Δ·Δ and")
-    print("  the spectral self-adjointness defect are ONE object — the corner kernel. RH = the extension")
-    print("  whose spectrum is the zeros. [precise location of the fusion; the extension is BGS §6.3-open]")
+    print("\n[fusion -- corrected] the −1/(2|u|) corner kernel is where the tropical Δ·Δ divergence and")
+    print("  the spectral side MEET. But 'corner-compact AND self-adjoint' is a TENSION, not an identity:")
+    print("  Connes–Consani show the cutoff that compactifies the corner breaks the scaling invariance,")
+    print("  so the self-adjoint restriction is OBSTRUCTED — they retreat to a positive projection S")
+    print("  (Tr(ϑSϑ*)≥0), NOT a self-adjoint generator with spectrum=zeros. That tension is the")
+    print("  difficulty; the reverse force (a construction with both at once) is the open BGS §6.3 /")
+    print("  Hilbert–Pólya question. (geometry-of-the-square.md §2) This module locates; it does not resolve.")
 
 
 if __name__ == "__main__":

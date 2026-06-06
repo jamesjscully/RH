@@ -1,5 +1,13 @@
 # The corner, made concrete — and the tropical↔spectral fusion located — 2026-06-06
 
+> **CORRECTION (same day, from the geometry deep-dive).** The "fusion = self-adjoint extension"
+> framing below is the *naive* hope and is **false in the actual construction**: Connes–Consani show
+> the corner cutoff breaks the scaling invariance, so self-adjointness is **obstructed, not chosen**;
+> they retreat to a positive projection. The corrected picture (corner-compact vs self-adjoint are in
+> **tension**, not identity) is in `research/literature/the-fusion.md` and the updated
+> `corner_defect.py`. The *computed* facts below (corner divergence; `−1/(2|u|)` kernel; log-divergent
+> `Δ·Δ`) stand and match CC20's `δ'`-jump at `ρ=1`.
+
 Path 1 of the fusion thread (`scripts/numerics/witness/corner_defect.py`). Goal: turn "the corner"
 from a phrase into a computed object, and see whether the tropical `Δ·Δ` and the spectral self-
 adjointness defect are literally the same thing.
