@@ -65,27 +65,30 @@ but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽
 constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
 
-R4. **[RESIDUE · the EXISTENCE/construction of the archimedean `N` (N4) ON the orbit — NOW THE TOP ITEM,
-   localized by R3b]** R1 STATED the four axioms (N1)–(N4) AND located the obstruction; R2/R3 showed both
-   candidate archimedean structures (Schmid's Hodge `N`, the scaling generator `θ`) supply (N1)–(N3)+a FREE
-   marked radius but NOT the arithmetic `q`, for the SAME reason: the archimedean place is **continuous** (no
-   finite residue field). **R3b (DONE) localized the residue to a concrete locus:** the periodic orbit `C_p`
-   carries the EDGE/length `log p` (Euler-borne, the determinant) for FREE, and the residue is exactly *the
-   Frobenius/monodromy eigenvalues ON `H^1(C_p)` lie at `|α|=p^{w/2}`* — the orbit even split = purity. **R4's
-   task, now sharply localized:** is there ANY construction supplying R1's archimedean `N` (a `(−1,−1)`-
-   morphism of the polarized HS with `M(N)=W`) ON the orbit cohomology `H^1(C_p)` forcing the orbit radius
-   `p^{w/2}`. **R3b-BC (DONE) CLOSED the dynamical-discretization sub-option:** all three discrete refinements
-   of the scaling (continuous `θ`, orbit length `log p`, Bost–Connes `ℕˣ`-multiplier) supply a PHASE + an EDGE
-   but NO finite ground-field cardinality — discreteness is suppliable, the finite base size `q` is not. So R4
-   narrows to the **GEOMETRIC** route the dynamics cannot reach: a degeneration of the would-be motive of `ζ`
-   (`S²/ℤ`, M2d) restricted to `C_p` / a real-analytic limiting structure supplying R1's `N` — OR the absence
-   of a finite residue field at `∞` (the `𝔽₁`-analogue of "`Spec ℤ` has no constant field") is the
-   precisely-located irreducible obstruction, now confirmed from THREE independent dynamical directions.
-   Falsify: the putative `N` must fail to exist for DH
-   (R1 confirmed (N3) vacuous; R3b confirmed DH has no orbit length spectrum — no `C_p` to carry `N`).
-R5. **[SYNTHESIS — the shape of the missing idea]** Either a genuine archimedean `N` (a real lead), or
-   the precisely-located obstruction = the single thing whose construction is the open problem. This is
-   the true terminus: the residue characterized to the atom, the missing idea's shape named.
+R5. **[SYNTHESIS — the shape of the missing idea, NOW THE TOP ITEM (R4 DONE pinned the obstruction)]**
+   R4 (DONE) decided the orbit-`N` existence question: there is **NO** archimedean `N` (R1's N1–N4) on the
+   orbit cohomology `H^1(C_p)`, and the obstruction is PINNED to a precise object — **a missing special
+   fiber / finite residue field / degeneration locus at the archimedean place** (the `𝔽₁`-analogue of
+   "`Spec ℤ` has no finite residue field at `∞`"): the orbit `C_p` is a smooth circle (rank-1 `H^1`, free
+   scaling, no singular fiber), so the only nilpotent is `N=0` and the monodromy mechanism is vacuous.
+   The four R-passes now exhaust the standard archimedean structures (Schmid SL(2)-orbit, continuous
+   scaling, orbit length, Bost–Connes multiplier, and the orbit-`N` itself) — all give the grading/phase/
+   discreteness/edge for free, NONE gives a finite base size / degeneration locus. **R5's task:** STATE the
+   shape of the missing idea as the single object whose construction is the open problem — a `q→1`/`𝔽₁`
+   special-fiber structure at `∞` — and judge: real lead (build next) or irreducible terminus? Either is the
+   honest endpoint: the residue characterized to the atom, the missing idea's shape named. (falsify: the
+   special-fiber structure must be DH-vacuous — DH has no orbits `C_p` and no `W`; the special fiber must be
+   Euler-borne.)
+R6. **[CONSTRUCTION · the special fiber as a property of the SURFACE, not the orbit — named by R4]** R4
+   showed the bare scaling ORBIT `C_p` (a smooth circle, rank-1 `H^1`) cannot carry the degeneration `N` —
+   a Jordan-2 block needs `dim ≥ 2`. Does the would-be `S²/ℤ` surface (M2d, the self-product whose
+   self-intersection is `‖f‖²`) supply, at its ARCHIMEDEAN FIBER, a degeneration `N` the orbit cannot —
+   i.e. is the special fiber a property of the 2-dimensional surface (where `H^1⊗H^1` has rank `≥2`, room
+   for a Jordan-2 block) rather than the 1-dimensional orbit? Anchor on `𝔽_q`: the surface `C×C` over `𝔽_q`
+   DOES carry a transverse degeneration (a node in the family) supplying `N`; does the archimedean `S²/ℤ`
+   fiber inherit it, or is the surface's archimedean fiber ALSO smooth (no special fiber)? (falsify: the
+   surface's archimedean degeneration must be DH-vacuous — no Euler product ⟹ no `S²` motive ⟹ no surface
+   to degenerate.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -316,6 +319,48 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R4 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: there is NO archimedean nilpotent `N`
+  (R1's N1–N4) on the orbit cohomology `H^1(C_p)` forcing the radius `p^{w/2}`, and the obstruction is
+  PINNED to a precise object — a MISSING SPECIAL FIBER / finite residue field / degeneration locus at the
+  archimedean place (the `𝔽₁`-analogue of "`Spec ℤ` has no finite residue field at `∞`"); the orbit `C_p`
+  is a smooth circle (rank-1 `H^1`, free scaling, no singular fiber), so the only nilpotent is `N=0` and the
+  monodromy mechanism is VACUOUS.** [RESIDUE · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R4-orbit-archimedean-N.md`, `scripts/numerics/witness/orbit_archimedean_N.py`
+  (+1 `falsify.py` row → 40th wall, DISPERSING-by-design = obstruction-locator, Euler-silent like R1/R2/R3).
+  **What got CHECKED (exact, FF-anchored, no zeros assumed):** **[A]** a NONZERO monodromy `N` (the
+  symmetric-split mechanism, the Jordan-2 block forcing `M(N)=W` over `𝔽_q`) REQUIRES `dim ≥ 2` — the only
+  nilpotent on a line `ℂ¹` is `N=0`, `M(0)` a single weight (no `0↔2` Hard-Lefschetz pairing, vacuous in
+  rank 1); the minimal nonzero `N` (Jordan-2 on `ℂ²`, `M(N)={0:1,2:1}` symmetric about `w=1`) needs `dim ≥
+  2` + a vanishing cycle. **[B]** `H^1(C_p)` of the circle `C_p=ℝ_{>0}^×/p^ℤ` is RANK 1 (Betti `(1,1)`,
+  `H^1` generated by the length form `d(log t)/log p`) ⟹ the only nilpotent is `N=0`; the holonomy `p^ℤ`
+  acts on rank-1 `H^1(C_p)` as a `1×1` unipotent = identity, `log(monodromy)=0` (the length `log p` = the
+  EDGE, R3b), NOT a vanishing-cycle nilpotent — a circle does not degenerate within itself. **[C]** the
+  TRANSVERSE DEGENERATION is ABSENT — the scaling `t↦λt` on `ℝ_{>0}^×` is FREE (fixed-point-free, verified)
+  and SMOOTH, so `ℝ_{>0}^×→C_p` is a smooth covering with NO singular fiber/node/vanishing cycle
+  (`marked_singular_fiber=False`); CONTRAST over `𝔽_q` the discrete Frobenius `q^ℤ` reduces at a SPECIAL
+  FIBER where `|𝔽_q|=q` lives (a degenerating family has a singular central fiber = a node supplying `N` +
+  the radius `q^{w/2}=2,3,5` for `q=4,9,25`) — the `𝔽₁`-analogue of "no special fiber at `∞`". **[D]** the
+  `N=0` fallback gives purity ONLY GIVEN an external radius: `M(0)` pure says weights CONCENTRATED, NOT at
+  which radius (two `q` → same `M(0)`, different `q^{w/2}`); on `C_p`, `N=0` leaves the radius UNMARKED (only
+  the length), the SAME residue. **Falsifier verdict:** EULER-BORNE NO on this pass (obstruction-locator,
+  Euler-silent), but the DH structural verdict is sharp and ONE LEVEL EARLIER than for `ζ`: DH has no
+  prime-orbit length spectrum (R3b) ⟹ no orbits `C_p` to carry `N`, AND (N3) `M(N)=W` vacuous — the
+  construction fails before it can be posed; SEES-ZEROS YES (radius = even split = purity = where the zeros
+  sit), INDEPENDENT NO (radius = `M(N)=W` = Weil II = the solved case = RH over `ℤ`) → DISPERSING-by-design.
+  Ladder `DH < ζ < FF`: DH no orbits; `ζ` orbits `C_p` with the edge `log p` (Euler-borne) + the OPEN radius
+  (no `N`, no singular fiber); FF orbits = closed points with `N` geometric (a node) + base size `q` (a
+  finite residue field/special fiber) forcing `p^{w/2}`. **NEW content:** the R-thread's honest terminus —
+  R1 named the residue (the archimedean `N`), R2/R3 showed the Hodge SL(2)-orbit and the scaling reach only
+  (N1)–(N3) + a free radius, R3b localized the residue to `H^1(C_p)`, and R4 shows the orbit CANNOT carry
+  `N` because it is a smooth circle with no degeneration — the obstruction is a MISSING SPECIAL FIBER at `∞`,
+  the single `𝔽₁`-shaped object whose construction is the open problem. The four discretizations (continuous
+  scaling, orbit length, Bost–Connes, orbit-`N`) are now exhausted and unified: the archimedean place has the
+  grading/phase/discreteness/edge for free, but NOT a finite base size / degeneration locus to mark the
+  radius. **Successors added:** R5 promoted to TOP ITEM [SYNTHESIS — state the shape of the missing idea: a
+  `q→1`/`𝔽₁` special-fiber structure at `∞`, real lead or irreducible terminus]; R6 [CONSTRUCTION — is the
+  special fiber a property of the `S²/ℤ` SURFACE (rank-`≥2` `H^1⊗H^1`, room for a Jordan-2 block) rather than
+  the 1-dim orbit — does the surface's archimedean fiber inherit `C×C`'s transverse degeneration?].
 
 - **2026-06-06 — R3b-BC [RESIDUE · DEF · coherence-checked vs 𝔽_q]: tested the BOST–CONNES discrete
   multiplier — the DEEPEST of R3b's three named discretizations (a `ℚ_{>0}`-graded line / the K6 non-metric
