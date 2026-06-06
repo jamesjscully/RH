@@ -24,16 +24,18 @@ Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction targ
 whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
 number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-1. **[CONSTRUCT · load-bearing]** The Arakelov pass (DONE #0, top) pinned the §6.3 block to TWO things:
-   (a) `bar(Spec ℤ)` is a 1-dim CURVE — the `(1,ρ−1)` signature needs the SURFACE `S²/ℤ` (still
-   missing); (b) the archimedean Kähler/positive-Green-form (Moriwaki Thm 1.1 (ii) = BGS §6.3) is the
-   ONLY positive piece and it is **DH-shared (identical Gram for ζ and DH)** — the Euler content sits
-   only in the DOMINATED finite-place prime piece. **The sharpened target: a CROSS-PLACE coupling that
-   makes the finite-place Euler positivity DOMINATE the (DH-shared) archimedean piece** = `W_∞ ≥ Σ_p W_p`
-   in arithmetic-intersection language. Concretely: is there a ζ-intrinsic *metric/Green-current
-   perturbation* (off the DH-shared `Γ_ℝ` background) that makes the finite-place `(D_F²·H)` the
-   dominant term — i.e. a positive Green form whose positivity DEPENDS on `Λ(n)` not just on `Re ψ`?
-   This is exactly where §6.3's "can fail" must become "holds ⟺ RH". falsify.py.
+1. **[CONSTRUCT · load-bearing]** The metric-perturbation handle on §6.3 is now CLOSED (DONE #0/top):
+   no ζ-intrinsic Green-current/metric perturbation can make the finite Euler piece dominate — the
+   archimedean place cannot be made ζ-intrinsic while fixing ζ's zeros (Case 2 changes `L_∞`; Case 1 is
+   Sylvester-inertia-locked). The measurement says **the missing structure is the SECOND DIMENSION, not
+   a metric on the 1-dim base `bar(Spec ℤ)`**. So ATTACK THE SURFACE `S²/ℤ` directly: build the
+   self-product/diagonal object whose intersection FORM (not metric) carries `(1,ρ−1)`, with the
+   cross-place coupling INTRINSIC to the geometry (the two-place structure), not a perturbation of one
+   place. Concretely: what is the `H¹(S²)`-over-`ℤ` obstruction (the "continuous Frobenius `Δ·Δ=∞`"
+   wall) as a *representability* question, and does the condensed/tropical corner (NEXT #2/#3) supply a
+   surface whose Hodge index pairs the finite primes against the archimedean place GEOMETRICALLY? Run
+   the falsifier on any candidate two-place object: does its positivity DEPEND on the cross-place pairing
+   (Euler-borne) without being a relabel of `W=A−P` (the curve)? falsify.py.
 2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
@@ -52,6 +54,39 @@ number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Tested NEXT #1's sharpened target (a ζ-intrinsic Green-current/metric perturbation
+  making the finite Euler piece dominate the DH-shared archimedean Kähler form) and CLOSED the
+  metric-perturbation route: it dissolves into an EXHAUSTIVE dichotomy with no third option — the
+  archimedean place cannot be made ζ-intrinsic while fixing ζ's zeros.** [CONSTRUCT · load-bearing →
+  metric handle on §6.3 dead; points to the SECOND DIMENSION].
+  `scripts/numerics/witness/green_current_perturbation.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-green-current-perturbation.md`. **Finding [THM+computed]:** a Green-current/
+  metric perturbation of the archimedean place = a change of the archimedean local factor `L_∞` = an
+  additive correction `g(r)` to the `Γ_ℝ` density `Re ψ(¼+ir/2)`. Made the structural dichotomy
+  executable, exhaustive: **CASE 1** (metric/gauge perturbation keeping ζ's completed Weil form
+  `W=A−P`) = a CONGRUENCE `W↦SᵀWS`, signature INVARIANT by **Sylvester's law of inertia** (verified
+  ζ-intrinsic `S=I+ε·L[Λ]`, `(1,0,4)→(1,0,4)`) → cannot flip indefinite→definite → **RH-SILENT**;
+  **CASE 2** (nonzero additive archimedean density `g_Λ(r)=Σ Λ(n)cos(r log n)/√n`, computed
+  `‖g_Λ‖₂=40.8`, `max|A'−A|=66.6`) genuinely Euler-borne and changes `A`, BUT a nonzero additive
+  archimedean density changes `L_∞`, hence the completed `L=L_∞·L_fin`, hence the FE and the **ZERO
+  SET** — not ζ's zeros (mechanically `g_Λ` = the prime side reflected onto `∞`, double-counting, not a
+  new dominator); **STEELMAN/3rd option** (perturb `A`, compensate in `P`, keep `W` fixed) = VACUOUS:
+  "`W` positive" depends on `W` ALONE and the zeros are read from `W`, so holding `W` fixed (preserving
+  ζ's zeros) holds the signature fixed regardless of the `A,P` split (verified `max|W_comp−W|=4e-16`,
+  `(1,0,4)` unchanged) → collapses to Case 1. **THE PIN (executable EQUALITY):** "finite piece
+  dominates" (`A'≠A`) == "archimedean density changed" (`g≠0`) == "`L_∞` changed" == "different
+  L-function / not ζ's zeros" at every swept scale `{0,¼,½,1}`. **Verdict: Euler-borne YES (only the
+  L-changing Case 2), sees-zeros YES (Case 2 moves the zero SET, doesn't see ζ's), independent NO →
+  CIRCULAR / RH-SILENT split.** **20th Euler-product confirmation.** Decisive lesson: the Euler content
+  is structurally confined to the finite places and the archimedean dominator is structurally DH-shared;
+  **no LOCAL-metric move couples them** — the archimedean place is not free to vary ζ-intrinsically
+  while fixing ζ's zeros. The §6.3 metric/Green-form handle is **dead** (not a gap — a non-existent
+  degree of freedom). The dichotomy is the measurement: the missing structure is **not a metric on the
+  1-dim base `bar(Spec ℤ)`, it is the SECOND DIMENSION** (the surface `S²/ℤ`, where the cross-place
+  coupling is intrinsic to the geometry). Re-prioritizes NEXT #1 from a metric-perturbation hunt to a
+  direct surface/representability attack; honest subtlety: the `(1,0,4)` is the same coarse 5-dim model,
+  load-bearing facts are the inertia theorem + the exact `4e-16` compensation identity + the scale-sweep
+  equality (basis-robust).
 - **2026-06-06 — Tested NEXT #1 (the Arakelov self-intersection / arithmetic Hodge index signature
   `(1,ρ−1)` on `bar(Spec ℤ)`, ζ-intrinsically) and located BGS §6.3 EXACTLY: the signature is REAL and
   its negativity IS the Weil positivity, but the dominating positive piece (archimedean Kähler `Γ_ℝ`) is
