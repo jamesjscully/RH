@@ -4,6 +4,13 @@ The one fresh direction that survived the three-angle synthesis (`research/log/
 2026-06-05-junction-synthesis.md`). This file is the working doc; it supersedes the
 metric/Arakelov probe as the active frontier.
 
+> **Status note (2026-06-06).** Pull 1 (the *static* edge-concentration of `J_{d,n}−H_d`) stands.
+> The *dynamic* results (edge localization under "the flow", the `d^{−3}` "dynamic margin") used the
+> heat flow on the Jensen *polynomial*, which is **not** the de Bruijn–Newman flow — see
+> `research/log/2026-06-06-correction-flow.md`. The correct dBN flow is the **sequence flow**
+> `γ→γ_t` (`xi_jensen.jensen_sequence_flowed`), and the finite Jensen polynomials are robust under
+> it (RH-criticality is the `(d,n)→∞` limit, no finite handle). The "fresh handle" is retracted.
+
 ## Where it came from
 
 The Hermite junction is mapped: the **static/archimedean side is understood and RH-neutral** —

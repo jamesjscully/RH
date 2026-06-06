@@ -1,5 +1,12 @@
 # Dynamic margin is polynomially conditioned — the fresh handle — 2026-06-06
 
+> **⚠ SUPERSEDED / RETRACTED — see `2026-06-06-correction-flow.md`.** The flow used below is the
+> POLYNOMIAL heat flow `e^{sD²}` on the Jensen polynomial in its own variable, **not** the de
+> Bruijn–Newman flow on `Ξ` (the sequence flow `γ→γ_t`). The two behave oppositely; the dBN
+> sequence margin is robust for accessible `(d,n)`. So the `d^{−3}` law is a true fact about
+> Pólya hyperbolicity-robustness but **does not bridge to `Λ`/RH**. The "fresh handle" claim is
+> withdrawn. The text below is kept for the record.
+
 Pulling the spectral-edge "next target" (the edge backward-margin's d-law) produced the cleanest
 result of the thread. `scripts/numerics/witness/spectral_edge.py: dynamic_margin_conditioning`.
 

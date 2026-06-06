@@ -44,6 +44,28 @@ def jensen_sequence(K, U=4.0, prec=220):
     return out
 
 
+def jensen_sequence_flowed(K, t, U=4.0, prec=140):
+    """The CORRECT de Bruijn–Newman sequence flow γ→γ_t (the flow that governs Λ):
+        γ_t(k) = (2/(2k)!) ∫_0^∞ Φ(u) u^{2k} e^{t u^2} du,
+    i.e. the Jensen sequence of Ξ_t = e^{−tD²}Ξ (the kernel Φ → e^{tu²}Φ).  RH ⟺ Λ ≤ 0 where
+    Λ = sup_{d,n} inf{t : J_{d,n}^{γ_t} hyperbolic}.  NOTE: this is NOT the heat flow on the
+    Jensen *polynomial* (see research/log/2026-06-06-correction-flow.md).  For accessible (d,n)
+    the finite Jensen polynomials of γ_t are robustly hyperbolic deep into t<0 (RH-criticality is
+    the (d,n)→∞ limit), so this is not a finite handle — but it is the correct object."""
+    old = ctx.prec
+    ctx.prec = prec
+    out = []
+    for k in range(K + 1):
+        M = acb.integral(lambda u, _o: _Phi(u) * u ** (2 * k) * (acb(t) * u * u).exp(),
+                         acb(0), acb(U))
+        fac = acb(1)
+        for j in range(2, 2 * k + 1):
+            fac *= j
+        out.append(float((2 * M / fac).real))
+    ctx.prec = old
+    return out
+
+
 def jensen_poly_rescaled(gamma, d, n):
     """J_{d,n} coefficients, affinely rescaled X -> c X to O(1) magnitude (hyperbolicity
     is invariant under c>0), so numpy root-finding is well-conditioned.  Ascending."""

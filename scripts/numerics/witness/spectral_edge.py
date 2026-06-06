@@ -91,7 +91,15 @@ def backward_break(coeffs, dps=40):
 
 
 def dynamic_margin_conditioning():
-    """The key result of the pull: the DYNAMIC (dBN flow) margin is polynomially conditioned,
+    """CORRECTION (see research/log/2026-06-06-correction-flow.md): the flow used here is the
+    POLYNOMIAL heat flow e^{sD^2} applied to the Jensen polynomial J_{d,n}(X) in its own
+    variable -- NOT the de Bruijn-Newman flow on Ξ (which is the SEQUENCE flow γ→γ_t).  The two
+    are genuinely different (the dBN sequence margin is robust/infinite for accessible (d,n)).
+    So the numbers below are TRUE facts about Pólya hyperbolicity-robustness of the polynomial,
+    but they do NOT bridge to Λ / RH.  The "fresh handle" framing is RETRACTED.  Kept for the
+    record (the d^{-3} polynomial-heat law is real); not an RH result.
+
+    [original docstring] The DYNAMIC (heat-flow-on-polynomial) margin is polynomially conditioned,
     where the STATIC (BW height) slack is super-exponential.
 
     - Fixed shape Hermite H_d: dynamic backward margin = 1/4 EXACTLY, d-independent.  Proof:
