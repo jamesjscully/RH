@@ -49,13 +49,20 @@ polarization involution = purity = the archimedean weight-monodromy.** Every fra
 borne; the radius is the residue. **This pass attacks the residue itself — frontier characterization, not
 an expected proof.** The precise shape: over `𝔽_q` the even split is forced by the **weight-monodromy** —
 Deligne's nilpotent `N` (geometric monodromy) whose filtration = the weight filtration (Weil II). *Is
-there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?* **R3, R3b (DONE) traced the
-residue through the scaling site:** R3 — the Connes–Consani scaling site SUPPLIES the `ℝ_{>0}^×`-grading R2
-named-missing, but its radius is the FE/Haar self-dual axis (DH-shared, free), not the arithmetic `q`; the
-residue converted to a **DISCRETE/GAPPED base size at `∞`**. R3b — DISCRETIZING the scaling (periodic
-orbits, period `log p`) RECOVERS that gap, but it is the **EULER input / the EDGE** (the prime length
-spectrum `{log p}` = the determinant/abscissa, Euler-borne but RADIUS-SILENT, RH-SILENT verdict), NOT the
-per-orbit radius. The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
+there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?* **R3, R3b (DONE, THREE
+discretizations now closed) traced the residue through the scaling site:** R3 — the Connes–Consani scaling
+site SUPPLIES the `ℝ_{>0}^×`-grading R2 named-missing, but its radius is the FE/Haar self-dual axis
+(DH-shared, free), not the arithmetic `q`; the residue converted to a **DISCRETE/GAPPED base size at `∞`**.
+R3b-orbit (`periodic_orbit_gap.py`) — DISCRETIZING the scaling (periodic orbits, period `log p`) RECOVERS
+that gap, but it is the **EULER input / the EDGE** (the prime length spectrum `{log p}` = the
+determinant/abscissa, Euler-borne but RADIUS-SILENT). R3b-BC (`bost_connes_multiplier.py`) — the
+**Bost–Connes discrete multiplier**, the deepest discretization (a genuine *discrete multiplicative*
+semigroup `ℕˣ` with a phase transition + Galois SSB), SUPPLIES the discreteness but SPLITS identically: the
+dynamics is a PHASE `n^{it}` (modulus 1, radius-silent), the transition sits at the EDGE `β=1` (`ζ` pole), and
+the radius-forcing `q` is an EXTERNAL ground field the `q→1` (`𝔽₁`) limit DELETES (RH-SILENT verdict). **The
+sharpened residue: discreteness ≠ finite base size** — a discrete arithmetic semigroup exists at `∞` (`ℕˣ`),
+but no *ground-field cardinality* behind it sets the per-place radius (the `𝔽₁`-analogue of "`Spec ℤ` has no
+constant field"). The radius is now localized to **"the Frobenius eigenvalues ON `H^1(C_p)` lie at
 `|α|=p^{w/2}`" = the orbit even split = purity**, which needs R1's archimedean `N` (N4) ON the orbit.
 
 R4. **[RESIDUE · the EXISTENCE/construction of the archimedean `N` (N4) ON the orbit — NOW THE TOP ITEM,
@@ -67,10 +74,14 @@ R4. **[RESIDUE · the EXISTENCE/construction of the archimedean `N` (N4) ON the 
    Frobenius/monodromy eigenvalues ON `H^1(C_p)` lie at `|α|=p^{w/2}`* — the orbit even split = purity. **R4's
    task, now sharply localized:** is there ANY construction supplying R1's archimedean `N` (a `(−1,−1)`-
    morphism of the polarized HS with `M(N)=W`) ON the orbit cohomology `H^1(C_p)` forcing the orbit radius
-   `p^{w/2}` — a degeneration of the would-be motive of `ζ` (`S²/ℤ`, M2d) restricted to `C_p`, a real-analytic
-   limiting structure, a Bost–Connes / quantum-statistical `q`-multiplier discretizing the scaling — or is the
-   **continuity of the archimedean scaling** (the `𝔽₁`-analogue of "`Spec ℤ` has no finite residue field at
-   `∞`") the precisely-located irreducible obstruction? Falsify: the putative `N` must fail to exist for DH
+   `p^{w/2}`. **R3b-BC (DONE) CLOSED the dynamical-discretization sub-option:** all three discrete refinements
+   of the scaling (continuous `θ`, orbit length `log p`, Bost–Connes `ℕˣ`-multiplier) supply a PHASE + an EDGE
+   but NO finite ground-field cardinality — discreteness is suppliable, the finite base size `q` is not. So R4
+   narrows to the **GEOMETRIC** route the dynamics cannot reach: a degeneration of the would-be motive of `ζ`
+   (`S²/ℤ`, M2d) restricted to `C_p` / a real-analytic limiting structure supplying R1's `N` — OR the absence
+   of a finite residue field at `∞` (the `𝔽₁`-analogue of "`Spec ℤ` has no constant field") is the
+   precisely-located irreducible obstruction, now confirmed from THREE independent dynamical directions.
+   Falsify: the putative `N` must fail to exist for DH
    (R1 confirmed (N3) vacuous; R3b confirmed DH has no orbit length spectrum — no `C_p` to carry `N`).
 R5. **[SYNTHESIS — the shape of the missing idea]** Either a genuine archimedean `N` (a real lead), or
    the precisely-located obstruction = the single thing whose construction is the open problem. This is
@@ -305,6 +316,45 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R3b-BC [RESIDUE · DEF · coherence-checked vs 𝔽_q]: tested the BOST–CONNES discrete
+  multiplier — the DEEPEST of R3b's three named discretizations (a `ℚ_{>0}`-graded line / the K6 non-metric
+  degree / a Bost–Connes multiplier), the ONE arithmetic object with a genuine *discrete multiplicative*
+  semigroup `ℕˣ` + a phase transition + Galois SSB. PROVED it SUPPLIES the discreteness (`μ_m μ_n=μ_{mn}`,
+  index gap 1) but SPLITS exactly like the continuous scaling (R3) and the orbit length (R3b-orbit): the
+  dynamics is a PHASE `σ_t(μ_n)=n^{it}` (modulus 1, radius-silent), the phase transition is at the EDGE `β=1`
+  (`ζ` pole = abscissa/determinant), and the radius-forcing `q` is an EXTERNAL ground field the `q→1` (`𝔽₁`)
+  limit DELETES. DECISIVE NEW SEPARATION: discreteness ≠ finite base size.** [RESIDUE · DEF · coherence-checked
+  vs 𝔽_q]. `research/construction/R3b-bost-connes-multiplier.md`,
+  `scripts/numerics/witness/bost_connes_multiplier.py` (+1 `falsify.py` row → 39th wall, RH-SILENT:
+  Euler-borne at the edge, radius/zero-silent). **What got CHECKED (exact mpmath 40dps; `w=1`):** **[A]** BC
+  carries the discrete multiplicative semigroup `ℕˣ` R3 named-missing — `μ_m μ_n=μ_{mn}` (verified),
+  index gap `1` (a genuine GAP vs `ℝ_{>0}^×` continuum gap `0`), the STRONGEST discreteness form
+  (multiplicative, not the additive `{log p}`); so continuity-to-discreteness IS supplied. **[B]** but
+  `σ_t(μ_n)=n^{it}` has `|n^{it}|==1` (max dev `~1e-26` across `ℕˣ×`times) — a PHASE, radius-silent; the
+  M3b/R2/R3 split RECURS on the discrete index. **[C]** the phase transition is at `β=1`: `Z(β)=ζ(β)→+∞` at
+  `β→1⁺` (the `ζ` pole = `Re s=1` = the determinant edge), finite at `β=2`, continuation-only at `β=½` (no
+  KMS state below the edge) — the KMS/partition structure marks the EDGE, never the radius `½`. **[D]** the
+  `𝔽_q`→`ℚ` (`q→1`) deformation: over `𝔽_q(C)` the constant field `q` is an EXTERNAL FIXED base (one `q` for
+  all places, forces `|α|=q^{w/2}=2,3,5` from the GROUND FIELD not the dynamics — dynamics gives the phase
+  `q^{it}`, the field gives the modulus); the arithmetic (`ℚ`) BC is the `q→1` limit where `q^{w/2}→1`
+  EVAPORATES (tracked `q=5,3,2,1.5,1.1,1.001→1`) while `ℕˣ` survives base-independently, and over `ℤ` the
+  radices are DISTINCT primes with NO common `q` (archimedean base `=1=𝔽₁`). **[E]** the SSB is GALOIS
+  (`Ẑˣ=Gal(ℚᵃᵇ/ℚ)` on `ℚ/ℤ`+KMS states, zeros-blind), and `Z(β)=∏_p(1−p^{−β})^{−1}` REQUIRES the Euler
+  product (DH has none → no BC system, like `qsm_free_energy.py`). **Falsifier verdict:** EULER-BORNE PARTIAL
+  (the partition pole/Euler product is DH-distinguishing but lives at the EDGE `β=1` = the abscissa, the SAME
+  Euler-borne edge the orbits carried — a PHASE + an EDGE, not a radius), SEES-ZEROS NO (phase `n^{it}` + the
+  zeros-blind Galois SSB), INDEPENDENT NO (radius=even split=purity=RH; `q`=external ground field=the solved
+  FF case) → **RH-SILENT** (Euler-borne at the edge, radius-silent). DH ladder `DH<ζ` (DH no BC system) `<FF`
+  (FF adds the external `q`). **NEW content:** the residue is SHARPENED beyond R3 — R3 framed it as "the
+  continuum lacks a gap", but BC supplies a discrete (multiplicative) gap `ℕˣ` and the radius is STILL absent,
+  so **discreteness is suppliable WITHOUT the finite base size**; the residue is specifically the **finite
+  ground-field cardinality** behind the gap (over `𝔽_q` the constant field, absent at `∞`), the `𝔽₁`-analogue
+  of "`Spec ℤ` has no constant field". Third independent confirmation of the R3/R4 continuity obstruction
+  (after the continuous scaling and the orbit length). **Successors:** R4 narrowed — the dynamical-
+  discretization sub-option is CLOSED (all three of `θ`, `log p`, `ℕˣ` give phase+edge, no `q`); R4 now points
+  ONLY at the GEOMETRIC route (a degeneration of the `S²/ℤ` motive restricted to `C_p` / a real-analytic
+  limiting structure supplying R1's `N`) or the irreducible obstruction (no finite residue field at `∞`).
 
 - **2026-06-06 — R3 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: PROVED the Connes–Consani scaling site
   SUPPLIES R2's named-missing `ℝ_{>0}^×`-grading (`θ=t∂_t`, the absolute Frobenius) AND marks a
