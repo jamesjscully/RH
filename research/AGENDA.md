@@ -24,18 +24,21 @@ Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction targ
 whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
 number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-1. **[CONSTRUCT · load-bearing]** The metric-perturbation handle on §6.3 is now CLOSED (DONE #0/top):
-   no ζ-intrinsic Green-current/metric perturbation can make the finite Euler piece dominate — the
-   archimedean place cannot be made ζ-intrinsic while fixing ζ's zeros (Case 2 changes `L_∞`; Case 1 is
-   Sylvester-inertia-locked). The measurement says **the missing structure is the SECOND DIMENSION, not
-   a metric on the 1-dim base `bar(Spec ℤ)`**. So ATTACK THE SURFACE `S²/ℤ` directly: build the
-   self-product/diagonal object whose intersection FORM (not metric) carries `(1,ρ−1)`, with the
-   cross-place coupling INTRINSIC to the geometry (the two-place structure), not a perturbation of one
-   place. Concretely: what is the `H¹(S²)`-over-`ℤ` obstruction (the "continuous Frobenius `Δ·Δ=∞`"
-   wall) as a *representability* question, and does the condensed/tropical corner (NEXT #2/#3) supply a
-   surface whose Hodge index pairs the finite primes against the archimedean place GEOMETRICALLY? Run
-   the falsifier on any candidate two-place object: does its positivity DEPEND on the cross-place pairing
-   (Euler-borne) without being a relabel of `W=A−P` (the curve)? falsify.py.
+1. **[CONSTRUCT · load-bearing]** The NAIVE product surface `S × S` is now CLOSED (DONE #0/top):
+   its Künneth cross slot `C = A⊗P + P⊗A` FACTORIZES through the base single-place forms (the
+   archimedean factor `A` is exactly DH-shared, `max|A_ζ−A_DH|=0`; on=off-line signature, RH-silent).
+   The measurement: the second dimension is NECESSARY but the **product** surface is the WRONG one — its
+   `H¹⊗H¹` splits as `base⊗base`, so the diagonal `Δ` is DECOMPOSABLE and `Δ·Δ` reduces to base data.
+   **Sharpened target: a NON-PRODUCT surface whose `H¹⊗H¹` does NOT split as `base⊗base` — i.e. a Hodge/
+   Néron–Severi class NOT of product type, so the diagonal is an INDECOMPOSABLE correspondence = the
+   missing `End(S²/ℤ)`.** This UNIFIES the "second dimension" target with the three prior names of the
+   missing algebra: the polarization relation `F^†=(deg)F^{-1}` (`frobenius_self_norm.py`), the Rosati
+   off-diagonal `Tr F` *as a correspondence* (`off_diagonal.py`), the BGS §6.3 Kähler `c₁(H,k)`
+   (`arakelov_signature.py`). Concretely attack: (i) is there a ζ-intrinsic NON-product 2-dim object
+   (the diagonal indecomposable) — does the condensed/tropical corner (NEXT #2/#3) supply one? (ii)
+   what algebraic structure on the base makes `Δ` indecomposable (a Hecke/correspondence module, NOT a
+   tensor square)? Run the falsifier on any candidate: does its `H¹⊗H¹` slot fail to factor through the
+   base (NOT `A⊗P+P⊗A`), and does its signature DISTINGUISH on- from off-line? falsify.py.
 2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
@@ -54,6 +57,33 @@ number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Attacked the surface `S²/ℤ` DIRECTLY as a representability question (NEXT #1, after the
+  metric route closed) and CLOSED the naive product surface `S × S`: its Künneth cross slot FACTORIZES
+  through the base single-place forms — the second dimension is necessary but the PRODUCT is the wrong
+  one (decomposable diagonal). Sharpens the target to a NON-PRODUCT surface = the missing `End(S²/ℤ)`.**
+  [CONSTRUCT · load-bearing → product surface dead; points to an indecomposable diagonal].
+  `scripts/numerics/witness/square_representability.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-square-representability.md`. **Finding [THM+computed]:** made the `H¹(S²)`-over-ℤ
+  representability obstruction executable. (1) The `Δ·Δ=∞` wall regularizes: `(Γ_λ·Δ)=1/|1−λ|~1/|u|` at
+  the corner, the divergence is a UNIVERSAL Coulomb tail (DH-shared, geometry-only), with an
+  **ε-INDEPENDENT finite part `+0.161`** (computed at ε=1e-3,1e-4). (2) The candidate representing object
+  carries the Künneth cross slot `C = A⊗P + P⊗A` (`A`=archimedean `Re ψ` Gram, `P`=finite `Λ(n)` Gram).
+  **DECISIVE COMPUTED FACT:** `C` is BY CONSTRUCTION a function of the BASE forms `(A,P)` alone — the
+  product surface's `H¹⊗H¹` FACTORIZES as `base⊗base`. The archimedean factor `A` is EXACTLY DH-shared
+  (`max|A_ζ−A_DH|=0`, robust across 3 bases), so `C` is the base prime form `P` (Euler-borne, inherited)
+  MODULATED by the DH-shared `A` (Kronecker bound `cross_diff≤2‖A‖‖P_ζ−P_DH‖` tight). So `C` differs ζ/DH
+  (axis1 Euler-borne YES, inherited) but its signature does NOT distinguish on-line vs off-line plants
+  (`sig_on=sig_off=(12,13,0)`, robust across 3 bases) → sees-zeros NO. **Verdict: Euler-borne YES
+  (inherited from `P`), sees-zeros NO, independent NO → RH-SILENT.** **21st Euler-product confirmation.**
+  Decisive lesson: the second dimension is NECESSARY (the square root `|α|=q^{1/2}` is genuinely 2-dim)
+  but the NAIVE product `S × S` is the WRONG second dimension — it buys nothing the 1-dim base lacked,
+  the cross-place coupling is STILL a perturbation of the one archimedean place, now tensored. The needed
+  object is a **NON-PRODUCT surface whose `H¹⊗H¹` does NOT split as `base⊗base`** — a Hodge/Néron–Severi
+  class NOT of product type, so the diagonal is an **INDECOMPOSABLE correspondence = the missing
+  `End(S²/ℤ)`**. UNIFIES the "second dimension" target with the three prior names of the missing algebra
+  (polarization relation / Rosati correspondence / BGS §6.3 Kähler). Honest subtlety: the coarse 4–5
+  center Gaussian basis; load-bearing EXACT facts are `max|A_ζ−A_DH|=0`, the by-construction
+  factorization `C=A⊗P+P⊗A`, the ε-independent finite part, and the basis-robust on=off-line signature.
 - **2026-06-06 — Tested NEXT #1's sharpened target (a ζ-intrinsic Green-current/metric perturbation
   making the finite Euler piece dominate the DH-shared archimedean Kähler form) and CLOSED the
   metric-perturbation route: it dissolves into an EXHAUSTIVE dichotomy with no third option — the
