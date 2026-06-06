@@ -23,32 +23,90 @@ route to it is now closed with a structural reason (logs: `2026-06-06-*pairing*.
 The open object survives unscathed: **a structure that genuinely depends on the zero LOCATIONS** = the
 Frobenius/`(p,q)`/Deninger archimedean-Hodge action (deep construction). 28 Euler/wall confirmations.
 
-## NEXT — the de Bruijn–Newman / `Λ≤0` branch (the one major unaudited frontier)
+## CLOSED — the de Bruijn–Newman / `Λ≤0` (dynamical) branch (audited, pass 1–2)
+The dynamical route (`RH ⟺ Λ≤0`, dBN heat flow `e^{−tD²}`) is **genuinely DISTINCT on the INERTIA
+axis** — the flow is a 1-param semigroup, NOT a `*`-congruence, and it CHANGES the real-root count, so
+it ESCAPES the Sylvester lock that closed every static form (the one structurally new thing the whole
+audit produced). **But it stalls at the SAME wall on the Euler/location axis**, for the same reason
+(logs `2026-06-06-dbn-anchor.md`, `-dbn-flow-functional.md`):
+- **the only unconditional lever (Rodgers–Tao `Λ≥0`)** uses GUE/Montgomery pair correlation, which is
+  UNIVERSAL (a pure Hermitian random matrix with no Euler product carries the same level repulsion,
+  `P(gap<0.25mean)` GUE `0.020` vs Poisson `0.220`) — RH-silent on the Euler axis, and wrong-direction.
+- **the open object it named — an Euler-borne flow functional monotone toward reality** — was built and
+  SPLITS like every static functional: the modulus reading `Σ|Im P(γ)|` is Euler-borne + sees `|Im|` but
+  is `sign Im`-blind and `→0 ⟺ RH` (circular); the only reading that sees `sign Im` (`Σ Im P(γ)`) is
+  IDENTICALLY 0 on the FE-forced conjugate config (`+Im`/`−Im` cancel). The dBN generator is Euler-FREE;
+  the primes ride passively (initial datum only); `sign Im` is conjugation-odd, Euler functionals are
+  conjugation-even. 30th wall confirmation. **Verdict: distinct endpoint on inertia, SAME wall on the
+  Euler/location axis.** The program returns to the static frontier below.
 
-**Why this branch.** The static geometric/form/operator routes all factor through the missing surface /
-the cross-place coupling. The **dynamical** route (dBN heat flow `H_t=e^{−tD²}`, `RH ⟺ Λ≤0`) is
-structurally DIFFERENT: Rodgers–Tao proved `Λ≥0` *unconditionally* using the **dynamics + Montgomery zero
-statistics**, NOT the arithmetic surface. Audit it with the same rigor; transfer the loop's lessons.
+## NEXT — the static frontier (the surviving load-bearing items)
 
-1. **[dBN · positivity · load-bearing]** The anchor (DONE #0) found the dBN branch is genuinely DISTINCT
-   on the INERTIA axis (the flow `e^{−tD²}` escapes the Sylvester `*`-congruence lock — it changes the
-   real-root count), but its only unconditional lever (GUE pair correlation) is universal/RH-silent and
-   wrong-direction. The OPEN object it names: **is there a flow functional built from `Λ(n)` (the Euler
-   data) that is MONOTONE toward reality under the flow** — a *dynamical* `W_∞≥Σ_p W_p`? Such a functional
-   would force `Λ≤0` while being Euler-borne. Construct a candidate and run falsify.py. Likely outcome to
-   pre-test: does it split (modulus-monotone but phase/`sign Im`-blind) like every static functional?
-2. **[dBN · the prime↔flow coupling]** The flow ODE `d/dt x_j = −2Σ 1/(x_k−x_j)` is the Euler-FREE
-   log-gas; the Euler product enters dBN ONLY through the INITIAL datum (`Φ`, the theta/`Λ(n)` series),
-   not the generator. Make this executable: is the `Λ(n)` content of the initial `Φ` recoverable from the
-   flow's action, or does the heat smoothing immediately wash it into the universal GUE bulk (= why the
-   unconditional handle is RH-silent)? This is the precise dynamical form of "Euler data lives in the
-   primes, zero locations in the zeros, the flow does not couple them".
-3. **[dBN · synthesis / close-or-continue]** If #1 splits (no Euler-borne reality-monotone functional),
-   CLOSE the dynamical branch cleanly with the one-line reason (distinct endpoint on inertia, same wall on
-   the Euler/location axis) and return the program to the static frontier (the sursurviving NEXT below).
+The audit's standing result: **no finite-rank form/operator AND no Euler-borne flow functional is
+simultaneously Euler-borne, independent, AND zero-location-tracking** — `sign Im ρ` lives in the zeros,
+`Λ(n)` lives in the primes, and the only object coupling them is the INEQUALITY `W_∞ ≥ Σ_p W_p` = the
+self-intersection `‖f‖²` (the missing surface, `F-sym2-os-bridge.md`). The live routes to that object:
+
+1. **[surface · representability · load-bearing]** The frontier (`F-sym2-os-bridge.md` pass 2): RH ⟸ a
+   self-product surface over `Spec ℤ` whose self-intersection is the Petersson norm `‖f‖²`, Hodge index
+   supplying the `½`-square-root. The product surface `S×S` was closed (decomposable, DONE), the
+   non-product Hecke correspondence was closed (symmetrizes to an `A`-congruence, DONE). The surviving
+   spec: a NON-PRODUCT surface whose diagonal is an INDECOMPOSABLE correspondence (`End(S²/ℤ)`) AND whose
+   self-pairing is NOT a congruence of the FE-invariant archimedean `A`. Make the `q→1` degeneration of
+   the `C×C` Hodge index executable in the condensed/tropical corner (Connes–Consani Scaling Site /
+   F. Charles' archimedean Deligne–Illusie), now with the TARGET self-intersection `=‖f‖²` pinned.
+   Falsifier in advance: does the candidate's self-pairing escape BOTH the Sylvester congruence-lock AND
+   the conjugation-evenness (the two walls that closed everything so far)? It must be conjugation-ODD.
+2. **[A5 · the reflection that pairs `s=1` to `s=½` · load-bearing]** The OS/A4 reduction
+   (`F-sym2-os-bridge.md` pass 1): the sym²/Rankin–Selberg edge norm-square is anchored at `s=1`
+   (`Res_{s=1}L(s,f×f̄)=‖f‖²>0`, a theorem); A5 is the structure under which it becomes OS-positive
+   across `s=½`. Axiomatize what *represents* the pairing of the `s=1` residue to the `s=½` form (the
+   `h_∞` corner-compactification in OS language) and test whether ANY natural pairing carries the
+   Petersson residue from `s=1` to a positive form at `s=½`, for sym²Δ vs the DH-surrogate. The
+   informative probe is structural (A5), NOT the circular min-eig of `B(θ·,·)` (which is `>0 ⟺ RH`).
+3. **[cross-cut · the conjugation-odd object]** The two walls now named precisely: (Sylvester) any
+   `*`-congruence preserves inertia; (conjugation) `sign Im ρ` is conjugation-ODD and every real/Euler
+   functional is conjugation-EVEN. The missing object must be BOTH non-congruence AND conjugation-odd.
+   The Hodge `(1,0)`-form / chosen polarization orientation is the named candidate structure (the
+   oriented form `Q=−iω` collapsed because it was still a fixed Hermitian background, DONE). Ask: is
+   there a polarization whose orientation is DICTATED BY the prime data `Λ(n)` (so it is conjugation-odd
+   AND Euler-borne)? This is the precise shape of the surviving open object — pursue it on the surface.
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — Built the dBN open object (NEXT #1): a FLOW FUNCTIONAL built from `Λ(n)` that should
+  be MONOTONE toward reality under the dBN flow (a *dynamical* `W_∞≥Σ_p W_p`, escaping both defects of
+  the RT/GUE lever), and CLOSED the dynamical branch — the candidate SPLITS exactly as pre-tested:
+  modulus-monotone + Euler-borne but `sign Im`-blind/circular, and the only `sign Im`-sensitive reading
+  is annihilated by the FE conjugation. Distinct endpoint on inertia, SAME wall on the Euler/location
+  axis.** [CONSTRUCT · load-bearing → dBN frontier closed; program returns to the static surface].
+  `scripts/numerics/witness/dbn_flow_functional.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-dbn-flow-functional.md`. **Finding [computed+THM-flavored, falsifier
+  CIRCULAR/split]:** the dBN generator `e^{−tD²}`/log-gas is EULER-FREE; `Λ(n)` enters dBN ONLY via the
+  initial datum, so a "flow functional from `Λ(n)`" can only be the Euler data RIDING PASSIVELY on the
+  flowing config. Candidate `E_Λ=Σ_γ Im P(γ)`, `P(γ)=Σ_n Λ(n)/√n e^{−σ²(log n)²}cos(γ log n)` = the
+  off-line PRIME defect of the Weil explicit formula on the dBN-flowed zeros. **(i) modulus reading
+  `Σ|Im P|`:** Euler-borne YES (sign-scramble `Λ`→`|diff|=1.33`), sees-zeros YES (`0.0`→`0.286`
+  on→off-line; corr `+1.00` with `max|Im root|` under flow), but `|·|` is a MODULUS (symmetric under
+  `γ↔conj γ`, measures HOW FAR not WHICH SIDE) and `→0 ⟺ Λ≤0 = RH` = weil_form PSD-iff-RH → INDEPENDENT
+  NO → **CIRCULAR**. **(ii) signed reading `Σ Im P`** (the only one seeing `sign Im`): **IDENTICALLY 0**
+  on any FE-symmetric config (verified `max|E_signed|=0.00e0` across the flow) — the `+Im`/`−Im`
+  conjugate zeros CANCEL = the conjugation symmetry `ρ↔ρ̄` that closed the whole real-form family
+  (DONE #25). **(iii) the flow gives NO independent help:** the Euler-free generator decides reality,
+  the primes only WATCH. **Verdict: Euler-borne YES, sees-zeros YES, independent NO → CIRCULAR;
+  the `sign Im`-reading vacuous.** No Euler-borne flow functional is reality-MONOTONE under the
+  Euler-free dBN flow → the dynamical `W_∞≥Σ_p W_p` does NOT materialize. **30th wall confirmation,
+  closing the dBN frontier.** DECISIVE LESSON: the dynamical branch is genuinely distinct on the
+  *inertia* axis (the anchor's real finding — the flow escapes Sylvester) but the open object it named
+  hits the IDENTICAL conjugation wall — `sign Im` is conjugation-ODD, every Euler-borne functional is
+  conjugation-EVEN (a modulus); the flow generator carries no primes; the primes ride passively. Returns
+  the program to the static surface frontier (new NEXT #1 surface representability, #2 A5 reflection,
+  #3 the conjugation-odd Euler-borne polarization). Honest subtlety: flow demos use small synthetic
+  polynomials (flow exact on polynomials); the load-bearing facts are the EXACT conjugation
+  cancellation `E_signed≡0` (any FE-symmetric multiset, basis-independent) and the Euler-borne diff
+  `1.33`, not the small-config numerics; `E_modulus`'s reality-tracking is by construction (trivial),
+  the content is that the `sign Im` reading is annihilated.
 
 - **2026-06-06 — Did the dBN ANCHOR (NEXT #1) and folded in the GUE kill-test (NEXT #4): mapped
   Rodgers–Tao's mechanism precisely, made the forward/backward asymmetry and the GUE-universality
