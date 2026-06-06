@@ -16,27 +16,23 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## NEXT
 
 1. **[CONSTRUCT · load-bearing · COUPLE modulus⊗phase — the explicit-formula domination `W_∞≥Σ_p W_p`
-   as the SINGLE functional]** DONE #0 (this pass) tested NEXT #1's phase on-ramp (a) executably as a
-   *density* `w(t)=−(1/2π)d arg S/dt` and found the PHASE/winding is the RIGHT half (vs the RH-silent
-   sym² MODULUS) but is itself **CIRCULAR**: it sees-zeros only via the **GLOBAL** winding (Birman–Krein
-   count, ζ 12.96 vs off-line 14.92) — **counting ≠ forcing**; the **LOCAL** on-line density-positivity
-   `w(t)≥0` is **RH-NEUTRAL** (the off-line plant stays `w≥0` on `Re=½`; the backward winding `≈−2500`
-   lives at `Re=Re(ρ₀)/2=0.4`, the resonance line, NOT on ½ — so off-line-ness is read off the resonance
-   LOCATION, = ¬RH geometrically, not forced); and the only DOMINATOR of the signed prime phase is the
-   **archimedean `Γ_ℝ` background**, which DH shares (NOT Euler-borne). **DECISIVE LESSON: neither half
-   forces alone** — modulus (sym²) is Euler-borne+independent but RH-silent (blind to the line); phase
-   (winding) sees-zeros but is a count whose local positivity = RH with an RH-neutral dominator. So the
-   certificate **must COUPLE** the Euler-borne sym² modulus (which DH structurally LACKS) to the
-   line-detecting phase **in one functional whose positivity is precisely the domination `W_∞ ≥ Σ_p W_p`**
-   (the explicit-formula inequality = the standing wall, now reached from the argument-principle side:
-   the *prime* phase is signed, the *archimedean* phase must dominate it). Concrete on-ramps: **(a)** does
-   the sym²/RS Euler product supply an Euler-borne LOWER BOUND on the prime phase `w_zeros` that DH lacks
-   — i.e. is `log L(s,sym²)` the missing dominating phase (Euler-borne, unlike `Γ_ℝ`)? Test: is the sym²
-   *phase* (not modulus) `arg L(½+it,sym²f)` a quantity DH cannot form, and does it bound `w_zeros`?
-   **(b)** the `log m = log|h|² + i·arg m` split (still open from old NEXT #1): does it make the
-   *coupling* explicit — modulus and phase as one complex log whose total positivity (a Jensen/Nevanlinna
-   `log|m|` + winding identity) is the wall? Falsifier: a modulus alone is RH-SILENT; a phase alone is
-   CIRCULAR (counting); the content is the COUPLED domination, Euler-borne on BOTH halves.
+   as the SINGLE functional]** On-ramp (a) is now CLOSED (DONE, this pass): the sym² PHASE
+   `arg L(½+it,sym²f)`, like the sym² MODULUS, is **RH-SILENT** — it is the phase of a *sibling*
+   L-function, **blind to ζ's zeros** (structurally independent; built from `Δ`'s Satake data, does
+   not move when an off-line zero is planted in ζ). It forces `Δ`'s own RH (Deligne, a theorem), not
+   ζ's. **Decisive lesson:** "Euler-borne / DH-lacks" ≠ "couples to ζ's line." ζ is GL(1) — it has no
+   sym² of its own; borrowing a cusp form's sym² buys Euler-borne-ness only by changing the
+   L-function, LOSING the coupling to ζ. So the missing dominator must be **ζ-INTRINSIC** (built from
+   ζ's own primes `Λ(n)`, coupled to ζ's zeros by the explicit formula itself), AND Euler-borne — and
+   on ζ's own prime phase the contribution is **SIGNED** (DONE #0). The remaining live route is
+   **(b)** the `log m = log|h|² + i·arg m` split: does it make the *coupling* explicit — modulus and
+   phase as one complex log whose total positivity (a Jensen/Nevanlinna `log|m|` + winding identity)
+   is the wall? Falsifier: a modulus alone is RH-SILENT; a phase alone (winding) is CIRCULAR
+   (counting); a BORROWED sym² (modulus or phase) is RH-SILENT (sibling, decoupled from ζ). The
+   content is the COUPLED domination, Euler-borne on BOTH halves AND **ζ-intrinsic** (the new
+   constraint this pass adds). NEW SUB-ITEM surfaced: is there a **ζ-intrinsic** Euler-borne lower
+   bound on the signed von-Mangoldt prime phase `w_zeros` (not borrowed from a sibling sym²)? — that
+   is precisely `W_∞≥Σ_p W_p` on ζ's own primes.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -64,6 +60,29 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Tested NEXT #1 on-ramp (a) executably with the GENUINE sym²Δ (Ramanujan τ, Satake
+  product) and REFUTED it: the sym² PHASE is RH-SILENT, blind to ζ's zeros — same failure as the sym²
+  MODULUS. "Euler-borne / DH-lacks" ≠ "couples to ζ's line"; the missing dominator must be
+  ζ-INTRINSIC.** [CONSTRUCT · load-bearing → on-ramp (a) closed]. `scripts/numerics/witness/sym2_phase.py`
+  (+ 1 `falsify.py` row), `research/log/2026-06-06-sym2-phase.md`. **Finding [THM+computed]:** built the
+  real sym² of weight-12 `Δ` (`τ(p)` verified vs Deligne `|τ(p)|≤2p^{11/2}`; Satake `αβ=p^{11}` exact),
+  formed `arg L(½+it,sym²Δ)` and its density on the line, compared to ζ's prime-phase density `w_zeros`.
+  **[A] axis 1 EULER-BORNE maximally:** DH has no Satake ⟹ `L(s,sym²)` **cannot be formed at all** (the
+  object's existence needs the Hecke product). **[C] axis 3 FATAL:** source-audit confirms
+  `arg L(½+it,sym²Δ)` references neither ζ nor `S_offline` — it is a **fixed background curve built only
+  from `Δ`'s Satake data**, does NOT move when an off-line zero is planted in ζ, whereas ζ's own
+  `w_zeros` does (`t=11`: `−0.23194→−0.23697`). **[B] the apparent "domination"** `|d/dt arg L(sym²Δ)|≥
+  |w_zeros|` at every sampled `t` is **between two unrelated L-functions** — NOT an explicit-formula
+  coupling, does not track ζ's zeros; the sym² phase bounds `Δ`'s OWN zeros (Deligne, a theorem), not
+  ζ's. **Verdict: Euler-borne YES (maximally), sees-zeros NO, independent YES → RH-SILENT** (same box as
+  the sym² modulus, DONE #0). **18th Euler-product confirmation.** Decisive lesson: conflating
+  "Euler-borne/DH-lacks" with "couples to ζ's line" is the trap — `L(s,sym²f)` is a **sibling**
+  L-function (ζ is GL(1), has no sym² of its own); borrowing a cusp form's sym² buys Euler-borne-ness
+  only by changing the L-function, **losing the coupling to ζ**. Sharpens the wall: the missing
+  dominator must be **ζ-INTRINSIC** (built from ζ's primes `Λ(n)`, coupled to ζ's zeros by the explicit
+  formula) AND Euler-borne — on ζ's own prime phase the contribution is SIGNED (DONE #0). Closes on-ramp
+  (a); leaves on-ramp (b) (`log m=log|h|²+i·arg m` split) as the live route + surfaces the ζ-intrinsic
+  signed-prime-phase lower-bound sub-item (= `W_∞≥Σ_p W_p` on ζ's own primes).
 - **2026-06-06 — Built NEXT #1's PHASE certificate (on-ramp a) as a winding DENSITY and ran the
   falsifier: the phase is the RIGHT half (vs the RH-silent modulus) but is CIRCULAR — it sees-zeros
   only via the GLOBAL winding (counting ≠ forcing); the LOCAL on-line density-positivity is RH-neutral;
