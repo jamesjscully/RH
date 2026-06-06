@@ -51,15 +51,8 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M2c′. **[COHERENCE · from M4C — remainder of M2c/M4D]** M4C already PROVED `D∘D≅id` ON the weight-2
-   lattice AND did the `g=2` rank-16 non-semidefinite anchor (so the involutivity + trace-kernel parts of
-   M2c/M4D are DONE; the `g=1` `(0,1,1)` was a rank artifact, confirmed). The REMAINDER: PROVE `φ_{FE}` is
-   a genuine **morphism** of a rigid tensor category (not just a matrix), and that `c` (Rosati) is
-   compatible with `D` **up to the Tate twist** (`c` exchanges the Hodge lines AND commutes with `D`
-   modulo the weight-2 Tate twist `ℚ(−1)`), so `(𝒞,ω_∞,D,P)` is coherent as a *categorical* object (the
-   2-categorical glue of M1 §0) — the well-typed target M3's archimedean datum deforms into. Anchor
-   `g=1,2`; the carrier is the weight-2 NS lattice (M4A/B/C).
-M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/condensed duality datum at
+M3. **[INVENT · now with a fully-coherent weight-2 target (M2c′ done)]** Define the **archimedean Hodge
+   polarization**: the `(p,q)`/condensed duality datum at
    `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
 M4. **[DESCENT · fully typed by M4A/B/C]** Specify the **duality-descent gluing**: how `{Euler factors at
@@ -156,6 +149,37 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M2c′ [COHERENCE · anchored vs 𝔽_q]: completed the M2c/M4D REMAINDER — `φ_{FE}` is a
+  genuine MORPHISM of the rigid tensor category (not a matrix), and `c` is COMPATIBLE with `D` up to the
+  weight-2 Tate twist `ℚ(−1)`, so `(𝒞,ω_∞,D,P)` is now a coherent 2-categorical object; RH = the Klein-4
+  degeneration `c=D`.** [COHERENCE · anchored vs 𝔽_q].
+  `research/construction/M2c-prime-fe-morphism-rosati-compat.md`,
+  `scripts/numerics/witness/fe_morphism_rosati_compat.py` (+1 `falsify.py` row → 47). **What got CHECKED
+  (FF anchor, `g=1` rank 4 `q=2,5,7,11,13` AND `g=2` rank 16 `q=2`, all EXACT):** M4C had already done
+  `D∘D=id` on `gr^W_2`, `P_NS=ev∘(1⊗φ_{FE})=Tr(z w^†)` (NOT a metric), and the `g=2` non-semidefinite
+  anchor (involutivity + trace-kernel DONE). M2c′ supplies the two remaining coherence facts.
+  **(A) `φ_{FE}` is a MORPHISM:** (A1) `Φ`-EQUIVARIANT up to `ℚ(−1)` — the naturality square `E F = q F^∨ E`
+  (`⟺ FᵀEF=qE`, the Weil `q`-similitude) commutes to `≤1e-15` all curves, so `φ_{FE}` intertwines
+  Frobenius with its Tate-twisted dual (a morphism of Frobenius-modules, not an arbitrary matrix); (A2) the
+  induced `D=(·)^†` is a TENSOR duality — an anti-automorphism of `End(H^1)` (`(zw)^†=w^†z^†` to `0`) fixing
+  the unit (`D(Id)=Id` to `0`). **(B) `c` COMPATIBLE with `D` up to `ℚ(−1)`:** (B1) `c,D` are COMMUTING
+  INVOLUTIONS — `c∘c=id`, `D∘D=id`, `D∘c=c∘D` all `0.00e+00` ON AND OFF circle (a Klein `ℤ/2×ℤ/2`,
+  RH-INDEPENDENT); (B2) `c` exchanges the Hodge lines `H^{1,0}↔H^{0,1}`; (B3) the Tate twist
+  `q=Tr(F F^†)/Tr(Id Id^†)=2gq/2g` is the `c·D` similitude multiplier (exact all 6); (B4) **THE SEPARATION**
+  `c=D` on `H^1` ⟺ RH — `|c(F)−D(F)|=0` on-circle (`c=D`, RH) but `>1` off-circle (`c≠D`, RH fails), so
+  **RH = the DEGENERATION of the Klein four-group to a `ℤ/2`** (`c,D` fuse) = the `c`-EVEN reading of C2
+  (Hodge lines align with conjugate lines), NOT a `c`-odd functional (the `c`-odd datum vanishes on
+  FE-symmetric spectra, DONE #31/#25/#30). **Falsifier verdict (anchor/coherence, not a `ℤ`-candidate):**
+  euler-assembled Y (morphism square + twist read the Frobenius `q`-similitude/Satake; DH no Frobenius
+  weight ⟹ no morphism square ⟹ no Tate twist ⟹ no coherent object), sees-zeros Y (`c=D` ⟺ `|α|=√q` ⟺ RH),
+  independent N (`c=D` = Weil/Riemann positivity) → **CIRCULAR** over `ℤ`, expected. **NEW content:**
+  `φ_{FE}` is a genuine rigid-tensor MORPHISM (`Φ`-equivariant up to `ℚ(−1)` + `D` a tensor
+  anti-automorphism) and `c` is a COMMUTING INVOLUTION compatible with `D` up to the Tate twist, with
+  RH = the Klein-4 degeneration `c=D` — `(𝒞,ω_∞,D,P)` is now a COHERENT 2-categorical object (the M2c/M4D
+  remainder), the well-typed target M3's archimedean datum deforms into. **Successors added:** M3 re-tagged
+  (now has a fully-coherent weight-2 target); M4 unchanged (Euler-assemble `P_NS`/form `(*)` on the GLOBAL
+  weight-2 lattice — the single hinge C3b).
 
 - **2026-06-06 — M4C [COHERENCE · anchored vs 𝔽_q]: lifted M2's C4 fact (polarization = canonical
   duality pairing, NOT a metric) from the weight-1 `H^1` to the WEIGHT-2 NS lattice `gr^W_2=End(H^1)`,
