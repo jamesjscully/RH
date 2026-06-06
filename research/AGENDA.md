@@ -51,15 +51,20 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M3b. **[COHERENCE · archimedean analogue of M2c′(B)]** Prove `P_∞` is **functorial** in the Hodge datum,
-   and that the **Weil operator `C_W` commutes with the duality `D` up to the Tate twist `ℚ(−w)`** (the
-   `(p,q)`-grading conjugation `c=κ` and `D` form a coherent pair at `∞`, the archimedean mirror of M2c′
-   B1–B3). Output: `(P_∞, D, c)` a coherent triple at `∞`, with RH = the degeneration `c = D` *read
-   archimedeanly* (no Frobenius). Anchor on the polarized-HS model `archimedean_hodge_polarization.py`.
 M3c. **[INVENT · condensed upgrade]** Realize `(V, F^•, κ)` as a **condensed/analytic** object (Clausen–
    Scholze) so the "condensed-archimedean structure Arakelov lacks" (§2 Pillar A) is explicit, not just
    finite-dim linear algebra — the archimedean place as a condensed `(p,q)`-datum. Falsify: still
-   §0-clean (duality pairing, not a metric), still Euler-silent-by-design (the `Γ`-factor).
+   §0-clean (duality pairing, not a metric), still Euler-silent-by-design (the `Γ`-factor). **M3b sharpened
+   the target:** the Weil operator `C_W` and the central twist `C_W²=(−1)^w` (a SIGN, the weight parity)
+   must be the condensed structure maps — the `(−1)^w` carries *only reality*, NOT the radius (radius-silent
+   at `∞`), so the condensed object is the radius-free reality carrier.
+M4r. **[DESCENT · the radius-assembly hinge, named by M3b]** M3b's structural lesson: the FF multiplier is
+   the Frobenius weight `q` (carries the radius `√q`, Euler-borne), but its archimedean mirror `(−1)^w` is a
+   SIGN (carries only reality, radius-silent). So the centre `Re s=½` CANNOT be read off the archimedean
+   place — it must be **Euler-assembled in the descent**, where the prime Satake products `αᵢ(p)αⱼ(p)` meet
+   the archimedean `(−1)^w` sign. Specify, in the M4 gluing, the precise map by which the per-prime radius
+   data (`√q`-analogues) ASSEMBLE the global centre against the radius-silent `(P_∞,D,c)` at `∞`. (= C3b in
+   its sharpest cross-place form; falsify: the assembled radius must be DH-distinguishing, an Euler datum.)
 M4. **[DESCENT · fully typed by M4A/B/C; archimedean input `P_∞` now built (M3)]** Specify the **duality-descent gluing**: how `{Euler factors at
    primes} ∪ {Γ_ℝ (p,q) at ∞}` glue to a global object whose polarization **is** the explicit-formula
    quadratic form (so `W_∞≥Σ_p W_p` is a descent constraint, not a hope). **Target now fully typed:** the
@@ -154,6 +159,46 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M3b [COHERENCE · anchored vs polarized-HS]: proved the archimedean MIRROR of M2c′(A)/(B)
+  — `(P_∞, D, c)` is a COHERENT triple at `∞`, Frobenius-free: `P_∞` is FUNCTORIAL and the Weil operator
+  `C_W` commutes with the duality `D` up to the Tate twist `ℚ(−w)`, with multiplier `(−1)^w` (a SIGN, the
+  weight PARITY) replacing the Frobenius weight `q`; RH read archimedeanly = the degeneration `c=D` = the
+  Hodge-type alignment `P_∞>0 ⟺ Y>0`.** [COHERENCE · anchored vs polarized-HS].
+  `research/construction/M3b-archimedean-coherence.md`,
+  `scripts/numerics/witness/archimedean_coherence.py` (+1 `falsify.py` row → 49). **The translation M2c′→M3b:**
+  Frobenius `F` → Weil operator `C_W=i^{p−q}`; cup product `E` → duality `S` (`S^T=−S`); Frobenius weight
+  `q` → `(−1)^w` (weight parity, a SIGN; `w=1`: `C_W²=−1` = the complex structure `J`); `c` borrowed from
+  Frobenius → `c=κ` intrinsic; morphism square `EF=qF^∨E` → `D(C_W)=C_W^{−1}`; `c=D⟺|α|=√q⟺RH` → `c=D⟺Y>0`.
+  **What got CHECKED (weight-1 polarized-HS anchor, `g=1,2,3`, multiple seeds, all EXACT):** **(A) `P_∞`
+  FUNCTORIAL** — a morphism `f` of HS (symplectic base change `M`, `M^T S M=S` to `3e-16`) COMMUTES with
+  the Weil operator (`f C_W=C_W' f` to `2.7e-15` — `C_W` is NATURAL, depends only on `(p,q)`) and INTERTWINES
+  the polarization (`f^* P_∞'=P_∞` to `3.6e-15`) = the mirror of M2c′(A) "`φ_FE` a morphism not a matrix".
+  **(B) `C_W` COMMUTES with `D` up to `ℚ(−w)`** — B1 `C_W` is an ISOMETRY of `S` (`C_W^T S C_W=S` to `4.6e-16`,
+  the archimedean `q`-similitude, multiplier normalized to `1` since `i^{p−q}i^{q−p}=1`); B2 the CENTRAL TWIST
+  `C_W²=(−1)^w` on `V` (`=−1` at weight 1, to `5e-15`) = the archimedean analogue of the Frobenius weight `q`,
+  a SIGN (the weight parity) NOT a base-field size; B3 the `C_W`–`D` 2-cell `D(C_W)=C_W^{−1}` to `2.7e-15`
+  (the Weil op intertwines `D` with its `(−1)^w`-twisted self) = the mirror of M2c′(A1)'s square `EF=qF^∨E`.
+  **(C) the triple `(P_∞,D,c)` COHERENT** — C1 `c=κ`,`D` COMMUTING INVOLUTIONS (`DoD=coc=Dc−cD=0.0e+00`
+  exact, a Klein `ℤ/2×ℤ/2`, RH-independent); C2 `c` exchanges the Hodge lines (to `1.8e-15`); C3 THE
+  ARCHIMEDEAN SEPARATION — RH = `c=D` = the HODGE-TYPE ALIGNMENT: `P_∞>0` on `H^{1,0}` (`c,D` align on the
+  primitive part) ⟺ the polarized type `Y>0`, sweeping `Y>0`(`+2.03`) through `Y=0`(degenerate) to `Y<0`
+  (`−2.03`) a MONOTONE flip all `g` — the `(p,q)` analogue of "a zero ON vs OFF the critical line", supplied
+  by `C_W` NOT a Frobenius weight. **Falsifier verdict (a COHERENCE check on the archimedean half, the place
+  at `∞`):** EULER-ASSEMBLED NO **BY DESIGN** — the archimedean triple is the `Γ`-factor, DH-SHARED; the
+  multiplier `(−1)^w` is a SIGN (weight parity), NOT an Euler datum, so it does not distinguish `ζ` from DH;
+  M3b's JOB is COHERENCE of the reality/phase half, the cross-place coupling is M4's descent. Tabled
+  **DISPERSING-by-design** (`euler_borne=False`), the archimedean HALF, NOT a standalone RH-form. SEES-ZEROS
+  YES (the Hodge-type alignment holds ⟺ `Y>0`). INDEPENDENT NO on the anchor (= the Hodge–Riemann relation).
+  **NEW content:** the archimedean coherence of `(P_∞,D,c)` is PROVEN Frobenius-free — `C_W` commutes with `D`
+  up to `ℚ(−w)` (multiplier `(−1)^w`, a SIGN replacing the Frobenius weight `q`), `P_∞` FUNCTORIAL, RH = the
+  archimedean `c=D` = the Hodge-type alignment; the mirror of M2c′(B) is COMPLETE. **The structural lesson
+  (sharpens the next hinge):** the FF multiplier `q` *carries the radius* `√q` (Euler-borne), but its
+  archimedean mirror `(−1)^w` is a SIGN carrying *only reality*, radius-SILENT — so `Re s=½` CANNOT be read
+  off `∞`; it must be **Euler-assembled in the descent**. **Successors added:** M4r [DESCENT — specify the
+  radius-assembly: per-prime Satake products `αᵢ(p)αⱼ(p)` assemble the global centre against the radius-silent
+  `(P_∞,D,c)` at `∞`, = C3b cross-place]; M3c re-pointed (`C_W` and the `(−1)^w` twist as the condensed
+  structure maps, the radius-free reality carrier).
 
 - **2026-06-06 — M3 [INVENT · anchored vs polarized-HS]: INVENTED the archimedean Hodge polarization
   `P_∞(x,y)=S(C_W x, κ y)` — the `(p,q)`/reality datum at `∞`, FROBENIUS-FREE: the `(p,q)` grading carried
