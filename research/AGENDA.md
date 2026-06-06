@@ -15,47 +15,35 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · COUPLE modulus⊗phase — the explicit-formula domination `W_∞≥Σ_p W_p`
-   as the SINGLE functional]** On-ramp (a) is now CLOSED (DONE, this pass): the sym² PHASE
-   `arg L(½+it,sym²f)`, like the sym² MODULUS, is **RH-SILENT** — it is the phase of a *sibling*
-   L-function, **blind to ζ's zeros** (structurally independent; built from `Δ`'s Satake data, does
-   not move when an off-line zero is planted in ζ). It forces `Δ`'s own RH (Deligne, a theorem), not
-   ζ's. **Decisive lesson:** "Euler-borne / DH-lacks" ≠ "couples to ζ's line." ζ is GL(1) — it has no
-   sym² of its own; borrowing a cusp form's sym² buys Euler-borne-ness only by changing the
-   L-function, LOSING the coupling to ζ. So the missing dominator must be **ζ-INTRINSIC** (built from
-   ζ's own primes `Λ(n)`, coupled to ζ's zeros by the explicit formula itself), AND Euler-borne — and
-   on ζ's own prime phase the contribution is **SIGNED** (DONE #0). The remaining live route is
-   **(b)** the `log m = log|h|² + i·arg m` split: does it make the *coupling* explicit — modulus and
-   phase as one complex log whose total positivity (a Jensen/Nevanlinna `log|m|` + winding identity)
-   is the wall? Falsifier: a modulus alone is RH-SILENT; a phase alone (winding) is CIRCULAR
-   (counting); a BORROWED sym² (modulus or phase) is RH-SILENT (sibling, decoupled from ζ). The
-   content is the COUPLED domination, Euler-borne on BOTH halves AND **ζ-intrinsic** (the new
-   constraint this pass adds). NEW SUB-ITEM surfaced: is there a **ζ-intrinsic** Euler-borne lower
-   bound on the signed von-Mangoldt prime phase `w_zeros` (not borrowed from a sibling sym²)? — that
-   is precisely `W_∞≥Σ_p W_p` on ζ's own primes.
-2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
-   quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
-   coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
-   RH-silent* central value while the line is forced by a different (self-adjointness) mechanism? Predict
-   from DONE #1: the norm and the line-forcing are DISTINCT; confirm or break.
-3. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): can it realize a
-   surface over `\overline{Spec ℤ}` with self-intersection `= ‖f‖²`? Where exactly does the
-   "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to this target?
-5. **[CONSTRUCT]** **Tropical / Connes–Consani** square: the diagonal self-intersection in the `q→1`
-   limit — does it carry the `‖f‖²` target, and where does it diverge?
-6. **[CONSTRUCT · representability]** Is **"the square root of the Rankin–Selberg/Petersson
-   edge-positivity"** functor representable (Brown representability / a moduli description)? What object
-   would represent it?
-7. **[DEFORM]** Trace the `C×C` Hodge index through the `q→1` degeneration explicitly; identify the
-   **obstruction-cocycle** (what breaks) — that names the next axiom (pass-four input).
+**HEADLINE — pass-3 convergence (modulus⊗phase).** RH = a **ζ-intrinsic, Euler-borne coupling of
+MODULUS and PHASE**. The available positivities (sym²/`‖f‖²`, the von-Mangoldt prime sum) are
+MODULUS/edge (RH-silent for the line) or a *borrowed sibling's* phase (RH-silent, decoupled from ζ —
+forces `Δ`'s RH, not ζ's). The line is the **PHASE condition `θFθ=F^*`** = reality of ζ's own Frobenius
+= the Hodge signature `(1,ρ−1)`. Wall: a **ζ-intrinsic** dominator (built from ζ's own primes `Λ(n)`)
+Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction target: a ζ-intrinsic object
+whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
+number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-> **CAVEAT on items 3–7 (post DONE #1 + #2):** all five were written with the **`‖f‖²`
-> self-intersection target**, which was refuted (DONE #1), and its first correction `deg·χ` (a NUMBER)
-> was then shown RH-silent + not-even-Euler-borne (DONE #2). The corrected target is **the signature
-> `(1, ρ−1)` of the negative-definite intersection FORM on `H¹_prim`** (item 1), *not any number*. So
-> for items 3–7: the construction must realize an object whose intersection FORM has the Hodge-index
-> SIGNATURE — replace every "self-intersection `=‖f‖²`" with "intersection form has signature
-> `(1, ρ−1)`, negative-definite on the primitive part."
+1. **[CONSTRUCT · load-bearing]** The **ζ-intrinsic Frobenius reality structure**: what *geometric*
+   object gives ζ's own Frobenius the reality `θFθ=F^*` (signature `(1,ρ−1)`), coupling the available
+   modulus to the phase, ζ-intrinsically? Prime candidate: the **Arakelov self-intersection of an
+   arithmetic Frobenius correspondence on `\overline{Spec ℤ}` / the BGS positive-Green-form** — a
+   ℤ-degree CAN be defined but its positivity CAN fail (BGS §6.3). Does the Arakelov self-intersection,
+   built from ζ's own primes, carry the signature, and where exactly does §6.3 block it? falsify.py.
+2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
+   object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
+   "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
+3. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
+   self-pairing, does the **phase/reality** structure (not the modulus) survive, and where does it diverge?
+4. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
+   represent (Brown representability / moduli)? The square root taking the edge-modulus to the line-phase.
+5. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
+   obstruction-cocycle names the next axiom.
+6. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
+   from the Maass/Petersson norm (modulus). Predicted distinct (DONE) — confirm or break.
+7. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
+   positivity (Jensen/Nevanlinna `log|m|` + winding) make modulus⊗phase ONE identity? Lower priority —
+   prefer construction.
 
 ## DONE
 (the loop appends here, newest first)
