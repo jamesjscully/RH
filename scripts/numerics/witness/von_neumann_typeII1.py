@@ -188,6 +188,22 @@ def main():
     print("     not -- but the RADIUS (purity) is STILL a separate input the trace does not carry.")
     print("-" * 100)
 
+    print("\n[SCALE]  The DEEPER reason (the II_1-specific killer): the continuous dimension is NORMALIZED")
+    print("  tau(1)=1 -- this is what MAKES II_1 'finite'.  But the radius q^{w/2} is a SCALE of the spectral")
+    print("  support, and tau(1)=1 normalizes away ALL scale: the range-projection dimension dim_M is INVARIANT")
+    print("  under a -> lambda*a (the radius scaling).  So the very normalization that defines type II_1")
+    print("  finiteness is EXACTLY what annihilates the radius.  The scale survives only in the II_infinity")
+    print("  crossed product M x R_+^* (Connes' scaling site, R3) -- where the carrier is the R_+^* CONTINUUM,")
+    print("  the R8 WRONG TYPE.  Verified below: scaling lambda moves the radius but leaves dim_M unchanged.")
+    sq = mp.sqrt(9)
+    al = [sq * mp.e ** (mp.mpc(0, 1) * th) for th in (mp.pi / 5, -mp.pi / 5, 3 * mp.pi / 5, -3 * mp.pi / 5)]
+    for lam in (mp.mpf(1), mp.mpf(2), mp.mpf("0.5")):
+        scaled = [lam * a for a in al]
+        dimM = mp.mpf(sum(1 for a in scaled if abs(a) > mp.mpf("1e-30"))) / len(scaled)
+        print(f"     lambda={float(lam):>4}: max|alpha| = {float(max(abs(a) for a in scaled)):.4f} (radius scales) "
+              f"but dim_M(range proj) = {float(dimM)} (UNCHANGED -- II_1 dim is scale-free)")
+        assert abs(dimM - 1) < mp.mpf("1e-30")
+
     print("\n[F_q anchor honest verdict]  tau does NOT recover q^{1/2} as the RADIUS without assuming the")
     print("  zeros: sqrt(tau(|a|^2)) = sqrt(q) is the L^2-average of |alpha_i|, equal to sqrt(q) for ANY")
     print("  config with sum|alpha_i|^2 = Nq -- including OFF-LINE ones.  To get the radius (max=sqrt(q),")
