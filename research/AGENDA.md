@@ -51,19 +51,21 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M2d. **[DEFINE · the PURITY functor · load-bearing · from M2b]** M2b refined C3b to
-   `rad = (·)^{1/2} ∘ (edge-abscissa) : LocFac → 𝔾_m`, so **`ℤ`-C3b = "`ζ`'s local Euler factors `{L_p}`
-   are PURE of weight 1"** (the centre = `√(edge)`). The edge datum is FF-clean (`q = #𝔸¹`, the abscissa,
-   read off the local product, EXACT, functorial under base change); the open piece is the
-   **square-root/purity step over `ℤ`**. DEFINE the weight/purity structure a single local factor
-   `L_p(s) = (1−p^{-s})^{-1}` must carry: what is the `ζ`-analogue of "`H^1` pure of weight 1" when each
-   `L_p` has degree-0 numerator (`ζ` has no `H^1` at a single prime — the weight-1 part is *global*)?
-   **The trap to name precisely:** over `𝔽_q` purity is a property of `H^1(C)`, which exists because the
-   *curve* supplies a weight-1 cohomology; over `ℤ` the abscissa `Re s=1` is clean but there is no per-prime
-   weight-1 object to be pure — so purity must be a property of the *global glued* factor (the M4 descent
-   object). Decide: is `rad : LocFac → 𝔾_m` even well-typed for `ζ`, or does the edge→centre square-root
-   require the surface `S²/ℤ` (the missing `H^1`, `F-sym2-os-bridge.md`) before purity has a carrier? This
-   re-routes M4: the descent must FIRST supply the weight-1 carrier, THEN purity sets `Re s=½`.
+M4A. **[DEFINE/BUILD · the WEIGHT-1 CARRIER · load-bearing · from M2d]** M2d decided M2d's typing
+   question: `rad = (·)^{1/2}∘(edge) : LocFac → 𝔾_m` is **NOT well-typed per-prime** for `ζ` — the
+   `(·)^{1/2}` (purity) step needs a weight-1 graded piece `gr^W_1` (local-factor numerator degree `>0`),
+   and `ζ`'s prime factor `(1−p^{-s})^{-1}` has numerator degree `0`, **identical** to an FF closed point.
+   The FF gets `gr^W_1` GLOBALLY (the curve's `H^1`, rank `2g`, assembled from local factors via Lefschetz);
+   `ζ` has **no** geometric weight-1 carrier — that missing carrier IS the surface `S²/ℤ`
+   (`F-sym2-os-bridge.md`). So C3b is NOT per-prime; purity is **intrinsically global** for `ζ`, a condition
+   on the **weight filtration of the glued object**. **The task:** DEFINE the weight-1 carrier `gr^W_1` the
+   descent must supply BEFORE purity acts — what is the `ζ`-analogue of `H^1(C)` (rank `2g`) that the local
+   `{L_p}` should assemble? Candidates to type-check: (a) the `H^1` of the self-product surface `S²/ℤ`
+   (Petersson-norm self-intersection, `F-sym2-os-bridge.md`); (b) the Connes–Consani `H^•` over `𝔽₁`
+   (Scaling Site); (c) a condensed/analytic weight filtration on the completed `ξ`. ANCHOR FIRST: show the
+   candidate carrier reproduces the FF's rank-`2g` `H^1` under `q→` finite, then ask if it types over `ℤ`.
+   **Falsifier in advance:** the carrier must be Euler-ASSEMBLED (DH supplies no `gr^W_1` — no product to
+   assemble from) and its purity must SEE the zeros (`gr^W_1` pure of weight 1 ⟺ zeros on `Re s=½`).
 M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
    tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
    matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
@@ -163,6 +165,36 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M2d [DEFINE · coherence-checked]: DECIDED the typing question M2b left open — the purity
+  functor `rad=(·)^{1/2}∘(edge) : LocFac→𝔾_m` is NOT well-typed PER-PRIME for `ζ`, because the `(·)^{1/2}`
+  step needs a weight-1 carrier `gr^W_1` that no single prime supplies; purity is INTRINSICALLY GLOBAL for
+  `ζ`, a condition on the weight filtration of the GLUED object. Re-routes M4 → M4A (build the carrier
+  first).** [DEF · coherence-checked vs 𝔽_q]. `research/construction/M2d-purity-carrier.md`,
+  `scripts/numerics/witness/purity_carrier.py` (+1 `falsify.py` row). **What got DEFINED:** the INPUT SLOT
+  of the purity functor per place = the weight-1 graded piece `gr^W_1`, whose rank = DEGREE of the local
+  zeta-factor numerator `P` (in `L=P/Q`, `P` carries the weight-1 `αᵢ`); the `(·)^{1/2}` purity step has an
+  input at a place iff `deg P>0`. **THE DECISIVE EXACT FACT (computed, integer degrees):** per-prime the
+  carrier is EMPTY for BOTH FF local factors `L_x=(1−T^d)^{-1}` (numerator deg 0) AND `ζ`'s primes
+  `L_p=(1−p^{-s})^{-1}` (numerator deg 0) — a local factor is a weight-0 "point" in BOTH; **the difference is
+  NOT at the prime** (`ζ`'s prime factor is EXACTLY an FF degree-1 point `(1−T)^{-1}`). The FF ASSEMBLES a
+  GLOBAL rank-`2g` `H^1(C)` from its local factors via the curve (Lefschetz `N_n=q^n+1−Σαᵢⁿ`, `g=1,2,3` →
+  deg 2,4,6); `ζ`'s primes assemble NO weight-1 cohomology (`Spec ℤ` 0-diml arithmetically), and `ζ`'s "`H^1`"
+  (the nontrivial zeros) is NOT realized as the weight-1 cohomology of any geometric carrier — that missing
+  carrier IS the surface `S²/ℤ` (`F-sym2-os-bridge.md`). **TYPING VERDICT:** `rad_edge` (the abscissa `Re s=1`)
+  IS well-typed for `ζ` (local, per M2b); `rad=(·)^{1/2}∘(edge)` is NOT well-typed PER-PRIME (no per-prime
+  `gr^W_1` to halve); it requires a GLOBAL glued object SUPPLYING `gr^W_1` first. So **C3b is NOT a per-prime
+  condition** — it is a condition on the WEIGHT FILTRATION of the glued object; purity is intrinsically global
+  for `ζ`. **The precise sense in which C3b is OPEN:** not "prove purity" but "BUILD the carrier purity would
+  be a property of" — over `𝔽_q` purity is a theorem ABOUT a pre-existing geometric `H^1`; over `ℤ` there is
+  no carrier yet, so construction must precede purity. **C6/DH STRICT-refined to a ladder `DH<ζ<FF`:** FF
+  (edge Y, global carrier Y=the curve → purity THEOREM), `ζ` (edge Y, global carrier OPEN=`S²/ℤ` → purity
+  OPEN), DH (edge N, no Euler product → purity N/A) — DH lacks even the edge. **Falsifier verdict (DEF/coherence,
+  not a `ℤ`-candidate):** the FF-archetype verdict stays euler-borne Y / sees-zeros Y / independent N=Weil purity
+  → CIRCULAR over `ℤ`; the NEW content is the typing fact (per-prime carrier empty IDENTICALLY in FF and `ℤ`,
+  so the hardness is the GLOBAL carrier, not per-prime). **Successor added:** M4A [DEFINE/BUILD the weight-1
+  carrier `gr^W_1` the descent must supply BEFORE purity acts — `S²/ℤ` `H^1` / Connes–Consani `H^•` / condensed
+  weight filtration on `ξ`; anchor on the FF rank-`2g` `H^1`; falsify: Euler-assembled + purity sees zeros].
 
 - **2026-06-06 — M2b [DEFINE · anchored]: wrote the hinge clause C3b as a REPRESENTABILITY sub-problem —
   the radius datum is a FUNCTOR `rad : LocFac → 𝔾_m` of the local Euler factors `{L_p}` — and ANCHORED it
