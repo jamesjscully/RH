@@ -15,62 +15,98 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-**HEADLINE — pass-5 convergence (the REAL-FORM family is exhausted; the wall is REALITY, not the
-congruence-lock; the zeros need an ORIENTED/holomorphic form).** RH = a **ζ-intrinsic, Euler-borne
-coupling of MODULUS and PHASE** = the Weil explicit-formula domination `W_∞ ≥ Σ_p W_p`. Two nested
-closures now stand. **(i) The self-pairing family** `(plant)ᵀ(fixed DH-shared form)(plant)` (symmetric
-`TᵀAT`, θ-twist `TᵀAΘT`, Hermitian `Tᵀ(A+iAJ)T`) is Sylvester-locked. **(ii) STRONGER — the entire REAL
-non-congruence family is closed too:** forms built FROM `T`'s own entries (the non-self-adjoint part
-`T−Tᵀ`, the FE-defect `T−ΘTᵀΘ`, the self-commutator `[T,Tᵀ]`) — NOT congruences, Sylvester inapplicable
-— STILL do not flip on/off-line, even for a genuinely NON-normal causal Frobenius operator
-(`‖[T,Tᵀ]‖≈54`). The reason is a named obstruction SUPERSEDING Sylvester: **`sign(Im ρ)` is
-intrinsically COMPLEX and conjugation `ρ↔ρ̄` is a symmetry of ALL real data, so NO real form's inertia
-can encode it** — off-line-ness enters every real form only as `|ρ|`/`β`-symmetric MODULUS, never as the
-`sign(Im)` PHASE. The congruence-lock was a *symptom*; the disease is **reality**. **CORRECTED target:
-a form on which complex conjugation acts NON-trivially — a genuine Hodge `(p,q)` bigrading distinguishing
-`H^{p,q}` from `H^{q,p}` (an oriented `(1,0)`-form / oriented polarization), NOT the conjugation-INVARIANT
-Hermitian `A+iω`.** The phase the whole program seeks IS the broken-conjugation Hodge weight, reached
-from the oriented/holomorphic side.
+**HEADLINE — pass-6 convergence (the ENTIRE self-pairing family is closed — symmetric, Hermitian,
+real-twisted, oriented/holomorphic, real OR complex plant; the lock is the CONGRUENCE STRUCTURE itself,
+not the reality of the data; the FORM must depend on the zero LOCATIONS).** RH = a **ζ-intrinsic,
+Euler-borne coupling of MODULUS and PHASE** = the Weil explicit-formula domination `W_∞ ≥ Σ_p W_p`.
+Three nested closures now stand. **(i)** The self-pairing family `(plant)ᵀ(fixed DH-shared form)(plant)`
+(symmetric `TᵀAT`, θ-twist `TᵀAΘT`, Hermitian `Tᵀ(A+iω)T`) is Sylvester-locked. **(ii)** The entire REAL
+non-congruence family (forms built FROM `T`'s entries: `T−Tᵀ`, `T−ΘTᵀΘ`, `[T,Tᵀ]`) does not flip even for
+a genuinely non-normal causal Frobenius operator. **(iii) STRONGEST — the ORIENTED/holomorphic escape is
+closed too:** the signed Hodge weight `⟨P^{1,0}x,P^{1,0}x⟩−⟨P^{0,1}x,P^{0,1}x⟩` **COLLAPSES** (exact, via
+`J^TA=−AJ`) to `Q=−iω` — a FIXED Hermitian background, the imaginary part of the already-closed `A+iω`;
+and even a genuinely COMPLEX ORIENTED plant `e^{iγu}` (`‖[T_c,J]‖≈16–22`) does NOT flip it. The reason,
+the strongest naming of the wall yet [THM]: **Sylvester's law of inertia holds for ANY invertible
+`*`-congruence, REAL OR COMPLEX** — so the wall was NEVER the reality of the plant; it is that ANY
+`(plant)^*(fixed Hermitian form)(plant)` is inertia-locked, period. **CORRECTED target: the FORM the
+plant pairs against must itself DEPEND ON THE ZERO LOCATIONS** = the operator domination `A ⪰ P` /
+`W_∞ ≥ Σ_p W_p` directly, NOT any congruence/self-pairing of a fixed form.
 
-1. **[CONSTRUCT · load-bearing — the ORIENTED/holomorphic target, after REALITY closed the real-form
-   family]** The corrected "zeros-in-the-FORM" target (`zero_in_form_pairing.py`, DONE top) closed by a
-   STRONGER obstruction than Sylvester: `sign(Im ρ)` is intrinsically COMPLEX and **conjugation
-   `ρ↔ρ̄` is a symmetry of ALL real data**, so NO real form's inertia (congruence OR non-congruence,
-   symmetric OR genuinely non-normal) can encode it. The next axiom: a form on which **complex
-   conjugation acts NON-trivially** — a genuine Hodge `(p,q)` bigrading where `H^{p,q}` and `H^{q,p}` are
-   DISTINGUISHED (an oriented `(1,0)`-form / a polarization with a chosen orientation), NOT the
-   conjugation-INVARIANT Hermitian `A+iω` of `complex_structure_pairing` (that kept inertia real, locked).
-   Concretely: build the holomorphic `(1,0)` projector `P^{1,0}=½(Id−iJ)` and pair the plant against the
-   ORIENTED form `⟨P^{1,0}x, P^{1,0}x⟩ − ⟨P^{0,1}x, P^{0,1}x⟩` (the signed Hodge weight, NOT the
-   conjugation-symmetric sum), and test whether THAT flips on/off-line. The off-line plant must inject a
-   genuine `γ` (height/phase), not just the conjugation-symmetric real pair `(β,1−β)`. `falsify.py`.
-2. **[ANALYTIC · load-bearing — re-promoted: the coupling, not another congruence]** The self-pairing
-   family is exhausted; return to the **Weil explicit-formula domination `W_∞ ≥ Σ_p W_p` directly** as the
-   object to construct, NOT a geometric congruence of it. The decisive fact from the closed routes: the
-   archimedean form `A` is **indefinite** (`A^{1/2}` nonexistent — `Re ψ(¼+ir/2)` not sign-definite) AND
-   DH-shared; the prime form `P` (Euler-borne) enters `W=A−P` *dominated*. RH ⟺ the finite Euler piece
-   `P`'s **negative directions are out-dominated** by `A`'s positive ones (the `(1,ρ−1)` single `+`). Is
-   there a ζ-intrinsic inequality `A ⪰ P` (operator domination) that is Euler-borne AND not = the Weil
-   positivity? (The wall, but posed as an operator inequality on two EXPLICIT Gram matrices, both
-   executable — test whether `A−P` PSD-ness sees the off-line plant where the congruences did not.)
-4. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
+1. **[ANALYTIC · load-bearing — re-promoted to TOP: the coupling, not another congruence; the self-pairing
+   family is FULLY EXHAUSTED]** Every self-pairing of a FIXED form is now closed (symmetric, Hermitian,
+   real-twisted, oriented signed-Hodge; real OR complex plant — `oriented_hodge_pairing.py`, DONE top).
+   Return to the **Weil explicit-formula domination `W_∞ ≥ Σ_p W_p` directly** as the object to construct.
+   The decisive fact: the archimedean form `A` is **indefinite** (`A^{1/2}` nonexistent — `Re ψ(¼+ir/2)`
+   not sign-definite) AND DH-shared; the prime form `P` (Euler-borne) enters `W=A−P` *dominated*. RH ⟺ the
+   finite Euler piece `P`'s negative directions are out-dominated by `A`'s positive ones. Build the two
+   EXPLICIT Gram matrices `A` (archimedean, DH-shared) and `P` (prime, Euler-borne) and test whether
+   `A−P` PSD-ness — i.e. the OPERATOR INEQUALITY `A ⪰ P` where the form itself is `A−P`, NOT a congruence
+   `Tᵀ(·)T` — SEES the off-line plant where every congruence did not. This is the first object where the
+   form depends on the zero locations (through `P` carrying the planted resonance), so Sylvester does NOT
+   apply. `falsify.py`.
+2. **[CONSTRUCT · load-bearing — the form must DEPEND ON the zero locations, not be a congruence]** The
+   unified lesson of pass-6: a flip is impossible for ANY `(plant)^*(fixed form)(plant)` because Sylvester
+   locks every invertible congruence (real or complex). So the candidate must NOT be a self-pairing — the
+   bilinear form `B(x,y)` itself must carry the zero locations as DATA. Two named candidates where the
+   form's matrix entries are functions of the planted resonance (so inertia CAN move with no congruence):
+   (a) the **Weil form `W = A − P`** read DIRECTLY as a quadratic form whose `P` block carries the plant
+   (item #1's executable version); (b) a **resonance kernel** `K_ij = Σ_ρ φ̂(γ_ρ; cᵢ) φ̂(γ_ρ; cⱼ)` summed
+   over the ACTUAL zero set (on-line vs planted off-line) — a Gram of the zeros themselves, whose
+   signature is `(0,N,0)` iff all `γ_ρ` real. Test both through `falsify.py`; the discriminator from the
+   closed routes is whether sees-zeros survives WITHOUT being = the Weil/Li positivity (independence).
+3. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
-5. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
+4. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
    self-pairing, does the **phase/reality** structure (not the modulus) survive, and where does it diverge?
-6. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
+5. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
    represent (Brown representability / moduli)? The square root taking the edge-modulus to the line-phase.
-7. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
+6. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
    obstruction-cocycle names the next axiom.
-8. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
+7. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
    from the Maass/Petersson norm (modulus). Predicted distinct (DONE) — confirm or break.
-9. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
+8. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
    positivity (Jensen/Nevanlinna `log|m|` + winding) make modulus⊗phase ONE identity? Lower priority —
    prefer construction.
 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Built NEXT #1's CORRECTED target (the ORIENTED signed Hodge weight, on which complex
+  conjugation acts non-trivially) and CLOSED the oriented/holomorphic escape: the signed Hodge form
+  COLLAPSES (exact) to `Q=−iω`, a FIXED Hermitian background, and even a genuinely COMPLEX ORIENTED
+  plant does not flip it — Sylvester holds for ANY invertible `*`-congruence, real OR complex.**
+  [CONSTRUCT · load-bearing → the WHOLE self-pairing family is now exhausted; the form must depend on the
+  zero LOCATIONS]. `scripts/numerics/witness/oriented_hodge_pairing.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-oriented-hodge-pairing.md`. **Finding [THM+computed]:** built the holomorphic
+  `(1,0)` projector `P^{1,0}=½(Id−iJ)` and the ORIENTED signed Hodge weight
+  `Q(x)=⟨P^{1,0}x,P^{1,0}x⟩_A−⟨P^{0,1}x,P^{0,1}x⟩_A` (NOT the conjugation-symmetric sum). **DECISIVE
+  ALGEBRA (exact, even-`(p,q)` bases dim 8,10):** `Q=−(i/2)(AJ−JᵀA)`, and the `A`-orthogonality identity
+  `JᵀA=−AJ` (`‖·‖≈5e-14`) COLLAPSES it to **`Q=−iω=−i·AJ`** — the ORIENTED form IS the Kähler 2-form, a
+  FIXED Hermitian matrix (the imaginary part of the very `H=A+iω` `complex_structure_pairing` closed);
+  the conjugation-SYMMETRIC sum is exactly `A` (`‖Q_sum−A‖≈5e-14`). So 'orientation' changes WHICH fixed
+  Hermitian background (`−iω` vs `A`) but NOT the lock. **FALSIFIER:** (a) REAL FE-pair plant —
+  `inertia(TᵀQT)` does NOT flip on/off-line (`(4,4,0)=(4,4,0)` dim8, `(5,5,0)=(5,5,0)` dim10). (b)
+  **STEELMAN — genuinely COMPLEX ORIENTED plant `e^{iγu}`** (the `(1,0)` phase, NOT `cos(γu)`;
+  `‖[T_c,J]‖≈16–22` genuinely J-coupled, `det≠0`): STILL no flip on/off-line AND does NOT distinguish
+  `+γ` from `−γ` (the oriented form does not even see the plant's phase orientation). **REASON, the
+  STRONGEST naming yet [THM]: Sylvester's law of inertia holds for ANY invertible `*`-congruence, REAL OR
+  COMPLEX** (verified on generic complex Hermitian `Q`). So the wall was NEVER the reality of the PLANT
+  (the agenda's hope that a complex/oriented plant escapes is WRONG) — it is that ANY
+  `(plant)^*(fixed Hermitian form)(plant)` is inertia-locked, period. `inertia(Q)=inertia(−iω)`
+  DH-shared (`A` FE-derived, `max|A_ζ−A_DH|=0`). **Verdict: Euler-borne YES (`op_diff≈1.80`), sees-zeros
+  NO, independent NO → RH-SILENT. 26th Euler-product confirmation.** **DECISIVE LESSON:** orienting the
+  FORM does not help because the lock is the **congruence structure of self-pairing**, not the reality of
+  the data; the agenda's "reality is the disease" was correct that no real form encodes `sign(Im ρ)`, but
+  the proposed cure (complex/oriented form + plant) fails for the stronger reason that Sylvester holds
+  over ℂ. UNIFIES the WHOLE self-pairing family (symmetric `TᵀAT`, real-θ-twist `TᵀAΘT`, Hermitian
+  `Tᵀ(A+iω)T`, oriented `T^*(−iω)T`; real OR complex plant) under ONE wall in its strongest form. **A
+  flip requires the FORM the plant pairs against to itself DEPEND ON THE ZERO LOCATIONS** = the Weil
+  coupling `W_∞≥Σ_p W_p` / the operator domination `A⪰P` (re-promoted to NEXT #1). Honest subtlety: the
+  odd-`(p,q)` basis (dim 6) carries a `0.33` `A`-orthogonality residual; load-bearing EXACT facts are the
+  even-`(p,q)` cases — `Q=−(i/2)(AJ−JᵀA)`, `JᵀA=−AJ`, the collapse `Q=−iω`, `Q_sum=A`, the no-flip of
+  both real and complex/oriented plants, and the generic-matrix complex-`*`-congruence inertia
+  preservation.
 - **2026-06-06 — Built NEXT #1's CORRECTED target (the zeros enter the FORM, not the congruence) as the
   named non-congruence forms `T−Tᵀ`, `T−ΘTᵀΘ`, `[T,Tᵀ]`, and CLOSED it by a STRONGER obstruction than
   Sylvester: `sign(Im ρ)` is intrinsically COMPLEX and conjugation `ρ↔ρ̄` is a symmetry of all real
