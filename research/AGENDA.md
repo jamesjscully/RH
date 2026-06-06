@@ -24,21 +24,24 @@ Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction targ
 whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
 number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-1. **[CONSTRUCT · load-bearing]** The NAIVE product surface `S × S` is now CLOSED (DONE #0/top):
-   its Künneth cross slot `C = A⊗P + P⊗A` FACTORIZES through the base single-place forms (the
-   archimedean factor `A` is exactly DH-shared, `max|A_ζ−A_DH|=0`; on=off-line signature, RH-silent).
-   The measurement: the second dimension is NECESSARY but the **product** surface is the WRONG one — its
-   `H¹⊗H¹` splits as `base⊗base`, so the diagonal `Δ` is DECOMPOSABLE and `Δ·Δ` reduces to base data.
-   **Sharpened target: a NON-PRODUCT surface whose `H¹⊗H¹` does NOT split as `base⊗base` — i.e. a Hodge/
-   Néron–Severi class NOT of product type, so the diagonal is an INDECOMPOSABLE correspondence = the
-   missing `End(S²/ℤ)`.** This UNIFIES the "second dimension" target with the three prior names of the
-   missing algebra: the polarization relation `F^†=(deg)F^{-1}` (`frobenius_self_norm.py`), the Rosati
-   off-diagonal `Tr F` *as a correspondence* (`off_diagonal.py`), the BGS §6.3 Kähler `c₁(H,k)`
-   (`arakelov_signature.py`). Concretely attack: (i) is there a ζ-intrinsic NON-product 2-dim object
-   (the diagonal indecomposable) — does the condensed/tropical corner (NEXT #2/#3) supply one? (ii)
-   what algebraic structure on the base makes `Δ` indecomposable (a Hecke/correspondence module, NOT a
-   tensor square)? Run the falsifier on any candidate: does its `H¹⊗H¹` slot fail to factor through the
-   base (NOT `A⊗P+P⊗A`), and does its signature DISTINGUISH on- from off-line? falsify.py.
+1. **[CONSTRUCT · load-bearing]** The non-product correspondence's SYMMETRIC self-intersection is now
+   CLOSED too (DONE #0/top): the ζ-intrinsic Hecke correspondence `Γ_T` (graph of the explicit-formula
+   prime-shift operator `T`) IS genuinely non-product (`‖[T,A]‖~30–47 ≫ 0` while `‖[Id,A]‖=0`, robust 3
+   bases — prongs i & ii ANSWERED), BUT its graph self-pairing `F=TᵀAT` is a **Sylvester congruence** of
+   the DH-shared archimedean metric `A`, so `sig(F)=sig(A)` for any plant (signature does NOT flip
+   on/off-line) → RH-SILENT. Indecomposability of the OPERATOR is necessary; SYMMETRIZING into the graph
+   self-intersection (a NORM-SQUARE = the MODULUS) re-collapses to a congruence of `A`, blind to the line.
+   Same Sylvester-congruence trap as `green_current_perturbation.py` CASE 1. **Sharpened target: a
+   ζ-intrinsic non-product correspondence whose self-pairing is NOT the symmetric congruence `TᵀAT` (the
+   modulus, signature-locked by Sylvester) but a PHASE-carrying / `θ`-twisted pairing `Tᵀ A θ T` (θ = the
+   FE involution) whose signature is NOT congruence-locked to `A` — i.e. the off-diagonal/phase info that
+   the symmetrization throws away.** The obstruction is now precisely named: symmetric congruences
+   preserve inertia (Sylvester); RH content needs a pairing that BREAKS the congruence form (an
+   anti-symmetric / `θ`-twisted intersection). Run the falsifier on any candidate: is its self-pairing a
+   congruence of `A` (then signature-locked, RH-silent), or does it carry the phase and DISTINGUISH on-
+   from off-line via a SIGNATURE flip with the FE-forced Weil pair? `falsify.py`. (Unifies with the
+   missing-algebra names: polarization `F^†=(deg)F^{-1}` `frobenius_self_norm.py`, Rosati off-diagonal
+   `Tr F` `off_diagonal.py`, BGS §6.3 Kähler `arakelov_signature.py`, all now = "break the `A`-congruence".)
 2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
@@ -57,6 +60,36 @@ number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Attacked NEXT #1's SHARPENED target (a NON-PRODUCT correspondence whose `H¹⊗H¹` does
+  not split as `base⊗base`) via the ζ-intrinsic HECKE correspondence, and got a TWO-PART result:
+  indecomposability is ACHIEVED (`‖[T,A]‖≫0`) but its symmetric self-intersection is a Sylvester
+  congruence of the DH-shared archimedean metric, hence RH-SILENT.** [CONSTRUCT · load-bearing → prongs
+  i & ii answered; obstruction renamed to "break the `A`-congruence"].
+  `scripts/numerics/witness/hecke_correspondence.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-hecke-correspondence.md`. **Finding [THM+computed]:** built the ζ-intrinsic
+  Hecke-like correspondence = the explicit-formula prime side AS AN OPERATOR `(Tf)(u)=Σ Λ(n)/√n
+  (f(u−log n)+f(u+log n))/2` (Eichler–Shimura: `Frob` IS such a correspondence; ζ being GL(1) has no
+  Hecke eigenform, so this is the ζ-intrinsic surrogate). **(1) INDECOMPOSABILITY ACHIEVED (prongs i &
+  ii):** `T` is genuinely NON-PRODUCT — `‖[T,A]‖~30–47 ≫ 0` (robust 3 bases) while the diagonal `Δ=Id`
+  has `‖[Id,A]‖=0` EXACTLY; off-diagonality (the Hecke shift) supplies the non-product Néron–Severi class
+  the agenda asked for, `H¹⊗H¹` via `Γ_T` does NOT factor as `base⊗base`. **(2) BUT the graph
+  SELF-INTERSECTION washes it out:** `F=TᵀAT` is a CONGRUENCE of the archimedean metric `A` (`det T≠0`),
+  so by **Sylvester's law of inertia** `sig(F)=sig(A)` for ANY plant; `sig(A)` is DH-shared
+  (`max|A_ζ−A_DH|=0`), so the signature does NOT flip on- vs off-line with the FE-forced Weil pair
+  (`(3,2,0)` both, robust 3 bases). The scalar self-int DOES move (`31519` on vs `29966` off) but that is
+  monotone-in-`β` noise, NOT line-specific (signature is the genuine Weil content). **Verdict: Euler-borne
+  YES, non-product YES, sees-zeros via scalar YES but SIGNATURE congruence-locked to DH-shared `A` →
+  RH-SILENT.** **22nd Euler-product confirmation.** Decisive lesson: indecomposability of the OPERATOR is
+  necessary but symmetrizing into the graph self-pairing `TᵀAT` (a NORM-SQUARE = the MODULUS) re-collapses
+  to a congruence of `A`, blind to the line — the **SAME Sylvester-congruence trap** as the green-current
+  route (CASE 1). Two distinct construction routes hit the identical obstruction: any object built as a
+  congruence of the archimedean form is signature-locked → RH-silent. Renames the obstruction precisely:
+  the missing `End(S²/ℤ)` must couple non-productness to the PHASE/reality — a `θ`-twisted/anti-symmetric
+  pairing that BREAKS the `A`-congruence (Sylvester preserves inertia; phase must escape it), NOT a
+  symmetric `TᵀAT`. Re-converges with the HEADLINE modulus⊗phase reading: `Γ_T·Γ_T=Tr(T^*T)` is a
+  norm-square = the modulus, which cannot carry the `(1,ρ−1)` phase signature. Honest subtlety: coarse
+  5–7 center basis; load-bearing EXACT facts are `‖[Id,A]‖=0`, `‖[T,A]‖≫0` (3 bases), `det T≠0`, and the
+  Sylvester congruence `sig(TᵀAT)=sig(A)` (verified directly, plant-independent, basis-robust).
 - **2026-06-06 — Attacked the surface `S²/ℤ` DIRECTLY as a representability question (NEXT #1, after the
   metric route closed) and CLOSED the naive product surface `S × S`: its Künneth cross slot FACTORIZES
   through the base single-place forms — the second dimension is necessary but the PRODUCT is the wrong
