@@ -243,3 +243,38 @@ far too weak to flip a sign. **The forcing is a VALUE GAP `‖P_ζ − P_DH‖` 
 places before it becomes a SIGN** (consistent with `li_positivity.py`: DH's failure first appears at
 Li index `n≈521` = *many* primes). Next: sweep `S={∞,2,3,5,…}` for the place-count `|S|` where DH's min
 eigenvalue first goes negative while ζ stays PSD.
+
+## L. Worker E (Hecke/Euler dual certificate) — the certificate ladder, and the edge→line gap (2026-06-06)
+
+`hecke_certificate.py`, `research/work/E-hecke-certificate.md`. Thread 4's Euler/Hecke side (the door
+left closed). Two routes:
+
+- **Route I — the Hecke L-function's own Li/Weil positivity** `Re λₙ(π) ≥ 0` [THM, Li 2004]:
+  **CIRCULAR** (= GRH for `L(s,π)`; swapping ζ's unproven positivity for `L(s,f)`'s is no lever).
+- **Route II — the symmetric-square / Rankin–Selberg `L(s,f×f̄)`**, Dirichlet coefficients provably
+  `≥0` (an Euler-product norm-square): **the best automorphic candidate the audit produced.**
+  Euler-borne in the *strongest* form (DH has no Satake parameters ⟹ no sym²/RS exists ⟹ DH can't even
+  be ingested) **AND INDEPENDENT** — the `L(1,sym²) ≫ 1/log k` bound is **unconditional** (Hoffstein–
+  Lockhart / GHL, the Siegel-zero exclusion). **The first candidate to clear Euler-borne AND
+  independent.** But it **stalls on sees-zeros: it is EDGE (`Re s=1`) positivity** — it excludes one
+  *real* exceptional (Siegel) zero and is **blind to whether the complex zeros sit on `Re s=½`.**
+
+**The structural reason, and the cleanest statement of the wall (8th Euler-product confirmation):**
+coefficient/value positivity of an Euler product is *structurally a half-plane* (`Re s ≥ 1`)
+certificate; the critical line `Re s=½` is the **reflected centre** that no edge-positivity reaches —
+the same shape Worker C found (Euler product in the *values*, the *sign* forcing the line never
+appears).
+
+> **THE CERTIFICATE LADDER (the final formulation):**
+> - Eisenstein certificate → certifies the **archimedean** place (ζ = DH agree) — RH-NEUTRAL
+> - Hecke/Euler certificate → certifies the **edge `s=1`** (Siegel / zero-free) — Euler-borne +
+>   independent, but RH-SILENT on the line
+> - FORCING certificate → would certify the **line `Re s=½`** — **STILL EMPTY**
+>
+> The continuation problem = **bridge EDGE positivity (`s=1`, Euler product, provable) to LINE
+> positivity (`s=½`, RH).** The Euler product gives the edge; the line is its reflected centre; the
+> bridge is the unmoved cross-place coupling `W_∞ ≥ Σ_p W_p` = the missing object.
+
+**Thread 4 is now closed on both sides** (period = dispersing; Hecke/Euler = circular/RH-silent). The
+audit of reformulations is complete: no reformulation in reach forces the line; the edge→line gap
+requires the actual geometric/automorphic object.
