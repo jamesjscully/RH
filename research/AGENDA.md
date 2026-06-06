@@ -51,22 +51,27 @@ an expected proof.** The precise shape: over `𝔽_q` the even split is forced b
 Deligne's nilpotent `N` (geometric monodromy) whose filtration = the weight filtration (Weil II). *Is
 there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?*
 
-R2. **[RESIDUE · Schmid SL(2)-orbit — NOW THE TOP ITEM, sharpened by R1]** R1 (DONE) pinned the
-   archimedean `N` to four axioms **(N1)** nilpotent `N^{w+1}=0`, **(N2)** a `(−1,−1)`-morphism of the
-   polarized HS (`N(F^p)⊆F^{p−1}`, `c`-compatible), **(N3)** `M(N)=W` (the archimedean weight-monodromy),
-   **(N4)** the RADIUS compatibility (on `gr^M_k` the `C_W` radius/scale `d` has modulus `q^{k/2}`). Connect
-   to the **limiting mixed Hodge structure / Schmid's SL(2)-orbit theorem** — where monodromy-weight IS a
-   theorem at `∞`. **The decisive question R1 sharpened:** does the SL(2)-orbit's nilpotent satisfy **(N4)**
-   — supply the *radius* (forcing `|α|=|β|`) — or only **(N1)–(N3)** plus the (free) weight *parity*
-   `(−1)^w`, with the radius still residual? (Expected: the M3b lesson recurs — phase/parity free, radius
-   residual; the SL(2)-orbit gives the `𝔰𝔩₂` symmetry of `M(N)` but the *scale* `d=q^{k/2}` is the Euler
-   datum it cannot supply at `∞`.) Anchor: build the SL(2)-orbit `N` for a degenerating family of HS and
-   check which of (N1)–(N4) it meets.
-R3. **[RESIDUE · Connes–Consani scaling site]** Connect to the **scaling action / absolute Frobenius**
-   (Riemann–Roch for `Spec ℤ`). Is the scaling generator the archimedean `N` (of R1's axioms (N1)–(N4))?
-   Does its weight filtration force purity / supply the radius (N4), or is the scaling action radius-silent
-   like every other free piece? Specifically: is `t∂_t` (the scaling generator) nilpotent on the relevant
-   graded, and does its `M(N)` match the weight filtration with the right `q^{k/2}` scale?
+R3. **[RESIDUE · Connes–Consani scaling site — NOW THE TOP ITEM, sharpened by R2]** R2 (DONE) PROVED
+   Schmid's SL(2)-orbit `N` supplies **(N1)–(N3)** + the FREE weight parity `(−1)^w` but **NOT (N4) the
+   radius**: a real/complex polarized Hodge structure carries no Frobenius eigenvalue / no base size `q`,
+   so the radius is the *arithmetic* datum absent at `∞` (over `𝔽_q` the radius is forced by the `ℓ`-adic
+   Frobenius, the EXTRA factor `∞` lacks; the SL(2)-orbit datum is DH-shared). **R2 isolated EXACTLY what
+   R3 must supply: not another `(p,q)` centering (free, DH-shared, radius-silent) but an ARCHIMEDEAN BASE
+   SIZE `q` coupling the grading to a modulus.** Connect to the **scaling action / absolute Frobenius**
+   (Connes–Consani, Riemann–Roch for `Spec ℤ`): is the scaling generator `t∂_t` (or `Frob_∞` on the
+   scaling site) the archimedean `N` (R1's (N1)–(N4)) — and crucially, does its action carry an
+   **arithmetic scale `q` at `∞`** (a `ℝ_{>0}^×`-grading / the `|·|_∞` size), forcing **(N4)** the radius
+   `q^{k/2}` = `Re s=½`? Or, like Schmid's `N`, does it deliver only the parity, with the scale still free?
+   (Success criterion, sharpened by R2: the scaling `N` must supply the modulus `q`, the one thing the
+   Hodge SL(2)-orbit cannot. Falsify: the scale must be DH-distinguishing — DH has no Euler product, so no
+   archimedean scale to match.)
+R3b. **[RESIDUE · the arithmetic scale at `∞`, named by R2]** R2 named the missing object precisely: a
+   structure coupling the `(p,q)`-grading to an **arithmetic base size `q` at infinity**. This is the same
+   gap as M3b's `(−1)^w`-vs-`q` and K2r-fix's phase-vs-scale, now localized to the monodromy `N`: the
+   archimedean `N` exists Hodge-theoretically (Schmid) but is **scale-free**; the residue is the
+   `ℝ_{>0}`-graded line / valuation supplying `q^{w/2}` at `∞` that is NOT a `(p,q)` datum. Connect to
+   `𝔽₁`/GANTM and the K6 non-metric degree (a `ℚ_{>0}`-graded line). Anchor: does ANY archimedean
+   `ℝ_{>0}`-grading reproduce the FF Frobenius scale `q^{k/2}` on `gr^M_k`?
 R4. **[RESIDUE · the missing operator — PARTLY DONE by R1, residual = the EXISTENCE/construction]** R1
    already STATED the four axioms (N1)–(N4) an archimedean `N` must satisfy AND located the obstruction
    (`ℤ` lacks the geometric degeneration `𝔽_q` uses to supply `N`; DH fails at (N3): no `W`). The residual
@@ -308,6 +313,40 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R2 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: PROVED Schmid's SL(2)-orbit `N`
+  supplies (N1)–(N3) + the FREE weight parity `(−1)^w` but NOT (N4) the radius — the M3b lesson recurs;
+  the missing archimedean `N` must couple the `(p,q)`-grading to an ARITHMETIC SCALE `q` at `∞`, which
+  the Hodge SL(2)-orbit (DH-shared, phase-only) cannot supply.** [RESIDUE · DEF · coherence-checked vs
+  𝔽_q]. `research/construction/R2-schmid-sl2-orbit-radius.md`,
+  `scripts/numerics/witness/schmid_sl2_orbit_radius.py` (+1 `falsify.py` row → 36th wall confirmation,
+  DISPERSING-by-design on the SL(2)-orbit/Hodge half). **What got CHECKED (exact mpmath 40dps; weight-1
+  HS; Jordan-structured `N`):** **[1]** Schmid's `N` gives (N1)–(N3) at `∞` — the `sl_2` symmetry of
+  `M(N)=W` is pure Hodge/filtration data (NO zeros, NO `q`): Jordan `[1,1],[2],[3],[2,2]` → `M(N)=W`
+  weights `[1,1],[0,2],[−1,1,3],[0,0,2,2]`, all symmetric about `w=1`. **[2]** its centering delivers the
+  WEIGHT PARITY `C²=(−1)^w=−1` (a SIGN, M3b's phase), and (N4)'s radius `|α|=q^{k/2}` CANNOT be read off
+  Schmid's `N` alone (`q_available=False`): a real/complex polarized HS carries no Frobenius eigenvalue,
+  no base size `q`. **[3]** the parity is RADIUS-SILENT — `q=9` vs `q=25` give SAME parity `−1`, DIFFERENT
+  radii `3` vs `5`; fixing parity does not pin `|α|`, the radius is ORTHOGONAL to the SL(2)-orbit phase
+  datum (= K2r-fix). **[4]** FF cross-check: over `𝔽_q` the SAME Schmid `N` exists (degenerating curves)
+  and the radius IS forced — but ONLY because the `ℓ`-adic Frobenius supplies `q` (centre radii `2,3,5`
+  for `q=4,9,25`, from the Frobenius NOT Schmid's `N`); the Hodge/SL(2) data is IDENTICAL between `𝔽_q`
+  and `∞`, the EXTRA ingredient is the base size `q`. **Falsifier verdict:** EULER-BORNE NO on this pass
+  (the SL(2)-orbit/Hodge data is Euler-SILENT = the DH-SHARED archimedean structure: DH has the same
+  `Γ`-factor/archimedean Hodge type, so Schmid's `N` exists for DH too and is radius-silent for BOTH — the
+  SHARP DH verdict: Schmid's `N` is DH-shared, CANNOT be the discriminator, (N4)'s `q` is the only
+  DH-distinguishing datum and Schmid does not carry it; `DH=ζ` on the SL(2) datum `< FF` which adds the
+  arithmetic Frobenius), SEES-ZEROS YES (only via (N4), which Schmid lacks), INDEPENDENT NO (`M(N)=W ⟹`
+  purity over FF) → DISPERSING-by-design: the SL(2)-orbit is the PHASE half (free, DH-shared,
+  radius-silent), the radius is NOT here. **NEW content:** the M3b lesson made precise at the level of the
+  monodromy `N` — Schmid's archimedean weight-monodromy theorem reaches (N1)–(N3) + parity but the radius
+  `q^{w/2}` is an arithmetic datum no archimedean Hodge structure possesses; the residue is RE-SHARPENED to
+  "an archimedean base size `q` coupling the `(p,q)`-grading to a modulus", exactly what R3 (Connes–Consani
+  scaling/absolute Frobenius) must supply. **Successors added:** R3 promoted to TOP ITEM with the sharpened
+  success criterion (the scaling `N` must carry an arithmetic scale `q` at `∞`, not another `(p,q)`
+  centering); R3b [the arithmetic scale at `∞` as an `ℝ_{>0}`-graded line / valuation, connecting to
+  `𝔽₁`/GANTM and the K6 non-metric degree — does any archimedean grading reproduce the FF Frobenius scale
+  `q^{k/2}`?].
 
 - **2026-06-06 — R1 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: STATED the residue as the
   MONODROMY-WEIGHT question and ANCHORED the mechanism on 𝔽_q with NO zeros assumed — over `𝔽_q` the even
