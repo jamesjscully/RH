@@ -15,21 +15,21 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · prove the POSITIVITY `θFθ=F^*` independently]** DONE #0 (this pass)
-   showed the polarization RELATION `F·F^†=c·Id` is **NOT the wall** — at the archimedean place it IS the
-   functional equation `m(s)m(1−s)=c` (a free unitarity, RH-silent, holds for DH). The gap is localized
-   WITHIN the operator identity to its OTHER half: **prove `θFθ=F^*` (equivalently `m(1−s)=conj m(s)`,
-   the scattering resonances on `Re s=¼`/zeros on the line) INDEPENDENTLY of RH** — this is the CC20
-   Sonin-space positivity. Two concrete on-ramps surfaced: **(a)** CC20 prove the Sonin/scaling-
-   compression positivity up to a finite-rank defect (the low-lying zeros) — is that defect the SAME
-   "off-diagonal `Tr F`/prime sum" residual (`off_diagonal.py`), i.e. does `θFθ=F^*` reduce, modulo the
-   unconditional part, to the **cross-place coupling `W_∞ ≥ Σ_p W_p`**? (would UNIFY this pass with the
-   standing wall). **(b)** since the relation is the FE, `F` and `θFθ` are commuting multiplication
-   operators on the Mellin line and `θFθ=F^*` is a **reality** condition on the symbol — does the
-   **sym²/Rankin–Selberg norm-square** (A4 of `F-sym2-os-bridge`) supply that reality as a square-modulus
-   `m=|h|²·phase`, making `θFθ=F^*` automatic? (reconnects to the OS/A4 thread). Falsifier discipline:
-   the RELATION half is DISPERSING (the FE); the content is the POSITIVITY half, which is CIRCULAR until
-   an independent proof exists.
+1. **[CONSTRUCT · load-bearing · PHASE certificate — control `arg m` from the prime data]** DONE #0 (this
+   pass) pinned the residual gap `θFθ=F^*` to a **REALITY = PHASE condition** (`arg m` trivial /
+   resonances on `Re s=¼`), and showed its obstruction is **EXACTLY the out-of-window prime tail** (the
+   CC20 windowed-positivity defect = `Tr F` = `W_∞≥Σ_p W_p`), while the one unconditional positivity we
+   have — the **sym² square-modulus `|h|²`** — is provably the **MODULUS** (the edge `L(1,sym²)`), the
+   WRONG HALF (`|M|=1` on the line for ζ AND the off-line plant, RH-silent). So the next object is a
+   **certificate for the PHASE `arg m` (the winding / spectral count / argument principle), Euler-borne,
+   from the prime data — NOT a norm-square/modulus.** Concrete on-ramps: **(a)** the Birman–Krein phase
+   `d/dt arg S(½+it)` already SEES an off-line zero (`prime_reflection.py`: ζ −12.96 vs off-line −14.92)
+   — it COUNTS the winding; can it be made to FORCE (a positivity on the winding density, dominated by an
+   Euler-borne archimedean phase)? **(b)** is the phase/winding the **imaginary part** of a `log` whose
+   real part is the (RH-silent) sym² modulus — i.e. does `log m = log|h|² + i·arg m` split the
+   certificate into a free modulus (sym²) + the load-bearing phase, naming the phase as the unique gap?
+   Falsifier discipline: a modulus/norm-square candidate is RH-SILENT (DONE #0 (b)); a reduction to the
+   prime tail is CIRCULAR (DONE #0 (a)); the content is an INDEPENDENT phase/winding positivity.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -57,6 +57,30 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Tested BOTH NEXT #1 on-ramps for proving the positivity `θFθ=F^*` independently:
+  neither works — (a) reduces to the open cross-place coupling (CIRCULAR, but UNIFIES with the wall);
+  (b) the sym² norm-square controls the MODULUS not the PHASE (RH-SILENT). The reality is a PHASE
+  condition.** [CONSTRUCT · load-bearing → gap pinned to a PHASE/winding condition].
+  `scripts/numerics/witness/positivity_reality.py` (+ 2 `falsify.py` rows + auditor row),
+  `research/log/2026-06-06-positivity-reality.md`. **Finding [THM+computed]:** the residual gap
+  `θFθ=F^*` ⟺ `m(1−s)=conj m(s)` ⟺ resonances on `Re s=¼` is a **REALITY = PHASE condition** on the
+  symbol. **On-ramp (a)** CC20's windowed positivity `Tr(ϑ(g)Sϑ(g)*)≥0` (supp `g⊂|u|≤L`) = the explicit
+  formula on the window; its uncertified **DEFECT** is the out-of-window von-Mangoldt prime tail
+  `Σ_{log n>L}Λ(n)g(log n)/√n` (computed `0.168→1.5e-2→6e-4→1.1e-5` as `L:2→3→4→5`, a genuine
+  shrinking prime tail) = `off_diagonal.py`'s `Tr F` = the cross-place coupling `W_∞≥Σ_p W_p`. So
+  `θFθ=F^*` **reduces, modulo the windowed-unconditional part, to that OPEN coupling** → **CIRCULAR**,
+  but it **UNIFIES this pass with the standing wall** (CC20 finite-rank defect = prime-sum off-diagonal =
+  ONE object). **On-ramp (b)** the sym²/RS square-modulus `m=|h|²·phase` supplies `|m|=|h|²` (the
+  **MODULUS**, the edge `L(1,sym²)` Siegel positivity, unconditional). **Decisive MODULUS/PHASE split:**
+  `|M(½+it)|=1` on the critical line for **BOTH** RH-true `M` **AND** the off-line plant `M_off`
+  (verified `<1e-10` at `t∈{6,12,20,30}`, FE-forced, holds for DH) — while only the **resonance LOCATION**
+  (phase event at `Re=Re(ρ₀)/2=0.4≠¼`) distinguishes them. So the square-modulus controls the **WRONG
+  HALF** (modulus not phase) → **RH-SILENT** (Euler-borne YES, sees-zeros NO, independent YES); the SAME
+  edge→line gap as Worker E, now **MODULUS→PHASE**. **16th Euler-product confirmation; first to test both
+  NEXT #1 on-ramps executably.** Sharpens the gap to a **PHASE/`arg m` condition** whose obstruction is
+  the prime tail and whose one available positivity (sym² `|h|²`) is the wrong (modulus) half → surfaces
+  NEXT #1: a phase/winding (argument-principle, Birman–Krein) certificate from the prime data, not a
+  norm-square.
 - **2026-06-06 — Tested both on-ramps for the polarization relation `F·F^†=c·Id`: the RELATION is NOT
   the wall — it is the (free) functional equation; the POSITIVITY `θFθ=F^*` is the whole problem.**
   [CONSTRUCT · load-bearing → gap localized WITHIN the operator identity].
