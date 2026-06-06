@@ -161,3 +161,30 @@ Verdicts: **DISPERSING** / **RH-SILENT** (Euler-borne but blind to the zeros —
 catches QSM & prime-Gram) / **CIRCULAR** (= Weil/Li) / **FORCING** (the prize, still empty). Lesson
 baked into tooling: *passing the DH kill-test is necessary but cheap; the content is sees-zeros.* Run
 every future candidate through all three axes via `falsify.py` before believing it.
+
+## I. The continuation problem — the approach (2026-06-06)
+
+The audit isolated RH to the **continuation of the Euler-borne positivity across the archimedean↔prime
+divide**. Stated precisely: the explicit formula is a **Fourier/Poisson duality** between the prime
+scales `{log p^k}` and the zeros/archimedean spectrum; the Weil positivity `Σ_ρ|φ̂(γ)|² = W_∞(φ) −
+Σ_p W_p(φ) ≥ 0` is a **sign-uncertainty inequality** under that duality (a function and its transform
+cannot both concentrate against the primes without archimedean spectral cost).
+
+**Lead approach — Fourier optimization → exact interpolation (the Viazovska-era machinery).** This is
+exactly the problem class revolutionized post-2016:
+- classical: Beurling–Selberg extremal functions in the explicit formula (partial/conditional);
+- LP bound: Cohn–Elkies + the Bourgain–Clozel–Kahane sign-uncertainty;
+- the lever: **Radchenko–Viazovska Fourier interpolation + Viazovska modular magic functions** (exact
+  extremals where only LP bounds existed; solved sphere packing dims 8, 24).
+
+The bet: an exact **modular** magic function for the explicit-formula sign-uncertainty would be
+**Euler-borne** (modular forms carry the primes — *not* RH-silent) AND **sees-zeros** (interpolation
+nodes = the zeros) — the first candidate that could fill the empty **FORCING** slot. Worker D is on it.
+
+**Complementary handles.** (i) The **Hankel moment problem** — Weil form is Hankel (worker B), so RH ⟺
+the Li sequence is a Hamburger moment sequence ⟺ a positive spectral measure exists; the continuation
+= constructing it. (ii) The **dBN flow** (set aside) — the dynamical version of the same continuation.
+
+**Discipline.** Any continuation candidate must clear all three `falsify.py` axes; Euler-borne +
+sees-zeros is the bar (QSM/prime-Gram failed at sees-zeros). The Fourier/modular route clears both by
+construction — so it fails *honestly* (FORCING or a located wall), not RH-silently.
