@@ -15,21 +15,28 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · PHASE certificate — control `arg m` from the prime data]** DONE #0 (this
-   pass) pinned the residual gap `θFθ=F^*` to a **REALITY = PHASE condition** (`arg m` trivial /
-   resonances on `Re s=¼`), and showed its obstruction is **EXACTLY the out-of-window prime tail** (the
-   CC20 windowed-positivity defect = `Tr F` = `W_∞≥Σ_p W_p`), while the one unconditional positivity we
-   have — the **sym² square-modulus `|h|²`** — is provably the **MODULUS** (the edge `L(1,sym²)`), the
-   WRONG HALF (`|M|=1` on the line for ζ AND the off-line plant, RH-silent). So the next object is a
-   **certificate for the PHASE `arg m` (the winding / spectral count / argument principle), Euler-borne,
-   from the prime data — NOT a norm-square/modulus.** Concrete on-ramps: **(a)** the Birman–Krein phase
-   `d/dt arg S(½+it)` already SEES an off-line zero (`prime_reflection.py`: ζ −12.96 vs off-line −14.92)
-   — it COUNTS the winding; can it be made to FORCE (a positivity on the winding density, dominated by an
-   Euler-borne archimedean phase)? **(b)** is the phase/winding the **imaginary part** of a `log` whose
-   real part is the (RH-silent) sym² modulus — i.e. does `log m = log|h|² + i·arg m` split the
-   certificate into a free modulus (sym²) + the load-bearing phase, naming the phase as the unique gap?
-   Falsifier discipline: a modulus/norm-square candidate is RH-SILENT (DONE #0 (b)); a reduction to the
-   prime tail is CIRCULAR (DONE #0 (a)); the content is an INDEPENDENT phase/winding positivity.
+1. **[CONSTRUCT · load-bearing · COUPLE modulus⊗phase — the explicit-formula domination `W_∞≥Σ_p W_p`
+   as the SINGLE functional]** DONE #0 (this pass) tested NEXT #1's phase on-ramp (a) executably as a
+   *density* `w(t)=−(1/2π)d arg S/dt` and found the PHASE/winding is the RIGHT half (vs the RH-silent
+   sym² MODULUS) but is itself **CIRCULAR**: it sees-zeros only via the **GLOBAL** winding (Birman–Krein
+   count, ζ 12.96 vs off-line 14.92) — **counting ≠ forcing**; the **LOCAL** on-line density-positivity
+   `w(t)≥0` is **RH-NEUTRAL** (the off-line plant stays `w≥0` on `Re=½`; the backward winding `≈−2500`
+   lives at `Re=Re(ρ₀)/2=0.4`, the resonance line, NOT on ½ — so off-line-ness is read off the resonance
+   LOCATION, = ¬RH geometrically, not forced); and the only DOMINATOR of the signed prime phase is the
+   **archimedean `Γ_ℝ` background**, which DH shares (NOT Euler-borne). **DECISIVE LESSON: neither half
+   forces alone** — modulus (sym²) is Euler-borne+independent but RH-silent (blind to the line); phase
+   (winding) sees-zeros but is a count whose local positivity = RH with an RH-neutral dominator. So the
+   certificate **must COUPLE** the Euler-borne sym² modulus (which DH structurally LACKS) to the
+   line-detecting phase **in one functional whose positivity is precisely the domination `W_∞ ≥ Σ_p W_p`**
+   (the explicit-formula inequality = the standing wall, now reached from the argument-principle side:
+   the *prime* phase is signed, the *archimedean* phase must dominate it). Concrete on-ramps: **(a)** does
+   the sym²/RS Euler product supply an Euler-borne LOWER BOUND on the prime phase `w_zeros` that DH lacks
+   — i.e. is `log L(s,sym²)` the missing dominating phase (Euler-borne, unlike `Γ_ℝ`)? Test: is the sym²
+   *phase* (not modulus) `arg L(½+it,sym²f)` a quantity DH cannot form, and does it bound `w_zeros`?
+   **(b)** the `log m = log|h|² + i·arg m` split (still open from old NEXT #1): does it make the
+   *coupling* explicit — modulus and phase as one complex log whose total positivity (a Jensen/Nevanlinna
+   `log|m|` + winding identity) is the wall? Falsifier: a modulus alone is RH-SILENT; a phase alone is
+   CIRCULAR (counting); the content is the COUPLED domination, Euler-borne on BOTH halves.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -57,6 +64,33 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Built NEXT #1's PHASE certificate (on-ramp a) as a winding DENSITY and ran the
+  falsifier: the phase is the RIGHT half (vs the RH-silent modulus) but is CIRCULAR — it sees-zeros
+  only via the GLOBAL winding (counting ≠ forcing); the LOCAL on-line density-positivity is RH-neutral;
+  the only dominator is the archimedean Γ_ℝ phase (DH-shared, not Euler-borne).** [CONSTRUCT ·
+  load-bearing → phase half pinned; neither half forces alone].
+  `scripts/numerics/witness/phase_winding.py` (+ 1 sharpened `falsify.py` row),
+  `research/log/2026-06-06-phase-winding-certificate.md`. **Finding [THM+computed]:** the
+  scattering-phase winding density `w(t)=−(1/2π)d arg S(½+it)/dt` splits `w=w_arch−w_zeros` —
+  `w_arch=(1/π)dθ/dt` the **archimedean `Γ_ℝ`** (Riemann–Siegel `θ`) phase (smooth, positive, Euler-FREE,
+  **shared verbatim with DH**), `w_zeros` the resonance Poisson kernels (width = off-line distance).
+  **[B] sees-zeros via the GLOBAL winding** (Birman–Krein: `N_ζ=12.960` vs `N_off=14.919` over `[2,30]`).
+  **[C] DECISIVE HONEST NEGATIVE — local density-positivity is RH-NEUTRAL:** my hypothesis (off-line ⟹
+  `w<0` on the line) was refuted by the test — the off-line plant stays `w≥0` on `Re=½` (`min w=+4.2e-2`);
+  the backward winding (`w≈−2498`) lives **at `Re s=Re(ρ₀)/2=0.4`**, the resonance line, NOT on `½`
+  (verified `Re`-sweep `0.5:+4.0 → 0.45:+5.1 → 0.4:−2498 → 0.35:−1.6`). So off-line-ness is read off the
+  resonance LOCATION (= ¬RH geometrically), not forced by an on-line positivity. **[D] kill-test:** the
+  only DOMINATOR of the signed prime phase is `w_arch` = the `Γ_ℝ` background, which the archimedean-only
+  `S_inf` (no Euler product, no zeros) carries identically ⟹ **DH-shared, NOT Euler-borne.** **Verdict:
+  Euler-borne (the dominating positivity) NO, sees-zeros YES (global only), independent NO → CIRCULAR**
+  (same box as the prior Birman–Krein row, now sharpened: the PHASE is a WINDING COUNT, counting ≠
+  forcing). **17th Euler-product confirmation.** Decisive lesson: **neither half forces alone** — modulus
+  (sym²) Euler-borne+independent but RH-silent; phase (winding) sees-zeros but a count with an RH-neutral
+  dominator. Surfaces NEXT #1: COUPLE the Euler-borne sym² modulus to the line-detecting phase in ONE
+  functional = the explicit-formula domination `W_∞≥Σ_p W_p` (the wall, reached from the
+  argument-principle side: prime phase signed, archimedean phase must dominate); on-ramps (a) is
+  `log L(s,sym²)` an Euler-borne dominating phase DH lacks? (b) the `log m=log|h|²+i·arg m` split as the
+  explicit coupling.
 - **2026-06-06 — Tested BOTH NEXT #1 on-ramps for proving the positivity `θFθ=F^*` independently:
   neither works — (a) reduces to the open cross-place coupling (CIRCULAR, but UNIFIES with the wall);
   (b) the sym² norm-square controls the MODULUS not the PHASE (RH-SILENT). The reality is a PHASE
