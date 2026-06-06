@@ -76,6 +76,7 @@ REGISTRY = [
     ("Hecke L Li-positivity (route I)", True, True, False, "worker E: = GRH for L(s,π); circular"),
     ("sym²/Rankin–Selberg L(1,sym²) (route II)", True, False, True, "worker E: FIRST to clear independent (unconditional Siegel bound) -- but EDGE s=1, not line; RH-silent"),
     ("Hodge-index SIGNATURE of intersection form on H¹_prim", True, True, False, "signature_forcing.py: a FORM not a NUMBER -- Euler-borne (needs Satake lattice, DH-refuses) AND sees-zeros (off-circle Weil pair flips (0,2g,0)->(1,2g-2,1)); == Weil positivity over Z, CIRCULAR. Relocates ||f||²/deg·χ out of RH-SILENT"),
+    ("Rosati Gram [[||f||²,Tr F],[Tr F,<F,F>]] pos-def", True, True, False, "rosati_reflection.py: reflection θ=Rosati(=FE) carries EDGE norm-square F.F'=q to CENTRE |α|=√q via Rosati positivity (det M=4q-a²≥0 ⟺ on-line, all 5 planted cases). Edge diagonal ||f||² + reflection FE both transfer to Z; missing piece = the OFF-DIAGONAL Tr(F) (primes/cross-place coupling). CIRCULAR, but wall sharpened to ONE matrix entry: RH ⟺ |Tr F|²≤<Id,Id><F,F> (a Cauchy-Schwarz the primes must satisfy)"),
     ("scattering unitarity |S|=1", False, False, False, "stone 1: holds for off-line control too"),
     ("self-adjointness (Hilbert–Pólya)", False, False, False, "reflects, does not force"),
     ("de Branges reproducing kernel", False, True, False, "falsified, Conrey–Li 2000"),

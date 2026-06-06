@@ -15,19 +15,20 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · the unified positivity]** **The geometric Hodge-index signature and
-   the analytic OS/sym² positivity (A4) are THE SAME positive-definite form on the primitive part**
-   (DONE #1: `−1×`(intersection form on `H¹_prim`) is pos-def `⟺` an inner product `⟺` the OS/GNS
-   Hilbert space). The signature relocation landed in the **CIRCULAR box = Weil positivity over `ℤ`**,
-   side by side with the Weil/Li form (`signature_forcing.py`). So the next pass must attack the **one
-   shared positivity**, NOT two parallel threads. The genuine open implication, now sharply named and
-   identical on both sides: **(sym² coefficients form a norm-square at the edge `s=1`) ⟹ (the `H¹_prim`
-   intersection form is negative-definite / the OS form is positive across `s=½`)**. Re-run `method.md`
-   step 2 with this *unified* axiom: is there a **reflection/involution under which the edge norm-square
-   becomes the negative-definite primitive form at the centre**? Falsifier discipline: this is CIRCULAR
-   (= RH) until the *implication* is supplied independently; do NOT mistake a restatement for a proof.
-   Candidate levers for the implication itself: Rosati positivity (`F*F=q` over `𝔽_q` is a THEOREM —
-   what is its `ℤ`-analog?); the BGS positive-Green-form obstruction (auditor row, where it can fail).
+1. **[CONSTRUCT · load-bearing · the off-diagonal]** **RH = the Cauchy–Schwarz `|Tr F|² ≤
+   ⟨Id,Id⟩·⟨F,F⟩` on the Rosati Gram** (DONE #1, this pass). The unified-axiom reflection IS the Rosati
+   involution `θ(α)=q/ᾱ`(=FE); over `𝔽_q` the chain edge(`F·F'=q`)→centre(`|α|=√q`) is a THEOREM via
+   `M=[[2,a],[a,2q]] ⪰ 0 ⟺ a²≤4q`. Over `ℤ` the **diagonal `⟨Id,Id⟩=‖f‖²` (unconditional) and the
+   reflection FE both transfer**; the ONLY missing piece is the **off-diagonal `Tr(F)`** — the
+   primes/cross-place coupling. So the next pass must attack THIS single entry: **what gives the
+   off-diagonal `Tr(F)` an unconditional `ℤ`-meaning AND the Cauchy–Schwarz bound?** Decisive sub-
+   question surfaced this pass: over `𝔽_q` `Tr(F)` is the trace of a genuine endomorphism in
+   `End(Jac)`; over `ℤ` there is no `End(S²/ℤ)` — **the missing off-diagonal and the missing algebra-
+   of-correspondences are the SAME gap.** Candidate handles: (a) is `Tr(F)` the explicit-formula prime
+   sum `Σ_p Λ(p)…`, and does the diagonal `⟨F,F⟩` exist unconditionally (a "Frobenius norm" over `ℤ`)?
+   (b) the BGS positive-Green-form obstruction = where the Cauchy–Schwarz can fail. Falsifier
+   discipline: CIRCULAR until the off-diagonal bound is supplied independently; a restatement is not a
+   proof.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -55,6 +56,25 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Re-ran method.md step 2 with the UNIFIED axiom: the reflection IS the Rosati
+  involution (a THEOREM over `𝔽_q`), and the wall is ONE off-diagonal matrix entry.** [CONSTRUCT ·
+  load-bearing → mechanism named + wall pinned]. `scripts/numerics/witness/rosati_reflection.py` (+
+  `falsify.py` row), `research/log/2026-06-06-rosati-reflection.md`. **Finding [THM+computed]:** the
+  decisive question ("is there a reflection under which the edge norm-square becomes the neg-def
+  primitive form at the centre?") is answered **YES — the Rosati involution `θ(α)=q/ᾱ`=FE**, executable
+  end-to-end over `𝔽_q`: edge number `F·F'=q=deg` (=the FF `‖f‖²`, true off-line too) → reflection `θ`
+  (fixed locus `|α|=√q=Re s=½`) → **Rosati positivity `M=[[2,a],[a,2q]] ⪰ 0 ⟺ a²≤4q ⟺ |α|=√q` =RH for
+  the curve** (semidefiniteness tracks the line in all 5 planted cases incl. the boundary). `ℤ`-audit:
+  the **diagonal `⟨Id,Id⟩=‖f‖²` (unconditional, Siegel) and the reflection FE both transfer**; the only
+  missing piece is the **OFF-DIAGONAL `Tr(F)`** = the primes/cross-place coupling `W_∞≥Σ_p W_p`. So RH =
+  the **Cauchy–Schwarz `|Tr F|² ≤ ⟨Id,Id⟩⟨F,F⟩`** on the Rosati Gram — the reflection alone does NOT
+  make a positive `2×2` from one positive diagonal entry. Falsifier: **Euler-borne YES, sees-zeros YES,
+  independent NO → CIRCULAR** (=Weil positivity over `ℤ`, same box as signature/Weil–Li). **12th
+  Euler-product confirmation; sharpens the edge→line wall from "make the OS form positive" to a SINGLE
+  NAMED off-diagonal entry.** Honest subtleties recorded: (i) line=`a²≤4q`=positive-*semi*definite (not
+  strict; boundary supersingular has det=0 on-line); (ii) over `ℤ` `θ`=FE acts on the spectral
+  parameter only, not on an `End(S²/ℤ)` — **the missing off-diagonal and the missing algebra-of-
+  correspondences are the same gap.**
 - **2026-06-06 — Ran the SIGNATURE through the falsifier (method.md step 4): the verdict DOES change,
   NUMBER→FORM moves RH-SILENT→CIRCULAR, and the geometric/OS threads UNIFY.** [CONSTRUCT · load-bearing
   → relocation confirmed + thread unification]. `scripts/numerics/witness/signature_forcing.py` (+
