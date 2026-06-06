@@ -51,38 +51,28 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M4C. **[COHERENCE · from M4A/M4B]** the Hodge index / polarization on `gr^W_2`-primitives as the
-   **categorical duality pairing** of M1's C4, realized **on the weight-2 NS lattice** (not the weight-1
-   `H^1`), **now with M4B's explicit intersection form `(*)` `a·b=d₁e₂+d₂e₁−Tr(z∘w)` and the Rosati
-   polarization `Tr(z w^†)` in hand**: check the primitive Hodge index is the canonical evaluation of the
-   duality `D` (NOT a metric, §0) on the lattice — i.e. that `−Tr(F₀F₀^†)` (M4B) equals `ev∘(1⊗φ_{FE})`
-   on the `End(H^1)` part the way `P_duality=P_gram` did on `H^1` in M2 — that `D∘D≅id` on the lattice,
-   and that the off-circle inertia flip `(0,1,1)→(1,0,1)` of M2/M4B is that weight-2-lattice Hodge index.
-   Anchor on `g=1,2` self-products (lattice ranks `4`, `16`).
-M4D. **[BUILD · the `g=2` rank-16 NS anchor · from M4B]** Build the FF `g=2` weight-2 NS lattice
-   (`End(H^1)` rank `(2g)²=16`, genuinely non-semidefinite) and confirm M4B's three facts persist at
-   real rank: `Δ·Γ_{Fⁿ}=#C(𝔽_{qⁿ})`, the diagonal `Δ=(1,Id,1)` indecomposable, and the primitive Hodge
-   index via Rosati flips on/off-circle — confirming the `g=1` `(0,1,1)` semidefiniteness was the
-   trace-kernel artifact (the M2c concern), not structure. Use the `q=2` `g=2` Weil polynomial
-   `T⁴−T³+2T²−2T+4` already in `weight_carrier.py`/`conjugation_parity_ff.py`.
-M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
-   tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
-   matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
-   the duality up to the Tate twist). M2 built the object and verified C1–C5 pointwise; M2c verifies it is
-   coherent as a *categorical* object (the 2-categorical glue of M1 §0), so M3's archimedean datum has a
-   well-typed target to deform into. Anchor: do it for `g=2` too (genuinely `4×4`, non-semidefinite
-   on-circle) to confirm the `g=1` `(0,1,1)` semidefiniteness was the trace-kernel artifact, not structure.
+M2c′. **[COHERENCE · from M4C — remainder of M2c/M4D]** M4C already PROVED `D∘D≅id` ON the weight-2
+   lattice AND did the `g=2` rank-16 non-semidefinite anchor (so the involutivity + trace-kernel parts of
+   M2c/M4D are DONE; the `g=1` `(0,1,1)` was a rank artifact, confirmed). The REMAINDER: PROVE `φ_{FE}` is
+   a genuine **morphism** of a rigid tensor category (not just a matrix), and that `c` (Rosati) is
+   compatible with `D` **up to the Tate twist** (`c` exchanges the Hodge lines AND commutes with `D`
+   modulo the weight-2 Tate twist `ℚ(−1)`), so `(𝒞,ω_∞,D,P)` is coherent as a *categorical* object (the
+   2-categorical glue of M1 §0) — the well-typed target M3's archimedean datum deforms into. Anchor
+   `g=1,2`; the carrier is the weight-2 NS lattice (M4A/B/C).
 M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/condensed duality datum at
    `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
-M4. **[DESCENT]** Specify the **duality-descent gluing**: how `{Euler factors at primes} ∪ {Γ_ℝ (p,q) at ∞}`
-   glue to a global object whose polarization **is** the explicit-formula quadratic form (so `W_∞≥Σ_p W_p`
-   is a descent constraint, not a hope). **Re-routed by M2b/M2d/M4A:** the descent must produce the
-   **weight-2 NS lattice `gr^W_2`** of `S²/ℤ` (the global self-intersection lattice `H^1⊗H^1` no single
-   prime supplies, Euler-assembled from products `αᵢ(p)αⱼ(p)`) on which the **purity functor**
-   `(·)^{1/2}` descends the weight-2 edge `|αᵢαⱼ|=q` (`Re s=1` of `f×f̄`, the Petersson pole) to the
-   weight-1 centre `|αᵢ|=√q` (`Re s=½`). So C3b becomes a descent constraint *on the weight-2 piece of
-   the weight filtration of the glued object*, Euler-sourced, NOT borrowed from the FE.
+M4. **[DESCENT · fully typed by M4A/B/C]** Specify the **duality-descent gluing**: how `{Euler factors at
+   primes} ∪ {Γ_ℝ (p,q) at ∞}` glue to a global object whose polarization **is** the explicit-formula
+   quadratic form (so `W_∞≥Σ_p W_p` is a descent constraint, not a hope). **Target now fully typed:** the
+   global **weight-2 NS lattice `gr^W_2`** of `S²/ℤ` — a rigid dualizable lattice (M4C: `D∘D≅id`) whose
+   polarization is the **canonical evaluation `P_NS=ev∘(1⊗φ_{FE})=Tr(z w^†)` of its duality, NOT a metric**
+   (M4C: `=0` exact, §0-clean), with the Hodge index on NS-primitives = RH. The descent must
+   **Euler-ASSEMBLE the form `(*)`** (M4B) on this lattice from the Satake products `αᵢ(p)αⱼ(p)` across ALL
+   primes (M2d: no single prime supplies it), i.e. realize `P_NS` for `ζ` as the cross-place coupling. The
+   **purity functor** `(·)^{1/2}` then descends the weight-2 edge `|αᵢαⱼ|=q` (`Re s=1` of `f×f̄`, the
+   Petersson pole) to the weight-1 centre `|αᵢ|=√q` (`Re s=½`). C3b = "the Euler assembly SETS the centre
+   `Re s=½` the way `q` sets `√q`", Euler-sourced, NOT borrowed from the FE.
 M5. **[FALSIFY]** Run M2–M4's objects through `falsify.py`: confirm sees-zeros (polarization depends on
    zero locations) AND DH-failure (no Euler product ⟹ no object).
 
@@ -166,6 +156,39 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M4C [COHERENCE · anchored vs 𝔽_q]: lifted M2's C4 fact (polarization = canonical
+  duality pairing, NOT a metric) from the weight-1 `H^1` to the WEIGHT-2 NS lattice `gr^W_2=End(H^1)`,
+  and in passing settled the M2c/M4D `g=2` concern — `D∘D=id` ON the lattice and `P_NS=ev∘(1⊗φ_{FE})=
+  Tr(z w^†)` to `0.00e+00`, the off-circle inertia flip IS the weight-2 Hodge index, genuinely
+  non-semidefinite at rank 16.** [COHERENCE · anchored vs 𝔽_q].
+  `research/construction/M4C-ns-hodge-index-duality.md`,
+  `scripts/numerics/witness/ns_hodge_index_duality.py` (+1 `falsify.py` row → 46). **What got CHECKED (FF
+  anchor, `g=1` NS rank 4 `q=2,5,7,11,13` AND `g=2` NS rank 16 `q=2`, all EXACT):** the duality
+  `D:End(H^1)→End(H^1)`, `z↦z^†=E^{-1}z^TE` (M1's `c`/Rosati acting by conjugation of endomorphisms).
+  **THREE EXACT FACTS:** (i) **`D∘D=id` ON the weight-2 lattice** — `max‖D(D(z))−z‖=0.00e+00` over a
+  spanning basis, `g=1` and `g=2`; `gr^W_2` is RIGID/dualizable, M1's involutive-duality axiom holds on
+  the lattice, not only on `H^1` (the M2c involutivity check, on weight 2). (ii) **`P_NS=ev∘(1⊗φ_{FE})=
+  Tr(z·D(w))` EQUALS the M4B Rosati Gram `Tr(z w^†)` to `max|P_dual−P_gram|=0.00e+00`** over a spanning
+  basis — the weight-2 polarization is FORCED by the cup product, NOT a chosen metric (M2's C4=0 lifted
+  weight-1→weight-2; evades the §0 Sylvester no-go by construction). (iii) **the off-circle inertia flip
+  IS the weight-2 Hodge index of `P_NS`**: `−Tr(F₀F₀^†)` neg on-circle (`g=1`: `−3.5,−8,−13.5,−17.5,
+  −13.5`; `g=2`: `−7.75`) GAINS a `+` off-circle plant `{r√q,√q/r}` (`g=1` `(0,1,1)→(1,0,1)`; `g=2`
+  `−7.75→−1.66`), flip `=Σ|αᵢ|²−2gq`, all six `FLIP=True`. **LOAD-BEARING FIX (settles M2c/M4D):** the
+  first build's companion Frobenius gave `F^TEF=qE` residual `4.0` at `g=2` (not a `q`-similitude) → a
+  FALSE artifact; building `F,E` TOGETHER in the Rosati-paired basis (`(α,q/α)→diag` blocks, similitude
+  by construction, resid `2e-15`) makes the `g=2` rank-16 case genuinely non-semidefinite and all three
+  facts persist (`Tr(F F^†)=8=2gq`, on-circle H-idx `−7.75<0`, flip True) — **so the `g=1` `(0,1,1)`
+  semidefiniteness was a rank artifact, NOT structure**, exactly the M2c/M4D question, answered.
+  **Falsifier verdict (anchor/coherence, not a `ℤ`-candidate):** euler-assembled Y (`P_NS` reads
+  `Tr(z w^†)`, `Tr(F F^†)=Σ|αᵢ|²=2gq` Satake; DH no `f×f` ⟹ no `End`-Frobenius ⟹ no weight-2 lattice ⟹
+  no `P_NS`), sees-zeros Y (Hodge index flips off-circle), independent N (=Weil Hodge-index theorem) →
+  **CIRCULAR** over `ℤ`, expected. **NEW content:** `D∘D=id` ON `gr^W_2` (rigid) and `P_NS=ev∘(1⊗φ_{FE})=
+  Tr(z w^†)` to `0` — M1's C4 "duality pairing, NOT a metric" now established on the weight-2 carrier
+  M4's descent must build; the `g=2` rank-16 anchor confirms genuine non-semidefiniteness. **Successors
+  added:** M2c′ (the REMAINDER of M2c/M4D — prove `φ_{FE}` is a morphism and `c` compatible with `D` up
+  to the Tate twist; involutivity + `g=2` already done here); M4 re-typed (the descent's target is now
+  fully pinned — Euler-assemble `P_NS`/the form `(*)` on the GLOBAL weight-2 lattice from `αᵢ(p)αⱼ(p)`).
 
 - **2026-06-06 — M4B [BUILD/REPRESENT · anchored vs 𝔽_q]: specified the SELF-INTERSECTION of the
   arithmetic DIAGONAL of `S²/ℤ` on M4A's weight-2 NS lattice as a REPRESENTABILITY functor `rep_NS`,
