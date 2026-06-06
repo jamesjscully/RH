@@ -51,20 +51,30 @@ an expected proof.** The precise shape: over `𝔽_q` the even split is forced b
 Deligne's nilpotent `N` (geometric monodromy) whose filtration = the weight filtration (Weil II). *Is
 there an archimedean nilpotent `N` whose weight filtration forces `|α|=|β|`?*
 
-R1. **[RESIDUE · characterize]** State the residue as the **monodromy-weight** question: over `𝔽_q`,
-   `|α|=q^{w/2}` is forced because the geometric `N` exists and `M(N)=W` (monodromy filtration = weight
-   filtration). Pin down precisely what the archimedean `N` must be and what "`M(N)=W` forces the even
-   split" requires. Anchor: verify on the FF datum that `M(N)=W` ⟹ purity (no zeros assumed).
-R2. **[RESIDUE · Schmid SL(2)-orbit]** Connect to the **limiting mixed Hodge structure / Schmid's
-   SL(2)-orbit theorem** — where monodromy-weight IS a theorem at the archimedean place. Does the
-   SL(2)-orbit's nilpotent supply the `N` that forces `|α|=|β|`, or does it give only the (free) weight
-   *parity* `(−1)^w` and not the radius? (Expected: the M3b lesson recurs — phase free, radius residual.)
+R2. **[RESIDUE · Schmid SL(2)-orbit — NOW THE TOP ITEM, sharpened by R1]** R1 (DONE) pinned the
+   archimedean `N` to four axioms **(N1)** nilpotent `N^{w+1}=0`, **(N2)** a `(−1,−1)`-morphism of the
+   polarized HS (`N(F^p)⊆F^{p−1}`, `c`-compatible), **(N3)** `M(N)=W` (the archimedean weight-monodromy),
+   **(N4)** the RADIUS compatibility (on `gr^M_k` the `C_W` radius/scale `d` has modulus `q^{k/2}`). Connect
+   to the **limiting mixed Hodge structure / Schmid's SL(2)-orbit theorem** — where monodromy-weight IS a
+   theorem at `∞`. **The decisive question R1 sharpened:** does the SL(2)-orbit's nilpotent satisfy **(N4)**
+   — supply the *radius* (forcing `|α|=|β|`) — or only **(N1)–(N3)** plus the (free) weight *parity*
+   `(−1)^w`, with the radius still residual? (Expected: the M3b lesson recurs — phase/parity free, radius
+   residual; the SL(2)-orbit gives the `𝔰𝔩₂` symmetry of `M(N)` but the *scale* `d=q^{k/2}` is the Euler
+   datum it cannot supply at `∞`.) Anchor: build the SL(2)-orbit `N` for a degenerating family of HS and
+   check which of (N1)–(N4) it meets.
 R3. **[RESIDUE · Connes–Consani scaling site]** Connect to the **scaling action / absolute Frobenius**
-   (Riemann–Roch for `Spec ℤ`). Is the scaling generator the archimedean `N`? Does its weight filtration
-   force purity, or is the scaling action radius-silent like every other free piece?
-R4. **[RESIDUE · the missing operator, pinpointed]** State EXACTLY what an archimedean `N` forcing the
-   even split must satisfy, and locate the precise obstruction to its existence (what `ℤ` lacks that
-   `𝔽_q`'s degeneration provides). Falsify: does the putative `N` fail to exist for DH?
+   (Riemann–Roch for `Spec ℤ`). Is the scaling generator the archimedean `N` (of R1's axioms (N1)–(N4))?
+   Does its weight filtration force purity / supply the radius (N4), or is the scaling action radius-silent
+   like every other free piece? Specifically: is `t∂_t` (the scaling generator) nilpotent on the relevant
+   graded, and does its `M(N)` match the weight filtration with the right `q^{k/2}` scale?
+R4. **[RESIDUE · the missing operator — PARTLY DONE by R1, residual = the EXISTENCE/construction]** R1
+   already STATED the four axioms (N1)–(N4) an archimedean `N` must satisfy AND located the obstruction
+   (`ℤ` lacks the geometric degeneration `𝔽_q` uses to supply `N`; DH fails at (N3): no `W`). The residual
+   R4 task is now narrower: given R2/R3's verdicts, is there ANY construction supplying an `N` meeting
+   (N1)–(N4) — a degeneration of the would-be motive of `ζ` (the `S²/ℤ` surface, M2d), a real-analytic
+   limiting structure, or a scaling-site nilpotent — or is the non-existence of such a degeneration over
+   `ℤ` the precisely-located irreducible obstruction? Falsify: the putative `N` must fail to exist for DH
+   (R1 confirmed: (N3) vacuous for DH).
 R5. **[SYNTHESIS — the shape of the missing idea]** Either a genuine archimedean `N` (a real lead), or
    the precisely-located obstruction = the single thing whose construction is the open problem. This is
    the true terminus: the residue characterized to the atom, the missing idea's shape named.
@@ -298,6 +308,44 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R1 [RESIDUE · DEF · coherence-checked vs 𝔽_q]: STATED the residue as the
+  MONODROMY-WEIGHT question and ANCHORED the mechanism on 𝔽_q with NO zeros assumed — over `𝔽_q` the even
+  split `|α|=q^{w/2}` is `M(N)=W` (the monodromy filtration of the GEOMETRIC nilpotent = the weight
+  filtration, a THEOREM in the curve case), and the symmetry of `M(N)` — intrinsic to `N` by
+  Jacobson–Morozov, using NO eigenvalue/zero — transports via `M(N)=W` to force purity; PINNED the
+  archimedean `N` to four axioms and LOCATED the obstruction.** [RESIDUE · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R1-weight-monodromy-residue.md`,
+  `scripts/numerics/witness/weight_monodromy_residue.py` (+1 `falsify.py` row → 35, DISPERSING-by-design =
+  Euler-silent characterization, like M2d/M3b). **MECHANISM (object-free):** a nilpotent `N` (`N^{m+1}=0`)
+  has a UNIQUE monodromy filtration `M(N)` centered at `w` with `N^j: gr^M_{w+j}≅gr^M_{w−j}`
+  (Jacobson–Morozov / `𝔰𝔩₂` Hard-Lefschetz) — SYMMETRIC about `w` BY CONSTRUCTION, using no zeros;
+  weight-monodromy `M(N)=W` transports that symmetry to the weights (`|α|=q^{k/2}` on `gr^W_k`), so the
+  `N`-primitive CENTRE (`j=0`) sits at EXACTLY `w` ⟹ `|α|=q^{w/2}` = the EVEN SPLIT (purity of the centre
+  IS `M(N)=W` at `j=0`). **FF ANCHOR (exact rational lin alg, `g=1,2,3`, NO zeros):** built genuine `N` on
+  `H^1` — (i) SMOOTH `N=0`, `M(0)={1:2g}` pure immediately; (ii) SEMISTABLE max-degenerate `[[0,0],[I,0]]`
+  index 2, `M(N)={0:g,2:g}` symmetric (centre via `0↔2` pairing); (iii) PARTIAL (pinch `g−1`, keep 1
+  abelian handle) `M(N)={0:1,1:2,2:1}` symmetric with the POPULATED weight-1 centre carrying 2 eigenvalues
+  `|α|=q^{1/2}`, the even split VISIBLE. All symmetry computed from `N`'s Jordan structure (rank sequence),
+  no zero read. **ARCHIMEDEAN `N` PINNED to four axioms:** (N1) nilpotent `N^{w+1}=0`; (N2) a `(−1,−1)`-
+  morphism of the polarized HS (`N(F^p)⊆F^{p−1}`, `c`-compatible); (N3) `M(N)=W` (the archimedean weight-
+  monodromy); (N4) RADIUS compatibility (on `gr^M_k` the `C_W` radius/scale `d` has modulus `q^{k/2}`).
+  **OBSTRUCTION located:** over `𝔽_q` `N` is GEOMETRIC (the log of LOCAL MONODROMY of a degenerating family,
+  a Picard–Lefschetz vanishing cycle, NOT a function of zeros); over `ℤ`/`∞` there is no degenerating family
+  in hand to supply `N` — the open problem is UPSTREAM (supply the `N` whose `M(N)` could equal `W`, mirror
+  of M2d's "build the carrier"). **Falsifier verdict:** EULER-BORNE NO on this pass (a characterization/
+  anchor, Euler-silent like M2d/M3b — tabled DISPERSING-by-design), but the DH STRUCTURAL verdict is sharp:
+  DH has no Euler product ⟹ no `W` ⟹ (N3) `M(N)=W` VACUOUS ⟹ the weight-monodromy structure `(N,W)` FAILS
+  TO EXIST for DH at (N3); ladder `DH<ζ<FF`. SEES-ZEROS YES (even split = purity = where the zeros sit),
+  INDEPENDENT NO (`M(N)=W ⟹` purity = Weil II = the solved case). **NEW content:** the residue is now a
+  SINGLE geometric question — *is there an archimedean nilpotent `N` (a `(−1,−1)`-morphism of the polarized
+  HS) with `M(N)=W` forcing the RADIUS?* — with the FF anchor proving the mechanism is
+  `M(N)=W`-with-no-zeros, sharpening M3b/M4r's "radius must be Euler-assembled, never read off `∞`" to its
+  precise positive form: the radius WOULD be forced if an archimedean `N` with `M(N)=W` existed, and that
+  existence (the degeneration over `ℤ`) is the irreducible open object. **Successors:** R2 promoted to TOP
+  (Schmid SL(2)-orbit: does its nilpotent satisfy (N4) — the radius — or only (N1)–(N3)+free parity?); R4
+  re-scoped (R1 already did the axioms + obstruction; residual = the EXISTENCE/construction of `N`); R3
+  sharpened (is the scaling generator nilpotent with `M(N)=W` at the right `q^{k/2}` scale?).
 
 - **2026-06-06 — M4r [KEYSTONE · coherence-checked · anchored vs 𝔽_q / Δ]: executed the radius-DESCENT
   assembly at the GLOBAL altitude M2d proved is the right one (the single glued weight-1 carrier `gr^W_1`,
