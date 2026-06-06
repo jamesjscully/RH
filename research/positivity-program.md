@@ -38,6 +38,8 @@ the assumed `λ_n ≥ 0` (circular) or to a known graveyard route. Scaffold: `sc
 | ample cone / polarization | the archimedean metric `h_∞` | **breaks/open**: positive Green form can fail (BGS §6.3) |
 | Hodge index `(D·D)≤0` ⟹ RH | the Weil positivity `λ_n≥0` | **the wall** — RH itself; the whole program reduces here |
 | Weil line-forcing self-int `Γ_q·Γ_q=q·Δ·Δ` | a `q`-scaled self-int over `ℤ` | **the RIGHT target** (not `‖f‖²`): `Δ·Δ=2−2g`=Euler char, the `q=#𝔽_q` factor forces the line. `‖f‖²`=RS residue is a SEPARATE, RH-silent L-value (Yun–Zhang `=L^{(r)}(1/2)` on Shtukas). [`a5_function_field.py`, 2026-06-06] |
+| Rosati Gram off-diagonal `Tr F` = `a` (integer) | the von Mangoldt **prime sum** | **transfers** (RH-independent, = arithmetic side of explicit formula). [`off_diagonal.py`, 2026-06-06] |
+| Rosati Gram diagonal `⟨F,F⟩=deg(F)=2q` | the **Frobenius self-norm** over `ℤ` | **breaks** = THE WALL (corrected loc.): over `𝔽_q` a self-pairing of the Frobenius *correspondence* (RH-independent); over `ℤ` no correspondence ⟹ only a sum-over-zeros, a norm iff RH. **Unifies "missing off-diagonal" + "missing correspondence-algebra" into one diagonal self-intersection.** [`off_diagonal.py`, 2026-06-06] |
 
 *(Auditor grows as threads report: each adds rows for the structure it builds and the exact breakpoint.)*
 

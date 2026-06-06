@@ -15,20 +15,22 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-1. **[CONSTRUCT · load-bearing · the off-diagonal]** **RH = the Cauchy–Schwarz `|Tr F|² ≤
-   ⟨Id,Id⟩·⟨F,F⟩` on the Rosati Gram** (DONE #1, this pass). The unified-axiom reflection IS the Rosati
-   involution `θ(α)=q/ᾱ`(=FE); over `𝔽_q` the chain edge(`F·F'=q`)→centre(`|α|=√q`) is a THEOREM via
-   `M=[[2,a],[a,2q]] ⪰ 0 ⟺ a²≤4q`. Over `ℤ` the **diagonal `⟨Id,Id⟩=‖f‖²` (unconditional) and the
-   reflection FE both transfer**; the ONLY missing piece is the **off-diagonal `Tr(F)`** — the
-   primes/cross-place coupling. So the next pass must attack THIS single entry: **what gives the
-   off-diagonal `Tr(F)` an unconditional `ℤ`-meaning AND the Cauchy–Schwarz bound?** Decisive sub-
-   question surfaced this pass: over `𝔽_q` `Tr(F)` is the trace of a genuine endomorphism in
-   `End(Jac)`; over `ℤ` there is no `End(S²/ℤ)` — **the missing off-diagonal and the missing algebra-
-   of-correspondences are the SAME gap.** Candidate handles: (a) is `Tr(F)` the explicit-formula prime
-   sum `Σ_p Λ(p)…`, and does the diagonal `⟨F,F⟩` exist unconditionally (a "Frobenius norm" over `ℤ`)?
-   (b) the BGS positive-Green-form obstruction = where the Cauchy–Schwarz can fail. Falsifier
-   discipline: CIRCULAR until the off-diagonal bound is supplied independently; a restatement is not a
-   proof.
+1. **[CONSTRUCT · load-bearing · the Frobenius self-norm]** **RH-conditional entry = the DIAGONAL
+   `⟨F,F⟩=deg(F)`, the Frobenius self-norm — NOT the off-diagonal** (corrected this pass, DONE #1
+   below). `off_diagonal.py` showed: the off-diagonal `Tr F` IS available over `ℤ` (= the von Mangoldt
+   PRIME SUM, the arithmetic side of the explicit formula, RH-independent); `⟨Id,Id⟩=‖f‖²` is available
+   (Siegel). The ONE entry with no unconditional `ℤ`-meaning is the **second diagonal `⟨F,F⟩=deg(F)`**:
+   over `𝔽_q` it is `2q` (self-pairing of the Frobenius CORRESPONDENCE); over `ℤ` it is only a SUM OVER
+   ZEROS, a norm iff RH. **This unifies "missing off-diagonal" + "missing correspondence-algebra" into
+   one object: the Frobenius self-norm = the diagonal SELF-INTERSECTION of a correspondence over `ℤ`**
+   — directly the signature/Hodge-index thread (DONE #2: the self-intersection FORM on `H¹_prim`). So
+   the next pass must attack THIS: **what gives `deg(F)`=`⟨F,F⟩` an unconditional `ℤ`-meaning (a
+   Frobenius self-intersection/degree) independent of the zeros?** Candidate handles: (a) Arakelov
+   self-intersection of an arithmetic correspondence / the BGS positive-Green-form (where a `ℤ`-degree
+   can be *defined* but its positivity can *fail* — BGS §6.3); (b) the `q→1`/condensed limit of the
+   `𝔽_q` degree `2q` (item 3/5 below, now with `deg(F)` as the target NUMBER, but watch DONE #2's
+   caveat: it must enter as a self-intersection FORM's diagonal, not a bare scalar). Falsifier
+   discipline: CIRCULAR until `⟨F,F⟩` is given an RH-independent value; a restatement is not a proof.
 2. **[ANCHOR]** Verify the analog in the **Selberg / hyperbolic-surface** case: does the line-forcing
    quantity there (the spectral parameter / Selberg-zeta resonance condition, self-adjoint Laplacian)
    coincide with the Petersson/Maass norm, or — as in the function field — is the norm a *separate,
@@ -56,6 +58,28 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Attacked the single missing Rosati entry: it is NOT the off-diagonal — the off-diagonal
+  is available (the prime sum); the WALL is the OTHER diagonal `⟨F,F⟩=deg(F)`, the Frobenius
+  self-norm.** [CONSTRUCT · load-bearing → DONE #1 corrected by one index].
+  `scripts/numerics/witness/off_diagonal.py` (+ `falsify.py` row),
+  `research/log/2026-06-06-off-diagonal-self-norm.md`. **Finding [THM+computed]:** Three parts, all
+  certified. (A.1) The off-diagonal `Tr F` over `ℤ` IS the von Mangoldt PRIME SUM (`c_ζ(n)=Λ(n)` to
+  `2.5e-60`; the *arithmetic* side of the explicit formula) — an honest RH-INDEPENDENT number, analog of
+  the integer `a=#C(𝔽_q)−(q+1)`. **So the off-diagonal IS available over `ℤ`, contra DONE #1.** (A.2)
+  The entry with NO unconditional `ℤ`-meaning is the SECOND DIAGONAL `⟨F,F⟩=deg(F)`: over `𝔽_q`=`2q`
+  (self-pairing of the Frobenius *correspondence*, RH-independent); over `ℤ` no correspondence exists, so
+  `⟨F,F⟩=Σ_ρ|φ̂_F(γ_ρ)|²` is a norm IFF the `γ_ρ` are real = RH (computed: an off-line zero makes it
+  cease to be a Hermitian square). (B) The Cauchy–Schwarz `|Tr F|²≤⟨Id,Id⟩⟨F,F⟩` SEES the zeros (Weil
+  Toeplitz Gram min eig `−3.4e-16` on-line PSD → `−2.29` off-line indefinite, a `2×2` minor det `−0.84`
+  VIOLATES CS) but IS the PSD-ness of the Weil form = RH. *Honest subtlety:* the lone `(Id,F)` `2×2` is
+  too coarse to register one faint off-line zero — equivalence is at the FULL Gram (first model erred
+  here, corrected to the validated Toeplitz form). (C) `𝔽_q` control: `a²≤4q` is a THEOREM about FIXED
+  integers (Hasse–Weil, `q∈{4..25}`) — automatic from the *existence of `End(Jac)`*, not a hypothesis.
+  **Verdict: Euler-borne YES, sees-zeros YES, independent NO → CIRCULAR.** 13th Euler-product
+  confirmation. **Sharpens + corrects DONE #1:** the wall is the **Frobenius self-norm `deg(F)`**, which
+  *unifies* "missing off-diagonal" and "missing correspondence-algebra" into one object (a diagonal
+  self-intersection of a correspondence over `ℤ`), reconnecting to the signature/Hodge-index thread
+  (DONE #2). Bounding CS = dominating the prime sum by an unconditional Frobenius degree = `W_∞≥Σ_p W_p`.
 - **2026-06-06 — Re-ran method.md step 2 with the UNIFIED axiom: the reflection IS the Rosati
   involution (a THEOREM over `𝔽_q`), and the wall is ONE off-diagonal matrix entry.** [CONSTRUCT ·
   load-bearing → mechanism named + wall pinned]. `scripts/numerics/witness/rosati_reflection.py` (+
