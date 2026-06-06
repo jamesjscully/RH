@@ -106,6 +106,26 @@ geometry* (a degeneration over a finite base) that forces the arithmetic and ana
 admit a positive Rosati polarization** — the free positivity sails straight through them, never seeing
 the line.
 
+## 5b. The sharpest (geometric) form — reality = properness, factored
+
+`research/construction/PP-*.md`. The reality condition `F†=F̄` is, *structurally correctly*,
+**properness of the archimedean fibre**: over `𝔽_q`, purity is Deligne **proper-pushforward** purity
+(smooth proper ⟹ pure ⟹ perfect Poincaré duality ⟹ Rosati adjoint = conjugate; anchored — proper
+`H¹` pure, open `H¹_c` mixed, without the zeros). But properness **factors**:
+- **Step A (free):** perfect Poincaré pairing ⟹ `α↔q/α` = the **functional equation** `F·F†=q·id`. Holds
+  at *every* radius. **Condensed/analytic geometry supplies this** (the six-functor duality).
+- **Step B (deep, `=RH`):** `|α|=√q` ⟹ `F†=F̄`. This is **Weil II = Rankin-squaring positivity sharpened
+  by the geometric monodromy of a degenerating family.** Properness *enables* but does not force it.
+  **Condensed geometry provably does NOT supply this** (`TERMINUS_GEOMETRIC`).
+
+The obstruction gets a crisp **geometric signature**: a proper fibre has a *polynomial* local factor
+(finite char-poly, degree `2g`); the archimedean `Γ_ℝ(s)` is an *infinite product* — the **exact
+signature of an OPEN/affine fibre** (`H¹_c`-style, non-perfect duality, infinite-dimensional). So the
+residue is correctly renamed: **the archimedean fibre is *open*, missing its *proper boundary*** — and
+that boundary's monodromy is exactly what sharpens Rankin–Selberg (the *edge*, which `ζ` has) to Weil II
+(the *radius*, which `ζ` lacks). This *unifies the audit's edge wall and the construction's missing
+special fibre (R6/R7) as one object*, reached independently from properness.
+
 ## 6. The open frontier, named
 
 > **`ψ_∞`** — an archimedean Frobenius / a self-adjoint realization / a finite ground at `∞`, equivalently
