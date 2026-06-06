@@ -24,42 +24,82 @@ Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction targ
 whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
 number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
 
-1. **[CONSTRUCT · load-bearing]** The non-product correspondence's SYMMETRIC self-intersection is now
-   CLOSED too (DONE #0/top): the ζ-intrinsic Hecke correspondence `Γ_T` (graph of the explicit-formula
-   prime-shift operator `T`) IS genuinely non-product (`‖[T,A]‖~30–47 ≫ 0` while `‖[Id,A]‖=0`, robust 3
-   bases — prongs i & ii ANSWERED), BUT its graph self-pairing `F=TᵀAT` is a **Sylvester congruence** of
-   the DH-shared archimedean metric `A`, so `sig(F)=sig(A)` for any plant (signature does NOT flip
-   on/off-line) → RH-SILENT. Indecomposability of the OPERATOR is necessary; SYMMETRIZING into the graph
-   self-intersection (a NORM-SQUARE = the MODULUS) re-collapses to a congruence of `A`, blind to the line.
-   Same Sylvester-congruence trap as `green_current_perturbation.py` CASE 1. **Sharpened target: a
-   ζ-intrinsic non-product correspondence whose self-pairing is NOT the symmetric congruence `TᵀAT` (the
-   modulus, signature-locked by Sylvester) but a PHASE-carrying / `θ`-twisted pairing `Tᵀ A θ T` (θ = the
-   FE involution) whose signature is NOT congruence-locked to `A` — i.e. the off-diagonal/phase info that
-   the symmetrization throws away.** The obstruction is now precisely named: symmetric congruences
-   preserve inertia (Sylvester); RH content needs a pairing that BREAKS the congruence form (an
-   anti-symmetric / `θ`-twisted intersection). Run the falsifier on any candidate: is its self-pairing a
-   congruence of `A` (then signature-locked, RH-silent), or does it carry the phase and DISTINGUISH on-
-   from off-line via a SIGNATURE flip with the FE-forced Weil pair? `falsify.py`. (Unifies with the
-   missing-algebra names: polarization `F^†=(deg)F^{-1}` `frobenius_self_norm.py`, Rosati off-diagonal
-   `Tr F` `off_diagonal.py`, BGS §6.3 Kähler `arakelov_signature.py`, all now = "break the `A`-congruence".)
-2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
+1. **[CONSTRUCT · load-bearing]** The `θ`-twisted route is now CLOSED too (DONE #0/top): a REAL θ-twist
+   `Tᵀ A Θ T` (θ = FE involution, on a CHIRAL basis where `Θ≠Id`) does NOT carry phase and does NOT escape
+   congruence-locking — it merely RELOCATES the Sylvester lock from `A` to `AΘ`, because the archimedean
+   Gram `A` is **FE-INVARIANT** (`Θ A Θ = A` EXACTLY, since `Re ψ(¼+ir/2)` is even in `r` = the FE), which
+   forces `A` and `Θ` to COMMUTE, so `AΘ` is symmetric and `antisym(AΘ)=0` (zero phase). RH-SILENT, robust
+   3 chiral bases. **The obstruction is now STRONGER and precisely named: phase is an antisymmetric/Hermitian
+   datum, and the FE-invariance of the DH-shared `A` annihilates the antisymmetric part of any REAL θ-twist.
+   A real symmetric self-pairing is always a modulus (Sylvester-locked); the `(1,ρ−1)` phase cannot be
+   carried by any real twist of the FE-invariant archimedean form.** Sharpened/corrected target: a
+   **COMPLEX structure `J` (`J²=−Id`) on the surface** — a Hermitian / genuinely antisymmetric intersection
+   form `Tᵀ A J T` where `AJ` is ANTISYMMETRIC (not symmetric), so its inertia is NOT congruence-preserved.
+   This is the Kähler/Hodge `(1,ρ−1)` structure proper: the phase lives in the complex/symplectic part,
+   never in a real symmetric congruence. Run the falsifier: does the Hermitian form's signature FLIP
+   on-line vs off-line (FE-forced Weil pair), where every real (symmetric, including θ-twisted) form was
+   congruence-locked? `falsify.py`. (Unifies the missing-algebra names — polarization `F^†=(deg)F^{-1}`,
+   Rosati off-diagonal `Tr F`, BGS §6.3 Kähler — all now = "supply the COMPLEX/Hermitian structure `J` that
+   the real FE-invariant archimedean metric lacks".)
+2. **[CONSTRUCT · load-bearing — NEW, the named next axiom]** The **complex-structure / Hermitian
+   intersection form** `Tᵀ A J T` with `J²=−Id`. The real θ-twist failed because FE-invariance kills the
+   antisymmetric (phase) part of any REAL twist of `A`. Build a ζ-intrinsic `J` with `J²=−Id` (a complex
+   structure on the chiral archimedean model — e.g. the Hilbert-transform / conjugation that turns the FE
+   reflection into a `π/2` rotation, or the `i·(scaling generator)` of the Mellin flow) so that `AJ` is
+   genuinely ANTISYMMETRIC and `Tᵀ A J T` is a Hermitian (non-symmetric) form whose inertia is NOT
+   congruence-preserved. **Decisive test:** does its signature FLIP on-line vs off-line with the FE-forced
+   Weil pair, where every real form (untwisted `TᵀAT`, θ-twisted `TᵀAΘT`) was congruence-locked? If YES →
+   the first non-congruence-locked self-pairing (chase independence); if NO (e.g. `J` also commutes with
+   the FE-invariant `A`, relocating the lock again) → name the obstruction on the COMPLEX structure.
+   `theta_twisted_pairing.py` is the scaffold (swap `Θ` for `J`, take the Hermitian signature). `falsify.py`.
+4. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
-3. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
+5. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
    self-pairing, does the **phase/reality** structure (not the modulus) survive, and where does it diverge?
-4. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
+6. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
    represent (Brown representability / moduli)? The square root taking the edge-modulus to the line-phase.
-5. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
+7. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
    obstruction-cocycle names the next axiom.
-6. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
+8. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
    from the Maass/Petersson norm (modulus). Predicted distinct (DONE) — confirm or break.
-7. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
+9. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
    positivity (Jensen/Nevanlinna `log|m|` + winding) make modulus⊗phase ONE identity? Lower priority —
    prefer construction.
 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Attacked NEXT #1's sharpened sub-target (a PHASE-carrying / `θ`-twisted self-pairing
+  `Tᵀ A θ T` whose signature is NOT congruence-locked to `A`) and CLOSED the real-θ-twist route: the
+  archimedean metric is FE-INVARIANT, which forces ANY real twist to be a symmetric congruence of `AΘ`
+  (no phase) — the twist RELOCATES the Sylvester lock, it does not break it. Names a STRONGER obstruction
+  than Sylvester and points to the COMPLEX structure `J` (`J²=−Id`).** [CONSTRUCT · load-bearing → real
+  twist dead; phase needs a complex/Hermitian form]. `scripts/numerics/witness/theta_twisted_pairing.py`
+  (+ 1 `falsify.py` row), `research/log/2026-06-06-theta-twisted-pairing.md`. **Finding [THM+computed]:**
+  built the FE involution `θ:u↦−u` on a CHIRAL (one-sided) Gaussian basis where `Θ` is a genuine
+  reflection (`‖Θ−Id‖=4`, `Θ²=Id` — avoiding the trap that on the θ-SYMMETRIC basis `θ=Id` collapses to
+  the symmetric congruence). The twisted pairing `F_θ=TᵀAΘT` DOES move the signature off `sig(A)` (dim7:
+  `sig(A)=(4,3,0)` vs `sig(F_θ)=(3,4,0)`), seemingly escaping Sylvester-on-`A`. **But the decisive
+  structural computation is EXACT and kills it:** the archimedean Gram `A` is **FE-INVARIANT,
+  `Θ A Θ = A`** (max diff `0`, because `Re ψ(¼+ir/2)` is EVEN in `r` = the FE `t↦−t`), which forces `A`
+  and `Θ` to **COMMUTE** (`AΘ=ΘA`, `antisym(AΘ)=0` exact). Two exact consequences: (i) `F_θ=Tᵀ(AΘ)T` is
+  SYMMETRIC and `Tᵀ antisym(AΘ) T=0` exactly — **the twist carries ZERO phase**; (ii) it is a symmetric
+  congruence of the symmetric metric `B=AΘ`, so by Sylvester `sig(F_θ)=sig(AΘ)` for any invertible plant
+  — the twist **RELOCATES** the lock from `A` to `AΘ`, does not break it. Plant-independence verified:
+  `sig(sym(TᵀAΘT))=(3,4,0)` for ALL `β∈{0.5..0.9}` (det `T≠0`). **Falsifier (D3):** the twisted
+  signature does NOT flip on-line (`β=½`) vs off-line (`β=0.6`, FE-forced Weil pair): `(5,4,0)` both,
+  robust 3 chiral bases (dim 7,9,11). **Verdict: Euler-borne YES (op_diff≈1.80), sees-zeros NO,
+  independent NO → RH-SILENT.** **23rd Euler-product confirmation.** Decisive lesson — a STRONGER,
+  precisely-named obstruction than "Sylvester preserves inertia": phase is an antisymmetric/Hermitian
+  datum, and **FE-invariance of the DH-shared archimedean `A` annihilates the antisymmetric part of any
+  REAL θ-twist** — so a real symmetric self-pairing is always a modulus (congruence-locked), and the
+  `(1,ρ−1)` phase cannot be carried by ANY real twist of the FE-invariant archimedean metric. Re-collides
+  with the green-current dichotomy (perturbing `A` to break FE-invariance changes `L_∞` / the zero set).
+  Points to the named next axiom: a **COMPLEX structure `J` (`J²=−Id`)** making `AJ` genuinely
+  ANTISYMMETRIC (Hermitian intersection form, inertia NOT congruence-preserved) = the Kähler/Hodge
+  `(1,ρ−1)` proper. Honest subtlety: coarse chiral bases; load-bearing EXACT facts are `ΘAΘ=A`,
+  `antisym(AΘ)=0`, `Tᵀantisym(AΘ)T=0`, plant-independent `sig=(3,4,0)`, and no on/off-line flip.
 - **2026-06-06 — Attacked NEXT #1's SHARPENED target (a NON-PRODUCT correspondence whose `H¹⊗H¹` does
   not split as `base⊗base`) via the ζ-intrinsic HECKE correspondence, and got a TWO-PART result:
   indecomposability is ACHIEVED (`‖[T,A]‖≫0`) but its symmetric self-intersection is a Sylvester
