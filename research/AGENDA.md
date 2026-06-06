@@ -50,19 +50,23 @@ ONE positivity. **It is NOT circular to attack** because in classical Hodge theo
 **Kähler form** via the **Hodge–Riemann relations** — and a Kähler form is a *geometric* datum, not the
 zeros. So the keystone is *construct one geometric form*, with Hodge–Riemann doing the forcing.
 
-K1. **[KEYSTONE · load-bearing]** Is `P_∞ ⪰ 0` (= `c=D`) **forced by a Hodge–Riemann/Kähler structure**?
-   Set up: a polarized Hodge structure has `c=D` automatically (Hodge–Riemann), the polarization coming
-   from a **Kähler class**. ANCHOR: over `𝔽_q` the "Kähler class" = the ample class / cup product, and
-   `c=D` is automatic — verify `P_∞`'s positivity follows from the ample class on the FF datum, no zeros
-   assumed. Then state precisely what an **archimedean Kähler class on `S²/ℤ`** must be.
-K2. **[KEYSTONE · condensed — the live framework]** Realize the archimedean Kähler form in
+K2r. **[KEYSTONE · the named residue — load-bearing, HIGH priority]** K1 found the Kähler forcing
+   FACTORS: `c=D` is forced by `(E, C_W)` polarized, where `E` (cup product) is free/geometric and the
+   Hodge–Riemann implication is formal — but the **Weil operator `C_W`'s RADIUS** is over `𝔽_q` literally
+   `|α|=√q` = RH (the cup product ALONE is INDEFINITE; `C_W` is what makes it definite). CONSTRUCT `C_W`'s
+   RADIUS over `ℤ` (the centre `Re s=½`) from the **Euler assembly** of the prime Satake products
+   `αᵢ(p)αⱼ(p)` — the ONE piece the geometric forcing does not supply (M3b's "radius-silent `(−1)^w`" as a
+   Hodge forcing). (= M4r in its sharpest Hodge form; falsify: the assembled radius must be DH-distinguishing.)
+K2. **[KEYSTONE · condensed — the live framework, RE-POINTED by K1]** Realize the archimedean Kähler form in
    **condensed/analytic geometry** (Clausen–Scholze; F. Charles' stack-of-norms + the "archimedean
-   Deligne–Illusie ⟶ Kähler" open question). Does the condensed archimedean structure supply the Kähler
-   class / Hodge–Riemann positivity that Arakelov's metric (Sylvester-locked) cannot? This is the one
-   framework the audit flagged as right-kind-untried — now with `P_∞`/`c=D` as the precise target.
-K3. **[KEYSTONE · the forcing lemma]** Prove, or locate the exact obstruction to, **"archimedean Kähler
-   ⟹ `c=D`"** — the Hodge–Riemann mechanism applied to `P_∞`. Where precisely does BGS §6.3 (positive
-   Green form can fail) enter, and is it evaded by the *categorical* (non-metric) `P_∞`?
+   Deligne–Illusie ⟶ Kähler" open question) — **as a canonical Weil operator `C_W` (K1's finding), NOT a
+   Green form**. The condensed object must PRODUCE `C_W` with an Euler-assembled radius (not a metric);
+   this is the one framework the audit flagged as right-kind-untried — now with `C_W`/`c=D` as the target.
+K3. **[KEYSTONE · the forcing lemma — SHARPENED by K1]** The forcing lemma "archimedean Kähler ⟹ `c=D`" is
+   the **FORMAL** Hodge–Riemann implication `(E, C_W)` polarized ⟹ `P_∞ ⪰ 0` (K1: the hardness is NOT here).
+   BGS §6.3 (positive Green form can fail) is EVADED because `P_∞` is the categorical pairing `E(C_W·,·̄)`,
+   not a metric — but the hardness RELOCATES into supplying `C_W`'s radius (K2r). State K3 as: the forcing
+   is free GIVEN `C_W`; the open problem is entirely `C_W`'s radius.
 K4. **[FALSIFY]** `P_∞` / the Kähler class for **Davenport–Heilbronn**: does it FAIL to exist (no Euler
    product ⟹ no Frobenius weight ⟹ no `C_W` ⟹ no Kähler)? Run `falsify.py`: sees-zeros (via `c=D`),
    DH-failure (structural).
@@ -216,6 +220,41 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — K1 [KEYSTONE · coherence-checked · anchored vs 𝔽_q]: executed the keystone — is `P_∞⪰0`
+  (`c=D`) FORCED by a Hodge–Riemann/Kähler structure? — and found the forcing FACTORS: `c=D` is NOT
+  Kähler-forced "for free"; the cup product `E` ALONE is INDEFINITE, the Hodge–Riemann implication is
+  formal, and the Weil operator `C_W` that makes `E` definite is over `𝔽_q` LITERALLY the RH radius
+  `|α|=√q`. The keystone LOCATES the single irreducible residue (`C_W`'s radius), it does not dissolve
+  RH.** [KEYSTONE · coherence-checked · anchored vs 𝔽_q]. `research/construction/K1-kahler-forcing.md`,
+  `scripts/numerics/witness/kahler_forcing.py` (+1 `falsify.py` row → 50, CIRCULAR). **What got CHECKED
+  (FF/polarized-HS anchor, all EXACT):** **STEP A** the cup product `E` (symplectic Weil pairing, the
+  "ample"/polarization datum) gives an INDEFINITE Rosati form `Tr(z z^†)` — sig `(2,0,2)` `g=1`, `(8,0,8)`
+  `g=2`, `(18,0,18)` `g=3` — so `E` by ITSELF does NOT force Hodge–Riemann positivity (the naive "ample
+  forces `c=D` for free" is FALSE). **STEP B** with the WEIL OPERATOR `C_W=i^{p−q}` inserted,
+  `P_∞(x,y)=E(C_W x,x̄)` IS positive-definite on `H^{1,0}` (min eig `+2.03,+4.72,+6.17,…>0`, all g/seeds)
+  = Riemann's 2nd relation; the forcing datum is the PAIR `(E,C_W)` = the POLARIZED HS, `C_W` the Kähler
+  class that makes `E` definite. **STEP C** over `𝔽_q` the weight-1 `C_W` exists ⟺ Frobenius is a weight-1
+  Weil number `α=√q·e^{iθ}` ⟺ a UNIFORM radius `√q` ⟺ `|α|=√q` = RH; an off-circle plant `{r√q,√q/r}` has
+  TWO moduli ⟹ no uniform radius ⟹ no `C_W` ⟹ no `c=D` (5 curves `q=2,5,7,11,13`). **So over `𝔽_q` the
+  Kähler datum `C_W` and RH (`|α|=√q`) are LITERALLY the same datum.** **THE KEYSTONE FACTORIZATION (K5
+  terminus):** `(E)` GEOMETRIC/zero-free/DH-shared/INDEFINITE-alone [free]; `(C_W)` the `(p,q)`/RADIUS
+  datum, `=|α|=√q`=RH over `𝔽_q` [=RH]; Hodge–Riemann `(E,C_W)`-polarized ⟹ `P_∞⪰0`=`c=D` [formal]. This
+  is M3b's "radius-silent `(−1)^w`" lesson AS a Hodge forcing: the archimedean Kähler class carries `C_W`'s
+  PHASE/reality (the sign `(−1)^w`) but NOT its RADIUS — the radius is the whole problem. **Falsifier
+  verdict (anchor/forcing, the keystone FACTORS the axes):** EULER-ASSEMBLED SPLIT (`E` Euler-silent
+  DH-shared; `C_W`'s RADIUS Euler-borne=Frobenius weight; the implication formal — K1 LOCATES the Euler
+  content in `C_W`'s radius), SEES-ZEROS YES (only through `C_W`), INDEPENDENT NO (the implication is
+  independent/Hodge–Riemann, but the HYPOTHESIS "`C_W`=weight-1 Weil op" over `𝔽_q` IS `|α|=√q`=RH) →
+  **CIRCULAR over `𝔽_q`** in the precise sense that the Kähler datum `C_W` = the RH radius. **NEW content:**
+  the keystone is NOT attackable "for free" — the forcing factors as (free `E`) + (formal Hodge–Riemann) +
+  (the Weil operator `C_W`, whose RADIUS over `𝔽_q` IS the RH critical line); an archimedean Kähler class on
+  `S²/ℤ` must be a CANONICAL Weil operator `C_W` whose radius is Euler-assembled from the Satake products,
+  NOT a chosen Green form (BGS §6.3 evaded because `P_∞` is the categorical pairing, not a metric).
+  **Successors added:** K2r [the named residue — construct `C_W`'s RADIUS over `ℤ` (`Re s=½`) from the Euler
+  assembly of `αᵢ(p)αⱼ(p)`, the one piece the forcing does not supply]; K2 re-pointed (the condensed object
+  must PRODUCE `C_W`, not a Green form); K3 sharpened (the forcing lemma is FREE given `C_W`; the hardness is
+  entirely `C_W`'s radius).
 
 - **2026-06-06 — M3b [COHERENCE · anchored vs polarized-HS]: proved the archimedean MIRROR of M2c′(A)/(B)
   — `(P_∞, D, c)` is a COHERENT triple at `∞`, Frobenius-free: `P_∞` is FUNCTORIAL and the Weil operator
