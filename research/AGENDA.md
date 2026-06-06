@@ -15,43 +15,41 @@ F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product con
 
 ## NEXT
 
-**HEADLINE — pass-3 convergence (modulus⊗phase).** RH = a **ζ-intrinsic, Euler-borne coupling of
-MODULUS and PHASE**. The available positivities (sym²/`‖f‖²`, the von-Mangoldt prime sum) are
-MODULUS/edge (RH-silent for the line) or a *borrowed sibling's* phase (RH-silent, decoupled from ζ —
-forces `Δ`'s RH, not ζ's). The line is the **PHASE condition `θFθ=F^*`** = reality of ζ's own Frobenius
-= the Hodge signature `(1,ρ−1)`. Wall: a **ζ-intrinsic** dominator (built from ζ's own primes `Λ(n)`)
-Euler-borne on BOTH halves = `W_∞ ≥ Σ_p W_p`. **Corrected construction target: a ζ-intrinsic object
-whose intersection FORM has the Hodge signature `(1,ρ−1)` (the reality/phase structure)** — NOT a
-number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; **ATTACK CONSTRUCTION.**
+**HEADLINE — pass-4 convergence (the SELF-PAIRING family is exhausted; the zeros must enter the FORM,
+not the congruence).** RH = a **ζ-intrinsic, Euler-borne coupling of MODULUS and PHASE** = the Weil
+explicit-formula domination `W_∞ ≥ Σ_p W_p`. The entire **self-pairing** construction family is now
+CLOSED by ONE named theorem: **Sylvester's law of inertia is identical for symmetric AND Hermitian
+forms** (DONE #0/top). Any object of the shape `(plant)ᵀ (fixed DH-shared form) (plant)` — symmetric
+`TᵀAT`, real-θ-twisted `TᵀAΘT`, OR complex-structure Hermitian `Tᵀ(A+iAJ)T` — has its inertia LOCKED to
+the inertia of the fixed form (the prime-shift plant `T` is REAL ⟹ `TᵀHT=T*HT` is a `*`-congruence),
+which is built from the DH-shared archimedean `A` (and FE-derived `J`), hence DH-shared, RH-silent. The
+complex structure `J` (`J²=−Id`, `A`-orthogonal, `ω=AJ` genuinely antisymmetric = the Kähler `(1,ρ−1)`
+phase, `[A,J]≠0`) was built EXACTLY and STILL congruence-locked: **promoting symmetric→Hermitian does NOT
+escape the lock.** **CORRECTED construction target: the zeros (the plant's eigenvalue locations) must
+enter the intersection FORM ITSELF — not as the congruence factor `T`.** A flip requires the form the
+plant pairs against to DEPEND on the zero locations = the Weil coupling, reached from the Kähler side.
+The self-pairing branch has converged; **the missing object couples the plant to the form (a
+correspondence whose self-intersection form varies with its own spectrum), not a fixed-form congruence.**
 
-1. **[CONSTRUCT · load-bearing]** The `θ`-twisted route is now CLOSED too (DONE #0/top): a REAL θ-twist
-   `Tᵀ A Θ T` (θ = FE involution, on a CHIRAL basis where `Θ≠Id`) does NOT carry phase and does NOT escape
-   congruence-locking — it merely RELOCATES the Sylvester lock from `A` to `AΘ`, because the archimedean
-   Gram `A` is **FE-INVARIANT** (`Θ A Θ = A` EXACTLY, since `Re ψ(¼+ir/2)` is even in `r` = the FE), which
-   forces `A` and `Θ` to COMMUTE, so `AΘ` is symmetric and `antisym(AΘ)=0` (zero phase). RH-SILENT, robust
-   3 chiral bases. **The obstruction is now STRONGER and precisely named: phase is an antisymmetric/Hermitian
-   datum, and the FE-invariance of the DH-shared `A` annihilates the antisymmetric part of any REAL θ-twist.
-   A real symmetric self-pairing is always a modulus (Sylvester-locked); the `(1,ρ−1)` phase cannot be
-   carried by any real twist of the FE-invariant archimedean form.** Sharpened/corrected target: a
-   **COMPLEX structure `J` (`J²=−Id`) on the surface** — a Hermitian / genuinely antisymmetric intersection
-   form `Tᵀ A J T` where `AJ` is ANTISYMMETRIC (not symmetric), so its inertia is NOT congruence-preserved.
-   This is the Kähler/Hodge `(1,ρ−1)` structure proper: the phase lives in the complex/symplectic part,
-   never in a real symmetric congruence. Run the falsifier: does the Hermitian form's signature FLIP
-   on-line vs off-line (FE-forced Weil pair), where every real (symmetric, including θ-twisted) form was
-   congruence-locked? `falsify.py`. (Unifies the missing-algebra names — polarization `F^†=(deg)F^{-1}`,
-   Rosati off-diagonal `Tr F`, BGS §6.3 Kähler — all now = "supply the COMPLEX/Hermitian structure `J` that
-   the real FE-invariant archimedean metric lacks".)
-2. **[CONSTRUCT · load-bearing — NEW, the named next axiom]** The **complex-structure / Hermitian
-   intersection form** `Tᵀ A J T` with `J²=−Id`. The real θ-twist failed because FE-invariance kills the
-   antisymmetric (phase) part of any REAL twist of `A`. Build a ζ-intrinsic `J` with `J²=−Id` (a complex
-   structure on the chiral archimedean model — e.g. the Hilbert-transform / conjugation that turns the FE
-   reflection into a `π/2` rotation, or the `i·(scaling generator)` of the Mellin flow) so that `AJ` is
-   genuinely ANTISYMMETRIC and `Tᵀ A J T` is a Hermitian (non-symmetric) form whose inertia is NOT
-   congruence-preserved. **Decisive test:** does its signature FLIP on-line vs off-line with the FE-forced
-   Weil pair, where every real form (untwisted `TᵀAT`, θ-twisted `TᵀAΘT`) was congruence-locked? If YES →
-   the first non-congruence-locked self-pairing (chase independence); if NO (e.g. `J` also commutes with
-   the FE-invariant `A`, relocating the lock again) → name the obstruction on the COMPLEX structure.
-   `theta_twisted_pairing.py` is the scaffold (swap `Θ` for `J`, take the Hermitian signature). `falsify.py`.
+1. **[CONSTRUCT · load-bearing — the corrected target after the self-pairing family closed]** Build an
+   object where the **zeros enter the FORM, not the congruence factor.** Every closed route (symmetric,
+   θ-twist, Hermitian-`J`) was `(plant)ᵀ(fixed DH-shared form)(plant)`, Sylvester-locked. The escape: a
+   form `B(T)` that itself **depends on the plant `T`'s spectrum** — e.g. a *quadratic* self-intersection
+   `Tᵀ A T` paired against ANOTHER copy so the zeros appear on BOTH sides (the genuine `C×C` diagonal
+   `Δ·Δ` is `Tr(T*T)` with `T` on both sides = a NORM, but the SIGNATURE of the **commutator/Poisson form**
+   `[T, Tᵀ]` or the **non-self-adjoint part** `T−Tᵀ` could carry the zero locations into the inertia).
+   Concretely: is there a ζ-intrinsic form whose inertia = `sign(Im ρ)`-type data (the off-line Weil pair
+   `(β,1−β)` splits a `+`/`−` only when `β≠½`)? Test on the falsifier: does its inertia flip on/off-line?
+   `theta_twisted_pairing.py`/`complex_structure_pairing.py` are scaffolds. `falsify.py`.
+2. **[ANALYTIC · load-bearing — re-promoted: the coupling, not another congruence]** The self-pairing
+   family is exhausted; return to the **Weil explicit-formula domination `W_∞ ≥ Σ_p W_p` directly** as the
+   object to construct, NOT a geometric congruence of it. The decisive fact from the closed routes: the
+   archimedean form `A` is **indefinite** (`A^{1/2}` nonexistent — `Re ψ(¼+ir/2)` not sign-definite) AND
+   DH-shared; the prime form `P` (Euler-borne) enters `W=A−P` *dominated*. RH ⟺ the finite Euler piece
+   `P`'s **negative directions are out-dominated** by `A`'s positive ones (the `(1,ρ−1)` single `+`). Is
+   there a ζ-intrinsic inequality `A ⪰ P` (operator domination) that is Euler-borne AND not = the Weil
+   positivity? (The wall, but posed as an operator inequality on two EXPLICIT Gram matrices, both
+   executable — test whether `A−P` PSD-ness sees the off-line plant where the congruences did not.)
 4. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
    object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
    "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
@@ -70,6 +68,39 @@ number, NOT a modulus, NOT a borrowed sym². The analytic branch has converged; 
 ## DONE
 (the loop appends here, newest first)
 
+- **2026-06-06 — Built NEXT #1/#2's named next axiom (the COMPLEX structure `J`, `J²=−Id`, making the
+  intersection form HERMITIAN/Kähler) EXACTLY, and CLOSED it — STRONGER than the real-twist wall: the
+  whole self-pairing family is exhausted because Sylvester's law of inertia is IDENTICAL for Hermitian
+  forms.** [CONSTRUCT · load-bearing → complex/Hermitian route dead; the zeros must enter the FORM, not
+  the congruence]. `scripts/numerics/witness/complex_structure_pairing.py` (+ 1 `falsify.py` row),
+  `research/log/2026-06-06-complex-structure-pairing.md`. **Finding [THM+computed]:** built the
+  `A`-orthogonal complex structure `J` (`J²=−Id`, `JᵀAJ=A`) the agenda named. **EXACT facts (clean
+  even-`(p,q)` bases dim 8,10):** `‖J²+Id‖≈1e-14`, `‖JᵀAJ−A‖≈1e-14`; the Kähler form `ω=AJ` is
+  **EXACTLY antisymmetric** (`‖sym(AJ)‖≈1e-15`) with `‖antisym(AJ)‖≈6–7.6` — **the phase the real
+  θ-twist could NOT carry** (`antisym(AΘ)=0` exact); and crucially **`‖[A,J]‖≈6.5 ≠ 0`** so `J` does NOT
+  commute with `A` — it ESCAPES the predicted commute-and-relocate obstruction. `H=A+iω` exactly
+  Hermitian (`‖H−H†‖≈1e-14`). **Load-bearing side-finding:** `A` is **INDEFINITE** (`sig(A)=(4,4,0)`,
+  `(6,4,0)` — `Re ψ(¼+ir/2)` not sign-definite, `A^{1/2}` nonexistent), so I built `J=B⁻¹KB` via the
+  signature operator (`A=BSB`, `K` `S`-orthogonal). **DECISIVE FALSIFIER (C4): NO FLIP.** Plant the
+  FE-forced Weil pair, `‖[T,J]‖≈20`, `det T≠0`: the Hermitian inertia of `TᵀHT` does NOT flip on-line vs
+  off-line — `(2,2,4)=(2,2,4)` (dim 8), `(3,2,5)=(3,2,5)` (dim 10), robust (holo projection identical).
+  **STRONGER obstruction than real-twist FE-invariance, named [THM]: Sylvester's law of inertia is
+  IDENTICAL for Hermitian forms.** The prime-shift plant `T` is **REAL** ⟹ `TᵀHT=T*HT` is a
+  `*`-congruence ⟹ `inertia(TᵀHT)=inertia(H)` for `det T≠0` (verified directly AND on a generic
+  Hermitian `H`: only a complex NON-`*` `T`-congruence moves inertia, producing a non-Hermitian matrix =
+  wrong object); `inertia(H)` is built from the DH-shared `A` and FE-derived `J` ⟹ DH-shared. **Verdict:
+  Euler-borne YES (`op_diff≈1.80`), sees-zeros NO, independent NO → RH-SILENT. 24th Euler-product
+  confirmation.** **Decisive lesson:** promoting the self-pairing from symmetric to Hermitian does NOT
+  escape the congruence-lock — it only enlarges the fixed background `H` whose inertia a real congruence
+  cannot move. UNIFIES the whole self-pairing thread (symmetric `TᵀAT`, real-θ-twist `TᵀAΘT`, Hermitian
+  `TᵀHT`) under ONE wall: any `(plant)ᵀ(fixed DH-shared form)(plant)` is inertia-locked by Sylvester,
+  symmetric OR Hermitian. A flip requires the FORM the plant pairs against to itself depend on the zero
+  LOCATIONS = the Weil coupling `W_∞≥Σ_p W_p`, reached from the Kähler/complex-structure side. **The
+  complex structure is NOT the missing line-detecting freedom** — phase is real and present in `H`'s
+  FIXED inertia, which a real congruence cannot vary. Honest subtlety: coarse chiral bases; dim-6
+  odd-`(p,q)` carries a `0.33` orthogonality residual (the two even bases are the exact cases);
+  load-bearing EXACT facts are `J²=−Id`, `JᵀAJ=A`, `sym(AJ)=0`/`antisym(AJ)≠0`, `[A,J]≠0`, `det T≠0`,
+  `inertia(TᵀHT)=inertia(H)`, and no on/off-line flip.
 - **2026-06-06 — Attacked NEXT #1's sharpened sub-target (a PHASE-carrying / `θ`-twisted self-pairing
   `Tᵀ A θ T` whose signature is NOT congruence-locked to `A`) and CLOSED the real-θ-twist route: the
   archimedean metric is FE-INVARIANT, which forces ANY real twist to be a symmetric congruence of `AΘ`
