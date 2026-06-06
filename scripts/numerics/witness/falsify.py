@@ -70,6 +70,8 @@ REGISTRY = [
     ("QSM free energy −log ζ(β)", True, False, False, "worker A: real-axis, RH-silent"),
     ("prime Gram / adelic Hankel", True, False, False, "worker B: Euler product in a Hankel skin"),
     ("Birman–Krein phase winding", True, True, False, "worker B: detects off-line zero, but counts not forces"),
+    ("Beurling–Selberg / Cohn–Elkies majorant", True, False, False, "worker D: a sup over {ĝ≥0}, RH-agnostic bound"),
+    ("BRS modular interpolation (primes+zeros nodes)", True, True, False, "worker D: records RH (frame⟺RH); Eisenstein dual cert = archimedean"),
     ("scattering unitarity |S|=1", False, False, False, "stone 1: holds for off-line control too"),
     ("self-adjointness (Hilbert–Pólya)", False, False, False, "reflects, does not force"),
     ("de Branges reproducing kernel", False, True, False, "falsified, Conrey–Li 2000"),

@@ -188,3 +188,34 @@ the Li sequence is a Hamburger moment sequence ⟺ a positive spectral measure e
 **Discipline.** Any continuation candidate must clear all three `falsify.py` axes; Euler-borne +
 sees-zeros is the bar (QSM/prime-Gram failed at sees-zeros). The Fourier/modular route clears both by
 construction — so it fails *honestly* (FORCING or a located wall), not RH-silently.
+
+## J. Worker D (Fourier optimization) + the Euler/Hecke-vs-Eisenstein litmus (2026-06-06)
+
+`fourier_optimization.py`, `research/work/D-fourier-optimization.md`. The continuation lead, audited.
+
+**The reduction is exact.** The Weil positivity is a **`+1`-type (Fourier-square) sign-uncertainty /
+Cohn–Elkies LP**: maximize `R(g)=P[g]/W_∞[g]` over `{ĝ≥0}`; the archimedean digamma density
+`Re ψ(¼+it/2)` is the forbidden region (RH-neutral, shared with DH), the log-prime lattice carries the
+Euler content. `+1`, not the `−1` packing sign.
+
+**The freshest object found — Bondarenko–Radchenko–Seip (arXiv:2005.02996) [THM, unconditional]:** a
+*modular* (theta-group) Fourier-interpolation basis with **primes `log n` AND zeta-zeros `(ρ−½)/i` as
+simultaneous nodes** — the Riemann–Weil functional is *exactly* its evaluation (`W Uₙ = Λ(n)/√n`). The
+genuinely new thing: it couples primes and zeros in ONE modular structure (Euler-borne AND sees-zeros
+in one object — a first).
+
+**But it records RH, it doesn't force it.** The basis is built **without** RH; RH (+simplicity) ⟺ the
+basis is **non-redundant (a frame)**. Falsifier verdict: **RH-SILENT as a bound / CIRCULAR as the sharp
+positivity** — the same wall. The decisive diagnosis (and the program's **7th** Euler-product
+confirmation):
+
+> the natural **dual certificate is Eisenstein** — it certifies the **archimedean** place, exactly
+> where ζ and DH agree. A *forcing* extremal must instead carry a modular form's **Euler/Hecke** data
+> in its dual certificate. **The wall, re-expressed precisely: the dual certificate must be Euler/Hecke,
+> not Eisenstein** — which *is* the cross-place coupling `W_∞ ≥ Σ_p W_p`, now in modular language.
+
+**This re-opens thread 4 on its *Euler/Hecke* side** (not the dispersing period side): can a **Hecke
+eigenform** (Euler product built in) supply the dual certificate? That is the sharpened next target.
+**Queued probe (worker D):** build the DH interpolation basis (BRS extends to it) and confirm it
+differs from ζ's *only* in the functional values `W Uₙ = signed c_DH(n)` — mechanically pinning the
+discriminator to `sign Λ`.
