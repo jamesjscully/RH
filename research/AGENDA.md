@@ -51,23 +51,24 @@ does the construction FAIL to exist for DH?). **Design law (the audit's gift):**
 language** and shown to reproduce the Weil/Hodge-index proof. Wrong definitions are expected — each one
 *names the next*; that is convergence, not drift.
 
-M2. **[ANCHOR-BUILD · load-bearing]** Build the polarized arithmetic Hodge category **for a function
-   field** (e.g. an elliptic curve over `𝔽_q`) *in this language*, and verify it **reproduces the Weil
-   RH proof** with polarization = the categorical duality pairing (NOT a metric). If it can't redo the
-   solved case, the language is wrong — say so and propose the fix. The minimal working model.
-   **CONTRACT TO HIT (M1, `construction/M1-universal-property-S_Z.md`):** exhibit `H^•(C/𝔽_q)` as a
-   `ζ`-Hodge datum satisfying clauses **C1–C6**; the FF columns of M1's table are the acceptance test
-   (C1 Lefschetz trace; C2 `c=†`Rosati, positivity `c`-EVEN; C3a Weil pairing `Φ^TEΦ=qE`; **C3b `μ=√q`
-   = the Frobenius weight**; C4 `⟨φ,ψ⟩=Tr(φψ†)` = canonical pairing of `D`, no metric; C5 signature flip
-   `(0,1,1)→(1,0,1)`). Verify the C4 pairing is built as the Poincaré-duality evaluation, NOT a chosen
-   Gram metric — that distinction is the whole point of the language.
-M2b. **[DEFINE · the hinge clause C3b]** M1 self-localized ALL residual `ℤ`-hardness into **C3b: the
-   critical radius `μ` (=`Re s=½`) must be Euler-borne**, the way `μ=√q` is the Frobenius weight over
-   `𝔽_q` (DONE #32). Define, precisely, what it would MEAN for a `ζ`-intrinsic object's similitude
-   multiplier `μ` in `Φ^*φ_{FE}Φ=μφ_{FE}` to be **read off the local Euler factors `{L_p}`** rather than
-   the FE — i.e. write C3b as a representability sub-problem (the radius datum as a functor of the local
-   factors). This is the prize AND the DH-falsifier (C6) in one clause; sharpen it before M4 tries to
-   construct it.
+M2b. **[DEFINE · the hinge clause C3b · load-bearing]** M1+M2 self-localized ALL residual `ℤ`-hardness
+   into **C3b: the critical radius `μ` (=`Re s=½`) must be Euler-borne**, the way `μ=q` (radius `√q`) is
+   the Frobenius weight over `𝔽_q` (DONE #32, now confirmed in the M2 working model as the SOLE
+   non-categorical residue — every other clause C1/C2/C3a/C4/C5 is a categorical structure on one object).
+   Define, precisely, what it would MEAN for a `ζ`-intrinsic object's similitude multiplier `μ` in
+   `Φ^*φ_{FE}Φ=μφ_{FE}` to be **read off the local Euler factors `{L_p}`** rather than the FE — i.e. write
+   C3b as a representability sub-problem (the radius datum as a functor of the local factors). **Sharpened
+   target from M2:** in the FF, `μ=q` enters via the *similitude relation* `FᵀEF=μE` AND that same `μ`
+   sets the radius `√μ` the zeros sit on — define the `ℤ`-functor `{L_p} ↦ μ` and check whether the FE's
+   `μ=1` (the `s↔1-s` similitude is multiplier-1) can be *upgraded* to an Euler-read `μ` distinct from the
+   FE value. This is the prize AND the DH-falsifier (C6) in one clause; sharpen it before M4 constructs it.
+M2c. **[COHERENCE · from M2]** PROVE the FF `ζ`-Hodge datum is functorial / a genuine object of a rigid
+   tensor category: check `D∘D≅id` (involutivity of the duality), that `φ_{FE}` is a morphism (not just a
+   matrix), and that `c` (Rosati) is compatible with `D` (`c` exchanges the Hodge lines AND commutes with
+   the duality up to the Tate twist). M2 built the object and verified C1–C5 pointwise; M2c verifies it is
+   coherent as a *categorical* object (the 2-categorical glue of M1 §0), so M3's archimedean datum has a
+   well-typed target to deform into. Anchor: do it for `g=2` too (genuinely `4×4`, non-semidefinite
+   on-circle) to confirm the `g=1` `(0,1,1)` semidefiniteness was the trace-kernel artifact, not structure.
 M3. **[INVENT]** Define the **archimedean Hodge polarization**: the `(p,q)`/condensed duality datum at
    `∞` supplying the reality/phase. Coin notation; state its axioms; check it is **not a `*`-congruence**
    (passes the §0 no-go by construction) and is condensed-archimedean (the duality Arakelov lacks).
@@ -157,6 +158,37 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — M2 [ANCHOR-BUILD]: assembled `H^•(C/𝔽_q)` as ONE categorical `ζ`-Hodge datum
+  `(𝒞,ω_∞,D,P)` satisfying the M1 contract C1–C6, reproducing the Weil RH proof with the polarization =
+  the CANONICAL DUALITY PAIRING (NOT a metric) — DECISIVE C4 check `P_duality − P_gram = 0.00e+00`
+  EXACT.** [BUILT · coherence-checked vs 𝔽_q]. `research/construction/M2-ff-hodge-datum.md`,
+  `scripts/numerics/witness/ff_hodge_datum.py` (+1 `falsify.py` row). **What got BUILT:** the class
+  `FFHodgeDatum(q,a1)` packaging Frobenius `Φ=F`, cup product `E`, Rosati `†=c`, and the primitive
+  Hodge-index form as a single object, with `check_C1…C5` each returning PASS/FAIL vs the M1 table. **ALL
+  clauses PASS, 5 Weil curves `q=2,5,7,11,13`:** C1 (`spec Φ={αᵢ}`=zeros, `Tr Φ=a₁`=Lefschetz), C2
+  (`c=†`Rosati anti-linear, `α†=ᾱ` on `|α|=√q` to `1e-10`, exchanges Hodge lines), C3a (`FᵀEF=qE`
+  residual `<1e-12`), C3b (`μ=q`=Frobenius weight, radius `√q` read off `μ`), C4 (**the load-bearing
+  test**), C5 (Hodge-index inertia `(0,1,1)→(1,0,1)` off-circle, flip eig `=Σ|α|²−2gq` exact, re-derived
+  THROUGH `P_duality`). **THE DECISIVE OUTPUT — C4 holds CATEGORICALLY:** the polarization is built TWO
+  ways — `P_duality(φ,ψ)=ev∘(1⊗φ_{FE})=Tr(φ·D(ψ))` (the canonical co-evaluation of the rigid duality `D`,
+  where `D(ψ)`=dual of `ψ` under the cup product `E`, NO metric referenced) and `P_gram=Tr(φψ†)` (the
+  metric-looking Gram) — and they are **identical to `0.00e+00`** over a spanning basis of `End(H^1)`. So
+  the metric appearance is a coordinate artifact: the pairing is FORCED by the cup product, not chosen —
+  exactly the §0 design law (what Arakelov's chosen archimedean metric is NOT), and why the FF object
+  evades the §0 Sylvester no-go *by construction* (the no-go bites only `*`-congruences of a *chosen*
+  background; here there is no chosen background, only the canonical duality). **THE LANGUAGE PASSES THE
+  SOLVED CASE** → admitted for the `ℤ` deformation. **Falsifier verdict (anchor, not `ℤ`-candidate):** the
+  FF archetype's CIRCULAR-over-`ℤ` (Euler-borne Y via radius `√q`/C3b, sees-zeros Y via the flip/C5,
+  independent N = Weil positivity) — expected and correct, because over `𝔽_q` the Euler product OWNS the
+  radius. **The sole `ℤ`-hardness localizes into the single hinge C3b** (confirmed in the working model:
+  every other clause is a categorical structure on one object); **C6 DH-failure is structural** (no
+  Frobenius weight ⟹ no `μ` ⟹ no similitude relation C3a ⟹ no object — the built-in falsifier). **Not
+  overclaimed:** this validates the LANGUAGE on the anchor; the `ℤ` problem is untouched, living entirely
+  in C3b. **Successors added:** M2b sharpened (the `{L_p}↦μ` functor, with M2's observation that the FE
+  similitude is multiplier-1 and must be upgraded to an Euler-read `μ`); M2c [COHERENCE: prove the datum
+  is a functorial object of a rigid tensor category — `D∘D≅id`, `φ_{FE}` a morphism, `c` compatible with
+  `D` — and redo at `g=2` to confirm the `g=1` semidefiniteness was the trace-kernel artifact].
 
 - **2026-06-06 — M1 [DEFINE]: wrote the universal property of `𝕊_ℤ` as a representing-object contract
   C1–C6 over `ζ`-Hodge data, with the polarization CATEGORICAL (C4 = canonical evaluation pairing of the
