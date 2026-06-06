@@ -131,3 +131,55 @@ Compute `B(θ·,·)` for a concrete Hecke eigenform `f` (e.g. `Δ`, weight 12) a
 positivity numerically. Two outcomes, both informative: **holds** ⟹ chase the proof of A4; **fails at
 the corner** ⟹ the failure profile *is* the next missing structure (the `h_∞` compactification),
 returning us to step 2 with one more axiom.
+
+---
+
+# Pass two — A5 is a square-root structure; what it represents (2026-06-06)
+
+**Step 1 (mechanism, refined).** The edge→centre gap `Re s: 1 → ½` is a **square root**: over `𝔽_q`,
+`Re s=½ ⟺ |α|=q^{1/2}`, and `|α|²=q → |α|=q^{1/2}` is produced by **self-intersection on the surface
+`C×C`** (Hodge index: a 2-dim intersection number `=q`, whose root is the line). Square roots of
+positive quantities are supplied by **self-products / diagonals**, not by 1-dimensional data. *This is
+why the missing object is forced to be the square* — `½` is half of `1`.
+
+**Step 2 (A5 axiomatized).**
+> **(A5)** A **2-dimensional self-dual object `S²`** (a self-product with a diagonal `Δ`) whose
+> **self-intersection number is the sym²/Rankin–Selberg edge-positivity** (the Petersson norm
+> `‖f‖² = Res_{s=1} L(s,f×f̄) > 0`), and whose Frobenius/flow eigenvalues are the zeros. Its
+> Hodge-index positivity `(Δ·Δ)`-type inequality is the **square root** that puts the eigenvalues at
+> `|·|=q^{1/2}` ⟺ the zeros on `Re s=½`.
+
+**Formal lemma [formal].** `A5 + Hodge index ⟹ RH` — the *same one-line Weil argument* (`(D·D)≤0` on
+the primitive part ⟹ `|α|=q^{1/2}`), now with the **input pinned**: the positive self-intersection it
+needs **is** the Petersson norm. (Check: conclusion formal ⟹ axioms complete; all hardness is in
+*realizing* `S²` with self-intersection `= ‖f‖²`.)
+
+**Step 4 (universal property — what `S²` represents).**
+> `S²` (= `h_∞`, the missing object) **represents the square root of the Rankin–Selberg/Petersson
+> edge-positivity**: the universal self-product whose self-intersection is `‖f‖²` and whose Frobenius
+> trace is the explicit formula. We do not build it; we ask whether *that functor is representable.*
+
+This is a **strictly sharper spec than "construct `C×C` over `ℤ`"**: it names the self-intersection
+number the surface must have (`‖f‖²`, an honest Petersson norm), tying the geometric object to the one
+unconditional analytic positivity we have.
+
+**Step 5 (falsifier — by construction).** DH has no Satake parameters ⟹ no sym²/Rankin–Selberg ⟹ **no
+Petersson norm ⟹ no self-intersection ⟹ `S²` cannot be formed for DH.** DH-refusing structurally; the
+surface's very *existence* requires the Euler/Hecke product. Clears Euler-borne (maximally), sees-zeros
+(eigenvalues = zeros), independent (`‖f‖²` unconditional) — the FORCING profile, conditional only on
+realizing A5.
+
+**Step 6 (deformation handle — the construction route).** Over `𝔽_q` the surface exists and the Hodge
+index is a theorem. The construction problem is the `q→1` degeneration: **what survives the limit of
+the `C×C` Hodge index, with the self-intersection `= ‖f‖²`?** This is exactly where the condensed
+stack-of-norms (the compactified corner, F. Charles' "archimedean Deligne–Illusie ⟶ Kähler" open
+question) and the Connes–Consani tropical square become the **concrete candidate realizations to feed
+in** — now with a *target self-intersection number* to hit, not a blank construction.
+
+## Where the loop now stands (after two passes)
+RH `⟸` **a self-product surface over `Spec ℤ` whose self-intersection is the Petersson norm `‖f‖²` and
+whose Hodge index supplies the square root.** Every surrounding piece is formal/unconditional; the wall
+is the *single* construction, now specified to its self-intersection number and tied to the
+unconditional sym² positivity. The next pass is the representability/deformation question: realize the
+`‖f‖²`-self-intersection surface as the `q→1` limit of `C×C` in the condensed/tropical corner — the
+one concrete construction the whole audit has been pointing at, now with its target pinned.
