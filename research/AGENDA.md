@@ -70,30 +70,34 @@ the residue pinned to ONE cardinality `|κ(t=0)|`. R8 (DONE) read that cardinali
 invariant and PROVED a TYPE obstruction: the three free 𝔽₁ suppliers (scaling-grading = continuum, length
 edge = a length, Bost–Connes `ℕˣ` = a base-independent index whose `q→1` ground field evaporates) cannot
 furnish a finite `|constant field|`. The residue is now: "`Spec ℤ` has no finite field of constants at `∞`"
-= the precise 𝔽₁-content of RH. R9 (TOP) tests whether any 𝔽₁-tower (`μ_∞`, Witt ghosts, the Arakelov
-`∞`-component) supplies a finite constant field, or confirms the obstruction (`μ_∞` is infinite).**
+= the precise 𝔽₁-content of RH. R9 (DONE) type-checked the THREE NAMED 𝔽₁-towers — `μ_∞`/`𝔽_{1^n}`, the
+Borger Λ-ring/big-Witt ghosts, the Connes–Consani `\overline{Spec ℤ}` archimedean component — and the
+obstruction RECURRED: every named 𝔽₁ field of constants is INFINITE (`μ_∞=ℚ/ℤ` countable, the Witt ghosts
+an `ℕ`-indexed product with one Frobenius per prime, the Arakelov `∞`-component `ℝ/ℂ` a continuum). The
+sharpened residue: not merely "wrong type" but "every named 𝔽₁-constant object is INFINITE." R10 (TOP) asks
+whether the finiteness can be FORCED by COMPACTNESS rather than read off a constant field — the spectral/
+trace-class route (a finite-trace operator / a determinant), the one direction a colimit/product/completion
+cannot block.**
 
-R9. **[CONSTRUCTION · the CONSTANT-FIELD reading — does any 𝔽₁-tower supply a FINITE constant field at `∞`,
-   or is `μ_∞` (cardinality `∞`) the next confirmation? — NOW THE TOP ITEM (R8 DONE: the missing cardinality
-   IS the missing constant field; a proven TYPE obstruction)]** R8 (DONE) read R7's single missing cardinality
-   `|κ(t=0)|` CORRECTLY — as a **constant-field invariant** `|κ(t=0)| = |constant field|^{deg}` (over `𝔽_q`
-   finite because a finite constant field lies UNDER the curve) — and PROVED a **TYPE obstruction**: the three
-   free `𝔽₁` suppliers (R3's scaling site = a **continuum**; R3b's length edge `{log p}` = a **length**;
-   R3b-BC's Bost–Connes `ℕˣ` = a **base-independent index** whose ground field the `q→1` limit DELETES) each
-   supply a real piece (grading / edge / discreteness) but **NONE furnishes a constant-field cardinality** —
-   their sizes are the wrong TYPE (continuum/length/index, never a finite `|field|`). The `𝔽₁` fact "`Spec ℤ`
-   has no constant field" is EXACTLY why the base size `q^{w/2}` is the irreducible residue = the **precise
-   `𝔽₁`-content of RH**: RH over `ℤ` ⟺ the archimedean compactified point acquires a finite constant field.
-   **R9's task:** does any *candidate* construction supply a finite **constant-field cardinality** at `∞` of the
-   right type — Connes–Consani's `\overline{Spec ℤ}` compactification with its archimedean component; the Borger
-   Λ-ring / big-Witt "ghost" constants; the cyclotomic tower `μ_∞` / `𝔽_{1^n}` as a would-be field of
-   constants — or is the obstruction confirmed at the next level (the cyclotomic constants `μ_∞` have cardinality
-   `∞`, an INFINITE would-be constant field, so the type obstruction RECURS)? Anchor on `𝔽_q`: there the constant
-   field is `𝔽_q`, finite, cardinality `q`, and EVERY closed point's residue field is a finite extension of it;
-   the question is whether ANY `𝔽₁` ground-of-constants at `∞` is finite, or whether all candidates (`μ_∞`, the
-   Witt ghosts, the Arakelov `∞`-component) are infinite — confirming "no finite constant field at `∞`" as the
-   irreducible terminus. (falsify: the supplied constant field must be DH-distinguishing AND finite — DH has no
-   `H¹` ⟹ not even curve-like ⟹ no constant-field slot, four levels before the cardinality.)
+R10. **[CONSTRUCTION · the COMPACTNESS reading — can FINITENESS be forced by a finite-trace (compact/
+   nuclear) structure at `∞` instead of a constant-field cardinality? — NOW THE TOP ITEM (R9 DONE: every
+   named 𝔽₁-tower constant field is INFINITE; the obstruction RECURRED)]** R9 (DONE) verified the three
+   constructions that most directly PROPOSE a field of constants for `Spec ℤ` are each INFINITE — `μ_∞=ℚ/ℤ`
+   (countable colimit), the big-Witt ghosts (`ℕ`-indexed product, one Frobenius per prime), the Arakelov
+   `∞`-component (`ℝ/ℂ`, a continuum + a metric, doubly dead by §0). So a **finite cardinality** is NOT
+   suppliable by any 𝔽₁ field-of-constants tower. **R10's reframing:** the radius `q^{w/2}` needs a FINITE
+   datum, but finiteness need not be a *cardinality* — over `𝔽_q` the radius is the trace/determinant of a
+   single Frobenius (`Tr(Fr|H^1)`, `det(1−Fr·T)`), a **finite-rank / finite-trace** datum. At `∞` the analogue
+   is a **nuclear/trace-class operator** (Connes' trace formula: the zeros as the spectrum of an action on the
+   adele-class space; the "finite size" = a regularized determinant, not a `|field|`). R10's task: is there a
+   **compact/finite-trace** archimedean structure whose regularized determinant MARKS the radius `q^{w/2}`
+   without invoking a constant field — i.e. does COMPACTNESS (the one finiteness a colimit/product/continuum
+   cannot block) supply what the cardinality could not? Anchor on `𝔽_q`: there `det(1−Fr·T|H^1)` is the
+   numerator of the zeta factor, a FINITE polynomial whose roots have `|α|=q^{w/2}` — a finite-TRACE datum, NOT
+   a cardinality of constants; the question is whether the archimedean regularized determinant `det_∞` is
+   ALSO finite-trace (Connes' `H^1_∞` = a nuclear space?) and marks the same radius. (falsify: the trace-class
+   structure must be DH-distinguishing — DH has no Euler product ⟹ no Frobenius ⟹ no `det(1−Fr·T)` ⟹ no
+   numerator polynomial ⟹ nothing for a regularized determinant to be the `∞`-analogue OF.)
 
 ## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
 RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
@@ -324,6 +328,46 @@ the **SYLVESTER inertia-lock**: an EVEN positive form whose signature is MOVABLE
 
 ## DONE
 (the loop appends here, newest first)
+
+- **2026-06-06 — R9 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: every NAMED 𝔽₁-tower field of
+  constants at `∞` is INFINITE — the R8 TYPE obstruction RECURS one level deeper; `μ_∞=ℚ/ℤ` (countable), the
+  big-Witt ghosts (`ℕ`-indexed product, one Frobenius/prime), the Arakelov `∞`-component (`ℝ/ℂ` continuum +
+  a metric) — NONE is a finite field with a cardinality `q`.** [DECISION · DEF · coherence-checked vs 𝔽_q].
+  `research/construction/R9-constant-field-tower.md`, `scripts/numerics/witness/constant_field_tower.py`
+  (+1 `falsify.py` row → 45th wall, DISPERSING-by-design = terminus-characterizer / obstruction-recurrence
+  locator, Euler-silent like R1–R8). **What got DECIDED (exact cardinality type-checks, no zeros assumed):**
+  R8 PINNED the open problem to "supply a finite constant field at the archimedean place"; R9 type-checks the
+  THREE constructions that most directly PROPOSE a field of constants for `Spec ℤ`. **[μ]** the cyclotomic
+  tower `μ_∞/𝔽_{1^n}` (Kapranov–Smirnov, Connes–Consani): each finite level `μ_n=ℤ/n` is FINITE, but the
+  𝔽₁ constant object is the FULL colimit `μ_∞=colim_n μ_n=ℚ/ℤ`, COUNTABLY INFINITE (`ℵ_0`) — over 𝔽₁ there is
+  no `q` at which to truncate the tower (the truncation `q` IS the constant field the `q→1` limit deletes).
+  **[W]** the Borger Λ-ring / big-Witt ghosts (Borger 2009, 𝔽₁ = the absolute base): the constants are the
+  ghost components of `W(ℤ)`, an `ℕ`-indexed INFINITE PRODUCT with one Frobenius lift `ψ_p` PER PRIME — the
+  OPPOSITE of a single `𝔽_q` with one Frobenius and one cardinality `q`. **[Ar]** the Connes–Consani
+  `\overline{Spec ℤ}` archimedean component: residue field `ℝ/ℂ` = a CONTINUUM (char 0), exactly the
+  scaling-site verdict; Arakelov METRIZES `∞` (a metric, killed by the §0 inertia no-go anyway). **Verdict:**
+  every named 𝔽₁ constant-tower is INFINITE — the TYPE obstruction R8 located does NOT dissolve at the named
+  candidates; it RECURS: the 𝔽₁ field of constants EXISTS as an object but is structurally INFINITE (`ℵ_0` /
+  `ℕ`-product / continuum), with no finite cardinality to mark the radius `q^{w/2}`. **Falsifier verdict:**
+  EULER-BORNE NO on this pass (type-checks named towers via exact cardinality algebra; not a `ℤ`-positivity;
+  DH structural verdict sharp, FOUR levels before the radius — no `H¹` ⟹ no surface ⟹ no family ⟹ no special
+  fiber ⟹ no constant-field slot), SEES-ZEROS YES (radius `q^{w/2}` = even split = purity), INDEPENDENT NO
+  (radius `= M(N)=W =` Weil II = the solved case; over `ℤ` this is RH) → DISPERSING-by-design. **Ladder
+  `DH < ζ < FF`:** DH not even curve-like (no constant-field slot); `ζ` the `q→1`/𝔽₁ place — the 𝔽₁ field of
+  constants EXISTS as an object (`μ_∞`, the Witt ghosts, the Arakelov `ℝ/ℂ`) but is INFINITE, radius UNMARKED;
+  FF a curve over a FINITE constant field `𝔽_q` (`|𝔽_q|=q`, `μ_{q-1}` finite), Frobenius converting
+  `w → q^{w/2}`, radius MARKED. **THE SHARPENED 𝔽₁-CONTENT:** the radius `q^{w/2}` is marked by a FINITE `q`;
+  𝔽₁ supplies `q→1` (the constant field shrinks to a point), so RH over `ℤ` ⟺ the archimedean place carries a
+  finite base size after all — which the three named 𝔽₁ constant-towers structurally CANNOT supply.
+  **NEW content (REFINES R8):** R8's "wrong type" sharpens to "every named 𝔽₁-constant object is INFINITE"
+  (`ℵ_0` / `ℕ`-product / continuum), the obstruction CONFIRMED at the most direct candidates. **Not
+  overclaimed:** R9 verifies the three named constructions are each infinite; it does NOT prove no future
+  𝔽₁-geometry could manufacture a finite constant field — it pins the open problem and names the next route.
+  **Successor:** R10 promoted to TOP ITEM [CONSTRUCTION — can FINITENESS be forced by COMPACTNESS (a finite-
+  trace / nuclear / regularized-determinant structure at `∞`, Connes' trace formula) instead of a constant-
+  field cardinality? The radius over `𝔽_q` is `det(1−Fr·T|H^1)`, a finite-TRACE datum NOT a `|field|`; is the
+  archimedean `det_∞` also finite-trace and does it mark the same radius — the one finiteness a colimit/
+  product/continuum cannot block?].
 
 - **2026-06-06 — R8 [RESIDUE · DECISION · DEF · coherence-checked vs 𝔽_q]: the 𝔽₁ / Connes–Consani
   machinery does NOT supply a finite closed-point cardinality at the archimedean special fiber — "no finite
