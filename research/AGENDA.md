@@ -13,56 +13,38 @@ surface over `Spec ℤ` whose self-intersection is the Petersson norm `‖f‖²
 F-sym2-os-bridge.md`); the wall is the cross-place coupling (8 Euler-product confirmations,
 `research/positivity-program.md` §E–L).
 
-## NEXT
+## CLOSED — the form/operator impossibility map (pass 3–4, verified vs 𝔽_q)
+RH = ζ-intrinsic Euler-borne coupling of MODULUS⊗PHASE = `W_∞ ≥ Σ_p W_p`. Every static (form/operator)
+route to it is now closed with a structural reason (logs: `2026-06-06-*pairing*.md`, `*-domination.md`):
+- **self-pairing forms** (symmetric/θ-twist/Hermitian/oriented, real OR complex plant) — **Sylvester
+  inertia-locked** for any `*`-congruence of a fixed DH-shared background. [THM-flavored]
+- **operator domination** — no operator is both Euler-borne-independent AND zero-tracking.
+- **zero-side Gram** — circular + not Euler-borne.
+The open object survives unscathed: **a structure that genuinely depends on the zero LOCATIONS** = the
+Frobenius/`(p,q)`/Deninger archimedean-Hodge action (deep construction). 28 Euler/wall confirmations.
 
-**HEADLINE — pass-6 convergence (the ENTIRE self-pairing family is closed — symmetric, Hermitian,
-real-twisted, oriented/holomorphic, real OR complex plant; the lock is the CONGRUENCE STRUCTURE itself,
-not the reality of the data; the FORM must depend on the zero LOCATIONS).** RH = a **ζ-intrinsic,
-Euler-borne coupling of MODULUS and PHASE** = the Weil explicit-formula domination `W_∞ ≥ Σ_p W_p`.
-Three nested closures now stand. **(i)** The self-pairing family `(plant)ᵀ(fixed DH-shared form)(plant)`
-(symmetric `TᵀAT`, θ-twist `TᵀAΘT`, Hermitian `Tᵀ(A+iω)T`) is Sylvester-locked. **(ii)** The entire REAL
-non-congruence family (forms built FROM `T`'s entries: `T−Tᵀ`, `T−ΘTᵀΘ`, `[T,Tᵀ]`) does not flip even for
-a genuinely non-normal causal Frobenius operator. **(iii) STRONGEST — the ORIENTED/holomorphic escape is
-closed too:** the signed Hodge weight `⟨P^{1,0}x,P^{1,0}x⟩−⟨P^{0,1}x,P^{0,1}x⟩` **COLLAPSES** (exact, via
-`J^TA=−AJ`) to `Q=−iω` — a FIXED Hermitian background, the imaginary part of the already-closed `A+iω`;
-and even a genuinely COMPLEX ORIENTED plant `e^{iγu}` (`‖[T_c,J]‖≈16–22`) does NOT flip it. The reason,
-the strongest naming of the wall yet [THM]: **Sylvester's law of inertia holds for ANY invertible
-`*`-congruence, REAL OR COMPLEX** — so the wall was NEVER the reality of the plant; it is that ANY
-`(plant)^*(fixed Hermitian form)(plant)` is inertia-locked, period. **CORRECTED target: the FORM the
-plant pairs against must itself DEPEND ON THE ZERO LOCATIONS** = the operator domination `A ⪰ P` /
-`W_∞ ≥ Σ_p W_p` directly, NOT any congruence/self-pairing of a fixed form.
+## NEXT — the de Bruijn–Newman / `Λ≤0` branch (the one major unaudited frontier)
 
-1. **[ANALYTIC · load-bearing — the cross-place coupling as an INEQUALITY over a POSITIVITY CONE, not a
-   one-place Gram; the place-COUNT accumulation. NOW THE TOP LIVE ROUTE: both single-form branches are
-   closed (candidate (a) prime side RH-silent, candidate (b) zero side circular+not-Euler-borne —
-   `resonance_kernel.py`, DONE top). The coupling is an INEQUALITY between the two sides, not a single
-   form.]** `operator_domination.py` found `A ⪰ P` does not discriminate ζ from DH at one place (both
-   `W` indefinite, like `semilocal_2.py`) — the prime perturbation is too weak at one place. Sharpen:
-   test the SCALAR Weil inequality `W_∞(h) ≥ Σ_p W_p(h)` as `h` ranges over the POSITIVITY-CONSTRAINED
-   test cone `{ĥ ≥ 0}` (the Cohn–Elkies/Beurling–Selberg cone — `fourier_optimization.py`). Sweep the
-   place set `S = {2,3,5,…}`: find `|S|` where the cone-optimal `W_∞ − Σ_{p∈S} W_p` first goes NEGATIVE
-   for DH (mixed-sign `c_DH`) while staying `≥0` for ζ (`Λ ≥ 0`) — the accumulation Worker C named
-   (`positivity-program.md` §K: DH fails first at Li index `n≈521` = many primes). This is the
-   value-gap-becomes-a-sign question, now over the cone. `falsify.py`. **Why this is now the head:** the
-   resonance-kernel close pinned that no single finite-rank form is simultaneously Euler-borne (primes),
-   independent, AND zero-tracking (zeros). The coupling MUST be the INEQUALITY relating the Euler-borne
-   prime side `Σ_p W_p` to the zero-tracking archimedean+zero side `W_∞` — exactly this cone-domination,
-   where the Euler-borne `Λ ≥ 0` (vs mixed-sign `c_DH`) is what makes ζ satisfy a bound DH violates. This
-   is the FIRST candidate that is BOTH sides at once (an inequality, not a form).
-2. **[CONSTRUCT]** Condensed **stack-of-norms** (Clausen–Scholze / F. Charles): realize the ζ-intrinsic
-   object with the **signature `(1,ρ−1)` / phase structure** (corrected from `‖f‖²`). Where does the
-   "archimedean Deligne–Illusie ⟶ Kähler" open question sit relative to the *reality/phase* target?
-4. **[CONSTRUCT]** **Tropical / Connes–Consani** square: in the `q→1` limit of the Frobenius
-   self-pairing, does the **phase/reality** structure (not the modulus) survive, and where does it diverge?
-5. **[CONSTRUCT · representability]** What functor does the **ζ-intrinsic modulus⊗phase coupling**
-   represent (Brown representability / moduli)? The square root taking the edge-modulus to the line-phase.
-6. **[DEFORM]** Trace the `C×C` Hodge index (the *phase*/signature, NOT the modulus) through `q→1`; the
-   obstruction-cocycle names the next axiom.
-7. **[ANCHOR]** Selberg/hyperbolic: confirm the line-forcing is the **self-adjointness/phase**, DISTINCT
-   from the Maass/Petersson norm (modulus). Predicted distinct (DONE) — confirm or break.
-8. **[analytic · demoted — converged]** The `log m = log|h|² + i·arg m` split: does a complex-log total
-   positivity (Jensen/Nevanlinna `log|m|` + winding) make modulus⊗phase ONE identity? Lower priority —
-   prefer construction.
+**Why this branch.** The static geometric/form/operator routes all factor through the missing surface /
+the cross-place coupling. The **dynamical** route (dBN heat flow `H_t=e^{−tD²}`, `RH ⟺ Λ≤0`) is
+structurally DIFFERENT: Rodgers–Tao proved `Λ≥0` *unconditionally* using the **dynamics + Montgomery zero
+statistics**, NOT the arithmetic surface. Audit it with the same rigor; transfer the loop's lessons.
+
+1. **[dBN · anchor · load-bearing]** Map exactly where forcing `Λ≤0` stalls. `Λ≥0` (Rodgers–Tao) is the
+   wrong direction; `Λ≤0`=RH is open. Is the obstruction the SAME cross-place coupling `W_∞≥Σ_p W_p` as
+   the static routes, or a genuinely distinct dynamical endpoint (a flow-monotonicity / entropy)? Be
+   precise about Rodgers–Tao's mechanism and why it gives `≥` not `≤`.
+2. **[dBN · transfer]** Do the closed-branch lessons constrain the flow? (i) **modulus≠phase** — is the
+   dynamical "phase" (the flow's action on `arg`) available where the static one wasn't? (ii) **Sylvester
+   inertia-lock** — does the flow's generator evade `*`-congruence-invariance (it's a genuine 1-param
+   group, not a congruence)? Run falsify.py on any flow functional.
+3. **[dBN · positivity]** Is there a Lyapunov/monotone functional under the flow that FORCES `Λ≤0`,
+   Euler-borne AND sees-zeros AND independent? Or does it too split (modulus-monotone but phase-blind)?
+4. **[dBN · the GUE handle]** Rodgers–Tao use Montgomery pair correlation (GUE). Is the zero-statistics
+   input a genuinely NEW, ζ-intrinsic, Euler-borne lever the static routes lacked — or RH-silent
+   (GUE is universal, shared with DH-like)?  ← decisive kill-test.
+5. **[dBN · synthesis]** Verdict: is the dynamical branch a genuinely distinct frontier (new endpoint), or
+   does it reduce to the same wall? If distinct, the most concrete next probe; if same, close it cleanly.
 
 ## DONE
 (the loop appends here, newest first)
