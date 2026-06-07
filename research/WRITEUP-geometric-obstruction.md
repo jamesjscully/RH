@@ -100,14 +100,47 @@ to its atom:
 > `q` the single number tying additive cardinality to multiplicative degree. At `∞` the marriage breaks: one
 > gets the reality without the scale.
 
-## 4. Theorem B — the Geometric No-Go (scoped), with exhaustion table
+## 4. Theorem B — the Geometric No-Go
 
 **Setup.** A *Frobenius datum* is a finite-rank `F` with the explicit-formula trace and a self-duality
-`F·F†=[deg]`. RH for the datum is `|α|=√q` (call it **Step B**); the duality/FE is **Step A**.
+`F·F†=[deg]` (`F` a *similitude* of factor `c=deg` of a non-degenerate Hermitian form). RH for the datum is
+`|α|=√c` for every eigenvalue (call it **Step B**); the duality/FE/similitude is **Step A**.
 
-**Theorem B.** No coherence structure on the datum forces Step B. In every structure tested, Step A is free
-and archimedean-native, while off-line (`|α|≠√q`) data are *consistent objects* and Step B is an external
-positivity. The exhaustion (each row: what is free, why Step B fails, the witness):
+### 4.1 Theorem B′ (structural form — a theorem)
+
+> **Theorem B′.** Let `V` be a finite-dimensional complex space and `F∈GL(V)` a similitude of factor `c>0`
+> of a non-degenerate Hermitian form (`F*HF=cH`), with spectrum stable under the functional-equation
+> involution `σ: α↦c/ᾱ` (automatic for a similitude). Then:
+> 1. **(Step A is free)** a non-degenerate `F`-invariant Hermitian form exists for *every* `σ`-stable
+>    spectrum — in particular for spectra with `|α|≠√c`;
+> 2. **(Step B ⟺ RH)** such a form can be chosen **positive-definite iff every `|α|=√c`**; if some
+>    `|α|≠√c`, every `F`-invariant non-degenerate form is **indefinite (Krein)**, with negative index equal
+>    to the number of `σ`-pairs `{α,c/ᾱ}` off the circle;
+> 3. **(the no-go)** hence the similitude structure does **not** determine the signature; positive-
+>    definiteness (Step B = "`F/√c` unitarizable") is an independent condition, and any structure
+>    constructing `F` from its duality data alone forces only Step A. Forcing Step B requires imposing
+>    positive-definiteness as an extra axiom (a Hilbert/`C*` structure, a positive fibre functor) —
+>    logically equivalent to assuming RH for the datum.
+
+*Proof.* If `Fx=αx`, then `c·H(x,x)=H(Fx,Fx)=|α|²H(x,x)`, so `(|α|²−c)H(x,x)=0`: either `|α|²=c` or `x` is
+isotropic (`H(x,x)=0`). If `H` is positive-definite then no nonzero vector is isotropic, forcing `|α|²=c` for
+all eigenvalues; conversely if some `|α|²≠c` the eigenvector is isotropic, so `H` is not definite — this is (2).
+For existence and the signature: diagonalize `F`; `σ` pairs the spectrum. On a `σ`-fixed eigenvalue (`|α|²=c`)
+set `H` definite (`+1`) on the eigenline; on a `σ`-pair `{α,β=c/ᾱ}`, `α≠β`, the two eigenvectors are isotropic
+and the unique invariant pairing couples them — a hyperbolic plane of signature `(1,1)`. Summing gives a
+non-degenerate invariant `H` for any `σ`-stable spectrum, with signature `(d,0)⊕(1,1)^{⊕k}` where `d=`#on-circle
+eigenvalues and `k=`#off-circle pairs — proving (1) and completing (2). (3) is immediate. ∎
+
+**Witness** (`scripts/numerics/witness/theorem_B_similitude_signature.py`): for `c=7`, the on-line datum
+gives `F*HF=cH` to `1.8e-15` with signature `(4,0,0)` (positive-definite); the off-line datum (two pairs off
+the circle) gives the *same* similitude residual `1.8e-15` with signature `(4,2,0)` (Krein) — Step A free at
+both radii, Step B only on-line. [computed]
+
+### 4.2 The exhaustion (corroboration of B′)
+
+Every coherence structure tried is an *instance* of B′: it presents the similitude/Step-A data and is silent
+on the signature, so off-line data are consistent in it and Step B is an external input. The table (each row:
+what is free, why Step B fails, the witness):
 
 | structure / instrument | Step A (free) | why Step B is not forced (failure mode) | witness / ref |
 |---|---|---|---|
@@ -122,10 +155,13 @@ positivity. The exhaustion (each row: what is free, why Step B fails, the witnes
 | **condensed / six-functor** | coherent duality (the FE) | supplies Step A only; Step B (radius) provably not | `PP-*` |
 | **abelian-variety / Rosati** | `F·F†=[deg]` (free tautology) | the scalar is free; `F†=F̄` (positive-definite) **is** RH | `RF-*`; rosati_reflection.py |
 
-**Calibration.** Rows 1–3 are the strongest of their kind, established with computed witnesses; the universal
-claim is an **exhaustion** across the table. The common mechanism — *off-line spectra are consistent in every
-coherence structure; positive-definiteness is always a strict extra input* — is its content. (Detail:
-`research/the-complete-account.md`, `research/positivity-program.md`, `research/construction/`.)
+**Calibration.** **Theorem B′ is a theorem** (proof above): the similitude/duality structure provably
+underdetermines the signature. What is *not* a single proof is the claim that *every* coherence framework
+reduces to the Step-A/similitude data — that is verified per-framework in the table (each row exhibits the
+free Step A and the off-line consistency that B′ predicts), the strongest three with computed witnesses. So
+the residual non-rigor is narrow: not "does a similitude determine the signature" (proven: no), but "is each
+named framework an instance" (checked case by case). (Detail: `research/the-complete-account.md`,
+`research/positivity-program.md`, `research/construction/`.)
 
 ## 5. Theorem A — the Foundational No-Go (formal)
 
@@ -199,9 +235,11 @@ field `ℂ`, `Gal(ℂ/ℝ)` of modulus 1, slope `½` — the reality, no scale; 
 **Proven.** Theorem A and Proposition A3 are theorems (standard inputs). The reduction `RH⟺F†=F̄` and the
 count/radius decoupling are constructive and validated on the function-field anchor.
 
-**Theorem-shaped (not one general proof).** Theorem B is established for the strongest structures (computed
-witnesses) and argued by exhaustion across the rest; its content is the common mechanism (off-line
-consistency; positivity always external).
+**Theorem B is now a theorem (B′) plus a per-framework check.** The structural core — a similitude
+underdetermines the signature; positive-definiteness ⟺ all `|α|=√c` ⟺ RH — is *proven* (§4.1) and verified
+computationally. The only residual non-rigor is the per-framework claim that each named coherence structure
+(Tannakian, `C*`, o-minimal, …) is an instance of B′, checked case by case in the table (§4.2), not by one
+meta-theorem.
 
 **Not claimed.** We neither prove nor disprove RH. Theorem A is *not* undecidability — it is the precise
 limit of one strategy. That the char-0/char-`p` divide obstructs RH is the founding intuition of the
