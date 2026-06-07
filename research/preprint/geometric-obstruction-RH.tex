@@ -1,0 +1,361 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Sph}{\mathbb{S}}
+\newcommand{\Bool}{\mathbb{B}}
+\newcommand{\m}{\mathfrak{m}}
+\newcommand{\Oo}{\mathcal{O}}
+\newcommand{\dg}{^{\dagger}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Char}{\operatorname{char}}
+\DeclareMathOperator{\GL}{GL}
+
+\title[A characteristic-zero obstruction to a geometric proof of RH]{Two no-go theorems for the geometric strategy\\ on the Riemann Hypothesis}
+\author{James Scully}
+\address{}
+\email{jamesjscully@gmail.com}
+\date{June 2026}
+
+\begin{document}
+
+\begin{abstract}
+We study the obstruction to importing Weil's function-field proof of the Riemann Hypothesis (RH) into the
+number-field setting. We reduce RH to a single \emph{reality condition} $F\dg=\bar F$ on a polarized
+arithmetic Hodge category, and prove two no-go results. The \emph{Geometric No-Go} (Theorem~\ref{thm:B}) is
+a structural theorem: a similitude $F\cdot F\dg=[\deg]$ \emph{underdetermines the signature} of its invariant
+Hermitian form, so the positive-definiteness that is RH is independent of the duality structure and cannot be
+forced by it. The \emph{Foundational No-Go} (Theorem~\ref{thm:A}) shows that a finite additive characteristic
+at the archimedean place of $\Q$ is \emph{contradictory} with $\Q$ being a field of characteristic $0$;
+consequently the finite ground that Weil's proof requires at $\infty$ is not merely missing but forbidden.
+The unifying mechanism is a \emph{count/radius decoupling}: the reality is multiplicative and free at every
+place, while the scale $q=|\F_q|$ is additive (a characteristic) and exists only over a genuine finite field.
+We neither prove nor disprove RH; we establish that if RH is provable, the proof cannot route through giving
+the archimedean place a finite ground.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+Over a smooth projective curve $C/\F_q$, RH for the zeta function $\zeta_C$ is \emph{Weil's theorem}
+\cite{Weil}: the Frobenius eigenvalues on $H^1$ satisfy $|\alpha|=q^{1/2}$ (purity), forced by the
+\emph{Hodge index theorem} on the surface $C\times_{\F_q}C$---a geometric positivity that holds
+\emph{because} the surface is projective over the finite field $\F_q$. The ``geometric strategy'' for RH over
+$\Q$ is to construct the analogous projective surface over a finite ground for $\Spec\Z$; this is the program
+of the field with one element / absolute geometry \cite{Soule,Deitmar,Borger,ConnesConsaniF1}. Our purpose is
+to prove that this strategy is foreclosed.
+
+Informally: in the function-field world \emph{every} place sits over a finite field of constants. The places
+of $\Q$ also sit over finite fields---the residue field at a prime $p$ is $\F_p$---with one exception, the
+archimedean place, whose completion is $\R$. The real numbers are infinite and have no finite ground. Weil's
+proof needs a finite ground at \emph{every} place; $\Q$ has one everywhere but at infinity. We show this gap
+is irreparable: it is the definitional identity \emph{archimedean $\equiv$ characteristic $0$}, and a finite
+ground there would force a prime number to equal $0$.
+
+We prove two independent results.
+
+\begin{itemize}
+\item \textbf{Theorem~\ref{thm:A} (Foundational No-Go).} A finite additive characteristic at the archimedean
+place $\infty$ of $\Q$ is contradictory with $\Char\Q=0$. The finite ground at $\infty$ the strategy requires
+cannot exist.
+\item \textbf{Theorem~\ref{thm:B} (Geometric No-Go).} A similitude $F\cdot F\dg=[\deg]$ underdetermines the
+signature of its invariant Hermitian form; positive-definiteness (which is RH for the datum) is an
+independent condition that no structure seeing only the duality data can force.
+\end{itemize}
+
+\noindent\emph{Calibration.} Theorem~\ref{thm:A} is a theorem resting on Ostrowski's theorem, the definition
+of characteristic, and the finite-semifield classification. Theorem~\ref{thm:B} is proved as a structural
+statement (Theorem~\ref{thm:B}); that \emph{every named coherence framework} reduces to its hypotheses is a
+case-by-case verification (\S\ref{sec:exhaustion}), not a single meta-theorem. We do not claim to prove or
+disprove RH.
+
+\section{The reduction to a reality condition}\label{sec:reduction}
+
+We summarize the reduction; the construction is carried out and validated numerically against the
+function-field case elsewhere. One builds a polarized category with a representing object $\Sph_\Z$ carrying:
+a Frobenius $F$ with $\Tr(F^t\mid H^1)=\sum_\rho e^{t\rho}$ (zeros $=\spec F$); a $(p,q)$-grading at $\infty$;
+a structural duality $D$ realizing the functional equation; and a \emph{categorical} polarization $P$ equal
+to the canonical pairing of $D$ (not a chosen metric). On the function-field anchor this reproduces Weil's
+proof, with the categorical polarization equal to the Gram pairing. Peeling the resulting single positivity
+to its atom yields the following equivalence.
+
+\begin{proposition}\label{prop:reality}
+RH for the datum is the \emph{reality condition}
+\[
+F\dg=\bar F,
+\]
+the arithmetic (Rosati) adjoint equals the analytic (complex-conjugation) adjoint; equivalently
+$|\alpha|^2=\deg$ for every eigenvalue. The three classical formulations---the reality condition,
+Hodge--Riemann metric-compatibility, and Hilbert--P\'olya self-adjointness---coincide on this condition.
+\end{proposition}
+
+\section{The count/radius decoupling}\label{sec:decoupling}
+
+The condition $F\dg=\bar F$ factors, and the factorization is the mechanism behind both no-gos.
+
+\begin{itemize}
+\item \textbf{$F\cdot F\dg=[\deg]$ (the functional equation) is free}: a formal consequence of
+rigidity/duality, holding at every radius (including off-line). It is the \emph{multiplicative} datum---the
+involution, $\Gal$, the reality.
+\item \textbf{$|\alpha|=\sqrt q$ (the radius) is the deep half}: $q/\alpha=\bar\alpha$. It is the
+\emph{additive} datum, $q=|\F_q|$ being the order of the additive group, i.e.\ the characteristic.
+\end{itemize}
+
+\noindent Over $\F_q$ the two are married by a single Frobenius $x\mapsto x^q$ acting on $+$ and $\times$ at
+once, with $q$ the one number tying additive cardinality to multiplicative degree. At $\infty$ the marriage
+breaks: one obtains the reality without the scale. This is the invariant that recurs below.
+
+\section{The Geometric No-Go}\label{sec:B}
+
+\begin{definition}
+A \emph{Frobenius datum} is a finite-dimensional complex space $V$ with a non-degenerate Hermitian form
+$H$ and an endomorphism $F\in\GL(V)$ that is a \emph{similitude of factor $c>0$}: $F^*HF=cH$, equivalently
+$F\cdot F\dg=c\cdot 1$ for the adjoint $\dg$ of $H$. RH for the datum is $|\alpha|=\sqrt c$ for every
+eigenvalue $\alpha$ of $F$ (\emph{Step B}); the similitude/functional equation is \emph{Step A}. The spectrum
+of a similitude is stable under the involution $\sigma\colon\alpha\mapsto c/\bar\alpha$.
+\end{definition}
+
+\begin{theorem}[Geometric No-Go]\label{thm:B}
+Let $F$ be a similitude of factor $c>0$ on $V$, with $\sigma$-stable spectrum. Then:
+\begin{enumerate}
+\item\emph{(Step A is free.)} A non-degenerate $F$-invariant Hermitian form exists for \emph{every}
+$\sigma$-stable spectrum, in particular for spectra with $|\alpha|\neq\sqrt c$.
+\item\emph{(Step B $\Leftrightarrow$ RH.)} Such a form can be chosen positive-definite if and only if every
+$|\alpha|=\sqrt c$. If some $|\alpha|\neq\sqrt c$, every $F$-invariant non-degenerate Hermitian form is
+indefinite, with negative index equal to the number of $\sigma$-pairs $\{\alpha,c/\bar\alpha\}$ off the
+circle.
+\item\emph{(No-go.)} Consequently the similitude structure does not determine the signature;
+positive-definiteness (Step B) is an independent condition, and any structure that constructs $F$ from its
+duality data alone forces only Step A. Forcing Step B requires imposing positive-definiteness as an extra
+axiom (a $C^*$-structure, a positive fibre functor), which is logically equivalent to assuming RH for the
+datum.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+If $Fx=\alpha x$ then $c\,H(x,x)=H(Fx,Fx)=|\alpha|^2H(x,x)$, so $(|\alpha|^2-c)H(x,x)=0$: either
+$|\alpha|^2=c$ or $x$ is isotropic ($H(x,x)=0$). If $H$ is positive-definite no nonzero vector is isotropic,
+forcing $|\alpha|^2=c$ for all eigenvalues; conversely if some $|\alpha|^2\neq c$ the eigenvector is
+isotropic, so $H$ is not definite. This is~(2). For existence and the signature: diagonalize $F$; the
+involution $\sigma$ pairs the spectrum. On a $\sigma$-fixed eigenvalue ($|\alpha|^2=c$) set $H$ definite
+($+1$) on the eigenline; on a $\sigma$-pair $\{\alpha,\beta=c/\bar\alpha\}$ with $\alpha\neq\beta$ the two
+eigenvectors are isotropic and the unique invariant pairing couples them, a hyperbolic plane of signature
+$(1,1)$. Summing yields a non-degenerate invariant $H$ for any $\sigma$-stable spectrum, with signature
+$(d,0)\oplus(1,1)^{\oplus k}$, $d=\#$ on-circle eigenvalues and $k=\#$ off-circle pairs; this proves~(1) and
+completes~(2). Part~(3) is immediate.
+\end{proof}
+
+\begin{remark}[Numerical witness]
+For $c=7$, an on-line datum yields $F^*HF=cH$ to $1.8\times10^{-15}$ with signature $(4,0,0)$
+(positive-definite); an off-line datum with two pairs off the circle yields the \emph{same} similitude
+residual $1.8\times10^{-15}$ with signature $(4,2,0)$ (indefinite). Step A is free at both radii; Step B holds
+only on-line.
+\end{remark}
+
+\subsection{Exhaustion: every coherence structure is an instance}\label{sec:exhaustion}
+Each coherence structure proposed for RH presents the similitude/Step-A data and is silent on the signature,
+so off-line data are consistent in it and Step B is an external input. Table~\ref{tab:exhaustion} records, for
+each, what is free and why Step B is not forced.
+
+\begin{table}[h]
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+structure & Step A (free) & why Step B is not forced \\
+\midrule
+Tannakian / rigid tensor & finite-dim, duality, FE & off-line $F$ generates a consistent \\
+ & & non-polarizable category \cite{DeligneMilne} \\
+$C^*$ / Hermitian & invariant form, non-degenerate & signature $(d,0)$ on-line vs.\ $(k,k)$ Krein; \\
+ & & Doplicher--Roberts \emph{consumes} positivity \cite{DR} \\
+o-minimal / tame & proper-pushforward purity over $\F_q$ & $\Gamma_\R$ has infinite-discrete poles, \\
+ & & hence non-o-minimal \cite{BBT,vdD} \\
+Weil / Li positivity & the explicit-formula form & PSD $\Leftrightarrow$ RH (circular) \cite{Bombieri} \\
+Bost--Connes QSM & KMS states & free energy is RH-silent \cite{BostConnes} \\
+sym$^2$ / Rankin--Selberg & Euler-borne, independent & forces the edge $\mathrm{Re}\,s=1$, not the line \\
+de Bruijn--Newman flow & dynamics + zero statistics & the GUE lever is universal/RH-silent \\
+prismatic / $q$-de Rham & $q$-deformed FE & finite-prime-indexed, archimedean-blind \\
+condensed / six-functor & coherent duality & supplies Step A only \\
+abelian-variety / Rosati & $F\cdot F\dg=[\deg]$ tautology & the scalar is free; $F\dg=\bar F$ is RH \\
+\bottomrule
+\end{tabular}
+\medskip
+\caption{Each row exhibits the free Step~A and the off-line consistency predicted by Theorem~\ref{thm:B}.}
+\label{tab:exhaustion}
+\end{table}
+
+\section{The Foundational No-Go}\label{sec:A}
+
+We use only standard facts. For a place $v$ of $\Q$: the completion $\Q_v$; the residue field
+$\kappa(v)=\Oo_v/\m_v$ when $v$ is non-archimedean ($\Oo_v$ the valuation ring); and $\Char$ the additive
+order of $1$. The Weil hypothesis at a place is ``$\kappa(v)$ is a finite field $\F_{q_v}$ and Frobenius acts
+with eigenvalue-modulus $q_v^{w/2}$.''
+
+\begin{lemma}[Ostrowski {\cite{Ostrowski}}]\label{lem:ostrowski}
+Every nontrivial place of $\Q$ is equivalent to exactly one of: the $p$-adic absolute value $|\cdot|_p$ (one
+per prime $p$; non-archimedean; $\Q_p$; $\kappa=\F_p$), or the usual absolute value $|\cdot|_\infty$
+(archimedean; $\Q_\infty=\R$).
+\end{lemma}
+
+\begin{lemma}\label{lem:equiv}
+For a nontrivial place $v$ of $\Q$ the following are equivalent: \emph{(i)} $v$ is non-archimedean;
+\emph{(ii)} $\Z$ is bounded in $\Q_v$; \emph{(iii)} $v$ has a finite residue field $\kappa(v)$;
+\emph{(iv)} $\Char\kappa(v)=p>0$. Dually, $v$ is archimedean iff the Archimedean property holds
+($\forall x\,\exists n: |n\cdot 1|_v>|x|_v$) iff $\Q_v\supseteq\R\supseteq\Q$ iff $\Char(\Q_v)=0$.
+\end{lemma}
+
+\begin{theorem}[Foundational No-Go]\label{thm:A}
+There is no object furnishing the archimedean place $\infty$ of $\Q$ with a finite additive characteristic
+(equivalently, with a finite residue field). The Weil hypothesis fails at $\infty$, and not contingently: it
+is contradictory with $\Char\Q=0$.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:ostrowski}, $\infty$ is archimedean and $\Q_\infty=\R\supseteq\Q$. Suppose a finite
+additive characteristic $p>0$ were furnished at $\infty$, i.e.\ $p\cdot 1=0$ in the residue/completion datum
+$k$ carrying the place, where $\Q\subseteq k$ (every completion of $\Q$ contains $\Q$; for $\infty$,
+$\Q\subseteq\R=k$). Restricting to $\Q\subseteq k$ gives $p\cdot 1=0$ in $\Q$, contradicting $\Char\Q=0$.
+Equivalently, by Lemma~\ref{lem:equiv} a finite additive characteristic at $\infty$ is equivalent to $\infty$
+being non-archimedean, contradicting its classification as \emph{the} archimedean place.
+\end{proof}
+
+\begin{proposition}[Characteristic-1 diagnostic]\label{prop:char1}
+Drop the field axiom to admit a finite additive characteristic on a semifield. The only finite semifield with
+idempotent addition (``characteristic $1$'') is the Boolean semifield $\Bool=(\{0,1\},\max,\cdot)$, whose
+multiplicative group has order $1$ \cite{ConnesConsaniChar1,Lescot}. Hence any finite-additive-characteristic
+structure at $\infty$ avoiding a finite field is characteristic-$1$, forcing the scale $q=1$. More directly: a
+finite scale $q\geq2$ has $q-1\geq1$ units forming the cyclic group $\mu_{q-1}$ of $(q-1)$-th roots of unity,
+whose coexistence with a finite-characteristic additive structure is exactly a finite field $\F_q$ of
+characteristic $p$. Thus a finite additive characteristic and a nontrivial finite multiplicative scale coexist
+only on a genuine finite field.
+\end{proposition}
+
+\begin{corollary}\label{cor:A}
+Weil's proof of RH over $\F_q(C)$ requires $C$ projective over the finite field $\F_q$, hence a finite residue
+field at every place of $\F_q(C)$ (including its place at infinity, a finite extension of $\F_q$). The
+number-field analogue requires a finite residue field at every place of $\Q$; by Theorem~\ref{thm:A} this
+fails at $\infty$, and by Proposition~\ref{prop:char1} it is irreparable by weakening ``field'' to
+``semifield.'' The Weil/Hodge-index strategy does not transfer to $\Q$.
+\end{corollary}
+
+\begin{remark}[The identity]
+Lemmas~\ref{lem:ostrowski}--\ref{lem:equiv} and Theorem~\ref{thm:A} amount to the chain of definitional
+equivalences
+\[
+\text{archimedean}\ \equiv\ \kappa\supseteq\Q\ \equiv\ \Char 0\ \equiv\ n\cdot 1\not\to 0\ \equiv\
+\text{all primes inverted}\ \equiv\ \text{non-ultrametric},
+\]
+and a finite additive scale at $\infty$ negates the last four clauses, hence the first.
+\end{remark}
+
+\section{The \texorpdfstring{$\F_1$}{F1}-exhaustion}\label{sec:f1}
+
+Theorem~\ref{thm:A} is corroborated by an exhaustive survey of candidate finite grounds, each failing by the
+count/radius decoupling. Among bases: the sphere spectrum $\Sph$ (homotopy cardinality is a count, not the
+radius \cite{ConnesConsaniRR}); tropical / characteristic-$1$ (dequantizes, $q\to1$); Borger--Witt
+(finite-prime-indexed \cite{Borger}); monoid schemes \cite{Deitmar,Soule}; the Tate-twist period ($2\pi$, a
+transcendental). Among degenerations: the archimedean Fargues--Fontaine / twistor curve \cite{FarguesFontaine}
+has residue field $\C$, $\Gal(\C/\R)$ of modulus $1$, slope $\tfrac12$---the reality, no scale; the $p$-adic
+Fargues--Fontaine curve carries $q$ only by importing $\Spec\F_p$ via Witt vectors, and $\R$ has no finite
+residue field to import.
+
+\section{Scope, consequences, status}\label{sec:scope}
+
+\noindent\textbf{Proven.} Theorem~\ref{thm:A} and Proposition~\ref{prop:char1} are theorems. The reduction
+(Proposition~\ref{prop:reality}) and the count/radius decoupling are established constructively and validated
+on the function-field anchor.
+
+\noindent\textbf{Theorem-shaped.} Theorem~\ref{thm:B} is proved (\S\ref{sec:B}); that each named coherence
+framework instantiates it is verified case by case in Table~\ref{tab:exhaustion}, not by one meta-theorem.
+
+\noindent\textbf{Not claimed.} We neither prove nor disprove RH. Theorem~\ref{thm:A} is not an undecidability
+statement; it is the precise limit of one strategy. That the characteristic divide obstructs RH is the
+founding intuition of the $\F_1$ program; the contribution here is its formalization as a contradiction and
+the exhaustion showing every geometric route hits it.
+
+\noindent\textbf{Consequence.} If RH is provable, the proof cannot route through a finite ground at $\infty$
+(closed by Theorem~\ref{thm:A}). RH must be approached on the archimedean/characteristic-$0$ side---analytic
+number theory, the explicit formula, de Branges / Hilbert--P\'olya \emph{as analysis} (a self-adjoint
+operator built without an underlying finite-ground geometry)---or by a foundation reconceiving the identity
+\emph{archimedean $\equiv$ characteristic $0$}, which no current framework achieves.
+
+\subsection*{Acknowledgments}
+The results were obtained through an extended computational research program: a disciplined,
+falsification-driven exploration that constructed and tested candidate objects against the function-field
+anchor and a kill-test suite, with numerical witnesses for the constructive claims. The author thanks that
+process for catching several over-claims en route to the statements above.
+
+\begin{thebibliography}{99}
+
+\bibitem{BBT} B.~Bakker, Y.~Brunebarbe, J.~Tsimerman, \emph{o-minimal GAGA and a conjecture of Griffiths},
+Invent.\ Math.\ (2022).
+
+\bibitem{Bombieri} E.~Bombieri, \emph{Remarks on Weil's quadratic functional in the theory of prime numbers},
+Rend.\ Mat.\ Acc.\ Lincei (2000); and the explicit-formula positivity $W(f)\geq0\Leftrightarrow$ RH (Weil,
+1952).
+
+\bibitem{Borger} J.~Borger, \emph{$\Lambda$-rings and the field with one element}, arXiv:0906.3146.
+
+\bibitem{BostConnes} J.-B.~Bost, A.~Connes, \emph{Hecke algebras, type III factors and phase transitions with
+spontaneous symmetry breaking in number theory}, Selecta Math.\ (1995).
+
+\bibitem{ConnesConsaniChar1} A.~Connes, C.~Consani, \emph{Characteristic one, entropy and the absolute point},
+arXiv:0911.3537.
+
+\bibitem{ConnesConsaniF1} A.~Connes, C.~Consani, \emph{Schemes over $\F_1$ and zeta functions},
+Compos.\ Math.\ (2010).
+
+\bibitem{ConnesConsaniRR} A.~Connes, C.~Consani, \emph{Riemann--Roch for $\overline{\Spec\Z}$ over the sphere
+spectrum} (2023).
+
+\bibitem{ConreyLi} J.~B.~Conrey, X.-J.~Li, \emph{A note on some positivity conditions related to zeta and
+$L$-functions}, Int.\ Math.\ Res.\ Not.\ (2000).
+
+\bibitem{Deitmar} A.~Deitmar, \emph{Schemes over $\F_1$}, in \emph{Number Fields and Function Fields}
+(2005).
+
+\bibitem{DeligneMilne} P.~Deligne, J.~Milne, \emph{Tannakian categories}, in \emph{Hodge Cycles, Motives, and
+Shimura Varieties}, LNM 900 (1982).
+
+\bibitem{DR} S.~Doplicher, J.~Roberts, \emph{A new duality theory for compact groups}, Invent.\ Math.\ 98
+(1989).
+
+\bibitem{FarguesFontaine} L.~Fargues, J.-M.~Fontaine, \emph{Courbes et fibr\'es vectoriels en th\'eorie de
+Hodge $p$-adique}, Ast\'erisque 406 (2018).
+
+\bibitem{Lescot} P.~Lescot, \emph{Alg\`ebre absolue}, Ann.\ Sci.\ Math.\ Qu\'ebec (2009).
+
+\bibitem{Ostrowski} A.~Ostrowski, \emph{\"Uber einige L\"osungen der Funktionalgleichung
+$\varphi(x)\varphi(y)=\varphi(xy)$}, Acta Math.\ 41 (1916). See also J.~Neukirch, \emph{Algebraic Number
+Theory}, Springer (1999), II.\S3.
+
+\bibitem{Soule} C.~Soul\'e, \emph{Les vari\'et\'es sur le corps \`a un \'el\'ement}, Mosc.\ Math.\ J.\ (2004).
+
+\bibitem{vdD} L.~van den Dries, \emph{Tame Topology and o-minimal Structures}, LMS Lecture Notes 248 (1998).
+
+\bibitem{Weil} A.~Weil, \emph{Sur les courbes alg\'ebriques et les vari\'et\'es qui s'en d\'eduisent},
+Hermann (1948).
+
+\end{thebibliography}
+
+\end{document}
