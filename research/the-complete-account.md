@@ -134,6 +134,32 @@ special fibre (R6/R7) as one object*, reached independently from properness.
 > supplies it (the count/radius decoupling) and that every alternative (positivity, geometry, `𝔽₁`-models,
 > creative angles, hard Lefschetz, abelian-variety/Rosati) lands on it.
 
+## 6b. The geometric no-go (the new-geometry program's terminal result)
+
+`research/new-geometry-program.md`, `research/construction/NG-*.md`. Having reduced RH to `F†=F̄` /
+the proper boundary, the program asked whether a **new geometry** (not equivalent to the seven tested)
+could force it. Three candidate geometries, each the strongest of its kind, were built and tested:
+- **o-minimal / tame** (candidate 1): BKT o-minimal GAGA properizes transcendental archimedean objects —
+  but **properness is an INPUT**; `Γ_ℝ` is provably WILD (infinite-discrete pole spectrum, non-o-minimal).
+- **Frobenius-first / Tannakian** (candidate 2): Deligne–Milne reconstruction gives Step A (finite-dim,
+  duality, FE) FREE, archimedean-native — but an **off-line spectrum generates a consistent
+  non-polarizable** rigid Tannakian category; Step B (compact motivic Galois) is an imported positive
+  fiber functor.
+- **`*`-autonomous / `C*`** (candidate 3): even **Doplicher–Roberts** (compact group *from* a `C*`-category)
+  only **consumes** positivity, never manufactures it. The invariant Hermitian form has signature **`(d,0)`
+  positive-definite on-line, `(k,k)` Krein off-line** (computed `(6,0)` vs `(3,3)`) — positive-definiteness
+  at the arithmetic `q` IS `|α|=√q` IS RH (circular, checked).
+
+**THE GEOMETRIC NO-GO [THM-shaped].** The duality structure (`F·F†=[deg]`, FE, the invariant Hermitian
+form) is FREE and archimedean-native at every radius. RH = positive-definiteness of that form *at the
+arithmetic scale `q`* (signature `(d,0)`, not Krein `(k,k)`). **No geometric/categorical coherence — rigid
+tensor, `*`-autonomous, `C*`/Doplicher–Roberts, six-functor, o-minimal — forces that signature; off-line
+spectra are consistent (non-polarizable / Krein) objects in every one.** The positivity is an irreducible
+external input requiring a *real geometric origin* (a variety over a finite ground), which `Spec ℤ` lacks
+at `∞`. **Scope:** NOT undecidability — the precise limit of *geometry-as-coherence*. It explains why all
+~60 attempts stalled at Step B: coherence provably admits the off-line (Krein) model. Crossing it requires
+the `𝔽₁` ground itself (a variety at `∞`), not a cleverer category.
+
 ## 7. What is proven, what is open
 
 - **Proven (constructively, validated on `𝔽_q`):** a complete polarized arithmetic Hodge category; the
