@@ -221,7 +221,9 @@ per prime $p$; non-archimedean; $\Q_p$; $\kappa=\F_p$), or the usual absolute va
 For a nontrivial place $v$ of $\Q$ the following are equivalent: \emph{(i)} $v$ is non-archimedean;
 \emph{(ii)} $\Z$ is bounded in $\Q_v$; \emph{(iii)} $v$ has a finite residue field $\kappa(v)$;
 \emph{(iv)} $\Char\kappa(v)=p>0$. Dually, $v$ is archimedean iff the Archimedean property holds
-($\forall x\,\exists n: |n\cdot 1|_v>|x|_v$) iff $\Q_v\supseteq\R\supseteq\Q$ iff $\Char(\Q_v)=0$.
+($\forall x\,\exists n: |n\cdot 1|_v>|x|_v$) iff $\Q_v\supseteq\R\supseteq\Q$ iff $\Char(\Q_v)=0$ iff $v$ has
+no finite residue field. (The Archimedean property $n\cdot 1\not\to 0$ is the negation of a finite additive
+order of $1$, i.e.\ of positive characteristic.)
 \end{lemma}
 
 \begin{theorem}[Foundational No-Go]\label{thm:A}
@@ -238,6 +240,22 @@ $\Q\subseteq\R=k$). Restricting to $\Q\subseteq k$ gives $p\cdot 1=0$ in $\Q$, c
 Equivalently, by Lemma~\ref{lem:equiv} a finite additive characteristic at $\infty$ is equivalent to $\infty$
 being non-archimedean, contradicting its classification as \emph{the} archimedean place.
 \end{proof}
+
+\begin{remark}[Scope, and the relaxations]\label{rem:scope}
+Theorem~\ref{thm:A} rules out the \emph{direct} analogue of Weil's hypothesis: a finite residue field at the
+archimedean place itself. One might instead seek the finite ground on a \emph{related} object---a
+degeneration, a global/adelic construction, or an $\F_1$-base---rather than as the residue field of $\infty$.
+Two relaxations close these. First, weakening ``field'' to ``semifield'' (so that $p\cdot 1=0$ need not
+descend to $\Q$) is governed by Proposition~\ref{prop:char1}: the only such structure is characteristic $1$,
+which forces the multiplicative scale to $q=1$. Second, the survey of \S\ref{sec:f1} finds that every
+candidate base or degeneration returns a \emph{count} (a homotopy cardinality, an Euler characteristic), a
+\emph{continuum} (a valuation disk, the scaling line, a $q\to1$ limit), or a \emph{period}, but never a
+finite arithmetic scale $q\geq2$ at $\infty$. In every case the obstruction is the count/radius decoupling of
+\S\ref{sec:decoupling}: the scale $q$ is the cardinality of a finite constant field, a property a genuine
+finite field has and an archimedean place structurally cannot, while the multiplicative reality $F\dg=\bar F$
+(the involution $\Gal(\C/\R)=\mu_2$, the roots of unity $\Q/\Z$) is free at every place. Theorem~\ref{thm:A}
+is thus the load-bearing core; the relaxations are closed by Proposition~\ref{prop:char1} and \S\ref{sec:f1}.
+\end{remark}
 
 \begin{proposition}[Characteristic-1 diagnostic]\label{prop:char1}
 Drop the field axiom to admit a finite additive characteristic on a semifield. The only finite semifield with
