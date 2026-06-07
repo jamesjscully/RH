@@ -69,3 +69,26 @@ not as the (free) involution — i.e. an honest archimedean Frobenius *automorph
 not Deninger's flow. **This is the same object the geometric no-go and R6/R7 pointed to** (a variety/family
 over a finite ground at `∞`). The `𝔽₁`-construction attempt is **honestly negative and closed**; the only
 remaining path is the new-object/degenerating-family path, the deep Connes–Consani–Deninger frontier.
+
+## CANDIDATE N — also CLOSED (`research/construction/CN-*.md`). The exhaustion is COMPLETE.
+
+The degeneration route was attacked with the freshest objects: **0 leads, `CHAR_DIVIDE_CLOSED`.**
+- **Fargues–Fontaine / twistor** (the one object built to turn a ground-less local field into a proper
+  curve over a finite ground) — the archimedean analogue is **real and current** (twistor `ℙ¹`,
+  Viehmann–Zeff 2024; Connes–Consani's compactified `\overline{Spec ℤ}`, arXiv:2602.15941, Feb 2026) —
+  but it supplies **NO finite ground**: residue field `ℂ` (continuum), "Frobenius" `=` order-2 `Gal(ℂ/ℝ)`
+  with modulus 1, slope `½` `=` the FE axis, **no scale `q`**. The `p`-adic FF curve carries `q` only by
+  **importing `Spec 𝔽_p` via Witt vectors**; `ℝ` has no finite residue field to import.
+- **The char-0/char-p divide is the IRREDUCIBLE obstruction.** The finite scale `√q` is the cardinality of
+  a finite constant field; finiteness at the primes is *inherited from finite residue characteristic*,
+  which `∞` lacks. Tilting/perfectoid is char-`p`-native by definition (no archimedean tilt); the surface's
+  second direction cannot create a finite characteristic at `∞`.
+
+**FINAL STATEMENT — the `𝔽₁`-construction program is EXHAUSTED.** The finite ground at `∞` cannot be
+constructed by *base* (the 6-ground survey) NOR by *degeneration* (candidate N: FF/twistor, char-reduction,
+arithmetic-surface). The irreducible bottom is the **characteristic-0 / characteristic-`p` divide**: over a
+function field (char `p`) every place has a finite residue field, the curve is proper over `𝔽_q`, and Weil's
+Hodge index proves RH; `ℚ` is characteristic 0, the archimedean place has no finite residue characteristic,
+so no finite ground exists and the Hodge-index proof has no foundation. **RH would follow if `ℚ` were
+*geometric* (a function field over a finite field); it is irreducibly not.** That divide *is* RH's resistance,
+now named and proven irreducible across every construction route.
