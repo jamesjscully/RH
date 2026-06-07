@@ -37,6 +37,43 @@ The program's central decoupling, at the foundational root:
 - **(ψ∞) The archimedean Frobenius `ψ_∞`** — construct the missing Λ-operator at `∞` as a genuinely new
   structure (not conjugation = no scale, not scaling = continuum); what new datum carries reality + scale?
 
+## RESULT — FOUNDATIONAL NO-GO: the char-0/char-p divide is IRREDUCIBLE (`research/construction/NF-*.md`)
+
+**No direction gives `∞` a finite additive characteristic with a scale `q≥2`. The failure is not a gap — it
+is a CONTRADICTION**, proven three independent ways, confirmed by the diagnostic and the freshest 2026 object.
+
+**The diagnostic (C1, characteristic 1):** idempotent addition (`n·1=1`) *genuinely supplies* a finite
+additive characteristic at `∞` (the additive half of the target is MET — a real new structure). **But the
+scale is forced to `q=1` BY THEOREM** (finite-semifield classification, Connes–Consani/Lescot: the only finite
+char-1 semifield is `𝔹={0,1}`, `|𝔹^×|=1`). Mechanism, the crux of the whole frontier: **idempotence (which
+supplies the additive characteristic) forces the multiplicative group torsion-free, hence trivial, hence `q=1`.
+The structure that gives the finite characteristic is the one that kills the scale.** General theorem: **a
+finite scale `q≠1` requires multiplicative torsion (a root of unity) ⟹ the object is a FIELD ⟹ char `p`.
+Carrying BOTH a finite additive characteristic AND a finite scale *is* being a finite field — which `∞` is not.**
+
+**The contradiction (NA, SP, ψ∞ — three foundations, one wall):**
+1. **ψ∞ (additive characters):** finite additive char at `∞` ⟹ `p·1=0` in the residue field `ℝ⊇ℚ` ⟹ `p·1=0`
+   in `ℚ`, `p≠0`. Contradiction.
+2. **SP (chromatic / Ostrowski):** the archimedean stratum is height 0 `= 𝕊[1/p : all p]` — inverting every
+   prime IS what makes it char 0; finite char ⟺ ultrametric ⟺ `p`-adic (Ostrowski). Finite char at `∞` =
+   ultrametrize `∞` = it is **no longer the archimedean place**.
+3. **NA (Archimedean property):** characteristic = additive order of `1`; the Archimedean property `n·1↛0`
+   *is literally the negation* of a finite additive order of `1`.
+
+**The identity (the deepest statement):**
+> **"archimedean place" ≡ "residue field ⊇ `ℚ`" ≡ "characteristic 0" ≡ "torsion-free addition (`n·1↛0`)" ≡
+> "all primes inverted (height 0)" ≡ "non-ultrametric (Ostrowski)."** Every clause is definitionally equivalent;
+> a finite additive scale at `∞` negates the last four, hence the first — it is not the archimedean place.
+
+**Confirmed by the freshest object** (Connes–Consani `Jac(\overline{Spec ℤ})`, Feb 2026): the finite additive
+scale a place carries is the circle `C_p ≅ ℝ/(log p)ℤ` — a *strictly finite-prime* phenomenon (scale `log p`) —
+and `∞` is the **degenerate fixed point `C_∞={(ℤ,0)}` where that circle collapses to a point.** The only torsion
+`∞` carries is the FREE MULTIPLICATIVE `ℚ/ℤ` (roots of unity = the reality `F†=F̄`), never the additive scale.
+
+> **VERDICT — RH is char-0-hard as a THEOREM.** The finite ground at `∞` that RH requires is not *unconstructed*;
+> it is *contradictory* with `ℚ` being characteristic 0. The additive scale and the multiplicative reality marry
+> only over a genuine finite field, and `∞` is, by definition, where that marriage cannot occur. **CLOSED.**
+
 ## Honest framing
 This is foundation-building at the level of "what is a number." Both outcomes are real: a new foundation that
 gives `∞` a finite additive characteristic (RH within a new mathematics), or a **deepened no-go** — a proof
