@@ -52,6 +52,26 @@ Abstract that away:
   *and canonically polarizable* — the polarization positivity a **coherence theorem of the category**,
   not an axiom.
 
+## Candidate 1 (o-minimal) — RESULT: NOGO_BLUEPRINT (`research/construction/NG-omin-*.md`)
+
+All three angles agree by independent routes. The BKT o-minimal-GAGA mechanism is REAL (transcendental
+archimedean → algebraic/finite) **but PROPERNESS IS AN INPUT, not an output** — the o-minimal analogue
+of the imported finite ground. The archimedean fibre is **provably WILD**: `Γ_ℝ` has an infinite-discrete
+pole spectrum `{0,−2,−4,…}`, non-definable in *any* o-minimal structure (van den Dries finiteness — a
+type-obstruction). The tame/wild line is exactly **proper↔open = polynomial↔infinite-product =
+finite-prime↔archimedean**, and the fibre is wild *exactly where RH lives*.
+
+**The blueprint (the no-go crystallizing):** across every instrument, **Step B is never *created* by a
+geometry — always *imported* via a finite ground / properness.** Emerging theorem-shaped claim:
+
+> **The geometric no-go (conjecture): every purity-forcing geometry imports a finite ground; none
+> manufactures properness from a wild archimedean fibre.**
+
+So **candidate 2 (Frobenius-first) is precisely the test of whether this conjecture is FALSE** — the one
+approach that tries to *create* the finite spectrum (posit the Frobenius, reconstruct the space) rather
+than import it. Binary: does it FORCE `F·F†=[q]` from consistency (gap non-empty, new geometry), or does
+positing the Frobenius *import* the finite ground (second instance of the no-go theorem)?
+
 ## The honest fork (both outcomes are real results)
 
 Building the geometry and proving it cannot be built are the **same investigation**. Either **(a)** the
