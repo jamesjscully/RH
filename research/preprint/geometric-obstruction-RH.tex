@@ -36,6 +36,9 @@
 \address{}
 \email{jamesjscully@gmail.com}
 \date{June 2026}
+\subjclass[2020]{11M26 (Primary); 11G20, 14G10, 12J20, 18M05 (Secondary)}
+\keywords{Riemann hypothesis, function fields, characteristic, Ostrowski's theorem, Hodge index theorem,
+similitude, Tannakian categories, polarization, archimedean place, field with one element}
 
 \begin{document}
 
@@ -322,6 +325,64 @@ The results were obtained through an extended computational research program: a 
 falsification-driven exploration that constructed and tested candidate objects against the function-field
 anchor and a kill-test suite, with numerical witnesses for the constructive claims. The author thanks that
 process for catching several over-claims en route to the statements above.
+
+\appendix
+
+\section{The polarized arithmetic Hodge category and the reduction}\label{app:construction}
+
+This appendix gives the construction summarized in \S\ref{sec:reduction}, which reduces RH to the reality
+condition $F\dg=\bar F$ (Proposition~\ref{prop:reality}). It is a \emph{construction} validated on the
+function-field anchor, not a theorem on the level of \S\ref{sec:A}--\S\ref{sec:B}; the load-bearing results
+do not depend on it, and it is included for completeness. Throughout, the governing principle is to move all
+hardness into a single representability question, so that the implication ``axioms $\Rightarrow$ RH'' is
+formal.
+
+\subsection{The universal property}
+Define the target object $\Sph_\Z$ by the data it must represent (the \emph{contract}):
+\begin{enumerate}
+\item[(C1)] an endomorphism $F$ (Frobenius/flow) with $\Tr(F^t\mid H^1)=\sum_\rho e^{t\rho}$, so that
+$\spec F$ is the multiset of nontrivial zeros and $\Tr F$ is the explicit-formula prime sum;
+\item[(C2)] a $(p,q)$-grading $H^1=H^{1,0}\oplus H^{0,1}$ at the archimedean place, with complex conjugation
+$c$ acting antilinearly and exchanging the two summands;
+\item[(C3)] a structural duality $D$ with $D(\Sph_\Z)\cong\Sph_\Z$ realizing the functional equation
+$\Lambda(s)=\Lambda(1-s)$;
+\item[(C4)] a polarization $P$ \emph{equal to the canonical pairing of $D$} (a categorical datum), not a
+chosen Hermitian metric;
+\item[(C5)] $P\succeq0$ on the primitive part if and only if RH;
+\item[(C6)] no object satisfying (C1)--(C5) exists for Davenport--Heilbronn (no Euler product).
+\end{enumerate}
+The constraint (C4) is forced, not stylistic: by Theorem~\ref{thm:B}, a polarization realized as a
+$*$-congruence of a fixed Hermitian background determines only Step~A (it is signature-blind), so a
+polarization able to see RH must be the structural pairing of the duality $D$ itself.
+
+\subsection{The function-field anchor}
+Over a smooth projective curve $C/\F_q$ the contract is realized by an explicit datum. Take $V=H^1(C)$ (rank
+$2g$); $F=$ geometric Frobenius, giving (C1) with $\spec F=\{\alpha_i\}$ and $\Tr F=q+1-\#C(\F_q)$; the Hodge
+$(p,q)$-decomposition with the Rosati involution $\theta(\alpha)=q/\bar\alpha$ as $c$, giving (C2); the cup
+product $E\colon H^1\times H^1\to H^2=\Q(-1)$ as $D$, realizing the functional equation (C3); and the
+polarization $P(x,y)=E(x,Dy)$. One checks that $P$ equals the Gram pairing of the Weil form \emph{exactly}
+(the metric appearance is a coordinate artifact of the intrinsic cup product), realizing (C4); and that the
+primitive Hodge-index signature flips precisely when an eigenvalue leaves the circle $|\alpha|=\sqrt q$,
+realizing (C5) as Weil's theorem via the Hodge index. Finally (C6) holds because Davenport--Heilbronn has no
+Euler product, hence no Frobenius weight and no weight-one cohomology to carry the datum.
+
+\subsection{The archimedean polarization and the reduction}
+For $\Q$ the only missing datum is the archimedean polarization, which one defines \emph{Frobenius-free} via
+the Weil operator $C_W=i^{p-q}$ on the $(p,q)$-grading:
+\[
+P_\infty(x,y)=E(C_W x,\bar y),
+\]
+the Hodge--Riemann form of the $(p,q)$-structure. Applying the dichotomy of Theorem~\ref{thm:B} to this datum
+(an eigenvector is isotropic for $P_\infty$ unless its modulus is $\sqrt q$), $P_\infty$ is positive-definite
+on the primitive part if and only if every $|\alpha|=\sqrt q$, equivalently the Rosati adjoint coincides with
+complex conjugation. This is the chain
+\[
+\mathrm{RH}\ \Longleftrightarrow\ P_\infty\succeq0\ \Longleftrightarrow\ c=D\ \Longleftrightarrow\ F\dg=\bar F,
+\]
+i.e.\ Proposition~\ref{prop:reality}. The role of \S\ref{sec:A}--\S\ref{sec:B} is then exactly this: the
+positivity $P_\infty\succeq0$ is forced by no coherence structure (Theorem~\ref{thm:B}) and would require a
+finite ground at $\infty$ that cannot exist (Theorem~\ref{thm:A}). The construction therefore does not prove
+RH; it certifies that RH is \emph{equivalent} to the one positivity the two no-go theorems then locate.
 
 \begin{thebibliography}{99}
 
