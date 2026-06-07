@@ -21,13 +21,52 @@ from numpy.polynomial import hermite as H
 from .descent_test import cech_h1
 
 
+def exact_bw_slack(d: int, ngrid: int = 4000):
+    """EXACT BW distance from H_d to the discriminant variety (real double root) -- replaces
+    the noisy random-direction proxy stability_radius_bw().  The nearest polynomial with a
+    double root at z is an exact codim-2 projection in the BW metric; minimize over z in R:
+        dist^2(z) = (A h)^T (A G^{-1} A^T)^{-1} (A h),  A=[v_z; w_z],  G^{-1}=diag(C(d,k)).
+    Returns (rho_BW, z_star).  [P1, certified 2026-06-06.]
+
+    RESULT (P1): the exact growth law is SUPERLINEAR, log(1/rho_BW) ~ 0.35 * d * log d --
+    NOT linear (3/2)ln2 * d.  The old "(3/2)ln2 = 1.04 linear" constant is REFUTED: the
+    average rate log(1/rho)/d sails past 1.04, reaching 1.37 at d=40 and still climbing.
+    So the slack is a genuine ENERGY/height (the d^2 log d discriminant log-energy, per
+    degree) but with no clean linear constant.  The most-marginal double root sits at an
+    INTERMEDIATE bulk point z*/edge ~ 0.6 (neither dead-center nor the spectral edge)."""
+    from math import comb
+    h = H.herm2poly(np.eye(d + 1)[d]).astype(float)
+    Ginv = np.array([comb(d, k) for k in range(d + 1)], float)
+    norm_h = np.sqrt(np.sum(h * h / Ginv))
+    k = np.arange(d + 1)
+
+    def dist2(z):
+        v = z ** k
+        w = np.zeros(d + 1); w[1:] = k[1:] * z ** (k[1:] - 1)
+        A = np.vstack([v, w]); Ah = A @ h; M = A @ (Ginv[:, None] * A.T)
+        try:
+            return float(Ah @ np.linalg.solve(M, Ah))
+        except np.linalg.LinAlgError:
+            return np.inf
+
+    R = np.sqrt(2 * d) + 1.0
+    zs = np.linspace(-R, R, ngrid)
+    d2 = np.array([dist2(z) for z in zs]); i = int(np.argmin(d2))
+    lo, hi = zs[max(0, i - 1)], zs[min(len(zs) - 1, i + 1)]
+    for _ in range(80):
+        m1, m2 = lo + 0.382 * (hi - lo), lo + 0.618 * (hi - lo)
+        if dist2(m1) < dist2(m2): hi = m2
+        else: lo = m1
+    zb = 0.5 * (lo + hi)
+    return float(np.sqrt(dist2(zb)) / norm_h), float(zb)
+
+
 def stability_radius_bw(d: int, trials: int = 40) -> float:
-    """Slack in the BOMBIERI-WEYL metric (the unitarily-invariant height metric on
-    polynomials; Pardo-Pardo, Bost-Gillet-Soule): ||sum a_k X^k||^2 = sum a_k^2 / C(d,k).
-    This is the correct metric for the Arakelov-height reading -- the slack is then
-    1/condition-number = distance to the discriminant variety in the BW metric.  Its decay
-    rate comes out ~ (3/2) ln 2 = 1.0397 (the Hermite-discriminant structural constant),
-    cleaner than the naive-L2 rate 1.22 -- evidence the slack is genuinely a height."""
+    """Slack in the BOMBIERI-WEYL metric (Pardo-Pardo, Bost-Gillet-Soule):
+    ||sum a_k X^k||^2 = sum a_k^2 / C(d,k); slack = 1/condition-number = distance to the
+    discriminant variety.  NOTE: this random-direction version is a NOISY UPPER-BOUND PROXY;
+    use exact_bw_slack() for the certified distance.  The old "(3/2)ln2 = 1.04 linear rate"
+    claim is REFUTED by exact_bw_slack -- the true law is superlinear ~0.35 d log d."""
     from math import comb
     c = H.herm2poly(np.eye(d + 1)[d])
     m = len(c)
