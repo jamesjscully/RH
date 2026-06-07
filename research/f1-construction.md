@@ -45,3 +45,27 @@ order 2, no `q`). So:
 ## Exhaustion criterion
 `𝔽₁` CONSTRUCTED (a ground supplies the scale, anchored, DH-failing ⟹ RH) — or **PATH CLOSED**: every
 candidate scale-free, each with its precise reason, and the residual blueprint for what would be required.
+
+## RESULT — PATH CLOSED (`research/construction/F1-*.md`, exhaustive survey)
+
+**0/6 grounds supply the scale.** `{S 𝕊, T tropical, M monoid, Λ Witt}` = SCALE_FREE; `{P period, G global}`
+= WRONG_SCALE. Including the two best-pedigree grounds (`𝕊`, Witt); the surviving combination (`𝕊`+global)
+was assessed and **rejected**. No `𝔽₁`-ground, and no combination, supplies an archimedean arithmetic `q`.
+
+**The unifying reason (the strengthened no-go, earned):** the **reality** (`F†=F̄`) is an *order-2 datum* —
+`Gal(ℂ/ℝ)`, the duality involution, `μ₂` — a **COUNT**, intrinsic and free to every base (it IS the FE
+axis `Re s=½`). The **scale `√q`** is a per-eigenvalue **MODULUS** = the *cardinality of a finite constant
+field* (the eigenvalue of a degree-`q` endomorphism of a curve over `𝔽_q`). **No `𝔽₁`-base has a finite
+constant field at `∞`**, so each returns the type it actually carries — a count (`𝕊` homotopy cardinality / `χ`),
+a continuum (`λ∈ℝ₊ˣ`, the valuation disk, `q→1` dequantization), a period (`2π`), or the FE axis — **never a
+discrete `q`.** This is the audit's count/radius (location/modulus) decoupling (R3/R8/R9/R10/QD), now proven
+across all `𝔽₁`-grounds: **`q` is a property a real finite field HAS and the archimedean place structurally
+CANNOT have. The scale is not the kind of object an `𝔽₁`-base produces.** The residual is identical across all
+six — each would have to *re-import* a finite constant field — which is the strongest evidence the path is shut.
+
+**The path that remains — candidate N (NOT an `𝔽₁`-base):** a **degenerating arithmetic family whose special
+fibre at `∞` lives over a genuine finite constant field**, forcing `F†=F̄` *as a purity (modulus) statement*,
+not as the (free) involution — i.e. an honest archimedean Frobenius *automorphism* `F_∞` with a real finite `q`,
+not Deninger's flow. **This is the same object the geometric no-go and R6/R7 pointed to** (a variety/family
+over a finite ground at `∞`). The `𝔽₁`-construction attempt is **honestly negative and closed**; the only
+remaining path is the new-object/degenerating-family path, the deep Connes–Consani–Deninger frontier.
