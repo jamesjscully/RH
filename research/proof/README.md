@@ -115,7 +115,36 @@ scripts/numerics/julia/active23_ad.jl
 scripts/numerics/witness/prime_ladder_scaling.py
 scripts/numerics/witness/prime_single_place_passivity.py
 scripts/numerics/witness/prime_interference_rigidity.py
+scripts/numerics/witness/prime_killing_resonance.py
+scripts/numerics/witness/prime_margin_law.py
+scripts/numerics/witness/prime_edge_compliance.py
+scripts/numerics/witness/prime_edge_tracking.py
+scripts/numerics/witness/prime_edge_residual_zerosum.py
+scripts/numerics/witness/certify_chain.py
 ```
+
+10. `10-realization-spec.md`
+    The post-R1 construction target: a passive prime-side realization whose energy identity
+    is the explicit formula; must-encodes E1-E4, graveyard guards G1-G6, sub-targets S1-S3
+    with outcomes (S1: one-mode state confirmed; S2: no channel decomposition - fail-closed).
+
+11. `11-edge-window-factorization.md`
+    PROVEN: dead upper half-edge, terminal-window factorization, and the exact
+    edge-convolution identity I(U) = (q_x * r_y)(w(U)) with the exact rank bound -
+    old-shell coupling is the one-sided convolution of edge profiles.
+
+12. `12-edge-compliance-reduction.md`
+    DERIVED EXACTLY: within an edge the old block freezes (E_A = 0), the whole chain is
+    quadratic, and the old space acts only through compliance alpha = u*A^{-1}u and shell
+    vector b; S_N = S_0 + sum E_D - vb* - bv* - alpha vv*; validated to 2e-5; the
+    completed square gives the tracking form.
+
+13. `13-tracking-equivalence.md`
+    R-TRACK TERMINAL RESULT: tracking is real (cos -> +0.9995, DH fails as a tracking
+    failure with tau = 1.554 > 1), and the residual r = v + b/alpha IS the zero
+    cross-correlation (verified vs 5000 zeros) - the tracking theorem is zero-repulsion
+    restated. The program's product: RH <=> uniform tau < 1 along the one-mode recursion,
+    plus the certified reduction and the no-go map.
 
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
@@ -140,14 +169,18 @@ ForwardDiff.
 - Do not use zero-side positivity or any RH-equivalent positivity input.
 - Do not replace the exact Euler measure by smooth PNT density before proving the Schur estimate.
 
-## Immediate theorem path
+## Current path (program closure - see TODO.md R-TRACK outcome and doc 13)
 
-1. Interval-certify the default active-23 matrix endpoint `H=S+G>0`.
-2. Use the edge-layer convolution/KKT picture to decide whether `H>0` is refinement-stable or must
-   be weakened to a sector certificate.
-3. Extend fail-closed tests to coefficient perturbations and basis refinements; current
-   DH/smooth/prime-only/powers-only checks fail as desired.
-4. Define nontrivial boundary state transport `Phi_j` only when support spaces change.
-5. Then attempt a continuum compactness/limit argument for boundary stress kernels.
-6. Check every proposed inequality against the known finite stress kernels in
-   `scripts/numerics/witness/prime_defect_stress_kernel.py`.
+1. R-TRACK is resolved fail-closed: the tracking residual is exactly a zero
+   cross-correlation (doc 13), so no estimate-based attack surface remains. The
+   program's terminal deliverables are (a) the certified reduction, (b) the exact
+   structure theory (docs 11-13: RH as uniform tau < 1 along a one-mode scalar
+   recursion), (c) the no-go map (every shortcut killed by its own witness).
+2. O3 Case B: anchored to the classical Li-coordinate detection (Bombieri 2000,
+   archived in refs/); Lemma B2 proven in 00a section 6'; remaining = Lemma B1
+   (even + p^2-weighted Li detection; check Yoshida 1992 for weight-robustness).
+3. Regression gate: `python3 -m scripts.numerics.witness.certify_chain` re-derives
+   the load-bearing claims (C1-C5) and exits nonzero on any flip. Run it after any
+   change to the ladder stack or before citing the chain.
+4. Background, refutation-grade only: T1 interval certification (Galerkin
+   compression can refute, never prove).
