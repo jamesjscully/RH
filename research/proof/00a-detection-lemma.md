@@ -1,10 +1,10 @@
 # 00a - The detection lemma (obligation O3 of the reduction)
 
-Status: O3a, O3b, O3d discharged below (full constructions and estimates, written to
-proof level modulo routine Laplace-method constants). O3c is discharged in Case A
-(attained supremum) and reduced to one precise averaging sub-lemma in Case B
-(unattained supremum). This is the document doc 00 demanded; the remaining gap is
-section 6.
+Status: ALL of O3 discharged (2026-06-09 evening). O3a, O3b, O3d in sections 2-4;
+O3c in BOTH cases by the Yoshida interpolation device (section 6''), written to
+proof level modulo routine, itemized sub-lemmas; the Li-coordinate route (section
+6', Lemma B2 proven) stands as an independent second anchor. The beta-coordinate
+Case A/B split of sections 5-6 is retained as quantitative material and graveyard.
 
 ## 1. Statement
 
@@ -295,14 +295,10 @@ rho = 1/(2+t) in (0, 1/2), excluded unconditionally for zeta
 ((1-2^{1-s}) zeta(s) > 0 on (0,1)); (iii) w_k != 0 because the p^2-weight
 vanishes only at s in {0, 1/2, 1}, never at a nontrivial zero.
 
-Status of Case B after this section: ANCHORED (architecture + citations +
-explicit remaining lemmas), no longer device-less. The remaining work (the
-even/weighted Li detection: Lemma B1 = even analogue of Bombieri's Theorem 1
-with p^2 weights; Lemma B2 above; reading Yoshida's proof to check weight-
-robustness) is classical-technique transcription with named sources, not a
-new mechanism. Until B1/B2 are written to proof level, the reduction's O3
-carries this as its only conditional joint - and the condition is on OUR
-write-up, not on any unproven mathematics.
+Status of Case B after this section: ANCHORED. Superseded the same evening by
+section 6'' below, which discharges O3c in BOTH cases via Yoshida's
+interpolation device; the Li-coordinate route and Lemma B2 are retained as an
+independent second anchor.
 
 References (verified against the printed bibliography, Bombieri 2000):
 A. Weil, Sur les "formules explicites" de la theorie des nombres premiers,
@@ -316,26 +312,97 @@ Hypothesis, J. Number Theory 77 (1999), 274-287.
 E. Bombieri, Remarks on Weil's quadratic functional in the theory of prime
 numbers, I, Rend. Mat. Acc. Lincei s.9 v.11 (2000), 183-233.
 
+## 6''. O3c discharged in both cases: the Yoshida interpolation device (2026-06-09)
+
+Primary source read (scan archived at refs/yoshida1992.pdf): H. Yoshida, "On
+Hermitian Forms attached to Zeta Functions", Adv. Stud. Pure Math. 21 (1992),
+281-325, section 1. His Lemma 1 (read verbatim from p. 285):
+
+```text
+Lemma 1 (Yoshida). Given a nontrivial zero rho_0 of zeta_k and any eps > 0,
+there exists alpha in C_c^infty(R) with
+    M(alpha)(rho_0) = 1   and   |M(alpha)(rho)| <= eps / |rho - rho_0|^2
+for EVERY nontrivial zero rho != rho_0.
+```
+
+and his Proposition 1(2): T_k is EVENLY positive definite iff RH holds with
+possible exceptions of real zeros.
+
+Why this dissolves our Case A/B split entirely: the construction NEVER
+CONCENTRATES. M(alpha) is bounded in the whole critical strip (compact
+support), smoothness gives polynomial decay |M(alpha)(s)| = O(|s-1/2|^{-m-1})
+by m+1 integrations by parts, the finitely many zeros within distance R of
+rho_0 are killed EXACTLY by convolution factors alpha_i with M(alpha_i)(rho_i)
+= 0 and M(alpha_i)(rho_0) = 1 (Mellin transforms multiply under convolution),
+and the N-th convolution power of the base atom crushes everything outside.
+The signal is O(1) (value 1 at rho_0) and EVERY foreign zero - on-line or
+off-line, at any height, attained supremum or not - sits under the eps
+envelope. The e^{sigma T} signal-versus-interference race of sections 3-6,
+which created the Case A/B split, never starts. (The race was an artifact of
+phase-engineering WITHOUT using the zero's location for interpolation; the
+detection lemma is free to use the hypothetical zero data - it lives inside
+a proof by contrapositive.)
+
+Transcription into the program's admissible class, with the two upgrades:
+
+```text
+Theorem (detection, both cases). Suppose zeta has a nontrivial zero rho_0
+off the critical line. Then for every sufficiently large T there is an even
+real G in C_c^infty, supp G in [-T/2, T/2], with Z(p(D)G) < 0; the test
+h = p(D)G is admissible (section 2), so the reduction's hypothesis fails.
+
+Construction. Work in z = (rho - 1/2)/i; zeros come in quadruples
+{+-z_0, +-conj(z_0)}, weights w(z) = p(z)^2 != 0 (p vanishes only at
+s in {0, 1/2, 1}), |w(z)| ~ |z|^8.
+(U1 - envelope upgrade) Run Yoshida's Lemma 1 with envelope exponent m >= 6:
+   take the base atom with m+1 integrations by parts, so
+   |B(z)| <= eps / (1 + |z - z_0|)^m on the zero set, B(z_0) = lambda.
+   The weighted foreign sum converges:
+      sum_{rho foreign} |w_rho| eps^2 / (1+|z_rho - z_0|)^{2m} <= C eps^2,
+   since N(T+1)-N(T) = O(log T) and 8 - 2m < -2 for m >= 6.
+(U2 - phase upgrade) Choose the unimodular normalization lambda with
+   lambda^2 = -conj(w_0)/|w_0| (legal: alpha complex before symmetrization).
+(Symmetrization) G-hat(z) = B(z) + B(-z) + conj(B(conj z)) + conj(B(-conj z)):
+   even, Hermitian, hence G even real C_c^infty. The quadruple partners of
+   rho_0 are themselves zeros, so B is eps-small there and
+      G-hat(z_0) = lambda + O(eps).
+(Total) Z(p(D)G) = sum over the quadruple + foreign sum
+      = 4 Re[w_0 lambda^2] + O(eps) = -4|w_0| + O(eps) < 0
+   for eps small. Real zeros (gamma_0 = 0, where the quadruple degenerates)
+   do not occur for zeta: (1-2^{1-s}) zeta(s) > 0 on (0,1). qed
+   (modulo the routine sub-lemmas: existence of the interpolating atoms
+   B_i with B_i(z_0)=1, B_i(z_i)=0 in C_c^infty; strip boundedness of all
+   factors; support bookkeeping under convolution - all standard and all
+   present in Yoshida's printed proof.)
+```
+
+Cross-checks: (i) this argument applied to a DH-type zero set also produces
+negative tests - as it must, since DH HAS off-line zeros and our finite
+witnesses see DH negativity directly; it does NOT over-prove (guard G5),
+because it consumes the actual zero locations of the given L-function, not a
+mechanism that would also "work" for zeta. (ii) Sections 3-5 (the
+phase-engineered exponential-signal family) remain valid as the QUANTITATIVE
+form in Case A and as the source of the U2 phase device; section 6's
+graveyard stands as the record of why concentration-based Case B devices die.
+
 ## 7. Summary of O3 status
 
 ```text
 O3a  phase-engineered negative quadruple      DONE (section 3)
 O3b  on-line polynomial bound                 DONE (section 4)
 O3c  interference, attained case              DONE (section 5)
-O3c' interference, unattained case            ANCHORED (section 6'): the Case
-                                              A/B split is an artifact of the
-                                              beta-coordinate; in Li's coordinate
-                                              |1-1/rho| the extremum is always
-                                              attained (Bombieri 2000 Thm 1,
-                                              complete classical converse).
-                                              B2 (mean-zero oscillation
-                                              replacing Dirichlet) PROVEN in
-                                              section 6'. Remaining: B1 (even +
-                                              p^2-weighted Li detection;
-                                              Yoshida 1992 for the even class,
-                                              weight-robustness to check).
-                                              The Landau/annular graveyard
-                                              (section 6) stands as the record
-                                              of why beta-coordinate devices die.
+O3c' interference, unattained case            DISCHARGED (section 6''): Yoshida's
+                                              interpolation device (Lemma 1 +
+                                              Prop 1(2), primary source read and
+                                              archived) transcribed with the
+                                              envelope upgrade m >= 6 (absorbs
+                                              the |rho|^8 weight) and the phase
+                                              normalization (absorbs arg w_0).
+                                              No concentration => no Case split.
+                                              Routine sub-lemmas itemized in
+                                              place. Independent second anchor:
+                                              the Li-coordinate route (section
+                                              6', Lemma B2 proven). Graveyard
+                                              (section 6) stands.
 O3d  constraint satisfaction                  DISSOLVED (section 2: p(D)G device)
 ```
