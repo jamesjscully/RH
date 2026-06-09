@@ -87,6 +87,29 @@ R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIR
     subset inductions}.
 ```
 
+### R-TRACK - The tracking theorem (THE front target as of 2026-06-09, end of session)
+
+Final exact form of the program (proof/12 section 5, validated to 2e-5):
+
+```text
+Along the support filtration, the arithmetic transgression vector v (Chebyshev
+transgressions of the edge-convolution profiles) must track the geometrically
+determined point -b/alpha within radius sqrt(bulk/alpha):
+
+    alpha (v + b/alpha)(v + b/alpha)^*  <=  S_0 + sum E_D + b b^*/alpha.
+```
+
+Sub-targets, in order: (1) compute the trajectory of -b/alpha and v along the
+ladder (witness: prime_edge_compliance.py extended) - does v visibly track?
+DH control: its v must not track. (2) Express -b/alpha analytically (it is
+archimedean/old-history data; the resonance dictionary of 09 section 6'' should
+give its leading form). (3) The tracking theorem itself: equidistribution of
+prime-power atoms against edge-convolution profiles at the rate alpha grows -
+this is where the arithmetic (zero-density / short-interval inputs identified in
+09 Finding 3) must finally enter. All prior kills constrain the proof shape:
+statistical not cell-wise; all places jointly; beta = 1/2 only; exact identities
+plus terminal sign only.
+
 ### R-KYP - The realization rung (the post-R1 front)
 
 Target: a prime-side positive structure whose energy identity is the explicit formula.
