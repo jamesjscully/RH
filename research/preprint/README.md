@@ -2,6 +2,13 @@
 
 **`geometric-obstruction-RH.tex`** — *Two no-go theorems for the geometric strategy on the Riemann Hypothesis.*
 
+**`tracking-equivalence-RH.tex`** — *RH as a tracking inequality* (DRAFT, 2026-06-09): the
+exact finite-dimensional reduction along the prime filtration. Front matter, the five main
+theorem statements, the no-go map and the bibliography are complete; the proof-body sections
+are stubs marked for transcription from `../proof/` documents 00, 00a, 09, 11, 12, 13 (each
+pointer in a `%` comment at the section head). Numerical gates:
+`../../scripts/numerics/witness/certify_chain.py`. Builds with `tectonic` as below.
+
 ## Build
 
 ```sh

@@ -1,0 +1,267 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\eigmin}{\lambda_{\min}}
+\DeclareMathOperator{\Lam}{\Lambda}
+
+% DRAFT assembled 2026-06-09 from the research/proof/ document set (00, 00a, 11, 12, 13).
+% Every theorem statement below is backed by a written proof in those documents at the
+% granularity stated; numerical claims are reproducible via the cited witness scripts
+% and gated by scripts/numerics/witness/certify_chain.py.
+
+\title[RH as a tracking inequality]{The Riemann Hypothesis as a tracking inequality:\\
+an exact finite-dimensional reduction along the prime filtration\\
+{\normalsize\textsc{draft}}}
+\author{James Scully}
+\address{}
+\email{jamesjscully@gmail.com}
+\date{June 2026 (draft)}
+\subjclass[2020]{11M26 (Primary); 47A57, 47B35, 93C05 (Secondary)}
+\keywords{Riemann hypothesis, Weil explicit formula, Weil positivity, Toeplitz forms,
+Schur complement, dissipative systems, KYP lemma}
+
+\begin{document}
+
+\begin{abstract}
+We reduce the Riemann Hypothesis to a one-parameter family of finite-dimensional scalar
+inequalities of tracking type. For each support level $R$, let $M_R = W_\infty - P_R$ be the
+Weil form (archimedean minus Euler-prime part) restricted to the pole-killed space of even
+real tests supported in $[-R/2,R/2]$. Extending the support across one ``edge'' $L \to R$, we
+prove that the prime-power atoms interact with the past through an exactly rank-bounded
+channel: the old--new coupling of every atom is a one-sided convolution of edge profiles
+(Theorem~\ref{thm:edge}), the old space acts on an edge only through an $r\times r$
+compliance matrix $M_c$ and shell matrix $B$ ($r \le 2$ in our bases), and terminal
+positivity of the edge is exactly the tracking inequality
+$\tau_r = \lambda_{\max}\!\big[M_c^{1/2} W^{*}\,\mathrm{BULK}^{-1}\,W M_c^{1/2}\big] < 1$,
+where $W$ measures the deviation of the accumulated arithmetic transgression from a
+geometrically determined center (Theorem~\ref{thm:compliance}). RH holds if and only if
+$\tau_r < 1$ uniformly along the filtration (Theorem~\ref{thm:equiv}). We then prove the
+coordinate is terminal: the tracking residual is identically a cross-correlation of test
+data against the nontrivial zeros (Theorem~\ref{thm:zerosum}), so the inequality is
+zero-repulsion in exact finite coordinates, and we record a no-go map: eight structural
+shortcut classes (subset Euler factors, per-cell estimates, channel decompositions, smooth
+surrogates, slack-bearing bounds, among others) are each refuted by explicit finite
+counterexamples. The reduction direction is certified against the classical literature
+(Weil, Bombieri, Yoshida, Li), including a detection lemma in the constrained even
+pole-killed class via an interpolation device of Yoshida. All numerical claims are
+reproducible from the accompanying scripts and were validated against the first $5000$
+nontrivial zeros. We do not prove RH; we exhibit an exact, finite-dimensional, fail-closed
+coordinate system in which its remaining content is a single scalar inequality per edge.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Weil's positivity criterion states that RH is equivalent to the positivity of the explicit-formula
+functional on a suitable test class \cite{Weil52,Bombieri00,Yoshida92}. Positivity restricted to
+tests of small support is unconditional: Connes--Consani \cite{CC20} proved the archimedean form
+alone is positive for supports inside $(\tfrac12, 2)$, and Yoshida \cite{Yoshida92} certified
+positivity for $a \le \log 2/2$ by finite computation. The difficulty is the passage to all
+supports, where the Euler product must carry the positivity.
+
+This paper studies that passage as a \emph{filtration problem}. Writing tests additively
+($u = \log x$), we work on the nested family of spaces
+\[
+H_R = \big\{\, h \in C_c^\infty(\R) \text{ even, real},\ \supp h \subset [-R/2, R/2],\
+\hat h(0) = \hat h(i/2) = 0 \,\big\},
+\]
+and the quadratic form $M_R = W_\infty - P_R$, where $P_R$ is the finite sum of prime-power
+Toeplitz atoms reachable at support $R$ and $W_\infty$ the archimedean form. The pole
+constraints make $M_R(h,h) = \sum_\rho \hat h\big((\rho-\tfrac12)/i\big)^2$ exactly
+(Section~\ref{sec:reduction}), so positivity of $M_R$ for all $R$ is RH.
+
+Our contribution is the exact structure of one step of the filtration. The results are
+elementary in form --- support arithmetic, Schur complements, one completed square --- but
+they compose into a coordinate system in which the inductive content of RH is isolated in a
+single scalar per step, every approximation having been eliminated.
+
+\subsection{Main results}
+
+Fix an edge $0 < L < R$. Decompose $H_R = H_L \oplus S$ (shell $S$), and write the
+compressed form in block shape $\begin{pmatrix} A & C \\ C^* & D\end{pmatrix}$.
+
+\begin{theorem}[Edge-window factorization]\label{thm:edge}
+Let $x \in H_L$, $y \in H_R$, and let $B_U$ denote the symmetrized translation atom
+$B_U(x,y) = \tfrac12\!\int x(v)\,[y(v-U) + y(v+U)]\,dv$. Then:
+\begin{enumerate}
+\item[(a)] $B_U(x,y) = 0$ for $U > (L+R)/2$ \emph{(dead upper half-edge)};
+\item[(b)] for $L \le U \le (L+R)/2$, $B_U(x,y)$ depends on $x$ only through its restriction
+to the terminal window $W^* = [\,L/2-(R-L)/2,\ L/2\,]$;
+\item[(c)] exactly,
+\[
+B_U(x,y) \;=\; (q_x * r_y)\big(w(U)\big), \qquad
+q_x(s) = x(L/2 - s),\quad r_y(t) = y(-R/2+t),\quad w(U) = \tfrac{L+R}{2} - U ,
+\]
+a one-sided convolution of edge profiles; consequently the stacked old--shell coupling of all
+atoms in $(L,R]$ has rank at most the number of basis bumps meeting $W^*$.
+\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Edge-compliance reduction; exact rank-$r$ form]\label{thm:compliance}
+Along the chronological chain of one edge the old block is frozen
+($E_A^{(j)} = 0$ exactly), and with $U_r$ spanning the coupling column space
+(rank $r$ from Theorem~\ref{thm:edge}(c)),
+\[
+M_c = U_r^* A^{-1} U_r \in \R^{r\times r}, \qquad B = C_0^* A^{-1} U_r, \qquad
+V = \textstyle\sum_k T_k \ \ \text{(accumulated transgression data)},
+\]
+the terminal shell Schur complement satisfies, exactly,
+\[
+S_N \;=\; \mathrm{BULK}_r \;-\; \big(V + B M_c^{-1}\big)\, M_c\, \big(V + B M_c^{-1}\big)^{*},
+\qquad \mathrm{BULK}_r = S_0 + \textstyle\sum E_D + B M_c^{-1} B^{*} .
+\]
+In particular $S_N \succ 0$ iff $\mathrm{BULK}_r \succ 0$ and
+\[
+\tau_r \;:=\; \lambda_{\max}\!\Big[\, M_c^{1/2}\, W^{*}\, \mathrm{BULK}_r^{-1}\, W\, M_c^{1/2} \Big]
+\;<\; 1, \qquad W = V + B M_c^{-1}.
+\]
+\end{theorem}
+
+\begin{theorem}[Tracking equivalence]\label{thm:equiv}
+RH holds if and only if $\tau_r < 1$ at every edge of the filtration (equivalently,
+$M_R \succeq 0$ on $H_R$ for every $R$). The forward direction is
+Theorem~\ref{thm:compliance} plus induction along the filtration; the converse is the
+detection lemma (Theorem~\ref{thm:detect}).
+\end{theorem}
+
+\begin{theorem}[The coordinate is terminal]\label{thm:zerosum}
+In the rank-one normalization ($u$ the compliance direction, $\alpha = u^* A^{-1}u$,
+$b = C_0^* A^{-1}u$, $v = \sum_k T_k$), the tracking residual obeys the exact identity
+$C_N^* A^{-1} u = \alpha\,(v + b/\alpha)$, and on the pole-killed class the form is the
+spectral side of the explicit formula; hence
+\[
+r \;=\; v + \frac{b}{\alpha} \;=\; \frac{2}{\alpha} \sum_{\gamma > 0}
+\hat h_{A^{-1}u}(\gamma)\; \hat h_{\mathrm{shell}}(\gamma) ,
+\]
+a cross-correlation of test data against the nontrivial zeros. The geometric center
+$-b/\alpha$ is the explicit-formula prediction of the arithmetic transgression $v$, and the
+tracking inequality is zero-repulsion restated.
+\end{theorem}
+
+\begin{theorem}[Detection in the constrained class]\label{thm:detect}
+Suppose $\zeta$ has a nontrivial zero off the critical line. Then for all sufficiently large
+$T$ there exists $h \in H_T$ with $\sum_\rho \hat h\big((\rho-\tfrac12)/i\big)^2 < 0$.
+\end{theorem}
+
+The proof of Theorem~\ref{thm:detect} transcribes Yoshida's interpolation device
+\cite[Lemma~1, Prop.~1(2)]{Yoshida92} into the pole-killed class via the free
+parametrization $\hat h(z) = z^2(z^2+\tfrac14)\hat G(z)$, with two upgrades: a polynomial
+envelope of exponent $m \ge 6$ (absorbing the induced weight $|p(z_\rho)|^2 \sim |\rho|^8$
+against the Riemann--von Mangoldt count), and a unimodular phase normalization at the target
+zero. The construction interpolates rather than concentrates, so no case distinction on the
+configuration of off-line zeros arises. An independent second route through Li's criterion
+\cite{Li97,BombieriLagarias99,Bombieri00} is recorded alongside.
+
+\subsection{No-go map}\label{sec:nogo-intro}
+
+The coordinate system above was reached by elimination. Each of the following shortcut
+classes is refuted by an explicit finite computation (Section~\ref{sec:nogo}): single-place
+and subset-Euler passivity; per-cell (atom-local) repair estimates, killed unconditionally by
+bounded prime gaps \cite{Maynard15}; smooth (PNT-surrogate) replacements of the atom measure,
+which are permanently indefinite; channel decompositions (shift vs.\ autoconvolution), both
+channels being indefinite separately; slack-bearing estimates of any kind, since margins decay
+like $e^{-1.5R}$ below the natural scale of every term; KMS-weight deformations
+$n^{-\beta}$ with $\beta \ne \tfrac12$, which fail on both sides; and frozen-response
+closed-form storage in the dissipative-system picture. The Davenport--Heilbronn function,
+which satisfies a functional equation but violates its RH, fails the tracking inequality at
+the unique edge where its old block is positive ($\tau = 1.554$), and its window form is
+indefinite at every later support level --- the criterion separates $\zeta$ from DH.
+
+\subsection*{What this paper does not do}
+We do not prove the tracking inequality, and Theorem~\ref{thm:zerosum} is precisely the
+reason no proof of it can avoid the zeros: the residual \emph{is} a zero cross-correlation.
+The value of the coordinate system is that it is exact (no approximation hypothesis
+survives), finite-dimensional per step, certified in both directions against the classical
+literature, and instrumented: every claim above is reproducible by the accompanying witness
+scripts, and a certification harness re-derives the load-bearing numerics with explicit
+pass/fail gates.
+
+\section{Conventions and the reduction}\label{sec:reduction}
+% Transcribe from research/proof/00-reduction-to-rh.md:
+% - additive coordinates, hat-conventions, the pole-killed space H_R;
+% - O1: term-by-term match with Bombieri's printed explicit formula (dictionary
+%   f(x) = F(log x) x^{-1/2}); O2 trivial; numerical pin 4.4e-13 / 2000 zeros.
+\emph{[To transcribe from the research notes: document 00, sections 2--3.]}
+
+\section{Proof of Theorem~\ref{thm:edge}}
+% Transcribe research/proof/11-edge-window-factorization.md sections 2-3 (support
+% arithmetic; the substitution v = L/2 - s; the rank bound and the per-instance
+% sigma_2 formula).
+\emph{[To transcribe from the research notes: document 11.]}
+
+\section{Proof of Theorem~\ref{thm:compliance}}
+% Transcribe research/proof/12-edge-compliance-reduction.md sections 1-2 + doc 13
+% section 4' (rank-r completed square; the scalar criterion).
+\emph{[To transcribe from the research notes: documents 12 and 13 \S4'.]}
+
+\section{Proof of Theorems~\ref{thm:zerosum} and \ref{thm:equiv}}
+% Transcribe research/proof/13-tracking-equivalence.md sections 2-3 and the closure
+% argument of document 09 section 6''' (form = spectral side on pole-killed tests).
+\emph{[To transcribe from the research notes: documents 09 \S6''' and 13.]}
+
+\section{Proof of Theorem~\ref{thm:detect}}
+% Transcribe research/proof/00a-detection-lemma.md sections 2 (p(D) device), 6''
+% (Yoshida interpolation, upgrades U1-U2, symmetrization) and 6''.1 (SL1-SL5).
+\emph{[To transcribe from the research notes: document 00a.]}
+
+\section{The no-go map}\label{sec:nogo}
+% Transcribe the kill table: research/proof/09 (findings 1-3, refutations),
+% 10 (guards G1-G6, S2 channel result), 11 (mass-balance kill), 12 (race data),
+% with one witness script per row.
+\emph{[To transcribe: the kill table with witness references.]}
+
+\section{Numerical certification}\label{sec:numerics}
+% Tables: ladder positivity to R = 5.9; DH dead from 1.88; tracking trajectory
+% (cos -> +0.9995, residual 1.00 -> 0.033, alpha x70); residual-vs-zerosum
+% (rel 7.7e-4..3.7e-3 vs 5000 zeros, closure 8.8e-6); tau_2 per edge (max 0.954);
+% harness gates C1-C5.
+\emph{[To transcribe: tables from documents 09, 12, 13 and the harness output.]}
+
+\begin{thebibliography}{10}
+
+\bibitem{Weil52} A.~Weil, \emph{Sur les ``formules explicites'' de la th\'eorie des nombres
+premiers}, Meddelanden Fr\aa n Lunds Univ. Mat. Sem. (d\'edi\'e \`a M.~Riesz) (1952), 252--265.
+
+\bibitem{Yoshida92} H.~Yoshida, \emph{On Hermitian forms attached to zeta functions}, in:
+Zeta Functions in Geometry, Adv. Stud. Pure Math. \textbf{21}, Math. Soc. Japan, Tokyo (1992),
+281--325.
+
+\bibitem{Li97} X.-J.~Li, \emph{The positivity of a sequence of numbers and the Riemann
+Hypothesis}, J. Number Theory \textbf{65} (1997), 325--333.
+
+\bibitem{BombieriLagarias99} E.~Bombieri and J.~C.~Lagarias, \emph{Complements to Li's
+criterion for the Riemann Hypothesis}, J. Number Theory \textbf{77} (1999), 274--287.
+
+\bibitem{Bombieri00} E.~Bombieri, \emph{Remarks on Weil's quadratic functional in the theory
+of prime numbers, I}, Rend. Mat. Acc. Lincei (9) \textbf{11} (2000), 183--233.
+
+\bibitem{CC20} A.~Connes and C.~Consani, \emph{Weil positivity and trace formula: the
+archimedean place}, Selecta Math. (N.S.) \textbf{27} (2021), no.~77; arXiv:2006.13771.
+
+\bibitem{Maynard15} J.~Maynard, \emph{Small gaps between primes}, Ann. of Math. (2)
+\textbf{181} (2015), 383--413.
+
+\bibitem{IK04} H.~Iwaniec and E.~Kowalski, \emph{Analytic Number Theory}, AMS Colloquium
+Publications \textbf{53}, 2004.
+
+\end{thebibliography}
+
+\end{document}
