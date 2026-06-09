@@ -1,0 +1,221 @@
+# 00a - The detection lemma (obligation O3 of the reduction)
+
+Status: O3a, O3b, O3d discharged below (full constructions and estimates, written to
+proof level modulo routine Laplace-method constants). O3c is discharged in Case A
+(attained supremum) and reduced to one precise averaging sub-lemma in Case B
+(unattained supremum). This is the document doc 00 demanded; the remaining gap is
+section 6.
+
+## 1. Statement
+
+```text
+Lemma (detection). Suppose zeta has a zero off the critical line. Then there
+exist T > 0 and an admissible test
+   h in C_c(R), even, real, supp h subset [-T/2, T/2],
+   hat h(0) = hat h(i/2) = 0,
+with  Z(h) = sum_rho hat h((rho-1/2)/i)^2 < 0.
+```
+
+Combined with O1/O2 (Z(h) = M_R(h,h) for R >= T) this gives the contrapositive of the
+reduction: the program target for all R forces RH.
+
+## 2. The kill-free parametrization (O3d discharged)
+
+The two pole constraints are linear conditions that previous sketches imposed by
+correctors or in-family solving - both delicate (a corrector of size hat h_T(i/2) ~
+e^{T/4} has Z-cost ~ e^{T/2}, fatal for sigma < 1/2; in-family solving rotates with T).
+Both problems vanish with the following device:
+
+```text
+hat h(z) := z^2 (z^2 + 1/4) hat G(z),   equivalently   h = (-D^2)(-D^2 + 1/4) G,
+```
+
+for ANY even real G in C_c^infty with supp G subset [-T/2, T/2]. Then:
+
+```text
+- hat h(0) = 0 and hat h(+-i/2) = 0 EXACTLY (polynomial prefactor zeros);
+- h is even, real, compactly supported with the same support as G;
+- hat h has the same exponential type T/2 as hat G;
+- the class {G} is FREE - no constraint solving, no T-dependent rotation.
+```
+
+The admissible class of the reduction therefore contains the freely-parametrized
+family p(D)G, p(z) = z^2(z^2+1/4). All constructions below choose G.
+
+## 3. The violating family (O3a discharged)
+
+Let rho* = 1/2 + sigma* + i gamma* be an off-line zero (sigma* in (0, 1/2], gamma* > 0;
+selection of WHICH zero in sections 5-6). The zero quadruple contributes
+
+```text
+Q*(h) = 4 Re[ hat h(z*)^2 ],   z* = gamma* + i sigma*,
+```
+
+to Z(h) (evenness pairs +-gamma*, reflection pairs +-i sigma*; all other zeros are
+estimated, not engineered). Choose a fixed even window Omega in C_c^infty(-1,1),
+Omega >= 0, Omega(0) = 1, and set
+
+```text
+G_{a,b}(u) = Omega(2u/T) [ a cos(gamma* u) + b (2u/T) sin(gamma* u) ].
+```
+
+(The second member is even: odd envelope times odd sin.) Laplace asymptotics at
+w = i sigma* T/2 give, with A_T = int Omega(x) e^{sigma* T x / 2} dx and
+B_T = int x Omega(x) e^{sigma* T x / 2} dx (both real, |A_T|, |B_T| ~ e^{sigma* T/2}
+times explicit polynomial factors, B_T > 0 dominated by the x ~ +1 edge):
+
+```text
+hat G(z*) = (T/4) [ a A'_T - i b B'_T ] (1 + O(e^{-c T}))
+```
+
+with A', B' the rescaled constants - the REAL and IMAGINARY parts are independently
+tunable by (a, b). The prefactor contributes phase
+arg p(z*) = O(sigma*/gamma*) =: theta_p, fixed and computable. Choose (a,b) so that
+
+```text
+arg hat G(z*) = pi/2 - theta_p   (one phase condition, two real parameters),
+```
+
+retaining |hat G(z*)| >= c e^{sigma* T/2}. Then
+
+```text
+Q*(h) = 4 |p(z*)|^2 Re[ e^{2 i theta_p} hat G(z*)^2 ] = -4 |p(z*)|^2 |hat G(z*)|^2
+      <= -c' gamma*^8 e^{sigma* T}.
+```
+
+The signal is exponentially negative in T.
+
+## 4. The on-line sum (O3b discharged)
+
+For on-line zeros, hat h(gamma)^2 >= 0 with
+
+```text
+|hat h(gamma)| <= C gamma^4 T (1 + T|gamma - gamma*|/2)^{-N} + (gamma -> -gamma*),
+```
+
+(Schwartz decay of Omega-hat at scale T). With the unconditional zero count
+N(t+1) - N(t) = O(log(2+t)):
+
+```text
+sum_{on-line} hat h(gamma)^2 <= C_N T^2 gamma*^8 log(2+gamma*) = poly(T),
+```
+
+beaten by the e^{sigma* T} signal. (The polynomial prefactor costs gamma^8, absorbed
+by taking N >= 5 in the window decay.)
+
+## 5. Off-line interference, Case A (O3c, attained supremum)
+
+Let sigma_max = sup_rho (beta_rho - 1/2) > 0.
+
+**Case A: the supremum is attained.** Choose rho* attaining it, with gamma* minimal
+among attainers (any fixed attainer works). Every other off-line quadruple satisfies
+sigma_j <= sigma*, and its magnitude is
+
+```text
+|hat h(z_j)|^2 <= C gamma_j^8 T^2 e^{sigma_j T} (1 + T|gamma_j - gamma*|/2)^{-2N}.
+```
+
+Split the sum over j != *:
+
+```text
+- sigma_j <= sigma* - delta':   total <= poly(T) e^{(sigma*-delta') T}  - beaten;
+- sigma_j in (sigma*-delta', sigma*]: a discrete set; the nearest such zero is at
+  fixed distance d* > 0 in ordinate, and the height-tail converges:
+     sum_j gamma_j^8 (T|gamma_j-gamma*|)^{-2N} = O((T d*)^{-2N}) + O(T^{-2N})
+  for 2N > 9.  Total <= C e^{sigma* T} (T d*)^{-2N} = o(signal).
+```
+
+So Z(h_T) <= -c' gamma*^8 e^{sigma* T} (1 + o(1)) < 0 for large T. Case A complete.
+
+## 6. Off-line interference, Case B (the one remaining gap)
+
+**Case B: the supremum is not attained** - zeros with sigma_j increasing to sigma_max
+only along heights gamma_j -> infinity. Then for any fixed choice of rho*, zeros with
+sigma_j > sigma* exist (at large heights), and their terms carry e^{(sigma_j-sigma*)T}
+relative growth against only polynomial localization suppression - with UNCONTROLLED
+sign. Exponential beats polynomial, so the fixed-test argument of section 5 does not
+close.
+
+**ATTEMPTED RESOLUTION - REFUTED SAME DAY (kept as graveyard; see correction below).**
+
+The following Landau/annular-window argument was drafted and then killed by its own
+step-2 check: the crossing value is s = sigma_j (1 - (x+y)/2), and (a) the PQ cross
+terms have x + y = 2 gamma* x / (gamma_j + gamma*) -> 0, putting foreign real-axis
+singularities at s ~ sigma_j (NOT below (3/4) sigma_max as claimed); (b) worse, the
+self-product (P^2) terms cross at exactly s = sigma_j with nonvanishing density
+Omega(x) Omega(-x) along x + y = 0 - intrinsic to ANY even window. The engineered
+singularity at sigma* < sigma_max is therefore always shadowed by sign-uncontrolled
+foreign singularities in Case B. The Landau route as drafted is DEAD; the draft is
+retained below because the curve bookkeeping it introduces is the right language for
+whatever replaces it.
+
+Suppose, for contradiction, Z(h_T) >= 0 for all T (the hypothesis (H) restricted to
+the family below). Consider W(T) = Z(h_T) as a function of T >= T_0 and its Laplace
+transform F(s) = int W(T) e^{-sT} dT.
+
+```text
+Step 1 (annular window). Choose Omega even, smooth, >= 0, supported in
+   1/2 < |x| < 1 (an annular window; the signal estimates of section 3 used
+   only the |x| ~ 1 edge mass, so they survive unchanged). Each quadruple
+   term's Laplace transform is then a double integral
+      int int Omega(x) Omega(y) / (s - sigma_j - i(w x + w' y)/2) dx dy
+   over x, y in supp Omega, with w, w' in {(gamma_j -+ gamma*) + i sigma_j}.
+   Its singularities lie on the CURVES s = sigma_j + i(w x + w' y)/2.
+
+Step 2 (real-axis crossings). A curve point is real iff
+   Re(w) x + Re(w') y = 0. With the annular support (|x|,|y| in [1/2,1]):
+   - the engineered zero j = * (w = i sigma*, recentered frequency 0):
+     real segment with RIGHTMOST point s = sigma* (x = y = 1 endpoint),
+     coefficient strictly NEGATIVE by the phase engineering of section 3;
+   - foreign zeros gamma_j != gamma*: crossings require
+     y/x = -(gamma_j - gamma*)/(gamma_j + gamma*), giving |x + y| <= 1/2
+     and real singular points at s <= (3/4) sigma_j <= (3/4) sigma_max;
+   - same-ordinate zeros (gamma_j = gamma*, finitely many, sigma_j <= sigma*):
+     contained in the j = * bookkeeping or strictly below it;
+   - on-line zeros: nonnegative terms with transform singularities at
+     Re s <= 0.
+
+Step 3 (selection). In Case B choose rho* with sigma* > (3/4) sigma_max
+   (possible since sigma_j -> sigma_max). Then the rightmost real-axis
+   singularity of F is the engineered one at s = sigma*, with negative
+   leading coefficient; the real axis is regular on (sigma*, infinity).
+
+Step 4 (Landau). W is locally integrable; F converges absolutely for
+   Re s > sigma_max + eps (uniform summability over zeros, 2N > 9). By
+   Landau's theorem for Laplace transforms of nonnegative functions, the
+   abscissa of convergence is a singular point on the real axis; since the
+   real axis is regular down to sigma*, the integral converges for
+   Re s > sigma*, and F(sigma) >= 0 for real sigma > sigma* (nonnegative
+   integrand). But F(sigma) -> -infinity as sigma -> sigma*+ (negative
+   endpoint singularity). Contradiction. qed (sketch)
+```
+
+Hygiene still to be written (none believed hard): (i) the complete cross-term
+enumeration (PP, PQ, QQ products and the b-member/p(z) slow factors - same curves,
+polynomial densities, no new real crossings); (ii) the endpoint-singularity
+coefficient sign at s = sigma* including the slow factors (Omega >= 0 near the
+corner x = y = 1 and the engineered phase give definiteness); (iii) the interchange
+of zero-sum and Laplace integral (absolute convergence, as in section 5).
+
+Fallback anchor: the equivalence "Weil positivity for compactly supported smooth
+tests <=> RH" is classical (Weil 1952; Bombieri's lectures); what this document
+adds is the explicit pole-killed, even-real, polynomial-prefactor, annular-window
+form matched to the program's conventions, with the Landau device making Case B
+self-contained.
+
+## 7. Summary of O3 status
+
+```text
+O3a  phase-engineered negative quadruple      DONE (section 3)
+O3b  on-line polynomial bound                 DONE (section 4)
+O3c  interference, attained case              DONE (section 5)
+O3c' interference, unattained case            OPEN. The Landau/annular route was
+                                              drafted and refuted the same day
+                                              (section 6 correction): self-product
+                                              terms deposit real-axis singularities
+                                              at every sigma_j for ANY even window.
+                                              Honest fallback: anchor Case B to the
+                                              classical equivalence (Weil 1952 /
+                                              Bombieri) pending a new device.
+O3d  constraint satisfaction                  DISSOLVED (section 2: p(D)G device)
+```
