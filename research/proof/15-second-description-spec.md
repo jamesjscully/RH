@@ -120,7 +120,88 @@ native positivity, and the wall it currently faces.
     Wall: the reflection that works, if any, is not the obvious one.
 ```
 
-## 4. The refined wall, one sentence
+## 4. Prior-art audit (added same day, after a repo + literature sweep)
+
+Section 3 was written before re-reading the program's pre-proof-track phases.
+Almost every candidate WAS examined there, with verdicts; the corrected map:
+
+```text
+(a) Borger/Witt/F1: KILLED in f1-construction.md - but against a DIFFERENT
+    criterion than this spec's. All six F1 grounds (sphere spectrum, tropical,
+    Borger Lambda, monoid, period, global) were tested for "supplies the
+    arithmetic scale q at the archimedean place" and all six are scale-free
+    (the count/radius decoupling; the no-go preprint's criterion). This spec
+    deliberately DROPS the scale demand (the no-go proves scale is impossible)
+    and asks for a square with native signature positivity instead. The repo
+    kill does not close that question; nobody has the intersection theory.
+(b) Scaling-site square: literature/connes-consani-scaling-site.md - OPEN,
+    with Connes' own boxed statement of the missing object: "an intersection
+    theory and a Riemann-Roch theorem on the square of the arithmetic site...
+    no Serre duality or good cohomological H^j for j != 0." RR proven on
+    periodic orbits (curves) only; the square is missing. Matches this spec.
+(c) Type II/III trace: work/A-qsm-free-energy.md - AUDITED, RH-SILENT, and
+    this is the most instructive prior result for the spec (see section 5).
+    The BC system already exhibits P2 (DH has no Euler product => no BC
+    partition function => carrier fails to exist) AND its native positivity
+    is certified real - yet it is RH-silent: the genuine OS-positive object
+    (the KMS correlator) is positive BECAUSE a_n >= 0, independent of zero
+    locations, and no FE-reflection continuation stays positive.
+(d) Arakelov index: log/2026-06-06-arakelov-signature.md - AUDITED. The
+    arithmetic Hodge index (Faltings-Hriljac-Moriwaki) genuinely carries the
+    signature, and its negativity IS the Weil positivity decomposed into
+    finite + archimedean pieces. Two measured blocks: Spec Z is 1-dim (no
+    surface to carry (1, rho-1)); and the archimedean Gram is IDENTICAL for
+    zeta and DH (max difference 0.0 exactly) - the geometric/archimedean part
+    of any such pairing is DH-shared, hence RH-silent on its own; the Euler
+    content sits entirely in the finite-place part, which is the SUBTRACTED
+    term. Sign must be carried where the discrimination is.
+(e) Reflection positivity: threads/thread-1-reflection-positivity.md - LIVE
+    OPEN, the only candidate with an open in-repo thread: the prime-place
+    reflection involution theta making W = <theta h, h> an OS pairing AT THE
+    LEVEL OF ZEROS (not coefficients). Worker F's OS bridge (work/F-sym2-os-
+    bridge.md): transfer-matrix reconstruction gives self-adjointness <=> RH
+    for sym^2 cases; extension to zeta open. Our S2 channel kill constrains
+    theta further (not the standard shift reflection).
+(f) Deninger (omitted from section 3, already fully audited):
+    literature/deninger-spectral-cohomology.md - the most precise existing
+    specification of the carrier: a laminated 3-dim space with conformal
+    weight alpha = 1 whose closed orbits are primes and fixed points are the
+    archimedean places; manifolds PROVEN excluded (alpha = 0 forced);
+    laminated trace formula with fixed points unproven. Deninger's spec and
+    this spec are the same demand in different categories (his: dynamical/
+    cohomological; ours: pairing/signature + fork compliance).
+```
+
+## 5. The new clause the audit forces: S4 is where carriers die quietly
+
+The BC/KMS result (worker A) is a COUNTEREXAMPLE TO THE SUFFICIENCY of
+S1+S2+S3+S5: a carrier can be prime-position-orthogonal, multiplicative,
+natively positive, and existence-selective against DH - and still be
+RH-silent, because its comparison map lands on the wrong locus (the real
+axis / high-temperature region) and no positivity-preserving continuation
+reaches the critical strip (worker A tested all three continuations; all
+fail). Therefore sharpen S4:
+
+```text
+S4' (full-locus comparison). The comparison identity must equate the carrier
+    pairing with the Weil form ON THE FULL CRITICAL-STRIP TEST CLASS (the
+    pole-killed compactly-supported class of doc 00), not with a real-axis,
+    high-temperature, or small-support shadow of it. Positivity that holds
+    on a shadow and must be analytically continued to reach the strip will
+    lose positivity in the continuation (worker A: FE reflection flips the
+    variance sign; naive susceptibility is OS-indefinite). The continuation
+    IS the wall in thermal clothing.
+```
+
+Status ledger for the spec, after the audit: (a) reopened-but-unbuilt (the
+repo kill was against the scale criterion, not the signature criterion);
+(b) open, blocked at the square (Connes' own missing object); (c) killed by
+S4' (the instructive failure); (d) blocked at the missing second factor, with
+the archimedean part proven DH-shared; (e) LIVE (prime reflection theta,
+sym^2 bridge); (f) open, blocked at the laminated construction. Nothing in
+the audit contradicts the spec; (c) sharpens it.
+
+## 4'. The refined wall, one sentence
 
 The wall is not the absence of estimates and not the choice of coordinates;
 it is that the one-variable arithmetic (multiplicative semigroup of Z plus the

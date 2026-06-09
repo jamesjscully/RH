@@ -61,6 +61,14 @@ P2 (existence-selectivity). Its kill-test against DH should be satisfied by
    arithmetic structure existing is the genuine article. This is the shadow
    of finding E1 (the full semigroup is load-bearing) at the level of
    foundations.
+
+CAVEAT (necessary, not sufficient): the Bost-Connes system already satisfies
+   P1 + P2 (no BC partition function exists for DH) with certified-positive
+   native structure, and is nonetheless RH-SILENT (work/A-qsm-free-energy.md):
+   its comparison map lands on the real axis and no positivity-preserving
+   continuation reaches the critical strip. P1/P2 screen candidates; the
+   full-locus comparison clause S4' of doc 15 section 5 is what they must
+   then survive.
 ```
 
 See doc 15 for the spec of what such a second description would have to be.
