@@ -120,9 +120,18 @@ OUTCOME (proof/13, witnesses prime_edge_tracking.py + prime_edge_residual_zerosu
     scalar recursion - exact, finite-dimensional per edge, terminal.
 ```
 
-Remaining work is program-closure, not attack: certify the reduction end to end
-(O3 Case B via classical Weil-1952/Bombieri anchoring), state the equivalence
-with exact hypotheses (rank-2 correction of doc 11), certification harness.
+Program-closure status (2026-06-09 evening):
+- O3 DISCHARGED in full (00a section 6''): Yoshida's interpolation device
+  (primary source read, refs/yoshida1992.pdf) transcribed with the m>=6
+  envelope and phase normalization; no concentration => no Case A/B split.
+  Second anchor: Li-coordinate route + Lemma B2 (proven, 00a section 6';
+  Bombieri 2000 archived refs/bombieri2000.pdf).
+- Certification harness DONE: scripts/numerics/witness/certify_chain.py
+  (C1-C5 all PASS, exit-code gated; run after any ladder-stack change).
+- Remaining for the equivalence write-up: state the tracking equivalence with
+  exact hypotheses (doc 11 rank-2 correction replacing the one-mode form);
+  O1/O4 line-by-line transcription formalities; the routine sub-lemmas
+  itemized in 00a section 6''.
 
 ### R-KYP - The realization rung (the post-R1 front)
 
