@@ -87,7 +87,7 @@ R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIR
     subset inductions}.
 ```
 
-### R-TRACK - The tracking theorem (THE front target as of 2026-06-09, end of session)
+### R-TRACK - The tracking theorem (RESOLVED fail-closed 2026-06-09: terminal equivalence, proof/13)
 
 Final exact form of the program (proof/12 section 5, validated to 2e-5):
 
@@ -99,16 +99,30 @@ determined point -b/alpha within radius sqrt(bulk/alpha):
     alpha (v + b/alpha)(v + b/alpha)^*  <=  S_0 + sum E_D + b b^*/alpha.
 ```
 
-Sub-targets, in order: (1) compute the trajectory of -b/alpha and v along the
-ladder (witness: prime_edge_compliance.py extended) - does v visibly track?
-DH control: its v must not track. (2) Express -b/alpha analytically (it is
-archimedean/old-history data; the resonance dictionary of 09 section 6'' should
-give its leading form). (3) The tracking theorem itself: equidistribution of
-prime-power atoms against edge-convolution profiles at the rate alpha grows -
-this is where the arithmetic (zero-density / short-interval inputs identified in
-09 Finding 3) must finally enter. All prior kills constrain the proof shape:
-statistical not cell-wise; all places jointly; beta = 1/2 only; exact identities
-plus terminal sign only.
+OUTCOME (proof/13, witnesses prime_edge_tracking.py + prime_edge_residual_zerosum.py):
+
+```text
+(1) DONE - tracking is real: cos(v, -b/alpha) -> +0.9995, relative residual
+    1.00 -> 0.033 as alpha grows 70x; tau = alpha r^* BULK^{-1} r < 1 on all
+    14 edges (tau < 1 <=> edge positivity, exact). DH control DISCRIMINATING:
+    on its only living edge tau = 1.554 > 1, eigmin(SN) = -0.282 - DH fails
+    exactly as a tracking failure. The frame is not dispersing.
+(2) DONE - fork decided: exact identity C_N^* A^{-1} u = alpha (v + b/alpha),
+    so r = (2/alpha) sum_gamma hhat_{A^{-1}u}(gamma) hhat_shell(gamma) - the
+    residual IS a zero cross-correlation (verified to truncation: rel err
+    7.7e-4..3.7e-3 vs 5000 zeros, cos = +1.00000; closure sanity 8.8e-6).
+    -b/alpha is the explicit-formula prediction of v.
+(3) CLOSED fail-closed: there is no independent attack surface - any proof of
+    tau < 1 must control zero cross-correlations (RH-strength input); with 09
+    Finding 1 (slack can never close) and Finding 3 (Huxley ceiling), no
+    estimate-based route survives. The rung's product is the TRACKING
+    EQUIVALENCE (proof/13 section 3): RH <=> uniform tau < 1 along a one-mode
+    scalar recursion - exact, finite-dimensional per edge, terminal.
+```
+
+Remaining work is program-closure, not attack: certify the reduction end to end
+(O3 Case B via classical Weil-1952/Bombieri anchoring), state the equivalence
+with exact hypotheses (rank-2 correction of doc 11), certification harness.
 
 ### R-KYP - The realization rung (the post-R1 front)
 
