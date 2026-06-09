@@ -120,18 +120,18 @@ Along the chronological chain of one edge the old block is frozen
 ($E_A^{(j)} = 0$ exactly), and with $U_r$ spanning the coupling column space
 (rank $r$ from Theorem~\ref{thm:edge}(c)),
 \[
-M_c = U_r^* A^{-1} U_r \in \R^{r\times r}, \qquad B = C_0^* A^{-1} U_r, \qquad
+M_c = U_r^* A^{-1} U_r \in \R^{r\times r}, \qquad \mathcal{B} = C_0^* A^{-1} U_r, \qquad
 V = \textstyle\sum_k T_k \ \ \text{(accumulated transgression data)},
 \]
 the terminal shell Schur complement satisfies, exactly,
 \[
-S_N \;=\; \mathrm{BULK}_r \;-\; \big(V + B M_c^{-1}\big)\, M_c\, \big(V + B M_c^{-1}\big)^{*},
-\qquad \mathrm{BULK}_r = S_0 + \textstyle\sum E_D + B M_c^{-1} B^{*} .
+S_N \;=\; \mathrm{BULK}_r \;-\; \big(V + \mathcal{B} M_c^{-1}\big)\, M_c\, \big(V + \mathcal{B} M_c^{-1}\big)^{*},
+\qquad \mathrm{BULK}_r = S_0 + \textstyle\sum E_D + \mathcal{B} M_c^{-1} \mathcal{B}^{*} .
 \]
 In particular $S_N \succ 0$ iff $\mathrm{BULK}_r \succ 0$ and
 \[
 \tau_r \;:=\; \lambda_{\max}\!\Big[\, M_c^{1/2}\, W^{*}\, \mathrm{BULK}_r^{-1}\, W\, M_c^{1/2} \Big]
-\;<\; 1, \qquad W = V + B M_c^{-1}.
+\;<\; 1, \qquad W = V + \mathcal{B} M_c^{-1}.
 \]
 \end{theorem}
 
@@ -148,8 +148,10 @@ $b = C_0^* A^{-1}u$, $v = \sum_k T_k$), the tracking residual obeys the exact id
 $C_N^* A^{-1} u = \alpha\,(v + b/\alpha)$, and on the pole-killed class the form is the
 spectral side of the explicit formula; hence
 \[
-r \;=\; v + \frac{b}{\alpha} \;=\; \frac{2}{\alpha} \sum_{\gamma > 0}
-\hat h_{A^{-1}u}(\gamma)\; \hat h_{\mathrm{shell}}(\gamma) ,
+r \;=\; v + \frac{b}{\alpha} \;=\; \frac{1}{\alpha} \sum_{\rho}
+\hat h_{A^{-1}u}(z_\rho)\; \hat h_{\mathrm{shell}}(z_\rho)
+\;\;\Big(=\; \frac{2}{\alpha} \sum_{\gamma > 0}
+\hat h_{A^{-1}u}(\gamma)\, \hat h_{\mathrm{shell}}(\gamma) \ \text{on RH}\Big),
 \]
 a cross-correlation of test data against the nontrivial zeros. The geometric center
 $-b/\alpha$ is the explicit-formula prediction of the arithmetic transgression $v$, and the
@@ -287,16 +289,16 @@ $E_C^{(k)} = U_r T_k^*$. Then $C_N = C_0 + U_r V^*$ with $V = \sum_k T_k$, and e
 S_N \;=\; S_0 + \textstyle\sum E_D \;-\; V B^* - B V^* - V M_c V^*,
 \qquad S_0 = D_0 - C_0^* A^{-1} C_0 ,
 \]
-with $M_c = U_r^* A^{-1} U_r$ and $B = C_0^* A^{-1} U_r$. Since $A \succ 0$ (inductive
+with $M_c = U_r^* A^{-1} U_r$ and $\mathcal{B} = C_0^* A^{-1} U_r$. Since $A \succ 0$ (inductive
 hypothesis of the filtration) and $U_r$ has full column rank, $M_c \succ 0$. Completing the
 square in $V$,
 \[
-- V B^* - B V^* - V M_c V^* \;=\; B M_c^{-1} B^* \;-\; \big(V + B M_c^{-1}\big) M_c
-\big(V + B M_c^{-1}\big)^* ,
+- V \mathcal{B}^* - \mathcal{B} V^* - V M_c V^* \;=\; \mathcal{B} M_c^{-1} \mathcal{B}^* \;-\; \big(V + \mathcal{B} M_c^{-1}\big) M_c
+\big(V + \mathcal{B} M_c^{-1}\big)^* ,
 \]
-which gives the displayed identity with $\mathrm{BULK}_r = S_0 + \sum E_D + B M_c^{-1} B^*$.
+which gives the displayed identity with $\mathrm{BULK}_r = S_0 + \sum E_D + \mathcal{B} M_c^{-1} \mathcal{B}^*$.
 
-\emph{Scalar criterion.} Write $W = V + B M_c^{-1}$ and $Y = W M_c^{1/2}$, so
+\emph{Scalar criterion.} Write $W = V + \mathcal{B} M_c^{-1}$ and $Y = W M_c^{1/2}$, so
 $S_N = \mathrm{BULK}_r - Y Y^*$. If $S_N \succ 0$ then $\mathrm{BULK}_r \succ Y Y^*
 \succeq 0$. Conversely, for $\mathrm{BULK}_r \succ 0$,
 \[
