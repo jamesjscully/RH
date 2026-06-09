@@ -195,11 +195,53 @@ scripts, and a certification harness re-derives the load-bearing numerics with e
 pass/fail gates.
 
 \section{Conventions and the reduction}\label{sec:reduction}
-% Transcribe from research/proof/00-reduction-to-rh.md:
-% - additive coordinates, hat-conventions, the pole-killed space H_R;
-% - O1: term-by-term match with Bombieri's printed explicit formula (dictionary
-%   f(x) = F(log x) x^{-1/2}); O2 trivial; numerical pin 4.4e-13 / 2000 zeros.
-\emph{[To transcribe from the research notes: document 00, sections 2--3.]}
+
+We work additively, $u = \log x$. For $h \in C_c(\R)$ set
+$\hat h(z) = \int h(u)\, e^{izu}\, du$ (entire of exponential type
+$\tfrac12\,|\!\supp h|$), and for even real $h$ let $g = h * h$, so
+$\hat g = \hat h^{\,2}$. The constituents of $M_R$ are:
+\begin{align*}
+W_\infty(h, h) &= -(\log \pi)\,\langle h, h\rangle + \frac{1}{2\pi}\int_\R
+\big|\hat h(t)\big|^2\, \mathrm{Re}\,\psi\Big(\frac14 + \frac{it}{2}\Big)\, dt, \\
+P_R(h, h) &= \sum_{\log n < R} 2\,\Lam(n)\, n^{-1/2}\, g(\log n),
+\qquad M_R = W_\infty - P_R \ \ \text{on } H_R .
+\end{align*}
+
+\begin{proposition}[Normalization; reduction of the hypothesis to the spectral side]
+\label{prop:O1}
+For $h \in H_R$,
+\[
+M_R(h, h) \;=\; \sum_\rho \hat h\big(z_\rho\big)^2, \qquad z_\rho = (\rho - \tfrac12)/i ,
+\]
+the sum over all nontrivial zeros of $\zeta$ (absolutely convergent for compactly supported
+smooth tests).
+\end{proposition}
+
+\begin{proof}
+This is the explicit formula in the normalization of Bombieri \cite[\S2]{Bombieri00},
+transported by the dictionary $f(x) = F(\log x)\, x^{-1/2}$ between the multiplicative class
+$C_0^\infty((0,\infty))$ and the additive class $F = g \in C_c^\infty(\R)$. Under it:
+$\tilde f(\rho) = \hat g(z_\rho)$; the pole terms are
+$\tilde f(0) + \tilde f(1) = \hat g(i/2) + \hat g(-i/2)$, which vanish on the pole-killed
+space since $\hat g(\pm i/2) = \hat h(\pm i/2)^2 = 0$ (evenness gives
+$\hat h(-i/2) = \hat h(i/2)$); the prime term is
+$\sum_n \Lam(n)\{f(n) + f^*(n)\} = \sum_n \Lam(n)\, n^{-1/2}\{g(\log n) + g(-\log n)\}$,
+which truncates at $\log n < R$ because $\supp g \subset [-R, R]$; and Bombieri's closed form
+of the archimedean term,
+$-(\log\pi) f(1) + \tfrac{1}{2\pi i}\int_{(1/2)} \mathrm{Re}\big[\psi(w/2)\big]
+\tilde f(w)\, dw$, becomes $W_\infty(h,h)$ verbatim with $w = \tfrac12 + it$ and
+$f(1) = g(0) = \langle h, h\rangle$. Convergence of the zero sum for compactly supported
+smooth tests is the standard Riemann--von Mangoldt remark \cite[p.~284]{Yoshida92}. (We also
+verified the identity numerically against the first $2000$ zeros, residual
+$4.4\cdot 10^{-13}$.)
+\end{proof}
+
+Thus the program hypothesis --- $M_R \succeq 0$ on $H_R$ for every $R$ --- says exactly that
+the Weil functional is positive on the even, real, pole-killed, compactly supported class.
+RH implies it trivially ($z_\rho$ real makes each summand a square); the converse is
+Theorem~\ref{thm:detect}. The constraint $\hat h(0) = 0$ is an extra normalization carried by
+the program's nested bases; it costs nothing in either direction (the detection tests of
+Section~\ref{sec:detect} satisfy it by construction).
 
 \section{Proof of Theorem~\ref{thm:edge}}
 
@@ -312,16 +354,140 @@ $S_N \succ 0$ inductively, hence $M_R \succeq 0$ on $H_R$ for all $R$, and
 Theorem~\ref{thm:detect} (detection) then forces every zero onto the critical line. This is
 Theorem~\ref{thm:equiv}. \qed
 
-\section{Proof of Theorem~\ref{thm:detect}}
-% Transcribe research/proof/00a-detection-lemma.md sections 2 (p(D) device), 6''
-% (Yoshida interpolation, upgrades U1-U2, symmetrization) and 6''.1 (SL1-SL5).
-\emph{[To transcribe from the research notes: document 00a.]}
+\section{Proof of Theorem~\ref{thm:detect}}\label{sec:detect}
+
+\emph{Free parametrization of the constraints.} For any even real
+$G \in C_c^\infty(\R)$ with $\supp G \subset [-T/2, T/2]$, set
+\[
+\hat h(z) \;=\; p(z)\, \hat G(z), \qquad p(z) = z^2\big(z^2 + \tfrac14\big)
+\quad\big(\text{i.e. } h = (-D^2)(-D^2 + \tfrac14)\, G\big).
+\]
+Then $h$ is even, real, has the same support, and $\hat h(0) = \hat h(\pm i/2) = 0$ exactly:
+the class $\{G\}$ is free. Since $p$ vanishes only at $s \in \{0, \tfrac12, 1\}$, the induced
+weights $w_\rho = p(z_\rho)^2$ are nonzero at every nontrivial zero, with
+$|w_\rho| \asymp |z_\rho|^8$. The task becomes: given an off-line zero, find even real $G$
+with $\sum_\rho w_\rho\, \hat G(z_\rho)^2 < 0$.
+
+\emph{The interpolation device.} The construction is Yoshida's
+\cite[Lemma~1 and Prop.~1(2)]{Yoshida92}, with two upgrades. Fix the off-line zero
+$\rho_0$ ($z_0 = \gamma_0 - i\sigma$, $\sigma \ne 0$; $\gamma_0 \ne 0$ since $\zeta$ has no
+real nontrivial zeros: $(1 - 2^{1-s})\zeta(s) > 0$ on $(0,1)$).
+
+\begin{lemma}[base atom]\label{lem:SL1}
+For any $m$ there is $\beta \in C_c^\infty(\R)$ (complex) with $B(z_0) = 1$ and
+$|B(z)| \le C_m (1 + |z - z_0|)^{-(m+1)}$ uniformly on $|\mathrm{Im}\, z| \le \tfrac12$.
+\end{lemma}
+
+\begin{proof}
+Take $\phi \in C_c^\infty$, $\phi \ge 0$, $\int \phi = 1$, and $\beta(u) = \phi(u)
+e^{-i z_0 u}$; then $B(z) = \Phi(z - z_0)$ with $\Phi$ the transform of $\phi$, $\Phi(0)=1$,
+and $m+1$ integrations by parts give the decay on the strip.
+\end{proof}
+
+\begin{lemma}[interpolating kills]\label{lem:SL2}
+Given finitely many points $z_i \ne z_0$ there are $\beta_i \in C_c^\infty$ with
+$B_i(z_0) = 1$, $B_i(z_i) = 0$, $B_i$ bounded on the strip.
+\end{lemma}
+
+\begin{proof}
+With $B$ from Lemma~\ref{lem:SL1} and $B_\tau(z) = e^{i\tau(z - z_0)} B(z)$ (the transform
+of a translate), the linear system $xB + yB_\tau$ with values $(1, 0)$ at $(z_0, z_i)$ has
+determinant $B(z_i)\big(e^{i\tau(z_i - z_0)} - 1\big) \ne 0$ for suitable $\tau$ when
+$B(z_i) \ne 0$; if $B(z_i) = 0$ take $B_i = B$.
+\end{proof}
+
+Let $\varepsilon > 0$. Take $m \ge 6$ in Lemma~\ref{lem:SL1}; let $z_1, \dots, z_M$ be the
+zeros within distance $R_\varepsilon$ of $z_0$ (chosen so that the Lemma~\ref{lem:SL1} decay
+already gives $|B| \le \varepsilon\,(1+|z - z_0|)^{-m}$ beyond $R_\varepsilon$), and form
+\[
+\beta_* \;=\; \beta^{*N} * \beta_1 * \cdots * \beta_M ,
+\]
+whose transform is $B^N \prod_i B_i$: it equals $\lambda := $ (a unimodular constant, chosen
+below) at $z_0$ after normalization, vanishes to order $\ge 1$ at each near zero, and for $N$
+large is bounded by $\varepsilon\, (1 + |z - z_0|)^{-m}$ at \emph{every} zero
+$z \neq z_0$ --- on-line or off-line, at any height. No concentration in the support
+variable occurs anywhere; consequently no comparison between $e^{\sigma T}$-sized terms
+arises and no case analysis on the configuration of off-line zeros is needed.
+
+\emph{Symmetrization and the negative value.} Set
+\[
+\hat G(z) \;=\; B_*(z) + B_*(-z) + \overline{B_*(\bar z)} + \overline{B_*(-\bar z)} ,
+\]
+which is even and Hermitian, so $G$ is even, real, $C_c^\infty$. The quadruple partners
+$\{-z_0, \pm \bar z_0\}$ are themselves zeros, so $B_*$ is $\varepsilon$-small there and
+$\hat G(z_0) = \lambda + O(\varepsilon)$. By evenness of $p$ and the symmetry of the zero
+set, the engineered quadruple contributes
+$4\,\mathrm{Re}\big[w_0\, \hat G(z_0)^2\big] = 4\,\mathrm{Re}\big[w_0 \lambda^2\big] +
+O(\varepsilon)$; choosing $\lambda^2 = -\overline{w_0}/|w_0|$ makes this $-4|w_0| +
+O(\varepsilon)$. Every foreign zero contributes at most
+$16\, |w_\rho|\, \varepsilon^2 (1 + |z_\rho - z_0|)^{-2m}$ (using the reflected envelopes and
+the symmetry of the zero set), and by the Riemann--von Mangoldt count
+$N(T+1) - N(T) = O(\log T)$,
+\[
+\sum_{\rho \ \mathrm{foreign}} |w_\rho|\,(1 + |z_\rho - z_0|)^{-2m}
+\;\le\; C(z_0, m) \;<\; \infty \qquad (2m - 8 > 1,\ \text{e.g. } m \ge 6).
+\]
+Hence $\sum_\rho w_\rho \hat G(z_\rho)^2 = -4|w_0| + O(\varepsilon) < 0$ for $\varepsilon$
+small, and $h = p(D)G \in H_T$ for some finite $T$ (supports add under convolution). \qed
+
+\begin{remark}
+The same construction applied to the zero set of a Davenport--Heilbronn-type function
+produces negative tests there too --- as it must, since such functions \emph{have} off-line
+zeros; the argument consumes the actual zero locations of the given function and therefore
+does not ``over-prove''. An independent route to Theorem~\ref{thm:detect} through Li's
+criterion \cite{Li97,BombieriLagarias99}, in which the relevant extremum is always attained
+by finitely many zeros, is recorded in the research notes together with a proven mean-zero
+oscillation lemma replacing the homogeneous Diophantine step.
+\end{remark}
 
 \section{The no-go map}\label{sec:nogo}
-% Transcribe the kill table: research/proof/09 (findings 1-3, refutations),
-% 10 (guards G1-G6, S2 channel result), 11 (mass-balance kill), 12 (race data),
-% with one witness script per row.
-\emph{[To transcribe: the kill table with witness references.]}
+
+Each row is a structural shortcut class that would, if valid, simplify or replace the
+tracking inequality; each is refuted by an explicit finite computation (witness script in
+parentheses; all reproducible).
+
+\begin{center}
+\small
+\begin{tabular}{p{0.42\textwidth} p{0.52\textwidth}}
+\toprule
+\textbf{Shortcut class} & \textbf{Refutation} \\
+\midrule
+Single-place passivity: $W_\infty - P_p \succeq 0$ for one prime, all $R$ &
+False already for $p = 2$ at support $1.60$
+(\texttt{prime\_single\_place\_passivity}) \\[2pt]
+Subset Euler factors / finitely many places &
+Drop-one tests: removing \emph{any} place $\le 113$, or any single prime-power atom
+(even $n = 81$), collapses margins by $\sim\!10^3$
+(\texttt{prime\_interference\_rigidity}) \\[2pt]
+Weight deformation $n^{-\beta}$, $\beta \ne \tfrac12$ &
+Positivity fails on \emph{both} sides ($\beta = 0.49$ and $0.51$) --- the critical KMS
+weight is pinned (\texttt{prime\_interference\_rigidity}) \\[2pt]
+Per-cell (atom-local) repair estimates &
+Killed unconditionally: bounded-gap prime triples \cite{Maynard15} defeat any cell-local
+lemma at all sufficiently large $R$ \\[2pt]
+Smooth (PNT-surrogate) atom measure &
+Permanently indefinite ($\eigmin \in [-0.9, -0.4]$ at all measured supports); only the
+exact atoms are positive (\texttt{prime\_margin\_law}) \\[2pt]
+Archimedean self-sufficiency &
+$W_\infty$ alone goes indefinite at support $\approx 2.3$; past it the primes are the only
+source of positivity (\texttt{prime\_margin\_law}) \\[2pt]
+Channel decompositions (half-line shift vs.\ corner autoconvolution) &
+Both channels are separately indefinite at every measured support; only the sum is positive
+(research notes, S2) \\[2pt]
+Slack-bearing estimates of any kind &
+Margins decay like $e^{-1.5 R}$ below the natural scale of every constituent term; any
+proof step that loses a constant dies (\texttt{prime\_ladder\_scaling}) \\[2pt]
+Frozen-response closed-form storage (KYP picture) &
+Fails by $O(\text{debt})$: the storage is path-dependent; the state must be dynamical
+(research notes, R-KYP) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Together with Theorem~\ref{thm:zerosum}, these results bound the shape of any future proof:
+it must be exact (no slack), place-global and channel-global, pinned at the critical weight,
+and must control zero cross-correlations by a mechanism that is neither an estimate of the
+above kinds nor a zero-side positivity input.
 
 \section{Numerical certification}\label{sec:numerics}
 
