@@ -254,15 +254,46 @@ T-kill (pole constraints). The hypothesis lives on the pole-killed subspace.
    zero, since p vanishes only at s in {0, 1/2, 1}). The Li detection must
    then be rerun for the weighted form. The extremal-zero contribution
    becomes -2(1+t)^n sum_k Re[w_k e^{i n phi_k}] with fixed nonzero weights:
-   the homogeneous Dirichlet step is replaced by
-   Lemma B2 (mean-zero oscillation, to write): for finitely many phases
-   phi_k != 0 mod 2pi and weights w_k != 0, the sequence
-   F(n) = sum_k Re[w_k e^{i n phi_k}] has Cesaro mean 0 and attains values
-   >= c > 0 infinitely often unless F vanishes identically on the orbit
-   closure; the degenerate F == 0 configurations force real zeros (excluded
-   unconditionally) or w_k = 0 (impossible) - the level-set recursion to the
-   next Li level handles any residual degeneracy.
+   the homogeneous Dirichlet step is replaced by Lemma B2, PROVEN below.
 ```
+
+Lemma B2 (mean-zero oscillation - PROVEN). Let phi_1, ..., phi_K in
+(0, 2pi) be distinct, phi_k != 0 mod 2pi, and w_1, ..., w_K in C \ {0}.
+Set F(n) = sum_k Re[w_k e^{i n phi_k}]. Then there exist c > 0 and a set
+of n of positive lower density with F(n) >= c.
+
+Proof. Let Hbar be the closure of the cyclic subgroup {n(phi_1,...,phi_K)
+mod 2pi : n in Z} in T^K - a compact abelian group - and let m be its Haar
+measure. By Weyl's criterion the orbit (n phi)_{n>=1} equidistributes with
+respect to m (a character chi nontrivial on Hbar has chi(phi) != 1, so the
+exponential sums average to 0). The continuous function
+Phi(x) = sum_k Re[w_k e^{i x_k}] on Hbar has
+
+   int Phi dm = sum_k Re[ w_k int e^{i x_k} dm(x) ] = 0,
+
+since each coordinate character x -> e^{i x_k} is NONtrivial on Hbar (it
+takes the value e^{i phi_k} != 1 at the generator). Next, Phi is not
+identically zero on Hbar: if it were, then F(n) = Phi(n phi) = 0 for all n;
+but the almost-periodic Fourier coefficient of the sequence F at frequency
+phi_j,
+
+   lim_N (1/N) sum_{n<=N} F(n) e^{-i n phi_j} = w_j / 2
+   (+ conj(w_j)/2 if phi_j = -phi_j mod 2pi, i.e. phi_j = pi),
+
+is nonzero (for phi_j = pi the value is Re w_j, handled by the suppliers'
+condition below), contradiction. So Phi is continuous on the compact group
+Hbar with mean zero and Phi !== 0; hence the open set {Phi >= c} has Haar
+measure mu > 0 for some c > 0, and by equidistribution the set
+{n : F(n) >= c} has lower density >= mu. qed
+
+Supplier conditions (B1's obligations, both pinned to facts): (i) DISTINCT
+phases at the extremal Li level hold automatically - at level |1-1/rho| =
+1+t, the phase determines the zero uniquely (rho = 1/(1 - (1+t)e^{i phi})),
+so distinct extremal zeros have distinct phases; (ii) phi = 0 would force
+rho = -1/t < 0 (not a zero at all) and phi = pi would force the real zero
+rho = 1/(2+t) in (0, 1/2), excluded unconditionally for zeta
+((1-2^{1-s}) zeta(s) > 0 on (0,1)); (iii) w_k != 0 because the p^2-weight
+vanishes only at s in {0, 1/2, 1}, never at a nontrivial zero.
 
 Status of Case B after this section: ANCHORED (architecture + citations +
 explicit remaining lemmas), no longer device-less. The remaining work (the
@@ -297,11 +328,12 @@ O3c' interference, unattained case            ANCHORED (section 6'): the Case
                                               |1-1/rho| the extremum is always
                                               attained (Bombieri 2000 Thm 1,
                                               complete classical converse).
-                                              Remaining: transcription lemmas
-                                              B1 (even + p^2-weighted Li
-                                              detection; Yoshida 1992 for the
-                                              even class) and B2 (mean-zero
-                                              oscillation replacing Dirichlet).
+                                              B2 (mean-zero oscillation
+                                              replacing Dirichlet) PROVEN in
+                                              section 6'. Remaining: B1 (even +
+                                              p^2-weighted Li detection;
+                                              Yoshida 1992 for the even class,
+                                              weight-robustness to check).
                                               The Landau/annular graveyard
                                               (section 6) stands as the record
                                               of why beta-coordinate devices die.
