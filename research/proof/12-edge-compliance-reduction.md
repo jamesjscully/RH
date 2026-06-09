@@ -92,8 +92,31 @@ Geometric side: alpha, b, S_0, E_D from the archimedean form and history.
 
 This replaces both the per-cell lemmas (refuted in 09) and the abstract storage
 LMI (vacuous as bare existence): it is the exact, minimal, per-edge statement the
-realization must produce uniformly. The fail-closed witnesses to build next:
-compute (alpha, b, v_N, S_0 + sum E_D) along the ladder; verify the inequality
-margin reproduces eigmin(H); track alpha growth vs |v_N| decay; run DH (its v
-should violate). If alpha |v_N|^2 fails to shrink relative to margins at larger R,
-the one-mode form is insufficient and the rank-2 exact form takes over.
+realization must produce uniformly.
+
+## 5. Validation and the measured race (2026-06-09)
+
+`scripts/numerics/witness/prime_edge_compliance.py`: the one-mode form reproduces
+the exact terminal Schur eigmin to relative error 3e-7..2e-5 on every ladder edge
+(3.00 -> 4.96). Race data:
+
+```text
+edge          alpha      |v|        alpha|v|^2   eigmin(S_N)
+3.00->3.24    5.8        1.7e-06    1.8e-11      +2.7e-02
+4.00->4.26    93.3       5.3e-03    2.6e-03      +2.2e-03
+4.76->4.96    401.4      3.7e-02    5.4e-01      +1.5e-03
+```
+
+alpha grows ~ e^{2.5 R}; |v| still GROWS at these small R; the compliance charge
+alpha|v|^2 already exceeds the final margin by ~375x - positivity survives through
+the sign structure of the v-b cross term. Sharpened target: the asymptotic theorem
+must control the DIRECTION of v against b (equidistribution of the atoms against
+the edge-convolution profile), not merely |v|. Completing the square:
+
+    S_N = S_0 + sum E_D + (b b^*)/alpha - alpha (v + b/alpha)(v + b/alpha)^*,
+
+so the exact statement is:  alpha-weighted distance of v from the centered point
+-b/alpha is at most the bulk budget. v must track -b/alpha along the filtration -
+the arithmetic transgression must converge to a GEOMETRICALLY DETERMINED target
+vector at rate sqrt(bulk)/sqrt(alpha). This is the final, exact, scalar form of
+the program target.
