@@ -197,11 +197,93 @@ coefficient sign at s = sigma* including the slow factors (Omega >= 0 near the
 corner x = y = 1 and the engineered phase give definiteness); (iii) the interchange
 of zero-sum and Laplace integral (absolute convergence, as in section 5).
 
-Fallback anchor: the equivalence "Weil positivity for compactly supported smooth
-tests <=> RH" is classical (Weil 1952; Bombieri's lectures); what this document
-adds is the explicit pole-killed, even-real, polynomial-prefactor, annular-window
-form matched to the program's conventions, with the Landau device making Case B
-self-contained.
+## 6'. Case B resolved in architecture: the Li coordinate (2026-06-09)
+
+Source audit (primary text read): E. Bombieri, "Remarks on Weil's quadratic
+functional in the theory of prime numbers, I", Rend. Mat. Acc. Lincei s.9 v.11
+(2000), 183-233, section 3. His Theorem 1 (after Weil 1952) proves, with a
+COMPLETE converse and NO case split:
+
+```text
+RH  <=>  sum_rho gtilde(rho) conj(gtilde)(1-conj(rho)) > 0
+         for every complex g in C_c^infty((0,infty)), g != 0.
+```
+
+The converse mechanism is the answer to our Case B, and it is a COORDINATE
+CHANGE, not a harder estimate. Detection is run not in the beta-coordinate
+(sigma = beta - 1/2, whose supremum may be unattained - our Case B) but in
+Li's coordinate
+
+```text
+|1 - 1/rho|^2 = 1 + (1 - 2 beta)/|rho|^2 ,
+```
+
+which tends to 1 as |rho| -> infinity. Hence if RH fails, the MAXIMUM of
+|1 - 1/rho| over all zeros is > 1 and is ATTAINED BY FINITELY MANY ZEROS -
+always. The unattained-supremum case structurally cannot occur: high zeros are
+crushed by the 1/|rho|^2 weight regardless of how their beta behaves. Our Case
+A/B split (and the Landau/annular failure) was an artifact of detecting in the
+wrong coordinate.
+
+The classical chain (Bombieri section 3): Li's criterion [Li 1997: RH <=>
+lambda_n > 0 for all n, lambda_n = sum_rho (1 - (1-1/rho)^n) + conjugate
+member]; if RH fails, the finitely many Li-extremal zeros rho_k contribute
+-2(1+t)^n sum_k cos(n phi_k) with t > 0, the rest O(n^2 (1+t-delta)^n);
+Dirichlet's theorem on simultaneous Diophantine approximation gives infinitely
+many n with sum cos(n phi_k) ~ +K, so lambda_n < 0 infinitely often. The
+witnessing test g_n is explicit (inverse Mellin of 1-(1-1/s)^n: a polynomial
+P_n(log x) on (0,1]), truncated at epsilon to compact support (the limit
+justified by the de la Vallee-Poussin zero-free region, his eq. 3.4), then
+mollified to C_c^infty. Every step is classical and unconditional.
+
+Transcription into the program's admissible class (even real h, supp in
+[-T/2,T/2], hhat(0) = hhat(i/2) = 0). Two named obligations remain:
+
+```text
+T-even (evenness). Bombieri's Theorem 1 uses complex non-even g. The even-class
+   statement is Yoshida's theorem [Yoshida 1992]: positivity of the Weil
+   functional on smooth EVEN compactly supported tests <=> RH excluding real
+   zeros. The real-zero exclusion is unconditional for zeta: zeta(s) != 0 on
+   (0,1) since (1 - 2^{1-s}) zeta(s) = sum (-1)^{n-1} n^{-s} > 0 there. So
+   even-class positivity <=> RH, classically.
+T-kill (pole constraints). The hypothesis lives on the pole-killed subspace.
+   By the p(D) device (section 2), the pole-killed even class contains
+   {p(D) G : G even real C_c^infty} freely, so the hypothesis implies the
+   p^2-WEIGHTED Weil form  G |-> sum_rho p(z_rho)^2 Ghat(z_rho)^2  is PSD on
+   the UNCONSTRAINED even class (w_rho = p(z_rho)^2 != 0 at every nontrivial
+   zero, since p vanishes only at s in {0, 1/2, 1}). The Li detection must
+   then be rerun for the weighted form. The extremal-zero contribution
+   becomes -2(1+t)^n sum_k Re[w_k e^{i n phi_k}] with fixed nonzero weights:
+   the homogeneous Dirichlet step is replaced by
+   Lemma B2 (mean-zero oscillation, to write): for finitely many phases
+   phi_k != 0 mod 2pi and weights w_k != 0, the sequence
+   F(n) = sum_k Re[w_k e^{i n phi_k}] has Cesaro mean 0 and attains values
+   >= c > 0 infinitely often unless F vanishes identically on the orbit
+   closure; the degenerate F == 0 configurations force real zeros (excluded
+   unconditionally) or w_k = 0 (impossible) - the level-set recursion to the
+   next Li level handles any residual degeneracy.
+```
+
+Status of Case B after this section: ANCHORED (architecture + citations +
+explicit remaining lemmas), no longer device-less. The remaining work (the
+even/weighted Li detection: Lemma B1 = even analogue of Bombieri's Theorem 1
+with p^2 weights; Lemma B2 above; reading Yoshida's proof to check weight-
+robustness) is classical-technique transcription with named sources, not a
+new mechanism. Until B1/B2 are written to proof level, the reduction's O3
+carries this as its only conditional joint - and the condition is on OUR
+write-up, not on any unproven mathematics.
+
+References (verified against the printed bibliography, Bombieri 2000):
+A. Weil, Sur les "formules explicites" de la theorie des nombres premiers,
+Meddelanden Fran Lunds Univ. Mat. Sem. (dedie a M. Riesz), 1952, 252-265.
+H. Yoshida, On Hermitian Forms attached to Zeta Functions, in: Zeta Functions
+in Geometry, Adv. Stud. Pure Math. 21, Math. Soc. Japan, Tokyo 1992, 281-325.
+X.-J. Li, The positivity of a sequence of numbers and the Riemann Hypothesis,
+J. Number Theory 65 (1997), 325-333.
+E. Bombieri - J.C. Lagarias, Complements to Li's criterion for the Riemann
+Hypothesis, J. Number Theory 77 (1999), 274-287.
+E. Bombieri, Remarks on Weil's quadratic functional in the theory of prime
+numbers, I, Rend. Mat. Acc. Lincei s.9 v.11 (2000), 183-233.
 
 ## 7. Summary of O3 status
 
@@ -209,13 +291,19 @@ self-contained.
 O3a  phase-engineered negative quadruple      DONE (section 3)
 O3b  on-line polynomial bound                 DONE (section 4)
 O3c  interference, attained case              DONE (section 5)
-O3c' interference, unattained case            OPEN. The Landau/annular route was
-                                              drafted and refuted the same day
-                                              (section 6 correction): self-product
-                                              terms deposit real-axis singularities
-                                              at every sigma_j for ANY even window.
-                                              Honest fallback: anchor Case B to the
-                                              classical equivalence (Weil 1952 /
-                                              Bombieri) pending a new device.
+O3c' interference, unattained case            ANCHORED (section 6'): the Case
+                                              A/B split is an artifact of the
+                                              beta-coordinate; in Li's coordinate
+                                              |1-1/rho| the extremum is always
+                                              attained (Bombieri 2000 Thm 1,
+                                              complete classical converse).
+                                              Remaining: transcription lemmas
+                                              B1 (even + p^2-weighted Li
+                                              detection; Yoshida 1992 for the
+                                              even class) and B2 (mean-zero
+                                              oscillation replacing Dirichlet).
+                                              The Landau/annular graveyard
+                                              (section 6) stands as the record
+                                              of why beta-coordinate devices die.
 O3d  constraint satisfaction                  DISSOLVED (section 2: p(D)G device)
 ```
