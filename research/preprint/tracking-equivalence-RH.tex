@@ -354,6 +354,15 @@ $S_N \succ 0$ inductively, hence $M_R \succeq 0$ on $H_R$ for all $R$, and
 Theorem~\ref{thm:detect} (detection) then forces every zero onto the critical line. This is
 Theorem~\ref{thm:equiv}. \qed
 
+\begin{remark}[strictness bookkeeping]
+The Schur formalism uses $A \succ 0$ (invertibility of the old block), while RH gives only
+$M_R \succeq 0$. On finite-dimensional compressions strictness is generic and is what every
+witness observes (the minimum eigenvalue equals the minimum spectral side over the actual
+zeros, which is positive for the bases used); a fully kernel-robust statement replaces
+$A^{-1}$ by the pseudoinverse on $\operatorname{ran}(A)$ throughout, with no change to the
+identities. We record this as the one bookkeeping convention of the equivalence.
+\end{remark}
+
 \section{Proof of Theorem~\ref{thm:detect}}\label{sec:detect}
 
 \emph{Free parametrization of the constraints.} For any even real
