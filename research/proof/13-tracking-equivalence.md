@@ -112,6 +112,32 @@ Consequences, fail-closed:
    current structure supplies it; recording this honestly is the result.
 ```
 
+## 4'. Exact hypotheses: the rank-r form (closing the one-mode gap)
+
+The one-mode form carries an O(sigma_2) approximation. The exact statement
+follows from doc 11's rank bound (coupling factors through the <= r bumps
+reaching the terminal window W*; r = 2 in the witness bases) by the same
+algebra: with U_r spanning the coupling column space, M_c = U_r^* A^{-1} U_r
+(r x r compliance matrix), B = C_0^* A^{-1} U_r, V = sum_k T_k:
+
+```text
+S_N = BULK_r - (V + B M_c^{-1}) M_c (V + B M_c^{-1})^*,
+BULK_r = S_0 + sum E_D + B M_c^{-1} B^*,                  (exact)
+S_N > 0  <=>  BULK_r > 0  and
+tau_r := lambda_max[ M_c^{1/2} W^* BULK_r^{-1} W M_c^{1/2} ] < 1,
+W = V + B M_c^{-1}.
+```
+
+The tracking equivalence of section 3 holds verbatim with tau_r replacing tau:
+RH <=> uniform tau_r < 1 along the filtration, now with NO approximation
+hypothesis. Validation (`prime_edge_rank2_exact.py`): one-mode, rank-2 and
+rank-3 predictions all sit at the Fourier-grid noise floor (1e-7..2e-5
+relative; T=250 truncation contributes ~1e-6 entry error), i.e. the one-mode
+residual was already grid noise, not structure; tau_2 < 1 on every edge
+(max 0.954 at 4.00->4.26). Fail-closed: rank-2 relerr rising above the
+contemporaneous noise floor in any future basis would violate doc 11's rank
+bound and triggers a support-arithmetic re-audit.
+
 ## 4. Relation to the goal "close the proof"
 
 The proof of RH is not closed and cannot be closed from the present structure:
