@@ -168,6 +168,11 @@ ForwardDiff.
 - Kill the pole functionals before asking for positivity.
 - Do not use zero-side positivity or any RH-equivalent positivity input.
 - Do not replace the exact Euler measure by smooth PNT density before proving the Schur estimate.
+- FORK PROTOCOL (doc 14, standing): before investing in any proposed mechanism or object,
+  run F1 (zero-side image via `fork_lib` - candidate == image means coordinate change, abandon
+  as attack), F2 (deformation kill on DH / beta != 1/2 / smooth), F3 (slack audit). A genuine
+  candidate must carry extra information (P1) and fail DH by non-existence of its carrier (P2);
+  see doc 15 for the second-description spec.
 
 ## Current path (program closure - see TODO.md R-TRACK outcome and doc 13)
 
