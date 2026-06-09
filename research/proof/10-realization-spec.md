@@ -98,6 +98,36 @@ S3. O3/O4 paper work (doc 00) continues in parallel - the reduction must be
     certified before any realization claim can matter.
 ```
 
+## 5'. S1 outcome (2026-06-09, SURVIVES - first positive structural finding)
+
+Effective state dimension of the chronological chains (edges 3.24->3.50 through
+4.76->4.96, quick ladder): stacking the cell cross-blocks E_C (arithmetic excitation
+of the old window) and the response-map drift X_j - X_0:
+
+```text
+E_C excitation: second singular value 4-5 ORDERS below the first at every edge
+                (e.g. 3.68e-02 vs 5.60e-07 at 4.76->4.96) - all cells of an edge
+                excite ONE old-space direction;
+X-drift:        rank one to 4+ orders at every edge.
+```
+
+The "active debt direction" of 06-07 is therefore not a diagnostic but the ENTIRE
+effective state: per edge, the dissipative system is numerically a one-mode system
+per shell direction. Geometric reason (to be proved as a lemma): within one short
+edge, every cell couples old and shell functions through nearly the same overlap
+geometry. Consequences for the spec:
+
+```text
+- the realization's state space along the filtration is a LADDER OF SINGLE MODES,
+  not a growing matrix state - the KYP storage is scalar-per-shell-direction at
+  leading order (with the rank-one defect as the controlled correction);
+- proving the rank-one collapse (with an explicit bound on the second singular
+  value, e.g. ~ edge width times overlap derivative) is a tractable lemma and
+  should be the first THEOREM of the realization rung;
+- caution: the X-drift magnitude grows along the ladder (2.3e-2 -> 6.6e+1),
+  tracking cond(A); rank-one does not mean small.
+```
+
 ## 6. S2 outcome (2026-06-09, fail-closed)
 
 The exact even-model decomposition (verified to grid error 4e-4 per atom):
