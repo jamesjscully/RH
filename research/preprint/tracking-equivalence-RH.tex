@@ -202,20 +202,115 @@ pass/fail gates.
 \emph{[To transcribe from the research notes: document 00, sections 2--3.]}
 
 \section{Proof of Theorem~\ref{thm:edge}}
-% Transcribe research/proof/11-edge-window-factorization.md sections 2-3 (support
-% arithmetic; the substitution v = L/2 - s; the rank bound and the per-instance
-% sigma_2 formula).
-\emph{[To transcribe from the research notes: document 11.]}
+
+Let $U \ge L$. Consider first $I(U) = \int x(v)\,y(v-U)\,dv$. The integrand is supported
+where $v \le L/2$ (support of $x$) and $v - U \ge -R/2$ (support of $y$), i.e.\ on
+$[\,U - R/2,\ L/2\,]$, which is nonempty iff $U \le (L+R)/2$. This proves (a) for $I$; the
+reflected term $\int x(v)\,y(v+U)\,dv$ is supported on $[-L/2,\ R/2 - U]$, nonempty under the
+same condition, and equals $I(U)$ by evenness of $x$ and $y$. The integration window is
+contained in $W^* = [\,L/2 - (R-L)/2,\ L/2\,]$ for every such $U$, which proves (b).
+
+For (c), substitute $v = L/2 - s$ and write $U = (L+R)/2 - w$ with $w = w(U) \in [0,(R-L)/2]$:
+\[
+y(v - U) \;=\; y\!\big(L/2 - s - U\big) \;=\; y\!\big(-R/2 + (w - s)\big) \;=\; r_y(w - s),
+\]
+and the support condition becomes $0 \le s \le w$. Hence
+$I(U) = \int_0^{w} q_x(s)\, r_y(w-s)\, ds = (q_x * r_y)(w)$, exactly.
+
+For the rank bound, fix a local basis $\{x_i\}$ of $H_L$ (bumps centered at $c_i$ with
+half-width $a$). The edge profile $q_{x_i}$ vanishes identically on $[0, d_i]$ with
+$d_i = L/2 - (c_i + a)$; if $d_i \ge (R-L)/2$ then $(q_{x_i} * r_y)(w) = 0$ for every
+admissible $w$, so the corresponding row of the coupling block vanishes for \emph{every} atom
+of the edge. The stacked old--shell coupling matrix of all atoms therefore has rank at most
+$\#\{\,i : d_i < (R-L)/2\,\}$, the number of bumps meeting $W^*$. \qed
 
 \section{Proof of Theorem~\ref{thm:compliance}}
-% Transcribe research/proof/12-edge-compliance-reduction.md sections 1-2 + doc 13
-% section 4' (rank-r completed square; the scalar criterion).
-\emph{[To transcribe from the research notes: documents 12 and 13 \S4'.]}
+
+\emph{Frozen old block.} Every atom of the edge has $U \in (L, R]$; by Theorem~\ref{thm:edge}(a)
+applied with $R$ replaced by $L$ (both arguments in $H_L$), $B_U$ vanishes on
+$H_L \times H_L$ for $U > L$, and the smooth surrogate restricted to $[L,R]$ vanishes there
+for the same support reason. Hence the cell increments satisfy $E_A^{(j)} = 0$ exactly: the
+old block $A$ is constant along the chain, and the terminal Schur complement is explicitly
+\[
+S_N \;=\; D_N - C_N^* A^{-1} C_N, \qquad
+D_N = D_0 + \textstyle\sum_k E_D^{(k)}, \qquad
+C_N = C_0 + \textstyle\sum_k E_C^{(k)} .
+\]
+
+\emph{Rank-$r$ factorization.} By Theorem~\ref{thm:edge}(c) the column space of every
+$E_C^{(k)}$ lies in the fixed $r$-dimensional space spanned by the coupled edge-profile
+functionals; choose $U_r$ with orthonormal columns spanning it and write
+$E_C^{(k)} = U_r T_k^*$. Then $C_N = C_0 + U_r V^*$ with $V = \sum_k T_k$, and expanding,
+\[
+S_N \;=\; S_0 + \textstyle\sum E_D \;-\; V B^* - B V^* - V M_c V^*,
+\qquad S_0 = D_0 - C_0^* A^{-1} C_0 ,
+\]
+with $M_c = U_r^* A^{-1} U_r$ and $B = C_0^* A^{-1} U_r$. Since $A \succ 0$ (inductive
+hypothesis of the filtration) and $U_r$ has full column rank, $M_c \succ 0$. Completing the
+square in $V$,
+\[
+- V B^* - B V^* - V M_c V^* \;=\; B M_c^{-1} B^* \;-\; \big(V + B M_c^{-1}\big) M_c
+\big(V + B M_c^{-1}\big)^* ,
+\]
+which gives the displayed identity with $\mathrm{BULK}_r = S_0 + \sum E_D + B M_c^{-1} B^*$.
+
+\emph{Scalar criterion.} Write $W = V + B M_c^{-1}$ and $Y = W M_c^{1/2}$, so
+$S_N = \mathrm{BULK}_r - Y Y^*$. If $S_N \succ 0$ then $\mathrm{BULK}_r \succ Y Y^*
+\succeq 0$. Conversely, for $\mathrm{BULK}_r \succ 0$,
+\[
+S_N \;=\; \mathrm{BULK}_r^{1/2}\Big( I - \mathrm{BULK}_r^{-1/2} Y Y^* \mathrm{BULK}_r^{-1/2}
+\Big)\mathrm{BULK}_r^{1/2} \;\succ\; 0
+\;\iff\;
+\big\| \mathrm{BULK}_r^{-1/2} Y \big\|^2 < 1 ,
+\]
+and the nonzero eigenvalues of $\mathrm{BULK}_r^{-1/2} Y Y^* \mathrm{BULK}_r^{-1/2}$
+coincide with those of the $r \times r$ Gram matrix
+$Y^* \mathrm{BULK}_r^{-1} Y = M_c^{1/2} W^* \mathrm{BULK}_r^{-1} W M_c^{1/2}$, whose largest
+eigenvalue is $\tau_r$. \qed
+
+\begin{remark}
+Numerically, the rank-$1$ and rank-$2$ predictions of $\eigmin(S_N)$ agree with the exact
+value to relative error $10^{-7}$--$2\cdot 10^{-5}$ on every measured edge, which is the
+Fourier-grid noise floor of the discretization; $\tau_2 < 1$ on every edge, with maximum
+$0.954$. See Section~\ref{sec:numerics}.
+\end{remark}
 
 \section{Proof of Theorems~\ref{thm:zerosum} and \ref{thm:equiv}}
-% Transcribe research/proof/13-tracking-equivalence.md sections 2-3 and the closure
-% argument of document 09 section 6''' (form = spectral side on pole-killed tests).
-\emph{[To transcribe from the research notes: documents 09 \S6''' and 13.]}
+
+\emph{The identity.} In the rank-one normalization, $C_N = C_0 + u\,v^*$, hence
+\[
+C_N^* A^{-1} u \;=\; C_0^* A^{-1} u + v\,(u^* A^{-1} u) \;=\; b + \alpha v
+\;=\; \alpha\Big( v + \frac{b}{\alpha} \Big) \;=\; \alpha\, r :
+\]
+the tracking residual is the terminal old--shell coupling, whitened through $A$, in the
+compliance direction.
+
+\emph{The form is the spectral side.} On the pole-killed space the explicit formula
+(Section~\ref{sec:reduction}) gives, for $h, h' \in H_R$,
+\[
+M_R(h, h') \;=\; \sum_\rho \hat h\big(z_\rho\big)\, \hat h'\big(z_\rho\big),
+\qquad z_\rho = (\rho - \tfrac12)/i ,
+\]
+the pole terms vanishing by the constraints and the prime sum truncating at $\log n < R$ by
+support. The terminal coupling block $C_N$ is the old--shell compression of $M_R$, so
+\[
+r \;=\; \frac{1}{\alpha}\, C_N^* A^{-1} u
+\;=\; \frac{1}{\alpha} \sum_\rho \hat h_{A^{-1}u}(z_\rho)\, \hat h_{\mathrm{shell}}(z_\rho)
+\;=\; \frac{2}{\alpha} \sum_{\gamma > 0} \hat h_{A^{-1}u}(\gamma)\,
+\hat h_{\mathrm{shell}}(\gamma)
+\]
+on RH (zeros pairing as $\pm\gamma$); off RH the same identity holds with the complex
+$z_\rho$. This is Theorem~\ref{thm:zerosum}. Numerically the identity closes against the
+first $5000$ zeros to relative error $7.7\cdot 10^{-4}$--$3.7\cdot 10^{-3}$ per edge
+(Section~\ref{sec:numerics}).
+
+\emph{The equivalence.} If RH holds, $M_R(h,h) = \sum_\rho \hat h(z_\rho)^2 \ge 0$ with real
+$z_\rho$, so every compression is positive semidefinite; on the (generic, observed)
+positive-definite filtration this yields $\mathrm{BULK}_r \succ 0$ and $\tau_r < 1$ at every
+edge by Theorem~\ref{thm:compliance}. Conversely, $\tau_r < 1$ at every edge gives
+$S_N \succ 0$ inductively, hence $M_R \succeq 0$ on $H_R$ for all $R$, and
+Theorem~\ref{thm:detect} (detection) then forces every zero onto the critical line. This is
+Theorem~\ref{thm:equiv}. \qed
 
 \section{Proof of Theorem~\ref{thm:detect}}
 % Transcribe research/proof/00a-detection-lemma.md sections 2 (p(D) device), 6''
@@ -229,11 +324,69 @@ pass/fail gates.
 \emph{[To transcribe: the kill table with witness references.]}
 
 \section{Numerical certification}\label{sec:numerics}
-% Tables: ladder positivity to R = 5.9; DH dead from 1.88; tracking trajectory
-% (cos -> +0.9995, residual 1.00 -> 0.033, alpha x70); residual-vs-zerosum
-% (rel 7.7e-4..3.7e-3 vs 5000 zeros, closure 8.8e-6); tau_2 per edge (max 0.954);
-% harness gates C1-C5.
-\emph{[To transcribe: tables from documents 09, 12, 13 and the harness output.]}
+
+All computations use a raised-cosine bump basis ($38$ centers, half-width $0.06$), digamma
+kernels at $80$-bit precision, and zeros from \texttt{acb\_zeta\_zero}; scripts are listed at
+the section end. A harness re-derives every load-bearing claim from scratch with explicit
+pass/fail gates and a nonzero exit code on any flip.
+
+\subsection*{Tracking trajectory ($\zeta$, late edges)}
+With $t = -b/\alpha$ the geometric center and $r = v + b/\alpha$ the residual:
+
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+edge & $\alpha$ & $\cos(v, t)$ & $|r|/|t|$ & $\tau$ & $\eigmin(S_N)$ \\
+\midrule
+$4.00 \to 4.26$ & $93.3$ & $-0.03$ & $1.09$ & $0.732$ & $+2.2\cdot 10^{-3}$ \\
+$4.26 \to 4.50$ & $168.1$ & $+0.9962$ & $0.181$ & $0.565$ & $+1.6\cdot 10^{-3}$ \\
+$4.50 \to 4.76$ & $318.6$ & $+0.9994$ & $0.037$ & $0.179$ & $+2.0\cdot 10^{-3}$ \\
+$4.76 \to 4.96$ & $401.4$ & $+0.9995$ & $0.033$ & $0.276$ & $+1.5\cdot 10^{-3}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The transgression visibly converges to the center, in direction and magnitude, as the
+compliance grows. The Davenport--Heilbronn control: at its unique edge with a positive old
+block ($1.60 \to 1.88$), $\tau = 1.554 > 1$ and $\eigmin(S_N) = -0.282$; at every later
+support level its window form is indefinite ($\eigmin \approx -1.6$). The criterion
+discriminates.
+
+\subsection*{The residual is a zero cross-correlation}
+Comparing $r$ from cell data against the zero sum of Theorem~\ref{thm:zerosum}
+($5000$ zeros, $\gamma_{\max} \approx 5448$):
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+edge & $\mathrm{rel}(r_{\mathrm{chain}}, r_{\mathrm{zeros}})$ &
+$\cos(r_{\mathrm{chain}}, r_{\mathrm{zeros}})$ &
+$\mathrm{rel}(r_{\mathrm{chain}}, r_{\mathrm{coupling}})$ \\
+\midrule
+$4.00 \to 4.26$ & $7.7\cdot 10^{-4}$ & $+1.00000$ & $4.7\cdot 10^{-6}$ \\
+$4.26 \to 4.50$ & $3.7\cdot 10^{-3}$ & $+1.00000$ & $1.5\cdot 10^{-4}$ \\
+$4.50 \to 4.76$ & $2.8\cdot 10^{-3}$ & $+1.00000$ & $1.5\cdot 10^{-4}$ \\
+$4.76 \to 4.96$ & $1.2\cdot 10^{-3}$ & $+1.00000$ & $8.8\cdot 10^{-5}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All discrepancies sit at the zero-truncation/rank-defect scale; the full-window form matches
+its zero-sum to relative Frobenius error $8.8\cdot 10^{-6}$.
+
+\subsection*{Harness gates}
+\texttt{certify\_chain.py} (all PASS at the time of writing): C1 ladder positivity
+($\min \eigmin = +2.9\cdot 10^{-4}$); C2 DH dead from support $1.88$
+($\max \eigmin = -7.3\cdot 10^{-2}$); C3 rank-one compliance reproduction on the claimed
+range (max.\ rel.\ $2.3\cdot 10^{-5}$); C4 $\tau < 1$ on all living $\zeta$ edges
+(max $0.900$ over the full ladder) and DH tracking failure; C5 the zero-sum identity
+(max.\ rel.\ $3.7\cdot 10^{-3}$, min.\ cos $1.00000$ against $3000$ zeros).
+
+\subsection*{Scripts}
+\texttt{prime\_ladder\_scaling}, \texttt{prime\_edge\_compliance},
+\texttt{prime\_edge\_tracking}, \texttt{prime\_edge\_residual\_zerosum},
+\texttt{prime\_edge\_rank2\_exact}, \texttt{certify\_chain} in
+\texttt{scripts/numerics/witness/}.
 
 \begin{thebibliography}{10}
 
