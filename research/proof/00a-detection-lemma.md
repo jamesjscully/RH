@@ -385,6 +385,53 @@ phase-engineered exponential-signal family) remain valid as the QUANTITATIVE
 form in Case A and as the source of the U2 phase device; section 6's
 graveyard stands as the record of why concentration-based Case B devices die.
 
+### 6''.1 The routine sub-lemmas, written out
+
+```text
+SL1 (base atom). For any z_0 with |Im z_0| <= 1/2 and any m, there is
+   beta in C_c^infty(R) (complex) with B(z_0) = 1 and
+   |B(z)| <= C_m (1 + |z - z_0|)^{-(m+1)} uniformly on |Im z| <= 1/2.
+   Proof: take phi in C_c^infty real, phi >= 0, int phi = 1, and set
+   beta(u) = phi(u) e^{-i z_0 u} (compactly supported, smooth). Then
+   B(z) = int phi(u) e^{i(z - z_0)u} du = Phi(z - z_0) with Phi the
+   Fourier-Laplace transform of phi: Phi(0) = 1, and m+1 integrations by
+   parts give |Phi(w)| <= ||phi^{(m+1)}||_1 e^{a|Im w|} |w|^{-(m+1)} on
+   |Im w| <= 1 (a = radius of supp phi), plus the trivial bound near w = 0. qed
+
+SL2 (interpolating kills). Given z_0 and finitely many points z_i != z_0
+   (the zeros within distance R), there are beta_i in C_c^infty with
+   B_i(z_0) = 1, B_i(z_i) = 0, and B_i bounded on the strip.
+   Proof: with B from SL1 and B_tau(z) = e^{i tau (z - z_0)} B(z) (the
+   transform of the translate beta(. - tau), still C_c^infty), the system
+      x B(z_0) + y B_tau(z_0) = 1,   x B(z_i) + y B_tau(z_i) = 0
+   has determinant B(z_0) B(z_i) (e^{i tau (z_i - z_0)} - 1) which is
+   nonzero for any tau with tau(z_i - z_0) not in 2 pi Z, provided
+   B(z_i) != 0 (if B(z_i) = 0 take B_i = B). Solve for (x, y); strip
+   boundedness is inherited. qed
+
+SL3 (support bookkeeping). Mellin/Fourier transforms multiply under
+   convolution and supports add: the final test
+   alpha = beta_0^{*N} * beta_1 * ... * beta_M has compact support of
+   length N a_0 + sum a_i; the symmetrization (section 6'', G-hat) does not
+   enlarge it. Any finite T is admissible since the reduction hypothesis is
+   quantified over ALL R. qed
+
+SL4 (weighted foreign-sum convergence). With envelope exponent m and weights
+   |w_rho| <= C (1 + |z_rho|)^8, the Riemann-von Mangoldt count
+   N(T+1) - N(T) = O(log T) gives
+      sum_rho (1+|z_rho|)^8 (1 + |z_rho - z_0|)^{-2m} < infinity
+   for 2m - 8 > 1, in particular m >= 5 (we take m >= 6 for margin);
+   the same bound covers the three reflected envelopes (zeros are symmetric
+   under z -> -z and z -> conj z). qed
+
+SL5 (explicit-formula applicability). h = p(D)G with G even real C_c^infty
+   is even real C_c^infty; g = h * h# is C_c^infty with hat g = hat h^2
+   entire of exponential type T; this lies inside the C_0^infty class of
+   Bombieri's printed explicit formula (doc 00, O1), and absolute
+   convergence of the zero sum for such tests is the standard
+   Riemann-von Mangoldt remark (printed in Yoshida 1992, p. 284). qed
+```
+
 ## 7. Summary of O3 status
 
 ```text

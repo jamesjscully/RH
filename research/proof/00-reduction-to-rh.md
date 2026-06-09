@@ -76,12 +76,34 @@ sum_rho hat g((rho - 1/2)/i)
 **O2 (pole killing, trivial).** `hat g(+-i/2) = hat h(+-i/2)^2 = 0` on the pole-killed space
 (evenness gives `hat h(-i/2) = hat h(i/2)`).
 
-**O1 (normalization audit, mechanical).** Verify that the archimedean term of the explicit
-formula in this normalization is exactly the `A_infty` of `01-sonin-schur-scaffold.md`
-(`-log pi <h,h> + (1/2pi) int |hat h|^2 Re psi(1/4 + it/2) dt`), and that the prime term equals
-`P_R(h,h)` exactly when `supp(h) subset [-R/2,R/2]` (then `g` is supported in `[-R,R]` and atoms
-with `log n >= R` vanish - Lemma 1.3). The witness scripts already pin these constants
-numerically; O1 is a paper check against Weil/Bombieri.
+**O1 (normalization audit) - DISCHARGED 2026-06-09 against the printed source.**
+Bombieri 2000 (refs/bombieri2000.pdf), section 2, proves the explicit formula for
+`f in C_0^infty((0,infty))` with the archimedean term in the closed form
+
+```text
+-(log pi) f(1) + (1/2 pi i) int_{(1/2)} Re[psi(w/2)] ftilde(w) dw .
+```
+
+Term-by-term dictionary under `f(x) = F(log x) x^{-1/2}` (so `ftilde(s) = M(F)(s)`,
+`F = g` additive):
+
+```text
+- zero side:    ftilde(rho)            = hat g((rho-1/2)/i)              [match]
+- poles:        ftilde(0) + ftilde(1)  = hat g(i/2) + hat g(-i/2)        [match]
+- primes:       f(n) + f*(n)           = n^{-1/2}(g(log n) + g(-log n)),
+                so the prime term is sum Lambda(n) n^{-1/2}(g + g-)      [match]
+- archimedean:  f(1) = g(0) = <h,h>;  w = 1/2 + it, dw = i dt gives
+                -(log pi)<h,h> + (1/2pi) int Re psi(1/4 + it/2) |hat h(t)|^2 dt
+                                                                          [= A_infty]
+```
+
+i.e. the project normalization IS Bombieri's printed normalization verbatim. His
+class `C_0^infty` contains our `g = h * h#`; convergence of the zero sum for
+compactly supported smooth tests is the standard Riemann-von Mangoldt remark
+(also printed in Yoshida 1992, p. 284). The prime term equals `P_R(h,h)` exactly
+when `supp(h) subset [-R/2,R/2]` (then `g` is supported in `[-R,R]` and atoms with
+`log n >= R` vanish - Lemma 1.3). Numerical pin: explicit-formula residual
+4.4e-13 vs 2000 zeros (`semilocal_2.verify_explicit_formula`).
 
 Granting O1-O2, for admissible `h`:
 
@@ -213,30 +235,36 @@ scaling risks tracked in `TODO.md`.
 ## 6. Status summary
 
 ```text
-O1  normalization audit                 discharged numerically 2026-06-09:
-                                        semilocal_2.verify_explicit_formula reproduces
-                                        the two-sided explicit formula against 2000
-                                        actual zeros, residual 4.4e-13 (Gaussian test);
-                                        paper transcription remains a formality
+O1  normalization audit                 DISCHARGED 2026-06-09 (section 3): term-by-term
+                                        match with Bombieri 2000's printed explicit
+                                        formula under the multiplicative-additive
+                                        dictionary (poles, primes, archimedean = A_infty
+                                        verbatim); numerical pin 4.4e-13 vs 2000 zeros.
 O2  pole-term vanishing                 done (trivial)
-O3  off-line detection                  WRITTEN in 00a-detection-lemma.md:
-                                        O3a/O3b/O3d discharged (the p(D)G polynomial-
-                                        prefactor device dissolves the constraint
-                                        problem entirely); O3c done for attained
-                                        supremum; unattained case reduced to one
-                                        precise averaging sub-lemma (00a section 6)
+O3  off-line detection                  DISCHARGED in 00a-detection-lemma.md:
+                                        O3a/O3b/O3d by the p(D)G device + phase
+                                        engineering; O3c in BOTH cases by the Yoshida
+                                        interpolation device (00a section 6'', primary
+                                        source read and archived; envelope upgrade
+                                        m >= 6 + phase normalization; routine
+                                        sub-lemmas itemized; Li-coordinate route +
+                                        proven Lemma B2 as second anchor).
 O4  base case = CC20 archimedean        AUDITED 2026-06-09 (section 5): support, kills,
                                         and model all match; base case = CC20 Thm 1
                                         verbatim with a quantitative lower bound.
                                         Naming drift recorded (their Sonin space is
-                                        not our H_L). Line-by-line normalization
-                                        transcription remains a formality (O1 pins it).
+                                        not our H_L). Normalization now pinned by O1's
+                                        printed-source match (Bombieri EF), so the
+                                        remaining CC20 transcription is cross-checking
+                                        their support convention only.
                                         BOUNDED: W_inf alone goes indefinite at
                                         gmax ~ 2.3 (prime_margin_law.py) - the anchor
                                         is genuinely small-support; the induction
                                         requires primes immediately past the window.
 ```
 
-None of O1-O4 is believed to be research-hard. Until they are written, the program's claim
-"target => RH" is provenance-backed (CC20 + Weil's converse) but not certified. This document
-is the fail-closed record of exactly what remains.
+Status of the reduction after 2026-06-09: O1, O2 discharged; O3 discharged modulo
+the routine sub-lemmas itemized in 00a (SL1-SL5, written out there); O4 audited
+with one bounded cross-check remaining (CC20 support convention, non-load-bearing
+for the reduction direction). The claim "target for all R => RH" is now certified
+at the granularity of this document set.
