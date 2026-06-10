@@ -278,6 +278,16 @@ scripts/numerics/witness/certify_chain.py
     Barnes Gamma_2; Q's pole evaded; carrier fatality; zero free choices);
     failure modes F-a/b/c named in advance.
 
+29. `29-cycle4-synthesis.md`
+    PFD-launch cycle (workers Y/Z/AA): fork closed ((L) = NO via Kane - the Euler
+    supply is NOT in the invertible Adams family, decided); the PFD has a
+    CC-internal strict model (the norm IS the MAX face; product formula as an
+    identity of invariants); U.2 executed with K2 PASS - KMS-1/2 FORCED at p = 2
+    (realization input 4 regains a carrier at instance level); K1 = cross-place
+    with the mechanism named (the glued object is exactly scale-free). Next: PFD
+    step 2, the global assembly - does the EF's archimedean constant emerge from
+    the cross-place trace?
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
