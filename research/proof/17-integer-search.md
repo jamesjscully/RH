@@ -84,3 +84,39 @@ look for a stable signature law; THEN ask the comparison question (does any
 signature-constrained combination produce the EF fingerprint at the
 self-dual normalization). C1 and C2 inherit refinement II (only self-dual
 tempered instances are worth feeding to the pipeline).
+
+## 6. C4 executed: the Hall form is a metric; the Euler form vanishes; the
+## index demands a two-dimensional category (2026-06-10)
+
+`count_hall_signature.py` (exact integer enumeration, symmetry = duality
+theorem verified in-data): the self-dual-grade Hall forms S_m are POSITIVE
+DEFINITE for all computed cells (p = 2: m = 1,2,3; p = 3: m = 1,2) -
+signature (k, 0). Pre-registered reading: metric-like, no index at this
+grade (consistent with Zelevinsky's PSH positivity for Hall structures).
+
+WHY, structurally - and the finding that redirects the rung: the FF
+intersection form's signed structure is the EULER FORM
+chi(H, K) = sum (-1)^i dim Ext^i(H, K). For finite Z-modules it VANISHES
+IDENTICALLY: |Ext^1(A, B)| = |Hom(A, B)| for finite abelian groups (apply
+Hom(-, B) to 0 -> Z -> Z -> Z/n -> 0: |B[n]| = |B/nB|), so
+chi = log|Hom| - log|Ext| = 0. This is the categorical incarnation of
+"Spec Z is one-dimensional, no room for signature" - the same fact the
+Arakelov audit (log/2026-06-06) found numerically and doc 16 found
+analytically. Torsion sheaves on a CURVE always pair to zero; they acquire
+nonzero (negative) self-pairing only on a SURFACE.
+
+THE REDIRECTED QUESTION (precise, computable by established machinery, and
+NOT covered by the F1 survey's scale-criterion kill): the derived square
+
+    Z (x)^L_S Z      (tensor over the sphere spectrum; pi_* (HZ ^ HZ) has
+                      genuinely nontrivial torsion in higher degrees)
+
+is a non-scheme thickening of the arithmetic square in which the Euler form
+on finite (torsion) objects acquires ALTERNATING higher contributions and
+need not vanish. Question C4': compute the Euler pairing on the derived
+category of finite complexes over HZ ^ HZ - does it have nonvanishing
+signature content on torsion classes? A YES with Lorentzian-type signature
+would be the first integer-valued, sign-bearing pairing on an arithmetic
+square passing the G-INT5 no-scale check (homotopy provides the second
+dimension, not a finite residue field at infinity). This is a homotopy-
+theory computation (dual-Steenrod-type rings), fresh-context scale.
