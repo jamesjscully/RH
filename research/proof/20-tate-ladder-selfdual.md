@@ -53,9 +53,11 @@ LADDER; KMS-1/2 = full ladder + symmetric scheme; the scheme choice is
 not supplied by any homotopy-theoretic theorem. Doc 10's fourth
 realization input is REOPENED at the derivation level (supply-level
 numerics unaffected). The symmetric scheme is precisely the
-regularization respecting a REAL structure (eigenvalues paired with
-conjugates) - the scheme question and the archimedean question converge
-(J-doc sec 4, gate C5''-infty).
+regularization natural under ladder NEGATION w -> -w (the local
+functional-equation flip) - NOT under conjugation, which every real-c
+scheme respects and which selects nothing (corrected 2026-06-10 per
+worker O, Prop A4) - so the scheme question and the archimedean
+question converge (J-doc sec 4, gate C5''-infty as amended in doc 24).
 
 ARCHIMEDEAN (the 1/4-shift, gate W4, 1.3e-06):
 

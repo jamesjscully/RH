@@ -52,12 +52,45 @@ so c = 1/2 - the symmetric/KMS-1/2 scheme - is the UNIQUE scheme
 equivariant under the reflection w -> -w. This is the first
 derivation-shaped account of the program's missing fourth realization
 input: the real structure does not merely permit the symmetric scheme,
-it FORCES it - conditional on:
+it FORCES it - conditional on H-r3 IN THE FORCING FORM below.
 
-    H-r3 (the open C5'' theorem, now precisely posed): the C_2 of THR
-    acts on the analytic determinant layer of the Tate/periodic
-    construction, i.e. the regularized-determinant functor can be made
-    C_2-equivariant. No such theorem exists in the literature.
+[AMENDED 2026-06-10, worker O (research/work/O-hr3-formulation.md +
+prime_int_hr3_scheme_rigidity.py, ALL PASS): the original wording here
+("the C_2 of THR acts on the analytic determinant layer, i.e. the
+regularized-determinant functor can be made C_2-equivariant") is
+SATISFIABLE-BUT-VACUOUS - the residual Weyl action v -> -v acts on
+eigenLINES by signs, commutes with Theta and Fr*, and so satisfies
+that demand for EVERY scheme (O-doc obstruction O-1; witnessed, G7).
+Replacement, the FORCING FORM (O-doc sec 1.4):
+
+    H-r3: Hesselholt's determinant-layer construction X ->
+    (TP_*(X) (x)_{W,iota} C, Theta) factors through a C_2-equivariant
+    enhancement in which the C_2 induced by the O(2)/real-cyclotomic
+    structure acts by LADDER NEGATION N: (V, Theta) -> (V, -Theta)
+    COVERING s -> -s, and the regularized determinant is natural for
+    this C_2 (transforms by a w-independent unit).
+
+  Split H-r3 = H-r3(an) AND H-r3(hom). H-r3(an) IS NOW A THEOREM
+  (O-doc Thm A1, Cor A2, Props A3-A6): negation-naturality forces
+  c = 1/2 exactly (unit u = -1, residue one EF-invisible constant);
+  every branch/window scheme has INTEGER slope, so no branch
+  convention can ever produce 1/2 (the symmetric scheme is not a
+  branch choice at all - strengthens the J-doc); Deninger's Convention
+  (2.1) = a circle-orientation choice whose C_2-average is the
+  symmetric scheme; KMS-1/2 = the Cauchy-principal-value Euler factor;
+  and the symmetric determinant requires a canonical lambda^{1/2}
+  (double cover - 2-primary, converging with the p = 2 anomaly and
+  CC's K = -2{2}). CORRECTION to the program's gloss (O-doc Prop A4):
+  conjugation/Schwarz pairing selects NOTHING (every real-c scheme
+  satisfies it); the selecting involution is NEGATION = the local
+  functional-equation flip. The open content is exactly H-r3(hom) =
+  lemma L-hom (negation supply at Spec F_q), with fork F1: does the
+  C_2's inversion-twist on C_p reach the determinant layer? At
+  pi_*-level the answer is NO everywhere computable; a positive must
+  come from the rho-graded parametrized layer or a duality layer
+  (C5''' territory). RISK, stated plainly: if F1 resolves negative,
+  THR's C_2 cannot force the scheme and realization input 4 loses its
+  only carrier.]
 
 No conflict with Hesselholt: his Theorem A is non-equivariant (and
 selects c = 0 there); the real refinement would compute the self-dual

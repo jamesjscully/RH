@@ -247,13 +247,29 @@ C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" killed by the
    reflection = "no duality completion at infinity", and the
    C_2-involution (-1)^k on pi_2k THH(F_p) = Serre's F_infinity
    eigenvalue selection. PARITY LEMMA (r3): c = 1/2 is the UNIQUE
-   reflection-equivariant scheme - KMS-1/2 FORCED by real equivariance,
-   conditional on the single named hypothesis H-r3 (the C_2 acts on the
-   analytic determinant layer; no such theorem exists - THE posed C5''
-   theorem). Refined gate: (infty-1') fold theorem-grade at odd p,
-   p = 2 + archimedean object open; (infty-2) 1/(2pi) scale open;
-   (infty-3') H-r3; (infty-4) untouched. Then C5''' = the global
-   Poisson step (the zeros).
+   negation-equivariant scheme.
+   H-r3 SPLIT AND HALF-PROVEN (2026-06-10, worker O + doc 24 as
+   amended): H-r3(an) is a THEOREM (negation-naturality forces c = 1/2
+   exactly; ALL branch/window schemes have INTEGER slope - no branch
+   convention can ever yield 1/2; Deninger's convention = orientation
+   choice, C_2-average = symmetric scheme; KMS-1/2 = principal-value
+   Euler factor; needs canonical lambda^{1/2} double cover - 2-primary,
+   converges with p=2 anomaly + CC's -2{2}). GLOSS CORRECTED: the
+   selector is NEGATION (local FE flip), NOT conjugation (Schwarz holds
+   for every real-c scheme, selects nothing - any future
+   c=1/2-from-conjugation derivation is circular). Doc 24's original
+   H-r3 wording was satisfiable-but-VACUOUS (linear Weyl action
+   commutes with Theta; witnessed). OPEN RESIDUE = H-r3(hom) = lemma
+   L-hom (negation supply at Spec F_q) via fork F1: does the C_2
+   inversion-twist on C_p reach the determinant layer? pi_*-level NO
+   everywhere computable; positive must come from rho-graded
+   parametrized or duality layer (C5''' territory); three ranked
+   probes in O-doc sec 4.7 incl. the A6 lambda^{1/2} kill-test for
+   candidate carriers. RISK: F1 negative => realization input 4 loses
+   its only carrier. Refined gate: (infty-1') fold theorem-grade at
+   odd p, p = 2 + archimedean object open; (infty-2) 1/(2pi) scale
+   open; (infty-3'') L-hom/F1; (infty-4) untouched. Then C5''' = the
+   global Poisson step (the zeros).
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
    psi^k - the only known two-parameter correspondence family. POSING
