@@ -87,6 +87,58 @@ R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIR
     subset inductions}.
 ```
 
+### R-INT - The integer search (OPENED 2026-06-09, user-directed; THE front rung)
+
+Target (docs 14-16, sharpest wall form): an integer-valued, positivity-bearing
+pairing attached to Z that touches the zeros. Search design: candidates are
+triples (L, <,>, Phi) - objects attached to Z, a pairing whose values are
+CARDINALITIES BY DEFINITION (positivity never proven => RH cannot enter
+through the sign; all risk concentrates in the comparison identity), and a
+flow Phi playing Frobenius. Method: GENERATE candidates from a grammar of
+count structures; FINGERPRINT each candidate's correlation sequence against
+the EF (digamma + prime atoms) with the existing fork machinery; GATE
+fail-closed.
+
+Gates (all unconditional): G-INT1 integer gate (what does it count?);
+G-INT2 comparison/fingerprint on the FULL pole-killed class (S4');
+G-INT3 P2/Epstein gate (impossible for DH; must USE multiplicative closure -
+verbatim-Epstein = over-proving, dies); G-INT4 trichotomy gate (not secretly
+a square or Bochner form - level-2 fork, E3b machinery); G-INT5 no-scale
+check (counts of GLOBAL objects only; never residue cardinalities at infinity
+- the no-go configuration).
+
+Candidate grammar, ordered by tractability:
+
+```text
+C0 (calibration, run FIRST). Hyperbola counts: d(n) = #{(a,b): ab = n},
+   generating function zeta(s)^2 - a known-true integer count structure
+   whose fingerprint provably contains the zeros (doubled). Not the answer
+   (classical divisor world); the pipeline MUST light up on it or the
+   fingerprint gate is broken. READING: calibration only.
+C1 Orbit/fixed-point counts of the multiplicative dynamics: #Fix(x n) on
+   adelic solenoids/quotients (Artin-Mazur/Lefschetz integers, exist
+   unconditionally; periodic orbits = prime powers); pairing = coincidence
+   counts on the square of the system. The integer-native discrete version
+   of the Deninger continuum program.
+C4 Hall pairing on the category of finite Z-modules: Hall numbers count
+   extensions (integer, definitionally positive, composition built in);
+   the category IS unique factorization (Jordan-Holder = Euler product;
+   P2 structural: DH has no module category); generating functions give
+   zeta-products. Question nobody has posed in this form: does the natural
+   flow-correlation of the Hall structure carry the full EF fingerprint?
+C2 Trace-formula integer structures: class numbers (Eichler-Selberg),
+   dimensions of form spaces - where arithmetic already pairs integer
+   multiplicities with spectra (source of the Selberg-zeta RH-analogue).
+```
+
+Pre-registered readings: a candidate passing G-INT1-5 with a verified
+comparison identity = the first live S3 object - escalate immediately.
+All candidates failing at G-INT2 (fingerprint absent/partial) = map WHERE
+the EF fingerprint can and cannot live among count structures - itself a
+new constraint (the "count-conservation" question: which spectral data is
+reachable by cardinality pairings at all). Failures at G-INT3/4 = standard
+graveyard entries.
+
 ### R-SQ - The doubled laboratory (RESOLVED 2026-06-09 same day: two-variable conservation, proof/16)
 
 OUTCOME: pre-registered reading (b). E1/E2/E3a/E3a'/E3b all executed; the
