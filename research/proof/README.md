@@ -299,6 +299,16 @@ scripts/numerics/witness/certify_chain.py
     mechanism). The remainder is one conjecture: DD.4, whose duality does triple
     duty (scheme + pole + scale). Ranked continuations in sec 3.
 
+31. `31-line-closure.md`
+    Cycle-6 synthesis + PFD line closure: DD.4's Lin clause PROVEN (singleton
+    datum; display fixed); N1-b refuted and re-posed; the cancellation
+    globalizes (duality = existence mechanism; renormalized survivor = the EF
+    prime-side shell); the scale EXPELLED from torsion (Prop FF.1) - DD.4's
+    duty drops to scheme + pole. Two named exits: (A) DD.4 on weights >= 1,
+    (B) the archimedean unit, triply specified (comb-continuum coupling, one
+    unit per place, rational/Anderson layer). The index/density layer (the
+    zeros) stands guarded behind both.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
