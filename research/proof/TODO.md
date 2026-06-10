@@ -174,9 +174,21 @@ Q-SCHEME (pre-registered): for each square (HZ^HZ, ku^ku, CC's proper
 Spec Z bar) state the computed invariant as (ladder, weight dictionary,
 scale, scheme) and check cross-dictionary consistency in common units.
 Collapses the three open tensions: T-a KMS-1/2 scheme datum (J), T-b
-genus clash CC g=0 (deg K = -1.386 nats) vs THH g=1.459 (deg K = +0.919
-nats), T-c HZ-odd/negative vs ku-even/positive torsion sign. First
-witness: prime_int_genus_audit.py (K-doc step A, sign-corrected).
+genus clash, T-c HZ-odd/negative vs ku-even/positive torsion sign.
+FIRST GATE EXECUTED (2026-06-10, prime_int_genus_audit.py ALL PASS +
+doc 22): T-b is INVARIANT-LEVEL (no unit reconciles; CC chi =
+cohomology-with-duality over their base, THH diagonal = cotangent of
+the unit map over S - different objects, both correct; "unit error"
+excluded). Doc 18's sign is native to the COUNT reading only (operator
+reading flips at c = 2pi); genus number 1.459 DEMOTED to calibration
+(doc 18 annotated). The wall is now MEASURED: the FF index needs the
+two invariants identified on one square, calibration pair
+(deg K_CC, deg Omega_THH) = (-2 log 2, +(1/2) log 2pi). G-INT6 control
+LIVE: <Delta,Delta>_{O_K} = d zeta'(0) + (1/2)log|d_K| (LM orders,
+Z[i] spot-checked) - discriminates, tracks xi_K's |d|^{s/2}; standing
+test bench for any "produces zeta" claim. Remaining Q-SCHEME work:
+T-c (HZ/ku sign normalization in one indexing) - fold into C6';
+workers M (THR fold test) and N (CC square posing) in flight.
 Discovery banked meanwhile (fleet/K, verified): Connes-Consani PROVED
 integer-valued RR + Pontryagin-Serre duality for compactified Spec Z
 (arXiv:2205.01391 Thm 1.1-1.2, 2306.00456 Thm 1.1; circularity-clean) -

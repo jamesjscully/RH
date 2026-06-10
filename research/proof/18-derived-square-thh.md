@@ -96,6 +96,17 @@ square at all (P2 carrier filter passes; necessary, not sufficient).
 positivity arguments NEED g >= 1 (the g = 0 case has no Jacobian to
 bound) makes the sign of this number load-bearing, not decorative.
 
+[DEMOTION 2026-06-10 (Q-SCHEME audit, prime_int_genus_audit.py + doc
+22)]: the genus NUMBER is unit- and reading-laden (it took nats as the
+point-unit and the count reading as the scale) and is demoted to
+calibration per G-INT6. What survives: the SIGN in the count reading
+(cardinalities are dimensionless, scale canonically 1) and the exact
+integer ladder. In the operator reading the sign itself is
+scale-relative (flips at c = 2pi). Note also CC's proven Riemann-Roch
+for compactified Spec Z is genus-0 - an invariant-level difference
+(different objects: their cohomological chi vs this cotangent probe),
+not a contradiction; see doc 22.
+
 ## 5. The honest scorecard (gates and forks)
 
 - G-INT5 (no-scale): PASS. The second dimension is homotopy (the sphere's

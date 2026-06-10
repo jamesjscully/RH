@@ -218,6 +218,15 @@ scripts/numerics/witness/certify_chain.py
     control). Witnesses: prime_int_ku_ladder, prime_int_deninger_convention,
     prime_defect_t1_interval_certificate.
 
+22. `22-genus-audit.md`
+    Q-SCHEME first gate executed: the CC-vs-THH genus clash is INVARIANT-LEVEL (no
+    unit reconciles; different objects, both correct - the wall is now measured by
+    the pair (-2 log 2, +(1/2) log 2pi)); doc 18's sign is native to the count
+    reading only (operator reading flips at c = 2pi) and the genus number is demoted
+    to calibration; the G-INT6 ring-bearing control is live
+    (<Delta,Delta>_{O_K} = d zeta'(0) + (1/2)log|d_K| via Lindenstrauss-Madsen,
+    discriminating, tracks xi_K's |d|^{s/2}). Witness: prime_int_genus_audit.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
