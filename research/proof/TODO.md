@@ -298,10 +298,22 @@ C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" killed by the
    scheme selector should be sought in the 2-primary sector - run
    F1's probes against the S-doc Tate square first. Refined gate:
    (infty-1') fold theorem-grade at odd p, p = 2 computed; (infty-2)
-   1/(2pi) scale open; (infty-3'') L-hom/F1 with 2-primary target;
-   (infty-4) candidate = Barnes Gamma_2. Then C5''' = the global
-   Poisson step (the zeros). Archimedean compactified object still
-   missing.
+   1/(2pi) scale open; (infty-3'') L-hom/F1 -- F1 RESOLVED NEGATIVE
+   for THR (2026-06-10, worker U: the residual Weyl SHEARS
+   (Artin-Schreier t -> t(1+z)^{-1}), never negates; lambda_pi central
+   => no reflection-corner Weyl can invert the flow; rho-graded escape
+   CLOSED; realization input 4 has NO carrier at THR. Survivors: t
+   passes the lambda^{1/2} kill-test (vertical double cover - first
+   carrier ever to); negation-as-duality exists at every FINITE weight
+   truncation (perfect residue pairing, weight flip m <-> N-m) and
+   DIES IN THE z-adic COMPLETION; surviving instance = Conjecture U.2,
+   compactified Tate glued to its divided-power dual along the Lin
+   line with duality from the O(2)-structure covering s -> -s. The
+   scheme question, the archimedean question, and the properness
+   question are now provably ONE question = C5'''); (infty-4)
+   candidate = Barnes Gamma_2. The archimedean compactified object is
+   still missing and is now the unique remaining carrier for three
+   open items at once.
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
    psi^k - the only known two-parameter correspondence family. POSING
