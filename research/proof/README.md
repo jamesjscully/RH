@@ -197,6 +197,16 @@ scripts/numerics/witness/certify_chain.py
     char-p face Hesselholt's properness hypothesis; S-level open).
     Witness: prime_int_thh_supply.
 
+20. `20-tate-ladder-selfdual.md`
+    R-INT C5' diagnostic: duality completion GENERATES the self-dual normalization -
+    the full Tate ladder gives p^(s/2)(1 - p^(-s)) (KMS-1/2 emerges from the negative
+    half of the ladder), and the degenerate archimedean ladder gives
+    sqrt(2pi)/Gamma(s/2) with log-derivative (1/2) psi(1/4 + it/2) on the critical
+    line - both doc-19 fail-closed criteria met. Place dichotomy = orbit geometry
+    (compact orbit vs fixed point). Doc 10's realization inputs 4-for-4 at supply
+    level. Open: C5'' (derive the ladders from the equivariant homotopy theory),
+    C5''' (the global Poisson step = the zeros). Witness: prime_int_tate_ladder.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
