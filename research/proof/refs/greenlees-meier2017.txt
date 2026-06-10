@@ -1,0 +1,4412 @@
+Original citation:
+Greenlees, John P. C. and Meier, Lennart (2017) Gorenstein duality for real spectra.
+Algebraic & Geometric Topology, 17 (6). pp. 3547-3619. doi:10.2140/agt.2017.17.3547
+Permanent WRAP URL:
+http://wrap.warwick.ac.uk/100093
+Copyright and reuse:
+The Warwick Research Archive Portal (WRAP) makes this work by researchers of the
+University of Warwick available open access under the following conditions. Copyright ©
+and all moral rights to the version of the paper presented here belong to the individual
+author(s) and/or other copyright owners. To the extent reasonable and practicable the
+material made available in WRAP has been checked for eligibility before being made
+available.
+Copies of full items can be used for personal research or study, educational, or not-for-profit
+purposes without prior permission or charge. Provided that the authors, title and full
+bibliographic details are credited, a hyperlink and/or URL is given for the original metadata
+page and the content is not changed in any way.
+Publisher’s version: http://dx.doi.org/10.2140/agt.2017.17.3547
+A note on versions:
+The version presented here may differ from the published version or, version of record, if
+you wish to cite this item you are advised to consult the publisher’s version. Please see the
+‘permanent WRAP URL’ above for details on accessing the published version and note that
+access may require a subscription.
+For more information, please contact the WRAP Team at: wrap@warwick.ac.uk
+
+warwick.ac.uk/lib-publications
+
+GORENSTEIN DUALITY FOR REAL SPECTRA
+
+arXiv:1607.02332v2 [math.AT] 17 Jan 2017
+
+J.P.C.GREENLEES AND L.MEIER
+Abstract. Following Hu and Kriz, we study the C2 -spectra BP Rhni and ER(n) that
+refine the usual truncated Brown–Peterson and the Johnson–Wilson spectra. In particular,
+we show that they satisfy Gorenstein duality with a representation grading shift and identify
+their Anderson duals. We also compute the associated local cohomology spectral sequence
+in the cases n = 1 and 2.
+
+Contents
+1. Introduction
+
+2
+
+Part 1. Preliminaries and results
+2. Basics and conventions about C2 -spectra
+3. Anderson duality, Koszul complexes and Gorenstein duality
+4. Real bordism and the spectra BP Rhni
+5. Results and consequences
+
+6
+6
+8
+13
+19
+
+Part 2. The Gorenstein approach
+6. Connective K-theory with Reality
+7. BP hni with Reality
+
+22
+22
+25
+
+Part 3. The hands-on approach
+8. The case of kR again
+9. Duality for BP R
+10. Duality for regular quotients
+
+30
+30
+31
+34
+
+Part 4. Local cohomology computations
+11. The local cohomology spectral sequence for kR
+12. The local cohomology spectral sequence for BP Rhni
+13. The local cohmology spectral sequence for tmf1 (3)
+
+37
+38
+44
+49
+
+C2
+Appendix A. The computation of πF
+BP R
+References
+
+55
+60
+
+We are grateful to the Hausdorff Institute of Mathematics in Bonn for providing us the opportunity in
+Summer 2015 for the discussions starting this work. We also thank Vitaly Lorman and Nicolas Ricka for
+helpful discussions.
+1
+
+1. Introduction
+1.A. Background.
+Philosophy. For us, Real spectrum is a loose term for a C2 -spectrum built from the C2 spectrum M R of Real bordism, considered by Araki, Landweber and Hu–Kriz [HK01]. The
+present article shows that bringing together Real spectra and Gorenstein duality reveals rich
+and interesting structures.
+It is part of our philosophy that theorems about Real spectra can often be shown in the
+same style as theorems for the underlying complex oriented spectra although the details
+might be more difficult, and groups needed to be graded over the real representation ring
+RO(C2 ) (indicated by F) rather than over the integers (indicated by ∗). This extends a well
+known phenomenon: complex orientability of equivariant spectra makes it easy to reduce
+questions to integer gradings, and we show that even in the absence of complex orientability,
+good behaviour of coefficients can be seen by grading with representations.
+Bordism with reality. In studying these spectra, the real regular representation ρ = RC2
+plays a special role. We write σ for the sign representation on R so that ρ = 1 + σ. One of
+the crucial features of M R is that it is strongly even in the sense of [HM16], i.e.
+C2
+(1) the restriction functor πkρ
+M R → π2k M U is an isomorphism for all k ∈ Z, and
+C2
+(2) the groups πkρ−1 M R are zero for all k ∈ Z.
+We now localize at 2, and (with two exceptions) all spectra and abelian groups will henceforth be 2-local. The Quillen idempotent has a C2 -equivariant refinement, and this defines
+the C2 -spectrum BP R as a summand of M R(2) . The isomorphism (1) allows us to lift the
+C2
+usual vi to classes v i ∈ π(2
+i −1)ρ BP R. The Real spectra we are interested in are quotients of
+BP R by sequences of v i and localizations thereof. For example, we can follow [HK01] and
+[Hu02] and define
+BP Rhni = BP R/(v n+1 , v n+2 , . . . )
+and
+ER(n) = BP Rhni[v −1
+n ].
+These spectra are still strongly even, as we will show. Apart from the big literature on
+K-theory with Reality (e.g. [Ati66], [Dug05] and [BG10]), Real spectra have been studied
+by Hu and Kriz, in a series of papers by Kitchloo and Wilson (see e.g. [KW15] for one of
+the latest installments), by Banerjee [Ban13], by Ricka [Ric14] and by Lorman [Lor16]. A
+crucial point is that a morphism between strongly even C2 -spectra is an equivalence if it is
+an equivalence of underlying spectra [HM16, Lemma 3.4].
+We are interested in two dualities for Real spectra: Anderson duality and Gorenstein
+duality. These are closely related [GS17] but apply to different classes of spectra.
+Anderson duality. The Anderson dual ZX of a spectrum X is an integral version of its BrownComenetz dual (in accordance with our general principle, Z denotes the 2-local integers).
+The homotopy groups of the Anderson dual lie in a short exact sequence
+(1.1)
+
+0 → Ext1Z (π−∗−1 X, Z) → π∗ (ZX ) → HomZ (π−∗ X, Z) → 0.
+
+One reason to be interested in the computation of Anderson duals is that they show
+up in universal coefficient sequences (see [And69] or Section 3.B). The situation is nicest
+2
+
+for spectra that are Anderson self-dual in the sense that ZX is a suspension of X. Many
+important spectra like KU , KO, T mf [Sto12] or T mf1 (3) are indeed Anderson self-dual.
+These examples are all unbounded as the sequence (1.1) nearly forces them to be.
+Anderson duality also works C2 -equivariantly as first explored by [Ric14]; the only change
+in the above short exact sequence is that equivariant homotopy groups are used. The C2 spectra KR [HS14] and T mf1 (3) [HM16] are also C2 -equivariantly self-Anderson dual, at
+least if we allow suspensions by representation spheres.
+One simpler example is essential background: if Z denotes the constant Mackey functor
+(i.e., with restriction being the identity and induction being multiplication by 2) then the
+Anderson dual of its Eilenberg-MacLane spectrum is the Eilenberg-MacLane spectrum for
+the dual Mackey functor Z∗ = HomZ (Z, Z) (i.e., with restriction being multiplication by 2
+and induction being the identity). It is then easy to check that in fact H(Z∗ ) ≃ Σ2(1−σ) HZ.
+(From one point of view this is the fact that RP 1 = S(2σ)/ C2 is equivalent to the circle).
+The dualities we find are in a sense all dependent on this one.
+Gorenstein duality. By contrast with Anderson self-duality, many connective ring spectra
+are Gorenstein in the sense of [DGI06]. We sketch the theory here, explaining it more fully
+in Sections 6 and 7.
+The starting point is a connective commutative ring C2 -spectrum R, whose 0th homotopy
+Mackey functor is constant at Z:
+2
+∼
+πC
+0 (R) = Z.
+This gives us a map R −→ HZ of commutative ring spectra by killing homotopy groups.
+We say that R is Gorenstein of shift a ∈ RO(C2 ) if there is an equivalence of R-modules
+HomR (HZ, R) ≃ Σa HZ.
+
+We are interested in the duality this often entails. Note that the Anderson dual ZR
+obviously has the Matlis lifting property
+HomR (HZ, ZR ) ≃ HZ∗ ,
+
+where Z∗ = HomZ (Z, Z) as above. Thus if R is Gorenstein, in view of the equivalence
+H(Z∗ ) ≃ Σ2(1−σ) HZ, we have equivalences
+HomR (HZ, CellHZ R) ≃ HomR (HZ, R)
+≃ Σa HZ
+
+≃ Σa−2(1−σ) H(Z∗ )
+
+≃ HomR (HZ, Σa−2(1−σ) ZR ).
+
+Here, CellHZ denotes the HZ-R-cellularization as in Section 2.B. We would like to remove
+the HomR (HZ, ·) from the composite equivalence above.
+
+Definition 1.2. We say that R has Gorenstein duality of shift b if we have an equivalence
+of R-modules
+CellHZ R ≃ Σb ZR .
+
+As in the non-equivariant setting, the passage from Gorenstein to Gorenstein duality
+requires showing that the above composite equivalence is compatible with the right action
+of E = HomR (HZ, HZ). This turns out to be considerably more delicate than the nonequivariant counterpart because connectivity is harder to control; but if one can lift the
+3
+
+R-equivalence to an E-equivalence, the conclusion is that if R is Gorenstein of shift a then
+it has Gorenstein duality of shift b = a − 2(1 − σ).
+Local cohomology. The duality statement becomes more interesting when the cellularization
+can be constructed algebraically. For any finitely generated ideal J of the RO(C2 )-graded
+C2
+, we may form the stable Koszul complex ΓJ R, which only depends on the
+coefficient ring RF
+C2
+2
+−→ HZC
+radical of J. In our examples, this applies to the augmentation ideal J = ker(RF
+F ),
+which may be radically generated by finitely many elements v i in degrees which are multiples
+of ρ. Adapting the usual proof to the Real context, Proposition 3.8 shows that ΓJ R −→ R
+is HZ-R-cellularization:
+CellHZ R ≃ ΓJ R.
+The RO(C2 )-graded homotopy groups of ΓJ R can be computed using a spectral sequence
+involving local cohomology.
+Conclusion. In favourable cases the Gorenstein condition on a ring spectrum R implies
+Gorenstein duality for R; this in turn establishes a strong duality property on the RO(C2 )graded coefficient ring, expressed using local cohomology.
+1.B. Results. Our main theorems establish Gorenstein duality for a large family of Real
+spectra. We present in this introduction the particular cases of BP Rhni and ER(n), deferring
+the more general theorem to Section 5. Let again σ denote the non-trivial representation
+of C2 on the real line and ρ = 1 + σ the real regular representation. Furthermore set
+Dn = 2n+1 − n − 2 so that Dn ρ = |v 1 | + · · · + |v n |. Other terms in the statement will be
+explained in Section 3.
+Theorem 1.3. For each n ≥ 1 the C2 -spectrum BP Rhni is Gorenstein of shift −Dn ρ − n,
+and has Gorenstein duality of shift −Dn ρ − n − 2(1 − σ). This means that
+BP Rhni
+
+Z(2)
+
+≃ ΣDn ρ+n+2(1−σ) ΓJ n BP Rhni,
+
+where J n = (v 1 , . . . , v n ). This induces a local cohomology spectral sequence
+BP Rhni
+
+C2
+−Dn ρ−n−2(1−σ)
+2
+HJ∗n (BP RhniC
+Z(2)
+F ) ⇒ πF (Σ
+
+).
+
+Theorem 1.4. For each n ≥ 1 the C2 -spectrum ER(n) has Gorenstein duality of shift
+−Dn ρ − (n − 1) − 2(1 − σ). This means that
+ER(n)
+
+Z(2)
+
+≃ ΣDn ρ+(n−1)+2(1−σ) ΓJ n−1 ER(n)
+2n+1 −2n+2 )+n+3
+
+≃ Σ(n+2)(2
+
+ΓJn−1 ER(n),
+
+for Jn−1 = J n−1 ∩ π∗C2 ER(n). This induces likewise a local cohomology spectral sequence.
+
+We note that this has implications for the C2 -fixed point spectrum (BP Rhni)C2 = BP Rhni.
+The graded ring
+π∗ (BP Rhni) = π∗C2 (BP Rhni)
+C2
+is the integer part of the RO(C2 )-graded coefficient ring πF
+(BP Rhni). However, since the
+ideal J n is not generated in integer degrees, the statement for BP Rhni is usually rather
+complicated, and one of our main messages is that working with the equivariant spectra
+4
+
+gives more insight. On the other hand, ER(n) = ER(n)C2 has integral Gorenstein duality
+because one can use the additional periodicity to move the representation suspension and
+the ideal J n to integral degrees.
+We will discuss the general result in more detail later, but the two first cases are about
+familiar ring spectra.
+Example 1.5. (See Sections 6 and 11.) For n = 1, connective K-theory with Reality kR is
+2-locally a form of BP Rh1i. For this example we can work without 2-localization, so that Z
+means the integers. Our first theorem states that kR is Gorenstein of shift −ρ − 1 = −2 − σ
+and that it has Gorenstein duality of shift −4 + σ. This just means that
+ZkR ≃ Σ4−σ fib(kR → KR).
+The local cohomology spectral sequence collapses to a short exact sequence associated to the
+fibre sequence just mentioned. We will see in Section 11 that the sequence is not split, even
+as abelian groups.
+Theorem 1.4 recovers the main result of [HS14], i.e. that ZKR ≃ Σ4 KR, which also implies
+KO
+Z
+≃ Σ4 KO. It is a special feature of the case n = 1 that we also get a nice duality
+statement for the fixed points in the connective case. Indeed, by considering the RO(C2 )graded homotopy groups of kR, one sees [BG10, 3.4.2] that
+(kR ⊗ S −σ )C2 ≃ Σ1 ko.
+This implies that connective ko has untwisted Gorenstein duality of shift −5, i.e. that
+Zko ≃ Σ5 fib(ko → KO).
+This admits a closely related non-equivariant proof, combining the fact that ku is Gorenstein
+(clear from coefficients) and the fact that complexification ko −→ ku is relatively Gorenstein
+(connective version of Wood’s theorem [BG10, 4.1.2]).
+Example 1.6. (See Examples 4.13 and 5.12 or Lemma 7.1 and Corollary 7.5.) The 2localization of the C2 -spectrum tmf1 (3) is a form of BP Rh2i, and the theorem is closely
+related to results in [HM16]. It states that tmf1 (3) is Gorenstein of shift −4ρ − 2 = −6 − 4σ
+and has Gorenstein duality of shift −8−2σ. We show in Section 13 that there are non-trivial
+differentials in the local cohomology spectral sequence.
+Passing to fixed points we obtain the 2-local equivalence
+BP Rh2i = (BP Rh2i)C2 = tmf0 (3).
+By contrast with the n = 1 case, as observed in [HM16], tmf0 (3) does not have untwisted
+Gorenstein duality of any integer degree.
+A variant of Theorem 1.4 also computes the C2 -equivariant Anderson dual of T M F1 (3)
+and the computation of the Anderson dual of T mf1 (3) from [HM16] follows as well.
+The results apply to tmf1 (3) and T M F1 (3) themselves (i.e., with just 3 inverted, and not
+all other odd primes).
+We remark that our main theorem also recovers the main result of [Ric14] about the
+Anderson self-duality of integral Real Morava K-theory.
+5
+
+1.C. Guide to the reader. While the basic structure of this paper is easily visible from
+the table of contents, we want to comment on a few features.
+The precise statements of our main results can be found in Section 5. We will give two
+different proofs of them. One (Part 3) might be called ‘the hands on approach’ which is elementary and explicit, and one (Part 2) uses Gorenstein techniques inspired by commutative
+algebra. The intricacy and dependence on specific calculations in the explicit approach and
+the make the conceptual approach valuable. The subtlety of the structural requirements of
+the conceptual approach make the reassurance of the explicit approach valuable. The exact
+results proved in Parts 2 and 3 are also slightly different.
+While the Gorenstein approach only relies on the knowledge of the homotopy groups
+of HZ and the reduction theorem Corollary 4.7, we need detailed information about the
+homotopy groups of quotients of BP R for the hands-on approach. In Appendix A, we give
+C2
+BP R (which appeared first in [HK01]). In
+a streamlined account of the computation of πF
+Section 4, we give a rather self-contained account of the homotopy groups of BP Rhni and
+of other quotients of BP R, which can also be read independently of the rest of the paper.
+While some of this is rather technical, most of the time we just have to use Corollary 4.6
+whose statement (though not proof, perhaps) is easy to understand.
+We give separate arguments for the computation of the Anderson dual of kR so that this
+easier case might illustrate the more complicated arguments of our more general theorems.
+Thus, if the reader is only interested in kR, he or she might ignore most of this paper. More
+precisely, under this assumption one might proceed as follows: First one looks at Section
+C2
+11.B for a quick reminder on πF
+kR, then one skims through Sections 2 and 3 to pick up
+the relevant definitions and then one proceeds directly to Section 6 or Section 8 to get the
+proof of the main result in the case of kR. Afterwards one may look at the pictures and
+computations in the rest of Section 11 to see what happens behind the scenes of Gorenstein
+duality.
+
+Part 1. Preliminaries and results
+2. Basics and conventions about C2 -spectra
+2.A. Basics and conventions. We will work in the homotopy category of genuine Gspectra (i.e., stable for suspensions by S V for any finite dimensional representation V ) for
+G = C2 , the group of order 2. We will denote by ⊗ the derived smash product of spectra.
+We may combine the equivariant and non-equivariant homotopy groups of a C2 -spectrum
+2
+into a Mackey functor, which we denote by π C
+∗ X and denote C2 -equivariant and underlying
+C2
+homotopy groups correspondingly by π∗ X and π∗e X. For an abelian group A, we write A
+for the constant Mackey functor (i.e., restriction maps are the identity), and A∗ for its dual
+(i.e., induction maps are the identity). We write HM for the Eilenberg-MacLane spectrum
+associated to a Mackey functor M .
+Another C2 -spectrum of interest to us is kR, the C2 -equivariant connective cover of
+Atiyah’s K-theory with Reality [Ati66]. The term “Real spectra” derives from this example.
+6
+
+The examples of Real bordism and the other C2 -spectra derived from it will be discussed in
+Section 4.
+We will usually grade our homotopy groups by the real representation ring RO(C2 ), and
+we write MF for RO(C2 )-graded groups. In addition to the real sign representation σ and the
+regular representation ρ the virtual representation δ = 1 − σ is also significant. Examples
+of RO(C2 )-graded homotopy classes are the geometric Euler classes aV : S 0 −→ S V ; in
+particular, a = aσ will play a central role. In addition to a, we will also often have a class
+u = u2σ of degree 2δ.
+We often want to be able to discuss gradings by certain subsets of RO(C2 ). To start with
+we often want to refer to gradings by multiples of the regular representation (where we write
+M∗ρ ), but we also need to discuss gradings of the form kρ − 1. For this, we use the notation
+∗ρ− = {kρ | k ∈ Z} ∪ {kρ − 1 | k ∈ Z}.
+
+Following [HM16] we call an RO(C2 )-graded object M even if Mkρ−1 = 0 for all k. An
+RO(C2 )-graded Mackey functor is strongly even if it is even and all the Mackey functors in
+gradings kρ are constant. We call a C2 -spectrum (strongly) even if its homotopy groups are
+(strongly) even.
+If X is a strongly even C2 -spectrum and x ∈ π2k X, we denote by x its counterpart in
+C2
+πkρ X. If we want to stress that we consider a certain spectrum as a C2 -spectrum, we will
+also sometimes indicate this by a bar; for example, we may write tmf1 (3) if we want to stress
+the C2 -structure of tmf1 (3).
+2.B. Cellularity. In a general triangulated category, it is conventional to say M is Kcellular if M is in the localizing subcategory generated by K (or equivalently by all integer
+suspensions of K). A reference in the case of spectra is [DGI06, Sec 4.1]. We say that a
+C2 -spectrum M is K-R-cellular (for a C2 -spectrum K) if it is in the localizing subcategory
+generated by the suspensions S kρ ⊗ K for all integers k. We note that this is the same as
+the localizing subcategory generated by integer suspensions of K and (C2 )+ ⊗ K because of
+the cofibre sequence
+(C2 )+ → S 0 → S σ .
+We say that a map N → M is a K-R-cellularization if N is K-R-cellular and the induced
+map
+Hom(K, N ) → Hom(K, M )
+
+is an equivalence of C2 -spectra. The K-R-cellularization is clearly unique up to equivalence.
+We note that cellularity and R-cellularity are definitely different. For example (C2 )+ is
+not S 0 -cellular, but it is S 0 -R-cellular.
+In this article, we will only use R-cellularity.
+2.C. The slice filtration. Recall from [HHR16, Section 4.1] or [Hil12] that the slice cells
+are the C2 -spectra of the form
+• S kρ of dimension 2k,
+• S kρ−1 of dimension 2k − 1, and
+• S k ⊗ (C2 )+ of dimension k.
+A C2 -spectrum X is ≤ k if for every slice cell W of dimension ≥ k + 1 the mapping space
+Ω∞ HomS (W, X) is equivariantly contractible. As explained in [HHR16, Section 4.2], this
+7
+
+leads to the definition of X → P k X, which is the universal map into a C2 -spectrum that is
+≤ k. The fibre of
+X → P kX
+is denoted by Pk+1 X. The k-slice Pkk X is defined as the fibre of
+P k X → P k−1 X
+
+or, equivalently, as the cofibre of the map Pk+1 X → Pk X. We have the following two useful
+propositions:
+2k−1
+Proposition 2.1 ([Hil12], Cor 2.12, Thm 2.18). If X is an even C2 -spectrum, then P2k−1
+X=
+0 for all k ∈ Z.
+
+Proposition 2.2 ([Hil12], Cor 2.16, Thm 2.18). If X is a C2 -spectrum such that the restric2k
+2
+tion map in π C
+kρ is injective, then P2k X is equivalent to the Eilenberg-MacLane spectrum
+2
+πC
+kρ X.
+This allows us to give a characterization of an Eilenberg-MacLane spectrum based on
+regular representation degrees.
+Corollary 2.3. Any even C2 -spectrum X with
+(
+A
+2
+πC
+kρ (X) =
+0
+
+if k = 0
+else
+
+for an abelian group A is equivalent to HA.
+Proof: By the last two propositions, we have
+(
+HA
+k
+Pk X ≃
+0
+
+if k = 0
+else
+
+By the convergence of the slice spectral sequence [HHR16, Theorem 4.42], the result follows.
+
+
+3. Anderson duality, Koszul complexes and Gorenstein duality
+3.A. Duality for abelian groups. It is convenient to establish some conventions for
+abelian groups to start with, so as to fix notation.
+Pontrjagin duality is defined for all graded abelian groups A by
+A∨ = HomZ (A, Q/Z).
+Similarly, the rational dual is defined by
+A∨Q = HomZ (A, Q).
+Since Q and Q/Z are injective abelian groups these two dualities are homotopy invariant
+and pass to the derived category. Finally the Anderson dual A∗ is defined by applying
+HomZ (A, ·) to the exact sequence
+0 −→ Z −→ Q −→ Q/Z −→ 0
+8
+
+so that we have a triangle
+A∗ −→ A∨Q −→ A∨ .
+
+If M is a free abelian group, then the Anderson dual is simply calculated by
+M ∗ = HomZ (M, Z)
+(since M is free, the Hom need not be derived).
+If M is a graded abelian group which is an F2 -vector space then up to suspension the
+Anderson dual is the vector space dual:
+M ∨ = HomF2 (M, F2 ) ≃ Σ−1 M ∗
+(since vector spaces are free, Hom need not be derived).
+3.B. Anderson duality. Anderson duality is the attempt to topologically realize the algebraic duality from the last subsection. It appears that it was invented by Anderson (only
+published in mimeographed notes [And69]) and Kainen [Kai71], with similar ideas by Brown
+and Comenetz [BC76]. For brevity and consistency, we will only use the term Anderson duality instead of Anderson–Kainen duality or Anderson–Brown–Comenetz duality throughout.
+We will work in the category of C2 -spectra, where Anderson duality was first explored by
+Ricka in [Ric14].
+Let I be an injective abelian group. Then we let I S denote the C2 -spectrum representing
+the functor
+X 7→ Hom(π∗C2 X, I).
+For an arbitrary C2 -spectrum, we define I X as the function spectrum F (X, I S ). For a general
+abelian group A, we choose an injective resolution
+A→I→J
+
+and define AX as the fibre of the map I X → J X . For example, we get a fibre sequence
+ZX −→ QX −→ (Q/Z)X .
+
+In general, we get a short exact sequence of homotopy groups
+C2
+C2
+0 → ExtZ (π−k−1
+(X), A) → πkC2 (AX ) → Hom(π−k
+(X), A) → 0.
+
+The analogous exact sequence is true for RO(C2 )-graded Mackey functor valued homotopy
+groups by replacing X by (C2 /H)+ ∧ ΣV X. Our most common choices will be A = Z and
+A = Z(2) .
+From time to time we we use the following property of Anderson duality: If R is a
+strictly commutative C2 -ring spectrum and M an R-module, then HomR (M, AR ) ≃ AM
+as R-modules as can easily be seen by adjunction.
+One of the reasons to consider Anderson duality is that it provides universal coefficient
+sequences. In the C2 -equivariant world, this takes the following form [Ric14, Proposition
+3.11]:
+C2
+C2
+2
+0 → Ext1Z (Eα−1
+(X), A) → (AE )C
+α (X) → HomZ (Eα (X), A) → 0,
+where E and X are C2 -spectra, α ∈ RO(C2 ) and A is an abelian group.
+Our first computation is the Anderson dual of the Eilenberg–MacLane spectrum of the
+constant Mackey functor Z.
+9
+
+Lemma 3.1. The Anderson dual of the Eilenberg-MacLane spectrum HZ (as an S-module)
+is given by
+ZHZ ≃ HZ∗ ≃ Σ2δ HZ,
+where δ = 1 − σ.
+Proof: The first equivalence follows from the isomorphisms
+π C2 (ZHZ ) ∼
+= HomZ (π C2 HZ, Z) ∼
+= Z∗ .
+Since
+
+∗
+
+−∗
+
+π∗C2 (S 2−2σ ⊗ HZ) = HC∗ 2 (S 2σ−2 ; Z) = H ∗ (S 2σ−2 / C2 ; Z),
+and S 2σ = S 0 ∗ S(2σ) is the unreduced suspension of of S(2σ), the second equivalence is a
+calculation of the cohomology of RP 1 .
+
+Remark 3.2. This proof shows that if C2 is replaced by a cyclic group of any order we still
+have
+ZHZ = HZ∗ ≃ Σλ HZ
+where λ =  − α (with  the trivial one dimensional complex representation and α a faithful
+one dimensional representation).
+Anderson duality works, of course, also for non-equivariant spectra. We learned the following proposition comparing the equivariant and non-equivariant version in a conversation
+with Nicolas Ricka.
+C
+
+Proposition 3.3. Let A be an abelian group. We have (AX )C2 ≃ A(X 2 ) for every C2 spectrum X.
+2
+Proof : Let inf C
+e Y denote the inflation of a spectrum Y to a C2 -spectrum with ‘trivial
+action’, i.e. the left derived functor of first regarding it as a naive C2 -spectrum with trivial
+action and then changing the universe. This is the (derived) left adjoint for the fixed point
+functor [MM02, Prop 3.4].
+Let I be an injective abelian group. Then there is for every spectrum Y a natural isomorphism
+[Y, (I X )C2 ] ∼
+= [inf C2 Y, I X ]C2
+
+e
+
+2
+∼
+= Hom(π0C2 (inf C
+e Y ⊗ X), I)
+∼
+= Hom(π0 (Y ⊗ X C2 ), I)
+C2
+∼
+= [Y, I (X ) ].
+
+Here, we use that fixed points commute with filtered homotopy colimits and cofibre sequences and therefore also with smashing with a spectrum with trivial action. Thus, there
+C
+is a canonical isomorphism in the homotopy category of spectra between I (X 2 ) and (I X )C2
+C
+that is also functorial in I (by Yoneda). For a general abelian group A, we can write A(X 2 )
+C
+C
+as the fibre of (I 0 )X 2 → (I 1 )X 2 (and similarly for the other side) for an injective resolution
+C
+0 → A → I 0 → I 1 . Thus, we obtain a (possibly non-canonical) equivalence between A(X 2 )
+and (AX )C2 .
+
+10
+
+Remark 3.4. An analogous result holds, of course, for every finite group G.
+3.C. Koszul complexes and derived power torsion. Let R be a non-equivariantly E∞
+C2 -ring spectrum and M be an R-module. In this section we will recall two versions of
+stable Koszul complexes. Among their merits is that they provide models for cellularization
+or R-cellularization in cases of interest for us. A basic reference for the material in this
+section is [GM95a].
+As classically, the r-power torsion in a module N can be defined as the kernel of N → N [ 1r ],
+we define the derived J-power torsion of M with respect to an ideal J = (x1 , . . . , xn ) ⊆
+C2
+(R) as
+πF
+1
+1
+]) ⊗R · · · ⊗R fib(R → R[ ]) ⊗R M.
+x1
+xn
+This is also sometimes called the stable Koszul complex and also denoted by K(x1 , . . . , xn ).
+As shown in [GM95a, Section 3], this only depends on the ideal J and not on the chosen
+generators. As algebraically, the derived functors of J-power torsion are the local cohomology
+groups, we might expect a spectral sequence computing the homotopy groups of ΓJ M in
+terms of local cohomology. As in [GM95a, Section 3], this takes the form
+ΓJ M = fib(R → R[
+
+C2
+HJs (πF+V
+M ) ⇒ πVC2−s (ΓJ M ).
+
+(3.5)
+
+Our second version of the Koszul complex can be defined in the one-generator case as
+κR (x) = holim Σ(1−l)|x| R/xl
+→
+
+C2
+for x ∈ πF
+(R).
+
+sequences
+
+Here, the map R/x → Σ−|x| R/xl+1 is induced by the diagram of cofibre
+l
+
+xl
+
+l
+
+Σ|x | R
+=
+
+
+l
+
+Σ|x | R
+
+xl+1 /
+
+/R
+
+
+x
+
+Σ−|x| R
+
+/ R/xl
+
+
+
+
+
+/ Σ−|x| R/xl+1
+
+C2
+More generally, we can make for a sequence x = (x1 , . . . , xn ) in πF
+(R) the definition
+
+κR (x; M ) := κR (x1 ) ⊗R · · · ⊗R κR (xn ) ⊗R M
+
+≃ holim Σ−((l1 −1)+···(ln −1))|x| M/(xl11 , . . . , xlnn )
+→
+
+The spectrum κR (x) comes with an obvious filtration by Σ(1−l)|x| R/xl with filtration quotients Σ−l|x| R/x. We can smash these filtrations together to obtain a filtration of κR (x)
+with filtration quotients wedges of summands of the form Σ−l1 |x1 |−···−ln |xn | R/(x1 , . . . , xn ) (see
+[Til13, 1.3.11-12] or [Til16, 2.8, 2.12]). Using the following lemma, we obtain also a corresponding filtration on ΓJ R.
+Lemma 3.6. For x as above, we have
+κR (x) ≃ Σ|x1 |+···+|xn |+n ΓJ R.
+Proof: See [GM95a, Lemma 3.6].
+11
+
+
+
+We can also define κR (x; M ) (and likewise the other versions of Koszul complexes) for an
+infinite sequence of xi by just taking the filtered homotopy colimit over all finite subsequences.
+Usually Lemma 3.6 breaks down in the infinite case.
+Remark 3.7. The homotopy colimit defining κR (x; M ) has a directed cofinal subsystem,
+both in the finite and in the infinite case. Indeed, the colimit ranges over all sequences
+(l1 , l2 , . . . ) with only finitely many entries nonzero. For the directed subsystem, we start
+with (0, 0, . . . ) and raise in the n-th step the first n entries by 1. Directed homotopy colimit
+are well-known to be weak colimits in the homotopy category of R-modules, i.e. every system
+of compatible maps induces a (possibly non-unique) map from the homotopy colimit [Mar83,
+Sec 3.1] [Sch12, Sec II.5].
+One of the reason for introducing ΓJ M is that it provides a model for the R-cellularization
+of M with respect to R/J = (R/x1 ) ⊗R · · · ⊗R (R/xn ) in the sense of Section 2.B.
+C2
+Proposition 3.8. Suppose that x1 . . . , xn ∈ π∗ρ
+R and set J = (x1 , . . . , xn ). Then ΓJ M →
+M is a R-cellularization with respect to R/J in the (triangulated) category of R-modules.
+
+Proof: Clearly, κR (x1 , . . . , xn ; M ) is R-cellular with respect to M/J; furthermore M/J is
+R/J-R-cellular as clearly M is R-cellular. To finish the proof, we have to show that
+HomR (R/J, ΓJ M ) → HomR (R/J, M )
+is an equivalence. Note that ΓJ M = Γxn (Γ(x1 ,...,xn−1 ) M ). Thus, it suffices by induction to
+show that
+HomR (A/x, Γx B) → HomR (A/x, B)
+is an equivalence for all R-modules A, B. This is equivalent to
+HomR (A/x, B[x−1 ]) = 0
+which is true as multiplication by x induces an equivalence
+x∗
+
+HomR (A, B[x−1 ]) −→ HomR (Σ|x| A, B[x−1 ]).
+
+Corollary 3.9. Let M be a connective R-module and A an abelian group. Then the Anderson
+C2
+dual AM is R-cellular with respect to R/J for every ideal J ⊂ πF
+finitely generated in degrees
+a + bσ with a ≥ 1 and a + b ≥ 1.
+Proof: By the last proposition, we have to show that ΓJ AM ≃ AM . For this it suffices to
+show that AM [x−1 ] is contractible for every generator x of J. As M is connective, we know
+that πa+bσ M = 0 if a < 0 and a + b < 0 (this follows, for example, using the cofibre sequence
+(C2 )+ → S 0 → S σ ). Thus, πa+bσ AM = 0 if a > 0 and a + b > 0. The result follows.
+
+12
+
+4. Real bordism and the spectra BP Rhni
+4.A. Basics and homotopy fixed points. The C2 -spectrum M R of Real bordism was
+originally defined by Araki and Landweber. In the naive model of C2 -spectra, where a
+C2 -spectrum is just given as a sequence (Xn ) of pointed C2 -spaces together with maps
+Σρ Xn → Xn+1
+
+it is just given by the Thom spaces M Rn = BU (n)γn with complex conjugation as C2 -action.
+Defining it as a strictly commutative C2 -orthogonal spectrum requires more care and was
+done in [Sch14, Example 2.14] and [HHR16, Section B.12]. An important fact is that the
+geometric fixed points of M R are equivalent to M O (first proven in [AM78] and reproven in
+[HHR16, Proposition B.253]).
+As shown in [Ara79] and [HK01, Theorem 2.33], there is a splitting
+M
+M R(2) ≃
+Σmi ρ BP R,
+i
+
+where the underlying spectrum of BP R agrees with BP . This splitting corresponds on
+geometric fixed points to the splitting
+M
+MO ≃
+Σmi HF2 .
+i
+
+As shown in [HK01] (see also Appendix A), the restriction map
+C2
+π∗ρ
+BP R → π2∗ BP
+
+is an isomorphism. Choose now arbitrary indecomposables vi ∈ π2(2i −1) BP and denote their
+C2
+C2
+We denote by BP Rhni the
+lifts to π(2
+i −1)ρ BP R and their images in π(2i −1)ρ M R by v i .
+quotient
+BP R/(v n+1 , v n+2 , . . . )
+in the homotopy category of M R-modules. At least a priori, this depends on the choice of
+vi .
+We want to understand the homotopy groups of BP Rhni. This was first done by Hu
+in [Hu02] (beware though that Theorem 2.2 is not correct as stated there) and partially
+redone in [KW13]. For the convenience of the reader, we will give the computation again.
+Note that our proofs are similar but not identical to the ones in the literature. The main
+difference is that we do not use ascending induction and prior knowledge of HZ to compute
+C2
+ΦC2 BP Rhni, but precise knowledge about πF
+BP R – this is not simpler than the original
+approach, but gives extra information about other quotients of BP R, which we will need
+later. We recommend that the reader looks at Appendix A for a complete understanding of
+the results that follow.
+We will use the Tate square [GM95b] and consider the following diagram in which the
+rows are cofibre sequences:
+BP Rhni ⊗ (EC2 )+
+
+
+BP Rhni
+
+≃
+
+(EC2 )+
+
+⊗ (EC2 )+
+
+/ BP Rhni
+
+/ BP Rhni ⊗ ẼC2
+
+/ ΣBP Rhni ⊗ (EC2 )+
+
+
+/ BP Rhni(EC2 )+
+
+
+/ BP Rhni(EC2 )+ ⊗ ẼC2
+
+
+/ ΣBP Rhni ⊗ (EC2 )+
+
+13
+
+After taking fixed points this becomes
+BP Rhnih C2
+
+
+=
+
+BP Rhnih C2
+
+/ BP RhniC2
+
+/ BP RhniΦ C2
+
+/ ΣBP Rhnih C
+
+
+/ BP Rhnih C2
+
+
+/ BP Rhnit C2
+
+
+/ ΣBP Rhnih C
+
+2
+
+2
+
+First, we compute the homotopy groups of the homotopy fixed points. For this we use the
+RO(C2 )-graded homotopy fixed point spectral sequence, described for example in [HM16,
+Section 2.3].
+Proposition 4.1. The RO(C2 )-graded homotopy fixed point spectral sequence
+E2 = H ∗ (C2 ; π e BP Rhni) ∼
+= Z(2) [v 1 , . . . , v n , u±1 , a]/2a ⇒ π C2 (BP Rhni(E C2 )+ )
+F
+
+F
+
+2i−1
+
+has differentials generated by d2i+1 −1 (u
+
+)=a
+
+2i+1 −1
+
+v i for i ≤ n and E2n+1 = E∞ .
+
+Proof : The description of E2n+1 is entirely analogous to the proof of A.2, using that
+i+1
+C2
+a2 −1 v i = 0 in πF
+BP Rhni(E C2 )+ . Now we need to show that there are no further difn+1
+ferentials: As every element in filtration f is divisible by af in E 2 , the existence of a
+nonzero dm (with m ≥ 2n+1 ) implies the existence of a nonzero dm with source in the 0-line.
+Moreover, a nonzero dm of some element ul v (for v a polynomial in the v i ) on the 0-line
+implies a nonzero dm on ul as v is a permanent cycle (in the image from BP R). The image
+0
+of such a differential must be of the form am ul v 0 , where v 0 is a polynomial in v 1 , . . . , v n . As
+n+1
+am v i = 0 for 1 ≤ i ≤ n in E 2 , the polynomial v 0 must be constant. Counting degrees, we
+see that
+0
+(2l − 1) − 2lσ = |ul | − 1 = |am ul | = 2l0 − (2l0 + m)σ
+and thus m = 2l − 2l0 = 1. This is clearly a contradiction.
+
+Corollary 4.2. We have
+n
+C2
+πF
+(BP Rhni(EC2 )+ ⊗ ẼC2 ) ∼
+= F2 [u±2 , a±1 ].
+
+n
+n+1
+In particular, we get π∗ BP RhnitC2 ∼
+and |x| = 2n+1 . These
+= F2 [x±1 ], where x = u2 a−2
+are understood to be additive isomorphisms.
+
+Proof: Recall that
+C2
+C2
+πF
+(BP Rhni(EC2 )+ ⊗ ẼC2 ) = πF
+(BP Rhni(EC2 )+ )[a−1 ].
+
+as S ∞σ is a model of ẼC2 . The result follows as all v i are a-power torsion, but u2 m is not. 
+n
+
+4.B. The homotopy groups of BP Rhni. Computing the homotopy groups of the fixed
+points is more delicate than the computation of the homotopy fixed points. We first have
+to use our detailed knowledge about the homotopy groups of BP R. Given a sequence
+l
+l
+l = (l1 , . . . ), we denote by BP R/v l the spectrum BP R/(v ii11 , v ii22 , . . . ), where ij runs over all
+indices such that lij 6= 0. Similarly BP R/v ji is understood to be BP R if j = 0. We use the
+analogous convention when we have algebraic quotients of homotopy groups.
+14
+
+We recommend the reader skips the proof of the following result for first reading, as the
+technical detail is not particularly illuminating.
+Proposition 4.3. Let k ≥ 1 and l = (l1 , l2 , . . . ) be a sequence of nonnegative integers with
+C2
+BP R)/v l if 0 ≤ c ≤ 2k+1 + 1, with a
+lk = 0. Then the element v k acts injectively on (π∗ρ−c
+splitting on the level of Z(2) -modules.
+C2
+BP R is isomorphic to the subalgebra of
+Proof: Recall from Appendix A that πF
+i+1 −1
+
+P/(2a, v i a2
+
+)
+i
+
+(where i runs over all positive integers) generated by v i (j) = u2 j v i (with i, j ∈ Z and i ≥ 0)
+and a, where P = Z(2) [a, v i , u±1 ]. The degrees of the elements are |a| = 1 − ρ and
+|v i (j)| = (2i − 1)ρ + 2i j(4 − 2ρ) = (2i − 1 − 2i+1 j)ρ + 2i+2 j.
+
+We add the relations v lii = 0 if li 6= 0.
+C2
+BP R)/v l is contained in the
+We will first show that the ideal of v k -torsion elements in (πF
+k+1
+ideal generated by a2 −1 and v sls −1 v s (j) for s with ls 6= 0 and j divisible by 2k−s if s < k.
+i+1
+Indeed, because the ideal (2a, v i a2 −1 , v l ) ⊂ P is generated by monomials, a polynomial in
+C2
+BP R)/v l if and only if each of its monomials define
+P defines a v k -torsion element in (πF
+v k -torsion elements. A monomial xP in P can only define a nonzero v k -torsion element in
+k+1
+C2
+(πF
+BP R)/v l if it is divisible by a2 −1 or v lss . In the latter case, xP is of the form vv lss um ,
+C2
+where v is a polynomial in the v i . This is divisible by v lss in πF
+BP R if and only if m is
+C2
+i
+divisible by 2 for some v i in v. Thus, xP defines a nonzero element x in (πF
+BP R)/v l such
+that v k x defines 0 only if 2k |m, which corresponds to the condition above.
+C2
+Let x be a nonzero v k -torsion element in (πF
+BP R)/v l , represented by a monomial in P .
+First assume that x is divisible by an with n ≥ 2k+1 − 1, but not by an+1 . Then, x is not
+divisible by any v i (j) with i ≤ k as an v i (j) = 0. We demand that x is in degree ∗ρ − c with
+c ≥ 0; in particular, x 6= an . Let v i (j) a divisor of x with minimal i. Thus, the degree of x
+must be of the form ∗ρ + 2i+2 m + n. We know that n ≤ 2i+1 − 2. The largest negative value
+the non-ρ-part can take is −2i+2 + 2i+1 − 2 = −2i+1 − 2. The statement about injectivity
+follows in this case as i > k.
+Now assume that x is a v k -torsion element not divisible by an for n ≥ 2k+1 − 1. Then x
+must be of the form v lss −1 v s (j) < where j is divisible by 2k−s if s < k. Observe that
+C2
+v lss −1 v s (j)v t (m) = v lss v t (2s−t j + m) = 0 ∈ (πF
+BP R)/v l
+
+for t < s, so that y is not divisible by any v t (m) for t < s. Likewise observe that if s ≤ t ≤ k,
+then
+C2
+v lss −1 v s (j)v t (m) = v lss v t (m + 2k−t j 0 ) = 0 ∈ (πF
+BP R)/v l ,
+
+where j = 2k−s j 0 . Thus, y is also not divisible by any v t (m) with s ≤ t ≤ k. As |v s (j)| =
+∗ρ + d, where d is divisible by 2k+2 , and the same is true for |v t (j)| with t > k, we see that
+if |x| is of the form ∗ρ − c with c ≥ 0, then we have
+c ≥ 2k+2 − (2k+1 − 2) = 2k+1 + 2.
+
+The statement about injectivity follows also in this case.
+15
+
+We still have to show the split injectivity. If v k y = 2z, but y not divisible by 2, then y
+k
+must be of the form 2vu2 j in P , where v is a polynomial in the v i . Thus, |y| = 2k+2 j + ∗ρ,
+so we are fine in degree ∗ρ − c for 0 ≤ c ≤ 2k+1 + 1 ≤ 2k+2 − 1.
+
+Remark 4.4. The exact bounds in the preceding proposition are not very important. The
+only important part for later inductive arguments is that the bound grows with k.
+Corollary 4.5. Let l = (l1 , l2 , . . . ) be a sequence with only finitely many nonzero entries and
+let j be the smallest index such that lj 6= 0. Then the map
+C2
+C2
+BP R)/v l → π∗ρ−c
+(BP R/v l )
+(π∗ρ−c
+
+is an isomorphism for 0 ≤ c ≤ 2j+1 .
+
+Proof: We use induction on the number n of nonzero indices in l. If n = 0 (and j = ∞),
+the statement is clear.
+For the step, define l0 to be the sequence obtained from l by setting lj = 0. Consider the
+short exact sequence
+o
+n
+0
+0
+l
+C2
+C2
+C2
+0 → (π∗ρ−c
+(B/v l ))/v jj → π∗ρ−c
+(B/v l ) → π∗ρ−(c+1)
+(B/v l ) lj → 0.
+vj
+
+Here, the notion {X}z denotes the elements in X killed by z.
+0
+0
+C2
+C2
+B)/v l as c ≤ 2j+2 ,
+Assume c ≤ 2j+1 . By the induction hypothesis, π∗ρ−c
+(B/v l ) ∼
+= (π∗ρ−c
+0
+l
+C2
+C2
+so that (π∗ρ−c
+B)/v l . Furthermore,
+(B/v l ))/v jj ∼
+= (π∗ρ−c
+n
+o
+n
+o
+0
+0
+C2
+C2
+π∗ρ−(c+1)
+(B/v l ) lj ∼
+B)/v l lj
+= (π∗ρ−(c+1)
+vj
+
+vj
+
+∼
+=0
+as follows from c + 1 ≤ 2j+2 and c + 1 ≤ 2j+1 + 1 by the induction hypothesis and Proposition
+C2
+C2
+
+4.3. Thus, we see that (π∗ρ−c
+(B/v l ) is an isomorphism.
+B)/v l → π∗ρ−c
+The following corollary is crucial:
+Corollary 4.6. Let I ⊂ Z(2) [v 1 , . . . ] be an ideal generated by powers of the v i . Then BP R/I
+is strongly even.
+Proof: As being strongly even is a property closed under filtered homotopy colimits, we are
+reduced to the case that I is finitely generated. By the last corollary, it suffices to show that
+2
+BP R itself is strongly even. That the Mackey functor π C
+∗ρ (BP R) is constant is clear from
+Theorem A.4.
+C2
+Assume that x is a nonzero element in π∗ρ−1
+BP R. We can assume that x is represented
+k l
+by a u v in the E2 -term of the homotopy fixed point spectral sequence for BP R, where v is
+a monomial in the v i (with v 0 = 2), k ≥ 0 and l ∈ Z. The element x is in degree k + 4l + ∗ρ.
+Let j ≥ 0 be the minimal number such that v j |v. Then 2j |l and k ≤ 2j+1 − 2. This is clearly
+in contradiction with k + 4l = −1.
+
+We recover the C2 -case of the reduction theorem of [HK01, Prop 4.9] and [HHR16, Thm
+6.5].
+16
+
+Corollary 4.7. There is an equivalence BP R/(v 1 , v 2 , . . . ) ≃ HZ(2) .
+Proof: This follows directly from the last corollary and Corollary 2.3.
+
+
+
+Corollary 4.8. Let I ⊂ Z(2) [v 1 , . . . ] be an ideal generated by powers of the v i . Then
+C2
+BP R/I ∼
+π∗ρ+1
+= F2 {a} ⊗ Z(2) [v 1 , v 2 , . . . ]/I.
+
+Proof: As BP R/I is strongly even, this follows from [HM16, Lemma 2.15].
+
+
+
+C2
+BP Rhni.
+This allows us to compute πF
+
+Proposition 4.9. The spectrum BP Rhni is the connective cover of its Borel completion
+BP Rhni(E C2 )+ . The cofibre C of BP Rhni → BP Rhni(E C2 )+ has homotopy groups
+n
+n
+C2
+πF
+C∼
+= F2 [a±1 , u−2 ]u−2 ,
+
+C2
+C2
+C.
+with the naming of the elements indicating the map πF
+BP Rhni(E C2 )+ → πF
+
+Proof : This is clear on underlying homotopy groups. Thus, we have only to show that
+BP RhniC2 → BP Rhnih C2 is a connective cover. For that purpose, it is enough to show that
+BP RhniΦ C2 is connective and that the fibre of BP RhniΦ C2 → BP Rhnit C2 has homotopy
+groups only in negative degrees.
+We have BP RhniΦ C2 ≃ BP RΦ C2 /(v n+1 , . . . ). As noted in the proof of Proposition
+A.1, the image of v i in M Rφ C2 is 0. As the quotient BP RΦ C2 /v n+1 , . . . can be taken in
+the category of M RΦ C2 -modules, we are only quotiening out by 0. It follows easily that
+Φ C2
+(BP R/(v n+1 , . . . , v n+m ))
+has in the homotopy groups an F2 in all degrees of the form
+P
+P
+n+m
+n+m
+i
+ε
+(|v
+|
++
+1)
+=
+i
+i=n+1 εi 2 with εi = 0 or 1. As geometric fixed point commute
+i=n+1 i
+with homotopy colimits, we see that π∗ BP RhniΦ C2 ∼
+= F2 [y] (additively) with |y| = 2n+1 . It
+k
+remains to show that y maps nonzero to π∗ BP Rhnit C2 (and hence maps to xk ).
+k
+C2
+It is enough to show that a−|y |−1 y k maps nonzero to πF
+ΣBP Rhni ⊗ (E C2 )+ in the se−|y k |−1 k
+quence coming from the Tate square, i.e. that a
+y is not in the image from (the fixed
+k
+C2
+points of) BP Rhni. But a−|y |−1 y k is in degree (|y k | + 1)ρ − 1 and π(|y
+k |+1)ρ−1 BP Rhni = 0
+by Corollary 4.6.
+
+Let us describe the homotopy groups of BP Rhni in more detail. We set v 0 = 2 for
+convenience. Denote by BB (for basic block ) the Z(2) [a, v 1 , . . . , v n ]/2a-submodule of
+k+1 −1
+
+Z(2) [v 1 , . . . , v n ]/(a2
+
+v k )0≤k≤n
+
+k
+
+generated by 1 and by v k (m) = u2 m v k for 0 ≤ k < n and 0 < m < 2n−k . By Proposition
+4.1, we see that
+π C2 BP Rhni(EC2 )+ ∼
+= BB[U ±1 ]
+F
+
+2n
+
+with U = u . Note that this isomorphism is not claimed to be multiplicative; in general,
+BP Rhni is not even known to have any kind of (homotopy unital) multiplication.
+17
+
+Define BB 0 to be the kernel of the map BB → F2 [a] given by sending all v k and v k (m) to
+zero. Set N B = Σσ−1 F2 [a]∨ ⊕ BB 0 , where N B stands for negative block. Then it is easy to
+see from the last proposition that
+π C2 BP Rhni ∼
+= BB[U ] ⊕ U −1 N B[U −1 ],
+F
+
+where this isomorphism is again only meant additively. We will be a little bit more explicit
+about the homotopy groups of BP Rhni in the cases n = 1 and 2 in Part 4.
+4.C. Forms of BP Rhni. Our next goal is to identify certain spectra as forms of BP Rhni.
+We take the following definition from [HM16]:
+
+Definition 4.10. Let E be an even 2-local commutative and associative C2 -ring spectrum
+up to homotopy. By [HM16, Lemma 3.3], E has a Real orientation and after choosing one,
+C2
+E. The 2-typification of this formal group law defines
+we obtain a formal group law on π∗ρ
+e
+C2
+C2
+∼
+a map π2∗ BP = π∗ρ BP R → π∗ρ E. We call E a form of BP Rhni if the map
+Z(2) [v 1 , . . . , v n ] ⊂ π ∗ρ BP R → π ∗ρ E
+
+is an isomorphism of constant Mackey functors.
+This depends neither on the choice of v i nor on the chosen Real orientation, as can be
+seen using that v i is well-defined modulo (2, v 1 , . . . , v i−1 ).
+Equivalently, one can say that E is a form of BP Rhni if and only if E is strongly even and
+its underlying spectrum is a form of BP hni. We want to show that every form of BP Rhni
+is also of the form BP R/v n+1 , v n+2 , . . . for some choice of elements v i . For this, we need the
+following lemma from [HM16, Lemma 3.4]:
+Lemma 4.11. Let f : E → F be a map of C2 -spectra. Assume that f induces isomorphisms
+C2
+C2
+πkρ
+E → πkρ
+E
+
+and
+
+πk E → πk F
+
+C2
+C2
+for all k ∈ Z. Assume furthermore that πkρ−1
+E → πkρ−1
+F is an injection for all k ∈ Z (for
+C2
+example, if πkρ−1 E = 0). Then f is an equivalence of C2 -spectra.
+
+Proposition 4.12. Let E be a form of BP Rhni. Then one can choose indecomposables
+C2
+v i ∈ π(2
+i −1)ρ BP R for i ≥ n + 1 such that E ≃ BP R/(v n+1 , v n+2 , . . . ).
+Proof: First choose any system of v i . Choose furthermore a Real orientation f : BP R → E
+and denote f (v i ) by xi . Define a multiplicative section
+C2
+C2
+s : π∗ρ
+E → π∗ρ
+BP R
+
+by s(xi ) = v i for 1 ≤ i ≤ n.
+Now define a new system of v i by
+
+= v i − s(f∗ (v i ))
+v new
+i
+
+for i ≥ n + 1. As these agree with v i mod (v 1 , . . . , v n ), they are still indecomposable. Furthermore, the v new
+are for i ≥ n + 1 clearly in the kernel of f∗ . Thus, we obtain a map
+i
+new
+C2
+BP Rhni/(v new
+,
+v
+n+1 n+2 , . . . ) → E that is an isomorphism on π∗ρ . By Corollary 4.6, the source
+is strongly even. By Lemma 4.11, the map is an equivalence.
+
+18
+
+Examples 4.13. We consider Real versions of the classical examples ku and tmf1 (3).
+(1) The connective Real K-theory spectrum kR(2) is a form of BP Rh1i. Indeed, the underlying spectrum ku(2) is well known to be a form of BP h1i and kR(2) is also strongly
+even (as can be seen by the results from [BG10, 3.7D] or from the computation in
+Section 11).
+(2) Define tmf1 (3) as the equivariant connective cover of the spectrum T mf1 (3), i.e.
+T mf1 (3) with the algebro-geometrically defined C2 -action (see [HM16, Section 4.1]
+for details). As shown in [HM16, Corollary 4.17], tmf1 (3)(2) is a form of BP Rh2i.
+By Proposition 4.12, we can construct tmf1 (3)(2) by killing a sequence v 2 , v 3 , . . .
+in BP R. This construction is used in [LO16] to define a C2 -equivariant version of
+tmf1 (3)(2) . In particular, we see (using the discussion before Proposition 4.23 in
+[HM16]) that T M F1 (3)(2) (with the algebro-geometrically defined C2 -action) agrees
+with the TMF1 (3)(2) of [LO16].
+5. Results and consequences
+In this section, we want to discuss our main results in more detail than in the introduction
+and we will also derive some consequences and give some examples. Recall to that purpose
+the notation from Sections 3.C and 4.A. Furthermore, we will implicitly localize everything
+at 2 so that Z means Z(2) etc. Our main theorem is the following:
+Theorem 5.1. Let (m1 , m2 , . . . ) be a sequence of nonnegative integers with only finitely
+m2
+1
+many entries bigger than 1 and let M be the quotient BP R/(v m
+1 , v 2 , . . . ), where we only
+C2
+M R such that
+quotient by the positive powers of v i . Denote by v the sequence of v i in πF
+0
+mi = 0, by |v| the sum of their degrees and by m the sum of all (mi − 1)|v i | for mi > 1.
+Then
+0
+ZM ≃ Σ−m +4−2ρ κM R (v; M ).
+The most important case is that mn+1 = mn+2 = · · · = 1 so that
+mn
+1
+M = BP Rhni/(v m
+1 , . . . , v n ).
+
+If k is the number of elements in v, we also get
+0
+
+ZM ≃ Σ−m +k+|v|+4−2ρ Γv M,
+
+where we view M as an M R-module.
+
+The first form will be proved as Theorem 10.1 and the second follows from it using Lemma
+3.6. The second form also follows from Corollary 7.5 (using that Γv preserves cofibre sequences to pass to quotients of BP Rhni).
+Example 5.2. ZBP Rhni ≃ Σn+Dn ρ+4−2ρ Γ(v1 ,...,vn ) BP Rhni for Dn = |v1 | + · · · + |vn |. This says
+that BP Rhni has Gorenstein duality with respect to HZ ≃ BP Rhni/(v 1 , . . . , v n ). (The last
+equivalence follows from Corollary 4.7.)
+Example 5.3. Set kR(n) = BP Rhni/(v 1 , . . . , v n−1 ) to be connective integral Real Morava
+K-theory and KR(n) = kR(n)[v −1
+n ] its periodic version. Then
+ZkR(n) ≃ Σ1+|vn |+4−2ρ Γvn kR(n)
+n
+
+≃ Σ(2 −3)ρ+4 cof (kR(n) → KR(n))
+19
+
+This includes for n = 1 the case of usual (2-local) connective Real K-theory.
+Example 5.4. To have a slightly stranger example, take M = BP Rh3i/(v 41 , v 23 ). Then
+ZM ≃ Σ5−9ρ Γv2 M.
+So far, we have only talked about quotients of BP R. This does not include important Real
+spectra like the Real Johnson–Wilson theories ER(n) = BP Rhni[v −1
+n ] or the (integral) Real
+Morava K-theories KR(n). For this, we have to study the behaviour of our constructions
+under localizations.
+Let M be an RO(C2 )-graded Z[v]-module, where v has some degree |v| ∈ RO(C2 ). We
+say that M has bounded v-divisibility if for every degree a + bσ, there is a k such that
+v k : Ma+bσ−|vk | → Ma+bσ
+
+is zero. We will also apply the concept to modules that are just Z|v|-graded.
+Lemma 5.5. The class of RO(C2 )-graded Z[v]-modules of bounded v-divisibility is closed
+under submodules, quotients and extensions.
+Proof: This is clear for submodules and quotients. Let
+0→K→M →N →0
+
+be a short exact sequence of Z[v]-modules where K and N are of bounded v-divisibility. For
+a given degree α ∈ RO(C2 ), we know that there is a k such that v k maps trivially into Kα .
+Furthermore, there is an n such that v n maps trivially into Nα−k|v| . Thus, multiplication by
+v n+k is the zero map Mα−(k+n)|v| → Mα .
+
+C2
+Let M be an M R-module. We say that M is of bounded v n -divisibility if both πF
+M and
+π∗e M are of bounded v n -divisibility. This is, for example, true if M is connective.
+
+Lemma 5.6. We have the following two properties of v n -divisiblity.
+(1) Being of bounded v n -divisibility is closed under cofibres and suspensions.
+C2
+(2) An M R-module M is of bounded v n -divisibility if and only if π∗ρ
+M and π∗e M are of
+bounded v n -divisibility.
+Proof: Both statements follow from the last lemma. For the second item, we additionally
+use the exact sequence
+C2
+C2
+e
+e
+M
+πa+b+1
+M → πa+(b+1)σ
+M → πa+bσ
+M → πa+b
+
+induced by the cofibre sequence
+
+(C2 )+ → S 0 → S σ .
+
+Lemma 5.7. If M has bounded v n -divisibility, then there is a natural equivalence
+
+
+vn
+−1
+|v n |
+M [v n ] ≃ Σ holim · · · → Σ Γvn M −→ Γvn M
+of M R-modules.
+
+←
+
+20
+
+
+
+v
+
+n
+N ) of M R-modules to
+Proof: We apply the endofunctor H : N 7→ holim(· · · → Σ|vn | N −→
+←
+the cofibre sequence
+
+Γvn M → M → M [v −1
+n ].
+
+−1
+Clearly H(M [v −1
+n ]) ≃ M [v n ]. Thus, we just have to show that H(M ) ≃ 0. This follows by
+
+the lim1 -sequence and bounded v n -divisibility.
+
+Lemma 5.8. Let B be a quotient of BP R by powers of the v i . Then B[v −1 ] has bounded
+v n -divisibility if v is a product of v i not containing v n . Hence, the same is also true for the
+stable Koszul complex Γv B, where v is a sequence of v i not containing v n .
+C2
+and on π∗e . On
+Proof : By Lemma 5.6, it is enough to check the first statement on π∗ρ
+the latter, it is clear and the former is isomorphic to it by Corollary 4.6. For the second
+statement we use that Γv B is the fibre of B → Č(v; B), where Č(v; B) has a filtration with
+C2
+subquotients M R-modules of the form Σ? B[x−1 ] for some x ∈ πF
+M R [GM95a, Lemma 3.7].
+Thus, the second statement follows from Lemma 5.6.
+
+
+Theorem 5.9. Let the notation be as in Theorem 5.1 and assume for simplicity that only
+finitely many mi are zero and that mn = 0. Then
+−1
+
+0
+
+ZM [vn ] ≃ Σ−m +|v|+(k−1)+4−2ρ Γv\vn M.
+Here v \ v n denotes the sequence of all v i such that mi = 0 and i 6= n.
+Proof: The preceding lemmas imply the following chain of equivalences:
+−1
+
+vn
+
+vn
+
+holim(M −
+→Σ−|vn | M −→··· )
+
+ZM [vn ] ≃ Z →
+
+v
+
+n
+ZM )
+≃ holim(· · · −→
+
+←
+
+
+
+0
+vn
+≃ Σ−m +|v|+k+4−2ρ holim · · · −→
+Γv M
+←
+
+
+0
+vn
+≃ Σ−m +|v|+k+4−2ρ holim · · · −→
+Γvn (Γv\vn M )
+←
+−m0 +|v|+(k−1)+4−2ρ
+
+≃Σ
+
+(Γv\vn M )[v −1
+n ]
+
+0
+
+≃ Σ−m +|v|+(k−1)+4−2ρ Γv\vn (M [v −1
+n ])
+
+
+Example 5.10. We recover the following result by Ricka [Ric14]:
+ZKR(n) ≃ Σ4−2ρ KR(n).
+Here, KR(n) denotes integral Morava K-theory ER(n)/(v 1 , . . . , v n−1 ).
+21
+
+Example 5.11. In the following, we will use that there are invertible classes x, v n ∈
+n 2n (1−2n−1 )
+C2
+u
+.
+ER(n) of degree −22n+1 + 2n+2 − ρ and (2n − 1)ρ respectively, where x = v 1−2
+πF
+n
+ZER(n) ≃ ΣDn−1 ρ+(n−1)+4−2ρ Γ(v1 ,...,vn−1 ) ER(n)
+≃ Σ−(n+2)ρ+(n+3) Γ(v1 ,...,vn−1 ) ER(n)
+2n+1 −2n+2 )+n+3
+
+≃ Σ(n+2)(2
+
+Γ(v1 ,...,vn−1 ) ER(n).
+
+This says that ER(n) has Gorenstein duality with respect to ER(n)/(v 1 , . . . , v n−1 ) = KR(n).
+Note that we can replace the ideal (v 1 , . . . , v n−1 ) by an ideal generated in integral degrees,
+n−1
+namely (v 1 x, . . . , v n−1 x2 −1 ).
+Example 5.12. Recall from [HM16] the spectra tmf1 (3), T mf1 (3) and T M F1 (3) and the
+corresponding C2 -spectra tmf1 (3), T mf1 (3) and T M F1 (3). Recall that we have π∗ tmf1 (3) =
+Z[a1 , a3 ], where a1 and a3 can be identified with the images of the Hazewinkel generators v1
+and v2 , and that tmf1 (3) is a form of BP Rh2i (as already discussed in Example 4.13). This
+gives the Anderson dual of tmf1 (3). Tweaking the last theorem a little bit, allows also to
+show that
+ZT M F1 (3) ≃ Σ5+2ρ Γv1 T M F1 (3).
+
+We can also recover one of the main results of [HM16], namely that ZT mf1 (3) ≃ Σ5+2ρ T mf1 (3).
+Indeed, T mf1 (3) is by [HM16, Section 4.3] the cofibre of the map
+Γv1 ,v2 tmf1 (3) → tmf1 (3).
+
+As the source is equivalent to Σ−6−2ρ Ztmf1 (3) , applying Anderson duality shows that ZT mf1 (3)
+is the fibre of
+Σ6+2ρ tmf1 (3) → Σ6+2ρ Γv1 ,v2 tmf1 (3).
+
+This is equivalent to Σ5+2ρ T mf1 (3). This example does not require 2-localization, only that
+3 is inverted.
+Remark 5.13. By Proposition 3.3, all the results in this section have direct implications for
+the Anderson duals of the fixed point spectra. These are easiest to understand in the case
+of ER(n) = (ER(n))C2 , where we get
+2n+1 −2n+2 )+n+3
+
+ZER(n) ≃ Σ(n+2)(2
+
+Γ(v1 x,...,vn−1 x2n −1 ) ER(n).
+
+Part 2. The Gorenstein approach
+In this part, we explain the Gorenstein approach to prove Gorenstein duality, first for kR
+and then for BP Rhni.
+6. Connective K-theory with Reality
+The present section considers K-theory with reality, which is more familiar than BP Rhni
+for general n, and no 2-localization is necessary. The arguments are especially simple, firstly
+because kR is a commutative ring spectrum, and secondly becaue we only need to consider
+principal ideals. Simple as the argument is, we see in Section 11 that the consequences for
+coefficient rings are interesting.
+22
+
+6.A. Gorenstein condition and Matlis lift. It is well known that there is a cofibre
+sequence
+v
+Σ ku −→ ku −→ HZ.
+If one knows the coefficient ring ku∗ = Z[v], this is easy to construct, since we can identify
+ku/v as the Eilenberg-MacLane spectrum from its homotopy groups.
+There is a version with Reality [Dug05]. Indeed, we may construct the cofibre sequence
+v
+
+Σρ kR −→ kR −→ HZ,
+where kR/v is identified using Corollary 2.3
+Since the Dugger sequence is self dual we immediately deduce that kR is Gorenstein.
+Lemma 6.1.
+HomkR (HZ, kR) = Σ−ρ−1 HZ
+and kR −→ HZ is Gorenstein.
+Proof: Apply HomkR (·, kR) to the Dugger sequence.
+
+
+
+To actually get Gorenstein duality we need to construct a Matlis lift (adapted from [DGI06,
+Section 6]), which is a counterpart in topology of the injective hull of the residue field.
+Definition 6.2. If M is an HZ-module, we say that a kR-module M̃ is a Matlis lift of M
+if M̃ is HZ-R-cellular and
+HomkR (T, M̃ ) ≃ HomHZ (T, M )
+for all HZ-modules T .
+The Anderson dual provides one such example.
+Lemma 6.3. The kR-module Σ−2(1−σ) ZkR is a Matlis lift of HZ. Indeed,
+(i) ZkR is HZ-R-cellular and
+(ii) There is an equivalence
+
+where δ = 1 − σ.
+
+Σ2δ HZ ≃ HZ∗ = HomkR (HZ, ZkR ),
+
+Proof: One could prove the first part from the slice tower, but it also follows directly from
+Corollary 3.9.
+The second statement is immediate from Lemma 3.1.
+
+6.B. Gorenstein duality. We next want to move on to Gorenstein duality, so we write
+E = HomkR (HZ, HZ).
+Combining Lemmas 6.1 and 6.3, we have
+(6.4)
+
+HomkR (HZ, kR) ≃ Σ−ρ−1 HZ ≃ HomkR (HZ, Σ−4+σ ZkR )
+
+We now want to remove the HomkR (HZ, ·) from this equivalence.
+23
+
+Lemma 6.5. (Effective constructibility) The evaluation map
+HomkR (HZ, M ) ⊗E HZ −→ M
+
+is HZ-R-cellularization for every left kR-module M .
+
+Proof : Since the domain is clearly HZ-R-cellular, it is enough to show the map is an
+equivalence for all cellular modules M .
+This is clear for M = HZ. The class of M for which the statement is true is closed under
+(i) triangles, (ii) coproducts (since HZ is small) and (iii) suspensions by representations.
+This gives all R-cellular modules.
+
+Local cohomology gives an alternative approach to cellularization. Recall that we define
+the v-power torsion of a kR-module M by the fibre sequence
+Γv M −→ M −→ M [1/v].
+
+The following lemma is a special case of Proposition 3.8.
+Lemma 6.6. The map
+is HZ-R-cellularization.
+
+Γv M −→ M
+
+It remains to check that the two E-actions on HZ coincide.
+Lemma 6.7. There is a unique right E-module structure on HZ.
+
+Proof: Suppose that HZ0 is a right E-module whose underlying C2 -spectrum is equivalent
+to the Eilenberg-MacLane spectrum HZ. We first claim that HZ0 can be constructed as an
+E-module with cells in degrees kρ for k ≤ 0:
+−2ρ
+HZ0 ≃E SE0 ∪ e−ρ
+∪ ···
+E ∪ eE
+
+Once that is proved, we argue as follows. If HZ00 is another right E-module with underlying
+C2 -spectrum HZ, we may construct a map HZ0 −→ HZ00 skeleton by skeleton in the usual
+way. We start with the E-module map E = (HZ0 )(0) −→ HZ0 giving the unit, and successively
+extend the map over the cells of HZ0 . At each stage the obstruction to the existence of an
+C2
+extension over (HZ0 )−kρ lies in π−kρ−1
+(HZ00 ). These groups are zero. We end with a map
+which is an isomorphism on 0th homotopy Mackey functors and therefore an equivalence.
+For the cell-structure, it is enough to show that for every right E-module HZ0 of the
+homotopy type of the Eilenberg–MacLane spectrum HZ, there is a map E → HZ0 of right
+E-modules whose fibre has the homotopy type of Σ−ρ−1 HZ. Indeed, suppose we have already
+constructed a right E-module (HZ0 )(n) with an E-map to HZ0 with fibre of the homotopy type
+Σ−(n+1)ρ−1 HZ. Then it is easy to see that the cofibre (HZ0 )(n+1) of the map Σ−(n+1)ρ−1 E →
+Σ−(n+1)ρ−1 HZ → (HZ0 )(n) has the analogous property. Taking the homotopy colimit, we
+get a map holim(HZ0 )(n) → HZ0 with fibre holim Σ−(n+1)ρ−1 HZ, which is clearly zero (e.g.
+→
+
+→
+
+by Lemma 4.11 and the fact that HZ is even; we refer to [Ric14, Section 3.4] for a table of
+2
+πC
+F HZ).
+We choose the map f : E → HZ0 representing 1 ∈ π0C2 HZ0 and call the fibre F . We want
+to show that f agrees with the canonical map E → HZ on homotopy groups of the form
+C2
+C2
+πk−σ
+for k ∈ Z. Indeed, the only nonzero class in HZ0 in these degrees is a ∈ π−σ
+HZ0 , which
+24
+
+C2
+C2
+C2
+Σ−1−ρ HZ for
+F ∼
+E as it comes from the sphere. Thus, πk−σ
+has to be hit by a ∈ π−σ
+= πk−σ
+
+all k and hence F ≃ Σ−1−ρ HZ as C2 -spectra, as we needed to show.
+
+From this the required statement follows.
+Corollary 6.8. (Gorenstein duality) There is an equivalence of kR-modules
+Γv kR ≃ Σ−4+σ ZkR . 
+Proof: By (6.4) and Lemma 6.7, we know that
+HomkR (HZ, kR) ⊗E HZ ≃ HomkR (HZ, Σ−4+σ ZkR ) ⊗E HZ.
+
+By Lemma 6.5, the two sides are the cellularizations of kR and Σ−4+σ ZkR respectively. By
+Lemmas 6.6 and 6.3, the former is Γv kR and the latter is Σ−4+σ ZkR itself.
+
+The implications of this equivalence for the coefficient ring are investigated in Section 11.
+7. BP hni with Reality
+We now turn to the case of BP Rhni for a general n. The counterpart of the argument of
+Section 6 is a little simpler when BP Rhni is a commutative ring spectrum. For n = 1 and
+n = 2, the spectra kR, and tmf1 (3), are both known to be a commutative ring spectra, and
+their 2-localizations give BP Rhni when n = 1 and n = 2 respectively. However for higher n
+it is not known that BP Rhni is a commutative ring spectrum. This is a significant technical
+issue, but one that is familiar when working with non-equivariant BP -related theories since
+BP is not known to be a commutative ring. The established method for getting around this
+is to use the fact that BP and BP hni are modules over the commutative ring M U . We will
+adopt precisely the same method by working with M R-modules. The only real complication
+is that we are forced to work with spectra whose homotopy groups are bigger than we might
+like, but if we focus on the relevant part, it causes no real difficulties.
+7.A. Gorenstein condition and Matlis lift. As mentioned in the introduction of this
+section, we will work in the setting of M R-modules. More precisely, we will always (implicitly) localize at 2 and set S = M R(2) . As discussed in Section 4.A, we can define S-modules
+BP Rhni, once we have chosen a sequence of v i (for example, the Hazewinkel or Araki generators).
+The ideal
+J n = (v 1 , . . . , v n )
+plays a prominent role, and we will abuse notation by writing
+v
+
+and then
+In particular,
+
+v
+
+v
+
+n
+1
+2
+S/J n := cof (S −→
+S) ⊗S cof (S −→
+S) ⊗S · · · ⊗S cof (S −→
+S),
+
+M/J n := M ⊗S S/J n .
+
+BP Rhni/J n = BP Rhni/v n /v n−1 / · · · /v 1 ≃ HZ
+by the C2 -case of the reduction theorem, here proved as Corollary 4.7.
+25
+
+If BP Rhni is a ring spectrum
+HomBP Rhni (HZ, M ) = HomBP Rhni (BP Rhni ⊗S S/J n , M ) = HomS (S/J n , M ),
+
+so that the right hand side gives a way for us to express the fact that certain BP Rhnimodules (such as BP Rhni and ZBP Rhni ) are Matlis lifts, using only module structures over
+S.
+Applying this when M = BP Rhni, we obtain the Gorenstein condition.
+Lemma 7.1. The map BP Rhni −→ HZ is Gorenstein of shift −Dn ρ − n in the sense that
+where
+
+HomS (S/J n , BP Rhni) ≃ Σ−Dn ρ−n HZ,
+
+
+
+Dn ρ = |v n | + |v n−1 | + · · · + |v 1 | = 2n+1 − n − 2 ρ.
+Proof: Since each of the maps v i : Σ|vi | S −→ S is self-dual, for any S-module M , we have
+HomS (S/J n , M ) ≃ Σ−Dm ρ−n S/J n ⊗S M.
+
+
+
+Applying this when M = ZBP Rhni , we obtain the Anderson Matlis lift.
+Lemma 7.2. The Anderson dual of BP Rhni is a Matlis lift of HZ∗ in the sense that
+(i) ZBP Rhni is HZ-R-cellular and
+(ii) There is an equivalence
+Σ2−2σ HZ ≃ HZ∗ ≃ HomS (S/J n , ZBP Rhni ).
+Proof: One could prove the first part from the slice tower, but it also follows directly from
+Corollary 3.9.
+For the second statement observe that
+HomS (S/J n , ZBP Rhni ) ≃ HomS (S/J n ⊗S BP Rhni, ZS ) ≃ ZHZ .
+
+Thus, Lemma 3.1 implies the statement.
+
+
+
+7.B. Gorenstein duality. Throughout this section, we will write R = BP Rhni for brevity.
+Combining Lemmas 7.1 and 7.2, we have an equivalence of S-modules
+HomS (S/J n , R) ≃ Σ−Dn ρ−n HZ ≃ HomS (S/J n , Σ−(Dn +n+2)−(Dn −2)σ ZR )
+
+We now want to remove the HomS (S/J n , ·) from this equivalence. The endomorphism
+ring
+Een = HomS (S/J n , S/J n )
+of the small S-module S/J n , replaces En = HomR (HZ, HZ) from the case that R = BP Rhni
+is a ring spectrum. We note that
+Een ⊗S R = HomS (S/J n , S/J n ) ⊗S R ≃ HomS (S/J n , S/J n ) ⊗S R).
+If R = BP Rhni were a commutative ring, this would be a ring equivalent to HomR (HZ, HZ).
+In any case, the following is proved exactly like Lemma 6.5
+26
+
+Lemma 7.3. (Effective constructibility) The evaluation map
+HomS (S/J n , M ) ⊗Een S/J n −→ M
+is S/J n -R-cellularization.
+
+
+
+Of course local cohomology gives an alternative approach to cellularization. Recall that
+we define
+ΓJ n M = Γv1 S ⊗S Γv2 S ⊗S · · · ⊗S Γvn S ⊗S M.
+Then Proposition 3.8 gives the following lemma.
+Lemma 7.4.
+is HZ-R-cellularization.
+
+ΓJ n M −→ M
+
+It remains to check that the two Een actions on HZ coincide. For kR (i.e., n = 1) we
+showed there was a unique right En -module structure on HZ. This may be true for Een -module
+structures, but we will instead just prove in the next subsection that the two particular Een modules that arose from the left and right hand ends of the first display of this subsection
+are equivalent.
+The required Gorenstein duality statement follows. Its implications for the coefficient ring
+for n = 2 are investigated explicitly in Section 13.
+Corollary 7.5. (Gorenstein duality) There is an equivalence of M R-modules
+ΓJ n R ≃ Σ−(Dn +n+2)−(Dn −2)σ ZR
+with R = BP Rhni.
+Proof: We will argue in Subsection 7.C that the equivalence
+HomS (S/J n , R) ≃ HomS (S/J n , Σ−Dn ρ−n−2δ ZR ),
+is in fact an equivalence of right modules over Een . By Lemma 7.3, R and Σ−(Dn +n+2)−(Dn −2)σ ZR
+have equivalent S/J n cellularizations. We have seen above that the cellularization of R is
+ΓJ n BP Rhni and that Σ−Dn ρ−n−2δ ZR itself is cellular.
+
+7.C. The equivalence of induced and coinduced Matlis lifts of HZ. For brevity we
+will still write R = BP Rhni, and note that we have a map S = M R −→ BP Rhni = R.
+The two S-modules that concern us are of a very special sort, one looks as if it is obtained
+from an S-module by ‘extension of scalars from S to R’ and one looks as if it is obtained by
+‘coextension of scalars from S to R’.
+Lemma 7.6. We have equivalences of right Een -modules
+HomS (S/J n , R) ≃ HomS (S/J n , S) ⊗S R.
+HomS (S/J n , ZR ) = HomS (R, HomS (S/J n , ZS ))
+27
+
+Proof: The first equivalence is immediate from the smallness of S/J n .
+The second equivalence follows from the equivalence
+ZR ≃ HomS (R, ZS )
+of S-modules.
+
+
+
+Suspending the equivalences from Lemma 7.6 so that we are comparing two Een -modules
+equivalent to HZ (see Lemma 7.2) we have
+Y1 = HomS (S/J n , ΣDn ρ+n R) ≃ HomS (S/J n , ΣDn ρ+n S) ⊗S R = X1 ⊗S R
+and
+Y2 = HomS (S/J n , Σ2δ ZR ) ≃ HomS (S, HomS (S/J n , Σ2δ ZS )) = HomS (R, X2 ).
+In Subsection 7.D we will construct an Een -map α : X1 −→ Y2 and then argue in Subsection
+7.E that this extends along X1 = X1 ⊗S S −→ X1 ⊗S R = Y1 to give a map α̃ : Y1 −→ Y2
+which is easily seen to be an equivalence: it is clearly a ∗ρ− isomorphism and hence an
+equivalence by Lemma 4.11.
+To see our strategy, note that the extension problem
+X1
+
+α
+
+
+
+j j
+
+X1 ⊗S R
+
+j
+
+/ HomS (S/J n , HomS (R, ZS ))
+j5
+j j
+j j
+α̃
+
+in the category of Een -modules is equivalent to the extension problem
+X1 ⊗Een S/J n ⊗S R
+
+
+n
+n n α̃0
+n
+n
+
+α0
+
+/ S
+n6 Z
+n
+n
+
+X1 ⊗Een S/J n ⊗S R ⊗S R
+in the category of S-modules. The point is that by the defining property of the Anderson
+dual, this latter extension problem can be tackled by looking in π0C2 . The 0th homotopy
+C2
+groups of the spectra on the left are easily calculated from the known ring πF
+(HZ).
+7.D. Construction of the map α. We construct the map α using a similar method as in
+the proof of Lemma 6.7.
+Lemma 7.7. There is a map
+α : X1 −→ Y2
+
+of right Een -modules that takes the image of 1 ∈ π0C2 (S) to a generator of π0C2 (HZ) = Z.
+Proof : First we claim that X1 has a Een -cell structures with one 0-cell and other cells in
+dimensions which are negative multiples of ρ. More precisely, there is a filtration
+[0]
+[1]
+[2]
+Een ≃ X1 → X1 → X1 → · · · → X1
+
+28
+
+[d]
+
+so that X1 ≃ holim X1 and there are cofibre sequences
+→
+
+d
+
+[d−1]
+
+X1
+
+[d]
+
+−→ X1 −→
+
+_
+
+Σ−dρ Een .
+
+By definition X1 = HomS (S/J n , ΣDn ρ+n S). By Proposition 3.8 and Lemma 3.6, this is
+equivalent to
+HomS (S/J n , ΣDn ρ+n ΓJ n S) ≃ HomS (S/J n , κS (v 1 , . . . , v n ))
+because ΓJ n S → S is S/J n -R-cellularization. The usual construction of the stable Koszul
+complex from the unstable Koszul complex recalled in Subsection 3.C, shows that
+κS (v 1 , . . . , v n )
+has a filtration with subquotients sums of (−kρ)-fold suspensions of S/J n . This induces a
+corresponding filtration on X1 .
+As in Lemma 6.7 we may construct α by obstruction theory. Indeed, we start by choosing
+[0]
+[0]
+a map Een = X1 −→ Y2 taking the unit to a generator. At the dth stage we have a problem
+[d−1]
+
+X1
+
+
+
+[d]
+
+{
+
+{
+
+{
+
+/ Y2
+{=
+
+X1
+
+The obstruction to extension is in a finite product of groups
+C2
+(HZ) = 0
+[Σ−dρ−1 Een , Y2 ]En = π−dρ−1
+e
+
+C2
+where the vanishing is from the known value of πF
+(HZ).
+
+
+
+7.E. The map α̃. Referring to the second extension problem diagram above, we note
+S/J n ⊗S R ≃ HZ as S-modules. Thus, we have to solve the lifting problem
+X1 ⊗Een HZ ⊗S S
+1⊗1⊗π
+
+
+
+pp
+
+α0
+
+/ ZS
+p8
+p
+p
+
+p pα̃0
+
+X1 ⊗Een HZ ⊗S R
+where HZ is equipped with some Een -module structure. Denote the upper left corner by T .
+The map T → T ⊗S R is a split inclusion on underlying M U -modules. Indeed,
+T ≃ X1 ⊗Een S/J n ⊗S R
+and the map R → R ⊗S R is a split inclusion on underlying spectra because BP hni has the
+structure of a homotopy unital M U -algebra [EKMM97, V.2.6].
+29
+
+By the definition of Anderson duals, we have a diagram of short exact sequences:
+0
+
+0
+
+/ Ext1 (π C2 (T ⊗S R), Z)
+
+/ [T ⊗S R, ZS ]S
+
+/ HomZ (π C2 (T ⊗S R), Z)
+
+/0
+
+
+/ Ext1 (π C2 (T ), Z)
+
+
+/ [T, ZS ]S
+
+
+/ HomZ (π C2 (T ), Z)
+
+/0
+
+Z
+
+−1
+
+Z
+
+−1
+
+0
+
+0
+
+We want to show that the maps πkC2 T → πkC2 T ⊗S R are split injections for k = 0, −1,
+which solves the problem. For the computation of π∗C2 T recall from the last section that X1
+[x]
+has a filtration starting with X1 = Een and with subquotients sums of terms of the form
+Σ−dρ Een . Thus, T obtains a filtration starting with T [1] = HZ and with subquotients sums
+of terms of the form Σ−dρ HZ. The map HZ = T [1] → T clearly induces isomorphisms on
+2
+πC
+k for k = 0, −1 by the known homotopy groups of HZ (see e.g. [Ric14, Section 3.4] for a
+C2
+2
+table). Thus, π C
+−1 T = 0 and π 0 T = Z.
+If we have a map Z → M from the constant Mackey functor, it is a split injection on
+(C2 /C2 ) if it is one on (C2 /e). But we have already seen above that on underlying spectra
+T → T ⊗S R is a split inclusion. Thus, we have shown that πkC2 T → πkC2 (T ⊗S R) is split
+injective, which provides the map α̃0 .
+
+Part 3. The hands-on approach
+In this part, we give a different way to compute the Anderson dual of BP Rhni by first
+computing the Anderson dual of BP R itself. Again, we will first do the case of kR.
+8. The case of kR again
+To illustrate our strategy, we give an alternative calculation of the Anderson dual of kR.
+This can also be deduced from our main theorem below, but it might be helpful to see the
+proof in this simpler case first. General references for the RO(C2 )-graded homotopy groups
+of kR are [BG10, Section 3.7] or Section 11.B.
+We want to show the following proposition:
+Proposition 8.1. There is an equivalence κkR (v) → Σ2ρ−4 ZkR .
+
+Recall here that v ∈ πρC2 kR is the Bott element for Real K-theory and
+κkR (v) = hocolim Σ−(n−1)ρ kR/v n .
+n
+
+Our idea is simple: To obtain a map from the homotopy colimit, we have just to give maps
+Σ−(n−1)ρ kR/v n → Σ2ρ−4 ZkR
+
+that are compatible in the homotopy category (see Remark 3.7). We will show in the next
+lemma that these maps are essentially unique: The Mackey functor of homotopy classes of
+kR-linear maps Σ−(n−1)ρ kR/v n → Σ2ρ−4 ZkR is isomorphic to Z and the precomposition with
+the map Σ−(n−1)ρ kR/v n → Σ−nρ kR/v n+1 induces the identity on Z.
+Choosing the C2 -equivariant map κkR (v) → Σ2ρ−4 ZkR that corresponds to 1 ∈ Z for every
+n induces an equivalence on underlying homotopy groups. By Lemma 4.11 the result follows
+30
+
+as soon as we have established that κkR (v) is strongly even and that the Mackey functor
+π ∗ρ Σ2ρ−4 ZkR is constant. These two facts will also be shown in the following lemma, finishing
+the proof of the proposition.
+Lemma 8.2. Denote for a Z[v] module M by {M }vn the v n -torsion in it. Then we have:
+(1) kR/v n is strongly even and hence the same is true for κkR (v).
+2ρ−4 kR ∼ C2
+2
+(2) π C
+Z = π (n−2)ρ+4 ZkR is constant for all n ∈ Z.
+nρ Σ
+o
+n
+C2
+n
+−(n−1)ρ
+2ρ−4 kR
+2ρ−4 kR C2 ∼
+∼
+(3) [Σ
+kR/v , Σ
+Σ
+Z
+Z ] = π
+=Z
+kR
+
+−(n−1)ρ
+
+vn
+
+Proof: The first part follows as
+C2
+n
+n
+2
+πC
+kρ−i (kR/v ) = π kρ−i (kR)/v
+C2
+for i = 0, 1 because πkρ−i
+kR = 0 for i = 1, 2.
+For the second part consider the short exact sequence
+C2
+kR
+2
+2
+→ Hom(π C
+0 → Ext(π C
+kρ−5 kR, Z) → π −kρ+4 Z
+kρ−4 kR, Z) → 0.
+
+C2
+2
+We have π C
+kρ−5 kR = 0 for all k ∈ Z. For k < 2, the Mackey functor π kρ−4 kR vanishes as well
+k−2
+2
+∼ ∗
+and for k ≥ 2, we have π C
+and 2v k−2 u. Thus,
+kρ−4 kR = Z , generated by v
+(
+0 if k < 2
+kR ∼
+2
+πC
+=
+−kρ+4 Z
+Z if k ≤ 2
+2
+This shows part (2). As multiplication by v n does not hit π C
+(n+1)ρ−4 kR, the whole Mackey
+kR
+2
+functor π C
+is v n -torsion. This gives the second isomorphism of the third part.
+−(n+1)ρ+4 Z
+For the remaining isomorphism, note that the cofibre sequence
+
+vn
+
+Σρ kR −→ Σ−(n−1)ρ kR → Σ−(n−1)ρ kR/v n → Σρ+1 kR
+
+induces a short exact sequence
+
+C2
+2ρ−4 kR
+2
+0 → (π C
+Z )/v n → [Σ−(n−1)ρ kR/v n , Σ2ρ−4 ZkR ]kR →
+ρ+1 Σ
+
+n
+o
+C2
+2ρ−4 kR
+π −(n−1)ρ Σ
+→0
+Z
+n
+v
+
+2ρ−4 kR ∼ C2
+2
+We have π C
+Z = π 5−ρ ZkR , which sits in a short exact sequence
+ρ+1 Σ
+C2
+kR
+2
+2
+0 → ExtZ (π C
+→ HomZ (π C
+ρ−6 kR, Z) → π 5−ρ Z
+ρ−5 kR, Z) → 0.
+
+2
+But because of connectivity, π C
+ρ−c kR = 0 for c ≥ 3.
+
+
+
+9. Duality for BP R
+We will use throughout the abbreviation B = BP R and will furthermore implicitly localize
+everything at 2 so that Z = Z(2) etc. and all Hom and Ext groups are over Z = Z(2) unless
+C2
+marked otherwise. Denote by v a sequence of indecomposable elements v i ∈ π(2
+i −1)ρ B. The
+2ρ−4 B
+aim of this section is to show that Σ
+Z ≃ κM R (v; B).
+Recall that κM R (v; B) is defined as follows: Given a sequence l = (l1 , l2 , . . . ) with li ≥ 0,
+l
+l
+we denote by B/v l the spectrum B/(v ii11 , v ii22 , . . . ), where ij runs over all indices such that
+lij > 0. Set
+|l| = l1 |v 1 | + l2 |v 2 | + · · ·
+31
+
+Then
+κM R (v; B) = hocolim Σ−|l−1| B/v l ,
+l
+
+where l runs over all sequences l where all but finitely many li are zero and 1 denotes the
+constant sequence of ones. Furthermore, the i-th entry of l − 1 is defined to be the maximum
+of 0 and li − 1.
+Thus, to get a map κM R (v; B) → Σ2ρ−4 ZB , we have to understand the homotopy classes
+of maps B/v l → Σ2ρ−4 ZB . This will be the content of the next subsection.
+9.A. Preparation. Recall the Mackey functor Z∗ defined by
+Z∗ (C2 / C2 ) ∼
+= Z∗ (C2 /e) ∼
+=Z
+
+with transfer equalling 1 while restriction is multiplication by 2.
+Lemma 9.1. As Z[v 1 , v 2 , . . . ]-modules, we have the following isomorphisms.
+∗
+−1
+2
+∼ ∗
+(1) π C
+∗ρ−4 B = Z ⊗Z Z[v 1 , v 2 , . . . ] where Z is generated by 1 on underlying and by 2u
+on C2 -equivariant homotopy groups.
+2
+(2) π C
+∗ρ−5 B = 0
+C2
+(3) π∗ρ−6
+B∼
+= F2 {a2 v 1 (−1)} ⊗Z Z[v 1 , v 2 , . . . ].
+C2
+Proof: By Theorem A.4, the groups π∗ρ−c
+B are additively generated by nonzero elements of
+l
+the form x = a v with v a monomial in the v i (j). Let v i (j) be the one occuring with minimal
+i, where j is chosen such that v = v i (j)v 0 with v 0 a monomial in the v k (this is possible by
+the third relation in Theorem A.4). Then |x| = ∗ρ + j2i+2 + l and 0 ≤ l < 2i+1 − 1.
+For c = 4, this implies j = −1, i = 0 and l = 0. Thus, x is of the form v 0 (−1)v 0 . As the
+restriction of v 0 (−1) to π0e B equals 2, the result follows.
+For c = 5, we must have l ≥ 2i+2 − 5, which implies l ≥ 2i+1 − 1 or i = 0; in the latter
+case l must be zero, which is not possible.
+For c = 6, we must have l = −j2i+2 − 6, which implies l ≥ 2i+1 − 1 or i ≤ 1 and j = −1.
+C2
+As i = 0 is again not possible, x = a2 v 1 (−1)v 0 with v 0 ∈ π∗ρ
+.
+
+
+Lemma 9.2. For a sequence l = (l1 , l2 , . . . ), the map
+B/v l
+l
+l ∗
+2
+2
+∼
+πC
+→ Hom(π C
+∗ρ+4 Z
+−∗ρ−4 B/v , Z) = Z ⊗Z (Z[v 1 , v 2 , . . . ]/v )
+
+is an isomorphism, where Z[v 1 , v 2 , . . . ]∗ = HomZ (Z[v 1 , v 2 , . . . ], Z) (so that the gradings become nonpositive). Here, the second map is the dual of the map
+l
+2
+Z∗ ⊗Z Z[v 1 , v 2 , . . . ]/v l → π C
+−∗ρ−4 B/v
+
+sending 1 ∈ Z∗ (C2 /C2 ) to the image of u−1 under the map B → B/v l and 1 ∈ Z∗ (C2 /e) to
+1.
+Proof: We have a short exact sequence
+l
+
+C2
+l
+B/v
+l
+2
+2
+→ Hom(π C
+0 → Ext(π C
+−∗ρ−5 B/v , Z) → π ∗ρ−4 Z
+−∗ρ−4 B/v , Z) → 0.
+
+If l1 = 0, then Corollary 4.5 and Lemma 9.1 directly imply the statement. If l1 6= 0, Corollary
+4.5 only allows us to identify the homotopy Mackey functor in degree − ∗ ρ − 4, but not the
+one in degree − ∗ ρ − 5. We give a separate argument in this case.
+32
+
+If l1 6= 0, consider the sequence l0 = (0, l2 , l3 , . . . ) and the corresponding cofibre sequence
+0
+
+l
+
+v1
+
+0
+
+0
+
+1
+B/v l → B/v l → Σl1 ρ+1 B/v l .
+Σl1 ρ B/v l −→
+
+This induces a short exact sequence
+0
+
+0
+
+l1
+C2
+C2
+l
+l
+l
+2
+0 → (π C
+∗ρ−5 B/v )/v 1 → π ∗ρ−5 B/v → {π ∗ρ−6 B/v }v l1 → 0.
+1
+
+l1
+l0
+2
+Here the last term denotes the sub Mackey functor of π C
+∗ρ−6 B/v killed by v 1 . By Corollary
+l
+2
+4.5 and Lemma 9.1, we see that π C
+
+∗ρ−5 B/v = 0.
+
+As B = BP R is not known to have an E∞ -structure, we have to work with M R-linear
+maps instead, for which the following lemma is useful:
+Lemma 9.3. The map
+ZB ≃ HomM R (M R, ZB ) → HomM R (B, ZB )
+
+is an equivalence.
+
+Proof: Let e : M R → M R be the Quillen–Araki idempotent. Recall that
+
+
+e
+e
+B = hocolim M R −
+→ MR −
+→ ··· .
+Thus,
+
+
+
+e∗
+e∗
+ZB ≃ holim · · · −
+→ ZM R −
+→ ZM R .
+←
+
+Hence,
+
+e∗
+
+
+
+B
+
+MR
+
+HomM R (B, Z ) ≃ holim · · · −
+→ HomM R (B, Z
+←
+
+e∗
+
+MR
+
+)−
+→ HomM R (B, Z
+
+
+) .
+
+As every HomM R (B, ZM R ) is equivalent to a holim over HomM R (M R, ZM R ) ≃ ZM R , connected by e∗ , we get that HomM R (B, ZB ) is the homotopy limit holimZ− ×Z− ZM R , where Z−
+denotes the poset of negative numbers and all connecting maps are e∗ . This is equivalent to
+the homotopy limit indexed over the diagonal, which in turn is equivalent to the homotopy
+limit indexed over a vertical.
+
+Recall that we want to show that X = Σ2ρ−4 ZB is equivalent to κM R (v, B). The reason
+for the choice of suspension is essentially (as before) that HZ ≃ Σ2ρ−4 HZ∗ .
+Proposition 9.4. For a sequence l = (l1 , l2 , . . . ), we have an isomorphism
+C2
+
+[Σ∗ρ B/v l , X]M R ∼
+= Z ⊗Z (Z[v 1 , v 2 , . . . ]/v l )∗ ,
+0
+
+0
+
+natural with respect to the maps B/v l → Σ−|l −l|ρ B/v l in the defining homotopy colimit for
+κM R (v; B) for l0 = (l10 , l20 , . . . ) a sequence with li0 ≥ li for all i ≥ 1.
+Proof: The last lemma implies that we also have
+l
+
+ZB/v ≃ HomM R (B/v l , ZB )
+
+as the functors Z? and HomM R (?, ZB ) behave the same way with respect to cofibre sequences
+and (filtered) homotopy colimits. Then we just have to apply Lemma 9.2.
+
+33
+
+9.B. The theorem. We first describe the homotopy groups of X = Σ2ρ−4 ZB with B = BP R
+as before. By Lemma 9.2, we get
+B, Z) ∼
+π C2 X ∼
+= Hom(π C2
+= Z ⊗Z Z[v 1 , v 2 , . . . ]∗ .
+∗ρ
+
+(∗+2)ρ−4
+
+Let l be a sequence with only finitely many nonzero entries. By Proposition 9.4, the
+element (v l−1 )∗ induces a corresponding M R-linear map Σ−|l−1| B/v l → X, which is unique
+up to homotopy. By this uniqueness, these maps are also compatible for comparable l. By
+Remark 3.7, this induces a map
+ h
+κM R (v, B) = hocolim Σ−|l−1| B/v l −
+→ X,
+l
+
+where l ranges over all sequences where only finitely many li are nonzero.
+Theorem 9.5. This map h : κM R (v; B) → X is an equivalence of C2 -spectra.
+Proof: By Corollary 4.6, we get on π ∗ρ -level
+colim Σ−|l−1| Z[v 1 , v 2 , . . . ]/(v l11 , . . . ) → Z ⊗Z Z[v 1 , . . . ]∗ ,
+l
+
+which is an isomorphism. The odd underlying homotopy groups of both sides are zero. To
+C2
+apply Lemma 4.11, it is left to show that πkρ−1
+κM R (v; B) = 0 for all k ∈ Z. Again by
+C2
+l
+Corollary 4.6, it is even true that πkρ−1 (B/v ) is zero for all k ∈ Z and all sequences l. 
+10. Duality for regular quotients
+The goal of this section is to prove our main result Theorem 5.1:
+Theorem 10.1. Let (m1 , m2 , . . . ) be a sequence of nonnegative integers with only finitely
+C2
+many entries bigger than 1. Denote by v 0 the sequence of v i in πF
+M R such that mi = 0 and
+0
+by m the sum of all (mi − 1)|v i | for mi > 1. Then there is an equivalence
+m
+
+0
+
+ZB/v ≃ Σ−m +4−2ρ κM R (v 0 ; B/v m ).
+
+Here and for the rest of the section we will implicitly localize everything at 2 again. Before
+we prove the theorem, we need some preparation.
+Lemma 10.2. Let m = (m1 , . . . ) be a sequence of nonnegative integers with a finite number
+n of nonzero entries. Then
+m
+ZB/v ≃ Σ−|m|−n (ZB )/v m .
+v
+
+Proof: Let Y be an arbitrary (C2 -)spectrum and Σ|v| Y −
+→ Y → Y /v be a cofibre sequence.
+Then we have an induced cofibre sequence
+v
+
+ZY /v → ZY −
+→ Σ−|v| ZY → ΣZY /v ≃ Σ−|v| (ZY )/v.
+
+Thus, ZY /v ≃ Σ−|v|−1 (ZY )/v. The claim follows by induction.
+
+k
+Lemma 10.3. The element v 3k
+i acts trivially on B/v i for every i ≥ 1, k ≥ 1.
+
+34
+
+
+
+Proof: By the commutativity of the diagram
+/ Σk|vi | B/v k
+
+Σk|vi | B
+
+i
+
+
+
+v ki
+
+
+
+v ki
+
+/ B/v k
+
+B
+
+i
+
+vk
+
+i
+we see that the composite Σk|vi | B → Σk|vi | B/v ki −→
+B/v ki is zero, so that the latter map
+k
+2k|v i |+1
+factors over an M R-linear map Σ
+B → B/v i . As [Σ2k|vi |+1 B, B/v ki ]M R is a retract
+C2
+B/v ki , we just have to show that v 2k
+of [Σ2k|vi |+1 M R, B/v ki ]M R ∼
+= π2k|v
+i x = 0 for every
+i |+1
+k
+x ∈ π2k|vi |+1 B/v i .
+We have a short exact sequence
+o
+n
+C2
+C2
+C2
+B)/v ki → πF
+(B/v ki ) → πF−k|v
+B
+→ 0.
+0 → (πF
+i |−1
+k
+
+vi
+
+C2
+As v ki x clearly maps to zero, it is the image of a y ∈ (πF
+B)/v ki . But v ki y = 0.
+
+
+
+Lemma 10.4. We have
+l
+m
+B/v li ⊗M R B/v m
+j ≃ B/(v i , v j ).
+Furthermore, there is an equivalence
+|v i |+1
+B/v m
+hocolim Σ−(l−1)|vi | B/v li ⊗M R B/v m
+i ≃ Σ
+i
+l
+
+of M R-modules if m ≥ 1.
+Proof: We have
+
+e
+
+e
+
+B ⊗M R B ≃ hocolim(B −
+→B−
+→ · · · ) ≃ B,
+where e denotes again the Quillen–Araki idempotent, and thus also
+l
+m
+B/v li ⊗M R B/v m
+j ≃ B/(v i , v j ).
+
+Thus, the maps in the homotopy colimit in the lemma are induced by the following diagram
+of cofibre sequences:
+Σ|vi | B/v m
+i
+|v i |
+
+Σ
+
+
+
+v li
+
+/ Σ−(l−1)|vi | B/v m
+i
+
+id
+
+B/v m
+i
+
+v l+1
+i
+
+
+
+vi
+
+/ Σ−(l−1)|vi | B/v l ⊗M R B/v m
+i
+
+i
+
+
+/ Σ−l|vi | B/v l+1 ⊗M R B/v m
+
+/ Σ−l|vi | B/v m
+i
+
+i
+
+i
+
+We can assume that the homotopy colimit only runs over l ≥ 3m so that by the last lemma
+the two cofibre sequences split and we get
+−(l−1)|v i |
+|v i |+1
+Σ−(l−1)|vi | B/v li ⊗M R B/v m
+B/v m
+B/v m
+i ≃ Σ
+i ⊕Σ
+i .
+
+The corresponding map
+
+|v i |+1
+−l|v i |
+|v i |+1
+Σ−(l−1)|vi | B/v m
+B/v m
+B/v m
+B/v m
+i ⊕Σ
+i → Σ
+i ⊕Σ
+i
+
+induces multiplication by v i on the first summand, the identity on the second plus possibly
+a map from the second summand to the first.
+35
+
+Using this decomposition, it is easy to show that
+|v i |+1
+hocolim Σ−(l−1)|vi | B/v li ⊗M R B/v m
+B/v m
+i → Σ
+i
+l
+
+(defined by the projection on the second summand for l ≥ 3m) is an equivalence. Indeed,
+on homotopy groups the map is clearly surjective. And if
+C2 |v i |+1
+C2 −l|v i |
+Σ
+(x, y) ∈ πF
+B/v m
+B/v m
+i ⊕ πF Σ
+i
+C2 |v i |+1
+Σ
+maps to 0 ∈ πF
+B/v m
+i , then y = 0 and (x, 0) represents 0 in the colimit because v i
+acts nilpotently.
+
+
+Proof of theorem: As in the theorem, let v 0 be the sequence of v i such that mi = 0 and
+also denote by v 00 = (v i1 , v i2 , . . . ) the sequence of v i such that mi 6= 0.
+We begin with the case that m has only finitely many nonzero entries (say n). By Lemma
+10.2 we see that
+m
+ZB/v ≃ Σ−|m|−n (ZB )/v m .
+Combining this with Theorem 9.5, we obtain
+m
+
+ZB/v ≃ Σ−|m|−n+4−2ρ κM R (v, B)/v m
+
+≃ Σ−|m|−n+4−2ρ κM R (v 0 , κM R (v 00 , B/v m ))
+
+Thus, we have to show that κM R (v 00 , B/v m ) ≃ Σ|vi1 |+···|vin |+n B/v m .
+By Lemma 10.4, we have an equivalence
+l
+
+l
+
+l
+
+m
+
+in
+(B/v m )/(v ii11 , . . . , v iinn ) ≃ (B/v 1i1 ⊗M R B/v 1 i1 ) ⊗M R . . . ⊗M R (B/v lnin ⊗M R B/v m
+n ).
+
+If we let now the homotopy colimit run over the sequences (li1 , . . . , lin ), we can do it separately
+for each tensor factor. Hence, we obtain again by Lemma 10.4 an equivalence
+κM R (v 00 , B/v m ) ≃ Σ|vi1 |+···|vin |+n B/v m .
+Thus, we have shown the theorem in the case that m has only finitely many nonzero entries.
+We prove the case that m has possibly infinitely many nonzero entries by a colimit argument. Define m≤k to be the sequence obtained from m by setting mk+1 , mk+2 , . . . to zero.
+Then B/m ≃ hocolimk B/m≤k and thus ZB/m ≃ holimk ZB/m≤k . Denote by v 0≤k the sequence
+of v i such that mi = 0 or i > k and by m0k the quantity |m≤k − 1|; note that m0k = m0 for k
+large.
+We have to show that the map
+0
+
+0
+
+h : Σ−m κM R (v 0 , B/v m ) → holim Σ−mk κM R (v 0≤k , B/v m≤k )
+k
+
+is an equivalence. This map is defined as follows: We know that
+κM R (v 0 , B/v m ) ≃ hocolim κM R (v 0 , B/v m≤k ).
+k
+
+Using this, we get a map induced from the maps κM R (v 0 , B/v m≤k ) → κM R (v 0≤k , B/v m≤k ) for
+k large.
+36
+
+C2
+: The left hand side has as Z-basis
+By Corollary 4.6, we can describe what happens on π∗ρ
+n
+monomials of the form v with only finitely many ni nonzero, ni ≤ 0 and ni ≥ −mi + 1 if
+mi 6= 0. Likewise,
+ 0
+
+mk
+C2
+0
+m≤k
+π∗ρ Σ κM R (v ≤k , B/v
+)
+
+has as Z-basis monomials of the form v n with only finitely many ni nonzero, ni ≤ 0 and
+ni ≥ −mi + 1 if mi 6= 0 and i ≤ k. The maps in the homotopy limit induce the obvious
+inclusion maps. Thus, clearly the map
+ 0
+ 0
+
+
+C2
+C2
+Σm κM R (v 0 , B/v m ) → lim π∗ρ
+Σmk κM R (v 0≤k , B/v m≤k )
+π∗ρ
+k
+
+is an isomorphism.
+
+0
+C2
+Σmk κM R (v 0≤k , B/v m≤k ) vanishes. By Corollary 4.8,
+It remains to show that lim1k π∗ρ+1
+every term has as F2 -basis monomials of the form av n with only finitely many ni nonzero,
+ni ≤ 0 and ni ≥ −mi +1 if mi 6= 0 and i ≤ k. The system becomes stationary in every degree,
+more precisely if ∗ > −2k+1 . Thus, the lim1 -term vanishes. A similar lim1 -argument also
+0
+shows that the odd underlying homotopy groups of holimk Σ−mk κM R (v 0≤k , B/v m≤k ) vanish.
+As the source of h is strongly even by Corollary 4.6 and by the arguments we just gave
+2
+the morphism h induces an isomorphism on π C
+∗ρ and on (odd) underlying homotopy groups,
+Lemma 4.11 implies that h is an equivalence.
+
+
+Part 4. Local cohomology computations
+In Part 4, we will describe the local cohomology spectral sequence in some detail, and use
+it to understand the structure of the HZ-cellularization of BP Rhni. The calculation is not
+difficult, but on the other hand it is quite hard to follow because it is made up of a large
+number of easy calculations which interact a little, and because one needs to find a helpful
+way to follow the RO(C2 )-graded calculations.
+In contrast the case of kR is simple enough to be explained fully without further scaffolding,
+and it introduces many of the structures that we will want to highlight. Since it may also be
+of wider interest than the general case of BP Rhni we devote Section 11 to it before returning
+to the general case in Section 12. Section 13 will then give a more detailed account in the
+interesting case n = 2.
+Let us also recall some notation used throughout this part. As in the rest of the paper
+we work 2-locally, except when speaking about kR or tmf1 (3) when fewer primes need be
+inverted. We often write δ = 1 − σ ∈ RO(C2 ). We also recall the duality conventions
+from Section 3.A; in particular, for an F2 -vector space V ∨ equals the dual vector space
+HomF2 (V, F2 ) and for a torsionfree Z-module M , we set M ∗ = Hom(M, Z).
+C2
+If R is a C2 -spectrum, we will use the notation RF
+for its RO(C2 )-graded homotopy
+hC2
+C2
+(EC2 )+
+groups. We will also write RF = πF (R
+) and similarly for geometric fixed points and
+the Tate construction.
+37
+
+11. The local cohomology spectral sequence for kR
+This section focuses entirely on the classical case of kR, where there are already a number
+of features of interest. This gives a chance to introduce some of the structures we will use
+for the general case.
+11.A. The local cohomology spectral sequence. Gorenstein duality for kR (Corollary
+6.8) has interesting implications for the coefficient ring, both computationally and structurally. Writing F for RO(C2 )-grading as usual, the local cohomology spectral sequence
+[GM95a, Section 3] takes the following form.
+2
+Proposition 11.1. There is a spectral sequence of kRC
+F -modules
+
+−4+σ C2
+∗
+2
+πF (ZkR ).
+H(v)
+(kRC
+F ) ⇒ Σ
+
+The homotopy of the Anderson dual in an arbitrary degree α ∈ RO(C2 ) lies in an exact
+sequence
+C2
+kR
+C2
+2
+0 −→ ExtZ (kRC
+−α−1 , Z) −→ πα (Z ) −→ HomZ (kR−α , Z) −→ 0.
+Since local cohomology is entirely in cohomological degrees 0 and 1, the spectral sequence
+collapses to a short exact sequence
+1
+−4+σ C2
+0
+2
+2
+0 −→ Σ−1 H(v)
+(kRC
+πF (ZkR ) −→ H(v)
+(kRC
+F ) −→ Σ
+F ) −→ 0.
+
+This sequence is not split, even as abelian groups.
+
+One should not view Proposition 11.1 as an algebraic formality: it embodies the fact that
+C2
+2
+kRC
+F is a very special ring. To illustrate this, we recall the calculation of kRF in Subsection
+11.B. In Subsection 11.C we calculate its local cohomology, and how the Gorenstein duality
+isomorphism with the known homotopy of the Anderson dual works.
+C2
+2
+11.B. The ring kRC
+F . One may easily calculate kRF . This has already been done in
+[BG10], but we sketch a slightly different method. We will first calculate kRhFC2 and then
+use the Tate square [GM95b].
+In the homotopy fixed point spectral sequence
+2
+Z[v, a, u±1 ]/2a ⇒ kRhC
+F
+
+all differentials are generated by d3 (u) = va3 . Indeed, this differential is forced by η 4 = 0
+and there is no room for further ones. It follows that U = u2 is an infinite cycle, and so the
+whole ring is U -periodic:
+kRhFC2 = BB[U, U −1 ],
+where BB is a certain ‘basic block’. This basic block is a sum
+as BR-modules, where
+
+BB = BR ⊕ (2u) · Z[v]
+
+BR = Z[v, a]/(2a, va3 ).
+It is worth illustrating BB in the plane (with BBa+bσ placed at the point (a, b)). The
+squares and circles represent copies of Z, and the dots represent copies of F2 . The left hand
+vertical column consists of 1 (at the origin, (0, 0)) and the powers of a, but the feature to
+concentrate on is the diagonal lines representing Z[v] submodules. These are either copies
+of Z[v] or of F2 [v] or simply copies of F2 .
+38
+
+v6
+v
+
+5
+
+v4
+
+BB
+
+v3
+v
+v
+
+2
+
+1
+
+1
+a1
+a2
+a3
+a4
+a5
+a6
+
+2u
+
+Proceeding with the calculation, we may invert a to find the homotopy of the Tate spectrum kRt = F (E(C2 )+ , kR) ∧ S ∞σ :
+kRtFC2 = F2 [a, a−1 ][U, U −1 ].
+
+One also sees that the homotopy of the geometric fixed points (the equivariant homotopy of
+kRΦ = kR ∧ S ∞σ ) is
+C2
+kRΦ
+= F2 [a, a−1 ][U ]
+F
+using the following lemma:
+Lemma 11.2. Let X be a C2 -spectrum which is non-equivariantly connective and such that
+X C2 → X h C2 is a connective cover. Then X Φ C2 → X t C2 is a connective cover as well.
+Proof: This follows from the diagram of long exact sequences
+πk Xh C2
+
+/ πk X C2
+
+/ πk X Φ C2
+
+/ πk−1 Xh C
+
+/ πk−1 X C2
+
+
+
+
+/ πk X h C2
+
+
+/ πk X t C2
+
+
+/ πk−1 Xh C
+
+
+/ πk−1 X h C2 ,
+
+πk Xh C2
+
+2
+
+2
+
+the fact that Xh C2 is connective and the 5-lemma.
+
+
+
+Now the Tate square
+kR
+
+/ kR ∧ S ∞σ
+
+
+
+
+/ kR(E C2 )+ ∧ S ∞σ
+
+kR(E C2 )+
+
+2
+gives kRC
+F .
+It is convenient to observe that the two rows are of the form M −→ M [1/a], so that the
+fibre is Γa M . Since the two rows have equivalent fibres, we calculate the homotopy of the
+second and obtain
+−1
+kRF
+],
+hC2 = N B[U, U
+
+39
+
+∗
+(BB) (and named N B for
+where N B is quickly calculated as the (a)-local cohomology H(a)
+‘negative block’). The element a acts vertically and we can immediately read off the answer:
+the tower Z[a]/(2a) gives some H 1 , and the rest is a-power torsion:
+
+N B = BB 0 ⊕ Σ−δ F2 [a]∨ ,
+
+where BB 0 ⊂ BB is the sub-BR-module generated by 2, v, 2u (Informally, we may say that
+BB 0 omits from BB all monomials ak for k ≥ 1 and the generator 1). Note that N B is
+placed so that its element 2 is in degree 0 for ease of comparison to BB; all occurrences of
+2
+N B in kRC
+F involve nontrivial suspensions.
+Again, it is helpful to display the negative block. This differs from BB in that the powers
+of a have been deleted, and replaced by a new left hand column Σ−δ F2 [a]∨ . The other new
+feature is that the copy of Z[v] generated by 1 has been replaced by the kernel (2, v) of
+Z[v] −→ F2 , as indicated by the circle at the origin, labelled by its generator 2.
+v6
+v
+v
+
+NB
+
+5
+
+4
+
+v3
+v2
+v
+
+1
+
+2
+2u
+
+The Tate square then lets us read off
+M
+M
+k
+2
+kRC
+=
+N
+B
+·
+{U
+}
+⊕
+BB · {U k } = (U −1 · N B[U −1 ]) ⊕ BB[U ]
+F
+k≤−1
+
+k≥0
+
+The Z[U ] module structure is given by letting U act in the obvious way on the N B and BB
+parts, and by the maps
+N B −→ BB 0 −→ BB
+
+in passage from the U −1 factor of N B to the U 0 factor of BB.
+Perhaps it is helpful to note that with the exception of the towers U −k Σ−δ F2 [a]∨ , we have
+a subring of BB[U, U −1 ], which consists of blocks BB · U i for i ≥ 0 and blocks BB 0 · U i for
+i < 0.
+11.C. Local cohomology. Recall that we are calculating local cohomology with respect to
+2
+the principal ideal (v) so that we only need to consider kRC
+F as a Z[v]-module. As such it
+is a sum of suspensions of the blocks BB and N B, so we just need to calculate the local
+cohomology of these.
+40
+
+More significantly, Z[v] is graded over multiples of the regular representation, so local
+cohomology calculations may be performed on one diagonal at a time (i.e., we fix n and
+consider gradings n + ∗ρ). The only modules that occur are
+Z[v], F2 [v], F2 and the ideal (2, v) ⊆ Z[v],
+
+each of which has local cohomology that is very easily calculated.
+
+Lemma 11.3. The local cohomology of the basic block BB is as follows.
+0
+H(v)
+(BB) = a3 F2 [a]
+1
+(BB) = Σ−ρ Z[v]∗ ⊕ Σ−ρ+2δ Z[v]∗ ⊕ Σ−ρ−σ F2 [v]∨ ⊕ Σ−ρ−2σ F2 [v]∨ .
+H(v)
+
+Proof: The local cohomology is the cohomology of the complex
+It is clear that
+
+BB −→ BB[1/v].
+
+BB[1/v] = Z[v, v −1 ] ⊕ u · Z[v, v −1 ] ⊕ a · F2 [v, v −1 ] ⊕ a2 · F2 [v, v −1 ]
+
+
+
+Turning to N B, we recall that N B = BB 0 ⊕Σ−δ F2 [a]∨ , and we have a short exact sequence
+0 −→ BB 0 −→ BB −→ F2 [a] −→ 0.
+
+The local cohomology is thus easily deduced from that of BB.
+
+Lemma 11.4. The local cohomology of the negative block N B is as follows.
+0
+H(v)
+(N B) = Σ−δ F2 [a]∨
+1
+(N B) = Σ−ρ Z[v]∗ ⊕ F2 ⊕ Σ−ρ+2δ Z[v]∗ ⊕ Σ−σ F2 [v]∨ ⊕ Σ−2σ F2 [v]∨
+H(v)
+
+More properly, the Z[v]-module structure of the sum of the first two terms is
+Σ−ρ Z[v]∗ ⊕ F2 ∼
+= Z[v]∗ /(2 · 1∗ ).
+Proof: The local cohomology is the cohomology of the complex
+N B −→ N B[1/v].
+
+It is clear that N B[1/v] = BB[1/v], which makes the part coming from the 2-torsion clear.
+For the Z-torsion free part, it is helpful to consider the exact sequence
+0 −→ (2, v) −→ Z[v] −→ F2 −→ 0
+
+and then consider the long exact sequence in local cohomology.
+
+
+
+Immediately from the defining cofibre sequence Γv kR −→ kR −→ kR[1/v] we see that
+there is a short exact sequence
+C2
+C2
+1
+0
+2
+0 −→ H(v)
+(Σ−1 kRC
+F ) −→ πF (Γ(v) kR) −→ H(v) (kRF ) −→ 0.
+
+C2
+This gives πF
+(Γ(v) kR) up to extension. The Gorenstein duality isomorphism can be used to
+resolve the remaining extension issues, and the answer is recorded in the proposition below.
+
+41
+
+(2, v 1 )P
+
+NB
+
+GNB
+BB
+1
+a1
+a2
+
+2u
+
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+GBB
+a10
+a11
+a12 duality for kR
+Figure 1. Gorenstein
+a13
+The diagram Figure 1 should help the reader
+a14 interpret the statement and proof of the
+calculation of the homotopy of Γ(v) kR. We have
+omitted dots, circles and boxes except at
+a15
+the ends of diagonals or where an additional generator is required. The vertical lines denote
+multiplication by a and the dashed vertical line is an exotic multiplication by a that is not
+visible on the level of local cohomology. The green diamond does not denote a class, but
+marks the point one has to reflect (non-torsion classes) at to see Anderson duality. Torsion
+classes are shifted by −1 after reflection (i.e., shifted one step horizontally to the left).
+Proposition 11.5. The homotopy of the derived v-power torsion is given by
+π C2 (Γ(v) kR) ∼
+= (U −1 · GN B[U −1 ]) ⊕ GBB[U ]
+F
+
+where GBB and GN B are based on the local cohomology of BB and N B respectively, and
+described as follows. We have
+
+
+GBB = Σ−2−σ Z[v]∗ ⊕ a · F2 [v]∨ ⊕ a2 · F2 [v]∨ ⊕ u · N
+42
+
+where N (with top in degree 0) is given by an exact sequence
+0 −→ Z[v]∗ −→ N −→ F2 [a] −→ 0,
+
+non-split in degree 0.
+Similarly,
+
+
+GN B = Σ−1 Z[v]∗ /(2 · (1∗ )) ⊕ a · F2 [v]∨ ⊕ a2 · F2 [v]∨ ⊕ Σ1−3σ Z[v]∗ ⊕ Σσ F2 [a]∨
+
+where the action of a is as suggested by the sum decomposition except that multiplication by
+a is non-trivial wherever possible (i.e., when one dot is vertically above another, or where a
+box is vertically above a dot).
+
+Proof: We first note that the contributions from the different blocks do not interact. Indeed,
+the only time that different blocks give contributions in the same degree come from the F2 [a]
+towers of BB: one class in that degree is v-divisible (and not killed by v) and the other class
+is annihilated by v. We may therefore consider the blocks entirely separately.
+The block GBB comes from the local cohomology of BB and therefore lives in a short
+exact sequence
+1
+0
+0 −→ H(v)
+(Σ−1 BB) −→ GBB −→ H(v)
+(BB) −→ 0
+The block GN B comes from the local cohomology of N B and therefore lives in a short
+exact sequence
+1
+0
+0 −→ H(v)
+(Σ−1 N B) −→ GN B −→ H(v)
+(N B) −→ 0
+Most questions about module structure over BB[U ] are resolved by degree, but there are
+two which remain. These can be resolved Gorenstein duality 6.8 and the known module
+structure in ZkR .
+C2
+In GBB, the additive extension in π−3σ
+is non-trivial:
+π C2 (Γ(v) kR) ∼
+= Z.
+Also the multiplication by a
+
+−3σ
+
+F2 ∼
+= GN B−1+σ → GN B−1 ∼
+= F2
+
+C2
+is nonzero (where GN B−1+σ corresponds to π−5+5σ
+(Γ(v) kR) in the U −1 -shift).
+
+
+
+Remark 11.6. It is striking that the duality relates the top BB to the bottom N B (i.e.,
+Anderson duality takes the part of Γv kR coming from the local cohomology of BB to N B),
+and it takes the bottom N B to the top BB (i.e., Anderson duality takes the part of Γv kR
+coming from the local cohomology of N B to BB). Indeed, as commented after Lemma 11.2,
+since N B = Γ(a) BB, we have
+and
+
+Σ2+σ Γ(v) BB ≃ (Γ(a) BB)∗
+
+Γ(v,a) BB ≃ Σ−2−σ BB ∗ ,
+with the second stating that BB is Gorenstein of shift −2 − σ for the ideal (a, v).
+By extension, Anderson duality takes the part of Γv kR coming from the local cohomology
+of all copies of BB to all copies of N B and vice versa. This might suggest separating kR
+into a part with homotopy BB[U ], giving a cofibre sequence
+hBB[U ]i −→ kR −→ hU −1 N B[U −1 ]i,
+43
+
+where the angle brackets refer to a spectrum with the indicated homotopy. However one
+may see that there is no C2 -spectrum with homotopy the Mackey functor corresponding to
+BB[U ] (considering the bσ and (b + 1)σ rows one sees that the non-equivariant homotopy
+of the spectrum would be zero up to about degree 2b; taking all rows together it would have
+to be non-equivariantly contractible and hence a-periodic). Similarly, there is no spectrum
+with homotopy U −1 N B[U −1 ], so these dualities are purely algebraic.
+12. The local cohomology spectral sequence for BP Rhni
+Gorenstein duality for BP Rhni (Example 5.2) has interesting implications for the coefficient ring, both computationally and structurally. Writing F for RO(C2 )-grading as usual,
+the local cohomology spectral sequence [GM95a, Section 3] takes the form described in the
+following proposition. We now revert to our standard assumption of working 2-locally, so
+that Z means the 2-local integers.
+2
+Proposition 12.1. There is a spectral sequence of BP RhniC
+F -modules
+
+−(Dn +n+2)−(Dn −2)σ C2
+2
+HJ∗n (BP RhniC
+πF (ZBP Rhni )
+F ) ⇒ Σ
+
+for J n = (v 1 , . . . , v n ). The homotopy of the Anderson dual in an arbitrary degree α ∈ RO(C2 )
+is easily calculated
+C2 BP Rhni
+2
+2
+0 −→ ExtZ (BP RhniC
+−→ HomZ (BP RhniC
+−α−1 , Z) −→ πα Z
+−α , Z) −→ 0.
+
+For n ≥ 2 the local cohomology spectral sequence has some non-trivial differentials.
+One should not view Proposition 12.1 as an algebraic formality: it embodies the fact that
+2
+BP RhniC
+F is a very special ring.
+In the present section we will discuss the implications of this for the coefficient ring for
+general n. The perspective is a bit distant so the reader is encouraged to refer back to kR
+(i.e., the case n = 1) in Section 11 to anchor the generalities.
+However the case n = 1 is too simple to show some of what happens, so we will also
+illustrate the case tmf1 (3) (i.e., the case n = 2) in Section 13.
+2
+12.A. Reduction to diagonals. For brevity we write RF = BP RhniC
+F . Because the ideal
+J n = (v 1 , . . . , v n ) is generated by elements whose degrees are a multiple of ρ, we can do J n local cohomology calculations over the subring R∗ρ of elements in degrees which are multiples
+of ρ.
+Thus, for an RF -module MF we have a direct sum decomposition
+M
+MF =
+Md+∗ρ
+
+d
+
+as R∗ρ -modules, where we refer to the gradings d + ∗ρ as the d-diagonal. Hence, we also have
+M
+HJi n (MF ) =
+HJi n (Md+∗ρ ).
+d
+
+(We have abused notation by also writing J n for the ideal of R∗ρ generated by v 1 , . . . , v n .)
+44
+
+2
+12.B. The general shape of BP RhniC
+F . By the description at the end of Section 4.B, we
+have an isomorphism
+
+RF = U −1 · N B[U −1 ] ⊕ BB[U ]
+with BB and N B as described there. It is easy to see that BB and N B decompose as R∗ρ modules into modules of a certain form we will describe now. We will implicitly 2-localize
+everywhere.
+The modules BB and N B decompose into are
+P = R∗ρ = Z[v 1 , . . . , v n ] and P s = P/(v 0 , . . . , v s ) = F2 [v s+1 , . . . , v n ]
+for s ≥ 0 and the ideals expressed by the exact sequences
+0 −→ (2, v 1 , . . . , v t ) −→ P −→ P t −→ 0
+or
+0 −→ (v s+1 , . . . , v t ) −→ P s −→ P t −→ 0
+with s ≥ 0.
+Their local cohomology is easily calculated. In the first two cases, the modules only have
+local cohomology in a single degree
+HJ∗n (P ) = HJnn (P ) = P ∗ (−Dn ρ)
+∨
+
+HJ∗n (P s ) = HJn−s (P s ) = P s ((Ds − Dn )ρ).
+n
+
+The top non-zero degree of P ∗ is zero, so that 1∗ ∈ P ∗ (−Dn ρ) is in degree −Dn ρ = −|v 1 | −
+· · · − |v n |. We alert the reader to the fact that star is used in two ways: occasionally in H ∗
+to mean cohomological grading and rather frequently here in P ∗ to mean the Z-dual of P .
+Now we turn to the ideal (v s+1 , . . . , v t ). If t = s + 1 the ideal is principal and (v s+1 ) ∼
+=
+P s ((s + 1)ρ); thus we get a single local cohomology group
+∨
+
+HJn−s ((v s+1 )P s ) = P s ((Ds − Dn + s + 1)ρ)
+n
+
+as can be seen from the long exact sequence of local cohomology.
+Otherwise we get two local cohomology groups
+∨
+
+∨
+
+HJn−s ((v s+1 , . . . , v t )P s ) = P s ((Dn − Ds )ρ) and HJn−t+1 ((v s+1 , . . . , v t )P s ) = P t ((Dn − Dt )ρ).
+n
+
+n
+
+The case of (2, v 1 , . . . , v t ) is similar but with an extra case. The case t = 0 is easy since
+then (2) ∼
+= P so the local cohomology is all in cohomological degree n where it is P ∗ (−Dn ρ).
+If t = 1 we again get a single local cohomology group
+∨
+
+HJnn ((2, v 1 )P ) = P ∗ (−Dn ρ) ⊕ P 1 ((D1 − Dn )ρ).
+Otherwise we get two local cohomology groups
+∨
+
+HJnn ((2, . . . , v t )P ) = P ∗ (−Dn ρ) and HJn−t+1 ((2, . . . , v t )P ) = P t ((Dt − Dn )ρ).
+n
+
+45
+
+12.C. The special case n = 1. The best way to make the patterns apparent is to look at
+2
+the simplest cases. In this section we begin with kRC
+F as treated in Section 11 above, and
+we encourage the reader to relate the calculations here to the diagrams in Section 11. In
+that case,
+2
+P = kRC
+∗ρ = Z[v 1 ], P 0 = F2 [v 1 ] and P 1 = F2 .
+Displaying BB by d-diagonal, we have
+d
+0
+1
+2
+3
+4
+5
+6
+7
+8
+
+BB (n = 1)
+1
+u
+P
+P0
+P0
+P1
+P1
+(2)P
+P1
+P1
+P1
+P1
+
+The position of the modules along the d-diagonal can be inferred from the label at the top
+of the column. Thus the first column has generators in degree −dσ, and the second column
+similarly, but in the column of u (namely the 2-column). Noting that u is on the 4-diagonal,
+the dth row has generators in |u|−(d−4)σ = 2−(d−2)σ. For example, along the 4-diagonal
+we have a4 P 1 ⊕ (2u)P .
+Taking local cohomology, and shifting HJs n down by s (as in the local cohomology spectral
+sequence), we have
+∗
+H(v
+(BB) (n = 1)
+1)
+d
+1
+u
+∗
+−1 P (−2ρ)
+∨
+P 0 (−2ρ)
+0
+∨
+1
+P 0 (−2ρ)
+2
+3
+P1
+P ∗ (−2ρ)
+4
+P1
+5
+P1
+6
+P1
+7
+P1
+8
+P1
+Here, we colored H 1 -groups brown. Note that shifting down by s both lowers d by s
+and adds a shift by −sρ. For example, considering the 3-diagonal of this table, the P 1
+comes directly from the 3-diagonal of BB, whilst the P ∗ (−2ρ) comes from the (2)P on the
+4-diagonal of BB; the local cohomology is P ∗ (−ρ), but its diagonal is shifted by −1 since
+it is a first local cohomology, and because it is by reference to the 2-column the shift is −ρ.
+46
+
+The top of this module is calculated by reference to the column of |u| (i.e., the 2-column),
+and has top in degree 2 − (3 − 2)σ − 2ρ = −3σ.
+We saw in Section 11 that the two modules on the 3-diagonal give a non-trivial additive
+extension (in degree −3σ) after running the spectral sequence.
+
+12.D. The special case n = 2. Continuing our effort to make patterns visible, we consider
+2
+tmf1 (3)C
+F in this subsection (i.e., the case n = 2). With Z denoting the integers with 3
+inverted here, this has
+
+2
+P = tmf1 (3)C
+∗ρ = Z[v 1 , v 2 ], P 0 = F2 [v 1 , v 2 ], P 1 = F2 [v 2 ] and P 2 = F2 .
+
+Thus for n = 2 we have
+
+d
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+
+BB (n = 2)
+1
+u
+u2
+u3
+P
+P0
+P0
+P1
+P1
+(2)
+P1
+P1
+P2
+P2
+(2, v 1 )P
+P2
+(v 1 )P 0
+P2
+(v 1 )P 0
+P2
+P2
+(2)
+P2
+
+Once again, the column labelled ui is the 2ith column, and shifts along the diagonal have as
+reference point where this column meets the relevant diagonal.
+We take local cohomology, again remembering that HJs n is shifted down by s, which
+changes the diagonal by s. For example, on the 7-diagonal, P 2 comes from the 7-diagonal
+∨
+in BB, whereas the P 0 (−5ρ) comes from the 2nd local cohomology of the entry (v 1 )P 0 on
+∨
+the 9-diagonal; the local cohomology of P 0 is P 0 (−4ρ), this is shifted by a further −2ρ from
+47
+
+the change of diagonal, and +ρ because of the v 1 .
+∗
+(BB) (n = 2)
+H(v
+1 ,v 2 )
+d
+1
+u
+u2
+u3
+∗
+−2
+P (−6ρ)
+∨
+−1
+P 0 (−6ρ)
+∨
+0
+P 0 (−6ρ)
+1
+∨
+2
+P 1 (−4ρ)
+P ∗ (−6ρ)
+∨
+3
+P 1 (−4ρ)
+∨
+4
+P 1 (−4ρ)
+∨
+5
+P 1 (−4ρ)
+∨
+6
+P 1 (−5ρ) ⊕ P ∗ (−6ρ)
+∨
+P2
+P 0 (−5ρ)
+7
+∨
+P2
+P 0 (−5ρ)
+8
+P2
+9
+10
+P2
+P ∗ (−6ρ)
+11
+P2
+12
+P2
+P2
+13
+
+We have colored again H 1 -groups in brown and now also H 2 -groups in teal. We will
+see below that there are non-trivial extensions on the 2- and 10-diagonals, and that there
+are differentials in the local cohomology spectral sequence from the 7-, 8- and 9-diagonals
+(differentials go from the d-diagonal to the (d − 1)-diagonal).
+12.E. Moving from the basic block BB to the negative block N B. Moving from BB
+to N B only affects the 0 column, where in each case M is replaced by ker(M −→ F2 ) = (2)M .
+In effect this replaces P n by 0. It also adds on a new (−1)-column of P n = F2 going up
+from the σ row. We resist the temptation to display a table for N B explicitly, but note that
+N B = Γ(a) BB as for kR.
+12.F. Gorenstein duality. With the above data in mind, we may consider the d-diagonal
+BBd , where the lowest value of d is 0 and the highest is N = 4(2n − 1). If we ignore the
+difference between BB and N B (which is at most F2 in any degree) we find approximately
+that BBd has a relationship to BBN −d , namely something like an equality
+HJnn (BBd )∗ = BBN −d .
+
+There are various ways in which this is inaccurate and needs to be modified. Firstly, if the
+local cohomology of BBd is entirely in cohomological degree n −  with  6= 0, there will be
+a shift of  (if it is in several degrees there is a further complication). Secondly, Anderson
+duality introduces a shift of 1 diagonal if applied to torsion modules. Thirdly, we have seen
+that there may be extensions between these local cohomology groups, sometimes removing
+Z-torsion. Finally, there may be differentials.
+In fact all of these effects are ‘small’ in the sense that the growth rate along a diagonal
+is bounded by a polynomial of degree n − 1. Encouraged by this, if we ignore all of these
+48
+
+effects we see that BB is a Gorenstein module in the sense that the reverse-graded version
+is equivalent to the dual of its local cohomology.
+HJnn (BB)∗ = rev(BB).
+This is rather as if there is a cofibre sequence
+S −→ BP Rhni −→ Q
+with S Gorenstein and Q a Poincaré duality algebra of formal dimension N = 2(1−σ)(2n −1).
+13. The local cohmology spectral sequence for tmf1 (3)
+We examine the local cohomology spectral sequence and Gorenstein duality in more detail
+for tmf1 (3). Actually, our calculations are equally valid for all forms of BP Rh2i, but we
+prefer the more evocative name tmf1 (3) of the most prominent example. More of the general
+features are visible for tmf1 (3) than for kR.
+As usual we will implicitly localize everywhere at 2 (although for tmf1 (3) itself it would
+actually suffice to just invert 3).
+13.A. The local cohomology spectral sequence. We make explicit the implications for
+the coefficient ring, both computationally and structurally. Writing F for RO(C2 )-grading
+as usual, the spectral sequence takes the following form.
+2
+Proposition 13.1. There is a spectral sequence of tmf1 (3)C
+F -modules
+
+−8−2σ C2
+2
+HJ∗n (tmf1 (3)C
+πF (Ztmf1 (3) ).
+F ) ⇒ Σ
+
+The homotopy of the Anderson dual is easily calculated
+C2 tmf1 (3)
+2
+2
+0 −→ ExtZ (tmf1 (3)C
+−→ HomZ (tmf1 (3)C
+−α−1 , Z) −→ πα Z
+−α , Z) −→ 0.
+
+The local cohomology spectral sequence has some non-trivial differentials.
+C2
+2
+13.B. The ring tmf1 (3)C
+F . The ring tmf1 (3)F is approximately calculated in [HM16] and
+is more precisely desribed as
+
+BB[U ] ⊕ U −1 N B[U −1 ]
+as at the end of Section 4.B with n = 2. We already tabulated BB in Section 12.D, but
+C2
+we want also want to display a bigger chart of πF
+tmf1 (3) as Figure 2 to give the reader a
+feeling of how the blocks piece together.
+A black diagonal line means a copy of P when it starts in a box, a copy of (2)P when it
+starts in a small circle, a copy of (2, v 1 )P when it starts in a dot and a copy of (2, v 1 , v 2 )
+when it starts in a big circle. A red diagonal line means a copy of P 0 and a green diagonal
+line a copy of P 1 . A red dot is a copy of F2 = P 2 .
+49
+
+2 · U −4
+
+2 · U −3
+
+2 · U −2
+
+2 · U −1
+
+1
+
+tmf1(3)CF2
+
+U1
+
+U2
+
+U3
+
+Figure 2. The homotopy of tmf1 (3)
+U4
+13.C. Local cohomology. We are calculating local cohomology with respect to the ideal
+2
+J 2 = (v 1 , v 2 ) so that we only need to consider tmf1 (3)C
+F as a Z[v 1 , v 2 ]-module. As such it
+is a sum of suspensions of the blocks BB and N B, so we just need to calculate the local
+cohomology of these. This was described in Section 12 above. Here we will simply describe
+the extensions and the behaviour of the local cohomology spectral sequence.
+The basis of this discussion are the tables of BB and GBB from Subsection 12.D together
+with the analogues for N B and GN B. Although these are organized by diagonal, Figure
+3 displaying BB, GBB, U −1 N B and U −1 GN B may help visualize the way the modules are
+distributed along each diagonal. The vertical lines denote multiplication by a and the dashed
+vertical line is an exotic multiplication by a that is not visible on the level of local cohomology.
+50
+
+The green diamond does not denote a class, but marks the point one has to reflect (nontorsion classes) at to see Anderson duality. Torsion classes are shifted after reflection by −1
+(i.e., one step horizontally to the left).
+The strategy is to take the known subquotients from the local cohomology calculation,
+and resolve the extension problems using Gorenstein duality.
+Proposition 13.2. We have an isomorphism
+π C2 Γ tmf1 (3) ∼
+= GBB[U ] ⊕ U −1 GN B[U −1 ],
+F
+
+J2
+
+where GBB and GN B are described in the following. We will simultaneously describe what
+differentials and extensions in the local cohomology spectral sequence caused the passage from
+HJ∗2 (BB) and HJ∗2 (N B) to GBB and GN B respectively.
+(i) The Z[v 1 , v 2 ]-modules along the diagonals in GBB are as follows.
+GBB
+i
+Module
+−2
+P∗
+∨
+−1
+P0
+∨
+0
+P0
+1
+0
+[(2, v 1 )P ]∗
+2
+∨
+3
+P1
+∨
+4
+P1
+∨
+5
+P1
+6
+[(2, v 1 )P ]∗
+7
+(v 1 , v 2 )P 0
+8
+(v 1 , v 2 )P 0
+9
+0
+10
+[(2, v 1 , v 2 )P ]∗
+10 + k ≥ 11
+F2
+
+There are three non-trivial differentials
+
+(n = 2)
+Top degree
+−6 − 4σ
+−6 − 5σ
+−6 − 6σ
+−4 − 6σ
+−4 − 7σ
+−4 − 8σ
+−4 − 9σ
+−2 − 8σ
+−2 − 9σ
+−2 − 10σ
+0 − 10σ
+0 − (10 + k)σ
+
+d2 : HJ02 (BB) −→ HJ22 (BB)
+
+from the groups at −7σ, −8σ, −9σ to the groups at −7σ − 1, −8σ − 1, −9σ − 1, which have
+affected the values on the 6-, 7-, 8- and 9-diagonals in the table.
+The extensions
+0 −→ P ∗ −→ [(2, v 1 )P ]∗ −→ F2 [v 2 ]∨ −→ 0
+on the 2-diagonal and the 6-diagonal are Anderson dual to the defining short exact sequence
+0 −→ (2, v 1 )P −→ P −→ F2 [v 2 ] −→ 0
+
+in the following sense: The Anderson dual of the latter exact sequence is a triangle
+F2 [v 2 ]∗ → P ∗ → [(2, v 1 )P ]∗ → ΣF2 [v 2 ]∗ ∼
+= F2 [v 2 ]∨ ,
+which induces (on homology) the extensions above. The extension
+
+0 −→ P ∗ −→ [(2, v 1 , v 2 )P ]∗ −→ F2 −→ 0
+51
+
+(2, v 1 , v 2 )P
+
+(2, v 1 )P
+0
+
+(v 1 , v 2 )P
+0
+(v 1 , v 2 )P
+
+NB
+
+GNB
+
+1
+a1
+2u
+a2
+a3
+a4
+a5
+a6
+d 2 a7
+d2 8
+a
+d2 9
+a
+a10
+a11
+a12
+a13
+a14
+a15
+
+GBB
+Figure 3. Gorenstein duality for tmf1 (3)
+
+52
+
+BB
+2
+
+u v1
+2u2
+2u3
+
+on the 10-diagonal is Anderson dual to the short exact sequence
+0 −→ (2, v 1 , v 2 )P −→ P −→ F2 −→ 0.
+
+(ii) The Z[v 1 , v 2 ]-modules along the diagonals in GN B are as follows (take the direct sum
+of the two entries for the (−2)-, (−1)-, 0- 1- and 2-diagonals)
+GN B
+i
+Module
+−k ≤ −3
+F2
+∗
+−2
+P , F2
+∨
+−1
+P 0 , F2
+∨
+P 0 , F2
+0
+1
+F2
+∨
+∗
+2
+P ,P1
+∨
+3
+P1
+∨
+P1
+4
+∨
+5
+P1
+6
+[(2, v 1 )P ]∗
+∨
+7
+P0
+∨
+8
+P0
+9
+0
+10
+P∗
+The extension
+
+(n = 2)
+Top degree
+−1 − kσ
+−6 − 4σ, −1 + σ
+−6 − 5σ, −1 + 0σ
+−6 − 6σ, −1 − σ
+−1 − 2σ
+−4 − 6σ, −1 − 3σ
+−1 − 4σ
+−1 − 5σ
+−1 − 6σ
+−1 − 7σ
+−1 − 8σ
+−1 − 9σ
+0 − 10σ
+
+0 −→ P ∗ −→ [(2, v 1 )P ]∗ −→ F2 [v2 ]∨ −→ 0
+on the 6-diagonal is Anderson dual to the short exact sequence
+0 −→ (2, v 1 )P −→ P −→ F2 [v2 ] −→ 0.
+Proof: We first note that the contributions from the different blocks do not interact. Indeed,
+the only time that different blocks give contributions in the same degree comes from the F2 [a]
+towers of BB, and one class in that degree is divisible by v 1 or v 2 and not killed by both v 1
+and v 2 . We may therefore consider the blocks entirely separately.
+The block GBB comes from the local cohomology of BB in the sense that there is a
+spectral sequence
+HJ∗2 (BB) ⇒ GBB.
+Thus there is a filtration
+with
+and
+
+GBB = GBB 0 ⊇ GBB 1 ⊇ GBB 2 ⊇ GBB 3 = 0
+d
+
+2
+0 −→ GBB 0 /GBB 1 −→ HJ02 (BB) −→
+Σ−1 HJ22 (BB) −→ Σ1 GBB 2 −→ 0
+
+GBB 1 /GBB 2 ∼
+= Σ−1 HJ12 (BB).
+The block GN B comes from the local cohomology of N B in a precisely analogous way.
+Most questions about module structure over BB[U ] are resolved by degree. The remaining
+issues are resolved by using Gorenstein duality.
+53
+
+Referring to the table for HJ∗2 (BB) in Subsection 12.D, the first potential extension is on
+the 2-diagonal. Using Gorenstein duality to compare with N Bδ=8 we see that the actual
+extension on the 2-diagonal of GBB is
+∨
+
+0 −→ P ∗ −→ [(2, v 1 )P ]∗ −→ P 1 −→ 0,
+where we have shifted the modules so they all have top degree 0. There is an additive
+extension on the 10-diagonal by reference to the Anderson dual. Finally the three non-zero
+d2 differentials from −1 − kσ for k = 7, 8 and 9 are necessary for connectivity (this removes
+the need to discuss the possible extensions on the 7- and 8-diagonals).
+The situation is rather similar for GN B. We will not explicitly display N B since the only
+effect (apart from the addition of F2 [a]∨ ) is on the first column, where a module is replaced
+by the kernel of a surjection to F2 . It is perhaps worth displaying HJ22 (N B), where we leave
+out the big F2 [a]∨ -tower in HJ02 N B. We will color again H 1 -groups in brown and H 2 -groups
+in teal.
+HJ∗2 (N B)
+(n = 2)
+i
+1
+u2
+u4
+u6
+−2
+P ∗ (−6ρ)
+∨
+−1 P 0 (−6ρ) ⊕ P 2
+∨
+0 P 0 (−6ρ) ⊕ P 2
+1
+P2
+∨
+2
+P 1 (−4ρ)
+P ∗ (−6ρ)
+∨
+3
+P 1 (−4ρ)
+∨
+4
+P 1 (−4ρ)
+∨
+5
+P 1 (−4ρ)
+∨
+6
+P 1 (−5ρ) ⊕ P ∗ (−6ρ)
+∨
+7
+P 0 (−5ρ)
+∨
+8
+P 0 (−5ρ)
+9
+10
+P ∗ (−6ρ)
+11
+12
+13
+In this case all extensions are split, except for the one on the 6-diagonal and there are no
+differentials. The a multiplications in the F2 [a]∨ tower are clear from Gorenstein duality and
+the a-tower F2 [a] in BB.
+
+
+Remark 13.3. (i) Summarizing the way a diagonal BBδ contributes to N B as in
+HJ∗2 (BBδ )∗ ∼ N Bδ0
+as sketched in Subsection 12.F. We have
+54
+
+δ δ 0 s.t.HJ∗2 (BBδ )∗ ∼ N Bδ0
+0
+12
+1
+10
+2
+9
+3
+8
+4
+8, 6
+5
+5
+6
+4
+7
+2
+8
+4, 3
+9
+2
+10
+1, 0
+11
+0
+12
+0
+
+δ δ 0 s.t.HJ∗2 (N Bδ )∗ ∼ BBδ0
+0
+12
+1
+10
+2
+9
+3
+8
+4
+8, 6
+5
+5
+6
+4
+7
+.
+8
+4
+9
+2
+10
+1
+11
+.
+12
+0
+
+Because most of the modules are 2-torsion the most common pairing is between δ and
+11 − δ rather than between δ and 12 − δ as happens for the main U -power diagonals.
+(ii) We also note as before that since N B = Γ(a) BB, we have
+Σ6+4σ Γ(v1 ,v2 ) BB ∼ (Γ(a) BB)∗
+(where we have written ∼ rather than ≃ in recognition of the differentials) and
+Σ6+4σ Γ(v1 ,v2 ,a) BB ≃ BB ∗ ,
+with the second stating that BB is Gorenstein of shift −6 − 4σ for the ideal (v 1 , v 2 , a).
+
+C2
+Appendix A. The computation of πF
+BP R
+
+Our main goal in this appendix is to compute the homotopy fixed point spectral sequence
+for BP R and hence for M R. All the results in this appendix and the essential idea of the
+argument for Proposition A.2 are contained in [HK01] (see especially Formula 4.16). We just
+rearranged their arguments and added some details. Our argument for the multiplicative
+extensions might be considered new though. We have strived for elementary and short proofs
+though they retain some computational complexity. We hope this is helpful for the reader to
+understand this crucial computation. Note that even before Hu and Kriz, the computation
+C2
+of πF
+BP R was announced in [AM78].
+We will work throughout 2-locally. As before, we denote by ρ the regular real C2 representation and by σ the sign representation. We need a few facts, first proven by Araki:
+F
+(1) If E is a Real-oriented spectrum, then ECF2 (CP ∞ ) ∼
+= EC2 JuK with |u| = −ρ and
+F
+E F (CP ∞ × CP ∞ ) ∼
+= E J1 ⊗ u, u ⊗ 1K. This induces a formal group law on π C2 E
+C2
+
+∗ρ
+
+C2
+
+C2
+e
+and the forgetful map π∗ρ
+E → π2∗
+E maps it to the usual formal group law from the
+complex orientation of E. [HK01, Theorem 2.10]
+
+55
+
+e
+C2
+e
+M U is
+M R from the Lazard ring so that π2∗
+M U → π∗ρ
+(2) Thus, we get a ring map π2∗
+C2
+a retract of π∗ρ M R. For every class in x ∈ π2∗ M U , we have thus a corresponding
+C2
+class x ∈ π∗ρ
+M R. [HK01, Proposition
+2.27]
+L
+(3) There is a splitting M R(2) ≃ mi Σmi ρ BP R, where the underlying spectrum of BP R
+agrees with
+L BP . This splitting corresponds on geometric fixed points to the splitting
+M O ≃ mi Σmi HF2 . [HK01, Theorem 2.33]
+
+Define a : S 0 → S σ as before to be the inclusion of the points 0 and ∞; we will denote the
+image of a in πF M R and πF BP R by the same symbol. The class a has degree −σ = 1 − ρ.
+n+1 −1
+
+Proposition A.1. We have a2
+
+C2
+M R.
+v n = 0 in πF
+
+Proof: We have a fibre sequence
+(E C2 )+ ⊗ M R → M R → Ẽ C2 ⊗M R.
+First, we claim that the image of v n under M R → Ẽ C2 ⊗M R is zero. Indeed, as a is
+C2
+invertible on Ẽ C2 ⊗M R, the formal group law on π∗ρ
+(Ẽ C2 ⊗M R) agrees with that on
+C2
+π∗ (Ẽ C2 ⊗M R) = π∗ M O, which is additive. Therefore, the map
+C2
+C2
+M U2∗ → π∗ρ
+M R → π∗ρ
+Ẽ C2 ⊗M R
+n+1 −1
+
+sends all vn to zero. Thus, v n and hence also a2
+
+(E C2 )+ ⊗ M R → M R.
+
+Observe that
+|a2
+
+v n are in the image of the map
+
+n+1 −1
+
+v n | = −(2n+1 − 1)σ + (2n − 1)(1 + σ) = 2n − 1 − 2n σ.
+
+We claim that π2Cn2−1−2n σ ((E C2 )+ ⊗ M R) is zero. Indeed, we have
+
+n
+π2Cn2−1−2n σ ((E C2 )+ ⊗ M R) ∼
+= π2n −1 (Σ2 σ M R)h C2 .
+
+This can be computed by the homotopy orbit spectral sequence
+n
+
+n
+
+n
+
+Hp (C2 ; πq Σ2 σ M R) ⇒ πp+q (Σ2 σ M R)h C2 .
+n
+
+But πq Σ2 σ M R = 0 for q < 2n so that π2n −1 (Σ2 σ M R)h C2 = 0. Thus, we see that
+n+1
+C2
+M R.
+
+a2 −1 v n = 0 in πF
+For a C2 -spectrum X the RO(C2 ) graded homotopy fixed point spectral sequence is defined
+by combining the homotopy fixed point spectral sequences
+E p,q (r) = H q (C2 , πp+q (X ∧ S −rσ )) ⇒ π C2 ((X ∧ S −rσ )h C2 ) ∼
+= π C2 (X (EC2 )+ ) )
+2
+
+p
+
+p+rσ
+
+into a single spectral sequence with differential
+
+dn : Enp,q (r) −→ Enp−1,q+n (r).
+
+Note that we use an Adams grading convention here. We will often call p + rσ the degree of
+an element.
+The RO(C2 )-graded homotopy fixed point spectral sequence (HFPSS) for BP R has E2 term
+Z(2) [a, u±1 , v 1 , v 2 , . . . ]/2a.
+56
+
+with
+|a| = (−σ, 1), |u| = (2 − 2σ, 0), and |v i | = ((2i − 1)ρ, 0).
+This can be seen, for example, by the identification with the Bockstein spectral sequence
+for a discussed in [HM16, Lemma 4.8]. As BP R is a retract of M R(2) , it has the structure
+of a (homotopy) ring spectrum and thus the RO(C2 )-graded homotopy fixed point spectral
+sequence is multiplicative by [HM16, Sec 2.3].
+n+1
+By the discussion above, a and the v i are permanent cycles. As a2 −1 v n is zero, it must
+be hit by a differential. This is the crucial ingredient for the following central proposition. It
+is fully formal in the sense that we do not need any other input in addition to the things we
+already discussed; we argue just with the form of the spectral sequence. We will set v 0 = 2
+for convenience.
+Proposition A.2. In the HFPSS for BP R, we have E2n = E2n+1 −1 and it is the subalgebra
+of
+n
+E2 /(a3 v 1 , . . . , a2 −1 v n−1 )
+n−1
+
+generated by a, u±2
+
+i
+
+, the v i for i ≥ 0 and by the v i u2 j for i < n − 1 and j ∈ Z.
+
+Proof : We prove it by induction. It is obviously true for n = 1 by the checkerboard
+phenomenon; indeed, for all generators of the E2 -term in degree (a + bρ, q) we have a + q
+even.
+n−1
+n+1
+Now assume it to be true for a given n. First, we will show that d2n+1 −1 (u2 ) = a2 −1 v n .
+n+1
+Indeed, as a2 −1 v n is nonzero in E2n+1 −1 , it must be hit by a d2n+1 −1 . Its source x is in the
+zero-line in degree 2n+1 − 2n ρ. As the zero-line in E2 is generated by u of degree 4 − 2ρ and
+by the v i in regular representation degrees, we see that the exponent of u in x must be 2n−1
+n−1
+n+1
+so that there is no room for further v i . Thus, d2n+1 −1 (u2 ) = a2 −1 v n .
+i
+Next, we want to show that dq (v i u2 j ) = 0 for 2n+1 − 1 ≤ q < 2n+2 − 1 and i < n. Write
+i
+dq (v i u2 j ) = aq x. The degree of x is
+(2i − 1)ρ + 2i j(4 − 2ρ) − q(1 − ρ) − 1 = (2i+2 j − q − 1) + (2i − 2i+1 j + q − 1)ρ.
+i
+
+q+1
+
+Thus, x = u2 j− 4 v, where v is a polynomial in the v ν . The degree of v is (2i − 2 + q+1
+)ρ.
+2
+q+1
+n+1
+As 2 < 2 , we have
+|v| < |v 2n+1 | < |v r |
+for r ≥ n + 2. Thus, no monomial in v is divisible by v 2n+1 or v r . Assume that |v| = |v n+1 |.
+Then q+1
+= 2n+1 − 1 + 2 − 2i = 2n+1 − 2i + 1, which is odd; but then q+1
+∈
+/ Z, which is a
+2
+4
+contradiction. Thus, every monomial in v is divisible by some v k for some k ≤ n as v 6= 1
+for degree reasons. But aq v k = 0 in Eq . Thus, also aq x = 0 in Eq .
+n
+Similarly, write dq (u2 ) = aq x for 2n+1 − 1 ≤ q < 2n+2 − 1 and assume that this is nonzero.
+The degree of x is
+2n (4 − 2ρ) − q(1 − ρ) − 1 = (2n+2 − q − 1) + (q − 2n+1 )ρ.
+n
+
+q+1
+
+Thus, we can write x in E2 as u2 − 4 v, where v is a polynomial in the v ν . The degree of
+v is q−1
+< 2n+1 − 1. Thus, no monomial in v can be divisible by v r for r ≥ n + 1. Thus,
+2
+every monomial in v is divisible by some v k for some k ≤ n as v 6= 1 for degree reasons. But
+n
+aq v k = 0 in Eq . Thus, dq (u2 ) = 0.
+By the Leibniz rule, this implies the proposition.
+
+57
+
+Before we proceed to solve the multiplicative extension issues, we need a technical lemma.
+Lemma A.3. Assume that there is an element ak ul v 6= 0 above the zero line in the E∞ -term
+of the RO(C2 )-graded HFPSS for BP R with v a monomial in the v ν and in the same degree
+m
+as v i v m u2 j . Let p be the minimal index such that v p divides v (which we will show to exist).
+Then i > p + m.
+m
+
+Proof: The degree of v i v m u2 j is
+2m j(4 − 2ρ) + (2i − 1 + 2m − 1)ρ = 2m+2 j + (2i + 2m − 2m+1 j − 2)ρ.
+
+Let ak ul v 6= 0 be an element in E∞ in this degree with v a monomial in the v ν of degree
+nρ and assume that k > 0. (In the following we will use the notation ||v p || = |v p |/ρ so that
+||v|| = n.) We get
+4l + k = 2m+2 j
+
+n − 2l − k = 2i + 2m − 2m+1 j − 2.
+
+This implies n = 2i + 2m − 2 + k2 . We see that n 6= 0. Let p be the minimal index such
+that v p |v. Then 2p |l and we set c = l/2p . Then k = 2m+2 j − 2p+2 c. Due to the relation
+p+1
+a2 −1 v p = 0, we have k ≤ 2p+1 − 2 and thus m + 2 ≤ p (as else 2p+1 |k and thus k ≥ 2p+1 ).
+In particular, 2m+1 divides k2 . Now observe that n ≥ ||v p || = 2p − 1 so that
+
+k
+2i + 2m − 1 ≥ 2p − .
+2
+p+1
+As k ≤ 2 − 2, the right hand side is positive; as it is also divisible by 2m+1 it is thus it is at
+least 2m+1 . We see that i ≥ m + 1. Thus n ≡ 2m − 2 mod 2m+1 . As ||v q || ≡ −1 mod 2m+1
+for q ≥ p > m + 1, we see that the total exponent of v (i.e. the degree of v as a monomial in
+the v ν ) must be ≡ 2m + 2 mod 2m+1 . In particular, n ≥ ||v p ||(2m + 2) = (2p − 1)(2m + 2).
+Thus,
+k
+= n − 2i − 2m + 2 ≥ 2p+m − 2i + (2p+1 − 2m+1 ).
+2
+If p + m ≥ i, then the right hand side is at least 2p , which would be a contradiction. Thus
+i > p + m.
+
+
+Now, we are ready to prove the main result of the appendix. Note that [HK01, Theorem
+4.11] gives a different relation than our last one; our relation implies their relation, but not
+vice versa. Note also that our arguments for the multiplicative relations are completely
+algebraic (using the form of the spectral sequence), while [HK01] uses additionally a C2 equivariant Adams spectral sequence.
+C2
+Theorem A.4. The ring πF
+BP R is isomorphic to the E∞ -term of the homotopy fixed point
+spectral sequence above, i.e. to the subalgebra of
+i+1 −1
+
+Z(2) [a, v i , u±1 ]/(2a, v i a2
+
+)
+m
+
+(where i runs over all positive integers) generated by v m (n) = u2 n v m (with m, n ∈ Z and
+m ≥ 0) and a with v 0 = 2. Consequently, it is the quotient R of the ring
+Z(2) [a, v m (n)|m ≥ 0, n ∈ Z]
+58
+
+by the relations
+v 0 (0) = 2,
+a2
+
+m+1 −1
+
+v m (n) = 0,
+
+v i (j)v m (n) = v i v m (2i−m j + n) for i ≥ m
+with v i = v i (0).
+Here, |a| = 1 − ρ and |v m (n)| = 2m+2 n + (2m − 1 − 2m+1 n)ρ.
+Proof: It is enough to show that the expression above computes the homotopy fixed points
+C2
+C2
+≃ HF2 so that the
+BP R(E C2 )+ . Indeed, Proposition A.2 implies that a−1 BP R(E C2 )+
+πF
+(E C2 )+
+t C2
+ΦC2
+by the Tate
+is an equivalence and hence also BP R → BP R
+→ BP R
+map BP R
+square.
+m
+Set v 0 (0) = 2. By Proposition A.2, the classes u2 n v m are permanent cycles in the HFPSS;
+C2
+choose element v m (n) ∈ πF
+BP R(EC2 )+ representing them. Again by Proposition A.2, the
+v m (n) generate together with a the E∞ -term of the HFPSS. Thus, we get a surjective map
+R → E∞ . The third relation defining R allows to define a normal form: Every monomial in
+the v i (j) equals in R an element of the form v v m (k), where v is a monomial in the v i and m
+was the smallest index of all v i (j). Thus, two monomials in the v i (j) are equal in R if they
+are equal in E∞ ; hence, the map R → E∞ is also injective.
+C2
+We now check that the relations are also satisified in πF
+BP R(E C2 )+ . This is clear or was
+already shown for the first two relations. Let now i be the least number such that m ≤ i
+and
+v i (j)v m (n) 6= v i v m (2i−m j + n)
+for some j, m, n if such an i exists. The difference must be detected by a class ak ul v, where v
+is a polynomial in the v ν . Let p the minimal index such that every monomial in v is divisible
+by a v r with r ≤ p. From Lemma A.3, we know that p ≤ i − 1 (and in particular i ≥ 1).
+Thus,
+v i (j)v m (n)v i−1 6= v i v m (2i−m j + n)v i−1
+
+as their difference is detected by a nonzero class ak ul vv i−1 (indeed: this could only be zero
+if k ≥ 2i − 1, but k < 2p+1 − 1). By the minimality of i, we have
+v m (2i−m j + n)v i−1 = v i−1 (2j)v m (n).
+
+In addition, v i v i−1 (2j) = v i (j)v i−1 because there is no element of higher filtration in the
+same degree as v i−1 v i (j) by Lemma A.3. The last two equations combine to the chain of
+equalities
+v i (j)v m (n)v i−1 = v i v i−1 (2j)v m (n)
+= v i v m (2i−m j + n)v i−1
+This is a contradiction to the inequality above. Thus,
+v i (j)v m (n) = v i v m (2i−m j + n)
+
+
+is always true for i ≥ m.
+59
+
+Remark A.5. We remark that all the work above for the multiplicative extensions was
+actually necessary. For example, we get from the homotopy fixed point spectral sequence
+only that v 5 v 1 (1) − v 5 (1)v 1 (−15) has filtration at least 1. But there are indeed classes in
+this degree of higher filtration, for example a8 v 33 v 4 .
+References
+[AM78]
+
+Shôrô Araki and Mitutaka Murayama. τ -cohomology theories. Japan. J. Math. (N.S.), 4(2):363–
+416, 1978.
+[And69]
+DW Anderson. Universal coefficient theorems for K-theory, mimeographed notes. Univ. California, Berkeley, Calif, 1969.
+[Ara79]
+Shôrô Araki. Orientations in τ -cohomology theories. Japan. J. Math. (N.S.), 5(2):403–430, 1979.
+[Ati66]
+M. F. Atiyah. K-theory and reality. Quart. J. Math. Oxford Ser. (2), 17:367–386, 1966.
+[Ban13]
+Romie Banerjee. On the ER(2)-cohomology of some odd-dimensional projective spaces. Topology
+Appl., 160(12):1395–1405, 2013.
+[BC76]
+Edgar H. Brown, Jr. and Michael Comenetz. Pontrjagin duality for generalized homology and
+cohomology theories. Amer. J. Math., 98(1):1–27, 1976.
+[BG10]
+Robert R. Bruner and J. P. C. Greenlees. Connective real K-theory of finite groups, volume
+169 of Mathematical Surveys and Monographs. American Mathematical Society, Providence, RI,
+2010.
+[DGI06]
+W. G. Dwyer, J. P. C. Greenlees, and S. Iyengar. Duality in algebra and topology. Adv. Math.,
+200(2):357–402, 2006.
+[Dug05]
+Daniel Dugger. An Atiyah-Hirzebruch spectral sequence for KR-theory. K-Theory, 35(3-4):213–
+256 (2006), 2005.
+[EKMM97] A. D. Elmendorf, I. Kriz, M. A. Mandell, and J. P. May. Rings, modules, and algebras in stable
+homotopy theory, volume 47 of Mathematical Surveys and Monographs. American Mathematical
+Society, Providence, RI, 1997. With an appendix by M. Cole.
+[GM95a]
+J. P. C. Greenlees and J. P. May. Completions in algebra and topology. In Handbook of algebraic
+topology, pages 255–276. North-Holland, Amsterdam, 1995.
+[GM95b]
+J. P. C. Greenlees and J. P. May. Generalized Tate cohomology. Mem. Amer. Math. Soc.,
+113(543):viii+178, 1995.
+[GS17]
+J.P.C. Greenlees and V. Stojanoska. Local and global duality in chromatic homotopy theory. In
+preparation, page 35pp, 2017.
+[HHR16]
+M. A. Hill, M. J. Hopkins, and D. C. Ravenel. On the nonexistence of elements of Kervaire
+invariant one. Ann. of Math. (2), 184(1):1–262, 2016.
+[Hil12]
+Michael A. Hill. The equivariant slice filtration: a primer. Homology Homotopy Appl., 14(2):143–
+166, 2012.
+[HK01]
+Po Hu and Igor Kriz. Real-oriented homotopy theory and an analogue of the Adams-Novikov
+spectral sequence. Topology, 40(2):317–399, 2001.
+[HM16]
+M. A. Hill and L. Meier. The C2 -spectrum T mf1 (3) and its invertible modules. ArXiv e-prints,
+December 2016.
+[HS14]
+Drew Heard and Vesna Stojanoska. K-theory, reality, and duality. J. K-Theory, 14(3):526–555,
+2014.
+[Hu02]
+Po Hu. On Real-oriented Johnson-Wilson cohomology. Algebr. Geom. Topol., 2:937–947, 2002.
+[Kai71]
+Paul C. Kainen. Universal coefficient theorems for generalized homology and stable cohomotopy.
+Pacific J. Math., 37:397–407, 1971.
+[KW13]
+Nitu Kitchloo and W. Stephen Wilson. Unstable splittings for real spectra. Algebr. Geom. Topol.,
+13(2):1053–1070, 2013.
+[KW15]
+Nitu Kitchloo and W. Stephen Wilson. The ER(n)-cohomology of BO(q) and real JohnsonWilson orientations for vector bundles. Bull. Lond. Math. Soc., 47(5):835–847, 2015.
+[LO16]
+Gerd Laures and Martin Olbermann. T M F0 (3)-characteristic classes for string bundles. Math.
+Z., 282(1-2):511–533, 2016.
+60
+
+[Lor16]
+[Mar83]
+
+[MM02]
+[Ric14]
+[Sch12]
+[Sch14]
+[Sto12]
+[Til13]
+[Til16]
+
+Vitaly Lorman. The real Johnson-Wilson cohomology of CP∞ . Topology Appl., 209:367–388,
+2016.
+H. R. Margolis. Spectra and the Steenrod algebra, volume 29 of North-Holland Mathematical
+Library. North-Holland Publishing Co., Amsterdam, 1983. Modules over the Steenrod algebra
+and the stable homotopy category.
+M. A. Mandell and J. P. May. Equivariant orthogonal spectra and S-modules. Mem. Amer.
+Math. Soc., 159(755):x+108, 2002.
+Nicolas Ricka. Equivariant anderson duality and mackey functor duality. Glasgow Mathematical
+Journal, pages 1–28, 2014.
+S. Schwede. An untitled book project about symmetric spectra. http://www.math.uni-bonn.
+de/people/schwede/SymSpec-v3.pdf, 2012.
+Stefan Schwede. Lectures on equivariant stable homotopy theory. Available on the author’s website, 2014.
+Vesna Stojanoska. Duality for topological modular forms. Doc. Math., 17:271–311, 2012.
+Sean Michael Tilson. Power Operations In The Kunneth And C2 -Equivariant Adams Spectral
+Sequences With Applications. PhD thesis, 2013.
+Sean Tilson. Power operations in the Kunneth spectral sequence and commutative HFp -algebras.
+arXiv preprint arXiv:1602.06736, 2016.
+
+School of Mathematics and Statistics, Hicks Building, Sheffield S3 7RH. UK.
+E-mail address: j.greenlees@sheffield.ac.uk
+Universität Bonn, Endenicher Allee 60, 53115 Bonn
+E-mail address: lmeier@math.uni-bonn.de
+
+61
+
+
