@@ -129,12 +129,21 @@ C1 Orbit/fixed-point counts of the multiplicative dynamics: #Fix(x n) on
    unconditionally; periodic orbits = prime powers); pairing = coincidence
    counts on the square of the system. The integer-native discrete version
    of the Deninger continuum program.
-C4 Hall pairing on the category of finite Z-modules: Hall numbers count
-   extensions (integer, definitionally positive, composition built in);
-   the category IS unique factorization (Jordan-Holder = Euler product;
-   P2 structural: DH has no module category); generating functions give
-   zeta-products. Question nobody has posed in this form: does the natural
-   flow-correlation of the Hall structure carry the full EF fingerprint?
+C4 Hall pairing - EXECUTED (count_hall_signature.py + doc 17 sections 5-6):
+   Hall numbers integer + symmetric (duality theorem, verified in-data);
+   self-dual-grade forms POSITIVE DEFINITE all cells = metric, no index
+   (consistent with PSH positivity). Structural why: the Euler form
+   chi = log|Hom| - log|Ext| VANISHES IDENTICALLY on finite Z-modules
+   (|Ext^1| = |Hom|) - the categorical form of "Spec Z is 1-dimensional"
+   (third independent derivation). Index demands a 2-DIMENSIONAL category.
+C4' (REDIRECTED FRONT QUESTION, fresh-context scale): the Euler pairing on
+   finite complexes over the DERIVED SQUARE Z (x)^L_S Z (sphere spectrum;
+   higher homotopy supplies the second dimension - NOT covered by the F1
+   scale kill, passes G-INT5 since no finite residue field at infinity is
+   invoked). Does it have nonvanishing signature content on torsion
+   classes? Lorentzian answer = first sign-bearing integer pairing on an
+   arithmetic square. Homotopy-theoretic computation (dual-Steenrod-type
+   rings, THH-adjacent machinery).
 C2 Trace-formula integer structures: class numbers (Eichler-Selberg),
    dimensions of form spaces - where arithmetic already pairs integer
    multiplicities with spectra (source of the Selberg-zeta RH-analogue).
