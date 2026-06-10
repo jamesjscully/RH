@@ -1,0 +1,875 @@
+Real topological Hochschild homology and the Segal conjecture
+Jeremy Hahn and Dylan Wilson
+
+arXiv:1911.05687v2 [math.AT] 24 Aug 2022
+
+Abstract
+We give a new proof, independent of Lin’s theorem, of the Segal conjecture for the cyclic group of order
+two. The key input is a calculation, as a Hopf algebroid, of the Real topological Hochschild homology
+of F2 . This determines the E2 -page of the descent spectral sequence for the map NF2 Ñ F2 , where NF2
+is the C2 -equivariant Hill–Hopkins–Ravenel norm of F2 . The E2 -page represents a new upper bound on
+the ROpC2 q-graded homotopy of NF2 , from which the Segal conjecture is an immediate corollary.
+
+Contents
+1 Introduction
+
+1
+
+2 The Real Topological Hochschild Homology of F2
+
+4
+
+3 The Construction of the Spectral Sequence
+
+5
+
+4 Computation of the E2 -page
+
+6
+
+5 The Segal conjecture
+
+8
+
+6 Epilogue
+
+9
+
+1
+
+Introduction
+
+The Segal conjecture, for the cyclic group C2 of order 2, is an equivalence
+p 2q
+πs0 pRP8 q – ApC
+of the stable cohomotopy of RP8 with the completion of the Burnside ring of C2 at the augmentation ideal.
+The conjecture follows from the following stronger result of Lin [LDMA80]:
+Theorem 1.1 (Lin). Let γ denote the canonical line bundle over RP8 , and for each integer n ą 0 let RP8
+´n
+denote the Thom spectrum of ´n ¨ γ. Then there is an equivalence of spectra
+8
+´1 ^
+RP8
+q2 .
+´8 “ holimn RP´n » pS
+
+The only known proof of Lin’s theorem proceeds via calculation of a certain continuous Ext group
+`
+˘
+y A H˚ pRP8 ; F2 q, F2 .
+Ext
+´8
+The calculation is elegant, and has been generalized through the development of the Singer construction
+[Sin80, AGM85, LeNR12]. However, the simplicity of Lin’s proof is fundamentally limited by the complexity
+of the Steenrod algebra A. The goal of this paper is to provide a new, less computational proof of Lin’s
+theorem. We cannot avoid calculating a completed Ext group, but the Ext we calculate is over a polynomial
+coalgebra F2 rxs rather than the Steenrod algebra A. We trust the reader will agree that this reduces the
+complexity of the homological algebra.
+1
+
+Remark 1.2. Just as the Steenrod algebra A arises as (the dual of) the homology of F2 , the polynomial
+coalgebra F2 rxs appears as the topological Hochschild homology of F2 .
+To explain our methods, we must review how the Segal conjecture has been both restated and generalized
+via the language of C2 -equivariant stable homotopy theory.
+Notation 1.3. In the C2 -equivariant stable homotopy category, we use the notation S “ S 0 to denote the
+unit object. This is the C2 -equivariant sphere spectrum. We use S σ to denote the 1-point compactification
+of the sign representation. Depending on context, we use F2 to denote either the field with 2 elements or
+the non-equivariant Eilenberg–Maclane spectrum HF2 .
+Recollection 1.4. In the C2 -equivariant stable homotopy category, the morphism
+a : S ´σ Ñ S 0
+is adjoint to the inclusion of fixed points into the sign representation σ. The Borel completion of a C2 spectrum X is the a-completion
+`
+˘
+Xa^ :“ holim ¨ ¨ ¨ Ñ X{an Ñ X{an´1 Ñ ¨ ¨ ¨ Ñ X{a .
+One says that a C2 -spectrum X is Borel complete if the natural map X Ñ Xa^ is an equivalence.
+Theorem 1.5 (Lin’s theorem, restated). The natural map S Ñ Sa^ is an equivalence after 2-completion.
+We will explain the equivalence of the two variants of Lin’s theorem in Section 5. In the above form,
+Lin’s theorem has received a substantial generalization.
+Recollection 1.6. For any ordinary spectrum X, the Hill–Hopkins–Ravenel norm N X “ NeC2 X is a C2 equivariant refinement of the smash product X ^ X, with C2 -action given by swapping the two copies of X
+[HHR16, §B.5].
+A version of the following was first proved in [JW83] (cf. [LeNR12, Theorem 5.13]). As we will recall in
+Section 5, the statement in full generality is a consequence of [NS18, III.1.7].
+Theorem 1.7 (Segal conjecture, strong form). Let X denote any bounded below spectrum. Then the natural
+map
+NX Ñ pNXq^
+a
+is an equivalence after 2-completion.
+Theorem 1.5 follows from Theorem 1.7 by setting X to be the sphere spectrum. As explained in [NS18,
+III.1.7], Theorem 1.7 follows in general from the case X “ F2 . In other words, since NF2 is 2-complete, all
+statements of Lin’s theorem are consequences of the following result:
+Theorem 1.8. The C2 -spectrum NF2 is Borel complete.
+Theorem 1.8 is the form in which we will prove the Segal conjecture. It is important to note that, while
+Theorem 1.8 tells us that the spectra NF2 and pNF2 q^
+a coincide, it does not shed light on the homotopy type
+of either one. As we now explain, our main theorem provides a computable upper bound on the homotopy
+groups of these spectra, and in this sense our results are stronger than the Segal conjecture.
+We prove the following Theorem and Corollary independently of the Segal conjecture:
+Theorem A. Let F2 rxs be the Hopf algebra with x primitive of degree 1 ` σ, and let F2 ra, us be the comodule
+algebra where the class a is primitive in degree ´σ, u is in degree 1 ´ σ, and the coaction is determined by:
+u ÞÑ u b 1 ` a2 b x.
+
+2
+
+Then there is a spectral sequence
+s,k``σ
+
+E2 “ y
+ExtF2 rxs pF2 , F2 ra, u˘1 sq ñ πpk´sq``σ pNF2 q^
+a.
+Explicitly, the completed Ext appearing in this E2 -page may be calculated as
+˘1
+E2 “ lim ExtFs,k``σ
+sq.
+2n pF2 , F2 ra, u
+2 rxs{x
+n
+
+Corollary B. Let p and q denote integers such that p ` q ă 0. Then
+#
+0
+p‰0
+^
+πp`qσ pNF2 qa “
+´q
+F2 ta u p “ 0.
+Corollary B follows from straightforward computation of the Ext groups appearing in Theorem A. As we
+will explain in Section 5, it immediately implies Theorem 1.8 and hence Theorem 1.7.
+Remark 1.9. Our proof of Theorem A arises by considering the descent spectral sequence for the C2 equivariant morphism
+NF2 Ñ F2 ,
+where we use F2 to denote the C2 -equivariant Eilenberg–Maclane spectrum of the constant Mackey functor
+HF2 . The basic descent datum is the ROpC2 q-graded homotopy of
+F2 bNF2 F2 ,
+which is known as the Real topological Hochschild homology of F2 . These ROpC2 q-graded homotopy groups
+were computed as an algebra in [DMPP17]. We will need to know them as a Hopf algebroid, and not just
+as an algebra. Our computation of the Hopf algebroid structure maps is likely of independent interest, and
+appears in Section 2.
+2
+Remark 1.10. By the Segal conjecture, the fixed points spectrum NFC
+2 is identified with the more classical
+hC2
+object pF2 ^ F2 q . There has been some interest in computing the homotopy groups of these fixed points,
+and we give a brief discussion in Section 6.
+
+Outline
+The spectral sequence in the main theorem is obtained by taking the a-completion of the relative Adams spectral sequence for the map NF2 Ñ F2 . The E2 -term of this spectral sequence is governed by the Hopf algebroid
+structure on π‹ pF2 bNF2 F2 q, otherwise known as Real topological Hochschild homology (cf. [DMPP17]). We
+determine this structure in §2 by comparison with underlying and geometric fixed points. In §3 we identify
+the E2 -page for the Borel completion with the indicated limit of Ext groups. In §4 we compute these Ext
+groups, and extract a vanishing result which implies the Segal conjecture for the group C2 . We give the
+proof of the Segal conjecture in §5. Finally, in §6 we indicate a computation of some low dimensional integer
+stems, and leave the reader with a few questions of interest.
+Conventions
+We assume the reader is acquainted with equivariant homotopy theory at the level of [HHR16, §2,§3].
+Acknowledgements
+We thank Danny Shi and Mingcong Zeng for discussions about their works in progress, and for their patience
+regarding our hasty and error-prone emails. We thank Hood Chatham for help with some computer calculations we used to explore our E2 -page, as well as for his spectral sequence package. We thank J.D. Quigley
+and Tyler Lawson for sharing their unpublished work on the fixed points pNF2 qC2 , as well as for providing
+detailed answers to questions. We thank Mark Behrens for useful discussions, and for sharing a draft of his
+approach to the Segal conjecture via equivariant homotopy theory. The first author was supported by the
+NSF under grant DMS-1803273, and the second author under grant DMS-1902669.
+3
+
+2
+
+The Real Topological Hochschild Homology of F2
+
+Recall from [DMPP17] that, if R P CAlgC2 is a C2 -commutative ring spectrum1 , then the Real topological
+Hochschild homology of R is the C2 -spectrum
+THHσ pRq :“ R bNR R.
+The underlying spectrum is the topological Hochschild homology of R (viewed as an ordinary ring spectrum).
+The geometric fixed points are given by
+pTHHσ pRqqΦC2 » RΦC2 bR RΦC2 .
+Dotto–Moi–Patchkoria–Reeh computed the Real topological Hochschild homology of F2 in [DMPP17,
+Theorem 5.18]:
+Theorem 2.1. THHσ pF2 q is the free E1 -F2 -algebra on a generator x in degree ρ. In particular, there is an
+isomorphism of ROpC2 q-graded rings:
+THHσ pF2 q‹ – pF2 q‹ rxs,
+
+|x| “ ρ.
+
+If THHσ pRq‹ is flat over R‹ then the pair pR‹ , THHσ pRq‹ q forms a Hopf algebroid in the usual way, since
+we may identify it with the Hopf algebroid associated to the relative Adams spectral sequence for the map
+NR Ñ R.
+Remark 2.2. In the classical setting, the left and right units for THHpRq are always homotopic, and, when
+the relevant flatness hypothesis is satisfied, the associated Hopf algebroid is always a Hopf algebra. This is
+no longer true for real Hochschild homology, as we will see below. The reason is that the inclusions of the
+two different fixed points into S σ are not equivariantly homotopic.
+Before stating the structure theorem, we recall that the homotopy groups of F2 are given by
+π‹ F2 “ F2 ra, us ‘
+
+F2 pa, uq
+tθu
+F2 ra, us
+
+where:
+• u : S 1´σ Ñ F2 is the unique homotopy class extending the underlying unit C2` Ñ F2 along the map
+C2` Ñ S 1´σ .
+• θ : S 2σ Ñ S 2 is the degree 2 cover.
+Theorem 2.3. The Hopf algebroid structure on ppF2 q‹ , THHσ pF2 q‹ q is given as follows:
+• The right units on generators are:
+ηR paq “ a,
+ηR pθq “ θ,
+ηR puq “ u ` a2 x,
+ηR pθa´i u´j q “ pu ` a2 xq´j
+
+θ
+.
+ai
+
+(Note that the apparently infinite sum in the last formula is finite because aθi is a-torsion.)
+1 More generally, this definition makes sense if R is an E
+
+σ -ring in the sense of [Hil17, §2.2].
+
+4
+
+• The comultiplication is determined by
+∆pxq “ x b 1 ` 1 b x.
+Proof. Since NS 0 “ S 0 the Hopf algebroid structure on THHσ pS 0 q is trivial. Both θ and a lie in the Hurewicz
+image of S 0 Ñ F2 , so we conclude that they are primitive as indicated.
+The element x is primitive for degree reasons: the only elements in πρ pTHHσ pF2 q bF2 THHσ pF2 qq are
+x b 1 and 1 b x.
+Now we compute the right unit on u. Observe that, as a vector space, π1´σ F2 rxs “ F2 tu, a2 xu so we
+must have ηR puq “ αu ` βa2 x for some numbers α and β in F2 . On underlying homotopy we have respuq “ 1
+so that α “ 1. Now observe that the map
+NF2 Ñ F2
+becomes, upon taking geometric fixed points, the map
+F2 Ñ F2 rts
+where t “ u{a.
+The descent Hopf algebroid for this map has left and right units ηL , ηR : F2 rts Ñ F2 rts bF2 F2 rts given by
+t ÞÑ 1 b t and t ÞÑ t b 1. In particular, ηL ´ ηR is nonzero on geometric fixed points, so β must be nonzero,
+completing the proof of the claim.
+It remains to compute the right unit on elements of the form θa´i u´j . For any C2 -spectrum X we have
+a natural transformation B : Σ´1 Xa^ ra´1 s Ñ X arising as the connecting map in the following arithmetic
+pullback square:
+/ Xra´1 s
+X
+
+/ Xa^ ra´1 s
+
+
+Xa^
+
+Moreover, if X is a homotopy ring, then B is a map of X-modules.
+In particular, we have a commutative diagram:
+´1
+Σ´1 pF2 q^
+s
+a ra
+
+ηR
+
+´1
+/ Σ´1 pF2 bNF F2 q^
+s
+a ra
+2
+
+B
+
+
+F2
+
+
+
+B
+
+/ F2 bNF F2
+
+ηR
+
+2
+
+The construction X ÞÑ Xa^ ra´1 s is lax symmetric monoidal, so the map
+`
+˘^
+´1
+pF2 q^
+s Ñ F2 bNF2 F2 a ra´1 s
+a ra
+is still a ring map and hence
+ηR pa´i´1 u´j´1 q “ a´i´1 ηR puq´j´1 “ a´i´1 pu ` a2 xq´j´1 .
+On the other hand, Bpa´i´1 u´j´1 q “ θa´i u´j and the result follows.
+
+3
+
+The Construction of the Spectral Sequence
+
+Theorem 3.1. There is a spectral sequence
+˘1
+E2 “ lim ExtFs,k``σ
+sq ñ πpk´sq``σ pNF2 q^
+2n pF2 ra, u
+a.
+2 rxs{x
+n
+
+5
+
+Proof. Since NF2 is connective and 2-complete, there is an identification2 :
+NF2 » holim F2 bNF2 ‚`1 .
+∆
+
+Since a-completion preserves homotopy limits, we have
+` bNF ‚`1 ˘^
+2
+pNF2 q^
+.
+a » holim F2
+a
+∆
+
+Thus we get a spectral sequence with E1 -term given by
+˘^
+`
+E1s,‹`s “ π‹ F2 bNF2 s`1 a .
+Since F2 bNF2 F2 is free as an F2 -module, the same is true for each term F2 bNF2 s`1 . The a-completion of F2
+has ROpC2 q-graded homotopy groups
+˘1
+π‹ pF2 q^
+s.
+a – F2 ra, u
+Combined with the computation in the previous section, we may then identify the sth term of the E1 -page
+with
+F2 ra, u˘1 , x1 , ..., xs s^
+a,
+and the d1 -differentials are determined by the coaction u ÞÑ u ` a2 x. Here observe that the a-completion is
+taken in the graded sense, so the completion of a graded ring R at the ideal paq is equivalent to completion
+with respect to paq X R0 . Thus, we may rewrite the sth term as:
+˘1
+F2 ra, u˘1 , x1 , ..., xs s^
+, x1 , ..., xs s^
+a – F2 ra, u
+pa2 u´1 x1 ,...,a2 u´1 xs q
+
+– F2 ra, u˘1 , x1 , ..., xs s^
+px1 ,...,xs q
+´
+¯bs
+n
+“ lim F2 ra, u˘1 s b F2 rxs{px2 q
+.
+n
+
+where the completions and limit are understood in the graded setting. In other words, we may identify the
+E1 -term with the limit of the cobar complexes:
+E1 “ lim CF˚2 rxs{px2n q pF2 ra, u˘1 sq.
+n
+
+By the Milnor exact sequence (as in, e.g., [Wei94, Theorem 3.5.8]), this gives the desired computation of
+the E2 -term modulo a possible lim1 contribution. But for fixed n and tridegree, these groups are finitedimensional vector spaces over F2 , so the lim1 vanishes and the result follows.
+
+4
+
+Computation of the E2 -page
+
+In this section we compute some information about the E2 -page of the spectral sequence from the previous
+section. Our principal aim will be to prove Corollary B from the Introduction.
+pnq
+Write tEr u for the x-adic spectral sequence
+pnq
+
+E2
+
+“ F2 ra, u, y0 , ..., yn´1 s ñ ExtF2 rxs{px2n q pF2 ra, usq,
+
+i
+
+p8q
+
+where yi is represented by rx2 s in the cobar complex, and write tEr u or tEr
+sequence
+E2 “ F2 ra, u, yi : i ě 0s ñ ExtF2 rxs pF2 ra, usq.
+
+u for the x-adic spectral
+
+2 The proof is that of [Bou79, Theorem 6.6], where one replaces the Postnikov tower with the C -equivariant Postnikov tower.
+2
+
+6
+
+Theorem 4.1. We have ring isomorphisms
+E8 “ F2 ra, u2
+n
+
+pnq
+
+r`1
+
+E8 “ F2 ra, u2 , u2
+
+r`1
+
+m
+
+m
+
+r`1
+
+yr : m, r ě 0s{pa2
+
+r`1
+
+u2
+
+m
+
+yr q.
+
+r`1
+
+yr : m ě 0, 0 ď r ď n ´ 1s{pa2
+
+r`1
+
+u2
+
+m
+
+yr q.
+
+Moreover, there are no nontrivial F2 ras-module extensions.
+The proof will require the following lemma.
+r`1
+
+Lemma 4.2. The elements u2
+
+m
+
+pnq
+
+yr P E2 pF2 ra, usq are permanent cycles for all m ě 0 and 0 ď r ď n ´ 1.
+
+Proof. Let δ denote the Bockstein
+r`1
+
+δ : Ext0 pF2 ra, us{pa2
+
+qq Ñ Ext1 pF2 ra, usq.
+
+In the cobar complex we have
+r
+
+dpu2 p2m`1q q ” u2
+
+r`1
+
+r
+
+m 2r`1
+
+a
+
+r
+
+r
+
+rx2 s mod x2 `1 .
+
+r`1
+
+r
+
+r`1
+
+r
+
+It follows that u2 p2m`1q is primitive in F2 ra, us{pa2 q and that δpu2 p2m`1q q is represented by u2 m rx2 s
+r`1
+modulo terms of higher filtration. This provides a lift of the element u2 m yr to a cocycle in the cobar
+complex, which completes the proof.
+pnq
+
+pnq
+
+Proof of Theorem 4.1. We will prove by induction on t ď n that E2t´1 `1 “ E2t , and
+t
+
+pnq
+
+r`1
+
+E2t “ F2 ra, u2 , u2
+
+m
+
+yr : m ě 0, 0 ď r ď n ´ 1s{pa2
+
+r`1
+
+yr : r ď t ´ 1q.
+
+pnq
+
+Note that, in this case, E2n is generated by permanent cycles so the spectral sequence stops at this page,
+which is also the advertised answer.
+The base case is trivial, so we assume the result holds for t and turn to the inductive step. Let I “
+in´1
+pi0 , i1 , ..., in´1 q be a tuple of nonnegative integers and denote by yI the monomial y0i0 y1i1 ¨ ¨ ¨ yn´1
+. Given
+such a monomial, denote by mpIq the minimal nonzero index in I. Then the elements
+am uk yI
+with
+• mpIq ď t ´ 1, m ď 2mpIq`1 ´ 1, and k divisible by 2mpIq`1 ; or
+• mpIq ě t and k divisible by 2t
+pnq
+
+form an F2 -basis for E2t . If mpIq ď t ´ 1 then this element is a product of permanent cycles by the previous
+t`1
+t
+t
+lemma. Otherwise, using the cobar differential dpu2 q “ a2 rx2 s, we see that
+t
+
+t
+
+t`1
+
+d2t pam u2 ` yI q “ am yI p`pu2 q`´1 a2
+and so
+
+t`1
+
+pnq
+
+E2t `1 “ F2 ra, u2
+t`1
+
+r`1
+
+, u2
+
+t`2
+
+m
+
+t`1
+
+yr s{pa2
+
+r`1
+
+yt q,
+
+yr : r ď t ` 1q.
+
+t`1
+
+In the cobar complex we have dpu2 q “ a2 rx2 s, so u2
+survives to E2t`1 in the x-adic spectral
+sequence, and the other algebra generators are permanent cycles. This completes the induction and the ther
+orem follows modulo extension problems. With notation as in the previous lemma, we note that δpu2 p2m`1q q
+r`1
+r`1
+provides a lift of u2 m yr which is automatically annihilated by a2 . This resolves the F2 ras-module extension problem.
+The case of n “ 8 is essentially the same (or could also be deduced from the above computation).
+7
+
+We are now ready to deduce Corollary B from the Introduction:
+Corollary. Let p and q denote integers such that p ` q ă 0. Then
+#
+0
+p‰0
+^
+πp`qσ pNF2 qa “
+´q
+F2 ta u p “ 0.
+Proof. It suffices to prove this on the E2 -term of the spectral sequence in Theorem A. Indeed, once this
+result is known on the E2 -page, we see that the classes a´q must be permanent cycles since their potential
+targets lie in the vanishing range. They cannot be the target of differentials since they lie in filtration 0.
+We will show that, in positive filtration, the E2 -term vanishes when p ` q ă 0; the filtration zero
+contribution is easily seen to be just F2 ta´q u. It further suffices to verify this vanishing for each group
+ExtF2 rxs{px2n q pF2 ra, u˘1 sq appearing in the limit defining the E2 -page.
+n
+n
+Since u2 is F2 rxs{px2 q-primitive in F2 ra, us, we have that
+n
+
+ExtF2 rxs{px2n q pF2 ra, u˘1 sq “ ExtF2 rxs{px2n q pF2 ra, usqrpu2 q´1 s.
+Since u has underlying topological degree 0, we can verify the vanishing claim before inverting u. But there
+it follows immediately from Theorem 4.1, since each multiplicative generator of the associated graded, in
+positive filtration, satisfies p ` q ě 0.
+
+5
+
+The Segal conjecture
+
+In this section, we prove the Segal conjecture in the following form:
+Theorem 5.1. Let X denote any bounded below spectrum. Then the natural map
+NX Ñ pNXq^
+a
+is an equivalence after 2-completion.
+The key point is the following standard observation:
+Lemma 5.2. Let X be a bounded below spectrum. Then, to prove Theorem 5.1, it suffices to show that
+´1
+pNXqra´1 s Ñ pNXq^
+s
+a ra
+
+is an equivalence after 2-completion. This in turn is equivalent to the claim that the Tate diagonal
+X Ñ pX ^ XqtC2
+is an equivalence after 2-completion.
+Proof. The first part of the lemma follows from the pullback fracture square
+NX
+
+/ pNXqra´1 s
+
+
+pNXq^
+a
+
+
+´1
+/ pNXq^
+s
+a ra
+
+Since this is a pullback, the left hand vertical map is an equivalence after 2-completion if and only if the
+right hand vertical map is an equivalence after 2-completion. To obtain the second part of the lemma, note
+that the non-equivariant map underlying a is nullhomotopic. Thus, the non-equivariant spectra underlying
+´1
+pNXqra´1 s and pNXq^
+s are trivial. This means that it suffices to check that the map on C2 -fixed points
+a ra
+`
+˘C2
+`
+˘
+´1 C2
+pNXqra´1 s
+Ñ pNXq^
+s
+a ra
+is an equivalence after 2-completion. The above map is identified with the Tate diagonal via [BW18, §2] and
+[NS18, §III.1.5].
+8
+
+Next, we refer to an argument of Nikolaus–Scholze [NS18, proof of III.1.7], where they show that the
+Tate diagonal
+X Ñ pX ^ XqtC2
+is an equivalence after 2-completion, for all bounded below X, if it is when X “ F2 . Given this, we are ready
+to prove Theorem 5.1.
+Proof of Theorem 5.1. We are reduced to proving that
+´1
+pNF2 qra´1 s Ñ pNF2 q^
+s
+a ra
+
+is an equivalence. Observe that, when a acts invertibly on a C2 -spectrum Y , we have
+–
+
+¨aq : πp`qσ Y ÝÑ πp pY C2 q.
+Since pNF2 ra´1 sqC2 “ F2 , we deduce that π‹ NF2 ra´1 s “ F2 ra˘1 s. So it suffices to show that:
+´1
+π‹ pNF2 q^
+s “ F2 ra˘1 s.
+a ra
+
+Multiplication by a decreases underlying topological dimension, so it further suffices to show that, when
+p ` q ă 0, we have:
+#
+0
+p‰0
+^
+πp`qσ pNF2 qa “
+´q
+F2 ta u p “ 0
+This is the statement of Corollary B.
+Remark 5.3. Setting X “ S 0 , it follows from the above that
+0
+0 tC2
+pS 0 q^
+» pS 0 qtC2 .
+2 » pS ^ S q
+
+After identifying pS 0 qtC2 with ΣRP8
+´8 , the original version of Lin’s theorem follows.
+
+6
+
+Epilogue
+
+Integer stems
+Over the last few years, there have been several attempts to understand the homotopy groups of the nonequivariant spectrum
+C
+pNF2 q 2 “ pF2 ^ F2 qhC2 .
+This seems especially interesting in light of forthcoming work of Mingcong Zeng and Lennart Meier, which
+uses the equivalence
+ΦC2 NCC24 BPR » NF2
+to relate these homotopy groups to the slice spectral sequence differentials studied by Hill-Shi-Wang-Xu
+[HSWX18]
+The most straightforward approach to these homotopy groups is via the homotopy fixed point spectral
+sequence. However, even the E2 -page, given by the group cohomology H ˚ pC2 ; A˚ q, is largely unknown at
+this time [CW00]. Another approach, pursued independently in unpublished work by J.D. Quigley and
+Tyler Lawson, is to use the non-equivariant F2 -Adams spectral sequence. Quigley was able to use the
+2
+Adams spectral sequence to obtain some results about π˚ pNFC
+2 q for ˚ ă 10. We suspect that the use of the
+equivariant F2 -Adams spectral sequence for π‹ NF2 would lead to similar complications as those encountered
+by Lawson and Quigley.
+The relative Adams spectral sequence of this paper, restricted to integer stems πp`0σ NF2 , provides yet
+another route to these homotopy groups. We draw the E2 -page below, with each circle representing a single
+copy of F2 :
+9
+
+Remark 6.1. The E2 -page is easy to compute if one is only interested in integer stems. In this case, even
+on the E1 -page, the only possible contributions come from ExtF2 rxs pF2 ra, usq so we may forego inverting u
+and the corresponding completion.
+E2 page of the spectral sequence in degrees contributing to πp+0q NF2
+
+Filtration
+
+E2 page of the spectral sequence in degrees contributing to πp`0σ NF2
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+0 1 2 3 4 5 6 7 8 9 10
+Stem
+Using a low-dimensional cell structure for NF2 , one
+canpshow that there is a nontrivial extension between
+the classes in degrees p0, 0q and p0, 1q, and in particular that π0 NF2 – Z{4Z. One can also prove that the
+class in p1, 1q detects η.
+We believe, but have not verified, that there is a d2 differential from the class in degree p5, 3q to the class
+in degree p4, 5q. This should be a consequence of a whole family of d2 differentials
+d2 pyi`1 q “ pay0 qyi2 ,
+connected to each other via power operations. We suspect that an equivariant analog of work of Kahn
+[Kah69], as generalized by Bruner [BMMS86, §VI], could establish this family of differentials.
+
+Further Questions
+Question 6.2. Can the spectral sequence in this paper be used to recover any of the exotic differentials
+established by Hill-Shi-Wang-Xu in [HSWX18]? While the aλ -inverted slice spectral sequence also converges
+to the ROpC2 q-graded homotopy of NF2 , the two spectral sequences differ greatly on the E2 -page. It is
+conceivable that they become much more similar after running the slice differentials from Hill-HopkinsRavenel, since these implement the a-torsion visible on our E2 -page.
+Question 6.3. Can our method of proof be generalized to deduce the Segal conjecture for elementary pgroups? The Segal conjecture for elementary p-groups is the key computational input for the Segal conjecture
+in general [AGM85]. For the group Cp , it seems that a study of Fp bN Cp F Fp would be relevant.
+e
+
+p
+
+Question 6.4. The groups ExtF2 rxs pF2 ra, usq are much smaller than the version with u inverted. Real motivic
+homotopy theory provides a setting similar to C2 -equivariant homotopy theory in which the negative cone
+is not present (see, e.g., [BS19]). Is there a notion of motivic topological Hochschild homology of F2 whose
+homotopy groups are the Hopf algebroid F2 ra, u, xs?
+
+10
+1
+
+References
+[AGM85]
+
+J. F. Adams, J. H. Gunawardena, and H. Miller, The Segal conjecture for elementary abelian
+p-groups, Topology 24 (1985), no. 4, 435–460. MR 816524
+
+[BMMS86] R. R. Bruner, J. P. May, J. E. McClure, and M. Steinberger, H8 ring spectra and their applications, Lecture Notes in Mathematics, vol. 1176, Springer-Verlag, Berlin, 1986. MR 836132
+[Bou79]
+
+A. K. Bousfield, The localization of spectra with respect to homology, Topology 18 (1979), no. 4,
+257–281. MR 551009
+
+[BS19]
+
+Mark Behrens and Jay Shah, C2 -equivariant stable homotopy from real motivic stable homotopy,
+2019, arXiv:1908.08378.
+
+[BW18]
+
+Mark Behrens and Dylan Wilson, A C2 -equivariant analog of Mahowald’s Thom spectrum theorem, Proc. Amer. Math. Soc. 146 (2018), no. 11, 5003–5012. MR 3856165
+
+[CW00]
+
+M. D. Crossley and Sarah Whitehouse, On conjugation invariants in the dual Steenrod algebra,
+Proc. Amer. Math. Soc. 128 (2000), no. 9, 2809–2818. MR 1657790
+
+[DMPP17] Emanuele Dotto, Kristian Moi, Irakli Patchkoria, and Sune Precht Reeh, Real topological
+Hochschild homology, 2017, arXiv:1711.10226.
+[HHR16]
+
+M. A. Hill, M. J. Hopkins, and D. C. Ravenel, On the nonexistence of elements of Kervaire
+invariant one, Ann. of Math. (2) 184 (2016), no. 1, 1–262. MR 3505179
+
+[Hil17]
+
+Michael Hill, On the algebras over equivariant little disks, 2017, arXiv:1709.02005.
+
+[HK01]
+
+Po Hu and Igor Kriz, Real-oriented homotopy theory and an analogue of the Adams-Novikov
+spectral sequence, Topology 40 (2001), no. 2, 317–399. MR 1808224
+
+[HSWX18] Michael A. Hill, XiaoLin Danny Shi, Guozhen Wang, and Zhouli Xu, The slice spectral sequence
+of a C4 -equivariant height-4 Lubin-Tate theory, arXiv:1811.07960.
+[HW18]
+
+Jeremy Hahn and Dylan Wilson, Eilenberg-Maclane spectra as equivariant Thom spectra, 2018,
+arXiv:1804.05292.
+
+[JW83]
+
+J. D. S. Jones and S. A. Wegmann, Limits of stable homotopy and cohomotopy groups, Math.
+Proc. Cambridge Philos. Soc. 94 (1983), no. 3, 473–482. MR 720798
+
+[Kah69]
+
+Daniel S. Kahn, A differential in the Adams spectral sequence, Proc. Amer. Math. Soc. 20 (1969),
+188–190. MR 235562
+
+[LDMA80] W. H. Lin, D. M. Davis, M. E. Mahowald, and J. F. Adams, Calculation of Lin’s Ext groups,
+Math. Proc. Cambridge Philos. Soc. 87 (1980), no. 3, 459–469. MR 569195
+[LeNR12]
+
+Sverre Lunø e Nielsen and John Rognes, The topological Singer construction, Doc. Math. 17
+(2012), 861–909. MR 3007679
+
+[Lew88]
+
+L. Gaunce Lewis, Jr., The ROpGq-graded equivariant ordinary cohomology of complex projective
+spaces with linear Z{p actions, Algebraic topology and transformation groups (Göttingen, 1987),
+Lecture Notes in Math., vol. 1361, Springer, Berlin, 1988, pp. 53–122. MR 979507
+
+[Lur17a]
+
+Jacob Lurie, Higher Algebra,
+Available at http://www.math.harvard.edu/ lurie/ (2017).
+
+[Lur17b]
+
+, Higher Topos Theory,
+Available at http://www.math.harvard.edu/ lurie/ (2017).
+11
+
+[NS18]
+
+Thomas Nikolaus and Peter Scholze, On topological cyclic homology, Acta Math. 221 (2018),
+no. 2, 203–409. MR 3904731
+
+[Pri70]
+
+Stewart B. Priddy, Koszul resolutions, Trans. Amer. Math. Soc. 152 (1970), 39–60. MR 265437
+
+[Rav86]
+
+Douglas C. Ravenel, Complex cobordism and stable homotopy groups of spheres, Pure and Applied
+Mathematics, vol. 121, Academic Press, Inc., Orlando, FL, 1986. MR 860042
+
+[Sin80]
+
+William M. Singer, On the localization of modules over the Steenrod algebra, J. Pure Appl.
+Algebra 16 (1980), no. 1, 75–84. MR 549705
+
+[Wei94]
+
+Charles A. Weibel, An introduction to homological algebra, Cambridge Studies in Advanced
+Mathematics, vol. 38, Cambridge University Press, Cambridge, 1994. MR 1269324
+
+12
+
+
