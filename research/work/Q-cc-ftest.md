@@ -425,3 +425,18 @@ sec 5 pole + rational FP       base b; zeta-scheme    closed forms proven;
 - Program docs: research/proof/18, 19, 21, 22; research/work/K, N.
 - Witnesses: scripts/numerics/witness/prime_cc_strict_smash_q1.py,
   scripts/numerics/witness/prime_cc_quantization_defect.py.
+
+## Postscript: resolution by worker V (2026-06-10)
+
+The grading bridge is REFUTED at the strict-invariant level
+(research/work/V-grading-bridge.md, witnessed): the universal strict
+invariant is the multiplicative character chi into Z[Z\0] - the MONOID
+RING of the nonzero integers (Theorem V.1) - through which every Phi_p
+of this doc factors ([A] -> C(A,p) mod p); the per-prime pattern was a
+probe artifact (order-m data exists for every m), so this doc's
+firewalled FIT is now KILLED outright at strict level. Phi'_2 is a
+NON-CLOSED cochain in the formable bar grading (it carries no degree);
+the genuine cocycle spaces match pi_1 = pi_2 = 0 and the degree-3 slot
+is empty (window/sample-scoped). The strict square remembers exactly
+the multiplicative monoid; the torsion requires the derived
+differential itself. F-WEAK upgrades to F-FAIL for the strict bypass.
