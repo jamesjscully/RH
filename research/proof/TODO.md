@@ -122,13 +122,15 @@ E3a (phase-free detection) - PARTIAL PASS (prime_pair_dh_growth.py): the
    zero NOT confirmed: the DH@30 control was as hot as DH@85.7 - consistent
    with DH's known sigma > 1 zeros at scattered heights (the control-cell
    assumption was wrong, not the mechanism).
-E3a' (localization redesign) - NEXT: rerun the four-cell experiment with
-   scattering.py's S_offline (engineered SINGLE off-line resonance, FE
-   preserved, position controllable) as the one-zero object. READING:
-   slope excess localized at the engineered frequency and absent elsewhere
-   = phase-free detection is frequency-localized; then quantify the
-   detection threshold (minimal sigma visible at support R) and compare to
-   the one-variable detection lemma's reach.
+E3a' (localization) - DONE, PASSES (prime_pair_localization.py): synthetic
+   one-pair calibration. Far-frequency leak exactly 0.000; tuned-frequency
+   excess tracks 2 sigma minus a fixed dilution (~0.5 at R=5): threshold
+   sigma_min ~ 0.4-0.5 at this support, FALLING with support (cosh^2
+   accumulates, dilution fixed). CONSEQUENCE: the doubled form detects any
+   sigma > 0 at sufficient support, phase-free and interpolation-free -
+   the level-2 structural advantage over the one-variable detection lemma,
+   quantified. (S_offline-based redesign unnecessary; synthetic calibration
+   cleaner for the instrument question.)
 E3b (the Castelnuovo shape) - OPEN, sharpened by E2: since pair VALUES are
    level-2-conserved, the index must be an inequality: cross pair-block
    bounded by diagonal pair-blocks with a discrete defect. Candidate form:
