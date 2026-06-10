@@ -147,3 +147,22 @@ program itself as a theorem-grade equivalence: certify the reduction end to end
 (O3 Case B via Weil 1952/Bombieri anchoring), state the tracking equivalence
 with its exact hypotheses (one-mode form with the doc-11 rank-2 correction),
 and ship the certification harness so every claim stays reproducible.
+
+## Certification note (2026-06-10, worker X)
+
+The finite side of the equivalence is now CERTIFICATE-GRADE on the
+computed ladder: all 14 edges certify A > 0, M_c > 0, BULK > 0,
+S_N > 0 by rigorous ball arithmetic (Rump-style preconditioned PD
+certification; witness prime_edge_tau_interval.py, exit-gated), hence
+tau < 1 rigorously via the exact pencil equivalence - tightest edge
+4.00->4.26 certified [0.951471, 0.952146] with 71 enclosure-widths of
+slack to 1. The DH negative control CERTIFIES its failure
+([tau] = 1.3456 > 1, ball-certified x^T S_N x <= -0.2822 on its living
+edge): the frame separates zeta from DH at certificate grade. Caution:
+the rank-2 PACKAGING ball straddles 1 on the tightest edge
+(M_c^{-1} ill-conditioning) - the certified decision object is the
+pencil/S_N form, not the rank-2 factorization. Statement discipline as
+in T1/T2 (fixed float bases exact; single interval library;
+computed-ladder-only). NO asymptotic claim: this doc's wall - no
+estimate-based route to uniform tau < 1 - stands untouched. Record:
+research/work/X-tau-interval.md.
