@@ -1,0 +1,1235 @@
+                                           Contemporary Mathematics
+
+
+
+
+arXiv:1602.01980v2 [math.NT] 16 Sep 2017
+                                                             Topological Hochschild homology and
+                                                                 the Hasse-Weil zeta function
+
+                                                                               Lars Hesselholt
+
+
+
+                                                                                Introduction
+                                               In this paper, we consider the Tate cohomology of the circle group acting on the
+                                           topological Hochschild homology of schemes. We show that in the case of a scheme
+                                           smooth and proper over a finite field, this cohomology theory naturally gives rise
+                                           to the cohomological interpretation of the Hasse-Weil zeta function by regularized
+                                           determinants envisioned by Deninger [15]. In this case, the periodicity of the zeta
+                                           function is reflected by the periodicity of said cohomology theory, whereas neither
+                                           is periodic in general.
+                                               Let X be a scheme. Connes’ periodic cyclic homology of X may be defined to
+                                           be the anticommutative graded ring HP∗ (X) given by the Tate cohomology groups
+                                                                         HPi (X) = Ĥ −i (T, HH(X))
+                                           in the sense of Greenlees [20, 32] of the circle group T acting on the Hochschild spec-
+                                           trum HH(X). By analogy, we consider the anticommutative graded ring TP∗ (X)
+                                           given by the Tate cohomology groups
+                                                                        TPi (X) = Ĥ −i (T, THH(X))
+                                           of T acting on Bökstedt’s topological Hochschild spectrum THH(X) [7, 23]. The
+                                           latter is an implementation of Waldhausen’s philosophy to replace the initial ring
+                                           of algebra Z by the initial ring of higher algebra S. The graded ring TP∗ (X) is the
+                                           abutment of the Tate spectral sequence
+                                                                 2
+                                                                Ei,j = H −i (P−∞
+                                                                              ∞
+                                                                                 (C), THHj (X)) ⇒ TPi+j (X),
+                                           which is multiplicative and converges conditionally in the sense of Boardman [6].
+                                           The E 2 -term is periodic with periodicity operator given by multiplication by
+                                                              t = c1 (O(1)) ∈ H 2 (P ∞ (C), Z) = H 2 (P−∞
+                                                                                                       ∞
+                                                                                                          (C), Z).
+                                           In Connes’ theory, the periodicity element t is an infinite cycle and is represented
+                                           by a unique homotopy class v ∈ HP−2 (Z), the multiplication by which is Connes’
+                                           S-operator. But in the topologically refined situation, the element t does not in
+                                           general survive the spectral sequence, and, if it does, is typically not represented
+
+                                               2010 Mathematics Subject Classification. Primary 11S40, 19D55; Secondary 14F30.
+                                               Assistance from DNRF Niels Bohr Professorship is gratefully acknowledged.
+
+                                                                                                                 c 0000 (copyright holder)
+
+                                                                                       1
+by a unique homotopy class. In particular, the graded ring TP∗ (X) is generally
+not periodic. However, by contrast to Connes’ theory, the graded ring TP∗ (X) is,
+in favorable situations, equipped with meromorphic Frobenius operators
+                                               ϕp
+                                 TP∗ (X)            / TP∗ (X).
+
+The operator ϕp is obtained from the cyclotomic structure of THH(X) by a process
+that bears some resemblance to analytic continuation. In particular, it does not
+always exist, and, when it does, its construction requires some work.
+     Suppose now that X is defined over a finite field k of order q = pr . In this
+situation, the periodicity element t is an infinite cycle and is represented by a
+preferred homotopy class v ∈ TP−2 (k), the definition of which is given in Section 4
+below. Moreover, there is a canonical identification of the ring TP0 (k) with the
+ring W of p-typical Witt vectors in k. It follows that TP∗ (X) is a 2-periodic
+anticommutative graded W -algebra. In this situation, the Frobenius operator ϕp
+is defined after inverting p. Moreover, the W -linear operator ϕrp and the weight
+filtration of TP∗ (X) determines the action of the geometric Frobenius Frq : X → X
+on TP∗ (X) ⊗W,ι C.
+   Theorem A. Let k be a finite field of order q = pr , let W be its ring of p-typical
+Witt vectors, and let ι : W → C be a choice of embedding. If f : X → Spec(k) is a
+smooth and proper morphism of schemes, then, as meromorphic functions on C,
+                             det∞ (s · id − Θ | TPod (X) ⊗W,ι C)
+                  ζ(X, s) =                                      ,
+                             det∞ (s · id − Θ | TPev (X) ⊗W,ι C)
+where Θ is a C-linear graded derivation such that q Θ = Fr∗q and Θ(v) = log
+                                                                         2πi
+                                                                            q · v.
+     The graded derivation Θ is determined by the specified value on the periodicity
+class v and by its values on TP0 (X) ⊗W,ι C and TP1 (X) ⊗W,ι C, which are both
+finite dimensional C-vector spaces. To specify the latter, we follow Deninger [15,
+Section 2.12] and decompose the Frobenius Fr∗q = Fr∗q,s ◦ Fr∗q,u in its semisimple and
+unipotent parts and define
+                       Θ = logq (Fr∗q ) = logq (Fr∗q,s ) + logq (Fr∗q,u ).
+Here we use some choice of principal branch of the logarithm on the semisimple part
+and the series log1 q log(−) on the unipotent part. Since, by naturality, Fr∗q (v) = v,
+the operator Θ may be seen as the most general solution to q Θ = Fr∗q , which is in
+accordance with Deninger’s philosophy that Θ should be the infinitesimal generator
+of a Frobenius flow Fr∗t . We will recall the notions of regularized determinant and
+anomalous dimension in the final section of the paper.
+    The operator s · id − Θ has anomalous dimension zero. Therefore, we may fix
+any choice of a positive real scaling factor δ and state Theorem A as
+                              det∞ (δ(s · id − Θ) | TPod (X) ⊗W,ι C)
+                   ζ(X, s) =                                         .
+                              det∞ (δ(s · id − Θ) | TPev (X) ⊗W,ι C)
+                                  1
+In particular, we may take δ = 2π     as in the archimedean case [14, Theorem 1.1],
+where the scaling factor is essential.
+    We outline the proof of Theorem A. The present proof 1 uses the cohomological
+interpretation of the Hasse-Weil zeta function by crystalline cohomology established
+      1 The recent proof of the Künneth formula for TP by Blumberg-Mandell [4, Theorem A] has
+facilitated a direct proof given by Tabuada [35, Theorem 3.27].
+                                               2
+by Berthelot in his thesis [2, Théorème VII.3.2.3],
+                               det(id −q −s Fr∗q | Hcrys
+                                                    od
+                                                         (X/W ) ⊗W,ι C)
+                   ζ(X, s) =                   ∗                        .
+                               det(id −q −s Frq | Hcrys
+                                                    ev (X/W ) ⊗
+                                                                 W,ι C)
+
+The comparison theorem of Bloch-Deligne-Illusie [29, Théorème II.1.4] shows that,
+                                                  i
+in this formula, the crystalline cohomology Hcrys    (X/W ) may be replaced by the
+                     i
+hypercohomology H (X, W ΩX ) with coefficients in the de Rham-Witt complex.
+                               ·
+
+Therefore, we have the two spectral sequences of hypercohomology, one of which
+gives rise to a natural spectral sequence of finite dimensional C-vector spaces
+              E2i,j = (lim H i (X, Wn ΩjX )) ⊗W,ι C ⇒ Hcrys
+                                                       i+j
+                                                            (X/W ) ⊗W,ι C
+                        n,F
+
+called the conjugate spectral sequence. Here, the identification of the E2 -term also
+uses the higher Cartier isomorphism of Illusie-Raynaud [30, Proposition III.1.4].
+We prove in Theorem 6.8 below that, as a consequence of the definition of THH(X)
+in [5, 17] and the calculation of the equivariant homotopy groups of THH(OX )
+in [21, Theorem B], the same finite dimensional C-vector spaces appear in the
+E 2 -term of a natural spectral sequence
+
+                     (lim H −i (X, Wn Ωj+2m
+                 M
+            2
+          Ei,j =                       X    )) ⊗W,ι C ⇒ TPi+j (X) ⊗W,ι C
+                        n,F
+                  m∈Z
+
+converging to the periodic topological cyclic homology of X. We call this spectral
+sequence the Hodge spectral sequence. The differentials in the spectral sequence
+preserve the direct sum decomposition of the E 2 -term, and we call the number
+w = j + m the weight.2 By comparing the two spectral sequences and using that
+determinants are multiplicative on exact sequences, we conclude from Berthelot’s
+cohomological interpretation that
+                                  det(id −q −s Fr∗q | TP1 (X) ⊗W,ι C)
+                      ζ(X, s) =                                       .
+                                  det(id −q −s Fr∗q | TP0 (X) ⊗W,ι C)
+We wish to instead express the zeta function by using the full infinite dimensional
+graded C-algebra TP∗ (X) ⊗W,ι C. Indeed, we contend that this theory precisely
+is the infinite dimensional theory produced by Deninger [15] through an algebraic
+modification of the finite dimensional crystalline cohomology theory employing the
+Riemann-Hilbert correspondance on Gm . Accordingly, as a consequence of op. cit.,
+Corollary 2.8, we conclude that with Θ as in Theorem A,
+                                  det∞ (s · id − Θ | TPod (X) ⊗W,ι C)
+                     ζ(X, s) =                                        .
+                                  det∞ (s · id − Θ | TPev (X) ⊗W,ι C)
+This completes the outline of the proof of Theorem A. We remark that this result
+gives a cohomological interpretation of the zeta function ζ(X, s) itself as opposed
+to one of the function Z(X, t) with ζ(X, s) = Z(X, q −s ).
+    We close with a remark concerning periodicity. If k is a commutative ring, then
+the Hochschild homology HH∗ (k) is an anticommutative graded k-algebra and the
+graded ideal I ⊂ HH∗ (k) spanned by the homogeneous elements of positive even
+
+     2 Bhatt-Morrow-Scholze [3] have now constructed a filtration of TP by weight, the filtration
+quotients of which are given by crystalline cohomology.
+                                               3
+degree has a natural divided power structure [12, Exposé 7]. In particular, it is not
+possible for the canonical k-algebra homomorphism from the symmetric algebra
+                              Sk (HH2 (k))                   / HH∗ (k)
+
+to be an isomorphism, unless k is a Q-algebra. The topological Hochschild homology
+THH∗ (k) also is an anticommutative graded k-algebra, but there is no longer a
+divided power structure on graded ideal I ⊂ THH∗ (k) spanned by homogeneous
+elements of positive even degree. Hence, the canonical k-algebra homomorphism
+                            Sk (THH2 (k))                    / THH∗ (k)
+
+can be an isomorphism, and Bökstedt’s periodicity theorem [8] shows that this is
+indeed the case for k = Fp ; see also [26, Theorem 5.2]. It is this basic periodicity
+theorem in conjunction with the cyclotomic structure of topological Hochschild
+homology that makes Theorem A possible.
+
+                              1. The Tate spectrum
+     In this section, we recall Greenlees’ generalization of Tate cohomology [20]. We
+refer the reader to [26, Section 4] for more details and will follow the conventions
+therein. A more modern and comprehensive account, which in particular treats the
+multiplicative properties of the construction in detail, is given in [32].
+     Let G be a compact Lie group, let E be a free left G-CW-complex whose
+underlying space is contractible, and let f : E+ → S 0 be the map that collapses E
+onto 0 ∈ {0, ∞} = S 0 . We consider the following cofibration sequence
+                                f            i                  ∂
+                         E+           / S0            / Ẽ          / ΣE+
+
+in the homotopy category of pointed left G-spaces. The sequence is unique, up
+to unique isomorphism, and the induced sequence of suspension G-spectra is a
+cofibration sequence in the G-stable homotopy category. We abuse notation and
+denote the latter sequence by the same symbols. Now, for X a G-spectrum, we
+consider the diagram
+
+   (E+ ⊗ X)G                / XG                     / (Ẽ ⊗ X)G                   / Σ(E+ ⊗ X)G
+
+
+                                                                                       
+(E+ ⊗ [E+ , X])G        / [E+ , X]G          / (Ẽ ⊗ [E+ , X])G                 / Σ(E+ ⊗ [E+ , X])G
+
+where we write “⊗” and “[−, −]” to indicate the symmetric monoidal product and
+internal hom object in the homotopy category of G-spectra, respectively. The left-
+hand vertical morphism is an isomorphism. We write the lower sequence as
+                        N                    i       / Ĥ · (G, X)        ∂
+      H· (G, S g ⊗ X)       / H · (G, X)                                      / ΣH· (G, S g ⊗ X)
+
+and call it the Tate cofibration sequence. Here S g is the one-point compactification
+of the adjoint representation of G on its Lie algebra g.
+    We are interested mainly in the case, where G is either the full circle group T
+of complex numbers of modulus 1 or one of its finite subgroups Cr ⊂ T. We record
+the following result, referring the reader to [11] for background on p-completion.
+                                                 4
+    Lemma 1.1. Let p be a prime number and let X be a T-spectrum. If the under-
+lying spectrum of X is p-complete and bounded below, then the canonical morphism
+
+                          Ĥ · (T, X)        / holimn Ĥ · (Cpn , X)
+
+is a weak equivalence.
+    Proof. It is proved in [24, Lemma 2.1.1] that the morphism in question be-
+comes a weak equivalence after p-completion. Hence, it suffices to show that the
+domain and target of this morphism are p-complete. We prove the statement for
+the domain; the proof for the target is analogous. We wish to show that for every
+integer i, the canonical morphism
+
+                         πi (Ĥ · (T, X))          / πi (Ĥ · (T, X), Zp )
+
+is an isomorphism. The assumption that the underlying spectrum of X is bounded
+below implies that there exists a non-negative integer s depending on i such that
+the morphism
+                   (Fils (Ẽ) ⊗ [E+ , X])T    / (Ẽ ⊗ [E+ , X])T
+induced by the inclusion of the s-skeleton induces an isomorphism of homotopy
+groups in degrees less than or equal to i. We may further assume that the T-CW-
+complex Fils (Ẽ) is finite. Therefore, replacing X by Fils (Ẽ) ⊗ X, the underlying
+spectrum of which again is p-complete, it suffices to show that the group cohomology
+spectrum H · (T, X) is p-complete. In this case, the completion morphism factors as
+the composition
+                    H · (T, X)          / H · (T, Xp )         / H · (T, X)p
+
+of the morphism induced by the completion morphism for X and a canonical iso-
+morphism. But the left-hand morphism is a weak equivalence by the assumption
+that the underlying non-equivariant spectrum of X is p-complete.           
+    The skeleton filtrations of the pointed G-CW-complexes E+ and Ẽ give rise to
+spectral sequences converging conditionally to the homotopy groups of the three
+terms in the Tate cofibration sequence. We call the spectral sequence converging
+to the homotopy groups of the Tate spectrum the Tate spectral sequence. In the
+                                                              ∞
+situation of Lemma 1.1, we take E = S(C∞ ) and Ẽ = S C with the G-CW-
+structures defined in [27, Section 4.4]. For the circle group G = T, the spectral
+sequence takes the form
+                         E 2 = S{t±1 } ⊗ π∗ (X) ⇒ Ĥ −∗ (T, X)
+                                    2
+with the generator t = c1 (O(1)) ∈ E−2,0 specified below. For G = Cpn , we have
+                 E 2 = S{t±1 } ⊗ π∗ (X)/pn π∗ (X) ⇒ Ĥ −∗ (Cpn , X),
+if the homotopy groups π∗ (X) are p-torsion free, and
+                  E 2 = Λ{u} ⊗ S{t±1 } ⊗ π∗ (X) ⇒ Ĥ −∗ (Cpn , X),
+if the homotopy groups π∗ (X) are annihilated by p. We define the generators
+      2             2
+t ∈ E−2,0 and u ∈ E−1,0  to be the classes of the cycles specified in [27, Lemma 4.2.1].
+We now define the generator t for G = T to be the unique class that restricts to the
+generator t for G = Cpn . If X is a ring T-spectrum, then the spectral sequences are
+                                               5
+multiplicative with the indicated bi-graded ring structure on the E 2 -term, except
+that if p = 2 and n = 1, then u2 = t. The restriction maps in Tate cohomology
+
+                  Ĥ · (T, X)              / Ĥ · (Cpn , X)                      / Ĥ · (Cpn−1 , X)
+
+induce multiplicative maps of Tate spectral sequences that, on the E 2 -terms, are
+given by the tensor product of the canonical projections
+              π∗ (X)               / π∗ (X)/pn π∗ (X)                       / π∗ (X)/pn−1 π∗ (X)
+
+and the graded ring homomorphisms that take t to t and u to 0.
+
+                                     2. Cyclotomic spectra
+     We briefly recall the notion of a p-cyclotomic spectrum, which was introduced
+in [26, Section 2] and codifies the structure available on the topological Hochschild
+spectrum in addition to the circle action discovered by Connes. A better and more
+flexible version of this notion was introduced by Nikolaus and Scholze [32].
+     The group T has the special property that there exists a group isomorphism
+                                                       ρ
+                                               T                / T/Cp ,
+
+which we will always choose to be the pth root. A p-cyclotomic structure on a
+T-spectrum T was defined in [26, Definition 2.2] to be a morphism of T-spectra
+                                                                        r
+                                        ρ∗ (Ẽ ⊗ T )Cp                       /T
+
+with the property that for all n ⩾ 0, the induced map of Cpn -fixed point spectra is
+a weak equivalence. The diagram at the beginning of Section 1 takes the form
+                                 / TRn+1 (T ; p)            R        / TRn (T ; p)        ∂
+       H· (Cpn , T )                                                                           / ΣH· (Cpn , T )
+
+                                          γ̃                                     γ
+                                                                            
+                         N                                 i         / Ĥ · (Cpn , T )     ∂
+       H· (Cpn , T )             / H · (Cpn , T )                                              / H· (Cpn , T )
+
+where TRn (T ; p) is the Cpn−1 -fixed point spectrum of T , and where the morphism
+ϕ is the map of Cpn−1 -fixed point spectra induced by the composition
+                             r                                  f∗
+                   T o             ρ∗ (Ẽ ⊗ T )Cp                      / ρ∗ (Ẽ ⊗ [E+ , T ])Cp
+
+of an inverse of the morphism r and the morphism f ∗ in the original diagram. We
+remark that, recently, Nikolaus and Scholze have made the remarkable observation
+that it is only the composite ρ-equivariant morphism
+                                                   γ
+                                          T                / Ĥ · (Cp , T )
+
+that is of importance and that the factorization of this map inherent in the original
+definition of a p-cyclotomic structure is immaterial. As demonstrated in [32], this
+approach makes it possible to develop the theory of cyclotomic spectra without the
+use of equivariant stable homotopy theory. In the following, we will therefore refer
+to ϕ as the cyclotomic structure morphism. We call the morphism
+                                                                R
+                                   TRn+1 (T ; p)                      / TRn (T ; p)
+                                                            6
+in the diagram above the restriction morphism; and we call the morphism
+                                                  F
+                             TRn+1 (T ; p)             / TRn (T ; p)
+
+given by the canonical inclusion the Frobenius morphism. We write
+                              TF(T ; p) = holim TRn (T ; p)
+                                             n,F
+
+for the homotopy limit with respect to the Frobenius morphisms. Using the p-
+cyclotomic structure on T , we now define the inverse Frobenius operator
+                                             ϕ−1
+                                TF(T ; p)             / TF(T ; p)
+
+to be the composition
+
+    holimn,F TRn (T ; p)         / holimn,F TRn+1 (T ; p)              / holimn,F TRn (T ; p)
+
+of the restriction along the successor functor and the morphism induced by the
+restriction morphisms. The cyclotomic structure morphism induces a morphism
+                                                        γ
+            TF(T ; p) = holimn,F TRn (T ; p)                / holimn,F Ĥ · (Cpn , T ),
+
+and Lemma 1.1 identifies the target with Ĥ · (T, T ), provided that T is p-complete
+and bounded below. The inverse Frobenius operator ϕ−1 does typically not extend
+to an operator defined on Ĥ · (T, T ), even at the level of homotopy groups.
+
+                      3. Topological Hochschild homology
+     In this section, we recall the structure of topological Hochschild homology for
+schemes smooth over a perfect field of characteristic p > 0 from [21]. We also recall
+Bökstedt’s periodicity theorem from [8].
+     Topological Hochschild homology is defined in the same generality as algebraic
+K-theory and assigns to an exact category with weak equivalences a cyclotomic
+spectrum. In particular, for a scheme X, applying this theory to the exact category
+of perfect complexes of quasi-coherent OX -modules with quasi-isomorphisms as
+weak equivalences, defines a cyclotomic spectrum THH(X). The derived tensor
+product of perfect complexes gives rise to a pairing on THH(X), which makes it a
+commutative cyclotomic ring spectrum.3 Moreover, for every morphism of schemes
+f : X → Y , left derived extension of scalars gives rise to a morphism of cyclotomic
+ring spectra f ∗ : THH(Y ) → THH(X); and for every proper morphism of schemes
+f : X → Y , right derived restriction of scalars gives rise to a morphism of cyclotomic
+THH(Y )-module spectra f∗ : THH(X) → THH(Y ).
+     The homotopy groups THH∗ (X) form an anticommutative graded ring and we
+define THH∗ (OX ) to be the sheaf of anticommutative graded rings on the small
+étale site of X associated to the presheaf that to an étale morphism f : U → X
+assigns THH∗ (U ). There is a natural ring isomorphism
+                                         η
+                                  OX         / THH0 (OX )
+
+
+    3 It follows from [32, Section IV.2] that THH(X) is an E
+                                                                ∞ -algebra in cyclotomic spectra.
+                                              7
+given by the inclusion of the zero-skeleton, and we will consider THH∗ (OX ) as a
+sheaf of anticommutative graded OX -algebras via this map. As such, it is quasi-
+coherent by [17, Proposition 3.2.1], and there is a multiplicative and conditionally
+convergent descent spectral sequence
+                     2
+                    Ei,j = H −i (X, THHj (OX )) ⇒ THHi+j (X).
+We consider this spectral sequence, which we call the Hodge spectral sequence for
+topological Hochschild homology, in detail in Section 6 below. Since THHj (OX ) is
+zero for j < 0, it shows, in particular, that THHi (X) is zero for i < − dim(X).
+    More generally, we let r = pn−1 be a prime power and let Cr ⊂ T be the
+subgroup of order r. The equivariant homotopy groups
+                           TRn∗ (X; p) = π∗ (THH(X)Cr )
+again form an anticommutative graded ring and we define TRn∗ (OX ; p) to be the
+sheaf of anticommutative graded rings on the small étale site of X associated to
+the presheaf that to an étale morphism f : U → X assigns TRn∗ (U ; p). By [26,
+Theorem F], there is a canonical natural ring isomorphism
+                                         η
+                           Wn (OX )              / TRn0 (OX ; p),
+
+which is compatible with the restriction, Frobenius, and Verschiebung operators,
+and we view TRn∗ (OX ; p) as a sheaf of anticommutative graded Wn (OX )-algebras
+via this map. As such, it is quasi-coherent. Indeed, this follows from the proof
+of [28, Proposition 6.2.4] by using [9, Theorem B] and [10, Corollary 15.4], which
+were proved later.
+     The Wn (OX )-modules TRnj (OX ; p) together with the cup product ∪, the re-
+striction R, the Frobenius F , the Verschiebung V , and Connes’ operator d consti-
+tute a p-typical Witt complex over OX ; see [25, Definition 4.1]. Accordingly, this
+p-typical Witt complex receives a unique map of p-typical Witt complexes
+                                        η
+                             Wn ΩjX          / TRnj (OX ; p)
+
+from the p-typical de Rham-Witt complex of X, which, by definition, is the initial
+p-typical Witt complex over OX . This map is an isomorphism for j ⩽ 1 by [22].
+    We next recall the following fundamental periodicity theorem. The basic case
+n = 1 is Bökstedt’s theorem proved in his paper [8] which unfortunately remains
+unpublished. A detailed outline of Bökstedt’s proof is given in [26, Section 5.2],
+and the proof of the general case n ⩾ 1 is given in [26, Theorem 5.5].
+    Theorem 3.1. Let k be a perfect field of characteristic p > 0 and let n be a
+positive integer. The canonical map of graded Wn (k)-algebras
+                        SWn (k) (TRn2 (k; p))           / TRn∗ (k; p)
+
+is an isomorphism and the Wn (k)-module TRn2 (k; p) is free of rank 1.
+    In Section 4, we define a preferred Wn (k)-module generator αn ∈ TRn2 (k; p),
+the divided Bott element. It satisfies F (αn ) = αn−1 and R(αn ) = p · αn−1 , showing
+that, in [26, Theorem 5.5], we can arrange for the units λn to be equal to 1.
+    We also recall from [21, Theorem B] the following result, which we will use
+in Section 6 below to construct the Hodge spectral sequence mentioned in the
+Introduction.
+                                             8
+    Theorem 3.2. Let k be a perfect field of characteristic p > 0, let n be a
+positive integer, and let f : X → Spec(k) be a smooth morphism. In this situation,
+the canonical map of graded Wn (OX )-algebras
+                  Wn Ω∗X ⊗f ∗ Wn (k) f ∗ TRn∗ (k; p)                   / TRn∗ (OX ; p)
+
+is an isomorphism.
+    We note that, by comparison, if k is a separably closed field of any characteristic
+and if f : X → Spec(k) is a smooth morphism, then the canonical map
+            K∗M (OX ) ⊗f ∗ Z/pn Z f ∗ K∗ (k, Z/pn Z)                       / K∗ (OX , Z/pn Z)
+
+is an isomorphism by Voevodsky. If char(k) 6= p, then K∗ (k, Z/pn Z) is a symmetric
+algebra generated by the Bott element βǫ,n ∈ K2 (k, Z/pn Z) by Suslin [33, 34]; and
+if char(k) = p, then K∗ (k, Z/pn Z) = Z/pn Z by Geisser-Levine [18].
+
+                           4. The divided Bott element
+    Let k be a perfect field of characteristic p > 0. We proved in [26, Section 5] that,
+as an anticommutative graded ring TP∗ (k) = SW (k) {v ±1 } for some v ∈ TP−2 (k).
+In this section, we make a preferred choice of the generator v ∈ TP−2 (k) based on
+the results in [24]. We call this generator the inverse divided Bott element.
+    We first define the ring isomorphism
+                                                  τ       / TP0 (k)
+                                       W (k)
+by which we consider TP∗ (k) a graded W (k)-algebra. Since k is an Fp -algebra, the
+Witt vector Frobenius F : Wn (k) → Wn−1 (k) is equal to the common composite
+of the maps in the following diagram with the horizontal maps induced by the
+Frobenius ϕ : k → k,
+                                                 Wn (ϕ)
+                                 Wn (k)                        / Wn (k)
+
+                                       R                               R
+                                               Wn−1 (ϕ)           
+                             Wn−1 (k)                         / Wn−1 (k).
+Therefore, we may define a ring homomorphism
+                                            ϕ∞
+                     limn,F Wn (k)                / limn,R Wn (k) = W (k)
+
+to be the map of limits induced by the map of limit systems that, at level n, is
+given by the ring homomorphism Wn (ϕn ) : Wn (k) → Wn (k). The map ϕ∞ is an
+isomorphism, because k is perfect. Moreover, the composition
+                             η                            γ
+                  Wn (k)          / TRn0 (k; p)                / Ĥ 0 (Cpn , THH(k))
+
+of the canonical isomorphism from [26, Theorem F] and the isomorphism induced
+by the cyclotomic structure map defines a ring isomorphism
+                                           η̂
+                   limn,F Wn (k)                / limn,F Ĥ 0 (Cpn , THH(k)),
+
+where the structure maps in the right-hand limit system are the restriction maps
+in Tate cohomology. Finally, we have an isomorphism of graded rings
+                                   ρ
+                      TP∗ (k)              / limn,F Ĥ −∗ (Cpn , THH(k)),
+                                                      9
+which is also given by restriction maps in Tate cohomology. We now define the ring
+isomorphism τ to be the composite ρ−1 ◦ η̂ ◦ (ϕ∞ )−1 . Extension of scalars along
+the unique ring homomorphism f : Fp → k defines a map of graded W (k)-algebras
+                           W (k) ⊗W (Fp ) TP∗ (Fp )           / TP∗ (k)
+
+and that this map is an isomorphism.
+     We proceed to define the generator v ∈ TP−2 (Fp ), and, to this end, we recall
+the main results of [24]. Let C be the perfectoid field of p-adic complex numbers.
+It is defined, we recall, to be the completion of an algebraic closure of the field Qp
+of p-adic numbers and is both complete and algebraically closed. Its valuation ring
+OC is a complete valuation ring with value group Q, the residue field k of which is
+an algebraic closure of Fp .
+     We first recall the results on the algebraic K-theory of OC proved by Suslin
+in [33, 34], based on the rigidity theorems of Gabber [16] and Gillet-Thomason [19].
+The group Kj (OC ) is p-divisible if j is positive, and it is uniquely p-divisible if j is
+both positive and even. Hence, the Bockstein homomorphism
+                                 ∂
+             K2 (OC , Zp )             / Tp (K1 (OC )) = HomZ (Qp /Zp , K1 (OC ))
+
+from the p-adic K-group in degree 2 to the p-primary Tate module of the K-group
+in degree 1 is an isomorphism. The resulting map of graded K0 (OC , Zp )-algebras
+                    SK0 (OC ,Zp ) (Tp (K1 (OC )))           / K∗ (OC , Zp ),
+
+moreover, is an isomorphism. Here the ring K0 (OC , Zp ) is canonically isomorphic
+to Zp and the p-primary Tate module Zp (1) = Tp (K1 (OC )) is a free Zp -module
+of rank 1. An element ǫ ∈ Zp (1) determines and is determined by the sequence
+(ǫ(v) )v⩾0 of compatible p-power roots of unity in C defined by ǫ(v) = ǫ(p−v + Zp )
+and it is a generator if and only if the pth root of unity ǫ(1) is primitive. In this
+situation, we follow Thomason [36] and define the Bott element associated with ǫ
+to be the unique generator
+                                 β ǫ ∈ K2 (OC , Zp )
+such that ∂(β ǫ ) = ǫ.
+    We next recall the corresponding results for TF-theory from [24], which, as it
+turns out, are completely analogous. The group TFj (OC ; p) is p-divisible if j is
+positive, and it is uniquely p-divisible if j is both positive and even. Accordingly,
+the Bockstein homomorphism induces an isomorphism
+                             ∂       / Tp (TF1 (OC ; p)) = HomZ (Qp /Zp , TF1 (OC ; p)),
+       TF2 (OC ; p, Zp )
+and it is proved in op. cit. that the resulting map of graded TF0 (OC ; p, Zp )-algebras
+                STF0 (OC ;p,Zp ) (Tp (TF1 (OC ; p)))          / TF∗ (OC ; p, Zp )
+
+is an isomorphism. Moreover, the ring TF0 (OC ; p, Zp ) is canonically isomorphic to
+Fontaine’s ring of p-adic periods
+                                      Ainf = limn,F Wn (OC ),
+which plays a prominent role in p-adic Hodge theory. The p-primary Tate module
+                  Ainf {1} = Tp (TF1 (OC ; p)) = limn,F Tp (Wn Ω1OC )
+                                                 10
+is a free Ainf -module of rank 1. However, the image by the cyclotomic trace map
+                                             tr
+                          K∗ (OC , Zp )                / TF∗ (OC ; p, Zp )
+
+of the Bott element β ǫ is not a generator of this Ainf -module. Instead, we proved
+in [24, Theorem B] that the image of the Bott element, which, by abuse of notation,
+we also denote by β ǫ , is divisible by the non-unit
+              µ ǫ = [ε] − 1 = ([ǫ(n) ]n − 1)n⩾1 ∈ limn,F Wn (OC ) = Ainf
+and that the element α ǫ = µ−1
+                            ǫ · β ǫ is a generator of TF2 (OC ; p, Zp ).
+
+    Definition 4.1. If ǫ is a generator of the free Zp -module Zp (1), then the
+associated divided Bott element is the generator
+                                       α ǫ = µ−1
+                                              ǫ · βǫ
+
+of the free Ainf -module TF2 (OC ; p, Zp ) = Ainf {1}.
+    By functoriality, the left action of the Galois group G = Gal(C/Qp ) on OC
+induces an action on the graded ring TF∗ (OC ; p, Zp ), and the action on the Bott
+element is given by
+                             σ · β ǫ = βσ(ǫ) = χ(σ) · β ǫ ,
+where χ : G → Aut(µp∞ ) = Z∗p is the cyclotomic character. Since Ainf is an integral
+domain, we therefore conclude that
+                      σ · α ǫ = ασ(ǫ) = χ(σ) · σ(µ ǫ )−1 · µ ǫ · α ǫ .
+Similarly, the inverse Frobenius operator induces a homorphism of graded rings
+                                             ϕ−1
+                        TF∗ (OC ; p, Zp )               / TF∗ (OC ; p, Zp ).
+
+In degree zero, it is given, up to canonical isomorphism, by the ring automorphism
+                                              ϕ−1
+                                      Ainf               / Ainf
+defined as the composition
+                            resS                                  limn,F R
+         limn,F Wn (OC )           / limn,F Wn+1 (OC )                       / limn,F Wn (OC )
+
+of the restriction along the successor functor and the map induced by the Witt
+vector restriction. The cyclotomic trace map takes values in the sub-graded ring of
+elements fixed by the inverse Frobenius operator. In particular,
+                                       ϕ−1 (β ǫ ) = β ǫ ,
+and using again that Ainf is an integral domain, we therefore conclude that
+                               ϕ−1 (α ǫ ) = ϕ−1 (ξ ǫ ) · α ǫ ,
+where ξ ǫ ∈ Ainf is the element defined by
+                   ξ ǫ = ϕ(µ ǫ ) · µ−1               2
+                                    ǫ = 1 + [ǫ] + [ǫ] + · · · + [ǫ]
+                                                                    p−1
+                                                                        .
+We remark that this element is a generator of the kernel of the ring homomorphism
+                                                  θ      / OC ,
+                                      Ainf
+which, in our formulation, is given by the canonical projection from the limit that
+defines the left-hand ring to the term n = 1.
+                                                  11
+    We recall from [27, Addendum 5.4.4] and [24, Proposition 2.1.4] that the map
+of graded Ainf -algebras induced by the cyclotomic structure map
+                                                γ
+                        TF∗ (OC ; p, Zp )             / TP∗ (OC , Zp )
+
+is an isomorphism in non-negative degrees. Hence, it becomes an isomorphism after
+inverting the divided Bott element α ǫ . We now define
+                                 v ǫ ∈ TP−2 (OC , Zp )
+to be the inverse of the image of the divided Bott element α ǫ . It is represented in
+                                                 2
+the Tate spectral sequence by the element t ∈ E−2,0   defined in Section 1. Clearly,
+the Galois group G acts on the inverse divided Bott element by
+                     σ · v ǫ = v σ(ǫ) = χ(σ)−1 · σ(µ ǫ ) · µ−1
+                                                            ǫ · v ǫ.
+
+Moreover, the inverse Frobenius operator ϕ−1 on TF∗ (OC ; p, Zp ) gives rise to a
+meromorphic Frobenius operator
+                                            ϕ
+                         TP∗ (OC , Zp )             / TP∗ (OC , Zp ),
+
+which is defined and invertible away from the divisor “ξ ǫ = 0” and satisfies
+                                   ϕ(v ǫ ) = ξ ǫ · v ǫ .
+This completes our recollection of the results from [24].
+    We consider the ring homomorphism
+                                            i
+                                   Ainf             / W (k)
+
+defined to be the composition
+                                                              ϕ∞
+             limn,F Wn (OC )         / limn,F Wn (k)               / limn,R Wn (k)
+
+of the map induced by the canonical projection of OC onto its residue field k and
+the isomorphism ϕ∞ above. Extension of scalars along i induces an isomorphism
+                                                        i∗    / TP∗ (k, Zp ),
+                    W (k) ⊗Ainf TP∗ (OC , Zp )
+the target of which is canonically isomorphic to TP∗ (k).
+    Proposition 4.2. The class v = i∗ (v ǫ ) ∈ TP−2 (k) is independent of the choice
+of generator ǫ ∈ Zp (1) and descends to a generator v ∈ TP−2 (Fp ). Moreover, the
+meromorphic Frobenius operator
+                                            ϕ
+                                TP∗ (k)             / TP∗ (k)
+
+is defined and invertible away from the divisor “ p = 0” and satisfies ϕ(v) = p · v.
+    Proof. If ǫ ∈ Zp (1) is a fixed generator, then a general generator is of the
+form σ(ǫ) ∈ Zp (1), for some σ ∈ G. So it suffices to show that i : Ainf → W (k)
+maps the unit uǫ = χ(σ)−1 · σ(µ ǫ ) · µ−1
+                                       ǫ ∈ Ainf to 1 ∈ W (k). We may assume that
+χ(σ) is an integer, in which case, the image uǫ,n of uǫ by the canonical projection
+from Ainf to Wn (OC ) is given by
+                 uǫ,n = χ(σ)−1 · ([σ(ǫ(n) )]n − 1) · ([ǫ(n) ]n − 1)−1
+                      = χ(σ)−1 · ([ǫ(n) ]χ(σ)
+                                         n    − 1) · ([ǫ(n) ]n − 1)−1
+                      = χ(σ)−1 · 0⩽j<χ(σ) [ǫ(n) ]jn .
+                                 P
+
+                                            12
+But the canonical projection from OC to k takes ǫ(n) to 1, and hence, the induced
+map from Wn (OC ) to Wn (k) takes uǫ,n to 1, as desired. This shows that the class
+                                v = i∗ (v ǫ ) ∈ TP−2 (k)
+is independent of ǫ as stated. It also shows that this class is Galois fixed, and hence,
+that it descends to a class v ∈ TP−2 (Fp ). Similarly, we have
+                                      i(ξ ǫ ) = p,
+which proves the remaining statements.                                                
+
+    Remark 4.3. It follows from Proposition 4.2 that if we define αn ∈ TRn2 (Fp ; p)
+to be the image of v −1 ∈ TF2 (Fp ; p), then F (αn ) = αn−1 and R(αn ) = p · αn−1 .
+This shows that, in [26, Proposition 5.4], we can arrange for the units λn to be
+equal to 1.
+
+
+                       5. The conjugate spectral sequence
+    We recall from the paper [30] the higher Cartier isomorphism and the structure
+of the conjugate spectral sequence converging to the crystalline cohomology of a
+scheme smooth and proper over a perfect field of positive characteristic.
+    Let k be a perfect field of characteristic p > 0 and let f : X → Spec(k) be a
+smooth morphism. The comparison theorem [29, Théorème II.1.4] gives a canonical
+isomorphism of Wn (k)-modules
+                         i
+                        Hcrys (X/Wn (k))        / H i (X, Wn Ω· )
+                                                              X
+
+from the crystalline cohomology of X/Wn (k) defined in [2] to the hypercohomology
+of X with coefficients in the de Rham-Witt complex. The second spectral sequence
+of hypercohomology gives a spectral sequence of Wn (k)-modules
+
+                   E2i,j = H i (X, Hj (Wn Ω·X )) ⇒ Hcrys
+                                                    i+j
+                                                         (X/Wn (k)).
+
+Being located in the first quadrant, it converges strongly. If f : X → Spec(k) is also
+proper, and hence of finite relative dimension d, then the Wn (k)-modules E2i,j are
+finitely generated by [29, Proposition II.2.1]. Therefore, taking limits with respect
+to the restriction maps, we obtain a spectral sequence of W (k)-modules
+
+             E2i,j = limn,Hj (R) H i (X, Hj (Wn Ω·X )) ⇒ Hcrys
+                                                          i+j
+                                                               (X/W (k)).
+Indeed, by finite generation, the limit systems satisfy the Mittag-Leffler condition.
+To rewrite the E2 -term we recall the higher Cartier isomorphism.
+    We have isomorphisms of sheaves of abelian groups
+                  Rn                                           Fn
+       Wn ΩjX o        W2n ΩjX /(V n Wn ΩjX + dV n Wn Ωj−1
+                                                       X )
+                                                                    / Hj (Wn Ω· ).
+                                                                              X
+
+Indeed, the left-hand map is an isomorphism for formal reasons, and the right-hand
+map is an isomorphism by [30, Proposition III.1.4]. The inverse higher Cartier
+operator is defined to be the composite isomorphism
+                                  C −n = F n ◦ R−n .
+                                           13
+It follows easily from the definition that the diagram of sheaves of abelian groups
+                                               C −n
+                              Wn ΩjX                     / Hj (Wn Ω· )
+                                                                        X
+
+                                      F                               Hj (R)
+                                              −(n−1)
+                                                                  
+                                           C
+                            Wn−1 ΩjX                    / Hj (Wn−1 Ω· )
+                                                                          X
+
+commutes, and hence, we obtain an induced isomorphism of abelian groups
+           limn,F H −i (X, Wn ΩjX )              / limn,Hj (R) H −i (X, Hj (Wn Ω· )).
+                                                                                X
+
+In addition, this map is an isomorphism of W (k)-modules, provided that we consider
+its domain to be a W (k)-module via the inverse of the isomorphism
+                                           ϕ∞
+                       limn,F Wn (k)              / limn,R Wn (k) = W (k)
+
+defined in Section 4. We record these recollections from [29, 30] in the following
+result.
+    Theorem 5.1. If k is a perfect field of characteristic p > 0 and f : X → Spec(k)
+a smooth and proper morphism, then there is a spectral sequence of W (k)-modules
+                   E2i,j = limn,F H i (X, Wn ΩjX ) ⇒ Hcrys
+                                                      i+j
+                                                           (X/W (k))
+which converges strongly.
+   We call the spectral sequence in Theorem 5.1 the conjugate spectral sequence.
+The analysis of its E2 -term in [30, Théorème III.2.2] gives the following result.
+    Corollary 5.2. Let k be a finite field of order q = pr , let W be its ring of
+p-typical Witt vectors, let ι : W → C be an embedding, and let f : X → Spec(k)
+be a smooth and proper morphism. In this situation, there is a strongly convergent
+spectral sequence of degree-wise finite dimensional C-vector spaces
+           E2i,j = (limn,F H i (X, Wn ΩjX )) ⊗W,ι C ⇒ Hcrys
+                                                       i+j
+                                                            (X/W ) ⊗W,ι C.
+    Proof. The spectral sequence in the statement is obtained from the conjugate
+spectral sequence by extension of scalars along the ring homomorphism ι : W → C,
+which is flat. Finally, by [30, Théorème III.2.2], each of the W (k)-modules E2i,j in
+the conjugate spectral sequence is finitely generated modulo torsion.                
+    Remark 5.3. In the situation of Theorem 5.1, [30, Théorème III.2.2] also
+shows that the torsion sub-W (k)-module of limn,F H i (X, Wn ΩjX ) is annihilated by
+p. However, this torsion sub-W (k)-module may well not be finitely generated,4 as
+the example of a supersingular K3 surface shows; see [30, IV.2.15.6] and [29, II.7.2].
+
+                         6. The Hodge spectral sequence
+     In this section, we construct the Hodge spectral sequence for periodic topolog-
+ical cyclic homology of schemes smooth and proper over a perfect field of charac-
+teristic p > 0.
+     In general, let X be a site, let F be a presheaf of spectra on X, and let
+                                                ηU
+                                      F (U )           / H · (U, F )
+
+    4 The weight spectral sequence of [3] does not have this pathology.
+
+                                                  14
+be the canonical morphism to the associated cohomology presheaf. The latter
+may be defined by means of the Godement construction, if the site X has enough
+points, and by a fibrant replacement in an appropriate model structure, in general;
+see [36, 31]. In either case, there is a hypercohomology spectral sequence
+                       2
+                      Ei,j = H −i (U, πj (F )˜) ⇒ H −i−j (U, F )
+from the cohomology of U with coefficients in the sheaves assoaciated with the
+presheaves of homotopy groups which converges conditionally to the homotopy
+groups of the global sections of the cohomology presheaf. If the morphism ηU is a
+weak equivalence for every object U of X, then we say that the presheaf F satisfies
+descent. In this case, the abutment of the hypercohomlogy spectral sequence is
+canonically identified with πi+j (F (U )).
+     If X is a scheme, then by [17, Definition 3.2.3] or [5, Theorem 1.3] the presheaf
+of spectra on the small étale site of X that to an étale morphism h : U → X assigns
+THH(U ) satisfies descent. Hence, in this situation the hypercohomology spectral
+sequence takes the form
+                     2
+                    Ei,j = H −i (U, THHj (OX )) ⇒ THHi+j (U ),
+where, as in Section 3, THHj (OX ) is the sheaf of OX -modules on the small étale
+site of X associated with the presheaf that to an étale morphism h : U → X assigns
+THHj (U ). We recall from [17, Proposition 3.2.1] that this OX -module is quasi-
+coherent. In particular, in the case where U is affine, the spectral sequence collapses
+and the edge homomorphism
+                        THHj (U )        / H 0 (U, THHj (OX ))
+
+is an isomorphism.
+     We next consider the presheaf of spectra on the small étale site of X that to
+an étale morphism h : U → X assigns the Tate spectrum
+                             F (U ) = Ĥ · (Cpn , THH(U )),
+and let Ĥ −j (Cpn , THH(OX )) be the sheaf of Wn (OX )-modules on the small étale
+site of X that to an étale morphism h : U → X assigns Ĥ −j (Cpn , THH(U )).
+   Lemma 6.1. Let k be a perfect field of characteristic p > 0. If f : k → A is a
+smooth morphism of relative dimension d, then the Tate spectral sequence
+                E 2 = Ĥ −i (Cpn , THHj (A)) ⇒ Ĥ −i−j (Cpn , THH(A))
+                           ∞
+converges strongly and Ei,j   vanishes for j ⩾ d + 2n. In particular, the induced
+filtration of the abutment is of finite length.
+    Proof. The spectral sequence in question takes the form
+              E 2 = Λ{un } ⊗ S{t±1 , α} ⊗ Ω∗A ⇒ Ĥ −∗ (Cpn , THH(A)),
+where the classes un , t, and α have bidegrees (−1, 0), (−2, 0), and (0, 2), and where
+Ω∗A is located in bidegrees (0, j) with 0 ⩽ j ⩽ d. By [26, Lemma 5.4], the classes t
+and α are infinite cycles, and if A = k, then
+                               d2n+1 (un ) = λ · tn+1 αn
+for some unit λ ∈ Fp . By comparison, the T-Tate spectral sequence takes the form
+                    E 2 = S{t±1 , α} ⊗ Ω∗A ⇒ Ĥ −∗ (T, THH(A)),
+                                           15
+and the inclusion of Cpn in T induces a map from the latter spectral sequence to
+the form, which, on E 2 -terms, is induced by the unit map η : k → Λ{un }. Now,
+for degree reasons, all nonzero differentials in the latter spectral sequence are even.
+Therefore, in the former spectral sequence, the d2n+1 -differential is given by
+                            d2n+1 (un ⊗ ω) = λ · tn+1 αn ω.
+                    2n+2                                               ∞
+This shows that Ei,j     vanishes for j ⩾ d + 2n, and hence, so does Ei,j . Finally,
+since the Tate spectral sequence always converges conditionally, we conclude that,
+in the situation at hand, it converges strongly; see [6, Theorem 7.1].            
+
+    Proposition 6.2. Let k be a perfect field of characteristic p > 0, let n be a
+positive integer, and let f : k → A be a smooth morphism. If h : A → B is an étale
+morphism, then the induced map of graded Wn (B)-algebras
+
+          Wn (B) ⊗Wn (A) Ĥ −∗ (Cpn , THH(A))          / Ĥ −∗ (Cpn , THH(B))
+
+is an isomorphism.
+    Proof. The Tate spectral sequence is a spectral sequence of Wn+1 (A)-modules
+             2
+            Ei,j = Ĥ −i (Cpn , F∗n THHj (A)) ⇒ R∗ Ĥ −i−j (Cpn , THH(A)),
+where F∗n (−) and R∗ (−) indicates the restriction of scalars along the Frobenius
+F n : Wn+1 (A) → A and restriction R : Wn+1 (A) → Wn (A), respectively. We recall
+from [9, Theorem B] that the morphism Wn+1 (h) : Wn+1 (A) → Wn+1 (B) again is
+étale and hence flat. Therefore, by extension of scalars along this morphism, we
+obtain a spectral sequence of Wn+1 (B)-modules
+               2
+              Ei,j = Ĥ −i (Cpn , Wn+1 (B) ⊗Wn+1 (A) F∗n THHj (A))
+                    ⇒ Wn+1 (B) ⊗Wn+1 (A) R∗ Ĥ −i−j (Cpn , THH(A)),
+and Lemma 6.1 shows that both this spectral sequence and the spectral sequence
+            2
+           Ei,j = Ĥ −i (Cpn , F∗n THHj (B)) ⇒ R∗ Ĥ −i−j (Cpn , THH(B)),
+converge strongly. The morphism h : A → B induces a map of spectral sequences
+from the former to the latter, and we claim that this map is an isomorphism. To
+prove this, it suffices to show that the induced map of Wn+1 (B)-modules
+               Wn+1 (B) ⊗Wn+1 (A) F∗n THHj (A)              / F∗n THHj (B)
+
+is an isomorphism. If n = 0, then this is proved in [17, Proposition 3.2.1], and the
+general case follows from this case and from the fact proved in [10, Corollary 15.4]
+that the left-hand diagram below is a cocartesian square of commutative rings.
+                      Wn+1 (h)                               Wn+1 (h)
+           Wn+1 (A)             / Wn+1 (B)        Wn+1 (A)             / Wn+1 (B)
+
+                F                     F               R                      R
+                      Wn (h)                               Wn (h)         
+            Wn (A)               / Wn (B)          Wn (A)               / Wn (B)
+
+We therefore conclude that the map of graded Wn+1 (B)-modules
+
+     Wn+1 (B) ⊗Wn+1 (A) R∗ Ĥ −∗ (Cpn , THH(A))             / R∗ Ĥ −∗ (Cpn , THH(B))
+                                             16
+induced by h : A → B is an isomorphism. Finally, by loc. cit., the right-hand
+diagram above also is a cocartesian square of commutative rings. This shows that
+the map in the statement is an isomorphism as desired.                        
+    Corollary 6.3. Let k be a perfect field of characteristic p > 0, let n be a
+positive integer, and let f : X → Spec(k) be a smooth morphism of finite relative
+dimension. In this situation, the graded Wn (OX )-algebra Ĥ −∗ (Cpn , THH(OX )) is
+quasi-coherent.
+     Proof. As proved in [1, Exposé VII, Proposition 3.1], the étale morphisms
+h : A → B with Spec(A) open in X generate the small étale topos of X. Therefore,
+the statement follows from Proposition 6.2.                                    
+    Proposition 6.4. Let k be a perfect field of characteristic p > 0, let n be a
+positive integer, and let f : X → Spec(k) is a smooth morphism of finite relative
+dimension. In this situation, the presheaf of spectra on the small étale site of X
+that to an étale morphism h : U → X assigns Ĥ · (Cpn , THH(U )) satisfies descent.
+     Proof. Let again F denote the presheaf in question. We wish to prove that
+for every étale morphism h : U → X, the canonical morphism
+                                             ηU
+                                   F (U )             / H · (U, F )
+
+is a weak equivalence. Corollary 6.3 shows that, for U affine, the sheafification map
+                            πj (F (U ))             / H 0 (U, πj (F )˜)
+
+is an isomorphism and that the descent spectral sequence
+                        2
+                       Ei,j = H −i (X, πj (F )˜) ⇒ H −i−j (U, F )
+collapses. But the sheafification map is equal to the composition of the map of ho-
+motopy groups induced by ηU and the edge homomorphism of the descent spectral
+sequence, so we conclude that ηU is a weak equivalence in this case. If h : U → X is
+a general étale morphism, then we choose a hyper-covering U of U by affine schemes
+étale over U and consider the diagram in which the two vertical morphisms are the
+canonical morphisms to the respective Čech cohomology spectra,
+                                            ηU
+                         F (U )                             / H · (U, F )
+
+                             η̌U                                          η̌U
+                                     Ȟ · (U ,η)
+                                                                      
+                       Ȟ · (U, F )                    / Ȟ · (U, H · (−, F )).
+
+The lower horizontal morphism is a weak equivalence by the case already considered,
+and the right-hand vertical morphism is a weak equivalence, since sheaf cohomology
+satisfies descent. We claim that also the left-hand vertical morphism is a weak
+equivalence. We write this morphism as the composition
+Ĥ · (Cpn , THH(U ))       / Ĥ · (Cpn , Ȟ · (U, THH(−)))                      / Ȟ · (U, Ĥ · (Cpn , THH(−)))
+
+of the morphism in Tate cohomlogy induced by the corresponding morphism in
+topological Hochschild homology and the canonical map from Tate cohomology of
+a homotopy limit to the homotopy limit of the Tate cohomology of the individual
+terms in the limit system. The former map is a weak equivalence, since topological
+Hochschild homology satisfies descent, and the latter map is a weak equivalence,
+                                                 17
+since the spectra in the limit system are universally bounded below by the relative
+dimension of f : X → Spec(k).                                                    
+    Remark 6.5. We do not know whether or not Corollary 6.3 and Proposition 6.4
+hold for all schemes X.
+    We view the next result as an analogue of analytic continuation.
+    Proposition 6.6. Let k be a perfect field of characteristic p > 0, let n ⩾ 1 be
+an integer, and let f : X → Spec(k) is a smooth morphism of relative dimension d.
+In this situation, the map of graded Wn (OX )-algebras
+                                            γ
+                          TRni (OX ; p)          / Ĥ −i (Cpn , THH(OX ))
+
+induced by the cyclotomic structure morphism is an isomorphism for i ⩾ d.
+     Proof. The domain and target Wn (OX )-modules of the map in question both
+are quasi-coherent. Therefore, it suffices to take X = Adk and show that the induced
+map of global sections is an isomorphism for i ⩾ d. Moreover, by [37, Theorem 2.4],
+it suffices to consider the case n = 1. Now, in the case d = 0, the result was proved
+in [26, Proposition 5.3]; see also loc. cit., Remark 5.5. In general, we have an
+equivalence of Cp -spectra
+                                                        α
+                 THH(k) ⊗ N cy (hx1 , . . . , xd i)          / THH(k[x1 , . . . , xd ])
+
+where the second factor on the left-hand side is the cyclic bar-construction of the free
+commutative monoid on the indicated generators. We refer to [23, Proposition 3]
+for the definition of the map α and for the proof that it is a weak equivalence.
+Moreover, there is a commutative diagram of spectra
+                                                        α
+           THH(k) ⊗ N cy (hx1 , . . . , xd i)                      / THH(k[x1 , . . . , xd ])
+
+                             γ⊗id                                                  γ
+                                                                             
+                                                        α̂
+      Ĥ · (Cp , THH(k)) ⊗ N cy (hx1 , . . . , xd i)         / Ĥ · (Cp , THH(k[x1 , . . . , xd ]))
+
+and the lower horizontal map also is a weak equivalence; see [26, Corollary 9.1].
+We claim that the reduced singular homology of N cy (hx1 , . . . , xd i) is concentrated
+in the degrees 0 ⩽ i ⩽ d. Granting this, we conclude from the case d = 0 that the
+left-hand vertical map in the diagram above induces an isomorphism of homotopy
+groups in degrees greater than or equal to d. But then the same holds for the
+right-hand vertical map, which proves the proposition. To prove the claim we use
+that there are canonical isomorphisms
+     ΩiZ[x1 ,...,xd ]/Z      / HHi (Z[x1 , . . . , xd ]/Z)         / H̃i (N cy (hx1 , . . . , xd i), Z)
+
+and the easy calculation of the left-hand side.                                                           
+    Theorem 6.7. Let k be a perfect field of characteristic p > 0, let n be a positive
+integer, and let f : X → Spec(k) be a smooth morphism of finite relative dimension.
+In this situation, the canonical map of graded Wn (OX )-algebras
+                                                              η̂
+        Wn Ω∗X ⊗f ∗ Wn (k) f ∗ Ĥ −∗ (Cpn , THH(k))                / Ĥ −∗ (Cpn , THH(OX ))
+
+is an isomorphism.
+                                                  18
+    Proof. We consider the commutative diagram of graded Wn (OX )-algebras
+in which the horizontal maps are the canonical maps and the vertical maps are
+induced by the cyclotomic structure maps,
+                                                       η
+            Wn Ω∗X ⊗f ∗ Wn (k) f ∗ TRn∗ (k; p)                   / TRn∗ (OX ; p)
+
+                                id ⊗γ                                    γ
+                                                                           
+                                                       η̂
+       Wn Ω∗X ⊗f ∗ Wn (k) f ∗ Ĥ −∗ (Cpn , THH(k))          / Ĥ −∗ (Cpn , THH(OX )).
+
+We recall from [21, Theorem B] that the top horizontal map is an isomorphism
+and from Proposition 6.6 that the right-hand vertical map is an isomorphism in
+degrees greater than or equal to the relative dimension of f : X → Spec(k). Since
+the graded Wn (OX )-algebras in the bottom row both are 2-periodic, the theorem
+follows.                                                                       
+
+     Theorem 6.8. If X is a scheme smooth and proper morphism over a perfect
+field k of characteristic p > 0, then there is a spectral sequence of W (k)-modules
+                 2
+                     = m∈Z limn,F H −i (X, Wn Ωj+2m
+                       L
+                Ei,j                               X     ) ⇒ TPi+j (X)
+which converges strongly.
+    Proof. We first argue that the canonical morphism
+
+           TP(X) = Ĥ · (T, THH(X))              / holimn,F Ĥ · (Cpn , THH(X))
+
+is a weak equivalence. It follows from [24, Lemma 2.1.1] that this morphism be-
+comes a weak equivalence after p-completion, and therefore, it suffices to show that
+the domain and target are p-complete. This, in turn, follows from the definition
+of the Tate spectrum, once we shows that THH(X) is p-complete and bounded
+below. That the spectrum THH(X) is p-complete is an immediate consequence of
+its homotopy groups being k-vector spaces, and hence, annihilated by p. To see
+that it is bounded below, we consider the conditionally convergent descent spectral
+sequence of k-vector spaces
+                     2
+                    Ei,j = H −i (X, THHj (OX )) ⇒ THHi+j (X).
+Since the structure morphism f : X → Spec(k) is smooth and proper, its relative
+                                                      2
+dimension d is finite. Therefore, the k-vector space Ei,j is zero, unless −d ⩽ i ⩽ 0
+and j ⩾ 0, which shows that the spectral sequence converges strongly and that
+THHj (X) is zero for j < −d. So the canonical morphism at the beginning of the
+proof is a weak equivalence as desired.
+    Next, by Proposition 6.4, we have descent spectral sequences
+          2
+         Ei,j = H −i (X, Ĥ −j (Cpn , THH(OX ))) ⇒ Ĥ −i−j (Cpn , THH(X)),
+which converge strongly. Indeed, the spectral sequences converge conditionally, and
+ 2
+Ei,j is zero, unless −d ⩽ i ⩽ 0. Moreover, identifying
+                         Ĥ −∗ (Cpn , THH(k)) = SWn (k) {v ±1 }
+with v ∈ TP−2 (k), Theorem 6.7 gives canonical isomorphisms of Wn (OX )-modules
+                  L         j+2m        / Ĥ −j (Cpn , THH(OX )),
+                    m∈Z Wn ΩX
+                                            19
+and hence, we may rewrite the descent spectral sequences above in the form
+            2
+                = m∈Z H −i (X, Wn Ωj+2m   ) ⇒ Ĥ −i−j (Cpn , THH(X)).
+                 L
+           Ei,j                      X
+                                        2
+We claim that the Wn (k)-module Ei,j       is finitely generated for all values of (i, j).
+Indeed, since f : X → Spec(k) is smooth and proper of relative dimension d, it
+follows from [29, Proposition II.2.1] that the Wn (k)-module H −i (X, Wn Ωj+2m  X     ) is
+finitely generated, for all integers m. But unless 0 ⩽ j +2m ⩽ d, said Wn (k)-module
+                                                                                    2
+is zero, so the claim follows. Moreover, for cohomological dimension reasons, Ei,j      is
+                                                         −i
+zero, unless −d ⩽ i ⩽ 0, so we conclude that also Ĥ (Cpn , THH(X)) is a finitely
+generated Wn (k)-module, for all integers i. Hence, taking limits with respect to
+the Frobenius maps, we obtain a spectral sequence of W (k)-modules
+                                          j+2m
+        2
+           = m∈Z limn,F H −i (X, Wn ΩX          ) ⇒ limn,F Ĥ −i−j (Cpn , THH(X)),
+             L
+      Ei,j
+and the corresponding higher derived limits vanish. Indeed, by finite generation,
+the limit systems satisfy the Mittag-Leffler condition. This also implies that the
+canonical map
+                    TPi (X)       / limn,F Ĥ −i (Cpn , THH(X))
+is an isomorphism, so the theorem follows.                                              
+    Corollary 6.9. Let k be a finite field of order q = pr , let W be its ring of
+p-typical Witt vectors, and let ι : W → C be a choice of embedding. If X is a scheme
+smooth and proper over k, then there is a strongly convergent spectral sequence of
+degree-wise finite dimensional C-vector spaces
+        2
+           = m∈Z (limn,F H −i (X, Wn Ωj+2m
+              L
+      Ei,j                                X    )) ⊗W,ι C ⇒ TPi+j (X) ⊗W,ι C.
+    Proof. We have the strongly convergent spectral sequence of W -modules
+             2
+                 = m∈Z limn,F H −i (X, Wn Ωj+2m
+                  L
+            Ei,j                             X    ) ⇒ TPi+j (X)
+from Theorem 6.8. For cohomological dimension reasons, it is concentrated in the
+strip −d ⩽ i ⩽ 0, where d is the relative dimension of X over k. Therefore, we
+obtain the desired spectral sequence by extension of scalars along the flat ring
+homomorphism ι : W → C. Finally, by [30, Théorème III.2.2], we see that the
+                 2
+C-vector spaces Ei,j are finite dimensional as in the proof of Corollary 5.2.  
+
+                             7. Regularized determinants
+    In this section, we recall the definitions of regularized determinant and anoma-
+lous dimension following Deninger [15] and complete the proof of Theorem A.
+    The definition requires a choice of principal branch Arg(λ) of the argument of
+λ ∈ C∗ . We follow [15, Section 1] and choose −π < Arg(λ) ⩽ π and define
+                                    λ−s = |λ|−s e−is Arg(λ)
+for λ ∈ C∗ and s ∈ C. Let V be a C-vector space5 of at most countably infinite
+dimension and let Θ : V → V be a C-linear map such that:
+  (1) For every λ ∈ C, the generalized eigenspace Vλ of Θ : V → V associated to
+      the eigenvalue λ is finite
+                            P dimensional.
+  (2) The Dirichlet series λ∈C∗ dimC (Vλ )λ−s converges absolutely for Re(s) ≫ 0
+      and admits a meromorphic continuation ζΘ (s) to the halfplane Re(s) > −ǫ
+      for some ǫ > 0 which is holomorphic at s = 0.
+    5 There is no topology on V ; in particular, it is not a Hilbert space.
+                                                20
+The anomalous dimension and regularized determinant of Θ : V → V are now
+defined to be the complex numbers
+                   dim∞ (Θ | V ) = dimC (V0 ) + ζΘ̄ (0),
+                                   (    ′
+                                     e−ζΘ (0) if dimC (V0 ) = 0,
+                   det∞ (Θ | V ) =
+                                     0         if dimC (V0 ) > 0,
+where, in the top line, Θ̄ : V /V0 → V /V0 is the map induced by Θ : V → V . If V is
+finite dimensional, then dim∞ (Θ | V ) = dimC (V ) and det∞ (Θ | V ) = det(Θ | V ).
+Moreover, if δ is a positive real number, then one has
+                     det∞ (δ · Θ | V ) = δ dim∞ (Θ|V ) det∞ (Θ | V ),
+as expected. More importantly, by [15, Lemma 1.2], given a commutative diagram
+                          0      / V′      /V            / V ′′       /0
+
+                                    Θ′           Θ              Θ′′
+                                                          
+                          0      / V′      /V            / V ′′       /0
+of C-vector spaces and C-linear maps with exact rows such that the right- and
+left-hand vertical maps satisfy (1)–(2), then so does the middle vertical map and
+                dim∞ (Θ | V ) = dim∞ (Θ′ | V ′ ) + dim∞ (Θ′′ | V ′′ )
+                 det∞ (Θ | V ) = det∞ (Θ′ | V ) · det∞ (Θ′′ | V ′′ ).
+The following result is a special case of [15, Corollary 2.8].
+    Proposition 7.1. Let T be an anticommutative graded C-algebra such that the
+sub-C-vector space Tj ⊂ T of homogeneous elements of degree j is finite dimensional
+for all integers j. Let Θ : T → T be a graded C-linear derivation and suppose that
+                                              2πi
+there exists a unit v ∈ T−2 such that Θ(v) = log q · v. In this situation,
+
+                  det∞ (s · id − Θ | T2∗+j ) = det(id −q −s·Θ | Tj ),
+                  dim∞ (s · id − Θ | T2∗+j ) = 0.
+for all s ∈ C and for all integers j.
+    Remark 7.2. The two side of the equality in the statement of Proposition 7.1
+only depend on the parity of the integer j. Indeed, we have the exact sequence
+                      0        / 2πi Z       /C            / C∗        / 0,
+                                log q
+
+where the right-hand map takes α ∈ C to q α ∈ C∗ . In its most basic form,
+Deninger’s formula expresses the inverse non-archimedean Euler factor 1 − λq −s
+with λ ∈ C∗ as the regularized product of the s − α with α ∈ C ranging over all
+solutions to q α = λ.
+    Proof of Theorem A. By applying Proposition 7.1 to the anticommutative
+graded C-algebra TP∗ (X) ⊗W,ι C and a graded C-linear derivation
+                                            Θ
+                          TP∗ (X) ⊗W,ι C             / TP∗ (X) ⊗W,ι C
+
+as in the statement of the theorem, we find that for all s ∈ C and j ∈ Z,
+    det∞ (s · id − Θ | TP2∗+j (X) ⊗W,ι C) = det(id −q −s Fr∗q | TPj (X) ⊗W,ι C).
+                                            21
+Moreover, by comparing the Hodge spectral sequence in Corollary 6.9 and the
+conjugate spectral sequence in Corollary 5.2 and using that the determinant is
+multiplicative on exact sequence, we furthermore conclude that
+                                      (
+           −s   ∗                       det(id −q −s Fr∗q | Hcrys
+                                                             od
+                                                                  (X/W ) ⊗W,ι C)
+  det(id −q Frq | TPj (X) ⊗W,ι C) =               −s    ∗    ev
+                                        det(id −q Frq | Hcrys     (X/W ) ⊗W,ι C)
+respectively, as j is odd or even. Putting the two equalities together, we find that
+   det∞ (s · id − Θ | TPod (X) ⊗W,ι C)   det(id −q −s Fr∗q | Hcrys
+                                                              od
+                                                                   (X/W ) ⊗W,ι C)
+                                       =           −s    ∗    ev
+                                                                                  ,
+   det∞ (s · id − Θ | TPev (X) ⊗W,ι C)   det(id −q Frq | Hcrys (X/W ) ⊗W,ι C)
+and finally, it is proved in [2, Théorème VII.3.2.3] that the right-hand side is equal
+to the Hasse-Weil zeta function ζ(X, s).                                              
+    By the analogue of analytic continuation, Proposition 6.6, the inverse Frobenius
+operator ϕ−1 on TF∗ (X; p) gives rise to a meromorphic Frobenius operator
+                                               ϕ
+                                  TP∗ (X)           / TP∗ (X),
+
+which is defined and invertible after inverting p. We relate this operator to the
+geometric Frobenius Fr∗q as follows. By functoriality, the Hodge spectral sequence
+                                                 j+2m
+                2
+                   = m∈Z limn,F H −i (X, Wn ΩX
+                    L
+              Ei,j                                     ) ⇒ TPi+j (X)
+                                                                2
+is a spectral sequence of graded TP∗ (k)-modules. Moreover, on Ei,j , and hence, on
+  ∞
+Ei,j , the geometric Frobenius acts as
+                                         Fr∗q = q w ϕr ,
+where w = j + m is the weight and q = pr .
+
+                                   Acknowledgements
+     It is a great pleasure to thank the Hausdorff Research Institute for Mathematics
+for its hospitality and support during the Trimester Program “Homotopy theory,
+manifolds, and field theories,” where part of the work reported here was conducted.
+I am also very grateful to Alain Connes for helpful conversations and for announcing
+Theorem A in his paper [13] and to Peter Scholze for explaining the conjugate
+spectral sequence to me and for making me fully appreciate the importance of
+Bökstedt’s periodicity theorem.
+
+                                         References
+ [1] M. Artin, A. Grothendieck, and J. L. Verdier, Théorie des topos et cohomologie étale des
+     schémas. Tome 2, Séminaire de Géometrie Algébrique du Bois-Marie 1963–1964 (SGA 4),
+     Lecture Notes in Math., vol. 270, Springer-Verlag, New York, 1972.
+ [2] P. Berthelot, Cohomologie cristalline des schemas de caracteristique p > 0, Lecture Notes in
+     Math., vol. 407, Springer-Verlag, New York, 1974.
+ [3] B. Bhatt, M. Morrow, and P. Scholze, Integral p-adic Hodge theory and topological Hochschild
+     homology, in preparation.
+ [4] A. J. Blumberg and M. A. Mandell, The strong Künneth theorem for topological periodic
+     cyclic homology, arXiv:1706.06846.
+ [5]         , Localization theorems in topological Hochschild homology and topological cyclic ho-
+     mology, Geom. Topol. 16 (2012), 1053–1120.
+ [6] J. M. Boardman, Conditionally convergent spectral sequences, Homotopy invariant algebraic
+     structures (Baltimore, MD, 1998), Contemp. Math., vol. 239, Amer. Math. Soc., Providence,
+     RI, 1999, pp. 49–84.
+                                               22
+ [7] M. Bökstedt, Topological Hochschild homology, Preprint, Bielefeld University, 1985.
+ [8]          , Topological Hochschild homology of Z and Z/p, Bielefeld, 1985.
+ [9] J. Borger, The basic geometry of Witt vectors, I. The affine case, Algebra Number Theory
+     5 (2011), 231–285.
+[10]          , The basic geometry of Witt vectors, II. Spaces, Math. Ann. 351 (2011), 877–933.
+[11] A. K. Bousfield, The localization of spectra with respect to homology, Topology 18 (1979),
+     257–281.
+[12] H. Cartan, Séminaire 1954–1955. Algébre d’Eilenberg-Mac lane et homologie, Benjamin, New
+     York, 1967.
+[13] A. Connes, An essay on the Riemann Hypothesis, Open problems in mathematics, Springer,
+     2016, pp. 225–257.
+[14] A. Connes and C. Consani, Cyclic homology, Serre’s local factors and λ-operations, J. K-
+     theory 14 (2014), 1–45.
+[15] C. Deninger, Motivic L-functions and regularized determinants, Motives (Seattle, WA, 1991),
+     Proc. Symp. Pure Math., vol. 55, Amer. Math. Soc., Providence, RI, 1994.
+[16] O. Gabber, K-theory of henselian local rings and henselian pairs, Algebraic K-theory, com-
+     mutative algebra, and algebraic geometry (Santa Margherita Ligure, 1989), Contemp. Math.,
+     vol. 126, Amer. Math. Soc., Providence, RI, 1992, pp. 59–70.
+[17] T. Geisser and L. Hesselholt, Topological cyclic homology of schemes, K-theory (Seattle,
+     1997), Proc. Symp. Pure Math., vol. 67, 1999, pp. 41–87.
+[18] T. Geisser and M. Levine, The K-theory of fields in characteristic p, Invent. Math. 139
+     (2000), 459–493.
+[19] H. Gillet and R. Thomason, The K-theory of a strict hensel local ring and a theorem of
+     Suslin, J. Pure Appl. Alg. 34 (1984), 241–254.
+[20] J. P. C. Greenlees, Representing Tate cohomology of G-spaces, Proc. Edinburgh Math. Soc.
+     (2) 30 (1987), 435–443.
+[21] L. Hesselholt, On the p-typical curves in Quillen’s K-theory, Acta Math. 177 (1997), 1–53.
+[22]          , Topological Hochschild homology and the de Rham-Witt complex for Z(p) -algebras,
+     Homotopy theory: Relations with algebraic geometry, group cohomology, and algebraic K-
+     theory (Evanston, IL, 2002), Contemp. Math., vol. 346, Amer. Math. Soc., Providence, RI,
+     2004, pp. 253–259.
+[23]          , K-theory of truncated polynomial algebras, Handbook of K-theory, Springer-Verlag,
+     New York, 2005.
+[24]          , On the topological cyclic homology of the algebraic closure of a local field, An Alpine
+     Anthology of Homotopy Theory: Proceedings of the Second Arolla Conference on Algebraic
+     Topology (Arolla, Switzerland, 2004), Contemp. Math., vol. 399, Amer. Math. Soc., Provi-
+     dence, RI, 2006, pp. 133–162.
+[25]          , The big de Rham-Witt complex, Acta Math. 214 (2015), 135–207.
+[26] L. Hesselholt and I. Madsen, On the K-theory of finite algebras over Witt vectors of perfect
+     fields, Topology 36 (1997), 29–102.
+[27]          , On the K-theory of local fields, Ann. of Math. 158 (2003), 1–113.
+[28]          , On the de Rham-Witt complex in mixed characteristic, Ann. Sci. École Norm. Sup.
+     37 (2004), 1–43.
+[29] L. Illusie, Complexe de de Rham-Witt et cohomologie cristalline, Ann. Scient. Éc. Norm.
+     Sup. (4) 12 (1979), 501–661.
+[30] L. Illusie and M. Raynaud, Les suites spectrales associées au complexe de de Rham-Witt,
+     Inst. Hautes Études Sci. Publ. Math. 57 (1983), 73–212.
+[31] J. F. Jardine, Local homotopy theory, Springer Monographs in Mathematics, Springer, New
+     York, 2015.
+[32] T. Nikolaus and P. Scholze, On topological cyclic homology, arXiv:1707.01799.
+[33] A. A. Suslin, On the K-theory of algebraically closed fields, Invent. Math. 73 (1983), 241–245.
+[34]          , On the K-theory of local fields, J. Pure Appl. Alg. 34 (1984), 304–318.
+[35] G. Tabuada, Finite generation of the numerical Grothendieck group, arXiv:1704.06252.
+[36] R. W. Thomason, Algebraic K-theory and étale cohomology, Ann. Scient. École Norm. Sup.
+     13 (1985), 437–552.
+[37] S. Tsalidis, Topological Hochschild homology and the homotopy descent problem, Topology
+     37 (1998), 913–934.
+
+                                                  23
+Nagoya University, Japan, and University of Copenhagen, Denmark
+E-mail address: larsh@math.nagoya-u.ac.jp
+
+
+
+
+                                   24
+

@@ -1,0 +1,2544 @@
+arXiv:1211.4239v1 [math.AG] 18 Nov 2012
+
+Cyclic homology, Serre’s local factors and the
+λ-operations
+Alain Connes and Caterina Consani
+Abstract
+We show that for a smooth, projective variety X
+Q defined over a number field K, cyclic
+homology with coefficients in the ring A∞ = ν|∞ Kν , provides the right theory to
+obtain, using the λ-operations, Serre’s archimedean local factors of the complex Lfunction of X as regularized determinants.
+Contents
+1 Introduction
+2 The reduced Deligne cohomology and cyclic homology
+2.1 Reduced Deligne cohomology . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 λ-decomposition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3 Cyclic homology of smooth, projective varieties . . . . . . . . . . . . . .
+3 Cyclic homology and archimedean cohomology
+3.1 Deligne cohomology and poles of the archimedean factors . . . . . . . .
+3.2 Deligne cohomology and archimedean cohomology . . . . . . . . . . . .
+∗ (X , R(·)) to H ∗ (X , R(·)) . . . . . . . . . . . . . . . .
+3.3 Passing from H̃D
+ν
+ν
+D
+4 Real (λ)-twisted cyclic homology of a smooth, projective variety
+4.1 Hochschild and cyclic homology of schemes . . . . . . . . . . . . . . . .
+4.2 Resolution using differential forms of type (p, q) . . . . . . . . . . . . . .
+4.3 The periodic cyclic homologies HP∗ (XC ) and HP∗ (C ∞ (Xsm , C)) . . . .
+∗
+4.4 The Tate-twisted map τ : P Creal,λ
+(XC ) → P C ∗ (XC ) . . . . . . . . . . .
+5 The archimedean cyclic homology HC∗ar (XC )
+5.1 Negative cyclic homology . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.2 The archimedean cyclic homology of XC . . . . . . . . . . . . . . . . . .
+5.3 The case of real schemes . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6 Proof of Theorem 1.1
+7 Appendix: Weil restriction and the functor X 7→ ∗ X
+7.1 The functor X 7→ ∗ X . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7.2 The morphism πX : Spec (O(Xsm )) → X . . . . . . . . . . . . . . . . . .
+References
+
+2
+5
+5
+6
+6
+6
+7
+7
+8
+9
+9
+12
+14
+17
+18
+18
+20
+22
+24
+25
+25
+28
+31
+
+2010 Mathematics Subject Classification 16E40, 11G40, 13D3, 11G09, 14F25.
+Keywords: Cyclic homology, Deligne cohomology, Gamma factors, complex L-function, motives.
+The second author is partially supported by the NSF grant DMS 1069218 and would like to thank the Collège
+de France for some financial support. The first author thanks A. Abbes for discussions on the Appendix.
+
+Alain Connes and Caterina Consani
+1. Introduction
+Cyclic cohomology was introduced and widely publicized by the first author of this paper in
+1981 (cf. [3]) as an essential tool in noncommutative differential geometry (cf. [5], [6]). In the
+context of algebraic geometry the dual theory, cyclic homology, which had been anticipated in
+the commutative case in [22], was subsequently developed in a purely algebraic framework by
+J.L. Loday–D. Quillen (cf. [18], [19]), B. Feigin–B. Tsygan (cf. [27], [10]), M. Karoubi (cf. [15]),
+C.Hood–J. Jones (cf. [14]) and in the more recent work of C. Weibel (cf. [29], [30]) to which we
+refer as a basic reference throughout this paper.
+In this article we show that for a smooth, projective
+Q variety X defined over a number field K,
+cyclic homology with coefficients in the ring A∞ = ν|∞ Kν , provides the right theory to obtain,
+using the λ-operations, Serre’s archimedean local factors of the complex L-function of X as
+regularized determinants. In [9], C. Deninger made an attempt at constructing a cohomological
+theory that achieves a similar goal by introducing an archimedean (yet simplified) analogue of
+J.M. Fontaine’s p-ring BdR . It is evident that due to the infinite number of poles of the Gamma
+functions which enter in Serre’s formula of the archimedean local factors one is required to look
+for an infinite dimensional cohomological theory (cf. [7]). Moreover, since the multiplicity of these
+poles is provided by the dimension (in a precise range) of the real Deligne cohomology of the
+complex resp. real variety Xν = X ×K Kν over Kν , one regards this latter as a cohomological
+theory intimately related to the sought for “archimedean cohomology”. As pointed out in [9]
+there is however a mismatch happening at a real place ν and for odd Hodge weights w, between
+Deninger’s proposed definition of the archimedean cohomology and the real Deligne cohomology
+of Xν = X/R . In this paper we show that for ν|∞ the cyclic homology of Xν provides a conceptual
+general construction of the sought for archimedean cohomology of X in terms of what we define
+(cf. Definition 5.1) as archimedean cyclic homology HC∗ar (Xν ).
+Cyclic homology is naturally infinite dimensional, it solves the above mismatch with the real
+Deligne cohomology and at the same time also unveils the subtle nature of the operator Θ,
+as generator of the λ-operations, whose regularized determinant yields the archimedean local
+factors. The endomorphism Θ has two constituents: the natural grading in cyclic homology and
+the action of the multiplicative semigroup N× on cyclic homology of commutative algebras given
+by the λ-operations Λ(k), k ∈ N× . More precisely, the action uΘ of the multiplicative group
+R×
++ generated by Θ on cyclic homology, is uniquely determined by its restriction to the dense
+×
+subgroup Q×
++ ⊂ R+ where it is given by the formula
+kΘ |HCn (Xν ) = Λ(k) k−n ,
+
+∀n ≥ 0, k ∈ N× ⊂ R×
++.
+
+(1)
+
+Our main result is the following
+Theorem 1.1 Let X be a smooth, projective variety of dimension d over an algebraic number
+field K and let ν|∞ be an archimedean place of K. Then, the action of the operator Θ on the
+archimedean cyclic homology of Xν satisfies the following formula
+Y
+
+0≤w≤2d
+
+w+1
+
+Lν (H w (X), s)(−1)
+
+=
+
+1
+ar (X )
+(s − Θ))|HCeven
+det∞ ( 2π
+ν
+1
+ar (X )
+det∞ ( 2π
+(s − Θ))|HCodd
+ν
+
+,
+
+s ∈ R.
+
+(2)
+
+The left-hand side of (2) is the product of Serre’s archimedean local factors of the complex Lfunction of X (cf. [25]). On the right-hand
+denotes the regularized
+e.g.
+L determinant (cf.
+L side, det∞
+ar
+ar
+ar
+ar
+[23],[9]) and one sets HCeven (Xν ) = n=2k≥0 HCn (Xν ), HCodd (Xν ) = n=2k+1≥1 HCn (Xν ).
+2
+
+Cyclic homology, Serre’s local factors and the λ-operations
+By taking into account the fact that cyclic homology of a finite product of algebras (or disjoint
+union of schemes) is the direct sum of their cyclic homologies, (2) determines the required formula
+for the productQ
+of all archimedean local factors in terms of cyclic homology with coefficients in
+the ring A∞ = ν|∞ Kν .
+Let us now describe in some details the archimedean cyclic homology groups HC∗ar (Xν ) appearing on the right-side of (2). The nuance between the archimedean cyclic homology HC∗ar (Xν )
+and ordinary cyclic homology HC∗ (Xν ) as developed in the context of algebraic geometry, corresponds exactly to the difference between the real Deligne cohomology and reduced Deligne
+cohomology of Xν i.e. relative de Rham cohomology of Xν (up to a shift of degrees). The cyclic
+homology groups HC∗ (Xν ) have coefficients in C for a complex place ν of K, resp. in R for a
+real place, and in this context they play the role of relative de Rham cohomology. The real Betti
+cohomology of a complex projective variety XC is recovered in periodic cyclic homology theory
+by the inclusion (cf. §4.3, Proposition 4.4)
+HP∗ (C ∞ (Xsm , R)) ⊂ HP∗ (C ∞ (Xsm , C)) ∼
+(3)
+= HP∗ (XC ),
+
+where Xsm denotes the underlying smooth C ∞ manifold. The periodic cyclic homology groups
+HP∗ (C ∞ (Xsm , R)) and HP∗ (C ∞ (Xsm , C)) are defined in topological terms in [5]. Then the real
+(λ)-twisted periodic cyclic homology HP∗real,λ (XC ) is defined as the hyper-cohomology of a complex of cochains (cf. Definition 4.6) described by the quasi-pullback of two natural maps of
+complexes in periodic cyclic theory. The resulting map τ : HP∗real,λ (XC ) → HP∗ (XC ) is essentially the Tate twist (2πi)Θ0 combined with the above inclusion (3). Here, Θ0 denotes the
+generator of the λ-operations, i.e. it differs from the above operator Θ by the grading in cyclic
+homology. Let us first consider the case when the archimedean place ν of K is complex. Then,
+one obtains (cf. Proposition 5.3) the short exact sequence (which determines the archimedean
+cyclic homology)
+S◦τ
+
+real,λ
+0 → HP∗+2
+(Xν ) → HC∗ (Xν ) → HC∗ar (Xν ) → 0
+
+(4)
+
+where the periodicity map S implements here the link between periodic cyclic homology and
+cyclic homology. If instead the archimedean place ν is real, one takes in the above construction
+the fixed points of the anti-linear conjugate Frobenius operator F̄∞ acting on HC∗ (Xν ⊗ C) (cf.
+§5.3). While the exact sequence (4) suffices to define HC∗ar (Xν ), we also provide in Definition 5.1
+the general construction of a complex of cochains whose cohomology gives HC∗ar (Xν ). This
+complex is defined by the quasi-pullback of two maps connecting the negative cyclic complex (cf.
+[14]) resp. the real (λ)-twisted periodic cyclic complex to the periodic cyclic complex.
+Besides its natural clarity at the conceptual level, this newly developed archimedean cyclic homology theory has also the following qualities:
+1) It inherits by construction the rich structure of cyclic homology, such as the action of the
+periodicity operator S (that has to be Tate twisted in the complex case and squared in the real
+case).
+2) It is directly connected to algebraic K-theory and the γ-filtration by the regulator maps, thus
+it acquires naturally a role in the theory of motives.
+3) The fundamental formula derived from (2) that gives the product
+Q of all archimedean local
+factors in terms of cyclic homology with coefficients in the ring A∞ = ν|∞ Kν , is clearly of adelic
+nature and evidently suggests the study of a generalization of these results, by implementing the
+full ring AK of adèles as coefficients. Cyclic homology with coefficients in the number field K
+should provide a natural lattice in the spirit of [2].
+4) When translated in terms of the logarithmic derivatives of the two sides, formula (2) is very
+
+3
+
+Alain Connes and Caterina Consani
+suggestive of the existence of a global Lefschetz formula in cyclic homology.
+5) At the conceptual level, cyclic homology is best understood as a way to embed the category
+of non-commutative k-algebras in the abelian category of Λ-modules (cf. [4]), where Λ is a small
+category built from simplicial sets and cyclic groups. Any non-commutative algebra A gives rise
+n
+canonically, through its tensor powers A⊗ , to a Λ-module A♮ . The functor A 7→ A♮ from the
+category of algebras to the abelian category of Λ-modules retains all the information needed to
+compute the cyclic homology groups. In fact, since these groups are computed as Tor(k♮ , A♮ ) the
+cyclic theory fits perfectly with the use of extensions in the theory of motives.
+6) One knows (cf. [4]) that the classifying space of the small category Λ is P∞ (C) and its
+cohomology accounts for the geometric meaning of the periodicity operator S. The immersion of
+the category of algebras in the abelian category of Λ-modules is refined in the commutative case
+by the presence of the λ-operations. As shown in §6.4 of [19], the presence of the λ-operations
+for a Λ-module E : Λop → (k − Mod) is a consequence of the fact that E factorizes through the
+category Fin of finite sets. This clearly happens for E = A♮ , when the algebra A is commutative.
+We expect that a deeper understanding in the framework of algebraic topology, of the relations
+between the cyclic category Λ and the category Fin of finite sets should shed light on the structure
+of the “absolute point” Spec (F1 ) and explain the role of cyclic homology and the λ-operations
+in the world of motives.
+The paper is organized as follows
+In Section 2, we recall the definition of the real Deligne cohomology and review briefly the result
+of [30] (cf. also [10]) which relate the Hodge filtration of the Betti cohomology of a smooth,
+projective variety over C to the cyclic homology of the associated scheme. This provides a direct
+link between the reduced Deligne cohomology (in the sense of [19]) and the cyclic homology of
+the variety.
+In Section 3, we first recall the well known formula describing the multiplicity of the poles of the
+archimedean local factors of X as the rank of some real Deligne cohomology groups. This result
+leads unambiguously to the definition of the archimedean cohomology of a smooth, projective
+algebraic variety X over a number field as an infinite direct sum of real Deligne cohomology
+groups. Then, we point out that by neglecting at first the nuance between the real Deligne
+cohomology and the reduced Deligne cohomology, this infinite direct sum is nothing but the
+cyclic homology group ⊕n≥0 HCn (XC ).
+The remaining sections are then dedicated to describe in cyclic terms the difference between
+reduced and unreduced Deligne cohomology.
+In Section 4 we use the computation of the cyclic homology of a smooth manifold (cf. [5], Theorem
+46) and the stability property of the periodic cyclic homology when passing from the algebraic
+cyclic homology of a smooth complex projective variety XC to the associated C ∞ -manifold Xsm
+to construct the real (λ)-twisted periodic cyclic homology HP∗real,λ (XC ).
+The scheme theoretic relation between Xsm and XC is explored in depth in Appendix 7 where we
+construct, by elaborating on the functor Weil restriction ResC/R , an additive functor X 7→ ∗ X
+which properly belongs to algebraic geometry over C (i.e. maps schemes over C to schemes over
+C). This allows one to extend the obvious map of locally ringed spaces Xsm → XC , to a morphism
+of schemes πX : Spec (C ∞ (Xsm , C)) → XC that factors naturally through the complex scheme
+(∗ X)C = ∗ X × C and to which the general theory of [29] can be applied.
+In Section 5 we provide the definition and the first properties of the archimedean cyclic homology
+theory. In §5.3 we provide the cyclic homology meaning of the anti-linear conjugate Frobenius
+operator F̄∞ and develop the construction at the real places.
+Finally, Section 6 contains a detailed proof of Theorem 1.1.
+
+4
+
+Cyclic homology, Serre’s local factors and the λ-operations
+2. The reduced Deligne cohomology and cyclic homology
+In this section we shortly review the result of [30] from which our paper develops. This basic
+statement relates the Hodge filtration on the Betti cohomology of a smooth, projective variety
+over C to the cyclic homology of the associated scheme. Throughout this paper we follow the
+conventions of [28] to denote the shift of the indices in chain C∗ resp. cochain complexes C ∗ i.e.
+C[p]n := Cn+p , C[p]n := C n−p .
+Note that this convention is the opposite of the one used in [24].
+2.1 Reduced Deligne cohomology
+Let XC be a smooth, projective
+variety over the complex numbers. One denotes by R(r) the
+√
+r
+subgroup (2πi) R of C (i = −1) and by R(r)D the complex of sheaves of holomorphic differential
+forms Ω· = Ω·X(C) on the complex manifold X(C) associated to XC , whose cohomology defines
+the real Deligne cohomology of XC :
+ǫ
+
+d
+
+d
+
+d
+
+d
+
+R(r)D : R(r) → Ω0 → Ω1 → Ω1 → · · · → Ωr−1 → 0.
+Here R(r) is placed in degree 0 and Ωp in degree p + 1 (∀p ≥ 0) and the map ǫ is the inclusion
+of the twisted constants: R(r) ⊂ C ⊂ OX(C) = Ω0X(C) . The real Deligne cohomology of XC is
+n (X , R(r)) := Hn (X(C), R(r) ). One
+defined as the hyper-cohomology of the above complex: HD
+C
+D
+has an evident short exact sequence of complexes
+0 → (Ω<r
+X(C) )[1] → R(r)D → R(r) → 0.
+
+(5)
+
+Following [19] (§3.6.4), we call the reduced Deligne complex the kernel of the surjective map
+R(r)D → R(r) in (5), that is the truncated de Rham complex shifted by 1 to the right. The
+reduced Deligne cohomology is then defined as the hyper-cohomology of the reduced Deligne
+complex:
+ι
+
+n
+n
+r ·
+·
+H̃D
+(XC , R(r)) := Hn (X(C), (Ω<r
+X(C) )[1]) = H (Cone(F ΩX(C) → ΩX(C) )[1]).
+
+(6)
+
+The second equality in (6) is an immediate consequence of the definition of the Hodge subι
+
+complex F r Ω·X(C) ⊆ Ω·X(C) . Up to a shift by 1, the reduced Deligne cohomology is sometimes
+referred to as relative de Rham cohomology. The results of [26] and [11] show that the reduced
+Deligne cohomology is computed in the same way in terms of the de Rham complex of algebraic
+differential forms on the scheme XC and thus makes sense for schemes over C.
+In Proposition 2.2 we shall review a generalization to the projective case of Proposition 3.6.5 of
+[19] which relates, for a commutative and smooth C-algebra A, the cyclic homology of A with the
+reduced Deligne cohomology of the affine algebraic spectrum Spec (A). The algebraic analogue
+(cf. [19], Theorem 3.4.12) of the computation of cyclic cohomology of smooth manifolds of [5]
+(Theorem 46), implies Proposition 3.6.5 of [19], i.e. the isomorphism
+M
+n+1−2i
+HCn (A) ∼
+(Spec (A), R(n + 1 − i)).
+H̃D
+=
+i≥0
+
+In the affine case, the reduced Deligne cohomology is computed in terms of global Kähler differentials.
+
+5
+
+Alain Connes and Caterina Consani
+2.2 λ-decomposition
+We recall from [10], [19] and [30], that one has a natural action of the multiplicative semigroup
+N× of positive integers on the cyclic homology groups of a commutative algebra (over a ground
+ring). This action is the counterpart in cyclic homology of Quillen’s λ-operations in algebraic
+K-theory (cf. [19] 4.5.16)
+Proposition 2.1 Let A be a commutative algebra and (Ck (A) = A⊗(k+1) , b, B) its mixed complex
+of chains. The λ-operations define (degree zero) endomorphisms Λ∗ of C∗ (A) commuting with
+the grading and satisfying the following properties
+- Λnm = Λn Λm , ∀n, m ∈ N×
+- bΛm = Λm b, ∀m ∈ N×
+- Λm B = mBΛm , ∀m ∈ N× .
+Proof. The statements are all proven in [19]. The first is equation (4.5.4.2). The second is Proposition 4.5.9 and the third is Theorem 4.6.6 of op.cit. .
+This construction gives rise, for a commutative algebra A over a ground field of characteristic
+0, to a canonical decomposition, called the λ-decomposition, of the cyclic homology of A as a
+direct sum
+M
+HCn (A) =
+HCn(j)(A)
+j≥0
+
+which is uniquely determined as a diagonalization of the endomorphisms Λm i.e.
+Λm (α) = mj α ,
+
+∀α ∈ HCn(j)(A), m ∈ N× .
+
+2.3 Cyclic homology of smooth, projective varieties
+In [30] (Lemma 3.0) it is proven that the λ-decomposition extends to the projective case, thus
+for a smooth, projective algebraic variety XC over the complex numbers one has the finite decomposition
+M
+HCn (XC ) =
+HCn(j) (XC ).
+j≥0
+
+We recall the following key result of [30] (Theorem 3.3)
+
+Proposition 2.2 Let XC be a smooth, projective algebraic variety over C. Then one has canonical isomorphisms
+2j+1−n
+2j−n
+HCn(j)(XC ) ∼
+(XC , R(j + 1)) ∼
+= H̃D
+= HB (X(C), C)/F j+1
+
+∀j ≥ 0, ∀n ≥ 0.
+
+(7)
+
+In [30] (Theorem 3.3) it is proven that
+2j−n
+(X(C), Ω≤j
+HCn(j) (XC ) = H2j−n (XC , Ω≤j
+XC ) = H
+X(C) ).
+
+Moreover it follows from the degeneration of the “Hodge to de Rham” hyper-cohomology spectral
+sequence and the canonical identification of de Rham cohomology with the singular cohomology
+∼ 2j−n (X(C), C)/F j+1 .
+that H2j−n (X(C), Ω≤j
+X(C) ) = HB
+3. Cyclic homology and archimedean cohomology
+In this section we first recall the basic result which expresses the order of the poles of Serre’s
+archimedean local factors Lν (H w (X), s) (ν|∞) of the complex L-function of a smooth, projective
+
+6
+
+Cyclic homology, Serre’s local factors and the λ-operations
+
+Ad
+
+w
+
+m
+
+Figure 1. The subset Ad for d = 3
+
+algebraic variety X over a number field in terms of the ranks of some real Deligne cohomology
+groups of Xν := X ×K Kν over Kν . The outcome leads unambiguously to consider an infinite
+direct sum of real Deligne cohomology groups of Xν as the most natural candidate for the
+archimedean cohomology of X. If one ignores at first the nuance between real Deligne cohomology
+and reduced Deligne cohomology, this infinite direct sum (when ν is a complex place of K) is
+nothing but the cyclic homology direct sum ⊕n≥0 HCn (XC ). In the last part of the section we
+shall describe the strategy on how to understand in full this difference.
+3.1 Deligne cohomology and poles of the archimedean factors
+Let X be a smooth, projective variety over a number field K. We fix an archimedean place ν|∞
+of K and a Hodge weight w of the singular cohomology of the complex manifold Xν (C) and
+consider the local factor Lν (H w (X), s). In view of the definition of these factors given by Serre
+(cf. [25]) as a product of powers of shifted Γ-functions, these functions are completely specified
+by the multiplicities of their poles at some integer points on the real line. By a result of Beilinson
+([1], cf. also [9] and [24]) the order of these poles can be expressed in terms of the ranks of
+some real Deligne cohomology groups of Xν , they only occur at integers s = m ≤ w2 and their
+multiplicity is provided by the well-known formula
+w+1
+(Xν , R(w + 1 − m))
+ords=m Lν (H w (X), s)−1 = dimR HD
+
+(8)
+
+where for a complex place ν the real Deligne cohomology groups of Xν are defined as in §2.1
+(Xν = XC ) and for a real place ν (Xν = X/R ), these groups are defined as
+q
+q
+(Xν ⊗R C, R(p))DR−conjugation
+(Xν , R(p)) := HD
+HD
+
+(9)
+
+q
+i.e. the subspace of HD
+(Xν ⊗R C, R(p)) made by fixed points of the de Rham conjugation.
+
+3.2 Deligne cohomology and archimedean cohomology
+Let us now consider the pairs (w, m) of integers which enter in formula (8), when dim X = d (so
+that w takes integer values between 0 and 2d). They give rise to the set (here we use w = q)
+Ad = {(q, m) | 0 ≤ q ≤ 2d, m ≤ q/2}.
+
+(10)
+
+The relevant infinite dimensional archimedean cohomology of Xν is therefore dictated by (8) as
+the infinite direct sum
+M
+q+1
+HD
+(Xν , R(q + 1 − m)).
+(11)
+(q,m)∈Ad
+
+We shall now rewrite this sum in an equivalent way by using the following
+
+7
+
+Alain Connes and Caterina Consani
+
+j
+
+Ed
+
+n
+
+Figure 2. The subset Ed for d = 3
+
+Lemma 3.1 Let d ≥ 0 be an integer. The map of sets which maps the pair of integers (n, j) to
+(q, m) under the relations
+q = 2j − n, m = j − n
+
+is a bijection of Ed = {(n, j) | n ≥ 0, 0 ≤ 2j − n ≤ 2d} with Ad .
+Proof. The inverse map sends (q, m) ∈ Ad to (n, j) where n = −2m + q, j = −m + q. One easily
+checks that the conditions are preserved, in fact one has
+n ≥ 0, 0 ≤ 2j − n ≤ 2d =⇒ j − n ≤ (2j − n)/2
+and
+0 ≤ q ≤ 2d, m ≤ q/2 =⇒ −2m + q ≥ 0, 0 ≤ 2(−m + q) − (−2m + q) ≤ 2d.
+Thus by Lemma 3.1, the sum in (11) can be equivalently rewritten as
+M
+M
+q+1
+2j+1−n
+HD
+(Xν , R(q + 1 − m)) =
+HD
+(Xν , R(j + 1)).
+
+(12)
+
+Moreover, by applying the Proposition 2.2, one obtains the isomorphism
+M
+M
+2j+1−n
+HCn (XC ) ∼
+H̃D
+(XC , R(j + 1)).
+=
+
+(13)
+
+(q,m)∈Ad
+
+(n,j)∈Ed
+
+n≥0
+
+(n,j)∈Ed
+
+It follows that the difference between the archimedean cohomology of Xν as in (12) and the cyclic
+homology direct sum as in (13) is expressed by the nuance between the real Deligne cohomology
+and the reduced Deligne cohomology of XC .
+∗ (X , R(·)) to H ∗ (X , R(·))
+3.3 Passing from H̃D
+ν
+ν
+D
+∗ (X , R(·)) and real Deligne
+To understand the difference between reduced Deligne cohomology H̃D
+ν
+∗
+cohomology HD (Xν , R(·)), we assume first that the place ν is complex, and introduce the long
+exact sequence associated to the short exact sequence (5). It is of the form
+w+1
+w+1
+w
+w+1
+(X(C), R(r)) → · · ·
+(XC , R(r)) → HB
+(XC , R(r)) → HD
+· · · → HB
+(X(C), R(r)) → H̃D
+
+This long exact sequence can be equivalently written as
+w+1
+w+1
+w
+w
+(X(C), R(r)) → · · ·
+(XC , R(r)) → HB
+· · · → HB
+(X(C), R(r)) → HdR,rel
+(XC , r) → HD
+
+8
+
+Cyclic homology, Serre’s local factors and the λ-operations
+w+1
+w (X(C))/F r . By comparing
+w
+(XC , r) := HdR
+(XC , R(r)) ∼
+in view of the isomorphism H̃D
+= HdR,rel
+w+1
+with (12), we see that one has to estimate HD
+(XC , R(r)) for (w, m) ∈ Ad , with Ad as in (10)
+where r = w + 1 − m, i.e. for (w, w + 1 − r) ∈ Ad . One knows that for w < 2r the natural map
+w
+w
+(X(C))/F r
+HB
+(X(C), R(r)) → HdR
+w the intersection F r ∩ F̄ r = {0} when 2r > w). For w + 1 < 2r one gets a
+is injective (in HdR
+short exact sequence of the form
+w+1
+w+1
+w
+(XC , R(r)) → 0
+(XC , R(r)) → HD
+0 → HB
+(X(C), R(r)) → H̃D
+
+(14)
+
+This holds for the pair (w, w + 1 − r) ∈ Ad since
+(w, w + 1 − r) ∈ Ad =⇒ w + 1 − r ≤ w/2 =⇒ w/2 + 1 ≤ r =⇒ w + 1 < 2r.
+Therefore,when the place ν is complex, the difference between the archimedean cohomology of
+Xν as in (12) and the cyclic homology direct sum as in (13) will be taken care of by a suitable
+w (X(C), R(r)) and of the map
+interpretation in cyclic terms of the real Betti cohomology HB
+w (X(C), R(r)) → H̃ w+1 (X , R(r)). When instead the place ν of K is real the corresponding
+HB
+C
+D
+real Deligne cohomology groups are defined in (9) as fixed points under the anti-linear de Rham
+conjugation F̄∞ . In §5.3 we shall show that F̄∞ admits a direct cyclic homology interpretation.
+Thus at a real place ν one has to further refine the above construction by taking the fixed points
+of the cyclic counterpart of F̄∞ . This is how the remaining part of the paper develops.
+4. Real (λ)-twisted cyclic homology of a smooth, projective variety
+In this section we give the interpretation in cyclic terms of the real Betti cohomology and of the
+w (X(C), R(r)) → H̃ w+1 (X , R(r)). We show that the computation of the cyclic homolmap HB
+C
+D
+ogy of smooth manifolds (cf. [5], Theorem 46) jointly with the stability property of the periodic
+cyclic homology when passing from the algebraic cyclic homology of a smooth complex projective variety XC to the associated C ∞ -manifold Xsm (using a natural morphism of schemes
+Spec (C ∞ (Xsm , C)) → XC whose definition is given in Appendix 7), give rise (with the implementation of a natural involution on the Frechet algebra C ∞ (Xsm , C) and of a Tate twist) to a
+real subspace HP∗real,λ (XC ) of the periodic cyclic homology of XC . This new structure is more
+precisely described by means of a map of real graded vector spaces
+τ
+
+HP∗real,λ (XC ) → HP∗ (XC )
+which we deduce from a map of associated complexes.
+4.1 Hochschild and cyclic homology of schemes
+We first recall from [29] the definition of Hochschild and cyclic homology of a scheme Xk over
+a field k. We use the general conventions of [29] and re-index a chain complex C∗ as a cochain
+complex by writing C −n := Cn , ∀n ∈ Z.
+4.1.1 Hochschild homology One lets C∗h be the sheafification of the chain complex of presheaves
+U 7→ C∗h (OXk (U )) = OXk (U )⊗(∗+1) , (the tensor products are over k), with the Hochschild
+boundary b as differential. Then, one re-indexes this complex as a negative (unbounded) cochain
+complex i.e. one lets C −n := Cnh , ∀n, and one finally defines the Hochschild homology HHn (Xk )
+9
+
+Alain Connes and Caterina Consani
+
+HH2
+
+HH0
+
+0
+∆
+I -1,1
+
+W3 Ì I -3,0
+
+I -2,0
+
+I -1,0
+
+I 0,0
+
+Figure 3. Bi-complex describing the Hochschild homology of XC , the vertical line (I −m,∗ , δ)
+with abscissa −m is an injective resolution of Ωm .
+of Xk as the Cartan-Eilenberg hypercohomology H−n (Xk , C ∗ )
+
+HHn (Xk ) := H−n (Xk , C ∗ ) = H −n (Γ(Tot I ∗∗ )).
+
+Here I ∗∗ is an injective Cartan-Eilenberg resolution of C ∗ and Tot is the total complex (using
+products rather than sums, cf. [28], 1.2.6 and [29], Appendix). We shall only work with algebras
+over k = C or R and in that case the λ-decomposition (for commutative algebras) provides a
+natural decomposition of C∗ as a direct sum of chain sub-complexes of the form
+(i)
+
+C∗ = ⊕ C∗
+
+(i)
+
+(i)
+
+and one then sets HHn (Xk ) := H−n (Xk , C∗ ).
+In the case of affine schemes Xk = Spec (A) for a k-algebra A, one has the equality with
+Hochschild homology (cf. [31], 4.1, and [30] Proposition 1.3)
+HHn (Xk ) = HHn (A), HHn(i) (Xk ) = HHn(i) (A).
+Let now XC be the scheme over C associated to a smooth, projective complex (classical) algebraic
+variety Xalg . In this case even though the scheme XC has more points than the variety Xalg the
+categories of open sets are the same and so one can talk indifferently about sheaves over Xalg or
+over XC . By applying [30] (Corollary 1.4) one has
+j
+HH (j) (XC ) ∼
+∀j, n.
+= H j−n (XC , Ω ) ,
+n
+
+XC
+
+Figure 3 shows the corresponding simplified version of the Cartan-Eilenberg injective resolution
+of the Hochschild complex. Using the Hochschild-Kostant-Rosenberg theorem one simplifies the
+chain complex C∗h by replacing the sheaf Cjh with the sheaf Ωj of algebraic differential forms of
+degree j and the Hochschild boundary b by 0. One can then choose a Cartan-Eilenberg injective resolution where the horizontal boundaries are 0. The λ-decomposition is now read as the
+decomposition of the bi-complex in the sum of its vertical columns.
+4.1.2 Cyclic homology In order to recall the definition of the cyclic homology HC∗ (Xk ) of a
+scheme Xk over a field k given in [30], we start by reviewing the following definition of cyclic
+homology of a mixed complex of sheaves (M, b, B) on Xk
+HCn (M) := H−n (Xk , TotB∗∗ (M))
+
+10
+
+Cyclic homology, Serre’s local factors and the λ-operations
+
+HC2
+
+HC0
+
+b+B
+∆
+S
+Ω
+W1 ÅW3 Ì J -3,0
+
+W1 Ì J -1,0
+
+W0 ÅW2 Ì J -2,0
+
+W0 Ì J 0,0
+
+Figure 4. Bicomplex describing the cyclic homology of XC , and map S
+
+where B∗∗ (M) denotes the corresponding bi-complex of sheaves. One then applies this definition
+to the usual (b, B)-bicomplex, i.e. to the mixed complex on Xk where the B co-boundary operator
+turns the sheafified Hochschild chain complex into a mixed complex of sheaves.
+In the case of an affine scheme Xk = Spec (A), for a k-algebra A (k = C in our case), one derives
+by applying the fundamental result of [29] (cf. Theorem 2.5) the equality with the usual cyclic
+cohomology
+HCn (Xk ) = HCn (A), HCn(i) (Xk ) = HCn(i) (A).
+Let now XC be the scheme over C associated to a smooth, projective complex (classical) algebraic
+variety Xalg . Next we describe the simplified version of the complex of sheaves TotB∗∗ (M) using
+the afore-mentioned Hochschild-Kostant-Rosenberg theorem. This amounts to replace the mixed
+complex (M, b, B) of sheaves by the mixed complex (Ω∗XC , 0, d) where d is the de Rham boundary
+(which corresponds to the coboundary operator B). The total complex of the (b, B)-bicomplex
+simplifies to the following chain complex of sheaves
+
+
+X
+M
+X
+
+=
+ω
+,
+(b
++
+B)
+Tm =
+Ωm−2u
+dωm−2u ∈ Tm−1 .
+m−2u
+XC
+u≥0
+
+u≥0
+
+u≥1
+
+As explained in [30] (Example 2.7), passing to the corresponding cochain complex of sheaves
+indexed in negative degrees T −n := Tn one obtains (using j = −n − u)
+M ≤j
+M 2j+∗
+M
+2j+n
+(ΩXC , d)[−2j]
+, (T ∗ , d) =
+(ΩXC , d)(j+∗)≤0 =
+Tn=
+ΩX
+C
+j≥0
+
+j≥0
+
+0≤j≤−n
+
+which is the product of the truncated de Rham complexes (Ω≤j
+XC , d) shifted by −2j. Moreover
+this decomposition corresponds to the λ-decomposition of the mixed complex (M, b, B). Using a
+Cartan-Eilenberg injective resolution (A∗,∗ ; d, δ) of the de Rham complex, one obtains a CartanEilenberg injective resolution (J ∗,∗ ; d1 , d2 ) of the cochain complex T ∗ of the following form (r, s ∈
+Z)
+M
+M
+J r,s :=
+Ap,s =
+Ap,s /F −r+1 .
+(15)
+p≤−r,
+p≡r(2)
+
+p≡r(2)
+
+This is the quotient of the strictly periodic bi-complex (P r,s =
+
+11
+
+L
+
+p,s
+p≡r(2) A ; d, δ) by the sub-
+
+Alain Connes and Caterina Consani
+complex
+(N r,s =
+
+M
+
+Ap,s ; d, δ)
+
+(16)
+
+p>−r,
+p≡r(2)
+
+corresponding to the Hodge filtration. The differentials in (15) are given by the truncation d1 of
+the horizontal differential in the resolution (A∗,∗ ; d, δ) of the de Rham complex and by d2 = δ.
+The λ-decomposition corresponds to the following decomposition of J ∗,∗
+ r+2j,s
+M
+A
+, if r + j ≤ 0;
+r,s
+r,s
+r,s
+J =
+J (j), J (j) =
+{0},
+otherwise.
+j≥0
+
+Thus, since r + j ≤ 0 ⇐⇒ r + 2j ≤ j, (J ∗,∗ (j); d1 , d2 ) provides a Cartan-Eilenberg resolution
+of the truncated de Rham complex Ω≤j
+X(C) . By computing the hypercohomology, one obtains (cf.
+[30], Theorem 3.3)
+Y
+HCn(j) (XC ) = H2j−n (XC , Ω≤j
+H2j−n (XC , Ω≤j
+XC ), HCn (XC ) =
+XC ).
+j∈Z
+
+The periodicity operator S acquires here a simple meaning as an endomorphism of the bi-complex
+J ∗,∗ , as Figure 4 shows. We shall describe this fact more in details in the next section.
+4.2 Resolution using differential forms of type (p, q)
+Let XC be a smooth, projective variety over C. In Appendix 7 (cf. §7.2), we define a canonical
+morphism of schemes πX : Spec (C ∞ (Xsm , C)) → XC . In order to understand the effect of πX
+on cyclic homology we use, as in [30], the results of [26] and [11] to pass from the Zariski to
+the analytic topology and then use the Dolbeault resolution as a soft resolution of the de Rham
+complex. Thus the general discussion as given in §4.1.2 applies using for Ap,q the C-vector space
+of smooth complex differential forms on X(C) of type (p, q). Thus the cohomology H−n of the
+(j)
+following bi-complexes (r, s ∈ Z) computes the cyclic homologies HCn (XC ) resp. HCn (XC )
+ r+2j,s
+M
+A
+, if r + j ≤ 0;
+r,s
+p,s
+r,s
+C :=
+(17)
+A ,
+C (j) :=
+{0},
+otherwise.
+p≤−r,
+p≡r(2)
+
+The differentials are defined as follows: d1 = ∂ and d2 = ¯
+∂, where d1 = ∂ is truncated according
+∗,∗
+to the identification of C
+with the quotient of the strictly periodic bicomplex by the subcomplex N r,s corresponding to the Hodge filtration as in (16). The periodic bi-complex and its
+λ-decomposition are given by
+M
+¯
+(P r,s =
+Ap,s ; ∂, ∂),
+P r,s (j) = Ar+2j,s , ∀r, s, j ∈ Z.
+(18)
+p≡r(2)
+
+Next result shows an equivalent analytic way to describe the cyclic homology of XC . As usual,
+TC∗ denotes the complexified cotangent bundle on the manifold X(C)
+Lemma 4.1 Let XC be a smooth complex projective variety of dimension m. Then in degree
+≤ −m the total complex Tot C ∗,∗ of (17) coincides with the complex of smooth differential forms
+of given parity on the associated complex manifold X(C)
+d
+
+d
+
+d
+
+· · · → C ∞ (X(C), ∧even TC∗ ) → C ∞ (X(C), ∧odd TC∗ ) → · · ·
+
+(19)
+
+where d is the usual differential. The total complex Tot P ∗,∗ of (18) coincides with (19), and the
+
+12
+
+Cyclic homology, Serre’s local factors and the λ-operations
+
+HC2
+
+HC0
+
+¶
+
+¶
+S
+3,1
+
+1,1
+
+2,1
+
+Ω
+
+A ÅA
+
+0,1
+
+A ÅA
+
+A1,1
+
+A0,1
+
+A3,0 ÅA1,0
+
+A2,0 ÅA0,0
+
+A1,0
+
+A0,0
+
+¯ computing the cyclic homology of XC
+Figure 5. The bi-complex (C ∗,∗ , ∂, ∂)
+
+total complex Tot P ∗,∗ (j) = P C ∗ (j) is given by the sub-complex
+d
+
+d
+
+d
+
+· · · → C ∞ (X(C), ∧∗+2j TC∗ ) → C ∞ (X(C), ∧∗+1+2j TC∗ ) → · · ·
+
+(20)
+
+Proof. The component of degree k of the total complex Tot C ∗,∗ is described by
+M
+M M
+C r,s =
+Ap,s .
+r+s=k
+
+r+s=k p≤−r
+
+p≡r(2)
+
+If k ≤ −m then r ≤ −m and the condition p ≤ −r is automatic so that one derives
+M
+M M
+M
+C r,s =
+Ap,s =
+Ap,s = C ∞ (X(C), ∧k(mod 2) TC∗ ).
+r+s=k
+
+r+s=k p≡r(2)
+
+p+s≡k(2)
+
+Moreover the co-boundary operator of Tot C ∗,∗ is ∂ + ∂¯ = d so the statement follows. The
+remaining statements follow from (18).
+Next, we describe in more details the action of the periodicity map S of cyclic homology on the
+bi-complex (C ∗,∗ ; ∂, ¯
+∂) as in (17).
+¯
+Lemma 4.2 The following map defines an endomorphism of degree 2 of the bi-complex (C ∗,∗ ; ∂, ∂)
+Sω = ω/F −r−1 ∈ C r+2,s ,
+
+∀ω ∈ C r,s .
+
+(21)
+
+Proof. It is enough to show that the sub-complex N r,s as in (16) of the periodic bi-complex
+(18) is stable under the map S. A differential form ω belongs to N r,s ⊂ P r,s if and only if its
+homogeneous components do so. Thus, for ω of type (p, s) this means that p ≡ r (mod 2) and
+′
+that p ≥ −r + 1. The element Sω is of type (p, s) and one needs to check that it belongs to N r ,s
+with r ′ = r + 2. One has p ≡ r ′ (mod. 2) and p ≥ −r ′ + 1.
+Correspondingly, the bi-complex that computes the Hochschild homology of XC is described in
+Figure 6. It fills up a finite square in the plane and it is defined by
+¯
+Chr,s := (A−r,s ; 0, ∂).
+
+13
+
+Alain Connes and Caterina Consani
+
+HH2
+
+HH0
+
+0
+¶
+Ω
+3,1
+
+A
+
+2,1
+
+A
+
+A1,1
+
+A0,1
+
+A3,0
+
+A2,0
+
+A1,0
+
+A0,0
+
+¯ computing the Hochschild homology of XC
+Figure 6. The bi-complex Chr,s = (A−r,s , 0, ∂)
+¯ and it coincides precisely
+This bi-complex maps by inclusion into the bi-complex (C ∗,∗ , ∂, ∂)
+with the kernel (bi-complex) of the map S. Thus, by using the surjectivity of S at the level of
+complexes, one derives an exact sequence of associated total complexes
+S
+
+0 → Ch∗ → C ∗ → C ∗+2 → 0.
+
+(22)
+
+The corresponding long exact sequence of cohomology groups is then the SBI exact sequence
+I
+
+S
+
+B
+
+· · · → HHn (XC ) → HCn (XC ) → HCn−2 (XC ) → HHn−1 (XC ) → · · ·
+Remark 4.3 Since the analytic space Xan associated to XC = Xalg (cf. [26]) can be endowed
+with the structure of a Kähler manifold, the map S is surjective at the level of cyclic homology
+(cf. [30] Proposition 4.1). We discuss (in the Kähler case) a specific example where the result
+might look surprising. We consider a cyclic homology class [ω] ∈ HC0 (XC ) coming from a form
+¯ = 0 although there is no condition
+ω of type (1, 1) (cf. the red dot in Figure 5). One has ∂ω
+on ∂ω since the horizontal co-boundary, is automatically zero due to the truncation. It seems
+surprising that [ω] can belong to the image of S since this means exactly that there exists a form
+ω ′ also of type (1, 1) and also representing the above class (i.e. [ω] = [ω ′ ] ∈ HC0 (XC )) and such
+that
+¯ ′ = 0 = ∂ω ′ .
+∂ω
+¯ with α of type (1, 0) by using
+The reason why this holds is that one can modify ω to ω ′ = ω + ∂α
+′
+the Kähler metric so that ω becomes harmonic for any choice of the three Laplacians
+1
+∂¯∂¯∗ + ∂¯∗ ∂¯ = ∂∂ ∗ + ∂ ∗ ∂ = (dd∗ + d∗ d).
+2
+′
+Then it follows that ω is automatically also ∂-closed.
+4.3 The periodic cyclic homologies HP∗ (XC ) and HP∗ (C ∞ (Xsm , C))
+We shall now compare the periodic cyclic homology HP∗ (XC ) of a smooth and complex projective
+variety XC (viewed as a scheme over C) with the periodic cyclic homology HP∗ (C ∞ (Xsm , C)) of
+the underlying smooth manifold Xsm = X(C).
+By [5] (cf. Theorem 46), the periodic cyclic homology of the commutative algebra C ∞ (Xsm , C) is
+
+14
+
+Cyclic homology, Serre’s local factors and the λ-operations
+computed as the de Rham cohomology of smooth differential forms, i.e. as the Betti cohomology
+∗ (X(C), C). This requires to take care of the natural Frechet topology
+with complex coefficients HB
+on the algebra C ∞ (Xsm , C). By Lemma 45 of [5] one derives the description of the topological
+Hochschild homology groups as HHk (C ∞ (Xsm , C)) = C ∞ (Xsm , ∧k TC∗ ) where the map B is the
+de Rham differential. We refer to [5] for the computation of the cyclic homology and in particular
+for the identification of the periodic cyclic homology with the de Rham cohomology of smooth
+differential forms. Moreover, by applying Theorem 4.6.10 of [19] (adapted to the topological case)
+one obtains the more precise identification
+2j−n
+HPn(j) (C ∞ (Xsm , C)) ∼
+= HB (X(C), C) ,
+
+∀n, j ∈ Z
+
+where one takes into account the natural Frechet topology on the algebra C ∞ (Xsm , C) in the
+periodic cyclic homology.
+Proposition 4.4 Let XC be a smooth complex projective variety of dimension m.
+∗ of cyclic homology groups induced by the morphism of schemes
+(i) The map πX
+πX : Spec (C ∞ (Xsm , C)) → XC
+is the composite of the following two isomorphisms
+∗
+πX
+
+(j)
+
+HPn (XC )
+PPP
+PPP ς
+PPP
+∼ PPPP
+((
+
+// HPn(j) (C ∞ (Xsm , C))
+❦55
+❦❦❦
+∼❦❦❦❦
+❦
+❦❦❦
+❦❦❦
+
+2j−n
+HB
+(X(C), C)
+
+(ii) For a pair of integers n, j with n ≥ 2m and n2 ≤ j ≤ n, the statement in (i) holds at the level
+of the cyclic homology groups, i.e.
+2j−n
+HCn(j) (XC ) ∼
+= HCn(j) (C ∞ (Xsm , C))
+= HB (X(C), C) ∼
+
+where the upper index (j) refers to the corresponding component of the λ-decomposition.
+Proof. (i) Take a covering U of XC made by affine Zariski open sets Ui . The morphism πX
+is affine (as any morphism of an affine scheme to a projective scheme) thus the inverse images
+−1
+(Ui ) form an open affine covering V of the scheme Spec (C ∞ (Xsm , C)). The discussion of
+Vi = π X
+§4.1.2 applies to XC using in place of the injective resolution (A∗,∗ ; d, δ) of the de Rham complex,
+the Čech bicomplex (cf. [13] Lemma III 4.2 and Theorem III 4.5)
+(Č
+
+p,q
+
+= C q (U , Ωp ), d, δ)
+(j)
+
+where d is the de Rham coboundary and δ the Čech coboundary. In particular HPn (XC ) is the
+cohomology H −n of the complex of cochains
+M r+2j,s
+Č
+, d + δ).
+(
+r+s=∗
+
+(j)
+Let then ω ∈ HPn (XC ) be represented by a cocycle
+
+ω=
+
+X
+
+r+s=−n
+(j)
+
+ωr,s , ωr,s ∈ C s (U , Ωr+2j )
+
+∞
+∗ (ω) ∈ HP
+The image πX
+n (C (Xsm , C)) is then given by the corresponding Čech cocycle for the
+∗ coincides on
+affine open covering V of Spec (C ∞ (Xsm , C)). Now, by Theorem 7.5 (iii), the map πX
+
+15
+
+Alain Connes and Caterina Consani
+ι
+
+the affine Zariski open sets U := Ui0 ,...,ik = ∩Uij with the inclusion Γ(U, ΩpXC ) → C ∞ (U, ∧p,0 TC∗ )
+of algebraic sections of ΩpXC into the space of smooth sections of the vector bundle ∧p,0 TC∗ of
+(complex) differential forms of type (p, 0). This inclusion is the restriction of the corresponding
+inclusion for the analytic space Xan and the latter is a morphism for the following two resolutions
+of the constant sheaf C for the usual topology. The first resolution is given by the sheaf of
+holomorphic differential forms
+∂
+
+0 → C → Ω0 → Ω1 → . . .
+
+and the second resolution is the de Rham complex of sheaves of C ∞ differential forms
+d
+
+0 → C → C ∞ (•, ∧0 TC∗ ) → C ∞ (•, ∧1 TC∗ ) → . . .
+This shows that the Betti cohomology class of ω is the same as the Betti cohomology class of
+∗ (ω) which is represented by the Čech cocycle ι(ω) in the Čech bicomplex C a,b = C b (V, ∧a T ∗ )
+πX
+C
+of smooth differential forms, associated to the covering V. In this bicomplex the vertical lines are
+contractible since one is in the affine case and thus ι(ω) is cohomologous to a global section i.e.
+a closed differential form of degree 2j − n.
+2j−n
+(ii) For n ≥ 2m, one sees that HCn (C ∞ (Xsm , C)) = ⊕j≥n/2 HB
+(X(C), C). The statement then
+(j)
+
+follows from the λ-decomposition HCn (XC ) by applying Theorem 3.4 of [30] and Theorem 4.6.10
+(j)
+of [19] (adapted to the topological case) for HCn (C ∞ (Xsm , C)).
+
+∗ we give a simple example. Let
+Remark 4.5 (i) To understand the behavior of the map πX
+1
+XC = PC be the complex projective line. It is obtained by gluing two affine lines U+ = Spec (C[z])
+and U− = Spec (C[1/z]) on the intersection U = Spec (C[z, 1/z]). Let U = {U± } be the affine
+covering of XC , then the differential form dz/z ∈ C 1 (U , Ω1XC ) determines a cocycle ω in the
+Čech bicomplex. Let [ω]cyc ∈ HC0 (XC ) be the corresponding cyclic homology class as in Figure
+(1)
+4. One has [ω]cyc ∈ HC0 (XC ) by construction. Since for any commutative algebra B (B =
+(0)
+C ∞ (Xsm , C) in this example) one has HC0 (B) = HC0 (B) (cf. [19] Theorem 4.6.7), it follows
+(1)
+∗ ([ω]
+that πX
+cyc ) ∈ HC0 (B) = {0}. Let now [ω]per ∈ HC2 (XC ) be represented by the same
+(2)
+cocycle ω in the Čech bicomplex, with S[ω]per = [ω]cyc as in Figure 4. One has [ω]per ∈ HC2 (XC )
+(2)
+∗ ([ω]
+and πX
+per ) ∈ HC2 (B) is obtained by first writing the cocycle ω as a coboundary δ(ξ) in
+the Čech bicomplex of B,
+
+ω = ξ+ − ξ− , ξ+ = z̄dz/(1 + zz̄), ξ− = −dz/(z(1 + zz̄)),
+(2)
+
+−1
+∗ ([ω]
+(U± ), Ω1B ). Hence the class πX
+where ξ± ∈ Γ(πX
+per ) ∈ HC2 (B) is represented by the two
+2
+form ω2 = −dξ ∈ Γ(Spec (B), ΩB )
+
+ω2 = −dz ∧ dz̄/(1 + zz̄)2 ∈ Γ(Spec (B), Ω2B ).
+
+∗ ([ω]
+A similar computation performed in the Čech bicomplex of B, starting with πX
+cyc ), produces
+2
+0,0
+0 because the coboundary d is 0 since there is no component Ω in J (cf. Figure 4).
+(ii) In the above example (i), it suffices to adjoin the variable z̄ in order to obtain the existence
+of global affine coordinates such as z/(1 + zz̄), an affine scheme Y and morphism π : Y → XC so
+(2)
+that π ∗ ([ω]per ) ∈ HC2 (O(Y )) is represented by a global two form. This illustrates the general
+fact that the map πX factorizes through an affine scheme ∗ X whose construction is entirely in
+the realm of algebraic geometry. The general construction of the functor X 7→ ∗ X is provided in
+Appendix 7.
+
+16
+
+Cyclic homology, Serre’s local factors and the λ-operations
+(iii) Lemma 4.1 shows that the cyclic homology HCn (XC ) already stabilizes, i.e. becomes periodic, for n ≥ m. On the other hand, the cyclic homology HCn (C ∞ (Xsm , C)) of the underlying
+smooth manifold only stabilizes for n ≥ 2m = 2 dimXC , and is infinite dimensional for lower
+values of n. This shows that these two homologies cannot coincide in the unstable region n < 2m.
+∗
+(XC ) → P C ∗ (XC )
+4.4 The Tate-twisted map τ : P Creal,λ
+We keep denoting with XC a smooth, projective algebraic variety over C and with Xsm the
+associated smooth manifold. Let P C ∗ (XC ) and P C ∗ (C ∞ (Xsm , C)) be the cochain complexes
+which compute the periodic cyclic homologies as
+
+HPn (XC ) = H −n (P C ∗ (XC )) , HPn (C ∞ (Xsm , C)) = H −n (P C ∗ (C ∞ (Xsm , C))) .
+
+(23)
+
+In order to define the Tate twisted map
+τ : HP∗real,λ (XC ) → HP∗ (XC )
+
+(24)
+
+at the level of complexes of cochains, we shall use a quasi pullback of two maps of complexes
+which correspond to the morphisms of schemes
+πX : Spec (C ∞ (Xsm , C)) → XC , ι : Spec (C ∞ (Xsm , C)) → Spec (C ∞ (Xsm , R))
+
+where the morphism ι is induced by the natural inclusion C ∞ (Xsm , R) ⊂ C ∞ (Xsm , C).
+f
+
+g
+
+We recall that if A → C ← B is a diagram of cochain complexes in an abelian category, its
+quasi-pullback is defined as the cochain complex
+f −g
+
+A ×C B := Cone(A ⊕ B → C)[1].
+The two natural projections give rise to maps from A ×C B to A and B resp. and the diagram
+f′
+
+A ×C B −−−−→ B
+
+
+ ′
+g
+yg
+y
+A
+
+−−−−→ C
+f
+
+commutes up-to canonical homotopy. The short exact sequence of complexes
+f′
+
+f
+
+0 → Cone(A → C)[1] → A ×C B → B → 0
+
+(25)
+
+then determines an induced long exact sequence of cohomology groups. In particular when f is a
+quasi isomorphism, so is f ′ and the maps g : B → C and g ′ : A ×C B → A are quasi isomorphic.
+∗
+(XC ) to be the quasi pullback of the two morphisms of comDefinition 4.6 We define P Creal,λ
+plexes
+∗
+πX
+: P C ∗ (XC ) → P C ∗ (C ∞ (Xsm , C)),
+
+(2πi)Θ0 : P C ∗ (C ∞ (Xsm , R)) → P C ∗ (C ∞ (Xsm , C))
+
+∗ is the map of complexes induced from the morphism π and Θ is the generator of the
+where πX
+X
+0
+∗
+(XC ) → P C ∗ (XC ) the projection map of complexes on
+λ-operations. We denote by τ : P Creal,λ
+the first factor of the quasi pullback.
+∗ : P C ∗ (X ) → P C ∗ (C ∞ (X , C)) is an isomorphism in cohomology (we take always
+The map πX
+C
+sm
+into account the Frechet topology of C ∞ (Xsm , C)). Thus, the map τ : HP∗real,λ (XC ) → HP∗ (XC )
+
+17
+
+Alain Connes and Caterina Consani
+is quasi isomorphic to the map (2πi)Θ0 : P C ∗ (C ∞ (Xsm , R)) → P C ∗ (C ∞ (Xsm , C)). This shows,
+using the component (j) in the λ-decomposition, that one has a commutative diagram
+real, (j+1)
+
+HPn+2
+
+
+τ
+y
+
+S
+
+(XC )
+
+(j+1)
+HPn+2 (XC )
+
+−−−−→
+−−−−−−→
+(2πi)−1 S
+
+real, (j)
+
+HPn
+
+
+τ
+y
+
+(XC )
+(26)
+
+(j)
+HPn (XC )
+(j)
+
+In the simplest case of XC be a single point, one has HPn (XC ) 6= {0} only for n = 2j and in
+real, (j)
+(j)
+that case the map τ : HPn
+(XC ) → HPn (XC ) is the multiplication by (2πi)j from R to C.
+Proposition 4.7 The isomorphism ς as in Proposition 4.4 (i) lifts to an isomorphism
+ς
+
+2j−n
+(X(C), R(j))
+HPnreal, (j) (XC ) → HB
+∼
+
+such that the following diagram commutes
+real, (j)
+
+HPn
+
+ς
+
+2j−n
+(XC ) −−−−→ HB
+(X(C), R(j))
+∼
+
+
+τ
+⊂
+y
+y
+
+(j)
+
+HPn (XC )
+
+ς
+
+−−−−→
+∼
+
+(27)
+
+2j−n
+HB
+(X(C), C).
+
+Proof. Taking the cohomology H −n and the component (j) of the λ-decomposition, the map
+(2πi)Θ0 : P C ∗ (C ∞ (Xsm , R)) → P C ∗ (C ∞ (Xsm , C))
+is isomorphic to the map
+2j−n
+2j−n
+HB
+(X(C), R(j)) → HB
+(X(C), C)
+
+associated to the additive group homomorphism R(j) ⊂ C.
+
+5. The archimedean cyclic homology HC∗ar (XC )
+In this section we give the definition and describe the first properties of the archimedean cyclic
+homology. For the construction, we follow the parallel with the description of the real Deligne
+cohomology that can be interpreted as the hyper-cohomology of a complex of sheaves which is,
+up to a shift of degrees, the quasi pullback of the two natural maps of complexes
+R(r) → Ω∗ , F r Ω∗ → Ω∗ .
+In cyclic homology, the Hodge filtration gets replaced by the negative cyclic homology: cf. §5.1.
+§5.2 describes the archimedean cyclic homology of a smooth, projective complex algebraic variety.
+In §5.3, we give the corresponding definition in the case the algebraic variety is defined over the
+reals, by using the action of the anti-linear Frobenius.
+5.1 Negative cyclic homology
+We recall (cf. [14]) that the negative cyclic homology HN∗ (of a cyclic k-module over a field k)
+is defined by dualizing the cyclic cohomology HC ∗ with respect to the coefficient polynomial
+ring k[v] = HC ∗ (k). Here, the variable v has degree two and corresponds to the periodicity map
+S in cyclic cohomology. At the level of the defining bi-complexes, the negative cyclic homology
+
+18
+
+Cyclic homology, Serre’s local factors and the λ-operations
+
+H0,0L
+
+b
+B
+C0
+
+C1
+
+C2
+
+Figure 7. In blue, the negative sub-complex N C∗,∗ of the periodic (b, B) bi-complex P C∗,∗ all
+re-indexed in negative degrees. The hypercohomology H−n of the blue complex of cochains is
+HNn . The hypercohomology H−n of the quotient (in red) complex of cochains is HCn−2 .
+
+bi-complex N C∗,∗ coincides, up-to a shift of degrees, with the kernel of the natural map of
+complexes connecting the periodic (b, B) bi-complex P C∗,∗ and the (b, B) bi-complex CC∗,∗ . We
+set u = v −1 and let (C∗ , b, B) be a mixed complex of chains. Then one finds (cf. [14])
+ˆ k C∗ ,
+N C∗,∗ = k[u]⊗
+
+ˆ k C∗ ,
+P C∗,∗ = k[u, u−1 ]⊗
+
+ˆ k C∗ .
+CC∗,∗ = (k[u, u−1 ]/uk[u])⊗
+
+Here, the two boundary operators
+are b and uB and if M and N are graded k-modules, one
+Q
+defines M ˆ
+⊗N by (M ˆ
+⊗N )n = Mi ⊗ Nn−i .
+In the context of the sheafified theories over a scheme Xk over a field k, it is convenient (cf.
+[30]) to re-index the above bi-complexes in negative degrees, so that they turn into cohomology
+bi-complexes. Figure 7 shows their behavior.
+Then the hyper-cohomology H−n of the negative complex of cochains N C ∗,∗ is denoted by
+HNn (Xk ), the hyper-cohomology H−n of the periodic complex of cochains P C ∗,∗ is denoted
+HPn (Xk ) and the hyper-cohomology H−n of the quotient cochain complex is HCn−2 (Xk ). One
+has a short exact sequence of cochain complexes of the form
+I
+
+0 → N C ∗,∗ → P C ∗,∗ → CC ∗,∗ [−1, −1] → 0
+
+(28)
+
+For instance, one has N C −1,−1 = 0, P C −1,−1 = CC 0,0 , CC −1,−1 [−1, −1] = CC 0,0 . We let P C j =
+Totj (P C ∗,∗ ) and N C j = Totj (N C ∗,∗ ) be the total complexes and we denote with I : N C j → P C j
+the canonical inclusion. Then (28) yields the short exact sequence of total complexes of cochains
+I
+
+0 → N C ∗ → P C ∗ → CC ∗ [−2] → 0.
+
+(29)
+
+This sequence induces the long exact sequence of hypercohomology groups H−n
+I
+
+S
+
+B
+
+· · · → HNn (Xk ) → HPn (Xk ) → HCn−2 (Xk ) → HNn−1 (Xk ) → · · ·
+
+(30)
+
+that sits on top of the SBI long exact sequence in a canonical commutative diagram (cf. [19],
+Proposition 5.1.5). The λ-decomposition is compatible with (30), therefore one also has the fol-
+
+19
+
+Alain Connes and Caterina Consani
+lowing exact sequence (cf. [19], Theorem 4.6.9, for the analogous statement for the SBI sequence)
+I
+
+S
+
+(j−1)
+
+B
+
+(j)
+
+· · · → HNn(j) (Xk ) → HPn(j) (Xk ) → HCn−2 (Xk ) → HNn−1 (Xk ) → · · ·
+Note that the index j is fixed all along the sequence. The sequence (29) determines a canonical
+isomorphism
+I
+HCn−2 (Xk ) ∼
+= H−n (Xk , Cone(N C ∗ → P C ∗ )).
+
+(31)
+
+5.2 The archimedean cyclic homology of XC
+For a smooth complex projective variety XC we consider the complex which is (up to a shift of
+degrees) the quasi-pullback of the two maps of complexes (cf. Definition 4.6)
+I : N C ∗ (XC ) → P C ∗ (XC ),
+
+and
+
+∗
+(XC ) → P C ∗ (XC ).
+τ : P Creal,λ
+
+Definition 5.1 The archimedean cyclic homology of a smooth projective complex variety XC is
+defined as follows
+ 
+
+
+β
+∗
+(XC ) → P C ∗ (XC ) [2]
+HCnar (XC ) := H−n XC , Cone N C ∗ (XC ) ⊕ P Creal,λ
+
+where the map β is given by
+
+β(ω, a) = I(ω) − τ (a).
+The long exact sequence of cohomology groups associated to (25) produces in this context the
+following
+Proposition 5.2 There is a long exact sequence of the form
+S
+
+S
+
+real,λ
+real,λ
+· · · → HPn+2
+(XC ) → HCn (XC ) → HCnar (XC ) → HPn+1
+(XC ) →
+
+ar
+→ HCn−1 (XC ) → HCn−1
+(XC ) → · · · (32)
+
+Proof. The exact sequence of complexes (25) takes here the form
+
+
+
+
+β
+I
+∗
+0 → Cone N C ∗ (XC ) → P C ∗ (XC ) → Cone P Creal,λ
+(XC ) ⊕ N C ∗ (XC ) → P C ∗ (XC ) →
+
+∗
+(XC )[−1] → 0
+→ P Creal,λ
+I
+
+Moreover, (31) reads as HCn−2 (XC ) = H−n (XC , Cone(N C ∗ (XC ) → P C ∗ (XC ))). Passing to
+hypercohomology one gets the long exact sequence
+ar
+∗
+· · · → HCn−2 (XC ) → HCn−2
+(XC ) → H−n (XC , P Creal,λ
+(XC )[−1]) → HCn−3 (XC ) → · · ·
+
+which takes the form
+real,λ
+ar
+· · · → HCn−2 (XC ) → HCn−2
+(XC ) → HPn−1
+(XC ) → HCn−3 (XC ) → · · ·
+
+Next, we compare (32) with the following exact sequence of real Deligne cohomology (cf. §3.3)
+
+m+1
+m+1
+m
+m
+(X(C), R(r)) → · · · (33)
+(XC , R(r)) → HB
+→ HB
+(X(C), R(r)) → HdR,rel
+(X(C), r) → HD
+
+20
+
+Cyclic homology, Serre’s local factors and the λ-operations
+To achieve a correct comparison we implement in (32) the λ-decomposition and deduce the
+following exact sequence
+real, (j+1)
+
+→ HPn+2
+
+S
+
+(XC ) → HCn(j) (XC ) → HCnar ,(j) (XC ) →
+
+real, (j+1)
+
+→ HPn+1
+
+S
+
+(j)
+
+(XC ) → HCn−1 (XC ) → · · · (34)
+
+Notice that in both exact sequences (33) and (34) the indices j and r are kept fixed, while the
+value of m = 2j − n increases by 1 as n decreases by 1. With m = 2j − n and r = j + 1, one
+then argues the existence of the following correspondence:
+2(j+1)−(n+2)
+
+(X(C), R(j + 1))
+HB
+2j−n+1
+2j−n
+H̃D
+(XC , R(j +1)) = HdR,rel
+(X(C), j +1)
+2j−n+1
+HD
+(XC , R(j + 1))
+
+real, (j+1)
+
+HPn+2
+(XC )
+(j)
+HCn (XC )
+HCnar ,(j) (XC )
+
+If Xk is a smooth, projective variety over a field k of characteristic zero (so in particular in the case
+k = C) the “Hodge-to-de Rham” spectral sequence degenerates, then by applying Proposition
+4.1 (b) in [30], (30) brakes into short exact sequences
+I
+
+S
+
+0 → HNn+2 (Xk ) → HPn+2 (Xk ) → HCn (Xk ) → 0.
+
+(35)
+
+By implementing the λ-decomposition, for each j ≥ 0, one derives exact sequences of the form
+I
+
+(j+1)
+
+(j+1)
+
+S
+
+0 → HNn+2 (Xk ) → HPn+2 (Xk ) → HCn(j) (Xk ) → 0
+
+(36)
+
+In view of Proposition 4.1 (a) of op.cit. and the isomorphism (7) of Proposition 2.2 i.e.
+m
+HCn(j) (XC ) ∼
+(X(C), j + 1)
+= HdR,rel
+
+the sequences (36) correspond, for m = 2j − n and k = C, precisely to the exact sequences
+ι
+
+m
+m
+m
+(XC , j + 1) → 0.
+(XC ) → HdR,rel
+(XC ) → HdR
+0 → F j+1 HdR
+
+The following result and the next Corollary 5.4 validates the above argued correspondence
+Proposition 5.3 For a smooth, complex projective variety XC and for any pair of integers
+(n, j) ∈ Ed , there is a short exact sequence
+real,(j+1)
+
+0 → HPn+2
+
+S◦τ
+
+(XC ) −→ HCn(j) (XC ) → HCnar ,(j) (XC ) → 0.
+
+(37)
+
+Proof. Let (n, j) ∈ Ed , then by Lemma 3.1 one derives that (2j − n, j − n) ∈ Ad . One then has
+the short exact sequence (14) (for w = 2j − n and r = j + 1)
+2j−n
+2j+1−n
+2j−n
+(XC , R(j + 1)) → 0.
+(X(C), R(j + 1)) → HdR,rel
+(XC , j + 1) → HD
+0 → HB
+
+(38)
+
+Moreover, one has a canonical isomorphism (cf. (7) of Proposition 2.2)
+2j−n
+HCn(j) (XC ) ∼
+= HdR,rel (XC , j + 1)
+real,(j+1)
+
+One then uses (26) and Proposition 4.7 to identify the map HPn+2
+with the map
+⊂
+
+2j−n
+2j−n
+HB
+(X(C), R(j + 1)) → HdR,rel
+(XC , j + 1).
+
+21
+
+S◦τ
+
+(j)
+
+(XC ) −→ HCn (XC )
+
+Alain Connes and Caterina Consani
+Corollary 5.4 Let XC be a smooth, complex projective variety of dimension d. Then for any
+pair of integers (n, j) ∈ Ed one has
+2j+1−n
+HD
+(XC , R(j + 1)) ∼
+= HCnar (XC )Θ0 =j .
+
+Moreover HCnar (XC )Θ0 =j = {0} for n ≥ 0, j ≥ 0 and (n, j) ∈
+/ Ed .
+Proof. The first statement follows by comparing the two exact sequences (38) and (37). We
+prove the second statement. By applying Proposition 3.1 of [30], one derives for j < n2 that
+(j)
+
+HCn (XC ) = 0. Moreover the same vanishing also holds for 2j − n > 2d (op.cit. Proposition
+4.1). Proposition 4.7 shows that for 2j − n > 2d one has (since 2(j + 1) − (n + 2) > 2d and
+2(j + 1) − (n + 1) > 2d)
+real,(j+1)
+
+HPn+2
+
+real,(j+1)
+
+(XC ) = 0, HPn+1
+
+(XC ) = 0.
+
+(39)
+
+Thus the exact sequence (34) shows that HCnar (XC )Θ0 =j = {0} for 2j − n > 2d. For j < n2 , if
+j < n−1
+2 then Proposition 4.7 shows that (39) holds. Let us consider now the limit case n = 2j +1.
+real,(j+1)
+
+In this case one has 2(j + 1) − (n + 1) = 0 and thus HPn+1
+but the next map in (34), is the same as the map
+2j−(n−1)
+
+0
+HB
+(X(C), R(j + 1)) → HdR,rel
+
+0 (X(C), R(j + 1)) 6= 0
+(XC ) = HB
+
+(j)
+(XC , j + 1) ∼
+= HCn−1 (XC )
+
+0 ∩F j+1 = 0. Thus (34) shows that HC ar (X )Θ0 =j =
+and this homomorphism is injective since HB
+C
+n
+{0}.
+
+5.3 The case of real schemes
+Next, we consider the case of a smooth, complex projective variety defined over R, XR . In this
+case following [30] XR admits a cyclic homology theory over R.
+Lemma 5.5 Let XR be a smooth, real projective variety, and denote by XC = XR ⊗R C the
+variety obtained by extension of scalars. Then
+HCn (XC ) = HCn (XR ) ⊗R C ,
+
+∀n ∈ Z.
+
+(40)
+
+Proof. The result follows from Proposition 4.1 of [30] and the well known decomposition
+H q (XC , ΩpXC ) = H q (XR , ΩpXR ) ⊗R C.
+
+(41)
+
+From Lemma 5.5 one derives the definition of a canonical anti-linear involution F̄∞ = id ⊗ ¯
+on HCn (XC ), by implementing the complex conjugation ¯ on C. This involution should not be
+confused with the C-linear involution F∞ used in [9]. By Proposition 1.4 of [8], the corresponding
+anti-linear involution F̄∞ acting on the Betti cohomology H ∗ (XR , C) = H ∗ (XR , R)⊗R C is F∞ ⊗¯.
+Note that F̄∞ preserves the Hodge spaces H q (XR , ΩpXR ).
+(j)
+
+real,(j+1)
+
+(XR )
+Proposition 4.7 implies that the subspace of HCn (XR ) which is the image of HPn+2
+through the composite S ◦ τ is globally invariant under F̄∞ thus the latter operator descends on
+the quotient.
+We can now introduce the definition of the archimedean cyclic homology for real varieties.
+
+22
+
+Cyclic homology, Serre’s local factors and the λ-operations
+Definition 5.6 Let XR be a smooth real projective variety and let XC = X ⊗R C be the associated
+complex variety. Define the archimedean cyclic homology of XR as
+HCnar (XR ) := HCnar (XC )F̄∞ =id .
+
+(42)
+
+Note that one can re-write (42) in the equivalent form
+HCnar (XR ) = HCn (XR )/ (HCn (XR ) ∩ Im(S ◦ τ ))
+
+(43)
+
+since it is easy to see that the natural map from the right hand side of (43) to the left side is
+bijective.
+Corollary 5.7 Let XR be a smooth real projective variety of dimension d. Then for a pair of
+integers (n, j) ∈ Ed we have
+2j+1−n
+HD
+(XR , R(j + 1)) = (HCnar (XR ))Θ0 =j .
+
+(44)
+
+Moreover HCnar (XR )Θ0 =j = {0} for n ≥ 0, j ≥ 0 and (n, j) ∈
+/ Ed .
+Proof. The proof is easily adapted from that of Corollary 5.4.
+Let us consider the simplest example of XR = Spec R. In this case the exact sequence (37) gives
+for XC = Spec C
+S◦τ
+
+real,λ
+0 → HPn+2
+(Spec C) −→ HCn (Spec C) → HCnar (Spec C) → 0.
+
+One therefore derives
+ar
+HC2m
+(Spec C) = C/ (2πi)m+1 R
+
+
+
+while the odd homology groups all vanish. This is in agreement with the well-known result for
+real Deligne cohomology. For XR = Spec R, the de Rham conjugation F̄∞ is the ordinary complex
+ar (Spec C) if and only if
+conjugation, and we claim that it admits a non-zero fixed vector
+in HC2m
+
+m+1
+m is even. Indeed, in that case the quotient C/ (2πi)
+R coincides with R, while it reduces
+to iR when m is odd. Thus we derive
+
+ar
+HC4m
+(Spec R) = C/ (2πi)2m+1 R , HCnar (Spec R) = {0}, for n 6≡ 0 (4).
+
+ar (Spec R) by multiplication by 2m − 4m and
+It follows that the operator Θ = Θ0 − Γ acts on HC4m
+hence its spectrum consists of all negative even integers 2k ≤ 0. One then derives the formula
+for the local (archimedean) Euler factor
+Y  s − 2k 
+−1
+.
+ΓR (s) =
+2π
+k≤0
+
+Remark 5.8 The archimedean cohomology defined in [9] differs from the real Deligne cohomology in the case of real places and when the weight w is odd. Indeed, by [9] (cf. proof of
+Proposition 5.1) one gets in such case (we use the notation of op.cit. )
+w+1
+w Θ=m
+(X/C , R(n))F̄∞ =−id
+(Har
+)
+= HD
+
+The real archimedean cyclic homology on the other hand does not have this mismatch and it
+produces exactly the real Deligne cohomology.
+
+23
+
+Alain Connes and Caterina Consani
+6. Proof of Theorem 1.1
+Theorem 6.1 Let X be a smooth, projective variety of dimension d over an algebraic number
+field K and let ν|∞ (i.e. Kν = C, R) be an archimedean place of K. Then the action of the
+operator Θ = Θ0 − Γ on the archimedean cyclic homology of Xν satisfies the following formula
+1
+Y
+(s − Θ))|HCeven
+ar (X )
+det∞ ( 2π
+w+1
+ν
+,
+s ∈ R.
+(45)
+=
+Lν (H w (X), s)(−1)
+1
+ar (X )
+det∞ ( 2π (s − Θ))|HCodd
+ν
+0≤w≤2d
+
+The left-hand side of the formula describes the product of Serre’s archimedean local factors in
+the complex L-function of X and det∞ denotes the regularized determinant (cf. e.g. [23],[9]).
+Proof. By [9], Proposition 2.1, it is enough to show that both sides of (45) have the same
+divisor of zeros and poles. We fix a Hodge weight w and consider the archimedean local factor
+Lν (H w (X), s) associated first to a real place ν of K (i.e. Kν = R). This function is specified by
+the multiplicities of its poles and it is well known that these latter only occur at integer values
+s = m ≤ w2 and their multiplicity is described by the following formula
+w+1
+(Xν , R(w + 1 − m)).
+ords=m Lν (H w (X), s)−1 = dimR HD
+
+(46)
+
+Here Xν = X/R and the corresponding real Deligne cohomology groups are defined in (9). By
+Lemma 3.1, the pairs (w, m) which enter in (46) correspond bijectively to pairs (n, j) ∈ Ed , for
+w = 2j − n, m = j − n. Using the identification obtained in Corollary 5.7 we also know that
+2j+1−n
+HD
+(XR , R(j + 1)) = (HCnar (XR ))Θ0 =j ,
+
+∀(n, j) ∈ Ed .
+
+(47)
+
+Hence by combining (46) with (47) we get
+ords=m Lν (H w (X), s)−1 = dimR (HCnar (XR ))Θ0 =j .
+Thus, at a real place ν, the divisor ∆ of the function
+Y
+w+1
+ζν (X) =
+Lν (H w (X), s)(−1)
+0≤w≤2d
+
+is given by the formula
+X
+∆=
+(−1)w ords=m Lν (H w (X), s)−1 δ =
+(w,m)∈Ad
+
+=
+
+X
+
+(−1)n dimR HCnar (XR )Θ0 =j δj−n .
+
+X
+
+(−1)n dimR HCnar (XR )Θ0 =j δm
+
+(48)
+
+(n,j)∈Ed
+
+n,j≥0
+
+This because w ≡ n (mod 2) and j − n = m and because HCnar (XR )Θ0 =j = {0} for n ≥ 0, j ≥ 0
+and (n, j) ∈
+/ Ed (Lemma 5.7). We rewrite the right hand side of (48) as
+X
+X
+(−1)n dimR HCnar (XR )Θ0 =j δj−n =
+(−1)n dimR HCnar (XR )Θ0 −Γ=k δk
+n,j≥0
+
+n≥0, k∈Z
+
+This in turns gives, using the operator Θ = Θ0 − Γ
+X
+X
+ar
+ar
+∆=
+dimR HCeven
+(XR )Θ=k δk −
+(XR )Θ=k δk
+dimR HCodd
+k∈Z
+
+k∈Z
+
+which represents the signed spectral measure of the operator Θ acting on HC∗ar (XR ) with the
+convention that the index n in HCnar (XR ) is always restricted to be n ≥ 0.
+For a complex place one proceeds in the same way, using Corollary 5.4 instead of Corollary
+5.7.
+
+24
+
+Cyclic homology, Serre’s local factors and the λ-operations
+Remark 6.2 The operators Θ0 and Γ commute and the proof of Theorem 6.1 shows that the
+decomposition of the alternate product on the left hand side of equation (45) into factors associated to specific weights corresponds to the spectral decomposition of the operator 2Θ0 − Γ,
+which commutes with Θ. Thus, by restricting the right hand side of (45) to the spectral projecw+1
+tion 2Θ0 − Γ = w, one recovers precisely the factor Lν (H w (X), s)(−1) . In this way we refine
+(45).
+7. Appendix: Weil restriction and the functor X 7→ ∗ X
+Let X be a smooth, projective complex variety viewed as a scheme and Xalg its set of closed
+points. The results of Section 4 are based on the canonical morphism of locally ringed spaces
+µ : Xsm → Xalg that links Xalg to the associated C ∞ -manifold Xsm , viewed as the locally ringed
+space with structure sheaf OXsm (U ) := C ∞ (U, C) for every open subset U ⊂ Xsm . Although µ
+is very useful and plays an important role in our construction it does not belong properly to
+the realm of algebraic geometry. In particular the locally ringed space Xsm is not a scheme and
+differs substantially from the affine scheme Spec (A), with A = O(Xsm ) = C ∞ (Xsm , C). In this
+section we show how one may extend µ to a morphism of schemes
+πX : Spec (A) → X.
+In fact, we shall construct a pair made of a natural additive functor X 7→ ∗ X from the category
+of schemes over C to the category of schemes over R and a natural transformation of functors
+pX : (∗ X)C → X, (∗ X)C := ∗ X ⊗R C
+
+which fulfills the following properties when applied to projective varieties over C:
+(i) The real scheme ∗ X is affine.
+(ii) The morphism pX is bijective on complex points, i.e. pX induces a bijection ∗ X(C) ∼
+= X(C).
+(iii) If X is also smooth, the morphism of locally ringed spaces Xsm → Xalg extends canonically
+to a morphism of schemes
+γ∗
+
+pX
+
+πX : Spec (O(Xsm )) → (∗ X)C → X
+
+where γ : O(∗ X) → O(Xsm ) = C ∞ (Xsm , C) is the Gelfand transform of the algebra B = O(∗ X)
+of global regular sections of the affine scheme ∗ X = Spec (B):
+B = O(∗ X) ∋ a 7→ γ(a) = â, â(χ) := χ(a) ,
+
+∀χ ∈ HomC (B, C).
+
+7.1 The functor X 7→ ∗ X
+We start by recalling the following well known construction in algebraic geometry. Let Z be a
+scheme and let L be an invertible sheaf on Z. Given a global section s ∈ L(Z) of L, one defines
+the following open subset Zs ⊂ Z
+Zs := {z ∈ Z | Lz = sz OZ,z }.
+It is a standard fact that the inclusion Zs ֒→ Z is an affine morphism, thus if Z is an affine
+scheme then Zs is an affine open subset of Z (cf. [12] Example 12.4(4)).
+Now, let X be a scheme over C and let YR = ResC/R X be the Weil restriction. Then define
+Y
+Z := YR ×R C =
+Xρ
+ρ
+
+25
+
+Alain Connes and Caterina Consani
+where the product of schemes is over C, ρ varies between the two R-linear embeddings C → C
+(i.e. the identity and the complex conjugation σ) and X ρ is the complex scheme obtained from
+X by extension of scalars using ρ : C → C. The two projections pρ : Z → X ρ are both morphisms
+∼
+of schemes. The action of Gal(C/R) on Z determines a canonical isomorphism σ̃ : Z → Z σ .
+Let L be an invertible sheaf on X and Lσ the corresponding invertible sheaf over X σ . Furthermore, let L̃ be the invertible sheaf on Z
+L̃ := p∗id L ⊗ p∗σ Lσ .
+
+The action of Gal(C/R) on Z determines a canonical anti-linear involution on sections of L̃ on
+any σ̃-invariant open set U ⊂ Z,
+Γ(U, L̃) ∋ ξ 7→ ξ ∗ ∈ Γ(U, L̃)
+
+such that, in particular
+(ξ ⊗ η σ )∗ = η ⊗ ξ σ ,
+
+∀ξ, η ∈ Γ(U, p∗id L).
+
+Let {ξj }j∈J ∈ Γ(Z, L̃) be a family of global sections. Consider the open subset of Z
+X
+Ω(L, {ξj }) = Zs ,
+s :=
+ξj ξj∗ ∈ Γ(Z, L̃⊗2 ).
+
+(49)
+
+j∈J
+
+The subsets Ω(L, {ξj }) satisfy the following property
+Lemma 7.1 Let {ξj }j∈J and {ηk }k∈I be families of global sections of two invertible sheaves L1
+and L2 on Z, then
+Ω(L1 ⊗ L2 , {ξj ⊗ ηk }) = Ω(L1 , {ξj }) ∩ Ω(L2 , {ηk }).
+^
+Proof. By construction one has (L^
+1 ⊗ L2 ) = L̃1 ⊗ L̃2 so that ξj ⊗ ηk ∈ Γ(Z, (L1 ⊗ L2 )). Moreover
+the involution ∗ on Γ(Z, (L^
+1 ⊗ L2 )) is the tensor product of the two involutions. Thus the sections
+in (49) are given by
+s=
+
+X
+j,k
+
+
+
+(ξj ⊗ ηk )(ξj ⊗ ηk ) = 
+∗
+
+X
+j
+
+
+
+ξj ξj∗  ⊗
+
+X
+
+ηk ηk∗
+
+k
+
+!
+
+= s1 ⊗ s2 .
+
+It follows that Ω(L1 ⊗ L2 , {ξj ⊗ ηk }) = Zs = Zs1 ∩ Zs2 = Ω(L1 , {ξj }) ∩ Ω(L2 , {ηk }).
+Definition 7.2 Let X be a scheme over C. We denote by S(X) the smallest class of open subsets
+of Z = X ×C X σ such that Z ∈ S(X) and for any invertible sheaf L on X and a family of global
+sections {ξj }j∈J ∈ Γ(Z, L̃) the following condition holds
+[
+∃W ∈ S(X), W ⊂
+Z ξj =⇒ Ω(L, {ξj }) ∈ S(X).
+(50)
+j
+
+One has S(X) = ∪n≥0 Sn (X), where Sn (X) is defined by induction: one takes S0 (X) = {Z} and
+defines
+[
+Sn+1 (X) = {Ω(L, {ξj }) | ∃W ∈ Sn (X), W ⊂
+Z ξj }.
+j
+
+If L = OX and the family {ξj } reduces to the constant section {1}, one gets S0 (X) ⊂ S1 (X) and
+by induction, Sn (X) ⊂ Sn+1 (X).
+26
+
+Cyclic homology, Serre’s local factors and the λ-operations
+Lemma 7.3 (i) The class S(X) is stable under finite intersections.
+(ii) For any W ∈ S(X): Y (R) ⊂ W (C).
+(iii) Any W ∈ S(X) fulfills σ̃(W ) = W .
+Proof. (i) We show inductively that Sn (X) is stable under finite intersections. The statement
+holds trivially for n = 0. We assume (i) holds for Sn (X). Let Ω(L1 , {ξj }), Ω(L2 , {ηk }) belong
+to Sn+1 (X). Then there exist Wi ∈ Sn (X) (i = 1, 2) such that W1 ⊂ ∪Z ξj , W2 ⊂ ∪Z ηk . Then,
+using the induction hypothesis it follows that
+W1 ∩ W2 ∈ Sn (X), W1 ∩ W2 ⊂ ∪j,k (Z ξj ∩ Z ηk ) = ∪j,k Z ξj ⊗ηk .
+Then Lemma 7.1 shows that Ω(L1 , {ξj }) ∩ Ω(L2 , {ηk }) belongs to Sn+1 (X).
+(ii) We again proceed by induction on n for W ∈ Sn (X). The case n = 0 is clear since by
+functoriality one has Y (R) ⊂ Y (C). Assume to have shown that Y (R) ⊂ W (C) for any W ∈
+Sn (X), then we prove the statement for Ω(L, {ξj }) ∈ Sn+1 (X). Let x ∈ Y (R), then, since
+Y (R) = X(C) there exists a morphism χ ∈ Hom(Spec C, X) such that the corresponding point
+of Y (C) = X(C) × X σ (C) is given by χ × (χ ◦ σ). By hypothesis, there exists W ∈ Sn (X) such
+that W ⊂ ∪Z ξj and so the induction hypothesis implies that one has χ × (χ ◦ σ) ∈ Z ξj0 (C) for
+some index j0 . Pulling back the invertible sheaf L by χ one gets a rank one C-vector space L.
+Let 0 6= e ∈ L ⊗ L̄ be a basis, then the pull back of the sections ξj ∈ Γ(Z, L̃) are of the form aj e
+with aj ∈ C and aj0 6= 0. It follows that
+
+ 
+
+X
+X
+(χ × (χ ◦ σ))∗ 
+ξj ξj∗  = 
+aj āj  ee∗ 6= 0
+j
+
+j
+
+and thus χ × (χ ◦ σ) ∈ Ω(L, {ξj })(C).
+(iii) This invariance under σ̃ holds for the subsets Ω(L, {ξj }) because the section s of (49) fulfills
+s∗ = s by construction.
+Next statement provides the functorial construction of the (real: cf. Theorem 7.5) scheme ∗ X
+and the projection pX : (∗ X)C → X.
+
+Proposition 7.4 Let X be a scheme over C. Then, the restriction of the first projection p :
+X ×C X σ → X to the intersection
+∗ X :=
+
+lim
+←−
+
+W
+
+W ∈S(X)
+
+defines a morphism pX : ∗ X → X of schemes which is surjective on complex points and depends
+functorially on X. Moreover the functor X 7→ ∗ X preserves direct sum, i.e.
+∗ (X1 ⊕ X2 ) = ∗ X1 ⊕ ∗ X2 .
+
+Proof. It follows from Lemma 7.3 that the class S(X) is stable under finite intersections and
+thus the open (complex) sub-schemes W of X ×C X σ form a projective system under inclusion.
+The projection p restricts to each W in a compatible manner, and Lemma 7.3 implies that it
+is surjective on complex points. We check that this construction is functorial. Let f : X → X ′
+be a morphism of complex schemes. Then the morphism f × f σ : X ×C X σ → X ′ ×C X ′ σ is
+compatible with the first projection and the morphism f : X → X ′ . It remains to show that
+for any W ′ ∈ S(X ′ ) there exists W ∈ S(X) such that (f × f σ )(W ) ⊂ W ′ . For any invertible
+sheaf L′ on X ′ and sections ξj′ ∈ Γ(Z ′ , L̃′ ), one has: (f × f σ )−1 Ω(L′ , {ξj′ }) = Ω(L, {ξj }), where
+27
+
+Alain Connes and Caterina Consani
+L = f ∗ (L′ ) is the inverse image of L′ and ξj = (f × f σ )∗ ξj′ . One then shows by induction on n
+that
+W ′ ∈ Sn (X ′ ) =⇒ (f × f σ )−1 (W ′ ) ∈ Sn (X).
+
+Now let X = X1 ⊕ X2 be the disjoint union of two schemes over C. Let ej ∈ O(X) (j = 1, 2) be
+the two idempotent sections corresponding to Xj . One has e1 + e2 = 1 and e1 e2 = 0. Consider
+the invertible sheaf L = OX on X. Then the tensor products ξij = ei ⊗ eσj are sections of L̃ on
+∗ = 0, ξ ξ ∗ = 0 and
+Z = X ×C X σ . One has ξ12 ξ12
+21 21
+∪i,j Zξij = Z, Ω(L, {ξij }) = (X1 × X1σ ) ∪ (X2 × X2σ ) ⊂ Z.
+
+One then easily checks that ∗ X = ∗ X1 ⊕ ∗ X2 .
+The additivity of the functor X 7→ ∗ X holds because the star-localization eliminates the cross
+terms. Note that additivity fails instead for the Weil restriction.
+7.2 The morphism πX : Spec (O(Xsm )) → X
+Next, we show that the functor X 7→ ∗ X transforms projective complex schemes into real affine
+schemes
+Theorem 7.5 Let X be a projective complex variety. Then
+(i) The scheme ∗ X is affine and real.
+(ii) The morphism pX : (∗ X)C → X is bijective on complex points, i.e. pX induces a bijection
+∼
+∗ X(C) = X(C)
+(iii) If X is also smooth, the morphism of locally ringed space Xsm → Xalg extends canonically
+to a morphism of schemes
+γ∗
+
+pX
+
+πX : Spec (O(Xsm )) → (∗ X)C → X
+
+where γ : O(∗ X) → O(Xsm ) = C ∞ (Xsm , C) is the Gelfand transform of the algebra O(∗ X) of
+global regular sections of the affine scheme ∗ X:
+O(∗ X) ∋ a 7→ γ(a) = â, â(χ) := χ(a) ,
+
+∀χ ∈ HomC (O(∗ X), C).
+
+Proof. (i) We show that the scheme ∗ X is affine if X is projective. Let ι : X → PnC be a closed
+immersion and L = ι∗ (OPn (1)). Let {αi } ∈ Γ(X, L) be the set of pullback sections αi = ι∗ (xi )
+of the global sections xi ∈ Γ(Pn , O(1)), i = 0, . . . , n. Let ξij = αi ⊗ ασj ∈ Γ(Z, L̃). One has
+∪i,j Zξij = Z, so that W0 = Ω(L, {ξij }) ∈ S(X). Moreover, by definition one has
+X
+∗
+Ω(L, {ξij }) = Zs ,
+s :=
+ξij ξij
+∈ Γ(Z, L̃⊗2 ).
+i,j
+
+In fact, one has
+X
+X
+(αi ⊗ ασj )(αj ⊗ ασi ) =
+(αi αj ) ⊗ (ασj ασi ) =
+s=
+i,j
+
+i,j
+
+X
+i
+
+
+!
+X
+αj ⊗ ασj  = t2
+αi ⊗ ασi 
+j
+
+P
+where t = i αi ⊗ ασi ∈ Γ(Z, L̃) and thus W0 = Ω(L, {ξij }) = Zs = Zt . Next we show that
+2
+Zt is affine. Consider the Segre embedding τ : PnC × PnC → PnC +2n which is given in terms of
+homogeneous coordinates by
+τ ((xi ), (yj )) = (xi yj ) = τ (x, y)i,j , i, j ∈ {0, . . . , n}.
+28
+
+Cyclic homology, Serre’s local factors and the λ-operations
+The open set Zt ⊂ Z is, by construction, the inverse image by the morphism τ ◦ (ι × ισ ) of the
+complement of the hyperplane
+X
+2
+H = {(Xi,j ) |
+Xi,i = 0} ⊂ PnC +2n
+i
+
+thus W0 = Ω(L, {ξj }) = Zs = Zt is affine. To show that ∗ X is affine it is enough to show that
+W0 ∩ W is affine for any W ∈ S(X) but this follows from standard geometric facts since W0 ∩ W
+is of the form (W0 )s′ where s′ is a section of an invertible sheaf on W0 . Finally by (iii) of Lemma
+7.3, each of the W ∈ S(X) is invariant under σ̃. This shows that the algebras O(W ) inherit a
+natural antilinear involution ∗ and so does their projective limit O(∗ X). Thus this algebra is
+the complexification of the real algebra of fixed points of the involution, thus it follows that the
+scheme ∗ X is real.
+(ii) We show that the morphism pX is bijective on complex points. We already know that it
+is surjective. Let us consider a complex point u ∈ ∗ X(C). Then one gets a point u ∈ Z(C) =
+X(C) × X σ (C) which belongs to W (C) for any W ∈ S(X). Let W0 be as in the proof of (i). The
+point u determines a character χ ∈ HomC (B, C) of the involutive algebra B = O(Zs ) and it is
+enough to show that this character fulfills the identity
+χ(x∗ ) = χ(x) ,
+
+∀x ∈ B.
+
+This will in turn follow if one shows that
+X
+χ(1 +
+aj a∗j ) 6= 0 ,
+j
+
+(51)
+
+∀aj ∈ B.
+
+(52)
+
+P
+The set of complex numbers χ(ǫ + j aj a∗j ), ǫ > 0, aj ∈ B, is a multiplicative cone, thus it
+reduces to (0, ∞) unless it contains 0. Moreover one has
+
+χ(1 + xx∗ ) ∈ (0, ∞) ∀x ∈ B =⇒ χ(x∗ ) = χ(x) ∀x ∈ B.
+P
+To show (52) it is enough to prove that with f = 1 + j aj a∗j ∈ B, one has Zf ∈ S(X).
+Lemma 1.25 of [17] applied to this context shows that for any a ∈ B there exists an integer
+n0 > 0 such that for all n ≥ n0 the section a ⊗ (sn|Zs ) ∈ Γ(Zs , L̃⊗2n ) extends to a global section
+ag
+sn ∈ Γ(Z, L̃⊗2n ). Thus, there exists n ∈ N such that all the sections aj ⊗ (sn ) ∈ Γ(Zs , L̃⊗2n )
+|Zs
+
+⊗2n ). We include η = sn in the list of such η . Then
+n
+extend to global sections ηj = ag
+j s ∈ Γ(Z, L̃
+0
+j
+Ω(L, {ηj }) ∩ Zs = Zf ⊂ Zs follows from the equality
+
+
+X
+X
+aj a∗j  s2n ∈ Γ(Zs , L̃⊗4n )
+ηj ηj∗ = 1 +
+j
+
+j
+
+and since η0 = sn one has ∪j Zηj ⊃ Zs ∈ S(X) and using (50) Zf ∈ S(X).
+(iii) Let B = O(∗ X). The Gelfand transform
+B ∋ a 7→ γ(a) = â, â(χ) = χ(a) ,
+
+∀χ ∈ HomC (B, C)
+
+defines a canonical algebra homomorphism γ : B → C ∞ (Xsm , C) = O(Xsm ). By the proof of (ii),
+the elements of HomC (B, C) fulfill (51), and this shows that the homomorphism γ is compatible
+with the involutions. It remains to show that the morphism of schemes pX ◦γ ∗ : Spec (O(Xsm )) →
+X extends the morphism of locally ringed space µ : Xsm → Xalg . The underlying topological
+space of the locally ringed space Xalg is the set of complex points X(C) of the algebraic variety
+endowed with the Zariski topology. The sheaf O = OX associates to each Zariski open set U
+29
+
+Alain Connes and Caterina Consani
+the ring O(U ) of regular functions from U to C. The weakest topology making these functions
+continuous is the ordinary topology and the map µ is the identity on points and is the inclusion
+O(U ) ⊂ OXsm (U ) at the level of the structure sheaves. The locally ringed space Xalg is the set
+of closed points of the algebraic scheme X with the induced topology and the restriction of the
+structure sheaf. Note that the map which to an open set of X associates its intersection with Xalg
+gives an isomorphism on the categories of open sets so that the sheaves on X and on Xalg are in
+one to one correspondence. This simple relation fails when comparing Xsm with Spec (O(Xsm )).
+Let ι : Xsm → Spec (O(Xsm )) be the map which associates to x ∈ Xsm the kernel of the character
+O(Xsm ) ∋ f 7→ f (x). It is a bijection of Xsm with the set of closed points of Spec (O(Xsm )). It
+is continuous since the open sets as D(f ) form a basis of the topology of Spec (O(Xsm )), and
+ι−1 (D(f )) is the open subset {x ∈ Xsm | f (x) 6= 0} ⊂ Xsm . Moreover ι defines a morphism of
+locally ringed spaces since for every open set W ⊂ Spec (O(Xsm )) the elements of O(W ) give,
+by composition with ι, elements of C ∞ (W, C) = Γ(W, OXsm ). One then easily checks that the
+composition
+γ∗
+
+ι
+
+pX
+
+Xsm → Spec (O(Xsm )) → (∗ X)C → X
+
+maps to the closed points of X and is equal to the morphism µ.
+
+We end this appendix with the following result that shows how to recover the locally ringed
+space Xsm from the affine scheme Spec (O(Xsm )).
+Proposition 7.6 Let V be a smooth and compact manifold, Vsm the locally ringed space such
+that OVsm (U ) = C ∞ (U, C) for every open subset U ⊂ V and Vaff = Spec (C ∞ (V, C)) the affine
+scheme over C associated to its algebra of smooth functions.
+(i) The map ι which to x ∈ V associates the kernel of the character O(Vsm ) ∋ f 7→ f (x) is a
+bijection of V with the maximal ideals of the C-algebra O(Vsm ).
+(ii) For each point p ∈ Vaff there exists a unique maximal ideal m(p) ∈ V containing the prime
+ideal p.
+(iii) The map m : Vaff = Spec (O(Vsm )) → V , p 7→ m(p) is continuous and the direct image sheaf
+m∗ (OVaff ) of the structure sheaf of Vaff is the sheaf OVsm .
+(iv) The morphism of locally ringed spaces m ◦ ι : V → V is the identity.
+Proof. One checks (ii) by using a partition of unity argument. Moreover (ii) implies (i).
+(iii) We show that m is continuous. Let U ⊂ V be an open set and let Ũ = m−1 (U ). Each point
+p ∈ Ũ is a prime ideal contained in a maximal ideal m = x ∈ U . Let then f ∈ O(Vsm ) be a
+smooth function on V with support contained in U and such that f (x) 6= 0. For any prime ideal
+q ∈ D(f ) ⊂ Vaff one has m(q) ∈ Support(f ). Indeed, if that is not the case the germ of f around
+m(q) is zero and thus f ∈ q. This shows that Ũ = m−1 (U ) is open in Spec (O(Vsm )). The elements
+s ∈ OVaff (Ũ ) are obtained from a covering of Ũ = m−1 (U ) by open subsets D(fj ) ⊂ m−1 (U )
+and for each D(fj ) an element sj of the ring O(Vsm )fj of fractions with denominator a power of
+fj , with the condition that these elements agree on the pairwise intersections. Thus to such an
+s ∈ OVaff (Ũ ) one can associate a function s|U by restriction to the subset of maximal ideals, and
+this function is smooth. The obtained map res : OVaff (Ũ ) → C ∞ (U, C) = OVsm (U ) is surjective.
+Indeed, one can cover U by open sets Uj = {x ∈ U | fj (x) 6= 0} where each fj ∈ C ∞ (U ) has
+compact support in U , thus any h ∈ C ∞ (U, C) is obtained from the sj = hfj /fj ∈ O(Vsm )fj .
+The map res : OVaff (Ũ ) → C ∞ (U, C) is injective since any element of OVaff (D(f )) = O(Vsm )f is
+determined by its restriction to maximal ideals.
+
+30
+
+Cyclic homology, Serre’s local factors and the λ-operations
+(iv) One just needs to check that m ◦ ι is the identity at the level of structure sheaves and this
+follows from the proof of (iii).
+Remark 7.7 (i) As soon as the dimension of X is non zero, the image of the morphism of
+schemes πX : Spec (O(Xsm )) → X contains a non-closed point. This shows in particular that
+this morphism does not factorize through the morphism of locally ringed spaces Xsm → Xalg .
+(ii) Theorem 7.5 (iii), shows that the associated map of periodic cyclic homology p∗X : HP∗ (X) →
+HP∗ ((∗ X)C ) is injective. It is in general far from surjective.
+
+References
+1 A. Beilinson, Higher regulators and values of L-functions. (Russian) Current problems in mathematics,
+Vol. 24, 181-238.
+2 S. Bloch, K. Kato, L-functions and Tamagawa numbers of motives. The Grothendieck Festschrift, Vol.
+I, 333-400, Progr. Math., 86, Birkhauser Boston, Boston, MA, 1990.
+3 A. Connes, Spectral sequence and homology of currents
+Mathematisches Forschunginstitut oberwolfach, Tagungsbericht 42/81.
+
+for
+
+operator
+
+algebras,
+
+4 A. Connes, Cohomologie cyclique et foncteurs Extn . C. R. Acad. Sci. Paris Sér. I Math. 296 (1983),
+no. 23, 953–958.
+5 A. Connes, Noncommutative differential geometry. Inst.Hautes Etudes Sci. Publ.Math. No. 62 (1985),
+257-360.
+6 A. Connes, Noncommutative geometry, Academic Press (1994).
+7 C. Consani, Double complexes and Euler L-factors. Compositio Math. 111 (1998), no. 3, 323–358.
+8 P. Deligne, Valeurs de fonctions L et périodes d’intégrales, Proc. Symp. Pure Math. Vol.33 (1979)
+part II, 313–346.
+9 C. Deninger, On the Γ-factors attached to motives, Invent. Math. 104 (1991) 245–261.
+10 B. Feigin and B. Tsygan Additive K-theory, Lecture notes in Math., vol. 1289, Springer-Verlag, 1987,
+97–209.
+11 A. Grothendieck, On the de Rham cohomology of algebraic varieties. Inst. Hautes tudes Sci. Publ.
+Math. No. 29 (1966) 95-103.
+12 U. Görtz, T. Wedhorn Algebraic Geometry I, Vieweg+ Teubner (2010).
+13 R. Hartshorne Algebraic Geometry, Graduate Texts in Mathematics 52, Springer-Verlag, New York
+Heidelberg Berlin 1977.
+14 C. Hood, J. Jones Some properties of cyclic homology groups, K-theory 1 (1987), 361–384.
+15 M. Karoubi, Homologie cyclique et K-théorie. (French) [Cyclic homology and K-theory] Astrisque No.
+149 (1987), 147 pp.
+16 M. Kontsevich, Solomon Lefschetz Memorial Lecture series: Hodge structures in non-commutative geometry. Notes by Ernesto Lupercio. Contemp. Math., 462, Non-commutative geometry in mathematics
+and physics, 121, Amer. Math. Soc., Providence, RI, 2008.
+17 Q. Liu, Algebraic Geometry and Arithmetic Curves Oxford Graduate Texts in Mathematics, 6. Oxford
+Science Publications. Oxford University Press, Oxford, 2002.
+18 J.L. Loday, D Quillen, Homologie cyclique et homologie de l’algbre de Lie des matrices. (French)
+[Cyclic homology and homology of the Lie algebra of matrices] C. R. Acad. Sci. Paris Sr. I Math. 296
+(1983), no. 6, 295-297.
+19 J.L. Loday, Cyclic homology. Grundlehren der Mathematischen Wissenschaften, 301. Springer-Verlag,
+Berlin, 1998.
+
+31
+
+Cyclic homology, Serre’s local factors and the λ-operations
+20 Yu.I. Manin, Lectures on zeta functions and motives (according to Deninger and Kurokawa). Columbia
+University Number Theory Seminar (New York, 1992). Astérisque No. 228 (1995), 4, 121–163.
+21 J. Oesterle, Nombres de Tamagawa et groupes unipotents Invent. math. 78, (1984) 13–88.
+22 G. Rinehart, Differential forms on general commutative algebras Trans. AMS, 108 (1963), 195–222.
+23 D.B. Ray, I.M. Singer, Analytic torsion for complex manifolds Ann. Math. 98 (1973), 154–177.
+24 P. Schneider Introduction to the Bei(linson conjectures. Bei(linson’s conjectures on special values of
+L-functions, 1-35, Perspect. Math., 4, Academic Press, Boston, MA, 1988.
+25 J. P. Serre, Facteurs locaux des fonctions zêta des variétés algébriques (définitions et conjectures).
+Sém. Delange-Pisot-Poitou, exp. 19, 1969/70.
+26 J. P. Serre, Géométrie algébrique et géométrie analytique. (French) Ann. Inst. Fourier, Grenoble 6
+(1955–1956), 1-42.
+27 B. L. Tsygan, Homology of matrix Lie algebras over rings and the Hochschild homology. (Russian)
+Uspekhi Mat. Nauk 38 (1983), no. 2(230), 217-218.
+28 C. Weibel, An introduction to homological algebra. Cambridge Studies in Advanced Mathematics, 38.
+Cambridge University Press, Cambridge, 1994. xiv+450 pp.
+29 C. Weibel, Cyclic Homology for schemes. Proc. Amer. Math. Soc. 124 (1996), no. 6, 1655-1662.
+30 C. Weibel, The Hodge filtration and cyclic homology. K-Theory 12 (1997), no. 2, 145-164.
+31 C. Weibel, S. Geller Etale descent for Hochschild and cyclic homology, Comment. Math. Helv. 66
+(1991), 368–388.
+
+Alain Connes alain@connes.org
+Collège de France, 3 rue d’Ulm, Paris F-75005 France
+I.H.E.S. and Ohio State University.
+Caterina Consani kc@math.jhu.edu
+Department of Mathematics, The Johns Hopkins University
+Baltimore, MD 21218 USA.
+
+32
+
+
