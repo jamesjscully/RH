@@ -58,6 +58,10 @@ S (S-r5):     at p = 2 - the unique prime with nonvanishing reflection
               SELF-DUAL KMS-1/2 FORM (per weight n the full line gives
               2 sinh((s+n) log 2 / 2) = 2^{(s+n)/2}(1 - 2^{-(s+n)})).
               The symmetric scheme APPEARS GEOMETRICALLY exactly at 2.
+              [WEAKENED 2026-06-10, worker U gate G5: the form is
+              scheme-APPLIED, not scheme-forced - the negation ratio is
+              constant only under c = 1/2; S exhibited the self-dual
+              form, it did not force the scheme.]
               Also: pi_0 = F_2[[z]] - the reflection sector acquires a
               geometric direction (a formal disk) only at 2.
 CC:           the canonical divisor of compactified Spec Z is K =
