@@ -227,6 +227,22 @@ scripts/numerics/witness/certify_chain.py
     (<Delta,Delta>_{O_K} = d zeta'(0) + (1/2)log|d_K| via Lindenstrauss-Madsen,
     discriminating, tracks xi_K's |d|^{s/2}). Witness: prime_int_genus_audit.
 
+23. `23-adams-family-signature.md`
+    C6''' first pass, fail-closed NEGATIVE: the bare Adams family Gram log|k-l| is not
+    Lorentzian (signature ~(0.43n, 0.57n)); the constant-diagonal window escapes
+    linearly - the FF Castelnuovo form needs the bidegree correction and a k-dependent
+    diagonal, both supplied only by the full Adams-twisted THH (C6'' promoted to
+    primary). Witness: prime_int_adams_family_signature (refutation-grade).
+
+24. `24-reflection-fold.md`
+    C5''-infty first checkpoint (worker M, verified): the archimedean fold lives on
+    C_2 FIXED POINTS (Tate contractible at odd p; THR(F_p)^{C_2} = F_p[y], |y|=4 =
+    the half-line spacing-2 ladder); functor dichotomy rotations->Tate->full ladder
+    vs reflections->fixed points->folded ladder; the C_2-involution realizes Serre's
+    F_infinity eigenvalue selection. PARITY LEMMA: c = 1/2 is the unique
+    reflection-equivariant scheme - KMS-1/2 forced by real equivariance, conditional
+    on the single named hypothesis H-r3. Witness: prime_int_thr_fold.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target

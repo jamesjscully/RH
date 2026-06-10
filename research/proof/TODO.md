@@ -236,16 +236,23 @@ C5' DIAGNOSTIC EXECUTED (prime_int_tate_ladder.py + doc 20, 2026-06-10):
    Deninger 1992 Prop 2.3). Ladder claims stand; the scheme-selection
    principle is OPEN and = the archimedean question (C_2/real structure,
    gate C5''-infty in research/work/J-c5pp-tate-derivation.md sec 5).]
-C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" is structurally
-   killed by the BMS triple (p-complete technology; phi-semilinear
-   Frobenius = no eigenvalue ladders over Z_p; archimedean fracture
-   corner empty - sqrt(2pi) invisible to every completion). REPLACED by
-   gate C5''-infty (J-doc sec 5): genuine O(2)/real-cyclotomic object;
-   (infty-1) reflection-Tate ladder fold, (infty-2) canonical 1/(2pi)
-   scale = anomalous dimension (1-s)/2 = the EF's -(1/2)log pi term,
-   (infty-3) C_2 induces the symmetric scheme (only KMS-1/2 carrier
-   candidate), (infty-4) rank factors. FIRST STEP: THR(F_p) fold test,
-   readings r1/r2 pre-registered in the J-doc. Then C5''' = the global
+C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" killed by the
+   BMS triple; replaced by gate C5''-infty (J-doc sec 5).
+   FIRST CHECKPOINT EXECUTED (2026-06-10, worker M + doc 24): the fold
+   lives on FIXED POINTS, not Tate - C_2-Tate is contractible at odd p
+   (Quigley-Shah) and pi_* THR(F_p)^{C_2} = F_p[y], |y|=4 (DMPR Cor
+   5.19) is exactly the half-line/start-0/spacing-doubled archimedean
+   ladder; functor dichotomy rotations->Tate->full ladder vs
+   reflections->fixed points->folded ladder, with Tate-vanishing at the
+   reflection = "no duality completion at infinity", and the
+   C_2-involution (-1)^k on pi_2k THH(F_p) = Serre's F_infinity
+   eigenvalue selection. PARITY LEMMA (r3): c = 1/2 is the UNIQUE
+   reflection-equivariant scheme - KMS-1/2 FORCED by real equivariance,
+   conditional on the single named hypothesis H-r3 (the C_2 acts on the
+   analytic determinant layer; no such theorem exists - THE posed C5''
+   theorem). Refined gate: (infty-1') fold theorem-grade at odd p,
+   p = 2 + archimedean object open; (infty-2) 1/(2pi) scale open;
+   (infty-3') H-r3; (infty-4) untouched. Then C5''' = the global
    Poisson step (the zeros).
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
