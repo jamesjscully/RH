@@ -187,8 +187,24 @@ two invariants identified on one square, calibration pair
 LIVE: <Delta,Delta>_{O_K} = d zeta'(0) + (1/2)log|d_K| (LM orders,
 Z[i] spot-checked) - discriminates, tracks xi_K's |d|^{s/2}; standing
 test bench for any "produces zeta" claim. Remaining Q-SCHEME work:
-T-c (HZ/ku sign normalization in one indexing) - fold into C6';
-workers M (THR fold test) and N (CC square posing) in flight.
+T-c (HZ/ku sign normalization in one indexing) - fold into C6'.
+CC-SQUARE FRONT after workers N + Q (2026-06-10, docs in research/work/
+N,Q-*): the square is POSED (six missing ingredients M1-M6; M1 since
+RESOLVED in two halves - object-level the strict smash is BIGGER than
+HZ, carrying divided-power invariants Phi_p/Phi'_p that remember
+bilinear factorizations incl. a Z/2 of genuine square data; functor-
+level CC's machinery provably cannot probe it, EM-factorization
+theorem = truncation T1). F-test verdict F-WEAK sharpened: the GRADING
+is the entire missing bridge (a graded refinement of the Phi-invariant
+algebra reaching the Bokstedt tower = the precisely-posed next
+question; the mod-p resonance is FIT-firewalled per G-INT6).
+QUANTIZATION DEFECT (witnessed): D_b(s) has a simple pole at s=0,
+residue -1/(2 log b) - integer-dim quantization can NEVER hold the
+regularized archimedean constant (graded tolerance refuted in simplest
+form, exact evasion condition recorded); strengthens doc 22's
+invariant-level verdict: the trade tolerance<->integer dims vs
+derived<->zeta'(0) is strict, and any reconciling object must break
+the stated dichotomy.
 Discovery banked meanwhile (fleet/K, verified): Connes-Consani PROVED
 integer-valued RR + Pontryagin-Serre duality for compactified Spec Z
 (arXiv:2205.01391 Thm 1.1-1.2, 2306.00456 Thm 1.1; circularity-clean) -
