@@ -136,14 +136,22 @@ C4 Hall pairing - EXECUTED (count_hall_signature.py + doc 17 sections 5-6):
    chi = log|Hom| - log|Ext| VANISHES IDENTICALLY on finite Z-modules
    (|Ext^1| = |Hom|) - the categorical form of "Spec Z is 1-dimensional"
    (third independent derivation). Index demands a 2-DIMENSIONAL category.
-C4' (REDIRECTED FRONT QUESTION, fresh-context scale): the Euler pairing on
-   finite complexes over the DERIVED SQUARE Z (x)^L_S Z (sphere spectrum;
-   higher homotopy supplies the second dimension - NOT covered by the F1
-   scale kill, passes G-INT5 since no finite residue field at infinity is
-   invoked). Does it have nonvanishing signature content on torsion
-   classes? Lorentzian answer = first sign-bearing integer pairing on an
-   arithmetic square. Homotopy-theoretic computation (dual-Steenrod-type
-   rings, THH-adjacent machinery).
+C4' - EXECUTED (prime_int_derived_square.py + doc 18, 2026-06-09): SIGN
+   EXISTS. The derived self-intersection of the diagonal in the square
+   Z (x)^L_S Z IS THH(Z) (by definition); Bokstedt's pi_{2k-1} = Z/k (all
+   odd degrees) gives <Delta,Delta>_tors = -sum_reg log k = zeta'(0)
+   = -(1/2) log 2pi < 0 - the first sign-bearing, torsion-sourced pairing
+   on an arithmetic square in the program, and its value is the ARCHIMEDEAN
+   CONSTANT of zeta, produced from integer counts rather than inserted.
+   Genus reading: 2 - 2g_Z = zeta'(0) => g_Z ~ 1.459 > 1 (hyperbolic over
+   S). Local control THH(F_p): +(1/2) log p. Gates: G-INT5 PASS, carrier
+   fork PASS (DH/Epstein have no ring => no THH); G-INT1 degree-wise PASS /
+   total FAIL - the non-integer enters ONLY through the infinite tower.
+   WALL RELOCATED: not "no sign-bearing pairing" but NO PROPERNESS - the
+   square is affine over S, nothing truncates the Ext tower; the zeros sit
+   behind the global Euler characteristic (Riemann-Roch over S). Local
+   case is already a theorem (Hesselholt arXiv:1602.01980, properness
+   hypothesis included).
 C2 Trace-formula integer structures - SUBSUMED by doc 17 section 4, same
    reason as C1; additionally the Hurwitz class numbers H(n) carry 1/3, 1/2
    Aut-corrections (the groupoid/q->1 leak, third appearance). Integer class
@@ -151,10 +159,22 @@ C2 Trace-formula integer structures - SUBSUMED by doc 17 section 4, same
    mapped set. Signature side only (C4').
 ```
 
-R-INT STATUS after first pass (2026-06-10): C0, C0', C4 executed; C1, C2
-subsumed; the rung's single live front is C4' (Euler pairing over the
-derived square Z (x)^L_S Z - homotopy-theoretic, fresh-context scale).
-Doc 17 is the rung record.
+R-INT STATUS after second pass (2026-06-09): C0, C0', C4, C4' executed;
+C1, C2 subsumed. Docs 17-18 are the rung record. Live fronts (doc 18
+section 6, ranked):
+
+C5 (properness): the Tate/TP-style compactification of the derived square
+   - is there a finiteness/duality theorem over S making the Euler pairing
+   finite-rank per class, and does the compactified diagonal reproduce the
+   full Gamma_R factor (digamma term of the EF, not just the constant)?
+   This is the S-arithmetic Riemann-Roch question; fresh-context scale,
+   literature-adjacent (Hesselholt TP, arXiv:2011.11549 zeta-values).
+C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
+   HZ has no ring endomorphisms but KU has the Adams operations psi^k.
+   Compute the same pairing on the square KU ^ KU with the psi^k graphs
+   as the second family of classes (pi_*(KU^KU) = numerical polynomials,
+   torsion known). The only known candidate for the missing two-parameter
+   correspondence family.
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.

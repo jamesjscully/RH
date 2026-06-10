@@ -166,6 +166,26 @@ scripts/numerics/witness/certify_chain.py
     prime_pair_fork, prime_pair_dh_growth, prime_pair_localization,
     prime_pair_castelnuovo, fork_lib.
 
+17. `17-integer-search.md`
+    R-INT FIRST PASS: the count-fingerprint pipeline (calibrated machine-exact), the
+    grammar refinements (self-duality = the FE as count duality; temperedness; the
+    Epstein boundary => the reachable set is the Selberg class with cardinality
+    coefficients), and C4: Hall self-dual-grade forms are positive definite (a metric,
+    no index) because the Euler form vanishes identically on finite Z-modules
+    (|Ext^1| = |Hom| - "Spec Z is 1-dimensional", categorically). Redirect: C4'.
+    Witnesses: count_fingerprint, count_hall_signature.
+
+18. `18-derived-square-thh.md`
+    R-INT SECOND PASS (C4' executed): the diagonal's derived self-intersection in the
+    square Z (x)^L_S Z IS THH(Z); Bokstedt's torsion gives <Delta,Delta>_tors =
+    zeta'(0) = -(1/2) log 2pi < 0 - the first sign-bearing pairing on an arithmetic
+    square, its value the archimedean constant produced from integer torsion counts;
+    genus reading g_Z ~ 1.459 > 1. Wall relocated to PROPERNESS over the sphere
+    (nothing truncates the affine square's Ext tower; the zeros sit behind the global
+    Euler characteristic). New fronts: C5 (TP-style compactification / S-arithmetic
+    Riemann-Roch), C6 (Frobenius family via Adams operations on KU ^ KU).
+    Witness: prime_int_derived_square.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
