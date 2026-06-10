@@ -288,6 +288,17 @@ scripts/numerics/witness/certify_chain.py
     step 2, the global assembly - does the EF's archimedean constant emerge from
     the cross-place trace?
 
+30. `30-cycle5-synthesis.md`
+    PFD step-2 cycle (workers BB/CC/DD): the object EXISTS (Xbar, pi_* = G, theorem
+    mod S.1); D' is the continuous Brown-Comenetz dual (plain BC unsatisfiable -
+    U.2 repaired to Conjecture DD.4); K1 = B3 with a proven equivariance no-go
+    (the FE layer is scale-blind - the vacuity guard is now quantitative; missing
+    ingredient = the archimedean Poisson exchange, the Gaussian's seat); gluing
+    not 2-specific (p = 3, 5); K3 PASS (s(s-1) candidate self-dual under the
+    forced recentring); K4 PASS by DUALITY CANCELLATION (a third evasion
+    mechanism). The remainder is one conjecture: DD.4, whose duality does triple
+    duty (scheme + pole + scale). Ranked continuations in sec 3.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
