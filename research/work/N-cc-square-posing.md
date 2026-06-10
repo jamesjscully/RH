@@ -242,7 +242,16 @@ building toward the square; the square is unclaimed by them too.
 
 ### 2.3 What is missing (the precise reasons the compactified square is not yet definable)
 
-(M1) STRICT COLLAPSE ONTO THE DIAGONAL. At the strict (1-categorical) level
+(M1) [RESOLVED 2026-06-10 by worker Q, in two opposite halves: at the
+OBJECT level the strict collapse is FALSE - HZ ^ HZ in GammaSets_* is
+strictly larger than HZ, with divided-power invariants Phi_p, Phi'_p
+that remember bilinear factorizations ((2)(2) != (4)(1)), machine-
+verified on 504,896 coend-move instances; at the FUNCTOR level the
+collapse is EXACT for everything CC's machinery sees - the
+EM-factorization theorem (proved with their own toolkit) shows
+Hom_S(HZ^HZ, HA) = Hom_Ab(Z(x)Z, A), so no published CC probe can
+carry the extra content. See research/work/Q-cc-ftest.md.]
+ORIGINAL TEXT: STRICT COLLAPSE ONTO THE DIAGONAL. At the strict (1-categorical) level
      the algebraic content of the square degenerates: Z ⊗_Z Z = Z, and the
      underlying "algebraic shadow" of HZ ∧ HZ is again Z (the universal map
      HZ ∧ HZ -> H(Z ⊗ Z) = HZ; in spectra this is a π_0-isomorphism).
