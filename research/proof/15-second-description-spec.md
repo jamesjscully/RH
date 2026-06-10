@@ -134,11 +134,37 @@ Almost every candidate WAS examined there, with verdicts; the corrected map:
     deliberately DROPS the scale demand (the no-go proves scale is impossible)
     and asks for a square with native signature positivity instead. The repo
     kill does not close that question; nobody has the intersection theory.
-(b) Scaling-site square: literature/connes-consani-scaling-site.md - OPEN,
-    with Connes' own boxed statement of the missing object: "an intersection
-    theory and a Riemann-Roch theorem on the square of the arithmetic site...
-    no Serre duality or good cohomological H^j for j != 0." RR proven on
-    periodic orbits (curves) only; the square is missing. Matches this spec.
+(b) Scaling-site square: ADDRESSED BY THE REPO AT THREE LAYERS; "open" only
+    in the weak sense that the construction is not proven impossible.
+    Layer 1 (analytic sub-path, EXECUTED TO TERMINATION): extending CC20's
+    archimedean/semilocal positivity globally - the strategy's only
+    quantitative component - IS the program of docs 01-13, which terminated
+    in the tracking equivalence; that extension's difficulty is EF-conserved
+    (the fork). Connes' own caveat stands beside it: the spectral
+    realization is engineered around the critical line, sees only on-line
+    zeros, cuts multiplicities.
+    Layer 2 (the square itself, OPEN AS A CONSTRUCTION): their stated open
+    problem - no intersection theory / RR / Serre duality on S^2; RR proven
+    on periodic orbits only. The carrier is a genuine S1-S2 candidate (the
+    orbit RR with theta functions is real extra structure, so P1 is
+    plausible).
+    Layer 3 (the sign step, CONDITIONALLY CLOSED BY THE NO-GO PREPRINT):
+    even granting the square, two repo results say the positivity would not
+    come with it. (i) Theorem B: the similitude/duality structure (Frobenius
+    correspondences composing, functional-equation symmetry) UNDERDETERMINES
+    the signature of the invariant form - the Hodge-index analogue is an
+    independent input, not a consequence of the square's duality. (ii) The
+    count/radius decoupling, instantiated by CC's own results: their
+    periodic-orbit RR is "type II" with REAL-VALUED dimensions and degrees,
+    and their 2026 compactified Spec Z has integer h^0 against continuum
+    degree. In char p the sign source is the DISCRETE index (integer
+    dimensions, ampleness, finite cohomology); characteristic-one geometry
+    dequantizes exactly that discreteness (the F1-exhaustion's tropical row:
+    "dequantizes, q -> 1"). So the CC square, as currently conceived, would
+    deliver the carrier without the discrete positivity principle - S1-S2
+    without S3. The sharpened question that WOULD reopen it: can char-1
+    geometry be rigidified so that an integer-valued (or otherwise discrete)
+    index appears at the Hodge-index step? That is the same wall, localized.
 (c) Type II/III trace: work/A-qsm-free-energy.md - AUDITED, RH-SILENT, and
     this is the most instructive prior result for the spec (see section 5).
     The BC system already exhibits P2 (DH has no Euler product => no BC
