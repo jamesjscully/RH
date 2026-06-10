@@ -71,4 +71,18 @@ CAVEAT (necessary, not sufficient): the Bost-Connes system already satisfies
    then survive.
 ```
 
+## 4. The pre-filter (added after R-SQ, doc 16): "where is your integer?"
+
+Faster than F1. The FF index's sign source is that intersection numbers are
+COUNTS: discriminating (they encode the arithmetic) and free (a cardinality
+is >= 0 by what it is). The R-SQ trichotomy measured that real-valued
+pairings have no third class: they are squares (blind) or Bochner (circular).
+And the level-1 margin law (no analytic slack, e^{-1.5R} below scale) is the
+signature of a theorem whose true proof is a discreteness argument: an
+integer > -1 is >= 0 - integrality crosses zero-width gaps that no estimate
+can. So before anything else, ask of a proposal: WHICH of its pairing values
+is an integer, and what does that integer count? Real-valued answers (CC
+type-II dimensions, Arakelov archimedean degrees) fail here; "multiplicities
+of the zeros" fails too (wrong side, post hoc). No known candidate passes.
+
 See doc 15 for the spec of what such a second description would have to be.
