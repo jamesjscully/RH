@@ -355,3 +355,21 @@ N2:         unchanged (forced by Z); N1-b would supply its dihedral
 OPEN:       genuine O(2)-structure on X' / X-bar (U.2(b) proper);
             E_infty on X-bar; the categorical home for I^cont.
 ```
+
+## Postscript (2026-06-10, worker EE): display correction + clause 1 proven + g2 refuted
+
+Theorem EE.1 (research/work/EE-dd4-lin.md) PROVES the Lin-block clause:
+the duality datum is the UNIQUE nonzero Y-module map Y -> Sigma I(Y)
+(singleton - no torsor on the Lin block), inducing Z's K2 Lin block
+exactly. DISPLAY FIX: DD.4 must read Xbar ~ Sigma I^cont(Xbar) - this
+doc's display I^cont(Xbar) ~ Sigma Xbar is off by Sigma^2 against its
+own gluing maps (invisible in Mod_Y; fix before transplanting).
+Theorem EE.2 REFUTES N1-b: u -> 0 in pi_{-2}THR(F_2)^{tC_2} (the
+bidegree slot vanishes; two independent corroborations; the Weyl Tate
+is x-COMPLETE, opposite to the dihedral Tate) - g2 closed negatively;
+re-posed as N1-b' on the geometric t-shadow (QS21 A.5-A.7). The
+one-torsor reading loses its N1 leg; the torsor's support is exactly
+weights >= 1 (Lin block torsor-free as a theorem); leading
+z-coefficients are torsor-invariant. Also (worker FF, conditional):
+I^cont is NOT the Poisson-exchange carrier - DD.4's triple duty drops
+to double (scheme + pole); the scale needs a rational/Anderson layer.
