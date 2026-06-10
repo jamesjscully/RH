@@ -207,6 +207,11 @@ C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    diagonal's torsion (the q->1 leak again: buy the flow, lose the
    integers). Target the CONNECTIVE square ku ^ ku (psi^k act; THH(ku)
    has finite torsion, Ausoni) with the psi^k graphs as second family.
+   INPUT SECURED (2026-06-10): the INTEGRAL pi_* THH(ku) - the
+   Bokstedt-table analogue C6 needs - is computed in arXiv:2206.02411;
+   extract the torsion ladder and run the doc 19-20 pipeline
+   (regularized characteristic function, weight grading, place
+   dichotomy). C6 is executable, fresh-session scale.
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.
