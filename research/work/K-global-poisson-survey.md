@@ -96,9 +96,14 @@ abelian groups with rigidifying data (norm in the "Riemann sector" =
 metrized line bundles; morphism to R + root-of-unity parametrization in
 general); adele product = tensor product of these. No Riemann-Roch on a
 square, no positivity statement, no h^1 of a surface. It is the Picard/
-Jacobian INFRASTRUCTURE step - i.e. CC are walking the function-field
-proof's path (curve RR -> Pic -> Jacobian -> correspondences), currently
-between steps 2 and 3.
+Jacobian INFRASTRUCTURE step. [CORRECTED 2026-06-10, worker N from the
+2026 PDF: CC explicitly mark "a decisive departure from the classical
+function field analogy" AT EXACTLY THIS JOINT - instead of Frobenius
+acting on the Jacobian (the FF square step), they rely on the idele
+class group acting by translations. They are NOT walking the FF path
+toward the square; they fork to the trace-formula/spectral side at the
+point where the program needs the intersection form. The original
+"between steps 2 and 3" reading was wrong about their stated intent.]
 
 ### 1.2 Scoring
 
