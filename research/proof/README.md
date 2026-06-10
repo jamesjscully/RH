@@ -268,6 +268,16 @@ scripts/numerics/witness/certify_chain.py
     monoid ring of Z\0. Three-deep convergence: MONOID and COMPACTIFY. Proposed
     next object (pending sign-off): the product-formula determinant category.
 
+28. `28-product-formula-spec.md`
+    The PFD spec (user-approved direction): the compactified archimedean object
+    POSED as a structure - local determinant ladders + the degenerate sector,
+    glued by the PRODUCT FORMULA, with Poisson/the extension of U's finite-level
+    residue pairings as the defining property (Conjecture U.2 = the p=2
+    instance; Hesselholt's iota made structural). Kill-test battery K1-K6
+    pre-registered (scale out not in; negation restored => KMS-1/2 forced;
+    Barnes Gamma_2; Q's pole evaded; carrier fatality; zero free choices);
+    failure modes F-a/b/c named in advance.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
