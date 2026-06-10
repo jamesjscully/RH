@@ -197,15 +197,26 @@ scripts/numerics/witness/certify_chain.py
     char-p face Hesselholt's properness hypothesis; S-level open).
     Witness: prime_int_thh_supply.
 
-20. `20-tate-ladder-selfdual.md`
-    R-INT C5' diagnostic: duality completion GENERATES the self-dual normalization -
-    the full Tate ladder gives p^(s/2)(1 - p^(-s)) (KMS-1/2 emerges from the negative
-    half of the ladder), and the degenerate archimedean ladder gives
-    sqrt(2pi)/Gamma(s/2) with log-derivative (1/2) psi(1/4 + it/2) on the critical
-    line - both doc-19 fail-closed criteria met. Place dichotomy = orbit geometry
-    (compact orbit vs fixed point). Doc 10's realization inputs 4-for-4 at supply
-    level. Open: C5'' (derive the ladders from the equivariant homotopy theory),
-    C5''' (the global Poisson step = the zeros). Witness: prime_int_tate_ladder.
+20. `20-tate-ladder-selfdual.md` [CORRECTED 2026-06-10]
+    R-INT C5' diagnostic: duality completion generates the FULL LADDER (the local
+    factor with p^(s/2) appears under the symmetric regularization scheme); the
+    degenerate archimedean ladder gives sqrt(2pi)/Gamma(s/2) with the 1/4-shift
+    digamma on the critical line. CORRECTED in place (secs 2-3, 6): KMS-1/2 is a
+    SCHEME datum, not a ladder datum - Deninger 1992 Prop 2.3 / Hesselholt select
+    the prefactor-free scheme; realization inputs are 3-for-4 + a scheme-dependent
+    fourth whose selection principle is open (= the archimedean/C_2 question, gate
+    C5''-infty). Witnesses: prime_int_tate_ladder, prime_int_deninger_convention.
+
+21. `21-fleet-synthesis.md`
+    Verified four-front fleet synthesis (workers I/J/K/L in research/work/): the ku
+    ladder |T_2w| = lcm(1..w+1)/(w(w+1)) (global EF supply in one object, even-degree
+    / positive sign); the scheme separation refuting doc 20's headline; CC's PROVEN
+    integer Riemann-Roch + Serre duality for compactified Spec Z (the missing object
+    exists at curve level); T1 interval-CERTIFIED (R2 closed). Three tensions
+    (scheme, genus clash, sign flip) collapsed into the pre-registered front gate
+    Q-SCHEME; new standing gate G-INT6 (degrees-of-freedom audit, O_K negative
+    control). Witnesses: prime_int_ku_ladder, prime_int_deninger_convention,
+    prime_defect_t1_interval_certificate.
 
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom

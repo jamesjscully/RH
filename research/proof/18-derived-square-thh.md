@@ -70,7 +70,17 @@ where the sign lives.
 
 (ii) THE VALUE IS THE ARCHIMEDEAN CONSTANT. zeta'(0) = -(1/2) log 2pi is
 the constant of the completed zeta function (e^{zeta'(0)} = regularized
-det of the archimedean factor). The program's recurring finding was "the
+det of the archimedean factor).
+
+[SCALE NOTE 2026-06-10, from the fleet audit (J-doc + doc 21)]: this
+value is regularization-SCHEME-independent (a positive-real half-ladder
+has no conjugate-pairing ambiguity; both arg conventions agree) but
+SCALE-dependent: rescaling the eigenvalues by c shifts log det by
+zeta_H(0, s+1) log c = -(s + 1/2) log c, i.e. the constant is the
+UNIT-SCALE value and shifts by -(1/2) log c. The scale-invariant content
+is the digamma log-derivative shape plus the anomalous dimension
+-(s + 1/2). The claim "the torsion produces zeta'(0)" therefore carries
+one unit choice; what it produces invariantly is the Gamma-factor SHAPE. The program's recurring finding was "the
 archimedean place is identical for zeta and its fakes, and that is where
 positivity dies." Here the archimedean constant is PRODUCED - from
 integer torsion cardinalities - rather than inserted. The carrier is the

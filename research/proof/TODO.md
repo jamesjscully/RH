@@ -105,7 +105,12 @@ G-INT3 P2/Epstein gate (impossible for DH; must USE multiplicative closure -
 verbatim-Epstein = over-proving, dies); G-INT4 trichotomy gate (not secretly
 a square or Bochner form - level-2 fork, E3b machinery); G-INT5 no-scale
 check (counts of GLOBAL objects only; never residue cardinalities at infinity
-- the no-go configuration).
+- the no-go configuration); G-INT6 degrees-of-freedom audit (added
+2026-06-10, doc 21 sec 3: every ladder/dictionary claim ships a DOF
+ledger - #independently-matched constraints must EXCEED #free modeling
+choices (weight, scale, scheme, start, spacing), else it is calibration,
+not derivation; prefer ring-bearing negative controls: THH(O_K) must
+produce the DEDEKIND zeta_K supply, not zeta's).
 
 Candidate grammar, ordered by tractability:
 
@@ -159,9 +164,31 @@ C2 Trace-formula integer structures - SUBSUMED by doc 17 section 4, same
    mapped set. Signature side only (C4').
 ```
 
-R-INT STATUS after second pass (2026-06-09): C0, C0', C4, C4' executed;
-C1, C2 subsumed. Docs 17-18 are the rung record. Live fronts (doc 18
-section 6, ranked):
+R-INT STATUS after the verified fleet (2026-06-10): C0, C0', C4, C4',
+C5, C5'-diagnostic, C6-first-pass executed; C1, C2 subsumed; C5''-as-TP
+superseded. Docs 17-21 are the rung record (20 corrected in place;
+worker records in research/work/I,J,K,L; doc 21 = synthesis). THE FRONT
+GATE, before any other continuation (doc 21 sec 2):
+
+Q-SCHEME (pre-registered): for each square (HZ^HZ, ku^ku, CC's proper
+Spec Z bar) state the computed invariant as (ladder, weight dictionary,
+scale, scheme) and check cross-dictionary consistency in common units.
+Collapses the three open tensions: T-a KMS-1/2 scheme datum (J), T-b
+genus clash CC g=0 (deg K = -1.386 nats) vs THH g=1.459 (deg K = +0.919
+nats), T-c HZ-odd/negative vs ku-even/positive torsion sign. First
+witness: prime_int_genus_audit.py (K-doc step A, sign-corrected).
+Discovery banked meanwhile (fleet/K, verified): Connes-Consani PROVED
+integer-valued RR + Pontryagin-Serre duality for compactified Spec Z
+(arXiv:2205.01391 Thm 1.1-1.2, 2306.00456 Thm 1.1; circularity-clean) -
+the missing object EXISTS AT CURVE LEVEL as a theorem; their 2026
+Jacobian paper builds Pic infrastructure. BK/Ngo demoted to monitor
+(PD-only; PD is carrier-blind - Epstein passes Poisson). Blumberg-
+Mandell spectral Tate-Poitou = only existing duality-over-S theorem
+(diagnostic). Standing kill-test to keep in front (doc 21 sec 4): an
+S-level duality must be shown to do more than reproduce the functional
+equation - "Poisson achieved, still vacuous for RH" has no other guard.
+
+Older per-front records follow (kept for genealogy):
 
 C5 FIRST PASS EXECUTED (prime_int_thh_supply.py + doc 19, 2026-06-09):
    the digamma question answered YES at the affine level - the S^1-weighted
@@ -190,15 +217,24 @@ C5' DIAGNOSTIC EXECUTED (prime_int_tate_ladder.py + doc 20, 2026-06-10):
    log-derivative (1/2) psi(1/4 + it/2) ON the critical line (1.3e-6).
    Place dichotomy = orbit geometry: compact orbit (circumference log p)
    -> full ladder -> local factor with p^{s/2}; fixed point (infinity) ->
-   degenerate ladder -> Gamma_R. Doc 10's realization inputs now 4-for-4
-   at supply level, no zero-side input anywhere.
-C5'' (fresh-context scale, precisely posed): DERIVE the ladder data from
-   the homotopy theory - does the Tate/equivariant structure of the
-   compactified derived square produce (a) full ladders at finite places
-   (essentially Hesselholt), (b) the degenerate spacing-2 start-0 ladder
-   at infinity (THE open piece: Frobenius at infinity = circle action
-   degenerating, as a theorem), (c) the s(s-1) rank factors (pi_0
-   excess)? Then C5''' = the global Poisson step (the zeros).
+   degenerate ladder -> Gamma_R. [CORRECTED 2026-06-10, fleet/J + doc 20
+   sec 6: realization inputs are 3-FOR-4 plus a scheme-dependent fourth -
+   KMS-1/2 = full ladder + SYMMETRIC SCHEME, and no homotopy theorem
+   selects the scheme (Hesselholt selects the prefactor-FREE one,
+   Deninger 1992 Prop 2.3). Ladder claims stand; the scheme-selection
+   principle is OPEN and = the archimedean question (C_2/real structure,
+   gate C5''-infty in research/work/J-c5pp-tate-derivation.md sec 5).]
+C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" is structurally
+   killed by the BMS triple (p-complete technology; phi-semilinear
+   Frobenius = no eigenvalue ladders over Z_p; archimedean fracture
+   corner empty - sqrt(2pi) invisible to every completion). REPLACED by
+   gate C5''-infty (J-doc sec 5): genuine O(2)/real-cyclotomic object;
+   (infty-1) reflection-Tate ladder fold, (infty-2) canonical 1/(2pi)
+   scale = anomalous dimension (1-s)/2 = the EF's -(1/2)log pi term,
+   (infty-3) C_2 induces the symmetric scheme (only KMS-1/2 carrier
+   candidate), (infty-4) rank factors. FIRST STEP: THR(F_p) fold test,
+   readings r1/r2 pre-registered in the J-doc. Then C5''' = the global
+   Poisson step (the zeros).
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
    psi^k - the only known two-parameter correspondence family. POSING
@@ -207,11 +243,19 @@ C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    diagonal's torsion (the q->1 leak again: buy the flow, lose the
    integers). Target the CONNECTIVE square ku ^ ku (psi^k act; THH(ku)
    has finite torsion, Ausoni) with the psi^k graphs as second family.
-   INPUT SECURED (2026-06-10): the INTEGRAL pi_* THH(ku) - the
-   Bokstedt-table analogue C6 needs - is computed in arXiv:2206.02411;
-   extract the torsion ladder and run the doc 19-20 pipeline
-   (regularized characteristic function, weight grading, place
-   dichotomy). C6 is executable, fresh-session scale.
+   C6 FIRST PASS EXECUTED (2026-06-10, fleet/I, verified; record
+   research/work/I-c6-ku-square.md + prime_int_ku_ladder.py ALL PASS):
+   |T_2w| = lcm(1..w+1)/(w(w+1)) exactly, i.e. log|T_2w| = psi(w) +
+   Lambda(w+1) - log w(w+1) - the ku square's torsion carries the
+   GLOBAL Chebyshev/EF supply in single cardinalities (the fracture
+   square internalizes doc 19's sum over places); free-lattice
+   denominators lcm(1..k+2)/2; ALL torsion even-degree (H^2/surface
+   slot, pairs POSITIVELY - tension T-c, doc 21 sec 2); Adams shadow
+   Z/|k-l| per weight (shadow only). Next: C6' (D_ku constant after the
+   scheme fix - s=0 is pole-obstructed), C6'' (minimal twisted
+   instance: Lee descent SS with psi^{1+p}), C6''' (signature protocol
+   on the family matrices log|k-l|). Verification debt: AHL/Ausoni
+   cross-check of T(2)/T(p) tables (partial discharge via 2511.02346).
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.
@@ -370,11 +414,21 @@ Conclusion: the storage is genuinely path-dependent — the realization must be
 state-space (track the evolving response map), not a formula in the future
 residual. This rules out the last "cheap" version of R-KYP.
 
-### R2 - The certification rung (refutation-grade)
+### R2 - The certification rung (refutation-grade) - CLOSED 2026-06-10 (confirmation branch)
 
 T1 below. Its epistemic value is asymmetric: the finite model is a compression of the continuum
 form, so certified `H <= 0` would refute the local mechanism, while certified `H > 0` only confirms
-the numerics. Finish it, in the background, after R1 is moving.
+the numerics. OUTCOME (fleet/L, verified by independent rerun): CERTIFIED `H > 0` by rigorous ball
+arithmetic - `prime_defect_t1_interval_certificate.py` (exit-code gated; T=5000, prec=120;
+interval Cholesky A_+ > 0 all 21 pivots; Sylvester h11 = [+3.610e-2 +/- 2.2e-5],
+det H = [+4.817e-3 +/- 5.4e-6]; certifies down to T=1500; starved T=60 run aborts fail-closed).
+Two soundness bugs in older Arb diagnostics found and FIXED (S1: digamma .real inside an acb
+integrand broke holomorphy - old W_inf enclosures were not certificate-grade, replaced by
+holomorphic symmetrization; S2: float endpoint rounding outside the balls - ENDPOINT_SLOP).
+Record: research/work/L-t1-interval.md. Caveats: certificate is relative to the fixed dyadic
+basis B taken as exact; single interval library (Arb). Per the pre-registered asymmetry this
+confirms the floats and closes doc 08's pending item; it adds nothing to the asymptotic
+mechanism (R1's verdict stands). Optional T2 follow-up: same pipeline over refinement bases.
 
 ### R3 - Generalization rungs
 
@@ -438,7 +492,9 @@ Keep as guardrails:
 
 ### T1 - Default Active-23 Matrix Certificate
 
-Status: floating-point certificate found; interval certificate pending.
+Status: CERTIFIED 2026-06-10 - rigorous interval certificate done (see R2 rung above;
+witness prime_defect_t1_interval_certificate.py). The remainder of this section is kept
+as the historical record of the float-level evidence.
 
 Finite theorem to prove/certify:
 
