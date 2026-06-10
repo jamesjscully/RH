@@ -87,7 +87,17 @@ R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIR
     subset inductions}.
 ```
 
-### R-SQ - The doubled laboratory (OPENED 2026-06-09, user-approved; THE front rung)
+### R-SQ - The doubled laboratory (RESOLVED 2026-06-09 same day: two-variable conservation, proof/16)
+
+OUTCOME: pre-registered reading (b). E1/E2/E3a/E3a'/E3b all executed; the
+natural level-2 pairings trichotomize (free-blind / level-1 Bochner / the
+index itself) - the square's analytic shadow contains no new sign. THE WALL,
+sharpest form: not the absence of the square but the absence of an
+INTEGER-VALUED intersection pairing on any available square; doubling is
+cheap, discreteness is the entire cost. Positive residue: phase-free
+detection with measured threshold (E3a'), the finite Goldston-Montgomery
+instrument (E2), and the trichotomy as a reusable level-2 fork test.
+Full record: proof/16. Original spec follows.
 
 Premise (docs 14/15): every no-go so far is ONE-VARIABLE - functionals of single
 explicit-formula data fork to single-zero functionals. The missing second factor's
