@@ -330,11 +330,26 @@ C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    square internalizes doc 19's sum over places); free-lattice
    denominators lcm(1..k+2)/2; ALL torsion even-degree (H^2/surface
    slot, pairs POSITIVELY - tension T-c, doc 21 sec 2); Adams shadow
-   Z/|k-l| per weight (shadow only). Next: C6' (D_ku constant after the
-   scheme fix - s=0 is pole-obstructed), C6'' (minimal twisted
-   instance: Lee descent SS with psi^{1+p}), C6''' (signature protocol
-   on the family matrices log|k-l|). Verification debt: AHL/Ausoni
-   cross-check of T(2)/T(p) tables (partial discharge via 2511.02346).
+   Z/|k-l| per weight (shadow only). C6''' CLOSED (2026-06-10, doc 23
+   + repair sec 6: bare family Gram not Lorentzian; EXPLAINED and
+   REPAIRED by worker W's max-Gram lemma - the geometric family
+   {psi^{p^i}} is certified Lorentzian per weight with n-stable
+   t-window containing 0). C6'' EXECUTED FAIL-CLOSED (worker P + doc
+   26: blockers (A) structured Adams ops on MU + fork (N);
+   unconditional Lefschetz law det(1 - d psi^alpha | wt w) = p-part of
+   alpha^w - 1; all Adams graphs bidegree (1,1) => Castelnuovo growth
+   needs the MONOID/cyclotomic-Frobenius level). FORK STATUS (worker
+   T): (N) DECIDED at filtration 0 = branch (i) (exact bar theorem,
+   uniform Z/p^c, H_{>=1} = 0); Theorem T.3: the LTE bump has NO
+   filtration-0 home - branch (ii)'s pole only via filtration >= 1
+   towers/extensions; counital (A)-vessel DEAD for all wild alpha (KMN
+   rebuild forced); abutment open at degree 2p below ambiguities (L)
+   [literature-decidable: ku_{2p}(ku)_p divided class -
+   Adams-Clarke/Kane/Lellmann/AHL] and (S) [bites only for u = +-1 AND
+   c = 1]; pre-registered dodge: pi_{2p}X(1+3p) where only (L) bites.
+   Remaining: C6' (D_ku constant after the scheme fix - s=0
+   pole-obstructed). Verification debt: AHL/Ausoni cross-check of
+   T(2)/T(p) tables (partial discharge via 2511.02346).
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.
