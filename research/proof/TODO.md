@@ -124,11 +124,11 @@ C0' (normalization insight, from the ZN probe c(n) = n): count structures
    GRAMMAR REFINEMENT: restrict the search to self-dual count structures
    (pairings with built-in symmetry) - i.e., intersection pairings on
    squares; G-INT2 refines to "fingerprint at the self-dual normalization".
-C1 Orbit/fixed-point counts of the multiplicative dynamics: #Fix(x n) on
-   adelic solenoids/quotients (Artin-Mazur/Lefschetz integers, exist
-   unconditionally; periodic orbits = prime powers); pairing = coincidence
-   counts on the square of the system. The integer-native discrete version
-   of the Deninger continuum program.
+C1 Orbit/fixed-point counts - SUBSUMED by doc 17 section 4 (2026-06-10):
+   any self-dual tempered Euler count structure lands on Selberg-class
+   fingerprints (the mapped reachable set); C1 instances would re-confirm
+   the boundary, not extend it. The discriminating question is the
+   SIGNATURE side (C4'), not more fingerprint rows.
 C4 Hall pairing - EXECUTED (count_hall_signature.py + doc 17 sections 5-6):
    Hall numbers integer + symmetric (duality theorem, verified in-data);
    self-dual-grade forms POSITIVE DEFINITE all cells = metric, no index
@@ -144,10 +144,17 @@ C4' (REDIRECTED FRONT QUESTION, fresh-context scale): the Euler pairing on
    classes? Lorentzian answer = first sign-bearing integer pairing on an
    arithmetic square. Homotopy-theoretic computation (dual-Steenrod-type
    rings, THH-adjacent machinery).
-C2 Trace-formula integer structures: class numbers (Eichler-Selberg),
-   dimensions of form spaces - where arithmetic already pairs integer
-   multiplicities with spectra (source of the Selberg-zeta RH-analogue).
+C2 Trace-formula integer structures - SUBSUMED by doc 17 section 4, same
+   reason as C1; additionally the Hurwitz class numbers H(n) carry 1/3, 1/2
+   Aut-corrections (the groupoid/q->1 leak, third appearance). Integer class
+   numbers h(d) are non-multiplicative; their count structures land in the
+   mapped set. Signature side only (C4').
 ```
+
+R-INT STATUS after first pass (2026-06-10): C0, C0', C4 executed; C1, C2
+subsumed; the rung's single live front is C4' (Euler pairing over the
+derived square Z (x)^L_S Z - homotopy-theoretic, fresh-context scale).
+Doc 17 is the rung record.
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.
