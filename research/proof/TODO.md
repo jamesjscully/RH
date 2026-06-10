@@ -170,11 +170,13 @@ C5 (properness): the Tate/TP-style compactification of the derived square
    This is the S-arithmetic Riemann-Roch question; fresh-context scale,
    literature-adjacent (Hesselholt TP, arXiv:2011.11549 zeta-values).
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
-   HZ has no ring endomorphisms but KU has the Adams operations psi^k.
-   Compute the same pairing on the square KU ^ KU with the psi^k graphs
-   as the second family of classes (pi_*(KU^KU) = numerical polynomials,
-   torsion known). The only known candidate for the missing two-parameter
-   correspondence family.
+   HZ has no ring endomorphisms but K-theory has the Adams operations
+   psi^k - the only known two-parameter correspondence family. POSING
+   CONSTRAINT (doc 18 sec 6): periodic KU is OUT - Stonek proves
+   THH(KU) ~ KU v Sigma KU_Q, i.e. inverting Bott rationalizes the
+   diagonal's torsion (the q->1 leak again: buy the flow, lose the
+   integers). Target the CONNECTIVE square ku ^ ku (psi^k act; THH(ku)
+   has finite torsion, Ausoni) with the psi^k graphs as second family.
 
 Pre-registered readings: a candidate passing G-INT1-5 with a verified
 comparison identity = the first live S3 object - escalate immediately.

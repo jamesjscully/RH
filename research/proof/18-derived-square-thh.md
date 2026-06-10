@@ -127,10 +127,15 @@ term of the explicit formula, not just the constant)?
 C6 (Frobenius family): the FF proof needs the graphs of Frobenius powers
 as a second family of classes; Spec Z over S has none (ring maps HZ -> HZ
 are trivial). The chromatic world DOES have them: Adams operations psi^k
-on KU are ring maps, so the square KU ^ KU carries genuine "Frobenius
-graphs." Compute the same pairing there (pi_*(KU^KU) = numerical
-polynomials; torsion structure known). This is the only known candidate
-for the missing two-parameter family of correspondences.
+are ring maps, the only known candidate for the missing two-parameter
+family of correspondences. POSING CONSTRAINT (audited 2026-06-09): for
+PERIODIC KU the pairing does not apply - Stonek (arXiv:1801.00156) proves
+THH(KU) ~ KU v Sigma KU_Q: inverting Bott RATIONALIZES the diagonal's
+cotangent data (divisible, no cardinalities). The same trade as the q->1
+groupoid leak: buy the flow/symmetry, lose the integers. The correct
+target is CONNECTIVE ku: Adams operations still act, and THH(ku) has
+honest finite torsion (Ausoni's computation). C6 = the Euler pairing on
+the ku ^ ku square with the psi^k graphs as the second class family.
 
 Background: T1 interval certification (unchanged).
 
