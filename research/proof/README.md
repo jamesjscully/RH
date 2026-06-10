@@ -258,6 +258,16 @@ scripts/numerics/witness/certify_chain.py
     Adams group cannot carry Castelnuovo growth (monoid/Frobenius required). The
     address: the prime 2 and the monoid. Ranked live fronts in sec 4.
 
+27. `27-cycle3-synthesis.md`
+    Cycle-3 synthesis (workers T/U/V/W/X): the max-Gram lemma + first certified
+    Lorentzian family (product formula splits the two faces); the full ladder
+    certificate-grade incl. the DH control certified failing; F1 negative for THR
+    (the Weyl shears; scheme = archimedean = properness = ONE question, C5''');
+    fork (N) = branch (i) at filtration 0 with the abutment literature-decidable;
+    the grading bridge refuted - the strict square's universal invariant is the
+    monoid ring of Z\0. Three-deep convergence: MONOID and COMPACTIFY. Proposed
+    next object (pending sign-off): the product-formula determinant category.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
