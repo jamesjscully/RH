@@ -266,10 +266,26 @@ C5'' [SUPERSEDED 2026-06-10]: "via TP of the square" killed by the
    parametrized or duality layer (C5''' territory); three ranked
    probes in O-doc sec 4.7 incl. the A6 lambda^{1/2} kill-test for
    candidate carriers. RISK: F1 negative => realization input 4 loses
-   its only carrier. Refined gate: (infty-1') fold theorem-grade at
-   odd p, p = 2 + archimedean object open; (infty-2) 1/(2pi) scale
-   open; (infty-3'') L-hom/F1; (infty-4) untouched. Then C5''' = the
-   global Poisson step (the zeros).
+   its only carrier.
+   P=2 COMPUTED (2026-06-10, worker S + doc 25): Theorem S.1 (new):
+   THR(F_2)^{tC_2} = prod Sigma^{2n}(HF_2)^{tC_2}, pi_* =
+   F_2[[z]][t^{+-1}] (DMPR splitting => Borel formality => Tate SS
+   collapse; complete Tate square, integer-exact). The anomaly
+   factorizes: (odd-p fold core) x (Gamma_C degeneration - Serre's
+   (-1)^n dies mod 2; Legendre duplication mirrored exactly) x (Euler
+   tower = Barnes Gamma_2(s|1,2), quadratic anomalous dimension, the
+   first RANK-2 archimedean object from homotopy theory - candidate
+   for (infty-4)'s s(s-1) pair, unexplored). CONVERGENCE (doc 25 sec
+   3): KMS-1/2 APPEARS GEOMETRICALLY at 2 (S-r5: reflection-sector
+   duality completion yields 2^{(s+n)/2}(1-2^{-(s+n)}) per weight) +
+   O's lambda^{1/2} double cover (2-primary) + CC's K = -2{2}: the
+   scheme selector should be sought in the 2-primary sector - run
+   F1's probes against the S-doc Tate square first. Refined gate:
+   (infty-1') fold theorem-grade at odd p, p = 2 computed; (infty-2)
+   1/(2pi) scale open; (infty-3'') L-hom/F1 with 2-primary target;
+   (infty-4) candidate = Barnes Gamma_2. Then C5''' = the global
+   Poisson step (the zeros). Archimedean compactified object still
+   missing.
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
    psi^k - the only known two-parameter correspondence family. POSING
