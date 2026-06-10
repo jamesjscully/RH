@@ -626,7 +626,16 @@ Do not broaden the target until T1 is certified or fails.
 
 ### T2 - Refinement-Stable Active-Sector Theorem
 
-Status: diagnostic only.
+Status: CERTIFIED at all five refinement bases 2026-06-10 (worker R,
+prime_defect_t2_interval_sweep.py, reading R1 confirmation branch):
+A_+ > 0 and H = S+G > 0 by pivot-complete interval Cholesky at
+n17/n21/n25/n29/n33 including both 3D shells (min pivot lower bounds
++5.1e-3 ... +8.1e-2; worst margin/width 1.6e+02; in-sweep n25 control
+matches the T1 record digit-for-digit; float snapshot reproduced to
+6e-9). The "main weakness" below (3D shells lacked rigorous bounds) is
+DISCHARGED at the tested bases; stability is in resolution only, same
+late edge - cross-edge stability remains open. Record:
+research/work/R-t2-interval-sweep.md. Historical text follows.
 
 Goal:
 
@@ -650,6 +659,7 @@ Main weakness:
 
 ```text
 3D refined shells have H SPD numerically, but not yet with rigorous matrix-entry bounds.
+[DISCHARGED 2026-06-10 at the tested bases - see Status above.]
 ```
 
 Next work after T1:
