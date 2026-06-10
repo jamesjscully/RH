@@ -97,31 +97,47 @@ the free (non-EF-derived) positivity |sum_gamma c(gamma) X^{i gamma}|^2 >= 0 and
 the Castelnuovo/Hodge-index inequality as the index's landing spot. Nobody (repo
 or literature) has run a POSITIVITY LAB at two variables.
 
-Ordered experiments, fail-closed readings fixed in advance:
+Ordered experiments, fail-closed readings fixed in advance; status updated live:
 
 ```text
-E1 (doubled closure). Build A_h(t) = sum_rho hhat(z_rho)^2 e^{i z_rho t} both
-   ways: zero side (actual zeros) and arithmetic side (EF for the translated
-   test; pole kills survive translation thanks to the p(D) device). Validate
-   pointwise in t; then the doubled form  D(k) = int k(t) |A(t)|^2 dt
-   = sum_{rho,rho'} pair-sum, the free positivity with an arithmetic
-   representation. READING: establishes the lab's exactness; failure means a
-   convention bug, not mathematics - fix before proceeding.
-E2 (P1 by fork test). The pair functional Q(g2) = sum_{n,m} Lambda(n)Lambda(m)
-   (nm)^{-1/2} g2(log n - log m) is genuinely two-variable arithmetic data.
-   Fork-test it against the SINGLE-zero Gram (fork_lib). PREDICTED: does NOT
-   fork to single-zero data (first verified P1 instance) but DOES match its
-   PAIR-zero image (level-2 conservation instance, Goldston-Montgomery's
-   finite shadow). If it DOES fork to single-zero data: discovery of a hidden
-   one-variable reduction of pair data - publish either way.
-E3 (index hunt). Castelnuovo-shaped inequality on the doubled data: cross
-   block bounded by geometric mean of diagonal blocks with a defect term;
-   zeta vs DH. READING: if an index-shaped inequality holds for zeta's finite
-   doubled data, fails for DH, and does NOT fork to pair-zero data (level-2
-   fork test), it is the first live S3 candidate with a finite shadow. If
-   everything forks at level 2: the conservation law persists at two
-   variables - a NEW no-go constraining every square-based program (CC
-   included), publishable.
+E1 (doubled closure) - DONE, PASSES (prime_pair_closure.py): A(t) closes
+   zero-side vs arithmetic-side to 8e-6..2.6e-4 over t in [0,3]; doubled
+   Fejer form closes to 3.0e-5; positivity manifest both ways. (One bug
+   caught fail-closed: translated tests reach primes to e^{R+t}.)
+E2 (P1 + level-2 image) - DONE, PASSES (prime_pair_fork.py): P1 holds
+   STRUCTURALLY at level 1 (the pair functional is quadratic in Lambda; the
+   level-1 orbit is linear - no transport exists; first verified P1
+   instance). Level-2 conservation VERIFIED: the finite Goldston-Montgomery
+   identity 16*PZ = int kB^2 + 2 int kBS + int kS^2 closes to 2.9e-5
+   (explicit zero-pair double sum; internal consistency 7.1e-7). The
+   conservation law moves up one level instead of breaking. CONSEQUENCE:
+   the index must be hunted in INEQUALITIES between pair objects, not in
+   their values.
+E3a (phase-free detection) - PARTIAL PASS (prime_pair_dh_growth.py): the
+   doubled form discriminates zeta from DH from coefficient data alone with
+   NO phase engineering and NO interpolation (zeta cells at the stationary
+   Fejer baseline, slopes +0.28/+0.32 ~ 1/T0; both DH cells accelerate,
+   +0.46/+0.49) - the first structural ADVANTAGE of level 2 over level 1
+   (level-1 detection needed the Yoshida device). Localization at a target
+   zero NOT confirmed: the DH@30 control was as hot as DH@85.7 - consistent
+   with DH's known sigma > 1 zeros at scattered heights (the control-cell
+   assumption was wrong, not the mechanism).
+E3a' (localization redesign) - NEXT: rerun the four-cell experiment with
+   scattering.py's S_offline (engineered SINGLE off-line resonance, FE
+   preserved, position controllable) as the one-zero object. READING:
+   slope excess localized at the engineered frequency and absent elsewhere
+   = phase-free detection is frequency-localized; then quantify the
+   detection threshold (minimal sigma visible at support R) and compare to
+   the one-variable detection lemma's reach.
+E3b (the Castelnuovo shape) - OPEN, sharpened by E2: since pair VALUES are
+   level-2-conserved, the index must be an inequality: cross pair-block
+   bounded by diagonal pair-blocks with a discrete defect. Candidate form:
+   for the flow-shifted family A_s(t) = A(t+s), test whether the matrix
+   C[s,s'] = int k A_s A_{s'} has, for zeta, a constrained signature /
+   determinant structure that fails for the off-line objects - and run the
+   level-2 fork on the INEQUALITY'S DEFECT, not on the values. READING
+   unchanged: live S3 candidate vs two-variable conservation no-go -
+   publishable either way.
 ```
 
 Guards inherited: F1-F3 (doc 14, now at level 2: the comparison map is the
