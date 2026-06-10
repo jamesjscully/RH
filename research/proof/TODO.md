@@ -347,6 +347,21 @@ C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    [literature-decidable: ku_{2p}(ku)_p divided class -
    Adams-Clarke/Kane/Lellmann/AHL] and (S) [bites only for u = +-1 AND
    c = 1]; pre-registered dodge: pi_{2p}X(1+3p) where only (L) bites.
+   FORK DECIDED (2026-06-10, worker Y): (L) = NO from Kane Mem. AMS 254
+   (19.6.1) via Baker-Richter 0506455 sec 8 - the first divided class
+   sits at homotopy degree 2p^2-2, the lattice is monomial for all
+   w <= p^2-2. Hence pi_{2p}X(1+3p) = Z/p, BRANCH (i) UNIFORM; branch
+   (ii) is DEAD AS A FAMILY LAW (fails at every u != +-1); the s=0
+   pole survives only as a filtration >= 1 question on the
+   measure-zero locus u = +-1, c = 1. The decided filtration-0
+   Dirichlet signature is ENTIRE - no pole, no zeta factor for any
+   wild alpha (quantitative Theorem T.3). NEW: the truncation
+   RELOCATES to w = p^2-1 (valuation drops c -> c-1 exactly there;
+   grid fact, not proved). CONSEQUENCE: the local Euler supply does
+   NOT live in the invertible twisted Adams family at filtration 0 -
+   consistent with the monoid convergence; the supply carrier remains
+   the cyclotomic/monoid level and the PFD object (doc 28). C6''
+   CLOSES (decided negative for supply; count-grade structure stands).
    Remaining: C6' (D_ku constant after the scheme fix - s=0
    pole-obstructed). Verification debt: AHL/Ausoni cross-check of
    T(2)/T(p) tables (partial discharge via 2511.02346).

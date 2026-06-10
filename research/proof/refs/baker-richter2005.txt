@@ -1,0 +1,2069 @@
+ON THE COOPERATION ALGEBRA OF THE CONNECTIVE ADAMS
+SUMMAND
+
+arXiv:math/0506455v2 [math.AT] 5 Jul 2005
+
+ANDREW BAKER AND BIRGIT RICHTER
+Abstract. The aim of this paper is to gain explicit information about the multiplicative
+structure of ℓ∗ ℓ, where ℓ is the connective Adams summand. Our approach differs from Kane’s
+or Lellmann’s because our main technical tool is the M U -based Künneth spectral sequence.
+We prove that the algebra structure on ℓ∗ ℓ is inherited from the multiplication on a Koszul
+resolution of ℓ∗ BP .
+
+Introduction
+Our goal in these notes is to shed light on the structure, in particular on the multiplicative
+structure, of ℓ∗ ℓ, where we work at an odd prime p and ℓ is the Adams summand of the plocalization of the connective K-theory spectrum ku. This was investigated by Kane [5] and
+Lellmann [9] using Brown-Gitler spectra. Our approach is different and exploits the fact that
+M U is a commutative S-algebra in the sense of Elmendorf, Kriz, Mandell and May [4] and ℓ is
+a M U -ring spectrum (in fact it is even an M U -algebra). As a calculational tool, we make use
+of a Künneth spectral sequence (2.2) converging to ℓ∗ ℓ where we work with a concrete Koszul
+resolution. Our approach bears some similarities to old work of Landweber [8], who worked
+without the benefit of the modern development of structured ring spectra. The multiplicative
+structure on the Koszul resolution gives us control over the convergence of the spectral sequence
+and the multiplicative structure of ℓ∗ ℓ. In particular, it sheds light on the torsion.
+The outline of the paper is as follows. We recall some basic facts about complex cobordism,
+M U , in Section 1 and describe the Künneth spectral sequence in Section 2. Some background
+on the Bockstein spectral sequence is given in Section 3. The multiplicative structure on the
+E2 -term of this spectral sequence is made precise in section 4 where we introduce the Koszul
+resolution we will use later in terms of its multiplicative generators. We study the torsion part
+in ℓ∗ ℓ and the torsion-free part separately. The investigation of ordinary and L-homology of ℓ in
+Section 5 leads to the identification of the p-torsion in ℓ∗ ℓ with the u-torsion where ℓ∗ = Z(p) [u]
+with u being in degree 2p − 2. In Section 6 we show how to exploit the cofibre sequence
+p
+
+ℓ−
+→ ℓ −→ ℓ/p
+to analyse the Künneth spectral sequence and relate the simpler spectral sequence for ℓ/p to
+that for ℓ. To that end we prove an auxiliary result on connecting homomorphisms in the
+Künneth spectral sequence, which is analogous to the well-known geometric boundary theorem
+(see for instance [14, chapter 2, §3]). We summarize our calculation of ℓ∗ ℓ at the end of that
+section.
+In Section 7 we use classical tools from the Adams spectral sequence in order to study
+torsion phenomena in ℓ∗ ℓ. We use the fact that the p and u-torsion is all simple to show that
+the Künneth spectral sequence for ℓ∗ ℓ collapses at the E2 -term and that there are no extension
+issues. We can describe the torsion in ℓ∗ ℓ in terms of familiar elements which are certain
+coaction-primitives in the Fp -homology of ℓ.
+2000 Mathematics Subject Classification. Primary 55P43, 55N15; Secondary 55N20, 18G15.
+Key words and phrases. connective K-theory.
+We would like to thank Iain Gordon, John Rognes and Sarah Whitehouse for helpful comments. The
+first author was supported by the Max-Planck institute of mathematics, Bonn, and the second author by the
+Strategisk Universitetsprogram i Ren Matematikk (SUPREMA) of the Norwegian Research Council. We thank
+the universities of Bern, Bonn, and Oslo for their hospitality.
+1
+
+We summarize our results on the multiplicative structure on ℓ∗ ℓ at the end of Section 8 where
+we establish congruence relations in the zero line of the Künneth spectral sequence and describe
+the map from the torsion-free part of ℓ∗ ℓ to ℓ∗ ℓ ⊗ Q. Taking this together with the explicit
+formulæ of the multiplication in the torsion part in ℓ∗ ℓ gives a rather comprehensive, though
+not complete, description of the multiplicative structure of ℓ∗ ℓ.
+1. Recollections on M U and ℓ
+Throughout, we will assume all spectra are localized at p for some odd prime p.
+Let ku denote connective complex K-theory and let ℓ be the Adams summand, also known
+as BP h1i, so that
+_
+ku(p) ∼
+Σ2i ℓ.
+0⩽i⩽p−2
+
+We have ℓ∗ = π∗ ℓ = Z(p) [u] with u ∈ ℓ2(p−1) . We will denote the Adams summand of KU(p) by
+L; then L∗ = ℓ∗ [u−1 ].
+Let us recall some standard facts for which convenient sources are [1, 15]. Since ℓ is complex
+oriented,
+ℓ∗ M U = ℓ∗ [m′n : n ⩾ 1],
+where m′n ∈ ℓ2n M U agrees with the mℓn of Adams [1]. By the Hattori-Stong theorem, the
+Hurewicz homomorphism M U∗ −→ ℓ∗ M U is a split monomorphism, so we will view M U∗ as a
+subring of ℓ∗ M U . Now
+M U∗ = Z(p) [xn : n ⩾ 1],
+where xn ∈ M U2n and using Milnor’s criterion for polynomial generators of M U∗ we can arrange
+that
+(
+pm′pk −1 mod decomposables if n = pk − 1 for some k,
+xn ≡
+mod decomposables otherwise.
+m′n
+In fact, we can take xpk −1 = vk to be the Hazewinkel generator which lies in BP∗ ⊆ M U∗ . The
+following formula recursively determines the Hurewicz image of vk in H∗ M U = Z(p) [mk : k ⩾ 1]:
+(1.1)
+
+X
+
+vk = pmpk −1 −
+
+j
+
+p
+.
+mpj −1 vk−j
+
+1⩽j⩽k−1
+
+In H∗ BP with ℓk = mpk −1 , this corresponds to the familiar formula
+X
+pj
+.
+(1.2)
+vk = pℓk −
+ℓj vk−j
+1⩽j⩽k−1
+
+We note that
+
+(1.3)
+
+ℓ∗ M U/(xn : n 6= pk − 1 for any k) = ℓ∗ [tk : k ⩾ 1] = ℓ∗ BP,
+
+where tk ∈ ℓ2pk −2 BP is the image of the standard polynomial generator tk ∈ BP∗ BP of [1].
+Now recall that the natural complex orientation of ℓ factors as
+σ : M U −→ BP −→ ℓ
+and we can choose the generators xn so that
+(
+u
+σ∗ (xn ) =
+0
+
+if n = p − 1,
+otherwise.
+
+In particular, the kernel of the map BP∗ −→ ℓ∗ is the ideal generated by the Hazewinkel
+generators v2 , v3 , . . ..
+We can also find useful expressions for the vn . Using standard formulæ for the right unit
+ηR : BP∗ −→ BP∗ BP which can be found in [15], we have for n ⩾ 2,
+(1.4)
+
+vn = ptn + utpn−1 − up
+2
+
+n−1
+
+tn−1 + ps′n + us′′n ,
+
+where s′n , s′′n ∈ Z(p) [u, t1 , . . . , tn−1 ]. We also have v1 = pt1 + u.
+We now make some useful deductions. To ease notation we write vn for the image e(vn ) ∈
+E∗ BP of vn under the Hurewicz homorphism e : BP∗ −→ E∗ BP .
+Proposition 1.1. In the ring Q ⊗ ℓ∗ BP , the sequence v2 , v3 , . . . , vn , . . . is regular and
+Q ⊗ ℓ∗ BP/(vn : n ⩾ 2) = Q ⊗ ℓ∗ [t1 ] = Q ⊗ ℓ∗ [v1 ].
+Proof. For each n ⩾ 1, ptn is a polynomial generator for Q ⊗ ℓ∗ BP = Q ⊗ ℓ∗ [ti : i ⩾ 1] over
+Q ⊗ ℓ∗ .
+
+Proposition 1.2. In the ring L∗ BP , the sequence v2 , v3 , . . . , vn , . . . is regular and
+n
+
+L∗ BP/(vn : n ⩾ 2) = L∗ [tk : k ⩾ 1]/(tpn − up −1 tn + pu−1 s′n+1 + s′′n+1 + pu−1 tn+1 : n ⩾ 1).
+In the ring L∗ BP/(p), the sequence v2 , v3 , . . . , vn , . . . is regular and
+n
+
+L∗ BP/(p, vn : n ⩾ 2) = L∗ /(p)[tk : k ⩾ 1]/(tpn − up −1 tn + s′′n+1 : n ⩾ 1).
+Proof. The case of L∗ BP follows from Proposition 2.2, but here is a direct proof.
+By induction, for each m ⩾ 2 there is a monomorphism of L∗ -algebras
+L∗ BP/(vn : m ⩾ n ⩾ 2) −→ Q ⊗ L∗ [t1 , tk : k ⩾ m + 1]
+under which the image of vm+1 is clearly not a zero-divisor. This shows that the vn form a
+regular sequence in L∗ BP .
+
+2. A Künneth spectral sequence for ℓ∗ ℓ
+We will describe a calculation of ℓ∗ ℓ = π∗ (ℓ ∧ ℓ) that makes use of the Künneth spectral
+sequence of [4] for M U -modules. This is different from the approach taken by Kane [5], and
+we feel it offers some insight into the form of answer, especially with regard to multiplicative
+structure.
+For any ring spectrum E and M U -ring spectrum F , there is a homologically graded spectral
+sequence
+(2.1)
+
+U∗
+∼
+E2s,t = TorM
+s,t (π∗ (E ∧ M U ), π∗ F ) =⇒ π∗ ((E ∧ M U ) ∧M U F ) = π∗ (E ∧ F ) = E∗ F.
+
+Note that this spectral sequence is actually multiplicative [3]. Taking E = F = ℓ we obtain a
+multiplicative spectral sequence
+(2.2)
+
+U∗
+E2s,t = TorM
+s,t (π∗ (ℓ ∧ M U ), π∗ ℓ) =⇒ ℓ∗ ℓ.
+
+Now consider the M U∗ -module ℓ∗ . We can assume that the complex orientation gives rise to
+a ring isomorphism
+∼
+=
+
+M U∗ /(xn : n 6= p − 1) −−→ ℓ∗ .
+There is a Koszul resolution of ℓ∗ as a module over M U∗ ,
+ΛM U∗ (er : 0 < r 6= p − 1) −→ ℓ∗ → 0,
+where ΛM U∗ (er : 0 < r 6= p − 1) is the exterior algebra generated by elements er of bidegree
+(1, 2r) whose differential d is the derivation which satisfies d(er ) = xr .
+For arbitrary E and F = ℓ, the E2 -term of the spectral sequence (2.1) is the homology of the
+complex
+E∗ M U ⊗M U∗ ΛM U∗ (er : 0 < r 6= p − 1) ∼
+= ΛE∗ M U (er : 0 < r 6= p − 1)
+with differential id⊗d which corresponds to the differential d taking values in the latter complex.
+From (1.3) we find that the homology of this complex is
+(2.3)
+
+H∗ (ΛE∗ M U (er : 0 < r 6= p − 1), d) = H∗ (ΛE∗ BP (εr : r ⩾ 2), d),
+
+where εr has bidegree (1, 2pr − 2) and d(εr ) = vr .
+3
+
+Proposition 2.1. Suppose that the E-theory Hurewicz images of the vk in E∗ BP with k ⩾ 2
+form a regular sequence. Then the complex
+ΛE∗ BP (εr : r ⩾ 2) −→ E∗ BP/(vr : r ⩾ 2) → 0
+is acyclic and
+U∗
+TorM
+s,∗ (E∗ M U, ℓ∗ ) =
+
+(2.4)
+
+(
+
+E∗ BP/(vr : r ⩾ 2)
+0
+
+if s = 0,
+otherwise.
+
+Therefore the Künneth spectral sequence of (2.1) degenerates to give an isomorphism
+∼
+=
+
+E∗ BP/(vr : r ⩾ 2) −−→ E∗ ℓ.
+The regularity condition of this result occurs for the cases E = ℓQ, L/p by Propositions 1.2
+and 1.1. We do not have a proof that it holds for the case E = L, however the following provides
+a substitute.
+Proposition 2.2. Suppose that E is a p-local Landweber exact spectrum. Then the complex
+ΛE∗ BP (εr : r ⩾ 2) −→ E∗ BP/(vr : r ⩾ 2) → 0
+is acyclic and the conclusion of Proposition 2.1 is valid.
+Proof. The hypothesis means that the functor E∗ ⊗M U∗ ( ) is exact on the category of left
+M U∗ M U -comodules. Then
+E∗ M U ⊗M U∗ ΛM U∗ (er : r ⩾ 2) ∼
+= E∗ ⊗M U∗ M U∗ M U ⊗M U∗ ΛM U∗ (er : r ⩾ 2)
+∼
+= E∗ ⊗M U ΛM U M U (er : r ⩾ 2)
+∗
+
+∗
+
+∼
+= E∗ ⊗M U∗ ΛM U∗ BP (εr : r ⩾ 2).
+But now it is easy to see that the sequence ηR (v2 ), ηR (v3 ), . . . is regular in M U∗ BP since
+ηR (vk ) = vk mod (ti : i ⩾ 1)
+and v2 , v3 , . . . is a regular sequence in M U∗ . Therefore
+ΛM U∗ BP (εr : r ⩾ 2) −→ M U∗ BP/(ηR (vr ) : r ⩾ 2) → 0
+is exact and so is
+E∗ ⊗M U∗ ΛM U∗ BP (εr : r ⩾ 2) −→ E∗ ⊗M U∗ M U∗ BP/(ηR (vr ) : r ⩾ 2) → 0,
+since in each homological degree, ΛM U∗ BP (εr : r ⩾ 2) is a free M U∗ BP -module and therefore
+an M U∗ M U -comodule. From this we obtain the result.
+
+Of course, this result applies when E = L. Later we will also consider some cases where these
+regularity conditions do not hold.
+3. Bockstein spectral sequences
+We follow [16, p158] in this account. Let R be a graded commutative ring and suppose that
+we have an exact couple of graded R-modules
+A0∗
+
+x·
+
+`@@
+@@
+@@
+@
+δ0
+
+B∗0
+4
+
+/ A0
+∗
+~
+~
+~
+~~
+~ ~ j0
+
+where δ0 is a map of degree |x| − 1 and x· is multiplication by x ∈ R. Then there are inductively
+defined exact couples
+Ar∗
+
+x·
+
+`AA
+AA
+AA
+AA
+r
+δ
+
+B∗r
+
+/ Ar
+∗
+}
+}}
+}
+}} r
+~}} j
+
+and an associated spectral sequence (B r , dr ) with B∗r+1 = H(B∗r , dr ). For each r ⩾ 1, there are
+exact sequences
+(3.1)
+
+j¯r
+
+δr
+
+0 → A0n /(xA0n−|x| + xr A0n ) −→ Bnr −→ x A0n+|x|+r−1 ∩ xr A0n+|x|+r−r|x|−1 → 0,
+
+where
+0
+0
+r
+0
+xr An = ker(x : An −→ An+r|x| ),
+
+0
+x∞ An =
+
+[
+
+0
+xr An .
+
+r⩾1
+∞
+1
+In particular, if Bn = Bn = 0 for some n, we obtain the following:
+
+(3.2)
+
+x∞ An = x An ,
+
+(3.3)
+
+ker δ0 = ker d0 = im j 0 .
+4. Generalized Koszul complexes and Bockstein spectral sequences
+
+Let R be a commutative ring and x ∈ R a non-zero divisor which is also not a unit. Let
+w1 , w2 , w3 , . . . be a (possibly finite) regular sequence in R which reduces to a regular sequence
+in R/(x).
+The Koszul complex (ΛR (er : r ⩾ 1), d) whose differential is the R-derivation determined by
+d(er ) = wr provides a resolution
+ΛR (er : r ⩾ 1) −→ R/(wr : r ⩾ 1) → 0
+of R/(wr : r ⩾ 1) by R-modules.
+Now consider the sequence xw1 , xw2 , xw3 , . . . which is not regular in R since for s > r,
+wr (xws ) = ws (xwr ).
+The Koszul complex (ΛR (e′r : r ⩾ 1), d′ ) with differential satisfying d′ (e′r ) = xwr is no longer
+exact but does augment onto R/(xwr : r ⩾ 1). Notice that there is a monomorphism of R-dga’s
+j : ΛR (e′r : r ⩾ 1) −→ ΛR (er : r ⩾ 1);
+
+j(e′r ) = xer ,
+
+and this covers the reduction map R/(xwr : r ⩾ 1) −→ R/(wr : r ⩾ 1). Using this, we will
+view ΛR (e′r : r ⩾ 1) as a subcomplex of ΛR (er : r ⩾ 1). We want to determine the homology of
+(ΛR (e′r : r ⩾ 1), d′ ).
+Suppose that z ∈ ΛR (e′r : r ⩾ 1)n with n > 0 and d′ (z) = 0. Then working in ΛR (er : r ⩾ 1)
+we have d(j(z)) = 0, so by exactness of the latter complex, there is an element
+X
+yi1 ,i2 ,...,in+1 ei1 ei2 · · · ein+1 ∈ ΛR (er : r ⩾ 1)n+1
+y=
+1⩽i1 <i2 <···<in+1
+
+for which d(y) = j(z). But
+d(y) =
+
+X
+
+1⩽i1 <i2 <···<in+1
+1⩽k⩽n+1
+
+Since we have
+j(z) =
+
+(−1)k wik yi1 ,i2 ,...,in+1 ei1 ei2 · · · ebik · · · ein+1 .
+
+X
+
+xn zi1 ,i2 ,...,in ei1 ei2 · · · ein ,
+
+1⩽i1 <i2 <···<in
+
+using the regularity assumption we find that each yi1 ,i2 ,...,in+1 has the form
+yi1 ,i2 ,...,in+1 = xn yi′1 ,i2 ,...,in+1
+5
+
+for some yi′1 ,i2 ,...,in+1 ∈ R and therefore
+X
+z=
+(−1)k wik yi′1 ,i2 ,...,in+1 e′i1 e′i2 · · · eb′ ik · · · e′in+1 .
+1⩽i1 <i2 <···<in+1
+1⩽k⩽n+1
+
+Notice that
+
+
+
+xz = d′ 
+
+X
+
+1⩽i1 <i2 <···<in+1
+
+
+
+yi′1 ,i2 ,...,in+1 e′i1 e′i2 · · · e′in+1  ,
+
+hence x annihilates the n-th homology of ΛR (e′r : r ⩾ 1), hence it is an R/(x)-module spanned
+by the elements
+X
+(4.1)
+∆x (i1 , i2 , . . . , in+1 ) =
+(−1)k wik e′i1 e′i2 · · · eb′ ik · · · e′in+1
+1⩽k⩽n+1
+
+for collections of distinct integers i1 , i2 , . . . , in+1 ⩾ 1. Clearly for a permutation σ ∈ Sn+1 ,
+∆x (iσ(1) , iσ(2) , . . . , iσ(n+1) ) = sign σ ∆x (i1 , i2 , . . . , in+1 ).
+Thus we will often restrict attention to indexing sequences satisfying
+1 ⩽ i1 < i2 < · · · < in+1 .
+These elements satisfy some further additive and multiplicative relations.
+
+Proposition 4.1. Let r, s ⩾ 2 and suppose that i1 , i2 , . . . , ir ⩾ 1 and j1 , j2 , . . . , js ⩾ 1 are
+sequences of distinct integers. Let
+t = #{i1 , i2 , . . . , ir } ∪ {j1 , j2 , . . . , js }
+and write
+{k1 , k2 , . . . , kt } = {i1 , i2 , . . . , ir } ∪ {j1 , j2 , . . . , js }
+with 1 ⩽ k1 < k2 < · · · < kt . Then the following identities are satisfied in each of ΛR (e′r : r ⩾ 1)
+and H∗ (ΛR (e′r : r ⩾ 1), d′ ).
+(4.2a) ∆x (i1 , i2 , . . . , ir )∆x (j1 , j2 , . . . , js ) =
+
+
+0
+
+
+
+
+(−1)a w ∆x (k1 , k2 , . . . , kt )
+km
+r
+
+X
+
+
+
+(−1)j+s+1 wij ∆x (i1 , i2 , . . . , bij , . . . ir , j1 , j2 , . . . , js )
+
+
+
+if t ⩽ r + s − 2,
+if t = r + s − 1 & km = ia = jb ,
+if t = r + s,
+
+j=1
+
+(4.2b)
+
+r
+X
+(−1)j wij ∆x (i1 , i2 , . . . , bij , . . . ir ) = 0.
+j=1
+
+Theorem 4.2. The homology of (ΛR (e′r : r ⩾ 1), d′ ) is given by
+(
+R/(xwr : r ⩾ 1)
+Hn (ΛR (e′r : r ⩾ 1), d′ ) =
+R/(x){∆x (i1 , i2 , . . . , in+1 ) : 1 ⩽ i1 < i2 < · · · < in+1 }
+
+if n = 0,
+if n > 0
+
+where in the second case, the R/(x)-module is generated by the ∆x (i1 , i2 , . . . , in+1 ) indicated,
+subject to relations given in (4.2b).
+Proof. Consider the long exact sequence obtained by taking homology of the exact sequence
+→ R/(x) ⊗R ΛR (e′r : r ⩾ 1) → 0.
+→ R ⊗R ΛR (e′r : r ⩾ 1) −
+0 → R ⊗R ΛR (e′r : r ⩾ 1) −
+The associated exact couple has
+A0∗ = H∗ (ΛR (e′r : r ⩾ 1), d′ ),
+B∗0 = H∗ (ΛR/(x) (e′r : r ⩾ 1), d′ ) = ΛR/(x) (e′r : r ⩾ 1).
+6
+
+Making use of the formula d0 e′r = wr we find that
+B∗1 = R/(x, w1 , w2 , . . .),
+and therefore the x-torsion in A0∗ is all simple.
+
+
+
+Notice that the quotient R-module R/(xwr : r ⩾ 1) has x-torsion, as does the higher homology, at least if the sequence of wr ’s has at least two terms.
+5. Ordinary and L-homology of ℓ
+We can compute H∗ ℓ using the spectral sequence (Er∗,∗ (H), dr ) obtained from (2.1) by taking
+E = H = HZ(p) and F = ℓ. This can be compared with the spectral sequence (Er∗,∗ (HQ), dr )
+for HQ∗ ℓ making use of the morphism of spectral sequences
+Er∗,∗ (H) −→ Er∗,∗ (HQ)
+induced by the natural map H −→ HQ. We will also consider the spectral sequence (Er∗,∗ (H̄), dr )
+associated with H̄ = HFp .
+By (1.2), the sequence v2 , v3 , . . . , vn , . . . in the polynomial ring HQ∗ BP = Q[ℓi : i ⩾ 1] is
+regular. So by Proposition 2.1 we have
+(
+Q[ℓi : i ⩾ 1]/(vk : k ⩾ 2) if s = 0,
+2
+(5.1)
+Es,∗ (HQ) =
+0
+otherwise.
+Hence this spectral sequence collapses at E2 and we have
+HQ∗ ℓ = Q[ℓ1 ] = Q[v1 ],
+where v1 = pℓ1 . The image of ℓn in HQ∗ ℓ can be recursively computed with the aid of the
+following formula derived from (1.2):
+(5.2)
+
+ℓn =
+
+v1p
+
+n−1
+
+ℓn−1
+.
+p
+
+So we have
+(pn −1)/(p−1)
+
+(5.3)
+
+ℓn =
+
+v1
+
+pn
+
+= pp
+
+n−1 +pn−2 +···+p+1−n
+
+(pn −1)/(p−1)
+
+ℓ1
+
+.
+
+Notice that for a monomial in the ℓj ’s in HQ2m(p−1) ℓ, we have
+ℓr11 · · · ℓrnn =
+
+v1m
+pr1 +2r2 +···+nrn
+
+,
+
+for which
+pn − 1
+p2 − 1
++ · · · + rn
+= m.
+p−1
+p−1
+This calculation shows that the images of the monomials in the ℓj ’s in HQ2m(p−1) ℓ are contained
+r
+m m
+in the cyclic Z(p) -module generated by ℓm
+1 = v1 /p . Turning to the spectral sequence E∗,∗ (H),
+we see that
+E20,∗ (H) = H∗ BP/(vj : j ⩾ 2)
+r1 + 2r2 + · · · + nrn ⩽ r1 + r2
+
+and the natural map
+H2m(p−1) BP/(vj : j ⩾ 2) −→ HQ2m(p−1) BP/(vj : j ⩾ 2)
+has image equal Z(p) ℓm
+1 . In [1], the analogous result for ku was obtained using the Adams
+spectral sequence.
+7
+
+Proposition 5.1. For m ⩾ 0,
+v1m
+im[H2m(p−1) ℓ −→ HQ2m(p−1) ℓ] = Z(p) ℓm
+1 = Z(p) m .
+p
+Hence,
+im[H∗ ℓ −→ HQ∗ ℓ] = Z(p) [ℓ1 ] = Z(p) [v1 /p].
+The spectral sequence (Er∗,∗ (H̄), dr ) is easy to determine. As vk = 0 in H̄∗ BP , we find that
+2
+E∞
+∗,∗ (H̄) = E∗,∗ (H̄) = ΛH̄∗ BP (εr : r ⩾ 2).
+
+Thus we recover the well-known result that
+H̄∗ ℓ = Fp [tk : k ⩾ 1] ⊗Fp ΛFp (εr : r ⩾ 2),
+where tk has degree 2pk − 2 and εr has degree 2pr − 1.
+From Propositions 1.2 and 2.1 we have
+U∗
+TorM
+∗,∗ (L∗ M U, ℓ∗ ) = L∗ BP/(vr : r ⩾ 2),
+U∗
+TorM
+∗,∗ (L̄∗ M U, ℓ∗ ) = L̄∗ BP/(vr : r ⩾ 2),
+
+where L̄ = L/p denotes the spectrum L smashed with the mod p Moore spectrum. As a
+consequence, the Künneth spectral sequences for L∗ ℓ and L̄∗ ℓ degenerate to give
+L∗ BP/(vr : r ⩾ 2) ∼
+= L∗ ℓ,
+
+L̄∗ BP/(vr : r ⩾ 2) ∼
+= L̄∗ ℓ.
+
+Since L∗ M U is a free Z(p) -module, multiplication by p gives an exact sequence of right M U∗ modules
+p
+
+0 → L∗ M U −
+→ L∗ M U −→ L̄∗ M U → 0
+U∗
+( , ℓ∗ ) which
+which in turn induces a long exact sequence on the homological functor TorM
+∗
+collapses to the short exact sequence
+p
+
+U∗
+M U∗
+M U∗
+0 → TorM
+0,∗ (L∗ M U, ℓ∗ ) −→ Tor0,∗ (L∗ M U, ℓ∗ ) −→ Tor0,∗ (L̄∗ M U, ℓ∗ ) → 0.
+
+From this we see that there is a short exact sequence
+p
+
+0 → L∗ ℓ −→ L∗ ℓ −→ L̄∗ ℓ → 0.
+On tensoring with Q we easily see that Q ⊗ ℓ∗ ℓ −→ Q ⊗ L∗ ℓ is a monomorphism. Hence we
+have
+Proposition 5.2. L∗ ℓ has no p-torsion and the natural map ℓ∗ ℓ −→ L∗ ℓ induces an exact
+sequence
+0 → p∞ (ℓ∗ ℓ) −→ ℓ∗ ℓ −→ L∗ ℓ.
+Corollary 5.3. We have
+p∞ (ℓ∗ ℓ) = u∞ (ℓ∗ ℓ).
+
+Proof. Since ℓ∗ −→ L∗ = ℓ∗ [u−1 ] is a localization, we have L∗ ℓ = ℓ∗ ℓ[u−1 ] and
+ker(ℓ∗ ℓ −→ L∗ ℓ) = u∞ (ℓ∗ ℓ),
+hence u∞ (ℓ∗ ℓ) = p∞ (ℓ∗ ℓ).
+
+
+8
+
+6. Connecting homomorphisms in the Künneth spectral sequence
+U∗
+In order to gain control over the p-torsion in TorM
+∗,∗ (ℓ∗ M U, ℓ∗ ), we will exploit the cofibre
+sequence
+p
+
+(6.1)
+
+̺
+
+δ
+
+ℓ−
+→ℓ−
+→ ℓ̄ −
+→ Σℓ,
+
+where ℓ̄ = ℓ/p. To this end we will relate the geometric connecting morphisms of cofibre
+sequences to morphisms of Künneth spectral sequences. The method of proof we use in this
+part is analogous to that of the geometric boundary theorem in [14, II.3].
+Let W be a cofibrant R-module which we fix from now on. Then for any R-module Z there
+is a Künneth spectral sequence with
+∗
+E2s,t (Z) = TorR
+s,t (Z∗ , W∗ ) =⇒ π∗ (Z ∧R W ).
+
+Lemma 6.1. Let
+f
+
+g
+
+h
+
+X−
+→Y −
+→Z−
+→ ΣX
+Wm
+be a cofibre sequence of R-modules with X ≃ i=1 Σni R and π∗ f surjective. Then there is a
+map of Künneth spectral sequences
+ψr
+
+Ers,t (Y ) −→ Ers−1,t (Σ−1 Z)
+
+(r ⩾ 2),
+
+such that ψ 2 is the connecting homomorphism
+∼
+=
+
+−1
+∗
+∗
+−→ TorR
+TorR
+s,t (Y∗ , W∗ ) −
+s−1,t ((Σ Z)∗ , W∗ ).
+
+Proof. Since π∗ f is surjective, there is a short exact sequence
+0 → (Σ
+
+−1
+
+Z)∗ −→
+
+m
+M
+
+Σni R∗ −→ Y∗ → 0.
+
+i=1
+
+This
+a long exact sequence of Tor-groups, in which every third term is trivial, because
+Lm induces
+ni R is R -free. Therefore we have an isomorphism
+Σ
+∗
+∗
+i=1
+∼
+=
+
+−1
+∗
+∗
+−→ TorR
+TorR
+s,t (Y∗ , W∗ ) −
+s−1,t ((Σ Z)∗ , W∗ ).
+
+On the level of projective resolutions, we can splice a resolutionLP•,∗ for Y∗ together with a
+ni
+resolution Q•,∗ of (Σ−1 Z)∗ to obtain a trivial split resolution for m
+i=1 Σ R∗ . Thus we obtain
+a map between exact couples and so obtain the desired map of spectral sequences.
+
+Theorem 6.2. Let
+f
+
+g
+
+h
+
+X−
+→Y −
+→Z−
+→ ΣX
+be a cofibre sequence with π∗ f surjective. Then there is an induced map of Künneth spectral
+sequences
+ϕr
+
+Ers,t (Y ) −→ Ers−1,t(Σ−1 Z)
+
+(r ⩾ 2)
+
+such that ϕ2 is the connecting homomorphism
+∼
+=
+
+−1
+∗
+∗
+−→ TorR
+TorR
+s,t (Y∗ , W∗ ) −
+s−1,t ((Σ Z)∗ , W∗ ).
+W
+ni
+′
+Proof. Choose a map f ′ : m
+i=1 Σ R −→ Y with π∗ f surjective and consider the cofibre sequence
+m
+_
+f′
+j
+Σni R −→ Y −
+→ cone(f ′ ).
+i=1
+
+By Lemma 6.1 there is a map of Künneth spectral sequences
+ψr
+
+Ers,t (Y ) −→ Ers−1,t (Σ−1 cone(f ′ )).
+9
+
+As π∗ f is surjective, the composition g ◦ f ′ is trivial and there is a factorization g = ξ ◦ j.
+cone(f ′ )
+O
+
+ξ
+
+j
+
+X
+
+f
+
+g
+
+/Y
+O
+
+/$ Z
+
+h
+
+/ ΣX
+
+f′
+
+Wm
+
+i=1 Σ
+
+ni R
+
+Now we may define ϕr to be (Σ−1 ξ)∗ ◦ ψ r .
+
+
+
+For the connective Adams summand ℓ, we will consider the cofibre sequence
+̺
+
+Σp
+
+δ
+
+ℓ−
+→ ℓ̄ −
+→ Σℓ −→ Σℓ
+obtained from (6.1). The reduction map ̺ is surjective in homotopy and therefore we can apply
+Theorem 6.2 to obtain a map of Künneth spectral sequences
+ϕr
+
+Ers,t (ℓ̄ ∧ M U ) −→ Ers−1,t (ℓ ∧ M U ) (r ⩾ 2).
+In particular, this yields a connecting homomorphism
+M U∗
+U∗
+ϕ2 : TorM
+s,t (ℓ̄∗ M U, ℓ∗ ) −→ Tors−1,t (ℓ∗ M U, ℓ∗ ).
+U∗
+Theorem 6.3. Each p-torsion element of TorM
+∗,∗ (ℓ∗ M U, ℓ∗ ) is the image of an element of
+U∗
+TorM
+∗+1,∗ (ℓ̄∗ M U, ℓ∗ ) under the connecting homomorphism and is an infinite cycle.
+
+Proof. Making use of the long exact sequence on Tor-groups associated to the short exact
+sequence
+p
+̺∗
+0 → ℓ∗ −
+→ ℓ∗ −→ ℓ̄∗ → 0,
+U∗
+the claim about the p-torsion in TorM
+∗,∗ (ℓ∗ M U, ℓ∗ ) follows.
+We will prove that the elements ∆u (i1 , . . . , in ) are infinite cycles in the Künneth spectral
+sequence for ℓ̄∗ ℓ. Our proof is by induction on n ⩾ 2. For n = 2 the elements ∆u (i1 , i2 ) are
+infinite cycles for degree reasons. Now suppose that for all n ⩽ k, the ∆u (i1 , . . . , in ) are infinite
+cycles. From Proposition 4.1 we know that
+
+wi2 ∆u (i1 , . . . , ik+1 ) = ∆u (i1 , i2 )∆u (i2 , . . . , ik+1 ).
+By assumption, the two factors are infinite cycles and therefore their product is an infinite cycle
+as well. The scalar factor wi2 acts as a regular element on the R/(u)-module generated by the
+∆u elements, so we can conclude that ∆u (i1 , . . . , ik+1 ) has to be an infinite cycle as well.
+So the Künneth spectral sequence for ℓ̄∗ ℓ collapses at the E2 -page and as the connecting
+U∗
+homomorphism induces a map of spectral sequences, every p-torsion class in TorM
+∗,∗ (ℓ∗ M U, ℓ∗ )
+has to be an infinite cycle.
+
+U∗
+Theorem 6.3 gives an explicit description of the p-torsion classes in TorM
+∗,∗ (ℓ∗ M U, ℓ∗ ) as the
+U∗
+image of the elements ∆u (i1 , . . . , in ) in TorM
+∗,∗ (ℓ̄∗ M U, ℓ∗ ) under the boundary homorphism.
+
+Corollary 6.4. Since the ∆u (i1 , . . . , in ) generate the Künneth spectral sequence for ℓ̄∗ ℓ additively, this spectral sequence collapses at the E2 -page. For the same reasons, the Künneth
+spectral sequence for ℓ∗ ℓ collapses as well.
+Remark 6.5. To summarize, the calculation of the rational homology of ℓ in (5.1) tells us
+that the torsion-free part of ℓ∗ ℓ has to have its origin in the zero-line of the Künneth spectral
+sequence. The torsion part is imported from the Künneth spectral sequence for ℓ̄∗ ℓ via the
+geometric boundary result. The Künneth spectral sequence for ℓ∗ ℓ collapses at the E2 -page.
+Furthermore, Corollary 7.4 implies that there are no extension problems.
+10
+
+7. Detecting homotopy in the Adams spectral sequence
+In this section we recall some results about the classical Adams spectral sequence for ℓ∗ ℓ.
+We make heavy use of standard facts about Hopf algebras and the Steenrod algebra [13, 12].
+In the following we generically write I for identity morphisms, ϕ for products and actions, ψ
+for coproducts and coactions, η for units and ε for counits and we use x̄ for the antipode on an
+element x. Undecorated tensor products are taken over the ground field.
+We write H̄∗ ( ) for H∗ ( ; Fp ) and A∗ for the dual Steenrod algebra,
+A∗ = Fp [ζn : n ⩾ 1] ⊗ Λ(τ̄n : n ⩾ 0),
+where the coaction is given by
+n
+X
+pi
+ζi ⊗ ζn−i
+,
+ψ(ζn ) =
+
+ψ(τ̄n ) = 1 ⊗ τ̄n +
+
+n
+X
+
+i
+
+p
+τ̄i ⊗ ζn−i
+.
+
+i=0
+
+i=0
+
+The sub-comodule algebra
+
+B∗ = Fp [ζn : n ⩾ 1] ⊗ Λ(τ̄n : n ⩾ 2)
+gives rise to a quotient Hopf algebra
+E∗ = A∗ //B∗ = Λ(α, β),
+where α, β are the residue classes of τ̄0 , τ̄1 respectively. Then
+B∗ = A∗ E∗ Fp .
+Now the natural map ℓ −→ H̄ induces an isomorphism
+∼
+=
+
+H̄∗ (ℓ) −−→ B∗ ⊆ A∗
+and there are isomorphisms of A∗ -comodule algebras
+(7.1)
+
+∼
+=
+
+∼
+=
+
+∼
+=
+
+H̄∗ (ℓ ∧ ℓ) −−→ H̄∗ (ℓ) ⊗ H̄∗ (ℓ) −−→ B∗ ⊗ B∗ −−→ A∗ E∗ B∗ .
+
+The E2 -term of the Adams spectral sequence converging to π∗ (ℓ ∧ ℓ) = ℓ∗ ℓ has the form
+E2 = CotorA∗ (Fp , H̄∗ (ℓ ∧ ℓ)) ∼
+= CotorA∗ (Fp , A∗ E B∗ )
+s,t
+
+s,t
+
+s,t
+
+∗
+
+and so by making use of a standard change of rings result, we have
+(7.2)
+E2 ∼
+= CotorE∗ (Fp , B∗ ).
+s,t
+
+s,t
+
+Note that by results of [5], the torsion in ℓ∗ ℓ is detected by the edge homomorphism (which
+is essentially the Hurewicz homomorphism) into the 0-line
+E2 ∼
+= CotorE∗ (Fp , B∗ ) = Fp E B∗ .
+0,∗
+
+0,∗
+
+∗
+
+The map involved here is obtained by composing the following A∗ -comodule algebra homomorphisms and suitably restricting the codomain:
+∼
+=
+
+I⊗ψ
+
+π∗ (ℓ ∧ ℓ) −→ H̄∗ (ℓ) ⊗ H̄∗ (ℓ) −−→ B∗ ⊗ B∗ −−−→ B∗ ⊗ (A∗ E∗ B∗ )
+∼
+=
+
+ϕ⊗I
+
+−−→ A∗ E∗ B∗ −−→ E∗ E∗ B∗ −−→ B∗ .
+The final isomorphism is the composition
+incl
+
+∼
+=
+
+ε⊗I
+
+E∗ E∗ B∗ −−−→ E∗ ⊗ B∗ −−→ Fp ⊗ B∗ −−→ B∗ .
+A careful check of what the composition does on primitives shows that it can be expressed as
+(7.3)
+
+(ν∧id)∗
+
+π∗ (ℓ ∧ ℓ) −→ H̄∗ (ℓ ∧ ℓ) −−−−→ H̄∗ (ℓ),
+
+where ν : H̄ ∧ ℓ −→ H̄ is the natural pairing. In particular, this implies that the image of the
+Hurewicz map for ℓ ∧ ℓ maps monomorphically into H̄∗ (ℓ).
+It will be useful to know how to compute the inverse of the map
+Fp A∗ (B∗ ⊗ B∗ ) −→ Fp E∗ B∗ .
+11
+
+This is just
+I⊗ψ
+
+incl
+
+Fp E∗ B∗ −−→ Fp ⊗ B∗ −−−→ Fp ⊗ (A∗ ⊗ B∗ ),
+whose image is in fact contained in Fp A∗ (B∗ ⊗ B∗ ).
+Given these results, we can use them to detect elements of ℓ∗ ℓ in B∗ , in particular we can
+detect the torsion this way. To do this, we need to understand B∗ as an E∗ -comodule, in
+particular the non-trivial E∗ -parallelograms of the form
+gg x
+gggg ~~
+~
+~~
+~~ α
+
+(7.4)
+
+−β gggggg
+
+x
+
+gggg
+gggg
+g
+g
+g
+sggg
+x′′
+hh x′
+hhhh
+|
+h
+h
+h
+|
+h
+α ||
+hhhh
+|| hhhhhhhhβ
+|
+}| hhhh
+′′′ sh
+
+in which the E∗ -coaction satisfies
+(7.5) ψ(x) = 1⊗x+α⊗x′ −β⊗x′′ +βα⊗x′′′ ,
+
+ψ(x′ ) = 1⊗x′ +β⊗x′′′ ,
+
+ψ(x′′ ) = 1⊗x′′ +α⊗x′′′ .
+
+Then x′′′ is an element of Fp E∗ B∗ which corresponds to an HFp wedge summand in ℓ ∧ ℓ and
+a correponding torsion element. Of course, these elements can be expressed in terms of the
+homology action of Q0 and Q1 , i.e.,
+x′ = Q0 x,
+
+x′′ = −Q1 x,
+
+x′′′ = Q1 Q0 x.
+
+Now by Margolis [10, chapter 18 theorem 5] dualized to a homology version for E∗ -comodules
+tells us that B∗ uniquely decomposes into a coproduct of comodules isomorphic (up to grading)
+to E∗ , together with a comodule containing no free summand and isomorphic to a coproduct of
+lightning flash comodules. The latter summand does not concern us for now since all the torsion
+in ℓ∗ ℓ comes from the HFp wedge summands as above corresponding to the free summand. In
+fact, Adams and Priddy [2, proof of proposition 3.12] determine the stable type of the lightning
+flash comodules, in particular, the stable class of the E∗ -comodule B∗ is shown to be
+O
+(7.6)
+(1 + Lr + L2r + · · · + Lp−1
+r ),
+r⩾0
+
+where
+
+Lr = Σa(r) J b(r) , a(r) + b(r) = 2(p − 1)pr , b(r) = pr−1 + · · · + p + 1.
+Here J = E∗ /Fp is the coaugmentation coideal of E∗ , represented by the following diagram
+•
+hhhh~h~
+~
+~~α
+~~
+
+β hhhhhhh
+
+hhhh
+hhhhh
+h
+h
+h
+h
+• sh
+
+•
+
+and Σ is the trivial comodule Fp assigned degree 1. Furthermore, all products are tensor
+products over Fp taken in the stable comodule category of E∗ .
+Now the most obvious candidates for the tops of E∗ -parallelograms are the elements
+τ̄i1 τ̄i2 · · · τ̄in+1
+
+(1 < i1 < i2 < · · · < in+1 ,
+
+n ⩾ 1).
+
+These can be multiplied by monomials in the ζj to obtain others.
+Theorem 7.1. Consider the Fp -vector subspace V ⊆ Fp E∗ B∗ spanned by Fp [ζi : i ⩾ 1]-scalar
+multiples of the elements 1 and
+(7.7)
+
+Q1 Q0 (τ̄i1 τ̄i2 · · · τ̄in+1 )
+
+(1 < i1 < i2 < · · · < in+1 ,
+
+n ⩾ 1).
+
+Then V consists of all the elements in Fp E∗ B∗ which are the images of torsion elements under
+the composition of the Hurewicz homomorphism π∗ (ℓ ∧ ℓ) −→ H̄∗ (ℓ ∧ ℓ) and the identification
+of the homology H̄∗ (ℓ ∧ ℓ) with Fp E∗ B∗ .
+12
+
+Proof. Clearly Fp [ζi : i ⩾ 1] ⊆ Fp E∗ B∗ . Now we know that the Künneth spectral sequence for
+ℓ∗ ℓ collapses and there are no additive extension problems. We need to understand the mod p
+Hurewicz images of elements represented by the elements arising from the ∆u (i1 , . . . , is+2 ) in
+U∗
+TorM
+s+1,∗ (ℓ̄∗ M U, ℓ∗ ), since these will give an additive basis for the p-torsion in ℓ∗ ℓ.
+U∗
+TorM
+s+1,∗ (ℓ̄∗ M U, ℓ∗ )
+δ
+
+(
+
+U∗
+TorM
+s,∗ (ℓ∗ M U, ℓ∗ )
+
+
+
+U∗
+TorM
+s,∗ ((H̄ ∧ ℓ)∗ M U, ℓ∗ )
+
+
+
+U∗
+TorM
+s,∗ (H̄∗ M U, ℓ∗ )
+
+π∗ (ℓ ∧ ℓ)
+
+
+π∗ (H̄ ∧ ℓ ∧ ℓ) o
+
+
+H̄∗ (ℓ) o
+
+%
+
+Fp A∗ H̄∗ (ℓ ∧ ℓ)
+
+
+Fp E∗ H̄∗ (ℓ)
+
+The Künneth spectral sequence (2.1) for E∗ ℓ is natural for maps of ring spectra E −→ F .
+Therefore the map (7.3) corresponds in the spectral sequence to the composition of the two
+vertical maps in the left column in the diagram above. As the Hurewicz homomorphism has its
+image in the primitives of H̄∗ (ℓ ∧ ℓ), it follows that the elements ∆u (i1 , . . . , is+2 ) up to a unit
+map to
+X
+(−1)r+t (ζir ζipt −1 − ζit ζipr −1 ) τ̄i1 τ̄i2 · · · b̄
+Q0 Q1 (τ̄i1 · · · τ̄is+2 ) =
+τ it · · · b̄
+τ ir · · · τ̄is+2 .
+
+1<t<r⩽s+2
+
+Remark 7.2. Since the torsion in π∗ (ℓ ∧ ℓ) maps injectively into Fp A∗ (B∗ ⊗ B∗ ) which in
+turn is identified with Fp E∗ B∗ , Theorem 7.1 shows that the elements Q1 Q0 (τ̄i1 τ̄i2 · · · τ̄in ) with
+n ⩾ 3 correspond to nilpotent elements; only elements of the form Q1 Q0 (τ̄r τ̄s ) are not nilpotent.
+From Corollary 5.3 we know that the p-torsion and u-torsion in ℓ∗ ℓ agree. We recall a fact
+from [5, proposition 9.1].
+Proposition 7.3. All torsion in ℓ∗ ℓ is simple, i.e., for every torsion-class x ∈ ℓ∗ ℓ we have
+px = 0 which is equivalent to ux = 0.
+Corollary 7.4. The Künneth spectral sequence for ℓ∗ ℓ collapses at the E2 -page and there are
+no non-trivial extensions.
+∗
+Example 7.5. For every prime p, the first torsion class in TorBP
+∗,∗ (ℓ∗ BP, ℓ∗ ) occurs in degree
+3
+2
+2(p + p − p − 1) and this class survives to ℓ∗ ℓ. The lowest degree element appearing as the
+bottom of a parallelogram is
+Q1 Q0 (τ̄2 τ̄3 ) = ζ2p+1 − ζ1p ζ3 .
+
+The coaction map ψ sends this element to the Hurewicz image of the corresponding torsion
+element of ℓ∗ ℓ in H̄∗ (ℓ ∧ ℓ).
+8. Multiplicative structure of ℓ∗ ℓ
+In this section we establish congruence relations in the zero line of the Künneth spectral
+sequence. These are derived in BP∗ BP and mapped under the natural map. In fact they are
+first produced in Q ⊗ BP∗ BP then interpreted in the subring BP∗ BP .
+We describe the map from the torsion-free part of ℓ∗ ℓ to ℓ∗ ℓ ⊗ Q and summarize our results
+about the multiplicative structure of ℓ∗ ℓ at the end of this section.
+It will be useful to have the following generalization of a well-known result (which corresponds
+to the case where t = 1).
+13
+
+Lemma 8.1. Let R be a commutative ring, p a prime and t ∈ R. If x, y, z ∈ R satisfy
+z ≡ px + ty mod (pt), then for all k ⩾ 0,
+k
+
+k
+
+k
+
+k
+
+k
+
+z p ≡ pp xp + tp y p mod (pk+1 t).
+Proof. We prove this by induction on k, the case k = 0 being known. Suppose it is true for
+some k ⩾ 0. Choose a w ∈ R for which
+k
+
+k
+
+k+2 p
+
+p
+
+k
+
+k
+
+k
+
+z p = pp xp + tp y p + pk+1 tw.
+Then working mod(pk+2 t) we have
+z
+
+pk+1
+
+pk pk
+
+= (p x
+
+pk pk p
+
++t y ) +p
+
+X
+
+t w +
+
+1⩽i⩽p−1
+pk
+
+≡ (p x
+
+pk
+
+pk
+
+pk
+
++t
+
+pk+1 pk+1
+
++t
+
+pk+1
+
++ t y )p
+
+≡p
+
+pk+1 pk+1
+
+≡p
+
+pk+1
+
+x
+
+y
+
++
+
+X
+
+1⩽i⩽p−1
+
+x
+
+pk+1
+
+y
+
+pk+1
+
+ 
+p
+k
+k
+k
+k
+(pp xp + tp y p )p−i pk+1+i ti wi
+i
+
+ 
+p ipk ipk (p−i)pk (p−i)pk
+p x t
+y
+i
+
+.
+
+Hence the result holds for k + 1.
+
+
+
+We will work with the Hazewinkel generators vn of (1.2). The following standard formula for
+the right unit ηR : Q ⊗ BP∗ −→ Q ⊗ BP∗ BP can be found in [15, p24]:
+X
+j
+(8.1)
+ηR (ℓn ) =
+ℓj tpn−j .
+0⩽j⩽n
+
+On combining this with (1.2) we obtain
+X
+i
+pℓi tpn−i −
+ηR (vn ) =
+0⩽i⩽n
+
+and hence
+(8.2)
+
+ηR (vn ) =
+
+X
+
+i
+
+pℓi tpn−i −
+
+0⩽i⩽n
+
+X
+
+X
+
+j
+
+ℓj tpi−j ηR (vn−i )p
+
+i
+
+1⩽i⩽n−1
+0⩽j⩽i
+
+i
+
+ℓi tpn−1−i ηR (v1 )p
+
+n−1
+
+−
+
+X
+
+j
+
+i
+
+ℓj tpi−j ηR (vn−i )p .
+
+1⩽i⩽n−2
+0⩽j⩽i
+
+0⩽i⩽n−1
+
+Remark 8.2. The left hand side of equation (8.2) lies in BP∗ BP ⊆ Q ⊗ BP∗ BP , therefore
+so does the right hand side. However, because of the presence of denominators in the terms
+involving the ℓr , care needs to be exercised when using this equation. For example, since cpr =
+pr ℓr ∈ BP∗ we can certainly deduce that in BP∗ BP modulo the ideal (ηR (v2 ), . . . , ηR (vn−1 )) ⊳
+BP∗ BP ,
+pn−1 ηR (vn ) ≡
+X
+i
+pn−i cpi tpn−i −
+0⩽i⩽n
+
+X
+
+i
+
+pn−1−i cpi tpn−1−i ηR (v1 )p
+
+n−1
+
+mod (ηR (v2 ), . . . , ηR (vn−1 )).
+
+0⩽i⩽n−1
+
+We will see later that similar phenomena in ℓ∗ BP give rise to congruences in ℓ∗ ℓ.
+We will now derive some formulæ in ℓ∗ BP . The natural map of ring spectra BP −→ ℓ is
+determined on homotopy by
+(
+u if r = 1,
+(8.3)
+vr 7−→
+0 otherwise.
+Recalling (5.3), we see that in im[H∗ ℓ −→ HQ∗ ℓ], the logarithm series for the factor of ℓ is
+X
+X upn−1 +···+p+1 n
+ℓ
+pn
+Tp .
+log T =
+ℓn T =
+pn
+n⩾0
+
+n⩾0
+14
+
+We can project (8.2) into ℓ∗ BP , with ηR being replaced by the ℓ-theory Hurewicz homomorphism ℓ : BP∗ −→ ℓ∗ BP . This yields
+ℓ(vn ) = ptn − tn−1 ℓ(v1 )p
+
+n−1
+i
+
+X upi−1 +···+p+1 tpn−i
+−
++
+pi−1
+1⩽i⩽n
+
+X
+
+i−1 +···+p+1
+
+1⩽i⩽n−1
+
+X
+
+−
+
+up
+
+X
+
+pi
+
+ti ℓ(vn−i ) −
+
+1⩽i⩽n−2
+
+i
+
+tpn−1−i ℓ(v1 )p
+pi
+up
+
+n−1
+
+j−1 +···+p+1
+
+j
+
+tpi−j ℓ(vn−i )p
+
+i
+
+.
+
+pj
+
+1⩽i⩽n−2
+1⩽j⩽i
+
+and the equivalent formula
+(8.4) ℓ(vn ) = ptn + (utpn−1 − ℓ(v1 )p
++
+
+n−1
+
+tn−1 )
+
+pi−1 +···+p+1
+
+X
+
+u
+
+1⩽i⩽n−1
+
+−
+
+X
+
+i+1
+
+p
+(up tn−1−i
+− ℓ(v1 )p
+pi
+i
+
+X
+
+pi
+
+ti ℓ(vn−i ) −
+
+1⩽i⩽n−2
+
+n−1
+
+i
+
+tpn−1−i )
+up
+
+j−1 +···+p+1
+
+j
+
+tpi−j ℓ(vn−i )p
+
+pj
+
+1⩽i⩽n−2
+1⩽j⩽i
+
+i
+
+.
+
+Thus we have
+u(up − ℓ(v1 )p )
+p
+X p 
+p
+p
+p−1
+pi−1 up+1−i ti1 .
+= pt2 + (1 − p )ut1 − ℓ(v1 ) t1 −
+i
+
+ℓ(v2 ) = pt2 + (utp1 − ℓ(v1 )p t1 ) +
+
+1⩽i⩽p−1
+
+By the Hattori-Stong theorem, the element ℓ(vn ) ∈ ℓ∗ BP is not divisible by p, but notice
+that on multiplying by pn−2 we have
+pn−2 ℓ(vn ) = pn−1 tn + pn−2 (utpn−1 − ℓ(v1 )p
++
+
+X
+
+up
+
+X
+
+tn−1 )
+i+1
+
+i
+
+p
+− ℓ(v1 )p tpn−1−i )
+(up tn−1−i
+pi−n+2
+X
+j
+j−1
+i
+i
+pn−2−j up +···+p+1 tpi−j ℓ(vn−i )p .
+pn−2 ti ℓ(vn−i )p −
+
+i−1 +···+p+1
+
+1⩽i⩽n−1
+
+−
+
+n−1
+
+i
+
+n−1
+
+1⩽i⩽n−2
+1⩽j⩽i
+
+1⩽i⩽n−2
+
+and so
+pn−1 tn + pn−2 (utpn−1 − ℓ(v1 )p
++
+
+X
+
+1⩽i⩽n−1
+
+up
+
+n−1
+
+i−1 +···+p+1
+
+tn−1 )
+i+1
+
+p
+− ℓ(v1 )p
+(up tn−1−i
+pi−n+2
+i
+
+n−1
+
+i
+
+tpn−1−i )
+
+≡0
+
+mod (ℓ(v2 ), . . . , ℓ(vn )).
+
+Using the identity ℓ(v1 ) = u + pt1 and the resulting congruences (see Lemma 8.1),
+m
+
+m
+
+ℓ(v1 )p ≡ up mod (pm+1 )
+15
+
+(m ⩾ 1),
+
+we deduce that when n ⩾ 2,
+(8.5) ℓ(vn ) ≡ (ptn − pp
++
+
+n−1
+
+X
+
+tp1
+
+n−1
+
+up
+
+tn−1 ) + (utpn−1 − up
+
+i−1 +···+p+1
+
+1⩽i⩽n−2
+
+X
+
+−
+
+n−1
+
+i+1
+pi p
+
+tn−1 )
+
+(u tn−1−i − up
+pi
+
+ti ℓ(vn−i ) −
+
+1⩽i⩽n−2
+
+up
+
+X
+
+pi
+
+n−1
+
+i
+
+tpn−1−i )
+
+j−1 +···+p+1
+
+j
+
+tpi−j ℓ(vn−i )p
+
+i
+
+mod (pu).
+
+pj
+
+1⩽i⩽n−2
+1⩽j⩽i
+
+Thus when n = 2 we have
+ℓ(v2 ) ≡ (pt2 − pp tp1 t1 ) + (utp1 − up t1 )
+≡ utp1 − up t1
+
+mod (pu)
+
+mod (p).
+
+When working in the image of the rationalization map H∗ (ℓ ∧ ℓ) −→ HQ∗ (ℓ ∧ ℓ), we will
+denote by u and v the images of u ∈ ℓ2p−2 under the left and right units for ℓ ∧ ℓ.
+Now reinterpreting (8.2) in HQ∗ (ℓ ∧ ℓ), for each n ⩾ 2 we have ηR (vn ) 7−→ 0 and so
+h
+
+u(p +p
+
+X
+
+ptn + utpn−1 +
+
+h−1 +···+p+1)
+
+h+1
+
+tpn−h−1
+
+ph
+
+1⩽h⩽n−1
+
+= tn−1 v
+
+pn−1
+
+u(p
+
+X
+
++
+
+k−1 +pk−2 +···+p+1)
+
+(8.6)
+
+ptn = v
+
+pn−1
+
+u(p
+
+X
+
+tn−1 − utpn−1 +
+
+k−1 +pk−2 +···+p+1)
+
+1⩽k⩽n−1
+
+For small values of n = 1 we have
+
+n−1
+
+pk
+
+1⩽k⩽n−1
+
+On rearranging this, we obtain
+
+k
+
+tpn−1−k v p
+
+k
+
+.
+
+k+1
+
+(v p tpn−1−k − up tpn−k−1 )
+.
+pk
+n−1
+
+k
+
+pt1 = v − u,
+pt2 = v p t1 − utp1 +
+
+u(v p − up )
+,
+p
+
+2
+
+2
+
+2
+
+2
+
+3
+
+u(v p tp1 − up tp1 ) up+1 (v p − up )
++
+,
+p
+p2
+2
+
+pt3 = v p t2 − utp2 +
+
+p3 tp − up tp )
+2
+2
+
+2
+
+2
+
+3
+
+up+1 (v p tp1 − up tp1 ) up +p+1 (v p − up )
+pt4 = v
++
++
+.
+p
+p2
+p3
+We want to draw some general conclusions about these expressions.
+p3
+
+u(v
+t3 − utp3 +
+
+2
+
+2
+
+3
+
+3
+
+Lemma 8.3. In ℓ∗ ℓ, for n ⩾ 1, we have the congruences
+(8.7)
+(8.8)
+
+ptn − pp
+
+n−1
+
+ptn ≡ v p
+
+n−1
+
+tn−1 − utpn−1 mod (pu),
+
+n−1
+
+n−1
+
+tn−1 − utpn−1 mod (pu).
+
+tp1
+
+≡ up
+
+Proof. We will prove this by induction on n, the case n = 1 being noted above. So suppose that
+ptk ≡ v p
+
+k−1
+
+tk−1 − utpk−1 mod (pu).
+
+whenever 1 ⩽ k < n for some n. Then for every such k we have
+vp
+
+k−1
+
+tk−1 ≡ utpk−1 mod (p).
+
+By Lemma 8.1, for every m ⩾ 1,
+(v p
+
+k−1
+
+m
+
+m
+
+tk−1 )p ≡ (utpk−1 )p mod (pm+1 ),
+16
+
+i.e.,
+vp
+
+m+k−1
+
+m
+
+m+1
+
+m
+
+p
+mod (pm+1 ).
+tpk−1 ≡ up tk−1
+
+Now when 1 ⩽ k ⩽ n − 1,
+vp
+
+n−1
+
+k
+
+k
+
+k+1
+
+tpn−1−k − up tpn−k−1 ≡ 0 mod (pk+1 ),
+
+hence in the formula for ptn in (8.6), the summand
+k
+
+k+1
+
+tpn−1−k − up tpn−k−1 )
+u
+pk
+must be divisible by pu. Therefore we have the congruence
+(pk−1 +pk−2 +···+p+1)
+
+ptn ≡ v p
+
+n−1
+
+Using the expansion
+v
+
+pn−1
+
+=u
+
+pn−1
+
++
+
+(v p
+
+n−1
+
+tn−1 − utpn−1 mod (pu).
+
+ptn − pp
+
+n−1
+
+tp1
+
+n−1
+
+ n−1 
+p
+n−1
+up −j pj tj1
+j
+n−1
+
+X
+
+1⩽j⩽p
+
+we obtain
+
+k
+
+≡ up
+
+n−1
+
+tn−1 − utpn−1 mod (pu).
+
+
+
+Summary. Kane [5, (19:6:1)], using Adams’ criterion [1, III,17.6], worked out what the image
+of the torsion-free part of ℓ∗ ℓ is when we pass to ℓ∗ ℓ ⊗ Q. The generators for the image of ℓ∗ ℓ
+in ℓ∗ ℓ ⊗ Q are
+ui v(v − (p − 1)u) · . . . · (v − (n − 1)(p − 1)u)
+, 0 ⩽ i ⩽ νp (n!).
+pi
+Obviously, the relation utn,i = ptn,i+1 holds and it is clear how to multiply elements like that.
+To summarize our results on the multiplicative structure of ℓ∗ ℓ, we have the following:
+• When we start with two non-torsion elements in ℓ∗ ℓ, we can take their image in ℓ∗ ℓ ⊗ Q,
+take their product there and interpret the result as a non-torsion element in ℓ∗ ℓ.
+• Any two elements coming from the zero-line of the Künneth spectral sequence multiply
+according to the congruence relations we specified in (8.3) up to (8.3). These element
+might be torsion or non-torsion, but there is no non-torsion in higher filtrations.
+• Torsion elements in non-zero filtration have their origin in the generators ∆u and for
+these we spelled out the multiplication in (4.2a).
+• As the ∆u -expression allow coefficients from ℓ∗ BP , the multiplication of non-torsion
+elements in the zero-line with torsion elements in higher filtration is determined as well.
+We agree that the recursive nature of the congruences for ℓ∗ BP ⊗BP∗ ℓ∗ might hamper the
+calculation, but our approach leads to more information about the multiplication in ℓ∗ ℓ than
+the known sources (compare e.g., [5, p. 76]).
+tn,i =
+
+References
+[1] J. F. Adams, Stable Homotopy and Generalised Homology, University of Chicago Press (1974).
+[2] J. F. Adams & S. B. Priddy, Uniqueness of BSO, Math. Proc. Camb. Phil. Soc. 80 (1976), 475–509.
+[3] A. Baker & A. Lazarev, On the Adams Spectral Sequence for R-modules, Alg. & Geo. Top. 1 (2001), 173–99.
+[4] A. Elmendorf, I. Kriz, M. Mandell & J. P. May, Rings, modules, and algebras in stable homotopy theory,
+Mathematical Surveys and Monographs 47 (1997).
+[5] R. Kane, Operations in connective K-theory, Mem. Am. Math. Soc. 254 (1981).
+[6] S. O. Kochman, Integral cohomology operations, Current Trends in Algebraic Topology Part 1, (London
+Ontario 1981), CMS Conference Proceedings 2 (1982), 437–78.
+[7] P. S. Landweber, Steenrod representability of stable homology, Proc. Amer. Math. Soc. 18 (1967), 523–9.
+[8]
+, On the complex bordism of Eilenberg-Mac Lane spaces and connective coverings of BU, Trans.
+Amer. Math. Soc. 157 (1971), 63–71.
+[9] W. Lellmann, Operations and cooperations in odd-primary connective K-theory, J. Lond. Math. Soc. 29
+(1984), 562–576.
+17
+
+[10] H. R. Margolis, Spectra and the Steenrod Algebra. Modules over the Steenrod Algebra and the Stable
+Homotopy Category, North-Holland Publishing Co. (1983).
+[11] J. P. May, E∞ ring spaces and E∞ ring spectra. With contributions by F. Quinn, N. Ray & J. Tornehave,
+Lecture Notes in Mathematics, 577 (1977).
+[12] J. W. Milnor, The Steenrod algebra and its dual, Ann. of Math. 67 (1958), 150–71.
+[13] J. W. Milnor & J. C. Moore, On the structure of Hopf algebras, Ann. of Math. 81 (1965), 211–264.
+[14] D. C. Ravenel, Complex Cobordism and Stable Homotopy Groups of Spheres, 2nd edition, Amer. Math.
+Soc. Chelsea Series (2004).
+[15] W. S. Wilson, Brown-Peterson homology: An introduction and sampler, Reg. Conf. Ser. Math. 48 (1982).
+[16] C. A. Weibel, An Introduction to Homological Algebra, Cambridge University Press (1994).
+Mathematics Department, University of Glasgow, Glasgow G12 8QW, Scotland.
+E-mail address: a.baker@maths.gla.ac.uk
+URL: http://www.maths.gla.ac.uk/∼ajb
+Fachbereich Mathematik der Universität Hamburg, 20146 Hamburg, Germany.
+E-mail address: richter@math.uni-hamburg.de
+URL: http://www.math.uni-hamburg.de/home/richter/
+
+18
+
+
