@@ -163,12 +163,28 @@ R-INT STATUS after second pass (2026-06-09): C0, C0', C4, C4' executed;
 C1, C2 subsumed. Docs 17-18 are the rung record. Live fronts (doc 18
 section 6, ranked):
 
-C5 (properness): the Tate/TP-style compactification of the derived square
-   - is there a finiteness/duality theorem over S making the Euler pairing
-   finite-rank per class, and does the compactified diagonal reproduce the
-   full Gamma_R factor (digamma term of the EF, not just the constant)?
-   This is the S-arithmetic Riemann-Roch question; fresh-context scale,
-   literature-adjacent (Hesselholt TP, arXiv:2011.11549 zeta-values).
+C5 FIRST PASS EXECUTED (prime_int_thh_supply.py + doc 19, 2026-06-09):
+   the digamma question answered YES at the affine level - the S^1-weighted
+   regularized characteristic function of the diagonal's torsion is
+   D(s) = prod_reg(s+k) = sqrt(2pi)/Gamma(s+1), with -d/ds log D = psi(s+1)
+   (digamma = the EF's archimedean supply shape; s=0 recovers zeta'(0)).
+   Local: log|THH_{2i}(F_p)| = log p = Lambda(p^i) - von Mangoldt IS a THH
+   log-cardinality; ladders sum to -zeta_p'/zeta_p and assemble to
+   -zeta'/zeta (verified); the deformation kill is CATEGORICAL (closed
+   points have residue fields F_p exactly - DH atoms cannot exist). So the
+   ENTIRE supply side of the EF = THH count ladders; 3 of doc 10's 4
+   realization inputs now have count carriers. Missing fourth = KMS 1/2 =
+   a DUALITY datum. Properness decomposed (PF/PD/PR/PS, doc 19 sec 1);
+   sharpest wall form: PROPERNESS = POISSON SUMMATION AS A THEOREM ABOUT
+   RING SPECTRA (classical face: vdGS theta-RR, math/9802121; char-p face:
+   Hesselholt's smooth+proper hypothesis; S-level: OPEN).
+C5' (the properness front, fresh-context scale): formulate the S-level
+   duality/Poisson question precisely; candidate vessel = the S^1-Tate
+   construction (TP) over the square, classical shadow = the vdGS theta
+   count; first diagnostic = TP(F_p) Frobenius eigenvalue ladder
+   (2 pi i/log p spacings) vs the sec-3 ladder weights. Fail-closed: the
+   formulated duality must produce the 1/4-shift digamma argument and the
+   s(s-1) pole factors or the carrier is wrong.
 C6 (Frobenius family): the FF index needs graphs of Frobenius powers;
    HZ has no ring endomorphisms but K-theory has the Adams operations
    psi^k - the only known two-parameter correspondence family. POSING

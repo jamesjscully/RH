@@ -186,6 +186,17 @@ scripts/numerics/witness/certify_chain.py
     Riemann-Roch), C6 (Frobenius family via Adams operations on KU ^ KU).
     Witness: prime_int_derived_square.
 
+19. `19-properness-supply.md`
+    R-INT THIRD PASS (C5 first pass): properness decomposed (finiteness / duality /
+    Riemann-Roch / section counts); the diagonal's S^1-weighted characteristic function
+    is sqrt(2pi)/Gamma(s+1) with digamma log-derivative (the EF's archimedean supply
+    shape, s=0 recovering zeta'(0)); von Mangoldt IS the THH(F_p) log-cardinality
+    dictionary (categorical deformation kill: DH atoms have no carrier); the ENTIRE
+    supply side of the explicit formula = THH count ladders. Sharpest wall: properness
+    = Poisson summation as a theorem about ring spectra (classical face vdGS theta-RR;
+    char-p face Hesselholt's properness hypothesis; S-level open).
+    Witness: prime_int_thh_supply.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
