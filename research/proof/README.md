@@ -146,6 +146,26 @@ scripts/numerics/witness/certify_chain.py
     restated. The program's product: RH <=> uniform tau < 1 along the one-mode recursion,
     plus the certified reduction and the no-go map.
 
+14. `14-fork-protocol.md`
+    STANDING DISCIPLINE: the derivedness detector (F1 value fork via fork_lib, F2
+    deformation kill, F3 slack audit) plus the positive criteria P1 (extra information)
+    and P2 (DH killed by carrier non-existence; necessary not sufficient - BC caveat).
+
+15. `15-second-description-spec.md`
+    The spec for a description of the Weil form not passing through the explicit formula
+    (S1 carrier orthogonal to prime positions, S2 non-scheme doubling, S3 native discrete
+    positivity, S4/S4' comparison on the full locus, S5 fork compliance), with the
+    prior-art audit of all candidate carriers and their walls.
+
+16. `16-doubled-lab-conservation.md`
+    R-SQ TERMINAL RESULT: the doubled (pair) laboratory - exact closure, the finite
+    Goldston-Montgomery identity, phase-free frequency-localized detection with measured
+    threshold, and the TRICHOTOMY (free-blind / level-1 Bochner / the index = RH): the
+    two-variable conservation law. Sharpest wall: doubling is cheap; an integer-valued
+    intersection pairing is the entire cost. Witnesses: prime_pair_closure,
+    prime_pair_fork, prime_pair_dh_growth, prime_pair_localization,
+    prime_pair_castelnuovo, fork_lib.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target

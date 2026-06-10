@@ -251,6 +251,15 @@ the archimedean part proven DH-shared; (e) LIVE (prime reflection theta,
 sym^2 bridge); (f) open, blocked at the laminated construction. Nothing in
 the audit contradicts the spec; (c) sharpens it.
 
+## 6. Postscript (same day): S3's discreteness demand is now evidenced
+
+The R-SQ rung (doc 16) built the square's analytic shadow and verified the
+trichotomy: every natural level-2 pairing is free-blind, level-1 Bochner, or
+the index itself. So S3 is not a preference but a measured fact: an
+analytic / tropical / real-valued pairing on ANY square lands in the
+trichotomy; only an integer-valued (discrete) pairing can carry the index.
+Doubling is cheap - discreteness is the entire cost.
+
 ## 4'. The refined wall, one sentence
 
 The wall is not the absence of estimates and not the choice of coordinates;
