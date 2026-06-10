@@ -69,3 +69,22 @@ non-group, monoid-level structure. The sec-3 corrected form survives
 only with that carrier replaced; the p-adic family matrices are
 ultrametric (1 + v_p(k_i - k_j), Parisi-type), witnessed exploratorily
 in prime_twisted_adams_ku.py W8 - hierarchical, not Lorentzian.
+
+## 6. Repair from the monoid front (2026-06-10, worker W)
+
+The negative of secs 2-3 is now EXPLAINED and REPAIRED
+(research/work/W-monoid-frobenius.md sec 5, witnessed): log-Grams of the
+form max(deg_i, deg_j) are AUTOMATICALLY Lorentzian (1, n) (the exact
+max-Gram lemma: MAX = u1^T + 1u^T - MIN with MIN PSD), and the
+arithmetic family carrying that shape is the GEOMETRIC one
+{psi^{p^0}, ..., psi^{p^n}} - log|p^iw - p^jw| = (w log p) max(i,j) + E
+with ||E|| exactly bounded - certified Lorentzian per weight (w >= 3, 2,
+2, 1 at p = 2, 3, 5, >= 7) with the degree-growing diagonal sec 3
+predicted, and an n-STABLE t-window containing 0 (this doc's escaping
+window repaired). Doc 23's family {psi^1..psi^n} failed because
+consecutive integers are not degree-separated; P's refutation is
+rederived (invertible families have all log-degrees zero - groups carry
+no index shape because they carry no degrees). The same pairing read
+p-adically is the MIN/ultrametric PSD face (P's Parisi finding): one
+pairing, two faces, split by the product formula. Low weights at
+p = 2, 3 fail the certificate - the prime-2 anomaly again.

@@ -1,0 +1,3866 @@
+ON CURVES IN K-THEORY AND TR
+
+arXiv:2102.08281v4 [math.KT] 28 Feb 2022
+
+JONAS MCCANDLESS
+Abstract. We prove that TR is corepresentable by the reduced topological Hochschild homology of the flat affine line S[t] as a functor defined on the ∞-category of cyclotomic spectra with
+values in the ∞-category of spectra with Frobenius lifts, refining a result of Blumberg–Mandell.
+We define the notion of an integral topological Cartier module using Barwick’s formalism of
+spectral Mackey functors on orbital ∞-categories, extending the work of Antieau–Nikolaus in
+the p-typical setting. As an application, we show that TR evaluated on a connective E1 -ring
+admits a description in terms of the spectrum of curves on algebraic K-theory generalizing the
+work of Hesselholt and Betley–Schlichtkrull.
+
+Contents
+1. Introduction
+1.1. Statement of results
+1.2. Methods
+2. Spectra with Frobenius lifts and TR
+2.1. The epicyclic category
+2.2. Spaces with Frobenius lifts
+2.3. Spectra with Frobenius lifts
+2.4. Topological restriction homology
+3. Comparison with genuine TR
+3.1. Equivariant stable homotopy theory
+3.2. Topological Cartier modules
+3.3. Genuine cyclotomic spectra and genuine TR
+4. Applications to curves on K-theory
+4.1. Topological Hochschild homology of truncated polynomial algebras
+4.2. Curves on K-theory
+References
+
+1
+2
+3
+7
+7
+12
+16
+19
+21
+21
+25
+32
+37
+37
+46
+49
+
+1. Introduction
+Topological cyclic homology provides an effective tool for studying the invariant determined
+by algebraic K-theory by means of the cyclotomic trace. The classical construction of topological
+cyclic homology using equivariant stable homotopy theory given by Bökstedt–Hsiang–Madsen [18]
+is facilitated by another invariant called TR together with the additional structure of an operator
+referred to as the Frobenius. In [59], Nikolaus–Scholze demonstrate that the construction of
+topological cyclic homology admits a drastic simplification bypassing the use of equivariant stable
+1
+
+2
+
+JONAS MCCANDLESS
+
+homotopy theory, and Bhatt–Morrow–Scholze [12] use the foundational work of Nikolaus–Scholze
+to construct motivic filtrations on topological Hochschild homology and its variants identifying
+the graded pieces with completed prismatic cohomology in the sense of Bhatt–Scholze [13]. The
+invariant given by TR carries important arithmetic information by itself. The calculations of the
+p-adic K-theory of local fields obtained by Hesselholt–Madsen [41, 42] and Geisser–Hesselholt [29]
+rely on the relationship between TR and the de Rham–Witt complex with log poles. In particular,
+Hesselholt–Madsen [41] confirmed the Lichtenbaum–Quillen conjecture for p-adic fields prior to
+the work of Rost–Voevodsky on the Bloch–Kato conjecture [66, 67]. These calculations are in
+turn based on the previous work of Hesselholt [38] and Hesselholt–Madsen [40].
+1.1. Statement of results. If I ⊆ A is a two-sided ideal of a ring A, then the relative algebraic
+K-theory spectrum K(A, I) is defined as the fiber of the map of spectra K(A) → K(A/I) induced
+by the canonical ring homomorphism A → A/I. The starting point of this paper is the following
+result of Hesselholt [38, Theorem 3.1.10], which asserts that if R is a commutative Z/pj -algebra
+for some integer j ≥ 1, then there is a natural equivalence of p-complete spectra
+TR(R) ≃ lim Ω K(R[t]/tn , (t)).
+←Ð
+The inverse limit appearing on the right hand side of the equivalence is referred to as the spectrum
+of curves on the algebraic K-theory of R, and was defined by Hesselholt [38] based on previous
+work of Bloch [14] on the relationship between crystalline cohomology and algebraic K-theory.
+Betley–Schlichtkrull [11, Theorem 1.3] extend the result above to associative rings after profinite
+completion, where TR is replaced by TC. In this case, the inverse limit defining the spectrum of
+curves on K-theory is replaced by a limit over a diagram which additionally encodes the transfer
+maps R[t]/tm → R[t]/tmn determined by t ↦ tn . We recall the following notation:
+Notation 1.1.1. In the following, we will let S[t] denote the E∞ -ring defined by S[t] = Σ∞
++ Z≥0 .
+Note that S[t] is not the free E∞ -ring on one generator, but the underlying E1 -ring of S[t] is the
+free E1 -ring on one generator since Z≥0 is the free E1 -monoid on one generator in the ∞-category
+of spaces. Let S[t]/tn denote the E∞ -ring defined by the following pushout of E∞ -rings
+←
+
+←
+
+←
+
+S
+
+→
+
+→
+
+t↦0
+
+→ S[t]
+
+t↦tn
+
+←
+
+S[t]
+
+→ S[t]/tn
+
+If R is a connective E1 -ring, then we define the E1 -ring R[t]/tn by R[t]/tn = R ⊗ S[t]/tn , and
+we have that π∗ (R[t]/tn ) ≃ (π∗ R)[t]/tn . We obtain a map of connective E1 -rings R[t]/tn → R
+such that the kernel of the induced ring homomorphism
+π0 (R[t]/tn ) ≃ (π0 R)[t]/tn → π0 R
+is given by the nilpotent ideal (t). If E ∶ Algcn → Sp is a functor, then we will let E(R[t]/tn , (t))
+denote the fiber of the induced map of spectra E(R[t]/tn ) → E(R). In the following, we will be
+interested in situation where E = K or E = TC.
+Remark 1.1.2. If R is a discrete HZ-algebra, then R ⊗S[t]/tn is discrete with π0 (R ⊗S[t]/tn ) ≃
+R[t]/tn . In general, if R is a connective E1 -ring, then R ⊗ S[t]/tn is not necessarily discrete.
+
+ON CURVES IN K-THEORY AND TR
+
+3
+
+As an application of the formalism developed in this paper, we obtain a common generalization
+of the results of Hesselholt and Betley–Schlichtkrull discussed above (see Corollary 4.2.5).
+Theorem A. If R is a connective E1 -ring, then there is a natural equivalence of spectra
+TR(R) ≃ lim Ω K(R[t]/tn , (t)).
+←Ð
+Note that in the setting of Theorem A, there is an equivalence of spectra
+lim Ω K(R[t]/tn , (t)) ≃ lim Ω TC(R[t]/tn , (t))
+←Ð
+←Ð
+by virtue of the Dundas–Goodwillie–McCarthy theorem [27]. The results of Betley–Schlichtkrull
+and Hesselholt discussed above rely on this equivalence combined with an analysis of the fixed
+points of THH(R[t]/tn ) by finite cyclic groups using [40]. In fact, the Frobenius endomorphism
+of TR can be expressed in terms of certain transfer maps on the spectrum of curves on K-theory
+under the equivalence of Theorem A (cf. Remark 4.2.6). The proof of Theorem A proceeds by
+completely different methods which we summarize below.
+1.2. Methods. The main technical contribution of this paper is a construction of TR which
+bypasses the use of equivariant stable homotopy theory. This is analogous to the construction of
+topological cyclic homology recently given by Nikolaus–Scholze [59] under suitable boundedness
+assumptions. We will begin by briefly reviewing the classical construction of TR following [40, 17],
+and refer the reader to §3.3 for a comprehensive account of the classical construction.
+Construction 1.2.1. A genuine cyclotomic spectrum is a genuine T-spectrum X with respect
+to the family of finite cyclic subgroups Ck of T together with compatible equivalences X ΦCk ≃ X
+for every k ≥ 1, where X ΦCk denotes the geometric fixedpoints for the action of Ck on X. For
+instance, if R is a connective E1 -ring, then THH(R) admits the structure of a genuine cyclotomic
+spectrum [18, 40]. If (m, n) is a pair of positive integers with m = ln, then the restriction map
+R ∶ X Cm → X Cn is the map of genuine T-spectra defined by
+X Cm ≃ (X Cl )Cn → (X ΦCl )Cn ≃ X Cn ,
+
+where the final equivalence is induced by the genuine cyclotomic structure of X. We have that
+TR(X) = limn,R X Cn ,
+where the limit is indexed over the set of positive integers regarded as a poset under divisibility.
+The collection of genuine cyclotomic spectra assemble into an ∞-category CycSpgen (see Definition 3.3.1), and there is a canonical functor of ∞-categories CycSpgen → CycSp which restricts to
+an equivalence on the full subcategories of those objects whose underlying spectrum is bounded
+below [59]. Consequently, if X is a cyclotomic spectrum whose underlying spectrum is bounded
+below, then we may evaluate TR ∶ CycSpgen → Sp on X using this equivalence.
+Throughout this paper, we will be interested in the reduced topological Hochschild homology
+of the E∞ -ring S[t], whose construction we briefly recall. The map of E∞ -rings S[t] → S given
+by t ↦ 0 induces a map of cyclotomic spectra THH(S[t]) → S, where the sphere spectrum S is
+equipped with the trivial cyclotomic structure. The reduced topological Hochschild homology of
+the E∞ -ring S[t] is the cyclotomic spectrum defined by
+̃
+THH(S[t])
+= fib(THH(S[t]) → S).
+
+4
+
+JONAS MCCANDLESS
+
+The cyclotomic structure of the reduced topologogical Hochschild homology of S[t] admits a
+more refined structure, namely the structure of a spectrum with Frobenius lifts1. Informally, the
+datum of a spectrum with Frobenius lifts is given by a spectrum X with an action of T together
+with a collection of compatible T-equivariant maps of spectra
+ψk ∶ X → X hCk
+for every integer k ≥ 1. Note that for every prime p, the T-equivariant map of spectra
+X Ð→ X hCp ÐÐ→ X tCp
+ψp
+
+can
+
+endows the underlying spectrum with T-action of X with the structure of a cyclotomic spectrum.
+The notion of a p-typical spectrum with Frobenius lift was introduced by Nikolaus–Scholze [59]
+and Antieau–Nikolaus [3]. In the p-typical situation we only require the existence of the map ψp
+in sharp contrast to the integral situation, where we also require coherences between these maps.
+Returning to ̃
+THH(S[t]), there is an equivalence of cyclotomic spectra
+1
+̃
+THH(S[t])
+≃ ⊕ Σ∞
++ (S /Ci ),
+i≥1
+
+where S 1 /Ci denotes the quotient space whose T-action is given by x ↦ λx for every element λ
+of T, and the cyclotomic structure of the right hand side of the equivalence above is induced by
+the following T-equivariant map of spaces
+√
+x↦ p x
+
+S 1 /Ci ÐÐÐÐ→ (S 1 /Cpi )hCp ÐÐ→ (S 1 /Cpi )tCp
+can
+
+̃
+for every prime p (cf. Example 2.2.9). Consequently, the cyclotomic Frobenius map of THH(S[t])
+is canonically equivalent to the following T-equivariant composite map of spectra
+ψp
+can
+̃
+THH(S[t]) Ð→ ̃
+THH(S[t])hCp ÐÐ→ ̃
+THH(S[t])tCp
+
+for every prime p. A substantial amount of this paper is devoted to making the discussion above
+precise. To that end, we introduce the following notions:
+● The Witt monoid is the E1 -monoid defined by the semidirect product W = T ⋊ N× , where
+the multiplicative monoid N× acts on the circle T by covering maps of positive degree (see
+Construction 2.1.1). Let BW denote the ∞-category with one object and W as endomorphisms. We will define the notion of a spectrum with Frobenius lifts as a spectrum with a
+right action of the Witt monoid W which in turn is the datum of a functor of ∞-categories
+BWop → Sp. This precisely encodes the datum of a spectrum X with an action of the circle
+T together with compatible T-equivariant maps ψk ∶ X → X hCk for every integer k ≥ 1. The
+collection of spectra with Frobenius lifts assemble into an ∞-category SpFr and we prove that
+the reduced topological Hochschild homology of the E∞ -ring S[t] refines to an object of this
+∞-category. Furthermore, there is a canonical functor of ∞-categories SpFr → CycSp which
+is described informally above. The insight that the Witt monoid parametrizes Frobenius
+lifts is present in the unpublished work of Goodwillie [34] on the cyclotomic trace.
+1This is referred to as a cyclotomic spectrum with Frobenius lifts in [59, 3, 49] (cf. Warning 2.3.2)
+
+ON CURVES IN K-THEORY AND TR
+
+5
+
+● We prove that BW is an orbital ∞-category in the sense of [9], and we define the notion of
+an integral topological Cartier module as a spectral Mackey functor on BW in the sense of
+Barwick [8]. This precisely encodes the datum of a spectrum M with an action of the circle
+T together with compatible T-equivariant factorizations
+MhCk → M → M hCk
+of the norm map for the cyclic group Ck for every integer k ≥ 1. This extends the definition of
+a p-typical topological Cartier module given by Antieau–Nikolaus [3] to the integral situation.
+The collection of topological Cartier modules assemble into an ∞-category TCart, and we
+will prove that TR refines to a functor with values in this ∞-category.
+In general, there is a forgetful functor of ∞-categories TCart → SpFr , and it follows that we
+may regard TR(X) as a spectrum with Frobenius lifts for every cyclotomic spectrum X, where
+each Frobenius lift of TR(X) is given by the T-equivariant map of spectra
+TR(X) ≃ TR(X)Ck → TR(X)hCk .
+̃
+Finally, the mapping spectrum mapCycSp (THH(S[t]),
+X) refines to a spectrum with Frobenius
+lifts using that the reduced topological Hochschild homology of S[t] admits the structure of a
+bimodule over S[W] by left and right multiplication (see Example 2.2.10). With these notions
+in place, we state the following result (see Theorem 3.3.12 and Proposition 2.4.3).
+Theorem B. For every cyclotomic spectrum X whose underlying spectrum is bounded below,
+there is a natural equivalence of spectra with Frobenius lifts
+TR(X) ≃ mapCycSp ( ̃
+THH(S[t]), X).
+Furthermore, there is an adjunction of ∞-categories
+→
+←
+
+SpFr
+
+→ CycSp
+←
+
+TR
+
+where the left adjoint is given by the canonical functor SpFr → CycSp.
+We remark that a variant of Theorem B above was previously obtained by Blumberg–Mandell [17]
+using point-set models for genuine cyclotomic spectra. More precisely, Blumberg–Mandell show
+̃
+that the functor TR ∶ CycSpgen → Sp is corepresentable by THH(S[t]).
+Theorem B above asserts that TR is additionally corepresentable as a functor defined on the ∞-category of cyclotomic
+spectra with values in the ∞-category of spectra with Frobenius lifts. The adjunction above was
+previously established by Krause–Nikolaus [49] for p-typical TR.
+Remark 1.2.2. Theorem B can be regarded as an analogue of the result of Nikolaus–Scholze [59]
+which asserts that there is an equivalence of spectra
+TC(X) ≃ mapCycSp (S, X)
+for every cyclotomic spectrum X whose underlying spectrum is bounded below. This corepresentability result for topological cyclic homology was conjectured by Kaledin [46] and established
+by Blumberg–Mandell [17] after p-completion prior to the work of Nikolaus–Scholze.
+
+6
+
+JONAS MCCANDLESS
+
+Remark 1.2.3. In this paper, the ∞-category of topological Cartier modules will mostly function
+as a convenient formalism for proving Theorem B. However, we believe that the notion of a
+topological Cartier module is important in its own right. For instance, the notion of a topological
+Cartier module formalizes additional structure present on the rational Witt vectors and cyclic
+K-theory. An extensive treatment of the ∞-category of topological Cartier modules extending
+the result of Antieau–Nikolaus [3] to the integral situation will appear in forthcoming work.
+We prove Theorem B by showing that the functors given by the constructions X ↦ TR(X)
+̃
+and X ↦ mapCycSp (THH(S[t]),
+X) both determine right adjoints of the canonical functor
+SpFr → CycSp
+when restricted to the full subcategories of those objects whose underlying spectrum is bounded
+below. This relies on a genuine version of the Tate orbit lemma [59, Lemma I.2.1] established by
+Antieau–Nikolaus [3] together with an explicit description of the free topological Cartier module
+on a spectrum with Frobenius lifts. The latter we deduce from a general version of the Segal–
+tom Dieck splitting for spectral Mackey functors on orbital ∞-categories (see Proposition 3.2.11).
+We deduce Theorem A from the celebrated Dundas–Goodwillie–McCarthy theorem [27] and the
+following result (see Theorem 4.2.3).
+Theorem C. There is a natural equivalence of spectra
+n
+̃
+TR(X) ≃ lim Ω TC(X ⊗ THH(S[t]/t
+))
+←Ð
+
+for every cyclotomic spectrum X whose underlying spectrum is bounded below.
+The crucial observation is that there is an equivalence of spectra with T-action
+̃
+mapSp (THH(S[t]),
+S) ≃ ∏ Σ∞−1
+(S 1 /Cn ),
++
+n≥1
+
+where the mapping spectrum on the left carries the residual T-action. We deduce Theorem C
+from Theorem B by exploiting the equalizer formula for the mapping spectrum in the ∞-category
+of cyclotomic spectra obtained by Nikolaus–Scholze [59] together with a careful analysis of the
+n
+̃
+cyclotomic structure of lim THH(S[t]/t
+). This observation is due to Achim Krause.
+←Ð
+Acknowledgements. It is a pleasure to thank Stefano Ariotta, Elden Elmanto, Felix Janssen,
+Markus Land, Malte Leip, and Jay Shah for very useful discussions related to this work. The author would also like to thank Benjamin Antieau, Elden Elmanto, Lars Hesselholt, Liam Keenan,
+Markus Land, and Thomas Nikolaus for very valuable comments on a previous version. The
+author is extremely grateful to two anonymous referees who wrote extremely detailed reports
+pointing out many inaccuracies and mistakes, which led to many improvements. Most importantly, the author is extremely grateful to Achim Krause and Thomas Nikolaus for their constant
+support and many insights which made this project possible. Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy EXC
+2044–390685587, Mathematics Münster: Dynamics–Geometry–Structure and the CRC 1442 Geometry: Deformations and Rigidity.
+
+ON CURVES IN K-THEORY AND TR
+
+7
+
+2. Spectra with Frobenius lifts and TR
+The main goal of this section is to construct the reduced topological Hochschild homology of
+the E∞ -ring S[t] as a spectrum with Frobenius lifts, and provide an alternative construction of
+TR bypassing the otherwise instrumental use of equivariant stable homotopy theory. In §2.1,
+we define the notion of an object with Frobenius lifts in any ∞-category, and prove that the
+geometric realization of a presheaf on the epicyclic category with values in an ∞-category which
+admits geometric realizations refines to an object with Frobenius lifts. In §2.2, we will discuss
+the ∞-category of spaces with Frobenius lifts, and construct a refinement of the cyclic bar
+construction which automatically carries Frobenius lifts. We use this to produce examples of
+spaces with Frobenius lifts which will play an essential role throughout this exposition. In §2.3,
+we discuss the ∞-category of spectra with Frobenius lifts, and construct the canonical functor
+from the ∞-category of spectra with Frobenius lifts to the ∞-category of cyclotomic spectra.
+Finally, in §2.4 we provide an alternative construction of TR and establish descent properties of
+this construction, deferring the comparison with the classical construction of TR to §3.
+2.1. The epicyclic category. We introduce the ∞-category of objects with Frobenius lifts in
+an ∞-category, and describe these in terms of presheaves on the epicyclic category. The following
+construction will play an important role throughout this paper.
+Construction 2.1.1. We define a monoid which we will refer to as the Witt monoid following [5].
+(1) The multiplicative monoid N× of positive integers acts on the circle group T by the assignment x ↦ xk for every integer k ≥ 1, and the Witt monoid is the topological monoid defined
+by W = T ⋊ N× , where N× is regarded as a discrete topological monoid. The underlying
+space of the Witt monoid is given by T × N× , and the multiplication is given by
+(λ, k) ⋅ (µ, l) = (λµk , kl)
+for every pair of elements (λ, k) and (µ, l) of the underlying space of W. It will be convenient
+to regard the Witt monoid as an object of the ∞-category Alg(S) of E1 -monoids. We will
+let BW denote the ∞-category with one object and the Witt monoid W as endomorphisms.
+(2) For every prime p, the multiplicative monoid µpN = {1, p, p2 , . . .} acts on the circle group T
+by restriction along the canonical inclusion of multiplicative monoids µpN ↪ N× , and the
+p-typical Witt monoid is the topological monoid defined by WpN = T ⋊ µpN , where µpN is
+regarded as a discrete topological monoid. We will let BWpN denote the ∞-category with
+one object and the p-typical Witt monoid WpN as endomorphisms.
+The Witt monoid also appears in the unpublished work of Goodwillie [34] on the cyclotomic
+trace, where the insight that it parametrizes Frobenius lifts was already present. The following
+definition also appears in the work of Ayala–Mazel-Gee–Rozenblyum [7, 5, 6].
+Definition 2.1.2. The ∞-category of objects with Frobenius lifts in an ∞-category C is defined
+by
+CFr = Fun(BWop , C) = PC (BW).
+
+8
+
+JONAS MCCANDLESS
+
+Remark 2.1.3. There is a fiber sequence of ∞-categories
+BT ≃ (BT)op → (BW)op → (BN× )op ,
+and the functor BW → BN× is a cocartesian fibration. There is a functor of ∞-categories
+CFr → CBT
+which regards an object with Frobenius lifts as an object with T-action. If X is an object with
+Frobenius lifts, then there is a morphism ψk ∶ X → X in C determined by the action of (1, k) on
+the underlying object of X for every integer k ≥ 1. We have that
+(λk , 1) ⋅ (1, k) = (1, k) ⋅ (λ, 1)
+for every element λ of T, which precisely encodes that ψk is T-equivariant with respect to the
+degree k action on the source. We conclude that an object with Frobenius lifts in an ∞-category
+C is given by an object X of C with T-action together with compatible T-equivariant maps
+ψk ∶ X → X hCk ,
+for every positive integer k, where the target carries the residual T/Ck ≃ T-action. For instance,
+if (k, l) is a pair of positive integers, then the following diagram commutes
+←
+
+←
+
+→ X hCk
+
+ψk
+
+←
+
+X
+
+→ (X hCk )hCl
+
+←
+
+←
+
+X hCl
+
+hCk
+
+ψl
+
+hC
+ψk l
+
+→
+
+→
+
+ψl
+
+≃
+
+→ (X hCl )hCk
+
+In §2.2 and §2.3 we discuss the ∞-category of spaces with Frobenius lifts and the ∞-category
+of spectra with Frobenius lifts in more detail. Presently, we discuss Goodwillie’s epicyclic category which provides a formalism for constructing objects with Frobenius lifts in the sense of
+Definition 2.1.2. We begin by reviewing the cyclic category following [59, Appendix B].
+Definition 2.1.4. A parasimplex is a nonempty linearly ordered set I equipped with an action
+of the group of integers Z denoted + ∶ I × Z → I, such that the following conditions are satisfied:
+(1) For every pair of elements λ and λ′ of I, the set {µ ∈ I ∣ λ ≤ µ ≤ λ′ } is finite.
+(2) If λ is an element of I, then λ < λ + 1.
+A paracyclic morphism is a morphism of sets f ∶ I → J which is nondecreasing and Z-equivariant.
+The paracyclic category Λ∞ is defined as the category whose objects are given by the parasimplices and whose morphisms are given by the paracyclic morphisms.
+Example 2.1.5. For every positive integer n, the set n1 Z = { m
+∣ m ∈ Z} can be regarded as a
+n
+parasimplex with respect to its usual ordering and the action of Z given by addition. We will
+denote this particular parasimplex by [n]Λ . Conversely, if I is a parasimplex, then there is an
+isomorphism of parasimplices I ≃ [n]Λ for a uniquely determined positive integer n which, can
+be characterized as the cardinality of the set {x ∈ I ∣ y ≤ x < y + 1} for any element y of I.
+Example 2.1.6. If S is an object of the simplex category ∆, then the product S × Z can be
+regarded as a parasimplex with respect to the lexicographic ordering and the action of Z given by
+the formula m + (s, n) = (s, m + n). The construction S ↦ S × Z defines a faithful functor ∆ → Λ∞
+
+ON CURVES IN K-THEORY AND TR
+
+9
+
+which is essentially surjective since there is an isomorphism of parasimplices [n] × Z ≃ [n + 1]Λ
+for every integer n ≥ 0.
+The cyclic category is defined as follows:
+Definition 2.1.7. The cyclic category Λ is the category whose objects are parasimplices, where
+the set of morphisms between a pair of parasimplices I and J is defined by
+HomΛ (I, J) = HomΛ∞ (I, J)/Z,
+where Z acts on the set of paracyclic morphisms HomΛ∞ (I, J) by the formula (f +n)(λ) = f (λ)+n.
+Remark 2.1.8. The action of the group Z on the set of paracyclic morphisms HomΛ∞ (I, J) in
+the definition of the cyclic category determines a strict action of the simplicial abelian group BZ
+on the simplicial set N(Λ∞ ), which in turn induces an action of the circle T on N(Λ∞ ). Note
+that N(Λ) ≃ N(Λ∞ )BZ ≃ N(Λ∞ )hT since the action of the simplicial abelian group BZ on N(Λ∞ )
+is free. Consequently, there is a fiber sequence
+N(Λ∞ ) → N(Λ) → BT,
+
+where the map N(Λ) → BT is both a cartesian and cocartesian fibration.
+We will now define the epicyclic category. The construction I ↦ I/Z determines a functor
+Λ → Cat,
+
+where the parasimplex I is regarded as a poset, and I/Z denotes the quotient in Cat. We regard
+Cat as a 1-category. Let [n]Λ̃ denote the category defined by [n]Λ̃ = [n]Λ /Z for every n ≥ 1.
+Definition 2.1.9. The epicyclic category Λ̃ is the subcategory of Cat on those categories which
+are isomorphic to [n]Λ̃ for some integer n ≥ 1, and those functors which are essentially surjective.
+The epicyclic category was introduced by Goodwillie in an unpublished letter to Waldhausen,
+and Burghelea–Fiedorowicz–Gajda [20] give a combinatorial description of the epicyclic category similar to the combinatorial description of the cyclic category [24]. Kaledin [47] studies a
+variant of the epicyclic category which is referred to as the cyclotomic category. Ayala–MazelGee–Rozenblyum [5] describe the epicyclic category in terms of stratified 1-manifolds and disk
+refinements. The definition of the epicyclic category given in Definition 2.1.9 is due to Nikolaus.
+Note that the functor Λ → Λ̃ is essentially surjective and faithful by construction. To see that
+this functor is not full, we give a geometric description of the morphisms in Λ and Λ̃ in the
+following examples. We may regard the object [n]Λ of Λ as a cyclic graph with n vertices, or
+equivalently as a configuration of n marked points on S 1 .
+Example 2.1.10. The datum of a morphism [m]Λ → [n]Λ in the cyclic category Λ is equivalent
+to the datum of a self-map of S 1 of degree 1 which preserves markings and satisfies that the
+induced self-map on universal covers is non-decreasing. For example, the morphism τn ∶ [n]Λ →
+[n]Λ defined by τn (i) = i+1 corresponds to the self-map of S 1 given by rotation with 2π/n, where
+the configuration of S 1 is given by {1, ζ, . . . , ζ n−1 } for a primitive nth root of unity ζ. Note that
+the morphism τn is an automorphism of [n]Λ , and there is a group isomorphism
+Z/(n + 1)Z → AutΛ ([n]Λ )
+
+10
+
+JONAS MCCANDLESS
+
+given by sending the generator of the cyclic group Z/(n + 1)Z to the automorphism τn . In
+conclusion, the group of automorphisms of [n]Λ in Λ is cyclic of order n + 1 generated by τn . In
+contrast, the group of automorphisms of an object of the simplex category is trivial.
+Example 2.1.11. The datum of a morphism [m]Λ̃ → [n]Λ̃ in the epicyclic category Λ̃ is equivalent to the datum of a self-map of S 1 of positive degree which preserves markings and satisfies
+that the induced self-map on universal covers is non-decreasing. If α is a morphism in Λ̃, then
+the degree of α is defined as the degree of the induced self-map of S 1 . There is a map
+deg ∶ N(Λ̃) → BN×
+given by sending a morphism of Λ̃ to its degree, and this is a cartesian fibration which classifies
+the canonical action of the multiplicative monoid N× on the cyclic category Λ. As an example,
+the map pk ∶ S 1 → S 1 given by pk (x) = xk corresponds to a morphism αk ∶ [kn]Λ̃ → [n]Λ̃ in Λ̃
+of degree k, where the source of pk carries the configuration consisting of kn preimages of the
+n marked points on the target. The morphism αk does not exist in the cyclic category, which
+means that the functor Λ → Λ̃ is not full. Furthermore, for every morphism f ∶ [n]Λ̃ → [n]Λ̃ in Λ̃
+of degree k, there exists a morphism f ′ ∶ [n]Λ̃ → [kn]Λ̃ in Λ̃ of degree 1 such that f = αk ○ f ′ .
+The epicyclic category Λ̃ admits an alternative description in terms of a right action of the
+Witt monoid on the paracyclic category which we now address.
+Construction 2.1.12. In the following, we will regard the Witt monoid as the monoid BZ ⋊ N×
+in Cat. The action of the group Z on the set HomΛ∞ (I, J) given by addition as in Definition 2.1.7
+defines an action of BZ on the paracyclic category Λ∞ . The action of n ∈ N× on Λ∞ is given by the
+assignment I ↦ nI, where nI denotes the parasimplex with the same underlying linearly ordered
+set as I but whose Z-action is given by restricting the Z-action on I along the homomorphism
+Z → Z given by multiplication by n. This defines a right action of BZ ⋊ N× on the paracyclic
+category Λ∞ , so we obtain a right action of the Witt monoid W on N(Λ∞ ).
+In the following, we will employ the formalism of lax limits and colimits in the sense of Gepner–
+Haugseng–Nikolaus [31]. Recall that if F ∶ BM op → Cat∞ denotes a functor which defines a right
+action of an E1 -monoid M on an ∞-category C, then the lax coinvariants is the cartesian fibration
+p ∶ CℓM → BM classified by F . The lax fixed points CℓM is the ∞-category of sections of p which
+carry every arrow in BM to a p-cartesian edge.
+Lemma 2.1.13. There is an equivalence of ∞-categories2
+N(Λ∞ )ℓW ≃ N(Λ̃),
+where the Witt monoid acts on the paracyclic category Λ∞ as in Construction 2.1.12.
+Proof. There is an equivalence of ∞-categories
+N(Λ∞ )ℓW ≃ (N(Λ∞ )ℓT )ℓN× ≃ (N(Λ∞ )hT )ℓN× ,
+using that BW ≃ (BT)ℓN× , and that N(Λ∞ )ℓT ≃ N(Λ∞ )hT since T is a group. It follows from
+Remark 2.1.8 that N(Λ∞ )hT ≃ N(Λ), so we conclude that there is an equivalence
+N(Λ∞ )ℓW ≃ N(Λ)ℓN×
+2Note that N(Λ
+
+∞ )ℓW is a priori a 2-category but the result asserts that it is in fact equivalent to a 1-category.
+
+ON CURVES IN K-THEORY AND TR
+
+11
+
+which shows that N(Λ∞ )ℓW is equivalent to a 1-category. Recall from Example 2.1.11, that the
+canonical action of N× on the cyclic category N(Λ) is classified by the cartesian fibration
+deg ∶ N(Λ̃) → BN×
+which shows that N(Λ)ℓN× ≃ N(Λ̃). This shows the desired statement.
+
+
+
+Recall that the geometric realization of a cyclic object admits a canonical action of the circle
+group as observed by Connes [24]. Similarly, we introduce the formalism of epicyclic objects and
+show that the geometric realization of an epicyclic object canonically admits Frobenius lifts, that
+is a right action of the Witt monoid.
+Definition 2.1.14. The ∞-category of epicyclic objects in an ∞-category C is defined by
+PC (Λ̃) = Fun(N(Λ̃op ), C).
+The ∞-category of epicyclic objects in the ∞-category of spaces is denoted by P(Λ̃).
+Assume that X is an epicyclic object in an ∞-category C which admits geometric realizations.
+The geometric realization of X is defined as the colimit of the underlying simplicial object
+op
+op
+N(∆op ) → N(Λop
+∞ ) → N(Λ ) → N(Λ̃ ) → C.
+
+Let ∣X∣ denote the geometric realization of X, and note that there is a functor of ∞-categories
+PC (Λ̃) → C
+determined by the construction X ↦ ∣X∣. Burghelea–Fiedorowicz–Gajda [20] prove that the
+geometric realization of an epicyclic object admits the structure of an object with Frobenius lifts
+using an explicit combinatorial description of the epicyclic category. We present a proof of this
+result using the language employed in this paper.
+Proposition 2.1.15. If C is an ∞-category which admits geometric realizations, then the construction X ↦ ∣X∣ admits a canonical refinement to a functor of ∞-categories
+PC (Λ̃) → CFr
+such that the following diagram commutes
+
+→ CBT
+
+→
+
+→
+PC (Λ)
+
+←
+
+→ CFr
+
+←
+
+←
+
+←
+
+PC (Λ̃)
+
+Proof. The functor N(∆op ) → N(Λop
+∞ ) is cofinal by virtue of [59, Theorem B.3], hence the geometric realization of an epicyclic object of C is equivalent to the colimit of the paracyclic object
+op
+op
+N(Λop
+∞ ) → N(Λ ) → N(Λ̃ ) → C.
+
+There is an adjunction of ∞-categories
+→ C
+←
+
+∣−∣
+
+→
+←
+
+PC (Λ∞ )
+
+δ∗
+
+12
+
+JONAS MCCANDLESS
+
+0
+where the right adjoint δ ∗ is given by precomposition with the terminal functor δ ∶ N(Λop
+∞) → ∆
+which is equivariant with respect to the left W-action on N(Λop
+∞ ) defined in Construction 2.1.12,
+and the trivial left W-action on ∆0 . This in turn means that the right adjoint δ ∗ is equivariant
+with respect to the induced right action of W on PC (Λ∞ ) and the trivial right action of W on
+C. Consequently, the left adjoint canonically refines to a functor of ∞-categories
+
+∣ − ∣ ∶ PC (Λ∞ )ℓW → CFr ,
+where (−)ℓW denotes the lax fixed points of the right action of the Witt monoid on PC (Λ∞ ).
+Additionally, we have used that CFr ≃ CℓW since the action of the Witt monoid on C is trivial.
+The desired functor is given by composing the functor above with the canonical functor
+PC (Λ̃) → PC (Λ∞ )ℓW ,
+where we have used that N(Λ∞ )ℓW ≃ N(Λ̃) by Lemma 2.1.13. The final assertion follows by a
+similar argument using the equivalences (−)ℓT ≃ (−)hT and (−)ℓT ≃ (−)hT since T is a group. 
+2.2. Spaces with Frobenius lifts. Using the formalism of epicyclic spaces discussed in §2.1,
+we give a more comprehensive treatment of the ∞-category of spaces with Frobenius lifts. We
+construct an epicyclic variant of the cyclic bar construction and use this to produce examples of
+spaces with Frobenius lifts which will play an important role throughout this paper. Recall that
+the ∞-category of spaces with Frobenius is defined by S Fr = P(BW). We summarize the salient
+features of the ∞-category of spaces with Frobenius lifts.
+Proposition 2.2.1. The ∞-category of spaces with Frobenius lifts is a presentable ∞-category,
+and the forgetful functor S Fr → S BT is conservative and preserves small limits and colimits.
+Alternatively, the ∞-category of spaces with Frobenius lifts is equivalent to the full subcategory
+of S/BW spanned by those maps over BW which are right fibrations [53, Section 2.2]. In practice,
+we will make use of the formalism of epicyclic spaces as discussed in §2.1 to construct examples
+of spaces with Frobenius lifts.
+Example 2.2.2. Let X denote an object of the ∞-category of spaces. The free loop space L(X)
+of X is the geometric realization of the epicyclic space given by the assignment
+[n]Λ̃ ↦ MapS (∣[n]Λ̃ ∣, X) ≃ L(X),
+so we may regard the free loop space L(X) as a space with Frobenius lifts by Proposition 2.1.15.
+For concreteness, we note that the self-map of L(X) determined by the cyclic operator τn is
+induced by the self-map of S 1 given by rotation with 2π/n. The self-map of L(X) determined
+by the epicyclic operator αk is induced by the self-map of S 1 given by the kth power map.
+An important class of examples of spaces with Frobenius lifts arises by evaluating the cyclic
+bar construction on an E1 -monoid. Using the combinatorial description of the epicyclic category,
+Burghelea–Fiederowicz–Gajda [20] prove that the cyclic space whose geometric realization defines
+the cyclic bar construction further refines to an epicyclic space. A similar result was obtained
+by Schlichtkrull [60]. More recently, Nikolaus–Scholze [59] construct the individual Frobenius
+lifts on the cyclic bar construction using the space-valued diagonal. For instance, if M is the
+E1 -monoid given by ΩX for a connected pointed space X, then Bcyc M ≃ L(X). In fact, this
+
+ON CURVES IN K-THEORY AND TR
+
+13
+
+equivalence refines to an equivalence of spaces with Frobenius lifts, where we regard L(X) as a
+space with Frobenius lifts as in Example 2.2.2 (see Corollary 2.2.8). We proceed by introducing
+an epicyclic bar construction following an idea of Nikolaus.
+Construction 2.2.3. Let TAss denote the Lawvere theory of monoids [51]. By definition, the
+opposite of TAss is the full subcategory of the category of monoids spanned by those monoids
+which are free on a finite set. We construct a functor j ∶ Λ̃ → Top
+Ass which informally is given by
+sending an object [n]Λ̃ of the epicyclic category to the free monoid on the set {1, . . . , n}. First
+note that there is a functor of ∞-categories
+N(Λ̃) → Cat∆
+∞ ÐÐ→ (Cat∞ )∗
+1
+
+cofib
+
+determined by the construction which sends an object [n]Λ̃ of the epicyclic category Λ̃ to the
+cofiber of the canonical functor [n]ds
+↪ [n]Λ̃ which exhibits the source as the discrete category
+Λ̃
+on the set of objects of [n]Λ̃ . The space of endomorphisms of the canonical basepoint of the
+cofiber [n]Λ̃ /[n]ds
+is equivalent to a discrete monoid which is free on the finite set {1, . . . , n}, so
+Λ̃
+we obtain a functor
+j ∶ N(Λ̃) → N(Top
+Ass )
+
+defined by j([n]Λ̃ ) = End[n]Λ̃ /[n]ds (∗), where ∗ denotes the canonical basepoint of [n]Λ̃ /[n]ds
+.
+Λ̃
+Λ̃
+
+The datum of an E1 -monoid in the sense of [54] is equivalently specified by the datum of a
+functor N(TAss ) → S which preserves finite products as explained in [25] or [30, Appendix B].
+We define the epicyclic bar construction of an E1 -monoid using Construction 2.2.3.
+Definition 2.2.4. The epicyclic bar construction Bepi M of an E1 -monoid M is defined by
+forming the geometric realization of the epicyclic space given by
+N(Λ̃op ) ÐÐ→ N(TAss ) Ð→ S.
+j op
+
+M
+
+The construction M ↦ Bepi M determines a functor of ∞-categories
+Bepi ∶ Alg(S) → S Fr .
+Remark 2.2.5. If M is an E1 -monoid, then the geometric realization of the cyclic space
+N(Λop ) → N(Λ̃op ) ÐÐ→ N(TAss ) Ð→ S
+j op
+
+M
+
+is canonically equivalent to the cyclic bar construction Bcyc M regarded as an object of S BT .
+We introduce an epicyclic variant of topological Hochschild homology of a small ∞-category
+as a refinement of the unstable topological Hochschild homology introduced by Nikolaus [43].
+Definition 2.2.6. The epicyclic topological Hochschild homology THHepi (C) of a small ∞category C is defined as the geometric realization of the epicyclic space given by the assignment
+[n]Λ̃ ↦ Fun([n]Λ̃ , C)≃ .
+
+The construction C ↦ THHepi (C) determines a functor of ∞-categories
+THHepi ∶ Cat∞ → S Fr .
+
+14
+
+JONAS MCCANDLESS
+
+It will be convenient to work with both the epicyclic bar construction and the epicyclic topological Hochschild homology, so we show that they coincide as spaces with Frobenius lifts for
+E1 -monoids. The author learned the proof of the following result from Nikolaus, and a proof of
+a similar result appears in Krause–Nikolaus [49, Proposition 8.1].
+Proposition 2.2.7. Let M be an E1 -monoid, and let BM denote the ∞-category with one object
+and M as endomorphisms. There is an equivalence of spaces with Frobenius lifts
+Bepi M → THHepi (BM ).
+
+Proof. Let Cn denote the cofiber of the functor ([n]ds
+) ↪ ([n]Λ̃ )+ in (Cat∞ )∗ , and note that Cn
+Λ̃ +
+is equivalent to the pointed ∞-category Bj([n]Λ̃ ), where j([n]Λ̃ ) denotes the monoid discussed
+in Construction 2.2.3. There is a fiber sequence of epicyclic spaces
+Fun∗ (Cn , BM )≃ → Fun([n]Λ̃ , BM )≃ → (BM × )n ,
+where M × denotes the group of units of M , and the epicyclic space on the left is equivalent to
+the epicyclic space defining Bepi M since Fun∗ (Cn , BM )≃ ≃ MapS ([n]Λ̃ , M ). As a consequence,
+we obtain a map of spaces with Frobenius lifts
+Bepi M → THHepi (BM )
+obtained as the geometric realization of the first map in the fiber sequence above, and we show
+that this map is an equivalence. Note that the space Fun∗ (Cn , BM )≃ admits a canonical action
+of the epicyclic group given by G● ∶ [n]Λ̃ ↦ (M × )n , and the first map in the fiber sequence
+exhibits Fun([n]Λ̃ , BM )≃ as the homotopy coinvariants of this action in the ∞-category P(Λ̃).
+In other words, the map Bepi M → THHepi (BM ) above is equivalent to the following composite
+Bepi M → (Bepi M )h∣G● ∣ Ð
+→ THHepi (BM ),
+≃
+
+where ∣G● ∣ denotes the geometric realization of the epicyclic group G● . Note that the geometric
+realization ∣G● ∣ of G● is contractible since the underlying simplicial object of G● admits an extra
+degeneracy, so the map Bepi M → (Bepi M )h∣G● ∣ is an equivalence, which proves the claim.
+
+Consequently, we obtain the following result which allow us to explicitly identify the Frobenius
+lifts on the epicyclic bar construction in certain examples. This result was first obtained by
+Goodwillie [33], Burghelea–Fiedorowicz [19], and Jones [45] ignoring the epicyclic structure, and
+by Burghelea–Fiedorowicz–Gajda [20] in the epicyclic case.
+Corollary 2.2.8. Let X denote an object of the ∞-category of spaces regarded as an ∞-category.
+There is an equivalence of spaces with Frobenius lifts
+THHepi (X) ≃ L(X),
+where L(X) is regarded as a space with Frobenius lifts as in Example 2.2.2.
+Proof. For every integer n ≥ 1, there is an equivalence of spaces
+Fun([n]Λ̃ , X)≃ ≃ MapS (∣[n]Λ̃ ∣, X) ≃ L(X),
+
+which shows that the underlying simplicial object of THHepi (X) is constant with value L(X).
+The assertion now follows from Example 2.2.2.
+
+
+ON CURVES IN K-THEORY AND TR
+
+15
+
+Finally, using the material discussed above we present further examples of spaces with Frobenius lifts which will play an important role throughout this paper.
+Example 2.2.9. There is an equivalence of spaces with Frobenius lifts Bepi Z ≃ L(S 1 ) by virtue
+of Proposition 2.2.7 and Corollary 2.2.8. For every integer i, we will let
+L(S 1 )i = {f ∈ L(S 1 ) ∣ deg(f ) = i}
+denote the space of self-maps of S 1 of degree i. Note that the map
+S 1 /Ci → L(S 1 )i
+
+given by [x] ↦ (t ↦ (tx)i ) is an equivalence of spaces with T-action provided that we regard the
+left hand side as a space with T-action given by the formula λ ⋅ [x] = [λx]. The pth Frobenius
+lift of L(S 1 ) is induced by the T-equivariant map of spaces
+L(S 1 )i → (L(S 1 )pi )hCp
+
+given by the construction f ↦ f ○(−)p , where (L(S 1 )pi )hCp carries the residual T/Cp ≃ T-action.
+Using the equivalence described above, this map corresponds to the T-equivariant map of spaces
+S 1 /Ci → (S 1 /Cpi )hCp
+
+√
+given by x ↦ p x, where the residual action of T/Cp on (S 1 /Cpi )hCp is given by [λ] ⋅ [x] = [λx].
+Under the isomorphism T ≃ T/Cp given by the pth root, the action of T on (S 1 /Cpi )hCp is given
+√
+p
+by λ ⋅ [x] = [ λx]. In conclusion, there is an equivalence of spaces with Frobenius lifts
+Bepi Z ≃ ∐ S 1 /C∣i∣ ,
+i∈Z
+
+where the pth Frobenius lift is determined by the T-equivariant map S 1 /Ci → (S 1 /Cpi )hCp given
+√
+by x ↦ p x. Furthermore, there is an equivalence of spaces with T-action
+Bepi Z≥0 ≃ ∗ ∐ ∐ S 1 /Ci ,
+i≥1
+
+where the Frobenius lifts are described as above. This identification is originally due to Hessel̃ epiZ≥0 denote the space with Frobenius lifts given by
+holt [38, Lemma 2.2.3]. We will let B
+̃ epi
+
+and we refer to B
+
+̃ epi Z≥0 ≃ ∐ S 1 /Ci ,
+B
+i≥1
+
+Z≥0 as the reduced epicyclic bar construction of Z≥0 .
+
+Example 2.2.10. The Witt monoid admits the structure of W-W-bimodule by left and right
+multiplication, so we may regard the Witt monoid as a space with Frobenius lifts. Furthermore,
+there is an equivalence of W-W-bimodules in spaces
+̃ epi Z≥0 ≃ W
+B
+by Example 2.2.9. Explicitly, under this equivalence, the action of an element λ of T is given
+by left multiplication by (λ, 1) in the Witt monoid. The pth Frobenius lift is given by right
+multiplication by (1, p) in the Witt monoid. As a consequence, the Yoneda embedding BW → S Fr
+̃ epi Z≥0 .
+is determined by the construction ∗ ↦ B
+
+16
+
+JONAS MCCANDLESS
+
+2.3. Spectra with Frobenius lifts. Next, we discuss the ∞-category of spectra with Frobenius lifts in further detail, and construct the canonical functor from the ∞-category of spectra
+with Frobenius lifts to the ∞-category of cyclotomic spectra as an instance of the stable nerverealization adjunction. Recall that the ∞-category of spectra with Frobenius lifts is defined by
+SpFr = PSp (BW). We will start by summarizing the salient features of the ∞-category of spectra
+with Frobenius lifts.
+Proposition 2.3.1. The ∞-category SpFr of spectra with Frobenius lifts is a presentable and
+stable ∞-category, and the forgetful functor SpFr → SpBT is conservative and preserves small
+limits and colimits.
+Warning 2.3.2. The notion of a spectrum with Frobenius lifts in the sense of Definition 2.1.2
+is referred to as a cyclotomic spectrum with Frobenius lifts in the literature (cf. [59, 3, 49]).
+More precisely, Nikolaus–Scholze [59] and Antieau–Nikolaus [3] study the notion of a p-typical
+cyclotomic spectrum with Frobenius lift which we briefly recall in Remark 2.3.3. In [49], Krause–
+Nikolaus study an integral version of cyclotomic spectra with Frobenius lifts. A variant of Definition 2.1.2 features in the work of Ayala–Mazel-Gee–Rozenblyum [7, 5, 6] under the name of
+an unstable cyclotomic object. We have opted for the present terminology to avoid confusion in
+later parts of the present exposition, where we will have the chance to consider objects in the
+∞-category of cyclotomic spectra with an additional action of the Witt monoid (cf. Construction 2.3.7).
+Remark 2.3.3. We recall the p-typical variant of the notion of a spectrum with Frobenius lifts as
+previously considered by Nikolaus–Scholze [59] and Antieau–Nikolaus [3]. A p-typical spectrum
+with Frobenius lift3 is a spectrum X with T-action together with a T-equivariant map of spectra
+ψp ∶ X → X hCp ,
+where the target carries the residual T/Cp ≃ T-action. The ∞-category SpFr
+p of p-typical spectra
+with Frobenius lift is defined by the following pullback of ∞-categories
+
+←
+
+→ SpBT × SpBT
+
+(id,(−)hCp )
+
+←
+
+←
+
+1
+
+→
+
+→
+SpBT
+
+→ (SpBT )∆
+
+←
+
+SpFr
+p
+
+The canonical map of Witt monoids WpN → W induces a canonical functor of ∞-categories
+SpFr → PSp (BWpN ) Ð
+→ SpFr
+p ,
+≃
+
+where the equivalence is induced by the universal property of SpFr
+p as the pullback above. Informally, the functor above is given by only remembering the pth Frobenius lift.
+In practice, it is difficult to specify the datum of a spectrum with Frobenius lifts due to the
+infinite hierarchy of coherences that needs to be specified. However, there is a functor
+S Fr → SpFr
+3Referred to as a p-typical cyclotomic spectrum with Frobenius lift by Nikolaus–Scholze and Antieau–Nikolaus.
+
+ON CURVES IN K-THEORY AND TR
+
+17
+
+given by postcomposition with Σ∞
++ ∶ S → Sp, and we will mostly be interested in spectra with
+Frobenius lifts contained in the essential image of this functor. In this situation, the formalism
+of epicyclic spaces as discussed in §2.1 allows us to effectively control the coherences.
+̃ epi Z≥0 admits the structure of a spectrum with
+Example 2.3.4. The suspension spectrum Σ∞
++ B
+Frobenius lifts. There is an equivalence of spectra with Frobenius lifts
+̃ epi Z≥0 ≃ ⊕ Σ∞ (S 1 /Ci ),
+Σ∞
++ B
++
+i≥1
+
+and the kth Frobenius lift is induced by the T-equivariant map of spaces S 1 /Ci → (S 1 /Cki )hCk
+as described in Example 2.2.9. The coherences are encoded by the epicyclic bar construction as
+̃ epi Z≥0 ≃
+in §2.2. Additionally, there is an equivalence of S[W]-S[W]-bimodules in spectra Σ∞
++ B
+S[W] by Example 2.2.10.
+Informally, if X denotes a spectrum with Frobenius lifts, then the underlying spectrum with
+T-action admits the structure of a cyclotomic spectrum, where the pth cyclotomic Frobenius is
+given by the T-equivariant composite map of spectra X → X hCp → X tCp for every prime p. We
+show that this construction refines to a functor of ∞-categories
+SpFr → CycSp
+as an instance of the stable nerve-realization adjunction. The stable nerve-realization adjunction
+appears in the work of Dwyer–Kan [28] in the unstable context of G-spaces, and we refer the
+reader to [4, Appendix A] for a systematic treatment phrased in the language of ∞-categories.
+Definition 2.3.5. Let C be a small ∞-category. The stable realization of a functor F ∶ C → D
+with values in a stable and presentable ∞-category D is the functor
+∣ − ∣F ∶ PSp (C) → D
+
+defined by the left Kan extension of F along the stable Yoneda embedding yst ∶ C → PSp (C).
+
+Proposition 2.3.6. Let C be a small ∞-category, and let F ∶ C → D be a functor with values in
+a stable and presentable ∞-category D. The stable realization of F admits a right adjoint
+NF ∶ D → PSp (C)
+
+determined by the construction d ↦ mapD (F (−), d).
+
+Proof. Let Ly F denote the left Kan extension of F along the Yoneda embedding y ∶ C → P(C),
+and note that it suffices to show that Ly F admits a right adjoint determined by the construction
+d ↦ MapD (F (−), d). It follows from [53, Theorem 5.1.5.6] that there is an adjoint equivalence
+y∗
+
+→
+←
+
+FunL (P(C), D)
+
+→ Fun(C, D)
+←
+
+where the right adjoint is determined by the assignment F ↦ Ly F , so we conclude that Ly F
+admits a right adjoint by [53, Corollary 5.5.2.9]. There is a natural equivalence
+(Ly F )(X) ≃ ∫
+
+c∈C
+
+MapP(C) (y(c), X) ⊗ F (c),
+
+18
+
+JONAS MCCANDLESS
+
+for every presheaf X on C, where we have used that D is canonically tensored over the ∞-category
+of spaces. For every object d of D, there is a sequence of natural equivalences
+MapD ((Ly F )(X), d) ≃ MapD (∫
+≃∫
+
+c∈C
+
+≃∫
+
+c∈C
+
+c∈C
+
+MapP(C) (y(c), X) ⊗ F (c), d)
+
+MapD (X(c) ⊗ F (c), d)
+
+MapS (X(c), MapD (F (c), d))
+
+≃ MapP(C) (X, MapD (F (−), d))
+which finishes the proof.
+
+
+
+̃ epi Z≥0 ,
+We construct a functor BW → CycSp which encodes the cyclotomic structure of Σ∞
++ B
+which will allow us to define the canonical functor from the ∞-category of spectra with Frobenius
+lifts to the ∞-category of cyclotomic spectra.
+Construction 2.3.7. Following Nikolaus–Scholze [59] and Antieau–Nikolaus [3], the ∞-category
+of p-typical spaces with Frobenius lift is defined by the following pullback of ∞-categories
+
+←
+
+→ S BT × S BT
+
+(id,(−)hCp )
+
+←
+
+←
+
+1
+
+→
+
+→
+S BT
+
+→ (S BT )∆
+
+←
+
+SpFr
+
+Consider the following sequence of functors of ∞-categories
+SpFr → SpFr
+p → CycSpp ,
+
+where the first induced by the suspension spectrum functor Σ∞
++ ∶ S → Sp, and the second functor
+is induced by the natural transformation (−)hCp → (−)tCp . Using that there is an equivalence of
+∞-categories P(BWpN ) ≃ SpFr , we obtain a sequence of functors of ∞-categories
+BW → S Fr → SpFr → CycSpp
+
+for every prime number p, where the first functor is given by the Yoneda embedding which we
+described explicitly in Example 2.2.10, and the second functor is induced by the canonical map
+of E1 -monoids WpN → W. Consequently, we obtain a functor of ∞-categories
+BW → CycSp
+
+by virtue of the universal property of CycSp as a lax equalizer (cf. [59, Definition II.1.4]). This
+̃ epi Z≥0 ≃ S[W], and we note that the T-action on
+functor carries the unique object of BW to Σ∞
++ B
+∞ ̃ epi
+Σ+ B Z≥0 is the usual T-action which unstably is given by λ ⋅ (x, n) = (λx, n) for every element
+λ of T. The stable realization of the functor BW → CycSp defines a functor of ∞-categories
+SpFr → CycSp
+
+which we will refer to as the canonical functor.
+The canonical functor SpFr → CycSp does not exhibit the ∞-category of spectra with Frobenius
+lifts as a subcategory of the ∞-category of cyclotomic spectra, that is the Frobenius lifts are
+structure and not a property. We establish the main result of this section.
+
+ON CURVES IN K-THEORY AND TR
+
+19
+
+Theorem 2.3.8. There is an adjunction of ∞-categories
+→
+←
+
+SpFr
+
+→ CycSp
+←
+
+̃
+where the right adjoint is determined by the construction X ↦ mapCycSp (THH(S[t]),
+X), and
+the left adjoint is given by the canonical functor constructed above.
+
+̃
+̃ epi Z≥0 , so the claim
+Proof. There is an equivalence of cyclotomic spectra THH(S[t])
+≃ Σ∞
++ B
+follows by combining Proposition 2.3.6 and Construction 2.3.7.
+
+
+2.4. Topological restriction homology. We present an alternative definition of TR as a functor on the ∞-category of cyclotomic spectra valued in the ∞-category of spectra with Frobenius
+lifts inspired by a result of Blumberg–Mandell [17]. Additionally, we study TR as a localizing
+invariant and discuss various descent properties of TR.
+Definition 2.4.1. If X is a cyclotomic spectrum, then TR(X) is defined by
+
+1
+TR(X) = mapCycSp ( ̃
+THH(S[t]), X) ≃ mapCycSp ( ⊕ Σ∞
++ (S /Ci ), X).
+i≥1
+
+The construction X ↦ TR(X) determines a functor of ∞-categories TR ∶ CycSp → Sp.
+Notation 2.4.2. If C is a stable ∞-category, then TR(C) = TR(THH(C)). In particular, if R is
+an E1 -ring, then TR(R) = THH(Perf R ) ≃ TR(THH(R)).
+Definition 2.4.1 is based on a result of Blumberg–Mandell [17, Theorem 6.11] which asserts that
+the classical construction of TR as considered by [18, 40, 17] is corepresentable by the reduced
+topological Hochschild homology of the flat affine line S[t] as a functor on the homotopy category
+of genuine cyclotomic spectra with values in the homotopy category of spectra. In §3, we prove
+that the definition of TR given above recovers the classical definition of TR in the bounded
+below case (see Theorem 3.3.12). The following result is now an immediate consequence of the
+formalism developed in §2.3.
+Proposition 2.4.3. The functor TR ∶ CycSp → Sp refines to a functor of ∞-categories
+TR ∶ CycSp → SpFr
+
+which is a right adjoint of the canonical functor SpFr → CycSp.
+Proof. Combine Theorem 2.3.8 and Definition 2.4.1.
+
+
+
+Krause–Nikolaus [49, Proposition 10.3] prove that the construction given by p-typical TR
+determines a right adjoint of the canonical functor SpFr
+p → CycSpp , and Proposition 2.4.3 extends
+this result to the integral situation.
+Remark 2.4.4. Nikolaus–Scholze [59] prove that for every cyclotomic spectrum whose underlying spectrum is bounded below, there is a natural equivalence of spectra
+TC(X) ≃ mapCycSp (S, X),
+where TC(X) denotes Goodwillie’s integral topological cyclic homology. This was conjectured by
+Kaledin [46] and proven by Blumberg–Mandell [17] after p-completion. Definition 2.4.1 provides
+a similar description of TR in the bounded below case removing the otherwise instrumental use
+of equivariant stable homotopy theory in the construction of TR.
+
+20
+
+JONAS MCCANDLESS
+
+Remark 2.4.5. An advantage of Definition 2.4.1 is that we obtain an explicit equalizer formula
+for TR. Let X be a cyclotomic spectrum whose underlying spectrum is bounded below, and note
+1
+that X hCi ≃ mapSpBT (Σ∞
++ (S /Ci ), X) for every i ≥ 1. Consequently, we obtain that
+i≥1
+
+←
+←
+
+TR(X) ≃ Eq( ∏ X hCi
+
+→ ∏ ∏(X tCp )hCi ),
+→
+p i≥1
+
+where the top map is induced by X → X tCp , and the bottom map is induced by the composite
+X hCi ≃ (X hCp )hCi/p ÐÐÐÐÐ→ (X tCp )hCi/p
+hCi/p
+
+can
+
+provided that p divides i. This is a consequence of the formula for the mapping spectrum in the
+∞-category CycSp obtained in [59, Proposition II.1.5].
+There is a construction of p-typical TR due to Nikolaus–Scholze [59] which only relies on the
+Borel equivariant homotopy theory of cyclotomic spectra, which we recall for completeness.
+Remark 2.4.6. For every p-typical cyclotomic spectrum X, we let TRn+1 (X, p) denote the
+following iterated pullback in the ∞-category of spectra with T-action
+X hCpn ×(X tCp )hCpn−1 X hCpn−1 ×(X tCp )hCpn−2 ⋯ ×(X tCp )hCp X hCp ×X tCp X
+for each n ≥ 0. The maps from the left factors to the right factors are induced by the canonical
+map X hCp → X tCp , and the maps from the right factors to the left factors are induced by
+cyclotomic Frobenius X → X tCp . In fact, if the underlying spectrum of X is bounded below,
+then the underlying spectrum of X admits the structure of a genuine T-spectrum with respect to
+the family of finite p-subgroups of T, such that there is an equivalence TRn+1 (X, p) ≃ X Cpn for
+each n ≥ 0. For each n ≥ 1, there is a map of spectra with T-action R ∶ TRn+1 (X, p) → TRn (X, p)
+induced by forgetting the first factor in the iterated pullback defining TRn+1 (X, p), and there is
+an equivalence of spectra with T-action
+TR(X, p) ≃ lim TRn+1 (X, p).
+←nÐ
+Krause–Nikolaus [49, Definition 9.5] give a description of integral TR by similar methods as
+above. However, it becomes complicated to specify coherences between the Frobenius lifts using
+this description. By similar methods as used in this paper, it is possible to show that there is a
+natural equivalence of p-typical cyclotomic spectra with Frobenius lift
+1
+TR(X, p) ≃ mapCycSpp ( ⊕ Σ∞
++ (S /Cpi ), X)
+i≥0
+
+for every p-typical cyclotomic spectrum X whose underlying spectrum is bounded below.
+As an application, we describe TR as a localizing invariant. Let Catperf
+∞ denote the ∞-category
+of small idempotent-complete stable ∞-categories and exact functors among them. Recall that
+an exact sequence in Catperf
+is a sequence which is both a fiber sequence and a cofiber sequence.
+∞
+Following Tamme [63], a localizing invariant with values in a stable ∞-category D is a functor
+E ∶ Catperf
+→ D which carries exact sequences in Catperf
+to fiber sequences in D. Blumberg–
+∞
+∞
+Gepner–Tabuada [15] additionally require that localizing invariants preserve filtered colimits.
+ÐÐ→ CycSp ÐÐ→ SpFr is a localizing invariant.
+Corollary 2.4.7. The functor Catperf
+∞ Ð
+THH
+
+TR
+
+ON CURVES IN K-THEORY AND TR
+
+21
+
+Proof. The functor THH ∶ Catperf
+∞ → CycSp is a localizing invariant by Blumberg–Mandell [16],
+and the functor TR ∶ CycSp → SpFr preserves limits by virtue of Proposition 2.4.3.
+
+Remark 2.4.8. We extend the definition of TR to schemes. Let Perf X denote the ∞-category
+of perfect OX -modules for a scheme X, and define TR(X) = TR(Perf X ). Consequently, the
+construction X ↦ TR(X) satisfies Nisnevich descent on quasi-compact quasi-separated schemes
+by a result of Thomason [64] since TR is a localizing invariant.
+We end by discussing various descent properties for TR building on the work of [12, 48, 3, 23,
+21]. In the following, we will let CAlg♡ denote the category of discrete commutative rings.
+Corollary 2.4.9. The construction R ↦ TR(R) determines a functor of ∞-categories
+TR ∶ CAlg♡ → SpFr
+
+which is a sheaf for the fpqc topology on CAlg♡ .
+Proof. We first show that the functor THH ∶ CAlg♡ → CycSp is an fpqc sheaf on CAlg♡ . As a
+consequence of the construction of the ∞-category CycSp as a lax equalizer it suffices to show
+that the functors THH ∶ CAlg♡ → SpBT and THHtCp ∶ CAlg♡ → SpBT are fpqc sheaves for every
+prime p. This follows from [12, Corollary 3.4 and Remark 3.5] since limits in SpBT are computed
+pointwise. This shows the desired statement since TR ∶ CycSp → SpFr preserves limits.
+
+The proof of Corollary 2.4.9 above shows that every descent result for THH regarded as a
+functor with values in the ∞-category of cyclotomic spectra yields a corresponding descent statement for TR. In [48], Keenan extends the result of Bhatt–Morrow–Scholze [12] on fpqc descent
+for THH to connective E∞ -rings, and Antieau–Nikolaus [3] prove that THH is a hypercomplete
+sheaf with values in the ∞-category of cyclotomic spectra for the pro-étale topology on CAlg♡ .
+In [21], Clausen–Mathew prove that THH is a Postnikov complete sheaf for the étale topology
+on E2 -rings extending their previous work with Naumann and Noel in [23].
+3. Comparison with genuine TR
+In this section, we establish the main technical result of this paper which asserts that the classical construction of TR agrees with the construction of TR considered in §2.4. In §3.1, we review
+the formalism of Mackey functors defined on orbital ∞-categories following Barwick [8], and employ this to construct the ∞-category of genuine T-spectra following Barwick–Glasman [10].
+In §3.2, we define the notion of a topological Cartier modules, and obtain an explicit description of the free topological Cartier module on a spectrum with Frobenius lifts as an instance of
+the Segal–tom Dieck splitting for Mackey functors defined on orbital ∞-categories. In §3.3, we
+briefly recall the classical construction of TR following Blumberg–Mandell [17], and prove that
+this coincides with the construction of TR considered in §2.4 in the bounded below case.
+3.1. Equivariant stable homotopy theory. In this section, we briefly review the notions
+from equivariant stable homotopy theory that will play an important role in this paper. In [37],
+Guillou–May establish a model for the homotopy theory of G-spectra in the sense of [52, 55, 44]
+for a finite group G, in terms of spectral Mackey functors, and Barwick [8] developed an ∞categorical approach to Mackey functors on orbital ∞-categories. Barwick–Dotto–Glasman–
+Nardin–Shah revisit the result of Guillou–May in the general context of parametrized homotopy
+
+22
+
+JONAS MCCANDLESS
+
+theory [9, 57]. Our goal in this section is to briefly review the formalism of Mackey functors
+following [8], and use this to construct the ∞-category of genuine T-spectra following Barwick–
+Glasman [10].
+Definition 3.1.1. The finite coproduct completion FinT of a small ∞-category T is the smallest
+full subcategory of P(T ) which contains the essential image of the Yoneda embedding and which is
+closed under finite coproducts. A small ∞-category T is orbital if the finite coproduct completion
+of T admits pullbacks.
+Remark 3.1.2. Definition 3.1.1 was introduced by Barwick–Dotto–Glasman–Nardin–Shah in [9].
+Note that the finite coproduct completion of an orbital ∞-category is disjunctive in the sense of
+Barwick [8]. Additionally, the epiorbital ∞-categories in the sense of Glasman [32] are examples
+of orbital ∞-categories.
+For instance, if G is a finite group, then the finite coproduct completion of the orbit category
+of G is equivalent to the category of finite G-sets, since every finite G-set admits a unique
+decomposition as a disjoint union of orbits. In other words, the orbit category of G is orbital in
+the sense of Definition 3.1.1.
+Remark 3.1.3. The finite coproduct completion of a small ∞-category T is characterized by a
+universal property: For every ∞-category D which admits finite coproducts, the Yoneda embedding j ∶ T → FinT induces an equivalence of ∞-categories
+Fun∐ (FinT , D) → Fun(T, D),
+
+where Fun∐ (FinT , D) denotes the full subcategory of Fun(FinT , D) spanned by those functors
+which preserve finite coproducts. This follows from [53, Proposition 5.3.6.1] by taking K = Fin
+and R = ∅. Note that the inverse is determined by forming the left Kan extension along the
+Yoneda embedding.
+Let T be an orbital ∞-category, and let Span(FinT ) denote the ∞-category of spans in the
+finite coproduct completion of T . Concretely, the objects of Span(FinT ) are given by the objects
+of FinT , and a morphism from X to X ′ in Span(FinT ) is given by a span
+Y
+
+→
+
+←
+
+→
+
+X
+
+←
+
+X′
+
+in FinT . Additionally, if X ′ ← Y ′ → X ′′ is a morphism from X ′ to X ′′ in Span(FinT ), then
+composition is defined by forming a pullback in FinT
+
+X′
+
+→
+
+→
+
+→
+
+←
+
+Y′
+
+→
+
+←
+
+→
+
+←
+
+←
+
+P
+
+←
+
+→
+
+X
+
+Y
+
+←
+
+X ′′
+
+which exists by virtue of the assumption that T is an orbital ∞-category. The reader is invited to
+consult [8, Proposition 3.4] for a precise construction of Span(FinT ) as a complete Segal space.
+
+ON CURVES IN K-THEORY AND TR
+
+23
+
+Construction 3.1.4. Let T be an orbital ∞-category. There is a functor i ∶ Finop
+T → Span(FinT )
+which is the identity on objects, and determined by the following construction on morphisms
+(X → X ′ ) ↦ (X ′ ← X Ð→ X)
+id
+
+Consequently, we obtain a functor T op → Span(FinT ) given by precomposing the functor i
+with the opposite of the canonical functor T → FinT . Similarly, there is a functor i′ ∶ FinT →
+Span(FinT ) which is the identity on objects, and determined by the following construction on
+morphisms
+(X → X ′ ) ↦ (X ←Ð X → X ′ )
+id
+
+We obtain a functor T → Span(FinT ) given by precomposing the functor i′ above with the
+canonical functor T → FinT . See [8, Notation 3.9] for a formal description of these functors.
+If T is an orbital ∞-category, then the ∞-category Span(FinT ) is semiadditive and the sum
+is given by the coproduct in FinT (cf. [8, Proposition 4.3]). Consequently, the ∞-category of
+Mackey functors on an orbital ∞-category is defined as follows (cf. [8, Definition 6.1]):
+Definition 3.1.5. Let T denote an orbital ∞-category, and let D denote an additive ∞-category.
+The ∞-category of D-valued Mackey functors on T is defined by
+MackD (T ) = Fun× (Span(FinT ), D),
+
+where Fun× (Span(FinT ), D) denotes the full subcategory of Fun(Span(FinT ), D) spanned by
+those functors which preserve products. If D = Sp is the ∞-category of spectra, then we write
+Mack(T ) instead of MackSp (T ), and refer to the former as the ∞-category of spectral Mackey
+functors on T .
+Example 3.1.6. The orbit category of a finite group G is an example of an orbital ∞-category.
+The ∞-category of spectral Mackey functors on OrbG is equivalent to the ∞-category of genuine
+G-spectra by the work of Guillou–May [37]. By the ∞-category of genuine G-spectra we mean
+the underlying ∞-category of the category of orthogonal G-spectra equipped with the model
+structure established by Mandell–May in [55]. Alternatively, we refer to Nardin [57, Theorem A.4]
+or Clausen–Mathew–Naumann–Noel [22, Appendix A] for a direct comparison using Barwick’s
+model of spectral Mackey functors.
+We construct the ∞-category of genuine T-spectra with respect to the family of finite cyclic
+subgroups of T using the formalism of spectral Mackey functors on orbital ∞-categories following
+Barwick–Glasman [10]. An alternative construction has been obtained by Ayala–Mazel-Gee–
+Rozenblyum [7], and we refer the reader to the foundational work of Lewis–May–Steinberger [52]
+and Mandell–May [55] for the classical approach.
+Definition 3.1.7. The orbit ∞-category OrbT of the circle is defined as the full subcategory of
+the ∞-category S BT spanned by those spaces with T-action of the form T/Cn for every n ≥ 1.
+The orbit ∞-category of the circle is equivalent to the cyclonic category of Barwick–Glasman [10,
+Definition 1.10] as explained in [10, Remark 1.13], so we conclude that the orbit ∞-category OrbT
+is orbital by virtue of Barwick–Glasman [10, Proposition 1.25.1].
+Definition 3.1.8. The ∞-category of genuine T-spectra is defined by SpT = Mack(OrbT ).
+
+24
+
+JONAS MCCANDLESS
+
+Remark 3.1.9. The ∞-category of genuine T-spectra is equivalent to the underlying ∞-category
+of orthogonal T-spectra with respect to the family of finite subgroups of T, equipped with the
+stable model structure established by Mandell–May [55]. This is proved by Barwick–Glasman [10,
+Theorem 2.8], where SpT is referred to as the ∞-category of cyclonic spectra.
+We construct an action of the multiplicative monoid N× on the ∞-category SpT of genuine
+T-spectra which in turn is determined by an action of N× on the orbit ∞-category OrbT .
+Construction 3.1.10. Let OrbT denote the category whose objects are given by the orbits
+T/Cn for every integer n ≥ 1, and whose morphisms are given by T-equivariant maps. For every
+pair of positive integers m and n, there is a canonical bijection
+HomOrbT (T/Cm , T/Cn ) ≃ (T/Cn )Cm ,
+where the right hand side is equipped with the canonical topology. As a consequence, we may
+regard OrbT as a topological category. The underlying ∞-category of OrbT is equivalent to the
+orbit ∞-category OrbT as defined in Definition 3.1.7. Indeed, note that there is an essentially
+surjective functor of ∞-categories OrbT → OrbT which is fully faithful since the canonical map
+(T/Cn )Cm → (T/Cn )hCm
+
+is an equivalence of spaces for every pair of positive integers m and n. The analogues statement
+for higher-dimensional Lie groups fails. For every integer k ≥ 1, the construction T/Cn ↦ T/Ckn
+determines a functor of topological categories ik ∶ OrbT → OrbT which in turn defines an action
+of the multiplicative monoid N× on OrbT . This defines an action of N× on the orbit ∞-category
+OrbT which is determined by a functor of ∞-categories BN× → Cat∞ .
+The following result is due to Barwick–Glasman [10, Lemma 3.2].
+Lemma 3.1.11. For every positive integer k, there is an adjunction of ∞-categories
+→ FinOrb
+T
+←
+
+Fin(ik )
+
+→
+←
+
+FinOrbT
+
+pk
+
+where the left adjoint Fin(ik ) additionally preserves finite coproducts. The action of the multiplicative monoid N× on the ∞-category OrbT extends to an action on the ∞-category SpT .
+Proof. See [10, Lemma 3.2].
+
+
+
+We have that the action of the multiplicative monoid N× on the ∞-category SpT of genuine
+T-spectra afforded by Lemma 3.1.11 determines a functor of ∞-categories
+FΨ ∶ BN× → Cat∞
+which is determined by the construction which sends k ∈ N× to the endofunctor of the ∞-category
+SpT determined by the construction X ↦ X Ck . Furthermore, there is an action of the multiplicative monoid N× on the ∞-category SpT given by the geometric fixed points construction (−)ΦCk .
+We briefly discuss this, and refer the reader to [10, Notation 3.4] for a complete treatment.
+Example 3.1.12. For every positive integer k, there is an adjunction of ∞-categories
+→
+←
+
+SpT
+
+(−)ΦCk
+
+→ Sp ,
+T
+←
+
+Span(pk )∗
+
+ON CURVES IN K-THEORY AND TR
+
+25
+
+where the left adjoint (−)ΦCk is defined by left Kan extension along Span(pk )∗ , where pk denotes a
+right adjoint of Fin(ik ) as in Lemma 3.1.11. Consequently, there is an action of the multiplicative
+monoid N× on SpT by functoriality, and there is a functor of ∞-categories
+FΦ ∶ BN× → Cat∞
+which is determined by the construction which sends k ∈ N× to the endofunctor of the ∞-category
+of genuine T-spectra determined by the construction X ↦ X ΦCk .
+3.2. Topological Cartier modules. We introduce the notion of an integral topological Cartier
+module using the formalism of spectral Mackey functors on orbital ∞-categories as reviewed in
+§3.1, extending the work of Antieau–Nikolaus [3] in the p-typical situation. Furthermore, we
+prove a general version of the Segal–tom Dieck splitting for spectral Mackey functors on orbital
+∞-categories, and use this to obtain an explicit formula for the free topological Cartier module
+on a spectrum with Frobenius lifts. The starting point is the following result:
+Lemma 3.2.1. The ∞-category BW is orbital, and there is an equivalence of ∞-categories
+BW ≃ (OrbT )hN× ,
+where the multiplicative monoid N× acts on the orbit ∞-category OrbT as in Construction 3.1.10.
+Proof. We first prove that the ∞-category BW is orbital. Let Mfldc1 denote the topological
+category whose objects are given by compact oriented 1-manifolds and whose space of morphisms
+between a pair of compact oriented 1-manifolds is given by the set of covering maps of positive
+degree equipped with the compact-open topology. In the following, we will let Mfldc1 denote the
+underlying ∞-category of the topological category Mfldc1 . The construction ∗ ↦ S 1 determines
+a functor of ∞-categories BW ↪ Mlfdc1 which is fully faithful since there is an equivalence of
+E1 -monoids W ≃ EndMfldc1 (S 1 ). We obtain a coproduct-preserving functor of ∞-categories
+FinBW → Mfldc1
+
+given by forming the left Kan extension of the functor BW ↪ Mfldc1 along the Yoneda embedding
+BW → FinBW by virtue of Remark 3.1.3, and this functor is given by the construction ∗∐⋯∐∗ ↦
+S 1 ∐ ⋯ ∐ S 1 . Consequently, it suffices to show that the ∞-category Mfldc1 admits pullbacks since
+the functor FinBW → Mfldc1 reflects pullbacks. To this end, it suffices to show that the diagram
+←
+
+S1
+→
+
+αm
+
+→ S1
+
+αn
+
+←
+
+S1
+
+admits a pullback in Mfldc1 , where αk denotes the kth power map of S 1 for every integer k ≥ 1.
+Let g = gcd(m, n) denote the greatest common divisor of m and n. Then the following diagram
+g
+
+α m ○(gαg )
+
+αm
+
+g
+
+→
+
+→
+←
+
+S1
+
+→ S1
+
+←
+
+←
+
+α n ○(gαg )
+
+←
+
+S1 ∐ ⋯ ∐ S1
+
+αn
+
+→ S1
+
+26
+
+JONAS MCCANDLESS
+
+is a pullback of the diagram above in the ∞-category Mfldc1 , where gαg denotes the self-map of
+the g-fold coproduct of S 1 with itself defined by the formula gαg = αg ∐ ⋯ ∐ αg . This proves that
+the ∞-category BW is orbital, so it remains to prove that there is an equivalence of ∞-categories
+BW ≃ (OrbT )hN× . Let E denote the 2-category defined as follows:
+● An object of E is given by an object T/Cn of OrbT .
+
+● A morphism from T/Cm to T/Cn in E is given by a pair (k, f ) consisting of an element k of
+N× , and a morphism f ∶ T/Ckm → T/Cn in OrbT . If (l, g) is an additional morphism from
+T/Cn to T/Cr , then (l, g) ○ (k, f ) = (lk, h), where h is the morphism in OrbT given by
+→ T/Cr .
+T/Clkm ÐÐÐ→ T/Cln Ð
+il (f )
+
+g
+
+● Let (k ′ , f ′ ) denote an additional morphism from T/Cm to T/Cn in E. If k = k ′ , then
+HomHomE (T/Cm ,T/Cn ) ((k, f ), (k ′ , f ′ )) = HomHomOrbT (T/Ckm ,T/Cn ) (f, g)
+
+and empty otherwise. We have used that OrbT is equivalent to a 2-category.
+The construction (k, f ) ↦ k determines a functor p ∶ E → BN× which is a cocartesian fibration
+classifying the action of the multiplicative monoid N× on OrbT . The fact that p is a cocartesian
+fibration follows from [10, Lemma 3.10 and Lemma 3.11]. Consequently, there is an equivalence
+(OrbT )hN× ≃ E[cocart−1 ]
+
+by [53, Corollary 3.3.4.3], where E[cocart−1 ] denotes the localization at the set of p-cocartesian
+edges of E. We prove that there is an equivalence of ∞-categories E[cocart−1 ] ≃ BW. For every
+pair of elements k and m of N× , the pair (k, id) defines a morphism T/Cm → T/Ckm which
+is a p-cocartesian edge of E. Indeed, if (l, f ) is an additional morphism T/Cm → T/Cn in E
+such that l = kr for some r ∈ N× , then the pair (r, f ) defines a morphism T/Ckm → T/Cn in E
+such that (l, f ) = (r, f ) ○ (k, id). In fact, every p-cocartesian edge of E is of this form. Consider
+the assignment which regards T/Cn as an object of the ∞-category Mfldc1 , and which carries a
+morphism (k, f ) ∶ T/Cm → T/Cn in E to the following map
+√
+k
+
+→ T/Cn ,
+T/Cm ÐÐ→ T/Ckm Ð
+√
+where the first map is given by [x] ↦ [ k x]. We claim that this assignment determines a functor
+W ∶ E → Mfldc1 . Indeed, this assignment is compatible with composition: if (l, g) ∶ T/Cn → T/Cr
+is an additional morphism in E, then the following composite
+−
+
+√
+lk
+
+f
+
+→ T/Cr
+T/Cm ÐÐ→ T/Clkm ÐÐÐ→ T/Cln Ð
+il (f )
+
+−
+
+g
+
+is canonically equivalent to the following composite
+√
+k
+
+√
+l
+
+T/Cm ÐÐ→ T/Ckm Ð
+→ T/Cn ÐÐ→ T/Cln Ð
+→ T/Cr .
+−
+
+f
+
+−
+
+g
+
+√
+l
+
+→ T/Cn ÐÐ→ T/Cln . Consequently,
+since the morphism il (f ) is given by T/Clkm ÐÐ→ T/Ckm Ð
+c
+we obtain a functor of ∞-categories W ∶ E → Mfld1 . Note that the map T/Cm → T/Ckm is an
+equivalence in Mfldc1 , so the functor W carries every p-cocartesian edge of E to an equivalence in
+Mfldc1 . Hence, the functor W ∶ E → Mfldc1 canonically extends to a functor of ∞-categories
+(−)l
+
+f
+
+(OrbT )hN× ≃ E[cocart−1 ] → Mfldc1 .
+
+−
+
+ON CURVES IN K-THEORY AND TR
+
+27
+
+This functor is fully faithful, so (OrbT )hN× is equivalent to the ∞-category with a single object
+T/C1 , and End(OrbT )hN× (T/C1 ) ≃ EndMfldc1 (S 1 ) ≃ W. This proves the desired statement.
+
+We define the ∞-category of topological Cartier modules as follows:
+Definition 3.2.2. The ∞-category of D-valued topological Cartier modules is defined by
+TCartD = MackD (BW) = Fun× (Span(FinBW ), D),
+where D denotes an additive ∞-category. If D = Sp, then we will write TCart instead of TCartSp ,
+and refer to the former as the ∞-category of topological Cartier modules.
+Remark 3.2.3. The functor BWop → Span(FinBW ) induces a functor of ∞-categories
+TCart → SpFr
+
+which regards the underlying spectrum of a topological Cartier module as a spectrum with
+Frobenius lifts, where the underlying spectrum of a topological Cartier module is defined as the
+spectrum with T-action obtained by precomposing the functor above with the forgetful functor
+SpFr → SpBT . The functor BW → Span(FinBW ) induces a functor of ∞-categories
+TCart → Fun(BW, Sp),
+
+so as a consequence, if M is a topological Cartier module, then for each integer k ≥ 1, there is
+a T-equivariant map of spectra Vk ∶ MhCk → M , which we will refer to as the kth Verschiebung
+map of M .
+Remark 3.2.4. Antieau–Nikolaus [3, Definition 3.1] define a p-typical topological Cartier module as a spectrum M with T-action equipped with the datum of a T-equivariant factorization
+→ M hCp
+MhCp Ð→ M Ð
+V
+
+F
+
+of the norm map for the cyclic group Cp . In Remark 3.2.9, we make the discussion in Remark 3.2.3
+precise by showing that the underlying spectrum of a topological Cartier module in the sense
+of Definition 3.2.2 canonically admits the structure of a p-typical topological Cartier module for
+every prime number p.
+Example 3.2.5. If M denotes a topological Cartier module, then the abelian group π0 M comes
+equipped with a pair of endomorphism Vk = i′ (k) and Fk = i(k) for every positive integer k,
+where i′ and i denote the functors defined in Construction 3.1.4. Let g = gcd(m, n) denote the
+greatest common divisor of a pair of positive integers m and n. Then the commutative diagram
+
+m
+g ○(g⋅id)
+
+m
+n
+
+→
+
+→
+
+←
+
+∗
+
+→ ∗
+
+←
+
+←
+
+n
+g ○(g⋅id)
+
+←
+
+∗∐⋯∐∗
+
+→ ∗
+
+is a pullback in the finite coproduct completion FinBW , so we conclude that Fm Vn = gcd(m, n)V ng F mg .
+In particular, we have that Fk Vk = k ⋅ id for every positive integer k, and if gcd(m, n) = 1, then
+Fm Vn = Vn Fm . We will refer to this as a Cartier module structure on π0 M (see Zink [68]). This
+structure arises frequently in algebra; for instance if R is a commutative ring, then the ring of
+
+28
+
+JONAS MCCANDLESS
+
+big Witt vectors W (R) and the ring of rational Witt vectors Wrat (R) both admit the structure
+of a Cartier module in this sense.
+We show that the ∞-category of topological Cartier modules is equivalent to the ∞-category
+of genuine topological Cartier modules as defined by Antieau–Nikolaus [3, Definition 5.1].
+Definition 3.2.6. The ∞-category of genuine topological Cartier modules is defined by
+TCartgen = lim(FΨ ∶ BN× → Cat∞ ) = (SpT )hN ,
+×
+
+where the multiplicative monoid N× acts on the ∞-category SpT as in Lemma 3.1.11.
+Remark 3.2.7. Unwinding the definition, we see that an object of TCartgen is given by a genuine
+T-spectrum M with compatible equivalences of genuine T-spectra M ≃ M Ck for every k ≥ 1.
+Proposition 3.2.8. There is an equivalence of ∞-categories TCart ≃ TCartgen .
+Proof. There is a sequence of equivalences of ∞-categories
+TCart = Mack(BW) Ð
+→ Mack((OrbT )hN× ) ≃ Mack(OrbT )hN = TCartgen
+≃
+
+×
+
+by virtue of Lemma 3.2.1 and Lemma 3.1.11 which shows the wanted.
+
+
+
+Antieau–Nikolaus prove that there is an equivalence TCartp ≃ TCartgen
+p [3, Proposition 5.5],
+and Proposition 3.2.8 provides an integral version of this result. Note that these comparison
+results hold unconditionally in contrast to the comparison between the ∞-category of cyclotomic
+spectra and the ∞-category of genuine cyclotomic spectra established by Nikolaus–Scholze [59],
+where it is crucial to restrict to the bounded below case.
+Remark 3.2.9. There is a canonical sequence of functors of ∞-categories
+TCart → SpT → PSp (OrbT ) → SpBT ,
+where the first functor exists by virtue of Proposition 3.2.8. In particular, if M is a topological
+Cartier module, then there is a commutative diagram of spectra with T-action
+
+←
+
+←
+
+←
+
+←
+
+→ M tCk
+
+can
+
+←
+
+←
+
+→ M hCk
+
+NmCk
+
+→
+
+MhCk
+
+→ M ΦCk
+
+→
+
+→
+
+≃
+
+→ M
+
+←
+
+MhCk
+
+for every positive integer k, where we have used that M Ck ≃ M in SpT . This diagram was
+introduced by Hesselholt–Madsen [40] building on work of Greenlees–May [35], and is commonly
+referred to as the isotropy-separation diagram. Note that the commutative square on the left in
+the diagram above exhibits the underlying spectrum with T-action of M as a p-typical topological
+Cartier module for every prime number p in the sense of Antieau–Nikolaus [3].
+Remark 3.2.10. A detailed treatment of the ∞-category of topological Cartier modules extending the results of Antieau–Nikolaus [3] to the integral situation will be the content of forthcoming
+work.
+
+ON CURVES IN K-THEORY AND TR
+
+29
+
+We obtain an explicit identification of the topological Cartier module obtained from a spectrum with Frobenius lifts by freely adjoining Verschiebung maps. It follows formally from [8,
+Proposition 6.5], that there is an adjunction of ∞-categories
+→ TCart
+←
+
+Free
+
+→
+←
+
+SpFr
+
+(1)
+
+where Free denotes a left adjoint of the forgetful functor TCart → SpFr . Antieau–Nikolaus [3]
+give a direct construction of the p-typical analogue of Free, but this is not a viable approach
+in the integral situation due to the infinite hierarchy of coherences that need to be specified to
+define such a functor. We will resolve this issue by establishing a general version of the Segal–tom
+Dieck splitting for spectral Mackey functors on orbital ∞-categories. We will begin by recalling
+the usual Segal–tom Dieck splitting [65, 52] in equivariant stable homotopy theory (see [61] for
+a classical treatment). For a finite group G, there is an adjunction
+→
+←
+
+PSp (OrbG )
+
+(2)
+
+F
+
+→ Sp
+G
+←
+
+where the right adjoint is obtained by restricting along the functor Orbop
+G → Span(FinG ), and
+the left adjoint F is given by sending a spectral presheaf X on OrbG to the genuine G-spectrum
+with
+F (X)G ≃ ⊕ (X H )hWG (H) ,
+(H)
+
+where the sum is indexed by conjugacy classes of subgroups of G, and WG (H) is the Weyl group.
+In general, if Y is a spectral presheaf on OrbG , then we define Y H = Y (G/H) for every subgroup
+H of G. The idea is to regard the adjunction in (1) as an instance of this adjunction, where we
+replace the role of the orbit category of G above by the Witt monoid. Let T denote an orbital
+∞-category, and note that there is an adjunction of ∞-categories
+→
+←
+
+Fun(T op , Sp)
+
+L
+
+→ Mack(T ) = Fun× (Span(FinT ), Sp),
+←
+
+where the right adjoint is the forgetful functor. In Proposition 3.2.11 below, we obtain an explicit
+formula for the left adjoint L above which we regard as a version of the Segal–tom Dieck splitting
+for spectral Mackey functors defined on the orbital ∞-category T . In [8, Theorem A.9], Barwick
+proves a similar result establishing a version of the Segal–tom Dieck splitting for coherent topoi.
+Proposition 3.2.11. If X is a presheaf on an orbital ∞-category T with values in the ∞-category
+of spectra, then there is a natural equivalence of spectra
+(LX)(t) ≃ colim(t′ →t)∈(T/t )≃ X(t′)
+for every object t of T .
+Proof. Consider the following pair of adjunctions of ∞-categories
+j!
+j
+
+∗
+
+→ Fun(Span(FinT ), Sp)
+←
+
+→
+←
+
+→
+←
+
+Fun(T op , Sp)
+
+p
+ι
+
+→
+↩ Fun× (Span(FinT ), Sp),
+
+where j! denotes the functor given by forming the left Kan extension along j ∶ T op → Span(FinT ),
+and p denotes a left adjoint of the inclusion ι which exists by virtue of [8, Proposition 6.5]). Let
+
+30
+
+JONAS MCCANDLESS
+
+u = j ∗ ι denote the right adjoint of L ≃ pj! . Let X ∶ T op → Sp denote a presheaf on T with values
+in the ∞-category of spectra. If t is an object of T , then there is a natural equivalence of spectra
+(j ∗ j! X)(t) ≃ colim(Span(FinT )/t ×Span(FinT ) T op → T op Ð→ Sp),
+X
+
+by virtue of the pointwise formula for the left Kan extension. Consequently, the canonical functor
+T → Span(FinT ) induces a natural map colim(t′ →t)∈(T/t )≃ X(t′) → (j ∗ j! X)(t). The unit id → ιp
+induces a natural transformation j ∗ j! X → j ∗ ιpj! X ≃ uLX, and hence a natural map of spectra
+colim(t′ →t)∈(T/t )≃ X(t′ ) → (j ∗ j! X)(t) → (uLX)(t)
+
+for every object t of T . Additionally, this map is natural in X. Consequently, it suffices to prove
+the assertion of Proposition 3.2.11 for a presheaf on an orbital ∞-category T with values in the
+∞-category of connective spectra since the general case follows by passing to stabilizations. The
+forgetful functor Fun× (Span(FinT ), S) → Fun(T op , S) admits a left adjoint which is canonically
+equivalent to the following composite of left adjoint functors of ∞-categories
+Fun(T op , S) ÐÐÐÐ→ Fun(T op , MonE∞ (S)) Ð→ Fun× (Span(FinT ), MonE∞ (S)),
+L′
+
+FreeE∞
+
+where we have used that the forgetful functor MonE∞ (S) → S induces an equivalence
+Fun× (Span(FinT ), MonE∞ (S)) ≃ Fun× (Span(FinT ), S)
+
+since the ∞-category Span(FinT ) is semiadditive (cf. [30, Corollary 2.5]). Let GrpE∞ (S) denote
+the full subcategory of MonE∞ (S) spanned by the grouplike E∞ -monoids, and recall that there
+is an equivalence GrpE∞ (S) ≃ Sp≥0 by [56]. The following diagram of left adjoints commutes
+(−)grp
+
+→
+
+→
+
+(−)grp
+
+←
+
+Fun(T op , GrpE∞ (S))
+
+→ Fun× (Span(FinT ), MonE∞ (S))
+←
+
+←
+
+L′
+
+←
+
+Fun(T op , MonE∞ (S))
+
+L
+
+→ Fun× (Span(FinT ), GrpE∞ (S))
+
+since the corresponding diagram of right adjoints commutes. The functors denoted by (−)grp in
+the diagram above are induced by the group completion functor MonE∞ (S) → GrpE∞ (S) which
+preserves finite products. If X ∶ T op → Sp≥0 is a presheaf on T with values in the ∞-category of
+connective spectra, then we want to show that the map of connective spectra
+colim(t′ →t)∈(T/t )≃ X(t′ ) → (LX)(t)
+is an equivalence for every object t of T . Note that X ≃ colimn Σ∞−n Ω∞−n X, and each presheaf
+Ω∞−n X is canonically a colimit of representable presheaves of the form MapT (−, s), so we may
+assume that X = Σ∞
++ MapT (−, s) for an object s of T since both the domain and codomain of the
+map above preserve colimits in X. Equivalently, we may assume that X is given by the presheaf
+of grouplike E∞ -monoids on T given by the formula X = (FreeE∞ MapT (−, s))grp . There is a
+natural equivalence of functors of ∞-categories
+LX ≃ (L′ MapT (−, s))grp ≃ MapSpan(FinT ) (s, −)grp ∶ Span(FinT ) → GrpE∞ (S)
+by the commutative square above, where the last equivalence follows by the Yoneda lemma. In
+this case, the map under consideration
+F ∶ colim(t′ →t)∈(T/t )≃ MapT (t′ , s) → MapSpan(Fin)T (s, t).
+
+ON CURVES IN K-THEORY AND TR
+
+31
+
+is induced by the map of spaces
+MapT (t′ , s) → MapSpan(FinT ) (s, t),
+
+determined by the construction (t′ → s) ↦ (s ← t′ → t) for every object t′ → t of (T/t )≃ . Note
+that the map F above is an equivalence, since the map of spaces
+MapSpan(FinT ) (s, t) → colim(t′ →t)∈(T/t )≃ MapT (t′ , s)
+
+determined by the construction (s ← t′ → t) ↦ (t′ → s) is an inverse. Using that MapSpan(FinT ) (s, t)
+admits the structure of an E∞ -monoid since Span(FinT ) is semiadditive, and that both FreeE∞
+and (−)grp preserve colimits, we conclude that the map of grouplike E∞ -monoids
+colim(t′ →t)∈(T/t )≃ (FreeE∞ MapT (t′ , s))grp → MapSpan(FinT ) (s, t)grp
+
+is an equivalence which proves the desired statement.
+
+
+
+Example 3.2.12. Let G be a finite group, and consider the adjunction in (2). If X ∶ Orbop
+G → Sp
+is a spectral presheaf on the orbit category of G, then there is an equivalence
+F (X)G ≃ colimG/H→G/G∈((OrbG )/(G/G) )≃ X(G/H) ≃ ⊕ (X H )hWG (H) ,
+(H)
+
+by Proposition 3.2.11. This is precisely the classical Segal–tom Dieck splitting as discussed above.
+Recall that there is an adjunction of ∞-categories
+→ TCart
+←
+
+Free
+
+→
+←
+
+SpFr
+
+where Free denotes a left adjoint of the forgetful functor. As a consequence of Proposition 3.2.11,
+we obtain an explicit description of Free which we will use in the proof of Theorem 3.3.12, where
+we show that the classical definition of TR coincides with the definition considered in §2.4 in the
+bounded below case.
+Corollary 3.2.13. If X is a spectrum with Frobenius lifts, then there is an equivalence of spectra
+with T-action
+Free(X) ≃ ⊕ XhCn ,
+n≥1
+
+The kth Verschiebung map of Free(X) is given by the canonical inclusion
+Free(X)hCk ≃ ⊕ XhCkn ↪ ⊕ XhCn ≃ Free(X)
+n≥1
+
+n≥1
+
+for every integer k ≥ 1, where the Verschiebung maps of X are defined in Remark 3.2.3.
+Proof. The first assertion follows directly from Proposition 3.2.11, so it remains to identify the
+Verschiebung maps of Free(X). We begin by identifying the pth Verschiebung map of Free(X)
+for a prime p. Let Freep denote a left adjoint of the forgetful functor TCartp → SpFr
+p . If X is a
+p-typical spectrum with Frobenius lift, then there is an equivalence of spectra with T-action
+Freep (X) ≃ ⊕ XhCpi
+i≥0
+
+32
+
+JONAS MCCANDLESS
+
+by virtue of [3, Lemma 4.1], where the pth Verschiebung of Freep (X) is given by the canonical
+inclusion under this identification. Since the following diagram commutes
+
+←
+
+→ SpFr
+p
+
+→
+
+←
+→
+SpFr
+
+←
+
+←
+
+→ TCartp
+
+TCart
+
+we obtain a canonical map of p-typical topological Cartier modules Freep (X) → Free(X) for
+every spectrum X with Frobenius lifts, such that the underlying map of spectra with T-action
+is given by the canonical inclusion. This identifies the pth Verschiebung of Free(X) as wanted.
+The general case follows by prime decomposition. Indeed, if k = pq, then
+Free(X)hCpq ≃ (Free(X)hCp )hCq ÐÐÐÐ→ Free(X)hCq Ð→ Free(X).
+(Vp )hCq
+
+Vq
+
+
+Remark 3.2.14. The functor Free restricts to a functor of ∞-categories
+Free ∶ SpFr
+♭ → TCart♭ ,
+where the decoration (−)♭ denotes the full subcategory spanned by those objects whose underlying
+spectrum is bounded below, since the functor (−)hCk preserves connectivity for every integer
+k ≥ 1.
+3.3. Genuine cyclotomic spectra and genuine TR. We recall the construction of TR based
+on the notion of a genuine cyclotomic spectrum following Hesselholt–Madsen [40] and Blumberg–
+Mandell [17]. We establish an adjunction between the ∞-category of topological Cartier modules
+as introduced in §3.2 and the ∞-category of genuine cyclotomic spectra whose right adjoint is
+given by TR. Finally, we prove Theorem 3.3.12 which asserts that the classical construction of
+TR agrees with the construction discussed in §2.4 in the bounded below case.
+Definition 3.3.1. The ∞-category of genuine cyclotomic spectra is defined by
+CycSpgen = lim(FΦ ∶ BN× → Cat∞ ) = (SpT )hN ,
+×
+
+where the multiplicative monoid N× acts on the ∞-category SpT as in Example 3.1.12.
+Remark 3.3.2. Unwinding the definition, we see that an object of the ∞-category CycSpgen is
+given by a genuine T-spectrum X with compatible equivalences of genuine T-spectra X ≃ X ΦCk
+for every integer k ≥ 1.
+The notion of a genuine cyclotomic spectrum was introduced by Hesselholt–Madsen [40] building on ideas introduced by Bökstedt–Hsiang–Madsen [18]. The homotopy theory of genuine cyclotomic spectra was first studied by Blumberg–Mandell [17], and later studied by Kaledin [46, 47],
+Barwick–Glasman [10], Nikolaus–Scholze [59], and Ayala–Mazel-Gee–Rozenblyum [7, 5, 6].
+Remark 3.3.3. There is a canonical sequence of functors of ∞-categories
+CycSpgen → SpT → SpBT
+
+ON CURVES IN K-THEORY AND TR
+
+33
+
+which extracts the underlying spectrum with T-action of a genuine cyclotomic spectrum. Let X
+denote a genuine cyclotomic spectrum. For every prime number p, the T-equivariant map
+X → X ΦCp → X tCp
+exhibits the underlying spectrum with T-action of X as a cyclotomic spectrum in the sense of
+Nikolaus–Scholze [59]. The main result of Nikolaus–Scholze [59, Theorem II.6.9] asserts that the
+construction above determines a functor of ∞-categories
+CycSpgen → CycSp
+which restricts to an equivalence on the full subcategories of those objects whose underlying
+spectrum is bounded below.
+Remark 3.3.4. If R is a connective E1 -ring, then Bökstedt–Hsiang–Madsen [18] and Hesselholt–
+Madsen [40] prove that THH(R) admits the structure of a genuine cyclotomic spectrum by
+using the Bökstedt construction. Angeltveit–Blumberg–Gerhardt–Hill–Lawson–Mandell [1] construct the genuine cyclotomic structure on THH(R) using the Hill–Hopkins–Ravenel norm [44],
+and these constructions are equivalent by the work of Dotto–Malkiewich–Patchkoria–Sagave–
+Woo [26]. Nikolaus–Scholze [59] construct a cyclotomic structure on THH(R) using the Tatevalued diagonal.
+We recall the classical construction of TR following Blumberg–Mandell [17].
+Construction 3.3.5. Let X be a genuine cyclotomic spectrum. For every pair of positive integer
+(m, n) with m = ln, the restriction map Rl ∶ X Cm → X Cn is the map of genuine T-spectra given
+by
+≃
+Rl ∶ X Cm ≃ (X Cl )Cn → (X ΦCl )Cn Ð
+→ X Cn ,
+
+where the final equivalence is induced by the genuine cyclotomic structure of X. Furthermore,
+the construction n ↦ X Cn determines a functor of ∞-categories
+X C(−) ∶ (N, div) → SpT ,
+
+where (N, div) denotes set of natural numbers regarded as a poset with respect to the divisibility
+relation, which means that there is a morphism m → n precisely if n divides m.
+Definition 3.3.6. Let TRgen denote the functor of ∞-categories
+TRgen ∶ CycSpgen → SpT
+
+determined by the construction X ↦ lim(N,div) X C(−) .
+
+Remark 3.3.7. The construction X ↦ TRgen canonically refines to a functor of ∞-categories
+TRgen ∶ CycSpgen → TCart,
+
+where we have used Proposition 3.2.8 and that the functor (−)Ck preserves limits for every k ≥ 1.
+Additionally, the functor TRgen ∶ CycSpgen → TCart restricts to a functor
+TRgen ∶ CycSp♭ Ð
+→ CycSpgen
+→ TCart♭ ,
+♭
+≃
+
+where the decoration (−)♭ denotes the full subcategory spanned by those objects whose underlying
+spectrum is bounded below, and the first equivalence follows from Nikolaus–Scholze [59].
+
+34
+
+JONAS MCCANDLESS
+
+We recall an important construction due to Antieau–Nikolaus [3, Example 3.5]. If M is a
+p-typical topological Cartier module, then there is a cofiber sequence of spectra with T-action
+MhCp Ð→ M → M /V,
+V
+
+and the cofiber M /V canonically admits the structure of a p-typical cyclotomic spectrum. The
+construction M ↦ M /V determines a functor of ∞-categories
+(−)/V ∶ TCartp → CycSpp ,
+
+which admits a right adjoint given by p-typical TR by Antieau–Nikolaus [3, Proposition 3.17]
+using Krause–Nikolaus [49, Proposition 10.3]. We obtain an integral version of the functor (−)/V .
+Note that if we regard M as a genuine p-typical topological Cartier module, then the underlying
+spectrum with T-action of M ΦCp is equivalent to M /V by the isotropy-separation sequence.
+Construction 3.3.8. Let M be a genuine topological Cartier module. For every pair of positive
+integers (m, n) with m = ln, consider the map of genuine T-spectra defined by
+→ (M Cl )ΦCn → M ΦCm ,
+M ΦCn Ð
+≃
+
+where the first equivalence is induced by the genuine topological Cartier module structure of M .
+Furthermore, the construction n ↦ M ΦCn determines a functor of ∞-categories
+M ΦC(−) ∶ (N, div)op → SpT
+as in Construction 3.3.5.
+Remark 3.3.9. The construction M ↦ colim(N,div)op M ΦC(−) refines to a functor of ∞-categories
+L ∶ TCart → CycSpgen ,
+
+where we have used Proposition 3.2.8 and that the functor (−)ΦCk preserves colimits for every
+k ≥ 1. Additionally, the functor L ∶ TCart → CycSpgen restricts to a functor of ∞-categories
+L ∶ TCart♭ → CycSpgen
+Ð
+→ CycSp♭
+♭
+≃
+
+as in Remark 3.3.7.
+Remark 3.3.10. Let (N, ≤) denote the set of natural numbers regarded as a poset with respect
+to the usual ordering, which means that there is a morphism m → n in (N, ≤) precisely if n ≤ m.
+The functor (N, ≤) → (N, div) determined by the construction n ↦ n! is initial4. Consequently,
+if X is a genuine cyclotomic spectum, then there is an equivalence of topological Cartier modules
+TRgen (X) ≃ lim(⋯ → X C3! → X C2! → X),
+←Ð
+
+where the maps are given by X C(n+1)! ≃ (X Cn+1 )Cn! → (X ΦCn+1 )Cn! ≃ X Cn! . On the other hand,
+if M is a topological Cartier module, then there is an equivalence of genuine cyclotomic spectra
+L(M ) ≃ lim(M → M ΦC2! → M ΦC3! → ⋯),
+Ð→
+ΦCn!
+where the maps are given by M
+≃ (M Cn+1 )ΦCn! → (M ΦCn+1 )ΦCn! ≃ M ΦC(n+1)! .
+4The author learned this observation from Markus Land.
+
+ON CURVES IN K-THEORY AND TR
+
+35
+
+Using Remark 3.3.10, we show that the functors L and TRgen form an adjunction. We adapt
+the proof given by Antieau–Nikolaus [3, Proposition 5.2] to the integral situation. We begin by
+reviewing the ∞-category of coalgebras for a family of endofunctors following [59, Section II.5].
+If F ∶ C → C is a functor, then the ∞-category coAlgF (C) of F -coalgebras in C is defined by
+←
+←
+
+coAlgF (C) = LEq(C
+
+id
+F
+
+→ C),
+→
+
+where LEq(−) denotes the lax equalizer (see [59, Definition II.1.4]). Unwinding the definition, we
+see that an object of coAlgF (C) consists of an object X of C together with a morphism X → F X.
+Let {Fk }k≥1 be a family of commuting endofunctors of C. There is a functor of ∞-categories
+coAlgF1 (C) → coAlgF1 (C)
+
+determined by the assignment X ↦ F2 X, where F2 X is considered as an F1 -coalgebra using the
+map F2 X → F2 F1 X ≃ F1 F2 X (cf. [59, Construction II.5.2]). The ∞-category of coalgebras for
+the family of commuting endofunctor {Fk }k≥1 of C is defined by
+coAlg{Fk } (C) = lim coAlg{F1 ,...,Fn } (C),
+←nÐ
+
+where coAlg{F1 ,...,Fn } (C) = coAlgFn (coAlg{F1 ,...,Fn−1 } (C)). Unwinding the definition, we see that
+an object of the ∞-category coAlg{Fk } (C) consists of an object X of C together with compatible
+maps X → Fk X for every k ≥ 1. Let Fix{Fk } (C) denote the full subcategory of coAlg{Fk } (C)
+spanned by those objects where the map X → Fk X is an equivalence for each k ≥ 1. Dually,
+there is an ∞-category of algebras for a family of commuting endofunctors {Gk }k≥1 of C which
+we will denote by Alg{Gk } (C). An object of Alg{Gk } (C) consists of an object of C together with
+compatible maps Gk X → X for every k ≥ 1. We have the following result:
+Proposition 3.3.11. There is an adjunction of ∞-categories
+→
+←
+
+TCart
+
+L
+
+→ CycSpgen
+←
+
+TRgen
+
+Proof. In the following, we will implicitly employ the equivalence TCart ≃ TCartgen established
+in Proposition 3.2.8. Let X be a genuine cyclotomic spectrum and let M be a topological Cartier
+module. There is a natural transformation η ∶ id → TRgen ○L incuced by the canonical map
+M ≃ limm∈N M Cm! → limm∈N (colimn∈N M ΦCn! )Cm! ,
+by virtue of Remark 3.3.10, and we show that η induces an equivalence of spaces
+MapCycSpgen (L(M ), X) → MapTCart (M, TRgen (X)).
+
+There is an equivalence of ∞-categories CycSpgen ≃ Fix{(−)ΦCk! } (SpT ) by [59, Lemma II.5.9], so
+we obtain a fully faithful functor of ∞-categories
+CycSpgen ↪ coAlg{(−)ΦCk! } (SpT )
+
+which admits a left adjoint given by X ↦ colimn∈N X ΦCn! by [59, Section II.5]. It follows that
+MapCycSpgen (L(M ), X) ≃ MapcoAlg
+
+(SpT )
+{(−)ΦCk! }
+
+(M, X),
+
+36
+
+JONAS MCCANDLESS
+
+where M is regarded as a coalgebra using the map M ≃ M Ck! → M ΦCk! for each k ≥ 1. Similarly,
+we find that there is a fully faithful functor of ∞-categories
+TCart ↪ Alg{(−)Ck! } (SpT )
+
+which admits a right adjoint given by M ↦ limm∈N M Cm! . We conclude that
+MapTCart (M, TRgen (X)) ≃ MapAlg
+
+{(−)Ck! }
+
+(SpT ) (M, X),
+
+where X is regarded as an algebra using the map X Ck! → X ΦCk! ≃ X for each k ≥ 1. In other
+words, we have reduced to showing that η ∶ id → TRgen ○L induces a natural equivalence of spaces
+MapcoAlg
+
+{(−)ΦCk! }
+
+(SpT ) (M, X) ≃ MapAlg{(−)Ck! } (SpT ) (M, X).
+
+Using [59, Proposition II.1.5], we have that MapcoAlg
+
+ΦC(k+1)! (SpT )
+}
+{(−)ΦC1! ,...,(−)
+
+the following equalizer
+{(−)ΦC1! ,...,(−)ΦCk! }
+
+(SpT ) (M, X)
+
+←
+←
+
+MapcoAlg
+
+(M, X) is given by
+
+ΦC(k+1)!
+→ Map
+),
+coAlg{(−)ΦC1! ,...,(−)ΦCk! } (SpT ) (M, X
+→
+
+where M → X is carried to M → X ≃ X ΦC(k+1)! by the top map, and to M ≃ M C(k+1)! → M ΦC(k+1)!
+by the bottom map. Similarly, we have that MapAlg
+(SpT ) (M, X) is given by the
+C
+{(−)C1! ,...,(−) (k+1)! }
+
+following equalizer
+
+(SpT )
+{(−)C1! ,...,(−)Ck! }
+
+(M, X)
+
+←
+←
+
+MapAlg
+
+C(k+1)!
+→ Map
+, X),
+coAlg{(−)C1! ,...,(−)Ck! } (SpT ) (M
+→
+
+where M → X is carried to M C(k+1)! → M → X by the top map, and to M C(k+1)! → M ΦC(k+1)! ≃ M
+by the bottom map. By induction, we conclude that these two equalizers are equivalent using
+the compatible equivalences M Ck ≃ M and X ΦCk ≃ X for each k ≥ 1.
+
+We prove the main result of this section. As mentioned previously, this result is inspired by
+the result of Blumberg–Mandell [17] which asserts that TRgen is corepresentable by the reduced
+topological Hochschild homology ̃
+THH(S[t]) as a functor defined on the homotopy category of
+the ∞-category of genuine cyclotomic spectra with values in the homotopy category of spectra
+(see [17, Theorem 6.12]).
+Theorem 3.3.12. There is a natural equivalence of spectra with Frobenius lifts
+TRgen (X) ≃ mapCycSp ( ̃
+THH(S[t]), X)
+for every cyclotomic spectrum X whose underlying spectrum is bounded below.
+The proof of Theorem 3.3.12 relies on a genuine version of the Tate orbit lemma [59, Lemma
+I.2.1] obtained by Antieau–Nikolaus [3].
+Lemma 3.3.13. If Y is a genuine T-spectrum, then the canonical map
+(Y Cp )ΦCp → Y ΦCp2
+is an equivalence in the ∞-category SpT for every prime p.
+Proof. See Antieau–Nikolaus [3, Lemma 5.3].
+
+
+
+ON CURVES IN K-THEORY AND TR
+
+37
+
+Proof of Theorem 3.3.12. First note that the composite
+→ CycSpgen
+Ð
+→ CycSp♭
+SpFr
+♭
+♭ ÐÐ→ TCart♭ Ð
+≃
+
+L
+
+Free
+
+is equivalent to the canonical functor SpFr
+♭ → CycSp♭ as a consequence of Corollary 3.2.13 combined with the formula for the functor L. Indeed, we have that
+L Free(X) ≃ lim ( ⊕ XhCk Ð→ ⊕ XhCk Ð→ ⊕ XhCk Ð→ ⋯) ≃ X,
+Ð→ k≥1
+k≥1
+k≥1
+pr
+
+pr
+
+2∤k
+
+pr
+
+2,3∤k
+
+by Lemma 3.3.13, thus it follows that L Free(X) ≃ X as objects of the ∞-category CycSpgen .
+Now, since every functor in the composite above is a left adjoint, we conclude that the composite
+CycSp♭ Ð
+→ CycSpgen
+ÐÐÐ→ TCart♭ → SpFr
+♭
+♭
+≃
+
+TRgen
+
+determines a right adjoint of the canonical functor SpFr
+♭ → CycSp♭ , which shows the wanted by
+virtue of Proposition 2.4.3.
+
+4. Applications to curves on K-theory
+We discuss an application of Theorem 3.3.12. Specifically, we prove that TR evaluated on a
+connective E1 -ring R admits a description in terms of the spectrum of curves on the algebraic
+K-theory of R, extending work of Hesselholt [38] and Betley–Schlichtkrull [11].
+4.1. Topological Hochschild homology of truncated polynomial algebras. In this secn
+̃
+tion, we obtain a convenient description of the cyclotomic structure on lim THH(S[t]/t
+) which
+←Ð
+will be instrumental in §4.2. Concretely, we compute the Hochschild homology of Z[t]/tn as a
+commutative differential graded algebra, and deduce a connectivity estimate for THH(S[t]/tn ).
+Similar computations have previously been obtained by Hesselholt–Madsen [40, 39] building on
+the work of [36, 50]. We refer the reader to Speirs [62] for a summary of these computations.
+We will begin by reviewing the notion of a graded object in a symmetric monoidal ∞-category.
+Notation 4.1.1. Let Zds
+≥0 denote the set of non-negative integers regarded as a discrete category,
+and let C denote a presentable symmetric monoidal ∞-category.
+(1) The ∞-category of graded objects of C is defined by
+Gr(C) = Fun(Zds
+≥0 , C),
+which we regard as a symmetric monoidal ∞-category using the Day convolution symmetric
+monoidal structure coming from the symmetric monoidal structure on Zds
+≥0 given by multiplication. We will denote an object X of Gr(C) by {Xi }i≥0 . For every integer n ≥ 0, the
+inclusion {n} ↪ Zds
+≥0 induces an evaluation functor
+evn ∶ Gr(C) → C
+
+which is determined by the construction {Xi }i≥0 ↦ Xn .
+
+(2) The projection Zds
+≥0 → {0} induces a functor C → Gr(C) which admits a left adjoint
+und ∶ Gr(C) → C
+
+38
+
+JONAS MCCANDLESS
+
+determined by forming the left Kan extension along the projection Zds
+≥0 → {0}. Concretely,
+the functor und ∶ Gr(C) → C is determined by the construction {Xi }i≥0 ↦ ⊕i≥0 Xi . The
+functor C → Gr(C) canonically admits a symmetric monoidal structure since the projection
+Zds
+≥0 → {0} is a map of commutative monoids, so the left adjoint und ∶ Gr(C) → C canonically
+refines to a symmetric monoidal functor of ∞-categories (see [58, Corollary 3.8]).
+Remark 4.1.2. If {Xi }i≥0 is a graded spectrum, then the underlying spectrum X = und({Xi }i≥0 )
+of {Xi }i≥0 carries an additional grading on its homotopy groups using the formula
+π∗ (X) ≃ ⊕ π∗ (Xi ).
+i≥0
+
+If x ∈ π∗ (Xi ), then we will write w(x) = i, and think of this as the horizontal grading direction.
+See Example 4.1.8 and the discussion following the proof of Proposition 4.1.10.
+A pointed monoid is a monoid object in the category of pointed sets equipped with the smash
+product symmetric monoidal structure. For every n ∈ N ∪ {∞}, we will let Πn = {0, 1, t, . . . , tn−1 }
+denote the pointed monoid with 0 as basepoint and whose multiplication is determined by tn = 0.
+In the following, we will regard the pointed monoid Πn as an object of the ∞-category CAlg(S∗ )
+of pointed E∞ -monoids, where the ∞-category S∗ of pointed spaces is equipped with the smash
+product symmetric monoidal structure. The ∞-category CAlg(S∗ ) inherits the structure of a
+symmetric monoidal ∞-category whose unit is given by the pointed monoid {0, 1}.
+Example 4.1.3. In this example, we endow the underlying pointed space of Π∞ with two distinct
+graded pointed E∞ -monoid structures:
+i
+(1) The functor Zds
+≥0 → S∗ defined by i ↦ {0, t } endows the underlying pointed space of Π∞
+with the structure of an object of the ∞-category Gr(S∗ ) of graded pointed spaces with t in
+w(t)=1
+w(t)=1
+canonically
+. We have that Π∞
+grading degree 1, and we will denote this object by Π∞
+refines to an object of the ∞-category CAlg(Gr S∗ ) since the grading is compatible with the
+monoid structure on Π∞ .
+j
+(2) The functor Zds
+≥0 → S∗ defined by i ↦ {0, t } if i = jn and by i ↦ {0} if n does not divide i,
+endows the underlying pointed space of Π∞ with the structure of an object of the ∞-category
+w(t)=n
+Gr(S∗ ) with t in grading degree n, and we will similarly denote this object by Π∞
+. As
+w(t)=n
+before, we have that Π∞
+canonically refines to an object of CAlg(Gr S∗ ).
+
+For every integer n ≥ 1, the assignment t ↦ tn determines a map of pointed monoids Π∞ → Π∞
+w(t)=n
+w(t)=1
+which canonically refines to a map of E∞ -algebras Π∞
+→ Π∞
+in graded pointed spaces.
+We have the following result which will play an important role in the following.
+Lemma 4.1.4. The following square is a pushout of E∞ -algebras in graded pointed spaces
+→ Π∞
+
+←
+
+→ Πn
+
+t↦tn
+
+→
+
+→
+
+t↦0
+
+{0, 1}
+
+w(t)=1
+
+←
+
+←
+
+←
+
+w(t)=n
+
+Π∞
+
+w(t)=1
+
+Proof. We first prove the following general assertion: Assume that M is a Π∞ -module in S∗ ,
+and let M ′ denote the cofiber of the endomorphism of M given by multiplication by t. Then the
+
+ON CURVES IN K-THEORY AND TR
+
+39
+
+canonical map M → M ′ induces an equivalence of Π∞ -modules
+M ⊗Π∞ {0, 1} → M ′ .
+
+We may assume that M = Π∞ since the unit Π∞ generates the ∞-category ModΠ∞ (S∗ ) under
+colimits, and in this case the assertion is true by inspection. To prove the assertion of the lemma,
+we note that it suffices to prove that the diagram above is a pushout of E∞ -algebras in S∗ after
+applying the forgetful functor CAlg(Gr S∗ ) → CAlg(S∗ ). In this case, the pushout is given by
+Π∞ ⊗Π∞ {0, 1}, where the Π∞ -module structure on Π∞ is obtained by restriction of scalars along
+the map Π∞ → Π∞ in CAlg(S∗ ) determined by t ↦ tn . Consequently, we have that Π∞ ⊗Π∞ {0, 1}
+is equivalent to the cofiber of the map Π∞ → Π∞ given by multiplication by tn , which shows the
+wanted.
+
+There is a functor of ∞-categories Σ∞ ∶ Gr(S∗ ) → GrSp obtained by composition with the reduced suspension spectrum functor. This functor canonically refines to a functor of ∞-categories
+Σ∞ ∶ CAlg(Gr S∗ ) → CAlg(GrSp)
+since Σ∞ ∶ S∗ → Sp and thus Σ∞ ∶ Gr S∗ → GrSp admits the structure of a symmetric monoidal
+functor. It is a consequence of Lemma 4.1.4 that the following square is a pushout of E∞ -algebras
+in the ∞-category of graded spectra
+
+←
+
+←
+
+←
+
+S
+
+→
+
+→
+
+s↦0
+
+→ S[t]
+
+s↦tn
+
+←
+
+S[s]
+
+→ S[t]/tn
+
+where s is in grading degree n and t is in grading degree 1. The E∞ -algebra S[t]/tn in GrSp is
+w(t)=1
+defined by S[t]/tn = Σ∞ Πn
+. We conclude that the diagram obtained by applying the functor
+und ∶ GrSp → Sp to the diagram above is a pushout of E∞ -rings.
+Example 4.1.5. By the discussion above, there is an equivalence of E∞ -rings
+S[t]/tn = S ⊗S[s] S[t],
+for every integer n ≥ 1, where S[t] is a module over S[s] by restriction of scalars along the map
+of E∞ -rings S[s] → S[t] given by s ↦ tn . There is an isomorphism of commutative rings
+π0 (S[t]/tn ) ≃ π0 (S) ⊗π0 (S[s]) π0 (S[t]) ≃ Z ⊗Z[s] Z[t] ≃ Z[t]/tn
+by virtue of [54, Corollary 7.2.1.23] since both S and S[t] are connective.
+Presently, we discuss a graded refinement of cyclotomic spectra following [2]. The construction
+tC
+{Xi }i ↦ {Xpi p }i determines an endofunctor Fp of the ∞-category GrSpBT of graded spectra
+tC
+
+with T-action for every prime p, where Xpi p is equipped with the residual T/Cp ≃ T-action.
+
+40
+
+JONAS MCCANDLESS
+
+Definition 4.1.6. The ∞-category of graded cyclotomic spectra is defined as the pullback
+1
+
+p
+
+←
+
+←
+
+→ ∏(GrSpBT )∆
+
+←
+
+GrCycSp
+
+→
+
+→
+
+(ev0 ,ev1 )
+
+→ ∏(GrSpBT × GrSpBT )
+
+←
+
+GrSpBT
+
+(id,Fp )
+
+p
+
+It follows from Definition 4.1.6 that a graded cyclotomic spectrum is given by a graded spectrum with T-action {Xi }≥0 together with a T-equivariant map
+ϕp,i ∶ Xi → Xpi p
+tC
+
+for every prime number p and integer i ≥ 0, where the target carries the residual T/Cp ≃ T-action.
+Informally, the cyclotomic Frobenius multiplies the grading degree by p. If R is an E1 -algebra
+in the ∞-category of graded spectra, then there is a functor of ∞-categories
+THHgr ∶ Alg(GrSp) → GrCycSp
+obtained by applying the cyclic bar construction in the ∞-category GrSp of graded spectra. We
+will refer to the functor THHgr as graded topological Hochschild homology, and refer the reader
+to [2, Appendix A] for the details of this construction. As in Notation 4.1.1, there is a functor
+GrCycSp → CycSp
+determined by the construction {Xi }i≥0 ↦ ⊕i≥0 Xi , and this functor preserves colimits. We have
+that the following diagram of ∞-categories commutes
+Alg(GrSp) THH→ GrCycSp
+←
+
+←
+
+←
+
+und
+
+→
+
+→
+
+und
+
+←
+
+Alg
+
+gr
+
+THH
+
+→ CycSp
+
+where we have used that the underlying functor GrSp → Sp of Notation 4.1.1 admits a canonical
+symmetric monoidal structure.
+Definition 4.1.7. Let {Ri }i≥0 denote an E1 -algebra in GrSp with R ≃ und({Ri }i≥0 ), and define
+THH(R)i = evi THHgr ({Ri }i≥0 )
+
+for every integer i ≥ 0. By definition, there is an equivalence of cyclotomic spectra
+THH(R) ≃ und THHgr ({Ri }i≥0 ) ≃ ⊕ THH(R)i .
+i≥0
+
+Example 4.1.8. There is an isomorphism of graded rings
+THH∗ (S[t]) ≃ S∗ [t, dt]/(dt2 = ηtdt),
+
+where η ∈ π1 S denotes the Hopf element and ∣dt∣ = 1. We may regard THH∗ (S[t]) as a graded
+w(t)=1
+) is
+abelian group with w(t) = w(dt) = 1 using that the underlying E∞ -ring of THHgr (Σ∞ Π∞
+
+ON CURVES IN K-THEORY AND TR
+
+41
+
+equivalent to THH(S[t]). We have the following picture:
+degree
+1
+
+0
+
+dt
+
+tdt t2 dt . . .
+
+0
+
+1
+
+t
+
+t2
+
+t3
+
+...
+
+0
+
+1
+
+2
+
+3
+
+...
+
+w
+
+Alternatively, we may regard THH∗ (S[t]) as a graded abelian group with w(t) = w(dt) = n, and
+in this case we have the following picture:
+degree
+1
+
+0
+
+0
+
+...
+
+0
+
+dt
+
+0
+
+...
+
+0
+
+tdt
+
+0
+
+...
+
+0
+
+1
+
+0
+
+...
+
+0
+
+t
+
+0
+
+...
+
+0
+
+t2
+
+0
+
+...
+
+0
+
+1
+
+. . . n − 1 n n + 1 . . . 2n − 1 2n 2n + 1 . . .
+
+w
+
+As in Definition 4.1.7 above, there is an equivalence of cyclotomic spectra
+THH(S[t]/tn ) ≃ und THHgr (Σ∞ Πnw(t)=1 ) ≃ ⊕ THH(S[t]/tn )i .
+i≥0
+
+Hesselholt–Madsen [39] determine the T-equivariant homotopy type of THH(S[t]/tn )i for every
+i ≥ 0 by analyzing the facet structure of regular cyclic polytopes. Using Example 4.1.8 above,
+we obtain the following special case of the result of Hesselholt–Madsen.
+Proposition 4.1.9. For every integer n ≥ 1, there is an equivalence of spectra with T-action
+THH(S[t]/tn ) ≃ ⊕ THH(S[t]/tn )i ,
+i≥0
+
+1
+where THH(S[t]/t )0 ≃ S and THH(S[t]/t )i ≃ Σ∞
++ (S /Ci ) for 1 ≤ i ≤ n − 1.
+n
+
+n
+
+1
+Proof. It remains to show that THH(S[t])0 ≃ S and THH(S[t]/tn )i ≃ Σ∞
++ (S /Ci ) for 1 ≤ i ≤ n−1
+by the discussion above. There is an equivalence of cyclotomic spectra
+w(t)=1
+THH(S[t]) ≃ und THHgr (Σ∞ Π∞
+) ≃ ⊕ THH(S[t])i ,
+i≥0
+
+1
+where THH(S[t])0 ≃ S and THH(S[t])i ≃ Σ∞
++ (S /Ci ) for every i ≥ 1, thus we want to prove that
+
+there is an equivalence of spectra with T-action
+
+THH(S[t]/tn )i ≃ THH(S[t])i
+for every 0 ≤ i ≤ n − 1. Note that the square
+←
+
+←
+
+←
+
+S
+
+→
+
+→
+
+s↦0
+
+→ THHgr (S[t])
+
+s↦tn
+
+←
+
+THHgr (S[s])
+
+→ THHgr (S[t]/tn )
+
+42
+
+JONAS MCCANDLESS
+
+is a pushout in the ∞-category of graded cyclotomic spectra, where w(s) = n and w(t) = 1. Indeed, it suffices to prove that the square is a pushout in the ∞-category of cyclotomic spectra after
+applying the underlying functor GrCycSp → CycSp. This is a consequence of Lemma 4.1.4 since
+both und ∶ Alg(GrSp) → Alg and THH ∶ Alg → CycSp preserve pushouts. Using Example 4.1.8,
+we conclude that there is an equivalence of spectra with T-action
+THH(S[t]/tn )i ≃ THH(S[t])i
+for every 0 ≤ i ≤ n − 1 as wanted.
+
+
+
+We will not need to determine the T-equivariant homotopy type of THH(S[t]/tn )i for i ≥ n
+as in Hesselholt–Madsen [39] (see Remark 4.1.12). Instead, we will only need a connectivity
+estimate for THH(S[t]/tn )i for i ≥ n, which we deduce from a calculation of the Hochschild homology groups of truncated polynomial rings over the integers. This computation was previously
+obtained by Guccione–Guccione–Redondo–Solotar–Villamayor [36]. We will let Z⟨y⟩ denote the
+free divided power algebra which has generators y [1] , y [2] , . . . with y = y [1] and the relations that
+)y [i+j] for every pair of positive integers i and j. We have the following result:
+y [i] y [j] = (i+j
+i
+Proposition 4.1.10. For every integer n ≥ 1, the Hochschild homology HH(Z[t]/tn ) is equivalent
+to the E1 -algebra given by the following differential graded algebra
+(Z[t]/tn ⊗ Λ(dt) ⊗ Z⟨y⟩, ∂),
+
+with ∣dt∣ = 1 and ∣y∣ = 2, whose differential is determined by ∂(y [i] ) = ntn−1 y [i−1] dt and ∂(dt) = 0.
+Proof. The following square is a pushout of E∞ -algebras over Z
+←
+
+←
+
+←
+
+Z
+
+→
+
+→
+
+s↦0
+
+→ HH(Z[t])
+
+s↦tn
+
+←
+
+HH(Z[s])
+
+→ HH(Z[t]/tn )
+
+since the functor − ⊗ Z ∶ CAlg → CAlgZ preserves colimits and THH(S[t]/tn ) ⊗ Z ≃ HH(Z[t]/tn ).
+Recall that the pushout of E∞ -algebras over Z above is calculated by the relative tensor product.
+The Hochschild homology HH(Z[s]) is 1-truncated since HH∗ (Z[s]) ≃ H∗ (Z[s]⊗Λ(ds)) by virtue
+of the Hochschild–Kostant–Rosenberg theorem, and the map HH∗ (Z[s]) → HH∗ (Z[t]) is given by
+s ↦ tn and ds ↦ ntn−1 dt. The Hochschild homology HH(Z[s]) is equivalent to the 1-truncation of
+the free E1 -Z-algebra on the generators s and ds, so we conclude that HH(Z[s]) ≃ Z[s] ⊗ Λ(ds).
+Additionally, it follows from the homology statement above that the map HH(Z[s]) → HH(Z[t])
+is given by s ↦ tn and ds ↦ ntn−1 dt under these identifications since there is an equivalence
+Mapτ≤1 Alg(Sp) (HH(Z[s]), HH(Z[t])) ≃ MapAlg(Sp) (HH(Z[s]), HH(Z[t])),
+
+where τ≤1 Alg(Sp) denotes the full subcategory of Alg(Sp) spanned by those E1 -rings which are
+1-truncated. In other words, we conclude that HH(Z[t]/tn ) is given by the following pushout
+←
+
+←
+
+←
+
+Z
+
+→
+
+→
+
+s↦0
+
+→ Z[t] ⊗ Λ(dt)
+
+s↦tn , ds↦ntn−1 dt
+
+←
+
+Z[s] ⊗ Λ(ds)
+
+→ HH(Z[t]/tn )
+
+ON CURVES IN K-THEORY AND TR
+
+43
+
+Note that the Z appearing in the lower left corner of the pushout square above is equivalent to
+the commutative differential graded algebra given by Z[s] ⊗ Λ(ds) ⊗ Λ(ε) ⊗ Z⟨y⟩ with ∣ds∣ = ∣ε∣ = 1
+and ∣y∣ = 2, whose differential is determined by ∂(ε) = s and ∂(y [i] ) = y [i−1] ds. Since the ring
+homomorphism Z[s] → Z[t] given by s ↦ tn is flat, we conclude that HH(Z[t]/tn ) is given by
+the pushout of the following diagram of commutative differential graded algebras
+
+←
+
+→ Z[t] ⊗ Λ(dt)
+
+s↦tn , ds↦ntn−1 dt
+
+←
+
+Z[s] ⊗ Λ(ds)
+→
+
+Z[s] ⊗ Λ(ds) ⊗ Λ(ε) ⊗ Z⟨y⟩
+which is equivalent to the commutative differential graded algebra given by Z[t]/tn ⊗Λ(dt)⊗Z⟨y⟩
+with ∣dt∣ = 1 and ∣y∣ = 2, whose differential is determined by ∂(dt) = 0 and ∂(y [i] ) = ntn−1 y [i−1] dt,
+where we have used that ε does not contribute to the pushout since Z[s] → Z[t] given by s ↦ tn
+is injective and ∂(ε) = s.
+
+There is an equivalence of spectra with T-action
+HH(Z[t]/tn ) ≃ ⊕ HH(Z[t]/tn )i ,
+i≥0
+
+where HH(Z[t]/tn )i ≃ THH(S[t]/tn )i ⊗Z. Using Proposition 4.1.10, we may regard HH∗ (Z[t]/tn )
+as a graded abelian group with w(t) = w(dt) = 1 and w(y) = n. As in Example 4.1.8 above, we
+have the following picture:
+deg
+⋮
+
+⋮
+
+⋮
+
+...
+
+⋮
+
+⋮
+
+⋮
+
+...
+
+⋮
+
+⋮
+
+⋮
+
+...
+
+5
+
+0
+
+0
+
+...
+
+0
+
+0
+
+0
+
+...
+
+0
+
+0
+
+y [2] dt
+
+...
+
+4
+
+0
+
+0
+
+...
+
+0
+
+0
+
+0
+
+...
+
+0
+
+y [2]
+
+y [2] t
+
+...
+
+3
+
+0
+
+0
+
+...
+
+0
+
+0
+
+ydt
+
+...
+
+ytn−2 dt ytn−1 dt
+
+0
+
+...
+
+2
+
+0
+
+0
+
+...
+
+0
+
+y
+
+yt
+
+...
+
+ytn−1
+
+0
+
+0
+
+...
+
+1
+
+0
+
+dt
+
+...
+
+tn−2 dt
+
+tn−1 dt
+
+0
+
+...
+
+0
+
+0
+
+0
+
+...
+
+0
+
+1
+
+t
+
+...
+
+tn−1
+
+0
+
+0
+
+...
+
+0
+
+0
+
+0
+
+...
+
+0
+
+1
+
+...
+
+n−1
+
+n
+
+n+1
+
+...
+
+2n − 1
+
+2n
+
+2n + 1
+
+...
+
+As a consequence, we obtain the following result from the diagram above, which was previously
+obtained by Hesselholt–Madsen [40, §7.3] and Hesselholt [38, Lemma 3.1.6].
+
+w
+
+44
+
+JONAS MCCANDLESS
+
+Corollary 4.1.11. For every n ≥ 1 and every i ≥ 1, the spectrum THH(S[t]/tn )i is 2ℓ-connective,
+⌋ denotes the largest integer less than i−1
+.
+where ℓ = ⌊ i−1
+n
+n
+
+Proof. It suffices to prove the assertion for HH(Z[t]/tn )i . Note that if n divides i, then HH(Z[t]/tn )i
+is concentrated in degree 2ℓ + 1 and 2ℓ + 2. If n does not divide i, then HH(Z[t]/tn )i is concentrated in degree 2ℓ and 2ℓ + 1. We conclude that HH(Z[t]/tn )i is 2ℓ-connective for every i ≥ 1,
+which shows the desired statement by Hurewicz since THH(S[t]/tn )i ⊗ Z ≃ HH(Z[t]/tn )i .
+
+
+Remark 4.1.12. In this remark, we will identify the underlying spectrum of THH(S[t]/tn ) using
+Proposition 4.1.10. The homology of HH(Z[t]/tn )kn is given by the homology of the complex
+⋯ → 0 → Z[2k] Ð
+→ Z[2k − 1] → 0 → ⋯
+n
+
+for every integer k ≥ 1. It follows that there is an equivalence of spectra
+THH(S[t]/tn )kn ≃ S/n[2k − 1]
+
+since the Moore spectrum S/n is uniquely characterized by π∗ (S/n ⊗ Z) ≃ Z/n[0]. Additionally,
+1
+we recall that Σ∞
++ S ≃ S ⊕ S[1]. Using the picture following the proof of Proposition 4.1.10, we
+conclude that there is an equivalence of spectra
+THH(S[t]/tn ) ≃ S ⊕ ( ⊕ ( ⊕ (S ⊕ S[1])[2i]) ⊕ S/n[2i + 1]).
+n−1
+
+i≥0
+
+j=1
+
+In fact, it is possible to determine the underlying spectrum with T-action of THH(S[t]/tn ). Such
+an identification will be useful for computing the topological Hochschild homology of truncated
+polynomial rings over the integers or a perfectoid base ring.
+Example 4.1.13. In this example, we describe a cyclotomic structure on the product
+∏ X ⊗ Σ+ (S /Cn ),
+∞
+
+1
+
+n≥1
+
+where X denotes a cyclotomic spectrum whose underlying spectrum is bounded below as follows:
+Using [3, Lemma 2.11], we conclude that the canonical map of spectra with T-action
+1
+( ∏ X ⊗ Σ∞
++ (S /Cn ))
+
+tCp
+
+n≥1
+
+1
+tCp
+→ ∏ (X ⊗ Σ∞
++ (S /Cn ))
+n≥1
+
+is an equivalence for every prime number p. As a consequence, we may regard the product above
+as a cyclotomic spectrum whose cyclotomic Frobenius is induced by the T-equivariant map
+1
+1
+tCp
+∞
+1
+tCp
+1
+tCp
+X⊗Σ∞
+ÐÐÐ→ X tCp ⊗Σ∞
+Ð
+→ (X⊗Σ∞
++ (S /Cn ) ÐÐÐ→ X⊗Σ+ (S /Cpn )
++ (S /Cpn ))
++ (S /Cpn )
+id ⊗ψp
+
+ϕp ⊗id
+
+ℓ
+
+where ℓ denotes the map induced by the canonical lax symmetric monoidal structure of the Tate
+construction (see [59, Theorem I.3.1]).
+Finally, we obtain a convenient description of the cyclotomic structure of lim(X⊗ ̃
+THH(S[t]/tn ))
+←Ð
+for every cyclotomic spectrum X whose underlying spectrum is bounded below using the connectivity result obtained in Corollary 4.1.11.
+Proposition 4.1.14. There is an equivalence of cyclotomic spectra
+
+1
+lim(X ⊗ ̃
+THH(S[t]/tn )) ≃ ∏ X ⊗ Σ∞
++ (S /Cn )
+←Ð
+n≥1
+
+ON CURVES IN K-THEORY AND TR
+
+45
+
+for every cyclotomic spectrum X whose underlying spectrum is bounded below, where the cyclotomic structure on the product is described in Example 4.1.13.
+̃
+Proof. For every integer n ≥ 2, we let THH(S[t])
+<n denote the cyclotomic spectrum defined by
+∞
+1
+̃
+THH(S[t])
+<n = ⊕ Σ+ (S /Ci ),
+n−1
+i=1
+
+1
+∞
+1
+hCp
+whose cyclotomic Frobenius is induced by Σ∞
+for pi ≤ n − 1, and by
++ (S /Ci ) → Σ+ (S /Cpi )
+∞
+1
+Σ+ (S /Ci ) → 0 for pi ≥ n. By construction, the canonical projection
+n
+̃
+̃
+THH(S[t]/t
+) → THH(S[t])
+<n
+
+determines a map of cyclotomic spectra such that the following diagram commutes
+
+←
+
+̃
+→ THH(S[t])
+<n
+
+→
+
+n
+̃
+THH(S[t]/t
+)
+
+←
+
+̃
+→ THH(S[t])
+<n+1
+
+→
+
+←
+
+←
+
+n+1
+̃
+THH(S[t]/t
+)
+
+where the left vertical map is induced by the canonical map of pointed monoids Πn+1 → Πn , and
+the right vertical map is given by the projection. We obtain a map of cyclotomic spectra
+
+lim(X ⊗ ̃
+THH(S[t]/tn )) → lim(X ⊗ ̃
+THH(S[t])<n )
+←Ð
+←Ð
+for every cyclotomic spectrum X whose underlying spectrum is bounded below, and we show
+that this map is an equivalence of cyclotomic spectra. First note that the forgetful functor
+CycSp → SpBT preserves both of the limits appearing in (3) by virtue of Corollary 4.1.11 and
+the assumption that the underlying spectrum of X is bounded below. Consequently, it suffices
+to show that the map of spectra with T-action
+
+(3)
+
+n
+̃
+̃
+lim(X ⊗ THH(S[t])
+<n ) → lim(X ⊗ THH(S[t]/t ))
+←Ð
+←Ð
+n
+̃
+̃
+induced by the inclusion THH(S[t])
+<n ↪ THH(S[t]/t ) is an equivalence. There is a commutative diagram of cofiber sequences of spectra with T-action
+
+i≥n+1
+
+←
+
+←
+
+←
+
+n
+̃
+→ X ⊗ ⊕ THH(S[t]/t
+)i
+
+→
+
+→
+
+̃
+X ⊗ THH(S[t])
+<n
+
+→ X⊗ ⊕ ̃
+THH(S[t]/tn+1 )i
+
+←
+
+←
+
+←
+
+n
+̃
+→ X ⊗ THH(S[t]/t
+)
+
+→
+
+→ X⊗̃
+THH(S[t]/tn+1 )
+
+←
+
+X⊗̃
+THH(S[t])<n+1
+
+i≥n
+
+where the right vertical map is induced by the composite
+
+̃
+THH(S[t]/tn+1 )i → ̃
+THH(S[t]/tn )i ↪ ̃
+THH(S[t]/tn ).
+
+Thus, it suffices to show that
+
+n
+̃
+)i ) ≃ 0,
+lim ⊕(X ⊗ THH(S[t]/t
+←Ð i≥n
+n
+
+which now follows from Corollary 4.1.11. Indeed, we have that
+
+THH(S[t]/tn )i ) ≃ lim ( lim ⊕ (X ⊗ ̃
+lim ⊕(X ⊗ ̃
+THH(S[t]/tn )i ))
+←Ð ←Ð i≥m
+←Ð i≥n
+n
+
+n
+
+m
+
+46
+
+JONAS MCCANDLESS
+
+since the diagonal N → N × N is an initial functor, and using Corollary 4.1.11, we conclude that
+the limit appearing in the parenthesis on the right hand side of the equivalence above vanishes.
+In conclusion, we have proved that the map appearing in (3) is an equivalence. To finish the
+proof, we show that the map of cyclotomic spectra
+THH(S[t])<n ).
+∏ X ⊗ Σ+ (S /Cn ) → lim(X ⊗ ̃
+←Ð
+n≥1
+∞
+
+1
+
+induced by the projection maps is an equivalence, where the cyclotomic structure on the product
+is defined in Example 4.1.13. This follows from the fact that if
+⋯ ÐÐ→ A1 ⊕ A2 ⊕ A3 ÐÐ→ A1 ⊕ A2 ÐÐ→ A1
+proj
+
+proj
+
+proj
+
+is a tower of abelian groups, then the limit is given by the product ∏n≥1 An .
+
+
+
+4.2. Curves on K-theory. As an application of Theorem 3.3.12 and Proposition 4.1.14, we
+obtain the desired description of TR evaluated on a connective E1 -ring R in terms of the spectrum
+of curves on K(R) extending work of Hesselholt [38] and Betley–Schlichtkrull [11]. We will begin
+by recalling the following notation (see the discussion following Lemma 4.1.4).
+Notation 4.2.1. Recall that for every integer n ≥ 1, the following square is a pushout of E∞ -rings
+←
+
+←
+
+←
+
+S
+
+→
+
+→
+
+t↦0
+
+→ S[t]
+
+t↦tn
+
+←
+
+S[t]
+
+→ S[t]/tn
+
+In particular, there is a map of E∞ -rings S[t]/tn → S determined by the assignment t ↦ 0. If
+R is a connective E1 -ring, then we define the E1 -ring R[t]/tn by R[t]/tn = R ⊗ S[t]/tn , and we
+have that π∗ (R[t]/tn ) ≃ (π∗ R)[t]/tn . We obtain a map of connective E1 -rings R[t]/tn → R such
+that the kernel of the induced ring homomorphism
+π0 (R[t]/tn ) ≃ (π0 R)[t]/tn → π0 R
+
+is given by the nilpotent ideal (t). If E ∶ Algcn → Sp is a functor, then we will let E(R[t]/tn , (t))
+denote the fiber of the induced map of spectra E(R[t]/tn ) → E(R).
+We recall the definition of the spectrum of curves on algebraic K-theory following Hesselholt [38], which is based on a previous variant studied by Bloch [14] in his work on the relationship
+between algebraic K-theory and crystalline cohomology.
+Definition 4.2.2. The spectrum of curves on K-theory is defined by
+C(R) = lim Ω K(R[t]/tn , (t))
+←Ð
+for every connective E1 -ring R.
+A fundamental result of Hesselholt [38, Theorem 3.1.10] asserts that if R is a discrete commutative Z/pj -algebra for some j ≥ 1, then there is a natural equivalence of spectra TR(R) ≃ C(R).
+As a consequence, Hesselholt [38, Theorem C] proves that the homotopy groups of the p-typical
+summand of C(A) is isomorphic to the de Rham–Witt complex WΩ∗A in the case where A is a
+smooth algebra over a perfect field of characteristic p. In [11, Theorem 1.3], Betley–Schlichtkrull
+
+ON CURVES IN K-THEORY AND TR
+
+47
+
+establish a variant of the result of Hesselholt for topological cyclic homology on discrete associative rings after profinite completion, where the inverse limit in the definition of the spectrum of
+curves on K-theory is replaced by a limit over a diagram which additionally encodes the transfer
+maps R[t]/tm → R[t]/tmn determined by t ↦ tn . Our main result is the following:
+Theorem 4.2.3. There is a natural equivalence of spectra
+
+TR(X) ≃ lim Ω TC(X ⊗ ̃
+THH(S[t]/tn ))
+←Ð
+for every cyclotomic spectrum X whose underlying spectrum is bounded below.
+In the course of the proof of Theorem 4.2.3, we will need the following result:
+Lemma 4.2.4. If X is a spectrum with T-action, then the following T-equivariant map of spectra
+1
+tCp
+→ X tCp ⊗ Σ∞
++ (S /Cpn )
+
+id ⊗(can ○ψp )
+
+←
+
+←
+
+1
+X tCp ⊗ Σ∞
++ (S /Cn )
+
+1
+tCp
+→ (X ⊗ Σ∞
++ (S /Cpn ))
+
+ℓ
+
+is an equivalence for every prime p and every integer n ≥ 1, where ℓ denotes the map induced by
+the lax symmetric monoidal structure on the Tate construction (−)tCp .
+Proof. See Speirs [62, Lemma 8].
+
+
+
+Proof of Theorem 4.2.3. There is a natural equivalence of spectra
+̃
+TR(X) ≃ mapCycSp (THH(S[t]),
+X)
+
+by virtue of Theorem 3.3.12, so we conclude that
+
+1
+≃ Eq( ∏ mapSpBT (Σ∞
++ (S /Cn ), X)
+n≥1
+
+→ ∏ map BT ( ⊕ Σ∞ (S 1 /Cn ), X tCp ) )
+Sp
++
+→
+
+←
+←
+
+n≥1
+
+←
+←
+
+1
+TR(X) ≃ Eq( mapSpBT ( ⊕ Σ∞
++ (S /Cn ), X)
+
+→ ∏ ∏ map BT (Σ∞ (S 1 /Cn ), X tCp ) )
+Sp
++
+→
+
+n≥1
+
+p
+
+p n≥1
+
+̃
+by [59, Proposition II.1.5], where the top map is induced by the cyclotomic structure of THH(S[t]),
+1
+and the bottom map is induced by the cyclotomic structure of X. Note that Σ∞
++ (S /Cn ) is dualizable regarded as a spectrum with T-action for every n ≥ 1. Indeed, we have that T-equivariant
+Atiyah duality identifies its dual with Σ∞−1
+(S 1 /Cn ), and the following T-equivariant map
++
+(S 1 /Cpn )tCp
+→ X tCp ⊗ Σ∞−1
++
+
+id ⊗(can ○ψp )
+
+←
+
+←
+
+X tCp ⊗ Σ∞−1
+(S 1 /Cn )
++
+
+ℓ
+
+(S 1 /Cpn ))tCp
+→ (X ⊗ Σ∞−1
++
+
+is an equivalence for every prime p and every integer n ≥ 1 by virtue of Lemma 4.2.4 above. It
+follows that the second equalizer above is equivalent to
+n≥1
+
+←
+←
+
+Eq( ∏ mapSpBT (S, X ⊗ Σ∞−1
+(S 1 /Cn ))
++
+
+→ ∏ ∏ map BT (S, (X ⊗ Σ∞−1 (S 1 /Cpn ))tCp ) ),
+Sp
++
+→
+p n≥1
+
+where the top map is induced by the trivial cyclotomic structure of the sphere spectrum S, and
+the bottom map carries f ∶ S → X ⊗ Σ∞−1
+(S 1 /Cn ) to the following T-equivariant map
++
+SÐ
+→ X ⊗ Σ∞−1
+(S 1 /Cn ) Ð→ X tCp ⊗ Σ∞−1
+(S 1 /Cn ) Ð
+→ (X ⊗ Σ∞−1
+(S 1 /Cpn ))tCp
++
++
++
+ϕp
+
+f
+
+≃
+
+As in Example 4.1.13, the canonical map of spectra with T-action
+( ∏ X ⊗ Σ∞−1
+(S 1 /Cpn ))
++
+n≥1
+
+tCp
+
+→ ∏ (X ⊗ Σ∞−1
+(S 1 /Cpn ))tCp
++
+n≥1
+
+48
+
+JONAS MCCANDLESS
+
+is an equivalence, so we conclude that the equalizer above is equivalent to
+
+(S 1 /Cn ))
+≃ Eq( mapSpBT (S, ∏ X ⊗ Σ∞−1
++
+n≥1
+
+→ ∏ map BT (S, ( ∏ X ⊗ Σ∞−1 (S 1 /Cpn ))
+Sp
++
+→
+
+) )
+
+←
+←
+
+n≥1
+
+←
+←
+
+(S 1 /Cn ))
+Eq( mapSpBT (S, ∏ X ⊗ Σ∞−1
++
+
+→ ∏ map BT (S, ( ∏ X ⊗ Σ∞−1 (S 1 /Cn ))
+Sp
++
+→
+
+) ),
+
+tCp
+
+p
+
+n≥1
+
+tCp
+
+p
+
+n≥1
+
+1
+tCp
+where the equivalence uses that (X ⊗ Σ∞
+≃ 0 provided that p does not divide n.
++ (S /Cn ))
+Finally, using Proposition 4.1.14, we conclude that TR(X) is equivalent to the following spectrum
+
+←
+←
+
+n
+̃
+))
+lim ΩEq( mapSpBT (S, X ⊗ THH(S[t]/t
+←Ð
+
+n tCp
+→ ∏ map BT (S, (X ⊗ THH(S[t]/t
+̃
+)) ) ),
+Sp
+→
+p
+
+where the top map is induced by the trivial cyclotomic structure of the sphere spectrum S, and
+the bottom map is induced by the cyclotomic structure of X ⊗ ̃
+THH(S[t]/tn ). We conclude that
+n
+n
+̃
+̃
+TR(X) ≃ lim Ω mapCycSp (S, X ⊗ THH(S[t]/t
+)) ≃ lim Ω TC(X ⊗ THH(S[t]/t
+))
+←Ð
+←Ð
+
+which shows the desired statement.
+
+
+
+Using Theorem 4.2.3, we obtain the following result:
+Corollary 4.2.5. If R is a connective E1 -ring, then there is a natural equivalence of spectra
+TR(R) ≃ lim Ω TC(R[t]/tn , (t)).
+←Ð
+In particular, there is a natural equivalence of spectra TR(R) ≃ C(R).
+Proof. If R is a connective E1 -ring, then there is an equivalence of cyclotomic spectra
+THH(R) ⊗ ̃
+THH(S[t]/tn ) ≃ ̃
+THH(R[t]/tn )
+since THH is a symmetric monoidal functor, so the first assertion follows readily from Theorem 4.2.3. Furthermore, there is a natural equivalence
+lim Ω TC(R[t]/tn , (t)) ≃ lim Ω K(R[t]/tn , (t))
+←Ð
+←Ð
+by virtue of the Dundas–Goodwillie–McCarthy theorem [27], which shows the desired statement.
+
+Remark 4.2.6. In Corollary 4.2.5, the Frobenius endomorphism of TR(R) can be expressed in
+terms of suitable transfer maps on the spectrum of curves on K-theory. More precisely, the kth
+Frobenius endomorphism of TR(R) is induced by the transfer map K(R[t]/tn ) → K(R[t]/tkn )
+determined by the assignment t ↦ tk . In [11], Betley–Schlichtkrull work with a refined version of
+the spectrum of curves on K-theory which additionally takes these transfer maps into account.
+Consequently, they obtain a formula for TC evaluated on a discrete ring in terms of this variant
+of the spectrum of curves on K-theory after profinite completion (cf. [11, Theorem 1.3]).
+
+ON CURVES IN K-THEORY AND TR
+
+49
+
+References
+[1] V. Angeltveit, A. Blumberg, T. Gerhardt, M. Hill, T. Lawson, and M. Mandell. Topological cyclic homology
+via the norm. arXiv:1401.5001, 2014.
+[2] B. Antieau, A. Mathew, M. Morrow, and T. Nikolaus. On the Beilinson fiber square. arXiv:2003.12541, 2020.
+[3] B. Antieau and T. Nikolaus. Cartier modules and cyclotomic spectra. Journal of the American Mathematical
+Society, 2020.
+[4] S. Ariotta. Coherent cochain complexes and Beilinson t-structures. In preparation.
+[5] D. Ayala, A. Mazel-Gee, and N. Rozenblyum. Factorization homology of enriched ∞-categories.
+arXiv:1710.06414, 2017.
+[6] D. Ayala, A. Mazel-Gee, and N. Rozenblyum. The geometry of the cyclotomic trace. arXiv:1710.06409, 2017.
+[7] D. Ayala, A. Mazel-Gee, and N. Rozenblyum. A naive approach to genuine G-spectra and cyclotomic spectra.
+arXiv:1710.06416, 2017.
+[8] C. Barwick. Spectral Mackey functors and equivariant algebraic K-theory (I). Advances in Mathematics,
+304:646–727, 2017.
+[9] C. Barwick, E. Dotto, S. Glasman, D. Nardin, and J. Shah. Parametrized higher category theory and higher
+algebra: A general introduction. arXiv:1608.03654, 2016.
+[10] C. Barwick and S. Glasman. Cyclonic spectra, cyclotomic spectra, and a conjecture of Kaledin.
+arXiv:1602.02163, 2016.
+[11] S. Betley and C. Schlichtkrull. The cyclotomic trace and curves on K-theory. Topology, 44(4):845–874, 2005.
+[12] B. Bhatt, M. Morrow, and P. Scholze. Topological Hochschild homology and integral p-adic Hodge theory.
+Publications Mathématiques de l’Institut des Hautes Études Scientifiques, 129(1):199–310, 2019.
+[13] B. Bhatt and P. Scholze. Prisms and prismatic cohomology. arXiv:1905.08229, 2019.
+[14] S. Bloch. Algebraic K-theory and crystalline cohomology. Publications Mathématiques de l’Institut des Hautes
+Études Scientifiques, 47(1):188–268, 1977.
+[15] A. Blumberg, D. Gepner, and G. Tabuada. A universal characterization of algebraic K-theory. Geometry &
+Topology, 17(2):733–838, 2013.
+[16] A. Blumberg and M. Mandell. Localization theorems in topological hochschild homology and topological
+cyclic homology. Geometry & Topology, 16(2):1053–1120, 2012.
+[17] A. Blumberg and M. Mandell. The homotopy theory of cyclotomic spectra. Geometry & Topology, 19(6):3105–
+3147, 2016.
+[18] M. Bökstedt, W. Hsiang, and I. Madsen. The cyclotomic trace and algebraic K-theory of spaces. Inventiones
+mathematicae, 111(1):465–539, 1993.
+[19] D. Burghelea and Z. Fiedorowicz. Cyclic homology and algebraic K-theory of spaces - II. Topology, 25(3):303–
+317, 1986.
+[20] D. Burghelea, Z. Fiedorowicz, and W. Gajda. Power maps and epicyclic spaces. Journal of Pure and Applied
+Algebra, 96(1):1–14, 1994.
+[21] D. Clausen and A. Mathew. Hyperdescent and étale K-theory. arXiv:1905.06611, 2019.
+[22] D. Clausen, A. Mathew, N. Naumann, and J. Noel. Descent and vanishing in chromatic algebraic K-theory
+via group actions. arXiv:2011.08233, 2020.
+[23] D. Clausen, A. Mathew, N. Naumann, and J. Noel. Descent in algebraic K-theory and a conjecture of
+Ausoni–Rognes. Journal of the European Mathematical Society, 22(4):1149–1200, 2020.
+[24] A. Connes. Cohomologie cyclique et foncteurs extn . CR Acad. Sci. Paris Sér. I Math, 296(23):953–958, 1983.
+[25] J. Cranch. Algebraic theories and (∞, 1)-categories. arXiv:1011.3243, 2010.
+[26] E. Dotto, C. Malkiewich, I. Patchkoria, S. Sagave, and C. Woo. Comparing cyclotomic structures on different
+models for topological Hochschild homology. Journal of Topology, 12(4):1146–1173, 2019.
+[27] B. Dundas, T. Goodwillie, and R. McCarthy. The local structure of algebraic K-theory, volume 18. Springer
+Science & Business Media, 2012.
+[28] W. Dwyer and D. Kan. Singular functors and realization functors. In Indagationes Mathematicae (Proceedings), volume 87, pages 147–153, 1984.
+[29] T. Geisser and L. Hesselholt. The de Rham-Witt complex and p-adic vanishing cycles. Journal of the American Mathematical Society, 19(1):1–36, 2006.
+
+50
+
+JONAS MCCANDLESS
+
+[30] D. Gepner, M. Groth, and T. Nikolaus. Universality of multiplicative infinite loop space machines. Algebraic
+& Geometric Topology, 15(6):3107–3153, 2016.
+[31] D. Gepner, R. Haugseng, and T. Nikolaus. Lax colimits and free fibrations in ∞-categories. arXiv:1501.02161,
+2015.
+[32] S. Glasman. Stratified categories, geometric fixed points and a generalized Arone–Ching theorem.
+arXiv:1507.01976, 2015.
+[33] T. Goodwillie. Cyclic homology, derivations, and the free loop space. Topology, 24(2):187–215, 1985.
+[34] T. Goodwillie. Notes on the cyclotomic trace. In Lecture notes for a series of seminar talks at MSRI, spring,
+1990.
+[35] J. Greenlees and J. May. Generalized Tate cohomology, volume 543. American Mathematical Soc., 1995.
+[36] J. Guccione, J. Guccione, M. Redondo, A. Solotar, and O. Villamayor. Cyclic homology of algebras with one
+generator. K-theory, 5(1):51–69, 1991.
+[37] B. Guillou and J. May. Models of G-spectra as presheaves of spectra. arXiv:1110.3571, 2011.
+[38] L. Hesselholt. On the p-typical curves in Quillen’s K-theory. Acta Mathematica, 177(1):1–53, 1996.
+[39] L. Hesselholt and I. Madsen. Cyclic polytopes and the K-theory of truncated polynomial algebras. Inventiones
+mathematicae, 130(1):73–97, 1997.
+[40] L. Hesselholt and I. Madsen. On the K-theory of finite algebras over Witt vectors of perfect fields. Topology,
+36(1):29–101, 1997.
+[41] L. Hesselholt and I. Madsen. On the K-theory of local fields. Annals of Mathematics, 158(1):1–113, 2003.
+[42] L. Hesselholt and I. Madsen. On the de Rham–Witt complex in mixed characteristic. Annales scientifiques
+de l’Ecole normale supérieure, 37(1):1–43, 2004.
+[43] L. Hesselholt and P. Scholze. Arbeitsgemeinschaft: Topological Cyclic Homology. Oberwolfach Reports,
+15(2):805–940, 2019.
+[44] M. Hill, M. Hopkins, and D. Ravenel. On the nonexistence of elements of Kervaire invariant one. Annals of
+Mathematics, pages 1–262, 2016.
+[45] J. Jones. Cyclic homology and equivariant homology. Inventiones Mathematicae, 87(2):403–423, 1987.
+[46] D. Kaledin. Motivic structures in non-commutative geometry. In Proceedings of the International Congress
+of Mathematicians, pages 461–496, 2010.
+[47] D. Kaledin. Cyclotomic complexes. Izvestiya: Mathematics, 77(5):855, 2013.
+[48] L. Keenan. The May filtration on THH and faithfully flat descent. arXiv:2004.12600, 2020.
+[49] A. Krause and T. Nikolaus. Lectures on topological Hochschild homology and cyclotomic spectra, 2019.
+[50] M. Larsen and A. Lindenstrauss. Cyclic homology of Dedekind domains. K-theory, 6(4):301–334, 1992.
+[51] F. Lawvere. Functorial semantics of algebraic theories. Proceedings of the National Academy of Sciences of
+the United States of America, 50(5):869, 1963.
+[52] L. Lewis, J. May, and M. Steinberger. Equivariant stable homotopy theory. Lecture notes in mathematics,
+1213:1–503, 1986.
+[53] J. Lurie. Higher topos theory. Princeton University Press, 2009.
+[54] J. Lurie. Higher algebra. Available on the author’s website, 2017.
+[55] M. Mandell and J. May. Equivariant orthogonal spectra and S-modules. American Mathematical Soc., 2002.
+[56] J. May. The geometry of iterated loop spaces, volume 271. Springer, 2006.
+[57] D. Nardin. Parametrized higher category theory and higher algebra: Exposé iv – Stability with respect to
+an orbital ∞-category. arXiv:1608.07704, 2016.
+[58] T. Nikolaus. Stable ∞-operads and the multiplicative yoneda lemma. arXiv:1608.02901, 2016.
+[59] T. Nikolaus and P. Scholze. On topological cyclic homology. Acta Mathematica, 221(2):203–409, 2018.
+[60] C. Schlichtkrull. The cyclotomic trace for symmetric ring spectra. arXiv:0903.3495, 2009.
+[61] S. Schwede. Lectures on equivariant stable homotopy theory. Available on the author’s website.
+[62] M. Speirs. On the K-theory of truncated polynomial algebras, revisited. Advances in Mathematics, 366, 2020.
+[63] G. Tamme. Excision in algebraic K-theory revisited. Compositio Mathematica, 154(9):1801–1814, 2018.
+[64] R. Thomason and T. Trobaugh. Higher algebraic K-theory of schemes and of derived categories. In The
+Grothendieck Festschrift, pages 247–435, 2007.
+[65] T. tom Dieck. Orbittypen und äquivariante homologie II. Archiv der Mathematik, 26(1):650–662, 1975.
+
+ON CURVES IN K-THEORY AND TR
+
+51
+
+[66] V. Voevodsky. Motivic cohomology with Z/2-coefficients. Publications Mathématiques de l’Institut des Hautes
+Études Scientifiques, 98:59–104, 2003.
+[67] V. Voevodsky. On motivic cohomology with Z/l-coefficients. Annals of Mathematics, pages 401–438, 2011.
+[68] T. Zink and H. Reimann. Cartiertheorie kommutativer formaler Gruppen, volume 68. Teubner, 1984.
+Fachbereich Mathematik und Informatik, Westfälische Wilhelms–Universität Münster, Germany
+Email address: mccandless.jonas@gmail.com
+URL: https://www.sites.google.com/view/jonasmccandless/
+
+
