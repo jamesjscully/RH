@@ -185,8 +185,10 @@ section 4 demanded -- at shadow level. The family is F1/Bost-Connes
 shaped: the Frobenii of Spec Z over S are indexed by the multiplicative
 monoid of ALL integers k (psi^k ~ Frob_k), not by powers of a single q.
 p-adic refinement (same gcd algebra): for alpha in Z_p^x, the shadow per
-weight is Z_p/(alpha - 1) -- trivial for tame alpha (graph transverse to
-the diagonal), and Z/p^{v_p(alpha-1)} per weight (Z/p generically) for alpha in
+weight is Z_p/(alpha - 1) -- [corrected by worker P 2026-06-10: tame
+Teichmuller alpha is NOT simply transverse - it carries a periodic
+excess sublattice Z_p[beta^d], the Lefschetz fixed locus of the
+finite-order automorphism; see research/work/P-c6pp-twisted.md] and Z/p^{v_p(alpha-1)} per weight (Z/p generically) for alpha in
 1 + pZ_p: the THH(F_p)
 half-ladder REAPPEARS as the fixed shadow of the wild directions. The
 orbit dichotomy of doc 20 shows up inside the psi-family.

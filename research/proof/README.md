@@ -243,6 +243,21 @@ scripts/numerics/witness/certify_chain.py
     reflection-equivariant scheme - KMS-1/2 forced by real equivariance, conditional
     on the single named hypothesis H-r3. Witness: prime_int_thr_fold.
 
+25. `25-p2-computed.md`
+    The p=2 anomaly COMPUTED (worker S, new theorem: THR(F_2)^{tC_2} closed-form):
+    at 2 the real place degenerates to a complex place (Legendre duplication
+    mirrored); the permanent part is rank-2 (Barnes Gamma_2); the reflection sector
+    exhibits the 2-adic Euler factor in self-dual KMS-1/2 form. Convergence: the
+    scheme selector lives at the prime 2 (O's lambda^{1/2} + S's geometric KMS-1/2
+    + CC's K = -2{2}). Witness: prime_int_thr_p2_anomaly.
+
+26. `26-cycle-synthesis.md`
+    All-fronts cycle synthesis (workers O/P/Q/R/S): two new theorems (H-r3 analytic
+    half; THR(F_2)^{tC_2}), three corrections propagated, T1+T2 certificate-grade,
+    the strict CC square carries invisible square data (grading = the bridge), the
+    Adams group cannot carry Castelnuovo growth (monoid/Frobenius required). The
+    address: the prime 2 and the monoid. Ranked live fronts in sec 4.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target

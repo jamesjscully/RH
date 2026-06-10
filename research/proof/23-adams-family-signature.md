@@ -53,3 +53,19 @@ readings spent 0 free parameters - an honest negative, not a fit.
 C6''' closed (first pass, negative, recorded). The Castelnuovo question
 moves into C6'' as its primary motivation: the twisted computation now
 has a concrete downstream consumer (the corrected family form of sec 3).
+
+## 5. Correction from C6'' (2026-06-10, worker P)
+
+Sec 3's bidegree guess "(1, k)" is REFUTED: in the p-complete Adams
+family all graphs are (1,1) (the family is a GROUP Z_p^x; self-pairings
+all equal untwisted THH; fiber pairings constant), and alpha lives in
+the NORMAL EIGENVALUES instead - every pairing cardinality is the local
+Lefschetz factor det(1 - d psi^alpha | weight w) = p-part of
+alpha^w - 1. CONSEQUENCE (theorem-grade within the shadow): the
+Castelnuovo degree-growth mechanism provably CANNOT come from the
+invertible Adams family; it requires the cyclotomic Frobenius or the
+non-invertible psi^k (k not a p-adic unit) - i.e. exactly the
+non-group, monoid-level structure. The sec-3 corrected form survives
+only with that carrier replaced; the p-adic family matrices are
+ultrametric (1 + v_p(k_i - k_j), Parisi-type), witnessed exploratorily
+in prime_twisted_adams_ku.py W8 - hierarchical, not Lorentzian.
