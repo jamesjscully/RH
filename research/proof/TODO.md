@@ -110,11 +110,20 @@ check (counts of GLOBAL objects only; never residue cardinalities at infinity
 Candidate grammar, ordered by tractability:
 
 ```text
-C0 (calibration, run FIRST). Hyperbola counts: d(n) = #{(a,b): ab = n},
-   generating function zeta(s)^2 - a known-true integer count structure
-   whose fingerprint provably contains the zeros (doubled). Not the answer
-   (classical divisor world); the pipeline MUST light up on it or the
-   fingerprint gate is broken. READING: calibration only.
+C0 (calibration) - DONE, PASSES (count_fingerprint.py): the generic chain
+   (counts -> Dirichlet-log recursion -> correlation profile -> fingerprint
+   regression) returns k_hat = +2.0000 with residual 2.2e-16 on d(n); the
+   AB and R2 cells show residuals supported ENTIRELY on prime powers with
+   the predicted structures - the pipeline reports WHICH zeros a count
+   structure touches. G-INT2 machinery operational.
+C0' (normalization insight, from the ZN probe c(n) = n): count structures
+   see zeros at the line set by their counting growth (zeta(s-1): k_hat
+   blows up, no s=1/2 fingerprint). The critical line is reached precisely
+   by SELF-DUAL count structures - d(n) sits at 1/2 because ab = n is
+   a <-> b symmetric; the functional equation IS the count duality.
+   GRAMMAR REFINEMENT: restrict the search to self-dual count structures
+   (pairings with built-in symmetry) - i.e., intersection pairings on
+   squares; G-INT2 refines to "fingerprint at the self-dual normalization".
 C1 Orbit/fixed-point counts of the multiplicative dynamics: #Fix(x n) on
    adelic solenoids/quotients (Artin-Mazur/Lefschetz integers, exist
    unconditionally; periodic orbits = prime powers); pairing = coincidence
