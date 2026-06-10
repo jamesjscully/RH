@@ -87,6 +87,48 @@ R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIR
     subset inductions}.
 ```
 
+### R-SQ - The doubled laboratory (OPENED 2026-06-09, user-approved; THE front rung)
+
+Premise (docs 14/15): every no-go so far is ONE-VARIABLE - functionals of single
+explicit-formula data fork to single-zero functionals. The missing second factor's
+analytic shadow is the PAIR system: shifted convolutions Lambda(n)Lambda(m) on the
+arithmetic side, zero-pair correlations gamma - gamma' on the spectral side, with
+the free (non-EF-derived) positivity |sum_gamma c(gamma) X^{i gamma}|^2 >= 0 and
+the Castelnuovo/Hodge-index inequality as the index's landing spot. Nobody (repo
+or literature) has run a POSITIVITY LAB at two variables.
+
+Ordered experiments, fail-closed readings fixed in advance:
+
+```text
+E1 (doubled closure). Build A_h(t) = sum_rho hhat(z_rho)^2 e^{i z_rho t} both
+   ways: zero side (actual zeros) and arithmetic side (EF for the translated
+   test; pole kills survive translation thanks to the p(D) device). Validate
+   pointwise in t; then the doubled form  D(k) = int k(t) |A(t)|^2 dt
+   = sum_{rho,rho'} pair-sum, the free positivity with an arithmetic
+   representation. READING: establishes the lab's exactness; failure means a
+   convention bug, not mathematics - fix before proceeding.
+E2 (P1 by fork test). The pair functional Q(g2) = sum_{n,m} Lambda(n)Lambda(m)
+   (nm)^{-1/2} g2(log n - log m) is genuinely two-variable arithmetic data.
+   Fork-test it against the SINGLE-zero Gram (fork_lib). PREDICTED: does NOT
+   fork to single-zero data (first verified P1 instance) but DOES match its
+   PAIR-zero image (level-2 conservation instance, Goldston-Montgomery's
+   finite shadow). If it DOES fork to single-zero data: discovery of a hidden
+   one-variable reduction of pair data - publish either way.
+E3 (index hunt). Castelnuovo-shaped inequality on the doubled data: cross
+   block bounded by geometric mean of diagonal blocks with a defect term;
+   zeta vs DH. READING: if an index-shaped inequality holds for zeta's finite
+   doubled data, fails for DH, and does NOT fork to pair-zero data (level-2
+   fork test), it is the first live S3 candidate with a finite shadow. If
+   everything forks at level 2: the conservation law persists at two
+   variables - a NEW no-go constraining every square-based program (CC
+   included), publishable.
+```
+
+Guards inherited: F1-F3 (doc 14, now at level 2: the comparison map is the
+two-variable EF), G5 (over-proving), margin thinness (any index inequality
+must be exact + discrete). Infrastructure: fork_lib (extend with pair-Gram),
+ladder stack, 5000 cached zeros.
+
 ### R-TRACK - The tracking theorem (RESOLVED fail-closed 2026-06-09: terminal equivalence, proof/13)
 
 Final exact form of the program (proof/12 section 5, validated to 2e-5):
