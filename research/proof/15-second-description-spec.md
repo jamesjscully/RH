@@ -155,13 +155,37 @@ Almost every candidate WAS examined there, with verdicts; the corrected map:
     of any such pairing is DH-shared, hence RH-silent on its own; the Euler
     content sits entirely in the finite-place part, which is the SUBTRACTED
     term. Sign must be carried where the discrimination is.
-(e) Reflection positivity: threads/thread-1-reflection-positivity.md - LIVE
-    OPEN, the only candidate with an open in-repo thread: the prime-place
-    reflection involution theta making W = <theta h, h> an OS pairing AT THE
-    LEVEL OF ZEROS (not coefficients). Worker F's OS bridge (work/F-sym2-os-
-    bridge.md): transfer-matrix reconstruction gives self-adjointness <=> RH
-    for sym^2 cases; extension to zeta open. Our S2 channel kill constrains
-    theta further (not the standard shift reflection).
+(e) Reflection positivity: CLOSED NEGATIVELY at the test-class level
+    (correcting an earlier draft of this section that called it live, based
+    on a stale summary). The full record: thread-1 surveyed four families
+    (Hamiltonian/Berry-Keating/BBM, determinantal/GUE, lattice gas, generic
+    OS) - all RH-neutral or circular - and identified the prime-place
+    reflection theta as the only possible new lever. Worker B
+    (work/B-prime-reflection.md, 2026-06-06) then EXHAUSTED the reflection
+    inventory over the EF-bound test class: (i) multiplicative inversion =
+    identity on even tests (archimedean, neutral); (ii) FE reflection =
+    trivial on even tests; (iii) the Gram doubling W_p = P_p P_p^T, whose
+    OS-positivity IS Lambda >= 0 - the Euler product re-skinned, circular as
+    forcing (it does discriminate DH: prime block min eig -0.66 vs +5.2e-3,
+    but the discriminator is sign(Lambda)). Verdict verbatim: "no prime-place
+    reflection theta exists beyond the Euler product itself"; the live edge
+    was redirected to the cross-place margin W_inf >= sum_p W_p - WHICH IS
+    EXACTLY THE PROGRAM DOCS 01-13 THEN EXECUTED TO TERMINATION. RP's residue
+    was metabolized into the margin program and died in the fork (doc 13).
+    Our S2 channel kill is the same closure one level up. Any RP revival
+    must place theta on an S1-carrier (a new space), not on the EF-bound
+    test class - RP does not bypass the carrier problem; it is an S3 option
+    once a carrier exists.
+
+(e') Worker F's sharpening (work/F-sym2-os-bridge.md), which belongs in this
+    spec: the constructive RP route through sym^2/Rankin-Selberg reduces RH
+    to the reflection-positivity of one form (A4) and then to the SAME
+    missing square - but with the spec sharpened by one number: the
+    self-product surface must have self-intersection equal to the Petersson
+    norm ||f||^2 (an unconditional positivity), and DH-refusal is structural
+    (no Satake parameters => no sym^2 => no Petersson norm => the surface
+    cannot be formed - the strongest known instance of P2). This names the
+    target self-intersection that candidates (a), (b), (d) must hit.
 (f) Deninger (omitted from section 3, already fully audited):
     literature/deninger-spectral-cohomology.md - the most precise existing
     specification of the carrier: a laminated 3-dim space with conformal
