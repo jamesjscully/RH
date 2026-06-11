@@ -505,3 +505,11 @@ WITNESS:  prime_int_ll_square_dual.py (LL1-LL7, ALL PASS, exit 0;
           prime_int_jj_archimedean_unit, prime_int_gc_k4_integer_layer
           (both ALL PASS before any new work).
 ```
+
+## Postscript (2026-06-11, worker NN): the strict-family success was small-place
+
+NN's face test (N-c, certificate-grade): p in {2, 3} are the safe
+cells; (5; 2) breaks; the Lambda(p) classes fail always - the
+FE-stripped dual carries an exact continuum hole -1/u that no atom
+cancels. The index inequality as posed here does not extend to the
+graph classes; the unit must be class- and scale-coupled (doc 35).
