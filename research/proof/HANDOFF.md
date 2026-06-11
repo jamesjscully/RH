@@ -1,7 +1,8 @@
 # HANDOFF - Prime-Toeplitz / R-INT program: lead-agent onboarding
 
 Written 2026-06-11 by the outgoing lead (Claude, full license granted by
-the user 2026-06-09). Read this first; then docs 38-40; then as needed.
+the user 2026-06-09). Read this first; then doc 45; then docs 46-48 for
+the three live branches; then docs 38-44 as needed.
 
 ## 1. What this is
 
@@ -18,7 +19,8 @@ Second preprint: research/preprint/count-ladders-index-boundary.tex
 
 ## 2. The mathematical state (entry points)
 
-THE SPEC, FINAL FORM (doc 40 sec 3): the missing object = a class- and
+THE SPEC, FINAL FORM (doc 45, consolidating doc 40 sec 3, docs 41-44,
+and MM's liquid LS1-LS6): the missing object = a class- and
 scale-coupled archimedean unit satisfying
   OC1 integer charge dichotomy   OC2 threading-as-structure
   OC3 the depth wall (unit-free) OC4 carrier (Euler product)
@@ -28,9 +30,11 @@ Everything else measured so far is SLOT DATA (the inserted test
 function's own image - doc 40 sec 2's reconciliation).
 Address: the liquid/condensed layer (XX's ladder: circle blind /
 solenoid place-addressed-scale-free / liquid = where log p must live).
-Type: index/Gram on the Frobenius cone. Equivalence: BC1-12 + BC13
-<=> RH at stated grade (AC; the zero-shortcut is formally confirmed -
-no discount exists). LS3 at adoption grade (the communicable conjecture
+Type: liquid/metrized Euler-product carrier with candidate-native
+unit, forced-positive index/Gram over the full Frobenius cone, and
+P3-grade odd-slot second evaluation. Equivalence: BC1-12 + BC13 <=>
+RH at stated grade (AC; the zero-shortcut is formally confirmed - no
+discount exists). LS3 at adoption grade (the communicable conjecture
 for the condensed community) is in research/work/XX-b1-liquid.md sec 4.
 
 KEY THEOREMS BANKED (worker docs in research/work/): SS.1-SS.5 (the
@@ -39,10 +43,17 @@ ku-face inequality package), KK.L1 (effectivity, exact), HH.1 (Lambda =
 lemma (W), O's A0-A6 (scheme rigidity), BB.1 (FE kappa-blindness),
 II's suppression mechanism, AB's split, AC's implication map.
 
-THE QUEUE (doc 40 sec 5, ready to dispatch): M-A deep-cell self-dual
-LP; M-B g2 exhaustion probe (unit-slotted); M-C classify all banked
-carriers against BC-E3'. Background: cross-edge certificates, C6',
-AHL verification debt, the (A'') spherical delta-ring hunt.
+THE QUEUE (doc 45 sec 8, now split into docs 46-48): no banked
+finite-window probe remains. M-C, M-A, and M-B are accounted for.
+Doc 46 gives the construction-facing blueprint: start with the B0
+Tate-curve/liquid-RR calibration and Epstein replacement before any
+claim of a live carrier. Doc 47 gives field-native external questions
+for liquid geometry, trace theory, and arithmetic topology. Doc 48
+gives theorem-shaped no-go targets for scale-blind traces, carrier-blind
+Poisson/Epstein formalisms, inserted units, strict-face positivity, and
+transport/self-supplied second evaluations. Background: cross-edge
+certificates, C6', AHL verification debt, the (A'') spherical delta-ring
+hunt.
 
 ## 3. How to navigate the record
 

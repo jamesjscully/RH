@@ -13,6 +13,17 @@ build/
 # Experiment outputs can be regenerated unless explicitly promoted.
 scripts/**/outputs/
 notebooks/**/.ipynb_checkpoints/
+scripts/numerics/julia/generated/
+
+# Generated preprint/build artifacts.
+research/preprint/*.pdf
+*.log
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
 
 # WhippleScript durable local stores are runtime state.
 .whipplescript/*.sqlite

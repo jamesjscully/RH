@@ -4,6 +4,72 @@ Purpose: keep the proof program oriented around theorem-shaped checkpoints, not 
 ever-growing list of diagnostics. Diagnostics stay here only when they change the theorem target or
 define a fail-closed test.
 
+## Current front - missing-structure characterization (2026-06-11)
+
+The active interface is now `45-final-missing-structure-spec.md`, with
+the three doc-45 branches split out as docs 46-48. Docs 41-44 are the
+supporting audits: doc 41 normal form/gates, doc 42 M-C carrier
+classification, doc 43 M-A self-dual LP audit, doc 44 M-B g2 boundary.
+The target is not another finite-window witness but a native structure
+filling:
+
+```text
+carrier + liquid address + derived unit + Frobenius action + unforced
+odd slot + forced-nonnegative index/Gram + independent count comparison.
+```
+
+M-C status:
+
+```text
+DONE first pass: no promoted banked carrier survives BC-E3'/BC13 at
+decision grade. Positive residue = ku-face supply + liquid/metrized
+address + index/Gram positivity + Quillen-style second-evaluation
+independence, held separately in the bank but not merged by any object.
+```
+
+M-A status:
+
+```text
+DONE first pass: the banked Gaussian deep-cell obstruction is slot data.
+The self-dual Hermite unit flips `(11;2)@4.96` positive. OC2 remains
+k=1 per-place deficit plus global cross-place payability; OC3 keeps the
+unit-free depth wall.
+```
+
+M-B status:
+
+```text
+DONE for the strict proxy: NN kills strict-square / hand-inserted-unit
+exhaustion of the Frobenius-graph cone. NOT RUNNABLE for the live
+target until there is a genuine liquid/index candidate with its own
+unit, forced-positive index/Gram, and P3-grade odd-slot comparison.
+```
+
+Do not promote Gaussian conformance, payment constants, solenoid
+entropy/address, or FE-layer silhouette to object evidence unless the
+candidate also passes BC13 and BC-E3'.
+
+Immediate work has been split into three live branches:
+
+```text
+No banked finite-window probe remains in the doc-40 queue.
+
+Construction branch: doc 46. Build only the B0 Tate-curve/liquid-RR
+calibration first, then run the Epstein replacement guard. Do not
+promote B0 to the missing carrier; the live object still needs LS3/LS4,
+native unit extraction, full graph-cone index lift, odd slot, and P3
+comparison.
+
+External scoping branch: doc 47. Ask field-native YES/NO questions in
+liquid geometry, trace theory, and arithmetic topology. A useful answer
+decides a clause, supplies a named missing theorem, or proves a no-go.
+
+Negative theorem branch: doc 48. First priorities are scale-blind
+localizing trace no-go, transport/self-supply no-go, carrier-blind
+Poisson/Epstein no-go, strict-face positivity no-go, and
+one-place/inserted-unit no-go.
+```
+
 ## Risk Ladder (2026-06-09 reorganization)
 
 Order of work = order of assumptions by (probability of killing the program) x (cheapness of the

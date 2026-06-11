@@ -309,6 +309,73 @@ scripts/numerics/witness/certify_chain.py
     unit per place, rational/Anderson layer). The index/density layer (the
     zeros) stands guarded behind both.
 
+32-37. `32-index-attack-charter.md` through `37-stress-round.md`
+    The index attack and face/stress rounds: the strict square makes the
+    index inequality posable, the unit insertion repairs it with zero slack,
+    deep-face tests demote several apparent obstructions to slot data, and
+    the remaining target becomes a coupled archimedean unit rather than a new
+    finite-window estimate.
+
+38. `38-strategic-charter.md`
+    Switches the program from search to construction-by-interface. Standing
+    gates become lesson elevation, full-ledger scoring, the second-evaluation
+    principle, and a critic worker every cycle.
+
+39. `39-charter-cycle1.md`
+    Cycle 1 under the charter: Delta_p's Gaussian silhouette is shape-complete
+    but mechanism-empty; the solenoid supplies address without scale/unit; the
+    Quillen pair is a true two-evaluation embryo with empty spectrum.
+
+40. `40-charter-cycle2.md`
+    Final-form spec before characterization: object conditions OC1-OC4 plus
+    BC13 and BC-E3'. The satisfier's address is the liquid layer and its type
+    is an index/Gram on the Frobenius cone with unforced odd-slot eigenvalues.
+
+41. `41-missing-structure-characterization.md`
+    Consolidates docs 34 and 38-40 into a testable normal form: candidate
+    package, object conditions, slot-data demotions, arrival gates, fast
+    falsifiers, and dispatchable consequences M-C/M-A/M-B.
+
+42. `42-mc-carrier-classification.md`
+    Executes M-C over the promoted banked carrier families. No carrier passes
+    BC-E3'/BC13 at decision grade; the residue is ku-face supply plus
+    liquid/metrized address plus index/Gram positivity plus Quillen-style
+    second-evaluation independence.
+
+43. `43-ma-self-dual-lp-audit.md`
+    Executes M-A from RR/AB witness evidence. The banked Gaussian deep-cell
+    obstruction is slot data: a self-dual Hermite unit flips `(11;2)@4.96`.
+    OC2 remains k=1 local deficit plus global threading; OC3 keeps the
+    unit-free depth wall.
+
+44. `44-mb-g2-exhaustion-boundary.md`
+    Resolves M-B against current evidence. NN kills the strict-square /
+    hand-inserted-unit proxy for BC13 exhaustion on Frobenius-graph classes;
+    a live M-B requires a future liquid/index candidate with its own unit.
+
+45. `45-final-missing-structure-spec.md`
+    Consolidates the characterization into the current final specification:
+    candidate package, required clauses, negative boundary, positive residue,
+    evidence matrix, arrival checklist, and next valid work.
+
+46. `46-construction-blueprint-liquid-index-carrier.md`
+    Construction-facing branch from doc 45. It proposes the live tuple's
+    native objects, then restricts the buildable start to B0: a Tate-curve /
+    liquid-RR trace against the p^Z graded comb, used only to calibrate the
+    bank embedding and run the Epstein carrier guard.
+
+47. `47-external-scoping-questions.md`
+    External-scoping branch from doc 45. It translates the missing structure
+    into field-native questions for condensed/liquid analytic geometry,
+    trace/localizing invariants, and arithmetic topology, with YES/NO evidence
+    and rejection rules.
+
+48. `48-negative-theorem-targets.md`
+    Negative-theorem branch from doc 45. It turns the classified failures into
+    reusable no-go targets: scale-blind localizing traces, carrier-blind
+    Poisson/Epstein formalisms, inserted or one-place units, strict-face
+    positivity, and transport/self-supplied second evaluations.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target
