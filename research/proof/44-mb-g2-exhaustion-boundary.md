@@ -146,7 +146,10 @@ M-B(live candidate)
 
 This is not a blocker to characterization. It is part of the
 characterization: BC13 cannot be certified by recycling the strict face,
-the ku face, max-Gram signatures, or Gaussian deep phases.
+the ku face, max-Gram signatures, or Gaussian deep phases. Doc 67 is
+the reusable exhaustion normal form extracted from this boundary; it
+replaces rerunning NN-style strict-face probes as the first D-side
+admission test.
 
 ## 6. Updated Characterization
 

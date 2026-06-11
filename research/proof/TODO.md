@@ -7,7 +7,7 @@ define a fail-closed test.
 ## Current front - missing-structure characterization (2026-06-11)
 
 The active interface is now `45-final-missing-structure-spec.md`, with
-the three doc-45 branches split out as docs 46-48. Docs 41-44 are the
+the doc-45 branches developed in docs 46-128. Docs 41-44 are the
 supporting audits: doc 41 normal form/gates, doc 42 M-C carrier
 classification, doc 43 M-A self-dual LP audit, doc 44 M-B g2 boundary.
 The target is not another finite-window witness but a native structure
@@ -49,25 +49,233 @@ Do not promote Gaussian conformance, payment constants, solenoid
 entropy/address, or FE-layer silhouette to object evidence unless the
 candidate also passes BC13 and BC-E3'.
 
-Immediate work has been split into three live branches:
+Immediate work is split into three live branches:
 
 ```text
 No banked finite-window probe remains in the doc-40 queue.
 
-Construction branch: doc 46. Build only the B0 Tate-curve/liquid-RR
-calibration first, then run the Epstein replacement guard. Do not
-promote B0 to the missing carrier; the live object still needs LS3/LS4,
-native unit extraction, full graph-cone index lift, odd slot, and P3
-comparison.
+Construction branch: docs 46, 49, and 54. DONE B0 Tate-curve/liquid-RR
+calibration plus Epstein replacement guard
+(`prime_b0_tate_rr_calibration.py`). Do not promote B0 to the missing
+carrier. B1 now has an admission gate: name retained log p before trace
+evaluation, state LS3 status, write a same-form LS4 coupling, and make
+Epstein die at carrier/effectivity before positivity or RH talk.
 
-External scoping branch: doc 47. Ask field-native YES/NO questions in
-liquid geometry, trace theory, and arithmetic topology. A useful answer
-decides a clause, supplies a named missing theorem, or proves a no-go.
+External scoping branch: docs 47 and 50. The field-native questions are
+now sendable falsification packets. A useful answer decides a doc-45
+clause, supplies a named missing theorem, or proves a no-go. Encouraging
+analogy without clause movement is background only.
 
-Negative theorem branch: doc 48. First priorities are scale-blind
-localizing trace no-go, transport/self-supply no-go, carrier-blind
-Poisson/Epstein no-go, strict-face positivity no-go, and
-one-place/inserted-unit no-go.
+Negative theorem branch: docs 48, 51-53, and 55-59. DONE broad no-go gates
+for scale-blind bare sheaf/localizing traces, transport/self-supplied
+second evaluations, carrier-blind Poisson/Epstein formalisms, and
+one-place/inserted units, strict-face positivity, p-complete
+archimedean blindness, max-Gram/signature insufficiency, and zero-import
+circularity. The doc-48 no-go list is now covered; continue by tightening
+these into citable theorem statements or by building a B1 candidate that
+escapes the gates.
+
+Gate-stack rule: doc 60 now forbids another witness cycle until the
+candidate answers G60.1-G60.10. B1 may leave D/E open only if it passes
+the required carrier, scale-retention, internal-R/T-or-honest-partial,
+LS3-status, same-form-LS4, and zero-free-freeze gates.
+
+External-answer rule: record every expert answer in doc 61 before using
+it to update HANDOFF, TODO, doc 60, doc 76, doc 81, doc 82, or the
+trajectory. Score LT76/A6 answers by doc 83 and route them through doc
+92. Route S3 answers through docs 94, 95, 96, 98, 99, and 103, with
+collapse checked by docs 93, 97, and 100-102.
+
+Citation-hardening rule: doc 62 audits the Efimov source for doc 51.
+When polishing no-go gates, separate directly cited external theorems
+from derived program lemmas. Doc 63 supplies the first such derived
+lemma for the scale-blind bare lattice diagram. Docs 64-67 similarly
+isolate the Epstein carrier guard, P3 independence normal form,
+unit-covariance/threading normal form, and BC13 exhaustion normal form.
+Doc 68 isolates the p-complete archimedean escape normal form. Doc 69
+isolates the zero-free freeze normal form: every load-bearing choice
+must have a zero-free supplier and frozen record before zero contact.
+Doc 70 isolates the Gram diagnostic normal form: Gram/signature/stress
+packages are supply or diagnostics unless independent P3 and BC13 data
+are added. Doc 71 is the B1 proposal ledger; fill one concrete entry
+and classify it before building any new B1 witness. Doc 72 fills the
+initial B1 slots and points the next concrete work at trace-derived S3
+structure, an external S1/S2 trace-retention theorem, or the S5
+A6/LT76 route through doc 92.
+Doc 73 preregisters the S3 kernel interface; the next construction
+task is no longer a bare `K_B1` formula, but a doc-94 trace-supplied
+`M_C/F_C` object that also survives docs 97 and 98, or a covered no-go.
+Doc 74 proves the generic-kernel carrier-blindness no-go, so any
+surviving `K_B1` must require valuation/depth carrier data rather than
+theta/count/Poisson shadows.
+Doc 75 records the remaining K_B1 ansatz classes; all remain HOLD or
+REJECT until a native trace/product-formula/graph-index theorem is
+written. Doc 76 turns the best remaining A6 liquid trace route into a
+field-native theorem target for external experts. Doc 77 is the
+focused packet to send for that target. Doc 78 audits local LT76
+status: the cheap/bare and Route A cases are settled, but the broad
+real/liquid trace question is still open. Doc 79 isolates the
+side-block archimedean no-go: external archimedean summands are not
+same-form LS4 coupling. Doc 80 isolates late scale insertion:
+post-processing a scale-blind trace by `log p` is not A1 scale
+retention. Doc 81 supplies the A1 scale-retention decision ledger:
+no G60.2/LT76.1 claim advances until it records the pre-trace carrier,
+deletion test, late-insertion audit, and same-form coupling status.
+Doc 82 proves the bounded NO76.1 factor-through no-go: any proposed
+trace whose load-bearing data factors through the bare scale-blind
+diagram remains scale-blind; non-factor-through packages remain open.
+Doc 83 supplies the LT76 external-answer scoring rubric; every answer
+must land in doc 61 before gate or trajectory updates.
+Doc 84 states the minimal non-factorization theorem target required to
+escape doc 82 without promoting A1 success to B1 admission.
+Doc 85 proves the trace-detection guard: object-level non-isomorphism
+does not count unless the load-bearing trace/domain/value detects it.
+Doc 86 supplies the LS4 same-form coupling decision ledger: A1 success
+does not advance G60.5/LT76.5 without one mixed trace object receiving
+both banked comb and continuum before evaluation.
+Doc 87 supplies the carrier-selectivity decision ledger: same-form
+coupling does not advance G60.1/LT76.6 unless Epstein/DH die at a
+named carrier/effectivity map while theta/count shadows survive.
+Doc 88 supplies the LT76.3 traceability/proper-pushforward ledger:
+`Tr_L` cannot be used before a named theorem makes the enriched
+`T_C -> pt` trace legal.
+Doc 89 supplies the LT76.4 conservative bank-embedding ledger: B1/A6
+must preserve the B0 comb/address/count/guard data instead of replacing
+it with a parallel analogy.
+Doc 90 supplies the LT76.2 internal archimedean object ledger:
+`R_L`, `T=R/Z`, and the archimedean completion must be structural
+objects in `L1`, not p-complete notation or readout.
+Doc 91 supplies the LT76.7 zero-free freeze ledger. The LT76.1-LT76.7
+stack now has clause ledgers; no A6/S3 witness should run before the
+relevant ledgers have PASS entries or a NO76 kill is recorded.
+Doc 92 supplies the LT76 admission matrix/router: external answers and
+candidate proposals must be routed through the exact clause ledger,
+with local PASS/HOLD/REJECT/OUT_OF_SCOPE verdicts and no cross-gate
+inference, before doc 60, doc 76, or doc 71 changes.
+Doc 93 supplies the S3 free-weight kernel no-go: valuation/depth
+decoration is calibration unless the weights, windows, forms,
+parameters, determinant wrapper, and codomain are derived from the
+candidate trace on one same-form object.
+Doc 94 supplies the positive S3 escape target: derive the mixed object
+M_C and same-form codomain F_C from a named L1 trace theorem, or route
+the ansatz to the exact collapse mode.
+Doc 95 packages that S3 question for external trace/index/kernel
+experts and requires an ADVANCE/KILL/SHARPEN answer to land with a
+Doc94 verdict and adjacent unknowns.
+Doc 96 gives short dispatch messages for the LT76 and S3 external
+fronts and normalizes the doc-61 landing fields for replies.
+Doc 97 supplies the S3 monoid-functorial overreach no-go: a
+trace-derived-looking form is still carrier-blind if its naturality
+domain accepts represented-norm, commutative-monoid, or measure
+shadows for Epstein/DH.
+Doc 98 supplies the strict Euler-carrier trace-domain target: any
+surviving S3 proposal must exclude Epstein/DH at the first
+carrier-consuming map while preserving trace legality, bank embedding,
+same-form coupling, and freeze.
+Doc 99 audits the local S3 state after docs 73/74/93/94/97/98: no
+witness is licensed; generic shadows, free weights, and overbroad
+naturality are rejected; the only live route is a strict ECar_L1 record
+or a broad no-go against that class.
+Doc 100 proves the bounded shadow-enlargement no-go: if M_C, F_C, and
+the trace are functorial in broad shadow data before primitive carrier
+checking, Epstein/DH still enter and doc 97 carrier overreach applies.
+Doc 101 turns that no-go into an operation audit for tensor/sum/
+completion/pushforward/coend/kernel/correspondence/determinant/cokernel
+and trace-class closure constructions.
+Doc 102 applies the operation audit to the doc-75 A0-A6 ansatz classes:
+only strict ECar_L1-first variants remain HOLD; shadow-stable mixed
+object constructions route to docs 100 and 97.
+Doc 103 supplies the positive-side first-map record: a future strict S3
+proposal must name the source object, first primitive carrier-consuming
+map, operation order, and Epstein/DH exclusion before returning to doc
+98.
+Doc 104 fills that record at current status level: no A1-A6 class has
+`FIRST_MAP_PASS`; the next positive S3 work is to fill one doc-103
+record before any witness.
+Doc 105 adds the parallel LT76/A6 overreach audit: broad
+measure/kernel/trace-class operations before primitive carrier checking
+fail LT76.6 if Epstein/DH controls still enter.
+Doc 106 records the current LT76 status after doc 105: no local PASS
+entries, broad trace-operation packages route to overreach, and strict
+carrier-consuming trace packages remain HOLD targets.
+Doc 107 extracts the shared carrier-overreach meta-lemma behind docs
+97, 100, and 105, so future proposals cite one theorem-shaped statement
+instead of re-killing Epstein/DH examples.
+Doc 108 turns doc 107 into a theorem-polish proof skeleton: it records
+the exact hypotheses H108.1-H108.7, the branch verdicts, local
+dependencies, instantiation checklist, and strict-first-map escape
+clause.
+Doc 109 hardens doc 103 by rejecting labeled-shadow first maps:
+decorating a shadow object with alpha/v/depth/ell data does not count
+as primitive carrier consumption unless the source category and map
+become structurally unavailable for Epstein/DH before M_C/F_C/Tr_L.
+Doc 110 packages the strict-first-map question for external experts:
+ask for an ADVANCE/KILL/SHARPEN answer on whether S_C and kappa_C can
+be named before any shadow-stable trace, mixed-object, or codomain
+construction.
+Doc 111 handles the next false positive: even if S_C and kappa_C are
+plausible, the proposal still fails if M_C/F_C/Tr_L factors through a
+forgetful shadow that no longer depends on the primitive field consumed
+by kappa_C.
+Doc 112 rejects the downstream repair version: forming a shadow-stable
+trace package first and adding carrier fields later through weights,
+codomains, normalizations, regularizations, or second maps does not
+repair carrier selectivity.
+Doc 113 is the current S3 strict-route admission matrix: no S3 witness
+is licensed until a candidate passes doc 103, avoids docs
+109/111/112/118,
+and then supplies doc 98 and doc 94 records.
+Doc 114 is the current LT76/A6 strict-trace admission matrix: no A6
+witness is licensed until the doc-92 clause rows pass and docs
+105/108/112/118/120/121 do not trigger.
+Doc 115 is the current external decision queue. It lists the exact
+sendable packet for LT76, S3 first-map, S3 trace-derived codomain, and
+no-go-reviewer questions, with ADVANCE/KILL/SHARPEN criteria.
+Doc 116 is the current B1 admission board. It records that S1-S5 and
+S3 A0-A6 remain HOLD or REJECT, so no B1 witness is licensed.
+Doc 117 fills the smallest honest post-B0 calibration record: an A2
+two-place valuation-vector route card with FIRST_MAP_HOLD and no
+witness license.
+Doc 118 adds the traceable-envelope collapse no-go: a strict first map
+does not advance if the trace becomes legal only after a
+carrier-forgetting envelope.
+Doc 119 records the current sendable strict-first-map dispatch and
+landing template for the Q115.2 external question.
+Doc 120 supplies the traceable-envelope operation audit: classify the
+envelope/completion Q before using trace legality for S3/LT76 carrier
+selectivity.
+Doc 121 applies that audit to the current S3/LT76 board and records no
+carrier-reflecting envelope pass.
+Doc 122 states the positive carrier-reflecting envelope theorem target
+that would be needed to turn an envelope-mediated trace route into a
+local pass.
+Doc 123 packages that target into a sendable external question with
+ADVANCE/KILL/SHARPEN landing fields.
+Doc 124 records the current external priority order: doc 119 first
+unless a concrete envelope Q is already named for doc 123.
+Doc 125 rejects the decorated-envelope false positive: inert marks,
+metadata, or post-completion tags do not count as carrier reflection.
+Doc 126 is the carrier-reflecting envelope admission matrix, collecting
+docs 118/120/121/122/125 into one router.
+Doc 127 applies that matrix to the current board and records no
+PASS_CARRIER_REFLECTING_ENVELOPE.
+Doc 128 scores external answers to doc 123 so ordinary traceability or
+decorated marks are not promoted to carrier-reflecting progress.
+
+Carrier-guard hardening rule: doc 64 isolates the Epstein
+x^2+5y^2 obstruction as a proof lemma. Use it instead of re-running
+Epstein as another example whenever the question is carrier
+selectivity.
+
+Second-evaluation hardening rule: doc 65 isolates P3 independence as a
+normal form. Use extension-domain asymmetry, contentful comparison, and
+unforced odd spectrum instead of counting multiple presentations of one
+value.
+
+Unit/threading hardening rule: doc 66 isolates the C-side normal form.
+Do not promote unit-dependent signs or one-place bookkeeping; require
+candidate-native unit, covariant local deficit/global payability, and
+unit-free depth wall.
 ```
 
 ## Risk Ladder (2026-06-09 reorganization)
@@ -585,7 +793,7 @@ map X_j FAILS on every tested edge (KYP violation ~ the raw debt itself;
 monotonicity also broken). The exact telescoping
 `S_N - S_j = sum_{k>=j} (Q_{E_k}[X_k] - R_k^T A_{k+1}^{-1} R_k)` is not
 perturbative in the X-drift or the Riccati squares at any tested scale.
-Conclusion: the storage is genuinely path-dependent — the realization must be
+Conclusion: the storage is genuinely path-dependent - the realization must be
 state-space (track the evolving response map), not a formula in the future
 residual. This rules out the last "cheap" version of R-KYP.
 
