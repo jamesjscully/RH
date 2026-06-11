@@ -486,3 +486,14 @@ WITNESS:   prime_int_jj_archimedean_unit.py (AJ1-AJ7, ALL PASS,
            the recorded data: the defect decays).
 ```
 
+
+## Postscript (2026-06-11, worker KK): the refuted comb expectation corrected
+
+KK.P (elementary, witnessed KL9) proves e^a d(a) IS log-4-periodic
+(amplitude 0.25); this doc's registered "no log-periodic comb visible
+above 3e-4" looked at d(a) rather than the coefficient level - JJ's
+own recorded data confirms the comb (d(5)/d(5+log4) = 3.99 ~ 4). Also:
+KK proves the Gaussian is NOT load-bearing for the density layer
+(universality KK.U) and locates the elementary/analytic boundary
+exactly (finite twist support = elementary; infinite support = the
+PNT tower). See research/work/KK-L1-density-rr.md.
