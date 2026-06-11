@@ -2,6 +2,17 @@
 
 **`geometric-obstruction-RH.tex`** — *Two no-go theorems for the geometric strategy on the Riemann Hypothesis.*
 
+**`count-ladders-index-boundary.tex`** — *Count ladders, duality renormalization, and the
+exact boundary of the index attack on the Riemann Hypothesis* (DRAFT, 2026-06-11): the
+homotopy-theory/index-attack arc. Assembled from `../proof/` documents 17–37 and the
+`../work/` worker records cited at each statement (SS, KK, HH, EE, S, O, W, DD, BB, LL, QQ,
+TT, UU, II, NN, and others); every labeled claim carries a grading tag
+(Theorem / Certified / Census / Reading), the program's corrections are reproduced *as*
+corrections, and the witness scripts backing each certified claim are named inline and
+indexed in Appendix B. 25 pp. Builds clean with `tectonic count-ladders-index-boundary.tex`
+(zero warnings); also builds with the two-pass pdflatex recipe below (inline
+`thebibliography`, no BibTeX needed).
+
 **`tracking-equivalence-RH.tex`** — *RH as a tracking inequality* (DRAFT, 2026-06-09): the
 exact finite-dimensional reduction along the prime filtration. Front matter, the five main
 theorem statements, the no-go map and the bibliography are complete; the proof-body sections

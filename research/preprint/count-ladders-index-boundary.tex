@@ -1,0 +1,1679 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{spec}[theorem]{Specification}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{reading}[theorem]{Reading}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Sph}{\mathbb{S}}
+\newcommand{\THH}{\mathrm{THH}}
+\newcommand{\THR}{\mathrm{THR}}
+\newcommand{\TP}{\mathrm{TP}}
+\newcommand{\HZ}{H\Z}
+\newcommand{\ku}{\mathrm{ku}}
+\newcommand{\KU}{\mathrm{KU}}
+\newcommand{\Xbar}{\overline{X}}
+\newcommand{\prodreg}{\sideset{}{^{\mathrm{reg}}}\prod}
+\newcommand{\grade}[1]{\textup{[\textsc{#1}]}}
+\DeclareMathOperator{\Lam}{\Lambda}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\fib}{fib}
+\DeclareMathOperator{\colim}{colim}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\MAX}{MAX}
+\DeclareMathOperator{\MIN}{MIN}
+\DeclareMathOperator{\erfc}{erfc}
+\emergencystretch=1.5em
+\raggedbottom
+
+% DRAFT assembled 2026-06-11 from the research/proof/ document set (17--37) and the
+% research/work/ worker records cited at each statement. Every labeled claim carries a
+% grading tag; numerical claims are reproducible via the cited witness scripts in
+% scripts/numerics/witness/ (all exit-code gated, fail-closed).
+
+\title[Count ladders and the boundary of the index attack]{Count ladders, duality
+renormalization, and the exact boundary\\ of the index attack on the Riemann Hypothesis\\
+{\normalsize\textsc{draft}}}
+\author{James Scully}
+\address{}
+\email{jamesjscully@gmail.com}
+\date{June 2026 (draft)}
+\subjclass[2020]{11M26 (Primary); 19D55, 55P91, 14G40 (Secondary)}
+\keywords{Riemann hypothesis, Weil positivity, topological Hochschild homology,
+real cyclotomic spectra, regularized determinants, Arakelov geometry, Hodge index}
+
+\begin{document}
+
+\begin{abstract}
+We report the outcome of a systematic attempt to transplant the function-field proof of the
+Riemann Hypothesis --- intersection square, Hodge index, Riemann--Roch, effectivity, Frobenius
+family --- to the integers, executed under a fail-closed discipline in which every claim is
+graded (theorem / certified / census / reading) and every numerical assertion is gated by an
+exit-coded witness. The supply side of the completed zeta function is reconstructed from
+integer cardinalities of topological Hochschild homology with no zeta input: the von Mangoldt
+atoms are the orders $\log|\THH_{2i}(\F_p)|=\Lam(p^i)$, the archimedean digamma shape is the
+regularized characteristic function of the B\"okstedt torsion tower, the $p^{s/2}$ self-dual
+normalization is forced by ladder-negation naturality, and a connective-$\ku$ ladder carries
+the global Chebyshev function in single cardinalities. The compactified local object is
+realized as an honest spectrum $\Xbar$ and its self-duality is half-proven (the Lin-block
+clause is a theorem with a unique duality datum). The Weil-positivity index inequality is
+posed on an arithmetic square with every ingredient constructed --- index shape (certified
+Lorentzian), integrality (exact), effectivity (an elementary theorem with explicit constants),
+the monoid Frobenius family, and the inequality itself --- except one: a class- and
+scale-coupled archimedean unit supplying a second, independent evaluation of the
+weight-against-Frobenius pairing. That one object is specified by six independent derivations,
+its computed shadow has period-mean $(\gamma+\log\pi)/\log p$ at each place, and the
+cheaper alternatives
+are excluded by theorems: functional-equation properness is blind to the missing constant,
+per-cell surplus is forbidden by an exact homogeneous functional equation, integer signature
+flow provably suppresses the zeros, and the two-dimensional Castelnuovo step fails by an
+exponential-versus-linear depth wall. Nothing here proves RH; the contribution is the exact
+location and specification of the remaining wall, together with a no-go map and roughly
+seventy fail-closed computational witnesses.
+\end{abstract}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}\label{sec:intro}
+
+\subsection{Weil positivity and the function-field model}
+
+Weil's criterion \cite{Weil52,Bombieri00,Yoshida92} states that the Riemann Hypothesis is
+equivalent to the positivity of the explicit-formula functional on a suitable class of test
+functions. For curves over finite fields the corresponding positivity is a theorem, and its
+proof has a fixed anatomy. Let $C/\F_q$ be a smooth projective curve and $S = C \times C$ the
+surface on which the proof lives. The argument consumes exactly five ingredients:
+\begin{enumerate}
+\item[(F1)] \emph{an integer-valued intersection pairing on a square} --- the surface gives
+torsion classes nonzero self-intersection, which a curve cannot;
+\item[(F2)] \emph{the index (Hodge--Castelnuovo) shape} --- the pairing restricted to the
+relevant lattice has Lorentzian signature $(1, n)$;
+\item[(F3)] \emph{Riemann--Roch with Serre duality} --- $\chi(D)$ is computed from intersection
+numbers, and the dual term $h^0(K - D)$ exists;
+\item[(F4)] \emph{effectivity} --- $h^0(D)$ counts actual sections, so $\chi(D) > 0$ forces a
+positive representative; integers cross zero-slack thresholds where real estimates cannot;
+\item[(F5)] \emph{the Frobenius family with a second evaluation} --- the graphs
+$\Gamma_{F^n}$ supply a two-parameter family of classes, and the one Gram entry
+$\Delta \cdot \Gamma_{F^n} = \#\mathrm{Fix}(F^n)$ has a \emph{second, independent, spectral}
+evaluation (Lefschetz), which is where the zeros enter.
+\end{enumerate}
+This paper reports the outcome of a systematic, instrumented attempt to construct each of
+these five ingredients over $\Z$, carried out in 2026 as a sequence of orchestrated research
+cycles (the program record is the document set cited throughout). The attempt was governed by
+a standing \emph{conservation-of-difficulty} hypothesis: every shortcut to RH relocates,
+rather than removes, one irreducible obstruction, and the purpose of an honest attack is to
+drive that obstruction into a corner where it can be specified exactly. That is what
+happened. The contribution of this paper is not a proof of anything RH-equivalent; it is
+(i) an unconditional reconstruction of the supply (prime/archimedean) side of the completed
+zeta function from integer cardinalities of topological Hochschild homology, with no zeta
+input; (ii) a realized compactified local object with a half-proven self-duality; (iii) the
+index inequality of (F1)--(F5) posed on an arithmetic square with four and a half of the five
+ingredients constructed; and (iv) a battery of no-go theorems proving that the remaining half
+ingredient --- a coupled archimedean unit supplying the second evaluation of (F5) --- cannot
+be replaced by anything cheaper that we, or the obvious literature mechanisms, could
+formulate. The missing object ends the paper specified by six independent derivations, with
+its numerical shadow computed.
+
+\subsection{Claims grading}\label{subsec:grading}
+
+The program operated under a fail-closed epistemic discipline, and the paper preserves it.
+Every labeled statement carries one of four grades:
+\begin{itemize}
+\item \grade{Theorem} --- proved in the cited program record at standard granularity; where
+the proof rides on a literature input, that input is named at citation grade.
+\item \grade{Certified} --- verified by exact (integer/rational) or ball-arithmetic (interval)
+computation with a stated finite scope; the witness script is named. A certified claim is a
+theorem about finitely many instances, not an asymptotic statement.
+\item \grade{Census} --- verified on a registered grid (all signs machine-resolved), not for
+all parameters.
+\item \grade{Reading} --- an interpretation of a computation; flagged, carrying no
+load-bearing weight.
+\end{itemize}
+Two further disciplines matter for what follows. The \emph{degrees-of-freedom audit}
+(G-INT6): every dictionary between a homotopy-theoretic object and an analytic one must count
+its free modeling choices (weight grading, scale, regularization scheme, ladder start) against
+its independently matched constraints; a claim with no surplus of constraints is recorded as
+calibration, not derivation. The \emph{fork protocol}: nontrivial zeros of $\zeta$ may be
+consumed only as post-hoc comparison data, never as construction input, and every
+zero-comparison runs under a freeze protocol (inputs hashed before the zeros are loaded).
+Four headline self-refutations occurred during the program (Sections \ref{sec:ladders},
+\ref{sec:compact}); they are reported here \emph{as corrections}, because the paper's
+epistemics include its own refutations.
+
+\subsection{Summary of results}
+
+Table \ref{tab:ff-status} maps the five function-field ingredients to their status over $\Z$
+at the close of the program.
+
+\begin{table}[ht]
+\caption{The function-field ingredients and their status over $\Z$.}\label{tab:ff-status}
+\small
+\begin{tabular}{p{0.30\textwidth} p{0.42\textwidth} p{0.20\textwidth}}
+\toprule
+\textbf{FF ingredient} & \textbf{Status over $\Z$} & \textbf{Where} \\
+\midrule
+(F1) integer pairing on a square & \textsc{constructed}: the Euler/Tor pairing on
+$\HZ \wedge \HZ$ is sign-bearing on torsion (the curve-level pairing vanishes identically);
+diagonal self-pairing $= \zeta'(0)$ in the count reading & \S\ref{sec:square} \\[3pt]
+(F2) index shape & \textsc{certified}: max-Gram lemma (exact); the geometric monoid family
+$\{\psi^{p^i}\}$ is Lorentzian $(1,n)$ per weight, with an $n$-stable window &
+\S\ref{subsec:maxgram} \\[3pt]
+(F3) RR + duality & \textsc{half-proven}: the compactified local object $\Xbar$ exists
+(theorem mod one input); its self-duality conjecture DD.4 has its Lin-block clause proven
+with a unique datum; the global clause is open & \S\ref{sec:compact} \\[3pt]
+(F4) effectivity & \textsc{theorem}: density-RR (KK.L1) with explicit constants, elementary
+(no PNT); $\chi_{\mathrm{ren}} > 0 \Rightarrow N(D) \ge 1$ exactly & \S\ref{subsec:kk} \\[3pt]
+(F5) Frobenius family + second evaluation & family \textsc{constructed} (monoid, not group:
+the invertible Adams family provably carries no index); the second evaluation is \textsc{the
+missing object}, demanded six times independently & \S\ref{subsec:uu},
+\S\ref{sec:terminal} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Along the way the program proves a sequence of boundary theorems that, we believe, are of
+independent interest as a map of the wall:
+\begin{itemize}
+\item the count grammar (nonnegative multiplicative integer data) reaches exactly the
+Selberg-class landscape and no further; the Euler product, not positivity or self-duality, is
+the discriminating ingredient (the Epstein boundary, \S\ref{sec:grammar});
+\item the regularized characteristic function of an $S^1$-weighted count ladder produces
+every local factor of the completed zeta function, with the type of factor decided by orbit
+geometry (compact orbit $\to$ Euler factor; fixed point $\to$ $\Gamma$-factor); the
+self-dual $p^{s/2}$ normalization is \emph{forced} by ladder-negation naturality and is
+provably not a branch convention (\S\ref{sec:ladders});
+\item at $p = 2$ the real place degenerates to a complex place: a new computation
+(Theorem S.1) gives $\THR(\F_2)^{tC_2}$ in closed form, exhibiting the Legendre duplication
+$\Gamma_\R\Gamma_\R(+1) = \Gamma_\C$ and a rank-two Barnes $\Gamma_2$ sector
+(\S\ref{subsec:p2});
+\item functional-equation-level properness is structurally incapable of producing the
+archimedean constant: the FE layer is exactly blind to the scale (Proposition BB.1,
+\S\ref{sec:global});
+\item integer signature flow sees the prime-density tower of the explicit formula and is
+provably blind to the zeros: each zero enters with bounded amplitude against an $O(1)$
+quantization floor (\S\ref{subsec:ii});
+\item the index inequality is posed, with every term defined, on the strict arithmetic square
+(\S\ref{subsec:ll}); its failure on the Frobenius-graph classes is certified and
+comb-determined, with no zero correlation (\S\ref{subsec:nn});
+\item on the one surviving face (the connective-$\ku$ cell comb) the inequality is proven for
+every prime power and every admissible scale --- and \emph{evasion-not-surplus} is a theorem:
+a uniform surplus is equivalent to a positive hole coefficient, forbidden by an exact
+homogeneous functional equation (SS.1--SS.5, \S\ref{subsec:ss});
+\item the two-dimensional Castelnuovo step on that face fails by an exact depth wall
+(exponential Frobenius depth against linear window supply), with the precise
+characterization: the von Mangoldt entry occupies Weil's fixed-point slot but possesses only
+one evaluation; Weil's proof works because $\#\mathrm{Fix}$ has two (\S\ref{subsec:uu}).
+\end{itemize}
+
+\subsection{What this paper does not do}
+
+We do not prove RH, and we do not claim that completing the missing object would prove it.
+The program's own guard theorem (Proposition BB.1 with its FE-blindness corollary,
+\S\ref{sec:global}) cuts against the paper's natural optimism: a construction that achieves
+duality and the functional equation at every place can still be vacuous for RH, because the
+FE layer determines no archimedean constant and the zeros live one layer deeper, at the
+density/index level. The named failure mode --- that effectivity over the compactified square
+might require an input equivalent to zero repulsion --- is stated in the charter
+(\S\ref{sec:index}) and remains open. What we claim is narrower and, we believe, durable:
+the supply side of $\zeta$ is counting (\S\S\ref{sec:square}--\ref{sec:ladders}); the index
+attack on RH over $\Z$ has been executed to a boundary that is now \emph{exact}, in the sense
+that the remaining wall is one specified object, every cheaper substitute on our map is
+excluded by a theorem or a certificate, and the specification (LS1--LS6 plus the
+second-evaluation demand, \S\ref{sec:terminal}) is precise enough to be falsified.
+
+\subsection{The program record and the companion paper}
+
+The underlying record is a sequence of twenty-one program documents (17--37 in the project's
+numbering) and some forty adversarially verified worker records, produced in eight
+orchestrated multi-worker cycles plus a face hunt and a stress round. The discipline ledger
+at close: approximately seventy witnesses, all exit-code gated and rerun by the lead at the
+landing of each cycle; six headline self-corrections propagated into the record (each
+appears in this paper at the point where it bit); zero fits surviving the
+degrees-of-freedom audit; and every load-bearing finite numerical claim of the program's
+analytic side --- the positivity certificates T1 and T2, the tracking bound $\tau < 1$ on
+all fourteen support edges, and the Davenport--Heilbronn control's certified failure ---
+at rigorous interval-arithmetic grade. The analytic reduction those certificates live in
+(RH as an exact finite-dimensional tracking inequality along the prime filtration, with its
+own no-go map) is the subject of a companion paper; the present paper is independent of it
+except where the tracking quantity $\tau$ appears as a comparison observable
+(\S\ref{subsec:hh}, \S\ref{subsec:nn}).
+
+\subsection{Notation and conventions}
+
+$\THH$, $\THR$, $\TP$ denote topological Hochschild homology, real topological Hochschild
+homology, and periodic topological cyclic homology; $\Sph$ is the sphere spectrum and
+$\HZ$, $H\F_p$ Eilenberg--MacLane spectra. A \emph{count ladder} is a multiset of
+eigenvalue/weight data whose entries are logarithms of finite-group cardinalities;
+$\prodreg$ denotes its zeta-regularized product, $\zeta_H(s, a)$ the Hurwitz zeta function
+used to define it, and the \emph{anomalous dimension} of a ladder is the value
+$\zeta_{\mathrm{ladder}}(0)$ governing its scale covariance ($\prodreg (c\,\lambda_n) =
+c^{\,\zeta(0)} \prodreg \lambda_n$). A \emph{regularization scheme} is the additional datum
+(branch/window/orientation convention) needed to evaluate $\prodreg$ on a two-sided ladder;
+the \emph{symmetric} or \emph{KMS-$\tfrac12$} scheme is the one producing the self-dual
+Euler factor $p^{s/2}(1 - p^{-s})$, the name recording that $n^{-1/2}$ is the KMS state
+normalization of the program's earlier realization spec. $\Lam$ is the von Mangoldt
+function; the \emph{explicit formula} (EF) is used throughout only as a comparison target,
+never as an input. For a $C_2$-spectrum, $(-)^{C_2}$, $(-)^{tC_2}$ denote genuine fixed
+points and the Tate construction; the \emph{Lin spectrum} is $Y = (H\F_2)^{tC_2}$ with
+$\pi_* Y = \F_2[t^{\pm 1}]$, $|t| = -1$ \cite{GM95}. Signatures $(n_+, n_-)$ are written
+with the timelike count first; \emph{Lorentzian} means $(1, n)$.
+
+\subsection{Relation to the literature}
+
+The genealogy is explicit. The count-level realization of local factors follows the
+Deninger--Connes flow picture \cite{Deninger91,Deninger92} and its unconditional char-$p$
+realization by Hesselholt \cite{Hesselholt16}; the derived square is B\"okstedt's computation
+\cite{Bokstedt} read as intersection theory; the real/reflection structure rides on real
+topological Hochschild homology \cite{DMPR21,QS21} and Gorenstein duality for real spectra
+\cite{GreenleesMeier17,DGI06}; the $\ku$ ladder is Lee's computation \cite{Lee22}; the
+curve-level integer Riemann--Roch that the square-level program models is
+Connes--Consani's \cite{CCRR22,CCRR23}, and the theta-regularized effectivity is van der
+Geer--Schoof's \cite{vdGS}. The number-ring control uses Lindenstrauss--Madsen \cite{LM00};
+the periodic/connective fork is Stonek \cite{Stonek18}; the cooperation-lattice input is
+Kane and Baker--Richter \cite{Kane81,BakerRichter05}. The blindness theorems quantify, for
+this object, the standing worry articulated around the Connes--Consani Weil-positivity
+program \cite{CC20}: symmetry-layer structure alone does not discriminate $\zeta$ from its
+fakes. We make that worry a theorem about our own construction and use it as a guard.
+
+\section{The count grammar and its boundary}\label{sec:grammar}
+
+The program's first question was the cheapest one: can the explicit-formula fingerprint of
+$\zeta$ be produced from \emph{counts} --- nonnegative-integer arithmetic data --- and if so,
+which counts? The instrument is a pipeline \grade{Certified; \texttt{count\_\allowbreak fingerprint}}:
+any integer count table $c(n)$ with $c(1) = 1$ is converted to a generalized von Mangoldt
+sequence by the exact Dirichlet-log recursion
+\[
+\lambda(n) \;=\; c(n)\log n \;-\; \sum_{d \mid n,\ d < n} \lambda(d)\, c(n/d),
+\]
+then to a correlation profile regressed against $\zeta$'s fingerprint. Calibration: the
+divisor function $d(n)$ (i.e.\ $Z = \zeta^2$) returns slope $+2.0000$ at machine precision
+($2.2\cdot10^{-16}$); abelian-group counts and Gaussian-integer ideal counts return residuals
+supported exactly on prime powers with the predicted structures. The pipeline reports which
+zeros a count structure touches.
+
+Three grammar refinements were forced by measurement and one structural counterexample:
+
+\begin{enumerate}
+\item \emph{Self-duality} \grade{Reading, then confirmed structurally}. Count structures see
+zeros at the line set by their counting growth; the critical line $\mathrm{Re}\,s = 1/2$ is
+reached by \emph{self-dual} count structures ($d(n)$ sits at $1/2$ because $ab = n$ is
+$a \leftrightarrow b$ symmetric). In count language the functional equation \emph{is} the
+duality of the pairing.
+\item \emph{Temperedness}. Self-duality alone does not put zeros on the self-dual line:
+the subgroup structure of $\Z^2$ is perfectly self-dual (order-$m$ subgroups correspond to
+index-$m$ subgroups via annihilators), yet its zeta function $\zeta(s)\zeta(s-1)$ has zeros
+provably off its self-dual line $\mathrm{Re}\,s = 1$ --- that is the prime number theorem.
+What $d(n)$ has and $c(n) = n$ lacks is temperedness: subpolynomial counts at the
+square-root-normalized scale.
+\item \emph{The Epstein boundary} \grade{Theorem-level, by classical examples}. Epstein zeta
+functions are count structures ($r_Q(n) \ge 0$ counts lattice vectors), self-dual, tempered
+--- and have off-line zeros. Hence counts $+$ self-duality $+$ temperedness do \emph{not}
+force the critical line; the Euler product (multiplicative closure: ideal counts multiply,
+generic quadratic-form counts do not) is the irreducible discriminating ingredient.
+\end{enumerate}
+
+The combination self-dual $+$ tempered $+$ Euler is the Selberg-class shape restricted to
+cardinality coefficients: the count grammar's nonnegativity, by itself, lands exactly on the
+standard conjectural landscape and does not escape it. The conclusion that redirected the
+program: the index, if it exists, is not the counts' entrywise nonnegativity --- it must be a
+\emph{signature theorem on a pairing matrix built from the counts}, which is precisely the
+function-field structure (entrywise positivity of intersection numbers is the input; the
+Hodge index is a lattice-signature statement on top).
+
+\subsection{The Hall form is a metric; the Euler form vanishes}\label{subsec:hall}
+
+The natural integer-valued self-dual pairing on finite arithmetic objects exists: the Hall
+numbers $g^G_{H,K} = \#\{N \le G : N \cong K,\ G/N \cong H\}$ are nonnegative integers,
+symmetric in $(H, K)$ by Pontryagin duality ($N \mapsto \mathrm{Ann}(N)$, $G^* \cong G$ for
+finite abelian $G$). Their weighted Gram matrices are exactly computable.
+
+\begin{proposition}[\grade{Certified; \texttt{count\_\allowbreak hall\_\allowbreak signature}}]\label{prop:hall}
+The self-dual-grade Hall forms are positive definite on all computed cells
+($p = 2$: $m \le 3$; $p = 3$: $m \le 2$): signature $(k, 0)$. The form is metric-like; no
+index shape is present at this grade (consistent with Zelevinsky's PSH positivity for Hall
+structures \cite{Zelevinsky81}).
+\end{proposition}
+
+\begin{proposition}[\grade{Theorem}]\label{prop:eulervanish}
+The Euler form $\chi(H, K) = \sum_i (-1)^i \log\#\Ext^i(H, K)$ vanishes identically on finite
+$\Z$-modules: $\#\Ext^1(A, B) = \#\Hom(A, B)$ for finite abelian groups (apply $\Hom(-, B)$
+to $0 \to \Z \to \Z \to \Z/n \to 0$: $\#B[n] = \#(B/nB)$).
+\end{proposition}
+
+Proposition \ref{prop:eulervanish} is the categorical incarnation of ``$\mathrm{Spec}\,\Z$ is
+one-dimensional, no room for signature'': torsion sheaves on a \emph{curve} always pair to
+zero; they acquire nonzero self-pairing only on a \emph{surface}. The redirected question ---
+compute the Euler pairing on the derived category of finite complexes over the derived tensor
+square $\Z \otimes^{L}_{\Sph} \Z$, where the sphere's higher torsion supplies a second
+dimension --- is the subject of the next section.
+
+\section{The derived square}\label{sec:square}
+
+\subsection{The diagonal is \texorpdfstring{$\THH(\Z)$}{THH(Z)}}
+
+Let $R = \HZ \wedge \HZ$ be the derived arithmetic square (smash product over the sphere
+spectrum $\Sph$) and define the Euler (Tor/Serre intersection) pairing on finite $R$-modules
+\[
+\langle M, N\rangle_R \;=\; \sum_i (-1)^i \log \#\,\pi_i\!\left(M \wedge_R N\right),
+\]
+the same pairing that vanishes identically at curve level (Proposition
+\ref{prop:eulervanish}). The marquee class is the diagonal $\Delta = \HZ$ ($R$-module via
+multiplication), and by definition of topological Hochschild homology
+\[
+\Delta \wedge_R \Delta \;=\; \HZ \wedge_{\HZ \wedge \HZ} \HZ \;=\; \THH(\Z):
+\]
+the derived self-intersection of the diagonal in the arithmetic square \emph{is} $\THH(\Z)$
+--- the object the program sought has a standard name. The input, at citation grade, is
+B\"okstedt's theorem \cite{Bokstedt}:
+\[
+\THH(\Z) \simeq \HZ \vee \bigvee_{k \ge 1} \Sigma^{2k-1}\, H(\Z/k), \qquad
+\THH(\F_p) = \F_p[\sigma],\ |\sigma| = 2 .
+\]
+All positive-degree homotopy of $\THH(\Z)$ is finite --- integer cardinalities. The
+$\pi_0 = \Z$ is the excess part (the diagonal meets itself in a curve, not points); by
+Hochschild--Kostant--Rosenberg the positive-degree torsion is the cotangent data of $\Z$
+over $\Sph$.
+
+\begin{theorem}[The sign exists, and the value is the archimedean constant;
+\grade{Theorem in the count reading; witness \texttt{prime\_\allowbreak int\_\allowbreak derived\_\allowbreak square}}]
+\label{thm:zetaprime}
+All torsion of $\THH(\Z)$ sits in odd degrees, so every finite group contributes with a minus
+sign, and
+\[
+\langle \Delta, \Delta\rangle_{\mathrm{tors}}
+= -\sum_{k \ge 1} \log k
+\;=\; \zeta'(0) \;=\; -\tfrac12 \log 2\pi \;<\; 0
+\]
+under zeta regularization; equivalently the regularized order of $\THH(\Z)_{\mathrm{tors}}$
+is $\sqrt{2\pi}$. The curve-level control is exactly $0$; the local control is
+$\langle \Delta, \Delta\rangle_{\F_p\text{-square}} = \tfrac12 \log p > 0$.
+\end{theorem}
+
+This is the first sign-bearing, torsion-sourced pairing on an arithmetic square in the
+program --- the thing Proposition \ref{prop:eulervanish} proves cannot exist at curve level.
+Two honesty notes are part of the statement. \emph{Scale note}: the value is
+regularization-scheme-independent but scale-dependent (anomalous dimension $-(s+\tfrac12)$:
+rescaling eigenvalues by $c$ shifts the constant by $-\tfrac12\log c$); the scale-invariant
+content is the $\Gamma$-factor \emph{shape}. In the count reading --- cardinalities are
+dimensionless, scale canonically $1$ --- the sign is a theorem; in the operator reading it is
+convention until a scheme-selecting theorem fixes it (the audit
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak genus\_\allowbreak audit}} decided this sharply: the sign flips at
+$c = 2\pi$). \emph{Genus demotion}: the reading $2 - 2g_\Z = \zeta'(0)$, giving
+$g_\Z = 1 + \tfrac14\log 2\pi > 1$, spends both the unit and the reading and is recorded as
+calibration; it does not contradict Connes--Consani's genus-$0$ Riemann--Roch for
+compactified $\mathrm{Spec}\,\Z$ \cite{CCRR22} because the two computations are
+different invariants (their cohomological $\chi$ versus this cotangent probe), a clash
+settled at invariant level: no unit reconciles them
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak genus\_\allowbreak audit}}.
+
+\subsection{The supply dictionary: von Mangoldt is a THH log-cardinality}
+
+\begin{theorem}[\grade{Theorem; exact integer identity, zero free choices;
+witness \texttt{prime\_\allowbreak int\_\allowbreak thh\_\allowbreak supply}}]\label{thm:supply}
+For every prime $p$ and every $i \ge 1$,
+\[
+\log \#\,\THH_{2i}(\F_p) \;=\; \log p \;=\; \Lam(p^i).
+\]
+The $s$-weighted ladder sums to the local supply $-\zeta_p'/\zeta_p(s)$ exactly; atoms at
+non-prime-powers, or atoms at $p$ with weight $\ne \log p$, have no carrier: a closed point
+of $\mathrm{Spec}\,\Z$ with residue field of size $n$ exists iff $n$ is prime.
+\end{theorem}
+
+The last clause is the program's strongest carrier kill: the Davenport--Heilbronn function
+cannot be built in this category --- not because a computation fails but because the object
+does not exist. Weighting the B\"okstedt tower by the canonical circle grading (degree
+$2k-1 \leftrightarrow$ weight $k$; the Connes operator is where the $k$ in
+$\Z/k = \pi_{2k-1}$ comes from) gives the diagonal's regularized characteristic function
+\[
+D(s) \;=\; \prodreg_{k \ge 1}\,(s + k) \;=\; \frac{\sqrt{2\pi}}{\Gamma(s+1)}, \qquad
+-\frac{d}{ds}\log D(s) = \psi(s+1),
+\]
+a digamma --- the analytic shape of the explicit formula's archimedean supply term
+\grade{Certified to $4\cdot10^{-10}$/$2\cdot10^{-6}$; same witness}. Under the G-INT6 audit
+the weight choice and scale are spent modeling choices; what survives invariantly is that the
+log-derivative of the diagonal's characteristic function \emph{is a digamma}.
+
+\subsection{Properness, decomposed; the wall located}\label{subsec:properness}
+
+The function-field proof uses properness through four separable ingredients: finiteness (PF:
+coherent cohomology finite-rank, Euler characteristics honest integers), duality (PD: Serre
+duality, the $h^0(K-D)$ term exists), Riemann--Roch (PR: $\chi(D)$ from intersection
+numbers), and sections (PS: $h^0$ counts actual objects). The derived square is ``affine over
+$\Sph$'': it has PF degree-wise but not in total (the infinite tower is why a transcendental
+constant appears at all), and none of PD/PR/PS. On the function-field side the zeros enter
+only through global cohomology (PR/PS), never through the local supply. The classical model
+of the missing package exists: van der Geer--Schoof \cite{vdGS} define $h^0$ for compactified
+$\mathrm{Spec}\,\Z$ as a theta-regularized section count and prove an exact Riemann--Roch
+whose entire proof is Poisson summation. Hesselholt's theorem \cite{Hesselholt16} --- for
+$X$ smooth \emph{proper} over $\F_q$, regularized determinants over $\TP$ compute the
+Hasse--Weil zeta function --- has properness as hypothesis, not output. Two sharpenings
+from the program's verification fleet frame everything that follows. Even in the proven
+char-$p$ case, properness is used only as \emph{finiteness}: the duality/index layer
+(PD/PR/PS) is never exercised and the zeros are imported from Weil's theorem --- so a
+candidate $\Sph$-level duality must be shown to do more than reproduce the functional
+equation, and the scenario ``$\Sph$-level Poisson achieved and still vacuous for RH'' has
+no other guard (this becomes a theorem about the program's own object in
+\S\ref{sec:global}). And duality alone is carrier-blind: classical Poisson summation holds
+for every lattice --- Epstein passes --- so a functional-equation layer can never
+discriminate. Meanwhile the curve-level existence theorem is in the literature:
+Connes--Consani have proved an integer-valued Riemann--Roch with Pontryagin--Serre duality
+for compactified $\mathrm{Spec}\,\Z$ over their categorical base \cite{CCRR22,CCRR23},
+with a clean circularity audit (no RH, no zeros, no theta input): the missing object exists
+at curve level as a theorem; the index lives on the square. The wall, in one phrase:
+\emph{the program needs Poisson summation as a theorem about ring spectra; everything else
+on the supply side is already counts.}
+
+\subsection{The connective \texorpdfstring{$\ku$}{ku} ladder and the number-ring control}
+\label{subsec:ku}
+
+Two further squares calibrate the picture. For the connective square $\ku \wedge \ku$, whose
+diagonal is $\THH(\ku)$ (Lee \cite{Lee22}; periodic $\KU$ is excluded: inverting Bott
+rationalizes the cotangent data \cite{Stonek18}), the torsion obeys the exact closed form
+\grade{Theorem; three implementations, exact integers to $w \le 3000$;
+witness \texttt{prime\_\allowbreak int\_\allowbreak ku\_\allowbreak ladder}}
+\[
+\#\,T_{2w} = \frac{\mathrm{lcm}(1..w{+}1)}{w(w+1)}, \qquad
+\log \#\,T_{2w} = \psi_{\mathrm{Cheb}}(w) + \Lam(w+1) - \log w - \log(w+1),
+\]
+with $\psi_{\mathrm{Cheb}}$ the Chebyshev function: where the $\HZ$ square assembles the
+supply place by place, the $\ku$ square's torsion carries the \emph{global} Chebyshev
+function in single cardinalities --- the fracture square internalizes the sum over places.
+Its torsion is all even-degree and pairs positively (the $H^2$/surface slot), opposite to
+$\HZ$; the two squares' signs are reconciled by the indexing/reading bookkeeping of the
+scheme audit, not contradictory.
+
+The standing fitted-dictionary control is the number-ring family: by Lindenstrauss--Madsen
+\cite{LM00}, $\#\,\THH_{2n-1}(\mathcal{O}_K) = n^d\,|d_K|$, hence
+\[
+\langle \Delta, \Delta\rangle_{\mathcal{O}_K} \;=\; d\,\zeta'(0) + \tfrac12 \log |d_K|,
+\]
+every field distinct, the discriminant entering with exponent $\tfrac12$ --- exactly the
+$|d_K|^{s/2}$ of $\xi_K$'s functional equation, with ladder multiplicity
+$d = r_1 + 2r_2$ the total $\Gamma_\R$-multiplicity of $\xi_K$
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak genus\_\allowbreak audit}}.
+Measured values:
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+$K$ & $\Q$ & $\Q(i)$ & $\Q(\sqrt5)$ & $\Q(\sqrt{-23})$ & $\Q(\zeta_5)$ \\
+\midrule
+$\langle\Delta,\Delta\rangle_{\mathcal{O}_K}$ & $-0.919$ & $-1.145$ & $-1.033$ & $-0.270$
+& $-1.262$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+A dictionary that, fed a different ring, returns that ring's own completed-zeta datum is not
+fitting; any future construction claiming to produce $\zeta$'s data must pass this bench.
+
+\section{Ladders and schemes}\label{sec:ladders}
+
+\subsection{The full ladder and a correction}\label{subsec:fullladder}
+
+The Tate/duality completion of the local THH half-ladder replaces $\{s + k\}_{k \ge 1}$ by
+the full Frobenius-orbit ladder $s + (2\pi i/\log p)\Z$ (the orbit is a circle of
+circumference $\log p$). The regularized identity \grade{Certified;
+\texttt{prime\_\allowbreak int\_\allowbreak tate\_\allowbreak ladder}, assembled from independently exhibited pieces to
+$3\cdot10^{-14}$} is
+\[
+\prodreg_{n \in \Z}\Bigl(s + \frac{2\pi i n}{\log p}\Bigr)
+\;=\; 2\sinh\!\Bigl(\frac{(\log p)\,s}{2}\Bigr)
+\;=\; p^{s/2}\bigl(1 - p^{-s}\bigr)
+\quad \text{\emph{under the conjugation-symmetric scheme}}.
+\]
+The italicized qualifier is a correction, and it reshaped the program. As first recorded, the
+identity was read as ``duality completion generates the self-dual (KMS-$\tfrac12$)
+normalization.'' An adversarial verification pass against the primary sources refuted the
+headline: Deninger's Proposition 2.3 \cite{Deninger92} --- the identity Hesselholt's theorem
+runs on --- gives $1 - \lambda q^{-s}$ on the \emph{same} full ladder under his
+argument-convention scheme; the three schemes differ by exactly $p^{(s-\alpha)/2}$, the
+ladder's vacuum half-sum; and Hesselholt's Theorem A \cite{Hesselholt16} is consistent only
+with the prefactor-\emph{free} scheme \grade{Certified;
+\texttt{prime\_\allowbreak int\_\allowbreak deninger\_\allowbreak convention}}. A regularized ladder is \emph{data plus scheme}:
+the completion generates the full ladder (homotopy-theoretically grounded at finite places);
+the $p^{s/2}$ prefactor is a property of the symmetric regularization scheme, which at that
+point no homotopy-theoretic theorem selected. Two by-products of the same audit became
+standing invariants: full ladders have anomalous dimension $0$ and half-ladders
+$(1-s)/2$ --- a scale-invariant form of the place dichotomy --- and the half-ladder's
+$1/(2\pi)$ scale anomaly is exactly the explicit formula's $-\tfrac12\log\pi$ supply term.
+
+The same audit cycle surfaced two sibling tensions --- the genus clash of
+\S\ref{sec:square} and the opposite torsion signs of the $\HZ$ and $\ku$ squares --- and
+collapsed all three to one pre-registered question (Q-SCHEME): for each square, state the
+computed invariant as (ladder data, weight dictionary, scale, scheme) and verify
+cross-dictionary consistency in common units. The genus clash was decided at invariant level
+(\S\ref{sec:square}); the sign question was decided as reading-relative; the scheme question
+became the spine of this section. The corrective lesson is recorded as method: \emph{any
+claim that a construction ``produces'' an analytic normalization must name the scheme and
+exhibit the theorem that selects it.}
+
+The structural statement that survives the correction intact:
+
+\begin{theorem}[orbit dichotomy for count ladders; \grade{Theorem at finite places via
+\cite{Hesselholt16,Deninger92}; archimedean case by the fixed-point computation below}]
+\label{thm:dichotomy}
+One construction --- the regularized characteristic function of an $S^1$-weighted count
+ladder --- produces every Euler factor of the completed zeta function, with the factor type
+decided by orbit geometry: a compact orbit of circumference $\log p$ gives the full
+$\Z$-ladder of spacing $2\pi i/\log p$, hence $p^{s/2}(1 - p^{-s})$ under the symmetric
+scheme; the fixed point at the archimedean place gives the degenerate half-ladder of spacing
+$2$, hence $\sqrt{2\pi}/\Gamma(s/2)$, whose log-derivative on the critical line is
+$\tfrac12\psi(\tfrac14 + \tfrac{it}{2})$; the rank parts ($\pi_0$ excess) are the slots of
+the $s(s-1)$ pole factors. No zero-side input appears anywhere in the construction.
+\end{theorem}
+
+\subsection{Reflections: the fold lives on fixed points}\label{subsec:fold}
+
+``TP of the square'' as a compactification vessel is structurally killed by the
+Bhatt--Morrow--Scholze triple \cite{BMS18}: TP technology is $p$-complete throughout, its
+Frobenius is $\varphi$-semilinear (no eigenvalues over $\Z_p$), and the archimedean fracture
+corner is empty --- $\sqrt{2\pi}$ is invisible to every completion. The replacement demand is
+a real/$O(2)$-equivariant refinement, and its first checkpoint passed in sharpened form
+\grade{Theorem at odd $p$, via \cite{DMPR21,QS21}; witness \texttt{prime\_\allowbreak int\_\allowbreak thr\_\allowbreak fold}}:
+at odd $p$ the $C_2$-\emph{Tate} construction of real THH vanishes
+($(H\F_p)^{tC_2} = 0$, Quigley--Shah), while the genuine $C_2$-\emph{fixed points} carry
+exactly the predicted fold,
+\[
+\pi_*\,\THR(\F_p)^{C_2} = \F_p[y], \quad |y| = 4, \quad \res(y) = x^2
+\qquad \text{(Dotto--Moi--Patchkoria--Reeh \cite{DMPR21})},
+\]
+i.e.\ weights $\{n \ge 0\} \to \{2n\}$: half-line, start $0$, spacing doubled --- the
+$\Gamma_\R$ ladder, with anomalous dimension $(1-s)/2$, on the fixed-point carrier. The
+functorial dichotomy --- rotation subgroups $\to$ Tate $\to$ full ladders (local factors);
+reflection subgroups $\to$ fixed points, Tate vanishing $\to$ folded half-ladder
+($\Gamma$-factor) --- is the structural form of the program's repeated finding that duality
+completion does not happen at the archimedean place. The $C_2$-involution acts on
+$\pi_{2k}\THH(\F_p)$ by $(-1)^k$: Serre's classical $F_\infty$ eigenvalue selection
+materializes as genuine equivariance.
+
+\subsection{Scheme rigidity: KMS-\texorpdfstring{$\tfrac12$}{1/2} is forced by negation,
+and by nothing else}\label{subsec:rigidity}
+
+The reopened scheme question closed in two steps, the first of which corrected the second's
+own first formulation. The hypothesis ``the $C_2$ of THR acts on the determinant layer''
+is satisfiable-but-vacuous: the residual Weyl action satisfies it for \emph{every} scheme.
+The forcing form (H-r3) demands that the $C_2$ act by ladder \emph{negation}
+$N : (V, \Theta) \mapsto (V, -\Theta)$ covering $s \mapsto -s$, with the regularized
+determinant natural for it. The analytic half of that hypothesis is a theorem
+\grade{Theorem; witness \texttt{prime\_\allowbreak int\_\allowbreak hr3\_\allowbreak scheme\_\allowbreak rigidity}}:
+
+\begin{lemma}[parity lemma]\label{lem:parity}
+In the vacuum-term scheme family $f_c(w) = q^{cw}(1 - q^{-w})$:
+$f_c(-w) = -\,q^{(1-2c)w} f_c(w)$. Hence $c = \tfrac12$ --- the symmetric/KMS-$\tfrac12$
+scheme --- is the unique scheme equivariant under the reflection $w \mapsto -w$.
+\end{lemma}
+
+\begin{proof}
+$f_c(-w) = q^{-cw}(1 - q^{w}) = -\,q^{-cw} q^{w} (1 - q^{-w}) = -\,q^{(1-2c)w} f_c(w)$;
+the prefactor is $w$-independent iff $c = \tfrac12$.
+\end{proof}
+
+\begin{theorem}[scheme rigidity, A0--A2]\label{thm:rigidity}
+\textup{(A0)} Every eventually-windowed branch scheme on the full ladder has value
+$D_{a_+,a_-}(w) = (-1)^{a_+ + a_-}\, q^{-(a_+ - a_-)w}\,(1 - q^{-w})$, $(a_+, a_-) \in \Z^2$:
+all branch-convention vacuum slopes are \emph{integers}.
+\textup{(A1)} If $f(w) = e^{P(w)}(1 - q^{-w})$ satisfies negation-naturality
+$f(-w) = u f(w)$ for a constant unit $u$, then $P_{\mathrm{odd}}(w) = \tfrac{\log q}{2} w$
+exactly and $u = -1$: every negation-natural scheme value is
+$e^{a}\, 2\sinh(w \log q / 2)$, the symmetric scheme up to an EF-invisible constant.
+\textup{(A2)} Consequently no pointwise branch convention --- Deninger's, Hesselholt's, or
+any other --- can ever produce the KMS-$\tfrac12$ prefactor: naturality demands slope
+$\tfrac12$ and conventions supply integers. The symmetric scheme is not a branch choice at
+all.
+\end{theorem}
+
+\begin{proof}[Proof of (A1)]
+$1 - q^{w} = -q^{w}(1 - q^{-w})$, so $f(-w) = u f(w)$ reads
+$e^{P(-w) - P(w) + w\log q + i\pi} = u$, i.e.\ $-2P_{\mathrm{odd}}(w) + w\log q$ is
+constant. A polynomial identity: $P_{\mathrm{odd}}(w) = \tfrac{\log q}{2}w$, the constant is
+$0$, and $u = e^{i\pi} = -1$. (Why $u$ must be constant: in finite dimensions the unit is
+$(-1)^{\dim V}$; allowing $u = u(w)$ would permit every scheme and is naturality of
+nothing.) For (A0), split the vertical ladder at its two ends and evaluate the windowed
+Hurwitz regularizations; the Gamma reflection identity assembles the stated closed form ---
+the full computation is in the record, witnessed at $3\cdot10^{-15}$. (A2) is immediate
+from (A0) $+$ (A1).
+\end{proof}
+
+Three companion propositions complete the audit \grade{Theorem; same witness}:
+
+\begin{proposition}[A3--A6]\label{prop:a3a6}
+\textup{(A3)} Deninger's Convention (2.1) of \cite{Deninger92} is a circle-orientation
+choice (a generator of the deck group of the log cover); under negation the two ladder ends
+swap and the window maps to a different convention --- no single window is negation-stable.
+The $C_2$-average of Deninger's scheme and its mirror is the symmetric scheme, with the
+$\mu_4$ sign-count ambiguity resolved to $+1$ by the pair-modulus construction.
+\textup{(A4)} Conjugation selects nothing: every real-$c$ scheme respects the Schwarz
+pairing. (This corrects the program's earlier gloss: the selecting involution is negation,
+the local functional-equation flip, not conjugation.)
+\textup{(A6)} The symmetric determinant requires a canonical $\lambda^{1/2}$: it lives on a
+double cover of the eigenvalue space, so any carrier of the forcing structure must be
+2-primary.
+\end{proposition}
+
+The open residue, precisely posed, was the homotopy half: does the geometric $C_2$ actually
+supply negation to the determinant layer? Its resolution --- negative at THR itself,
+positive at the compactified object --- is Section \ref{sec:compact}.
+
+\subsection{The \texorpdfstring{$p = 2$}{p=2} anomaly, computed}\label{subsec:p2}
+
+At $p = 2$ the fixed points do not fold cleanly, and the gap was discharged by a new
+computation:
+
+\begin{theorem}[S.1; \grade{Theorem additively; ring form up to a stated generator-choice
+caveat; witness \texttt{prime\_\allowbreak int\_\allowbreak thr\_\allowbreak p2\_\allowbreak anomaly}}]\label{thm:s1}
+$\THR(\F_2)^{tC_2} \simeq \prod_{n \ge 0} \Sigma^{2n} (H\F_2)^{tC_2}$, with
+$\pi_* = \F_2[[z]][t^{\pm 1}]$ \ ($z = t^2 x$ of weight $1$, $|z| = 0$). The mechanism:
+the DMPR genuine splitting of $\THR(\F_2)$ forces Borel formality, so the Tate spectral
+sequence collapses.
+\end{theorem}
+
+The $p = 2$ fixed points factorize exactly as (fold core $\F_2[\bar{x}^2]$, the odd-$p$
+$\Gamma_\R$ ladder) $\times$ (a $\{1, \bar x\}$ doubling) $\times$ (the Euler tower
+$\F_2[y]$), and each factor is an identification: the doubling is the mod-2 degeneration of
+Serre's $(-1)^n$ selection, with the exact regularized identity
+$\prodreg(s+n) = \prodreg(s+2n)\cdot\prodreg(s+2n+1)$ mirroring Legendre duplication
+$\Gamma_\R(s)\Gamma_\R(s+1) = \Gamma_\C(s)$ --- \emph{at $2$ the real place degenerates to a
+complex place}, a computed statement, not an analogy. The Euler tower has no odd-$p$
+analogue: the full degree carrier is the Barnes double Gamma $\Gamma_2(s \mid 1, 2)$ with
+quadratic anomalous dimension $\zeta_B(0, s \mid 1,2) = s^2/4 - 3s/4 + 11/24$ --- the first
+rank-two archimedean object the program produced from homotopy theory, the natural candidate
+slot for the rank-two $s(s-1)$ pole pair. Moreover, at $p = 2$ --- the unique prime with
+nonvanishing reflection Tate --- duality completion \emph{does} happen at the reflection,
+and per weight $n$ the full line gives $2\sinh((s+n)\log 2/2) = 2^{(s+n)/2}(1 - 2^{-(s+n)})$:
+the self-dual local factor appearing geometrically. (A later audit weakened this honestly:
+the form is scheme-\emph{applied}, not scheme-forced, at this exhibit; the forcing came only
+with the glued object of \S\ref{sec:compact}.) Three independent results --- the
+$\lambda^{1/2}$ double cover, the geometric KMS-$\tfrac12$ at the reflection sector of $2$,
+and Connes--Consani's canonical divisor $K = -2\{2\}$ supported at the prime $2$
+\cite{CCRR22} --- point at the same address.
+
+\subsection{The index shape: the max-Gram lemma and the certified Lorentzian family}
+\label{subsec:maxgram}
+
+The Frobenius-family search produced a clean negative, its explanation, and the repair. The
+bare Adams family $\{\psi^1, \dots, \psi^n\}$ on the $\ku$ square has per-weight pairing
+cardinalities $|k - l|$, and its log-Gram is \emph{not} Lorentzian at any $n \ge 4$
+\grade{Certified, refutation-grade; \texttt{prime\_\allowbreak int\_\allowbreak adams\_\allowbreak family\_\allowbreak signature}}. The
+explanation is a theorem within the $p$-complete shadow: all invertible Adams graphs have
+bidegree $(1,1)$ --- the family is a group, every pairing cardinality is a local Lefschetz
+factor $\det(1 - d\psi^\alpha \mid \mathrm{wt}\ w) = p\text{-part of } \alpha^w - 1$ --- so
+the Castelnuovo degree-growth mechanism provably cannot come from the invertible family; it
+requires the non-invertible $\psi^k$, i.e.\ the multiplicative \emph{monoid}. The repair:
+
+\begin{lemma}[max-Gram lemma; \grade{Theorem}]\label{lem:maxgram}
+Let $a_0 < a_1 < \cdots < a_n$ be real with $a_n > 0$, and let
+$M[i,j] = \max(a_i, a_j)$, $\MIN[i,j] = \min(a_i, a_j)$, $u = (a_i)$. Then $M$ has
+signature $(1, n)$.
+\end{lemma}
+
+\begin{proof}
+$\max(a_i,a_j) + \min(a_i,a_j) = a_i + a_j$ gives
+$M = u\mathbf{1}^{T} + \mathbf{1}u^{T} - \MIN$. The rank-two part
+$u\mathbf{1}^T + \mathbf{1}u^T$ has signature $(1,1)$, and $\MIN$ is positive semidefinite
+(positive definite for positive $a_i$: $\det\MIN = a_0\prod(a_{i+1} - a_i)$, the nested-min
+factorization), so $n_+(M) \le 1$ by Weyl subadditivity. Since $M[n,n] = a_n > 0$,
+$n_+ \ge 1$; and $\det M = (-1)^n a_n \prod(a_{i+1} - a_i) \ne 0$ kills the kernel.
+\end{proof}
+
+The Castelnuovo/Hodge-index shape is therefore \emph{automatic} for any family whose
+log-pairing is $\max(\deg_i, \deg_j)$ --- and the arithmetic family carrying that shape is
+the geometric one $\{\psi^{p^0}, \dots, \psi^{p^n}\}$:
+$\log|p^{iw} - p^{jw}| = (w\log p)\max(i,j) + E$ with $\|E\|$ exactly bounded
+($\|E\|_\infty \le 2x/(1-x)^2$, $x = p^{-w}$), certified Lorentzian per weight for all
+$(p, w)$ with $w \ge 3, 2, 2, 1$ at $p = 2, 3, 5, \ge 7$, with an $n$-stable window of
+admissible diagonal shifts containing $0$
+\grade{Certified; \texttt{prime\_\allowbreak monoid\_\allowbreak frobenius\_\allowbreak shadow}}. The same pairing read
+$p$-adically is the $\MIN$/ultrametric PSD face: by the product formula
+$|p^{iw} - p^{jw}| = p^{w\min(i,j)}(p^{w|i-j|} - 1)$, one pairing has two faces ---
+$v_p$-Gram $= w\MIN$ (hierarchical, PSD) and log-Gram $= (w\log p)\MAX + E$ (the index
+universe) --- split by the product formula. Groups carry no index shape because they carry
+no degrees. Separately, the branch fork on the twisted family was closed from the
+literature: by Kane (19.6.1) \cite{Kane81} via Baker--Richter \cite{BakerRichter05} the
+cooperation lattice is monomial through $w \le p^2 - 2$, so the local Euler supply does
+\emph{not} live in the invertible twisted Adams family.
+
+\section{The compactified object}\label{sec:compact}
+
+\subsection{The product-formula determinant spec}
+
+The program's repeated lesson was that imposing a known formalism (TP, branch conventions,
+tolerance categories) yields the right ladders in the wrong layer. The two structures that
+never failed a kill-test are the count identities and the product formula; the compactified
+object was therefore \emph{posed} as the structure they define (the analogy to how cyclotomic
+spectra were defined --- Frobenius as structure, existence as theorem --- is deliberate). A
+\emph{product-formula determinant} (PFD) object consists of: the full determinant ladders
+$(V_p, \Theta_p)$ of the $p$-local Tate squares; the degenerate reflection sector
+$(V_\infty, \Theta_\infty)$ (half-ladder, spacing $2$; at $2$ the computed $\Gamma_\C$
+degeneration and Barnes $\Gamma_2$ tower of Theorem \ref{thm:s1}); the product formula
+imposed as the gluing identification ($\prod_v |\lambda|_v = 1$: the $p$-adic MIN faces and
+the archimedean MAX face declared two readings of one object); and Poisson as defining
+property --- the finite-truncation residue pairings must \emph{extend}. Pre-registered kill
+tests: K1 (the $1/(2\pi)$ scale must emerge, never be inserted), K2 (the duality must restore
+$s \mapsto -s$ exactly where completion breaks it, which by Theorem \ref{thm:rigidity} forces
+KMS-$\tfrac12$), K3 (the Barnes $\Gamma_2$/$s(s-1)$ rank sector must appear), K4 (the
+quantization-defect pole must be evaded), K5 (carrier: no ring, no object; the
+$\mathcal{O}_K$ bench must return $\xi_K$'s data), K6 (zero free gluing choices).
+
+Two prior negatives shaped the spec, and both are part of the record. First, the F1 probe at
+THR returned \emph{negative}: the residual Weyl action \emph{shears} (Artin--Schreier-style),
+it never negates; the inverting element is consumed by the Tate construction; so realization
+input KMS-$\tfrac12$ has no carrier at THR itself
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak u\_\allowbreak f1\_\allowbreak probes}}. What survived: negation-as-duality
+exists at every finite weight truncation (a perfect residue pairing $m \leftrightarrow N-m$)
+and \emph{dies in the completion} --- Poisson-shaped to its core. Second, the original
+``equivariant determinant layer'' hypothesis was vacuous as first worded
+(\S\ref{subsec:rigidity}); the forcing form replaced it.
+
+\subsection{The gluing, executed; the scheme forced}
+
+\begin{theorem}[the $p=2$ instance; \grade{Theorem at the $\pi_*$/filtered level, riding on
+Theorem \ref{thm:s1}; witness \texttt{prime\_\allowbreak int\_\allowbreak z\_\allowbreak u2\_\allowbreak glue}}]\label{thm:glue}
+Let $D$ be the weight-completed disk of Theorem \ref{thm:s1} and $D'$ its truncation tower's
+Matlis dual ($D'$ is \emph{forced}: the unique compatible system extending the finite-level
+residue pairings). The glued object $G = D \cup_{\mathrm{Lin}} D'$ exists with zero free
+choices; compactification restores negation as a duality; Theorem \ref{thm:rigidity}(A1)
+applies as a structure map; and $c = \tfrac12$ \emph{is forced} at $p = 2$. The shear of the
+F1 probe is identified as $[-1]$ of the multiplicative formal group, giving the unit
+$u = -1$ of (A1) a structural carrier.
+\end{theorem}
+
+The gluing is not 2-specific: executed at $p = 3, 5$ with $c = \tfrac12$ forced and the
+structural deltas being absences (no Euler tower)
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak gc\_\allowbreak oddp\_\allowbreak glue}}. The K1 gate resolved as
+\emph{not-at-one-place} with the mechanism exact: the glued object is scale-free
+($\zeta_H(0,a) + \zeta_H(0,1-a) = 0$; the glued trace is a lattice delta at $2^{-s} = 1$, the
+local face of the product formula), so the $1/(2\pi)$ is a cross-place effect --- which is
+what the product-formula gluing is for. K3 passed (the Barnes sector enters $G$, with
+$\zeta_2(0, s+1 \mid 1,2) = s(s-1)/4 - 1/24$ self-dual under $s \mapsto 1-s$ at exactly $G$'s
+forced recentering); K4 passed by a mechanism neither registered reading anticipated:
+$G$'s atoms are exactly the pole-support set of the quantization defect (\S\ref{sec:global}),
+each branch carries the pole, and the K2 duality \emph{cancels the pole pair exactly}
+(residue $0$ to $10^{-86}$) --- properness as pole-cancellation
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak gc\_\allowbreak k4\_\allowbreak integer\_\allowbreak layer}}.
+
+\subsection{The strict model}
+
+The PFD structure has a model with zero free choices inside the strict (non-derived) layer
+\grade{Theorem; witness \texttt{prime\_\allowbreak cc\_\allowbreak thh\_\allowbreak norm\_\allowbreak filtration}}:
+transporting Connes--Consani's total-mass filtration along the strict square's universal
+character (whose target is the monoid ring of $\Z\setminus 0$ --- the refutation-grade fact
+that the strict square's \emph{total} memory is the multiplicative monoid, the program's
+third independent arrival at the Euler-product carrier) makes the strict cyclic bar a
+norm-filtered cyclic object. The norm \emph{is} the MAX face:
+$N([p^i] - [p^j]) = 2\,p^{\max(i,j)}$, its Gram on the geometric family is certified
+Lorentzian with no low-weight anomaly, the $v_p$ of the same classes are the MIN faces, and
+$\log N = \sum_p v_p \log p$ exactly --- the product formula as an identity of invariants.
+Epstein keeps exactly the carrier-blind half (its Lorentzian \emph{pass} is the lesson:
+index shape alone discriminates nothing) and dies at $\mu$, $v_p$, and the product formula.
+
+\subsection{The spectrum exists; the duality half-proven}
+
+\begin{theorem}[DD.1--DD.3; \grade{Theorem mod Theorem \ref{thm:s1}; witness
+\texttt{prime\_\allowbreak int\_\allowbreak dd\_\allowbreak bc\_\allowbreak dual}}]\label{thm:dd}
+\textup{(DD.1)} No honest spectrum $T$ with $\pi_* T = G$ satisfies a plain Brown--Comenetz
+self-duality $D_{\F_2}(T) \simeq \Sigma T$: the full dual of $\F_2[[z]]$ is too big
+(Erd\H{o}s--Kaplansky).
+\textup{(DD.2)} The continuous Brown--Comenetz dual of the $z$-adic truncation tower matches
+the forced $D'$ exactly: the dual tower is isomorphic to the multiplication-by-$z$ tower via
+the level-$N$ residue self-dualities, with the divided-power multiplication falling out of
+the dual Hopf structure --- the ``divided-power dual'' is a theorem at the filtered level.
+\textup{(DD.3)} $\Xbar := \fib\bigl(X \times X' \to Y\bigr)$, with
+$X = \THR(\F_2)^{tC_2}$, $Y = (H\F_2)^{tC_2}$ the Lin spectrum, and
+$X' = \colim$ of the dual truncations, is an honest spectrum with $\pi_* \Xbar = G$ exactly
+(Mayer--Vietoris; zero free choices, $\Aut_Y(Y) = \F_2^\times = 1$).
+\end{theorem}
+
+\begin{conjecture}[DD.4, continuous self-duality; display as corrected]\label{conj:dd4}
+$\Xbar \simeq \Sigma\, I^{\mathrm{cont}}(\Xbar)$ in the appropriate filtered/pro-ind
+category, the equivalence exchanging the two branches and covering $s \mapsto -s$. (The
+complete/torsion home is Dwyer--Greenlees--Iyengar \cite{DGI06}; the nearest theorem-grade
+precedent is $C_2$-equivariant Anderson self-duality for real spectra
+\cite{GreenleesMeier17}.)
+\end{conjecture}
+
+\begin{theorem}[EE.1, the Lin-block clause of DD.4; \grade{Theorem; witness
+\texttt{prime\_\allowbreak int\_\allowbreak ee\_\allowbreak dd4\_\allowbreak lin}}]\label{thm:ee1}
+On the Lin block $Y = (H\F_2)^{tC_2}$ the duality datum exists, is induced by the
+$t^{-1}$-coefficient via Brown--Comenetz representability, and is the \emph{unique} nonzero
+$Y$-module map $Y \to \Sigma I(Y)$ --- a singleton, torsor-free as a theorem. It induces
+exactly the $m = 0$ component of the K2 pairing ($(j, 0) \mapsto (1-j, 0)$); the dualizing
+character is $(\mathrm{degree}, \mathrm{weight}) = (1, 0)$, the residue line.
+\end{theorem}
+
+The same worker's executed Borel computation refuted, fail-closed, the registered
+identification of the $t$-shadow (Lemma N1-b as posed): the relevant bigraded slot
+$\pi^{C_2}_{(-2,-1)}\THR(\F_2)$ vanishes, so any composite that forgets the parametrized
+circle kills the comparison class by naturality (Theorem EE.2); the identification question
+was re-posed on the geometric route with a torsor-invariant leading-term form. The duality's
+remaining open content is the weights-$\ge 1$ branch-exchange clause; the torsor of
+ambiguities is supported there and is one object across its three appearances.
+
+\subsection{The scale is expelled from torsion}
+
+\begin{proposition}[FF.1; \grade{Theorem, conditional on Conjecture \ref{conj:dd4}; witness
+\texttt{prime\_\allowbreak int\_\allowbreak ff\_\allowbreak kappa\_\allowbreak xbar}}]\label{prop:ff1}
+The Matlis/Brown--Comenetz exchange is the torsion shadow of the Pontryagin pair and forgets
+exactly the scale carrier: the continuum is BC-annihilated, $2\pi$-rigidity is a topological
+datum ($\Aut_{\mathrm{top}}(\R/\Z) = \{\pm 1\}$) with no torsion shadow. Hence no torsion-level
+duality, including DD.4, can determine the archimedean scale; the scale demands a
+rational/connected (Anderson-layer) carrier.
+\end{proposition}
+
+This drops DD.4's duty roster from triple (scheme, pole, scale) to double (scheme, pole) and
+sends the scale to the global assembly --- where the next section proves it cannot be read
+from the functional-equation layer at all.
+
+\subsection{State at the closure of the line}
+
+What the compactification line proved and realized: the local object $\Xbar$ exists
+($\pi_* = G$, modulo Theorem \ref{thm:s1}); KMS-$\tfrac12$ is forced at $p = 2, 3, 5$; the
+duality's Lin clause is a theorem with a singleton datum; the pole cancellation is
+place-uniform and globally load-bearing; and every loose constant was adjudicated into a
+scheme slot or a vacuum term (the $\tfrac14$-versus-$\tfrac12$ recentering is the
+$\Gamma_\R/\Gamma_\C$ boundary; the $-\tfrac1{24}$ is the $\zeta(-1)$ vacuum,
+center-value exact). What remained open, named: (A) the weights-$\ge 1$ clause of
+Conjecture \ref{conj:dd4}, carrying the scheme and pole duties --- homotopy-theoretic,
+sharply posed, one clause already a theorem; and (B) the archimedean unit, at that point
+\emph{triply} specified (read the scale; supply one continuum unit per place; carry the
+rational layer torsion provably lacks). The index attack of \S\ref{sec:index} was chartered
+on top of this state, and added three more independent specifications of (B).
+
+\section{The global assembly and the blindness theorems}\label{sec:global}
+
+\subsection{The equivariance no-go and FE-blindness}
+
+Assemble the global determinant from the banked inputs: the per-place full-ladder layers
+$p^{w/2}(1 - p^{-w})$, the degenerate archimedean sector at scale $\kappa$, and the
+functional-equation pairing. The gate observable is the constant
+$c_\infty(\kappa) = -\tfrac12\log\kappa$ multiplying the degenerate sector; the explicit
+formula requires $\kappa = \pi$.
+
+\begin{proposition}[BB.1, equivariance no-go; \grade{Theorem}]\label{prop:bb1}
+Witness: \texttt{prime\_\allowbreak int\_\allowbreak bb\_\allowbreak global\_\allowbreak assembly}.
+Every banked input of the global assembly is invariant under the rescaling
+$R_\lambda : \kappa \mapsto \lambda\kappa$: the full-ladder anomaly is $0$, the glued trace
+identity $\frac{1}{1-x} + \frac{1}{1-1/x} - 1 = 0$ holds in exact rational arithmetic, the
+product formula is integer-exact and contains only $\{\log p\}$, and the residue pairings are
+$\F_2$-exact. The observable transforms as
+\[ D_{\infty,\lambda\kappa}/D_{\infty,\kappa} = \lambda^{-(1-s)/2}. \]
+An observable that moves
+under a group fixing every input is not a function of the inputs: \emph{no constant is
+determined}.
+\end{proposition}
+
+\begin{corollary}[FE-blindness]\label{cor:feblind}
+The paired archimedean anomaly satisfies
+$\zeta_H(0, s/2) + \zeta_H(0, (1-s)/2) = \tfrac12$ exactly, so $\kappa$ enters the
+FE-paired factor only as an $s$-independent constant: \emph{the functional equation of the
+assembly holds for every $\kappa$}. A global duality that only reproduces the functional
+equation is structurally incapable of producing the archimedean constant; the constant lives
+one layer deeper, at the critical-line density (index/zero-counting) layer, where
+$-\tfrac12\log\kappa$ is visible.
+\end{corollary}
+
+Corollary \ref{cor:feblind} is the quantitative form of the program's standing vacuity guard
+(classical Poisson holds for every lattice --- Epstein passes --- so a functional-equation
+layer alone can never discriminate), and it is the caveat this paper applies to itself in
+\S\ref{sec:terminal}. The missing ingredient acquired its first name here: the
+\emph{archimedean Poisson exchange}, the comb $\leftrightarrow$ continuum duality whose
+classical shadow is the Gaussian's self-duality in Tate's thesis. The $2\pi$ is \emph{in}
+the object --- the Abel-regularized glued trace of each $G_p$ is exactly the comb
+$(2\pi/\log p)\sum_n \delta_{2\pi n/\log p}$, Poisson summation on $(\log p)\Z$
+\grade{Certified} --- but uncoupled.
+
+\subsection{The quantization-defect pole and its cancellation}
+
+A strict (integer-dimension) tolerance layer cannot hold the archimedean constant for an
+exact reason \grade{Theorem; witness \texttt{prime\_\allowbreak cc\_\allowbreak quantization\_\allowbreak defect}}: the
+quantization defect $\sum_k (\lceil \log_b k\rceil - \log_b k)\, k^{-s}$ has a simple pole at
+$s = 0$ with residue $-1/(2\log b)$, carried exactly by the atoms $\{b^j\}$ --- so
+integer-dimension quantization can never hold $\zeta'(0)$. The glued object's atoms are
+exactly this pole-support set, and the K2 duality cancels the pole pair branch against
+branch (\S\ref{sec:compact}): properness as pole-cancellation, the program's third
+independent mechanism at the same slot.
+
+\subsection{The cancellation globalizes; the zero mode}
+
+The duality-cancellation mechanism is place-blind and is the \emph{existence} mechanism for
+the global trace: uncancelled, the assembly is non-summable
+\grade{Certified; \texttt{prime\_\allowbreak int\_\allowbreak gg\_\allowbreak global\_\allowbreak cancellation}}. The surviving layer
+carries an exact zero-mode obstruction: \emph{one continuum unit per place} must be
+subtracted, after which the renormalized survivor is the $\sigma = 0$ shell of the explicit
+formula's prime side (matched to $7\cdot10^{-85}$). Duality-as-existence and the
+per-place continuum subtraction are one demand seen at two layers; the subtraction is the
+second independent specification of the missing unit.
+
+\subsection{Integer signature flow is blind to the zeros}\label{subsec:ii}
+
+The cheapest conceivable discreteness-sees-spectrum claim --- that integer signature jumps of
+the growing all-places norm-Gram family correlate with zero positions --- was tested under a
+freeze protocol and refuted, with the mechanism derived
+\grade{Census $+$ derived mechanism; witness \texttt{prime\_\allowbreak int\_\allowbreak ii\_\allowbreak signature\_\allowbreak flow}}:
+\begin{itemize}
+\item the global glued family keeps the Lorentzian shape ($n_+ = 1$ at every flow sample up
+to $N = 3321$, ball-certified at five instances);
+\item the dimension-normalized jump-loci statistics \emph{separate} the $\mathrm{li}(x)$
+density model from the crude $x/\log x$ model (separation $2.6$ counts) --- the flow sees the
+smooth density tower of the explicit formula;
+\item against the first twelve zeros the decision channel returns $z \le 1.7$ (threshold
+$4$): no hits; the loci accumulate at $\log 2$, a norm constant, not a zero position;
+\item the mechanism: each zero enters the counting function with bounded amplitude
+($\sim 0.02$ counts) against the $O(1)$ quantization floor of an integer observable, while
+the density tower grows; more range cannot help.
+\end{itemize}
+The design consequence is a theorem-shaped constraint: an integer observable that touches the
+zeros must have \emph{growing} zero-response --- a section count $h^0$, not a signature. This
+is the bridge to the index attack.
+
+\section{The index attack, executed to its boundary}\label{sec:index}
+
+The charter, fixed in advance: the conserved difficulty is \emph{effectivity over the
+compactified square} (integer Riemann--Roch at square level); the index shape, integrality,
+and the Frobenius family are held from the preceding sections; the Epstein lesson governs
+(signature alone is carrier-blind; the discriminating conjunction is index $+$ integrality
+$+$ effectivity $+$ monoid family); and the named failure mode is recorded before execution:
+\emph{if effectivity on the square requires an input equivalent to zero-repulsion, the
+conservation law wins.}
+
+\subsection{The Weil form factors through the index face}\label{subsec:hh}
+
+\begin{theorem}[HH.1; \grade{Theorem, exact rational arithmetic; witness
+\texttt{prime\_\allowbreak hh\_\allowbreak weil\_\allowbreak index\_\allowbreak factorization}}]\label{thm:hh1}
+In the coefficient space of the geometric family $\{[p^i]\}_{i = 0..n}$, the difference
+classes $d_k = [p^k] - [p^{k-1}]$ diagonalize the certified index face:
+$\langle d_k, d_l\rangle_{(w\log p)\MAX} = -(w \log p)\,\delta_{kl}$. The unit class $[1]$
+is null (lightlike); $\mathrm{span}\{d_k\}$ is the degree-zero hyperplane, maximal spacelike;
+its orthocomplement is timelike. In particular, at $w = 1$,
+\[
+\Lam(p^k) \;=\; \log p \;=\; -\,\langle d_k, d_k\rangle_M \quad \text{for every } k:
+\]
+the von Mangoldt atom weight is minus the self-intersection of the ladder step.
+\end{theorem}
+
+\begin{corollary}[the prime side factors exactly]\label{cor:primeside}
+With the sample map $T_p(g) = \sum_k \check g(k \log p)\, d_k$ and the dual vector
+$\Theta_p = 2\sum_k p^{-k/2} d_k$ (a pure KMS-$\tfrac12$ geometric series --- zeta is the
+\emph{untuned} case: no per-atom retuning, the entire weight system $\Lam$ absorbed by the
+Gram), the explicit-formula prime side factors exactly through the index face:
+\[
+P_R(g) = -\sum_p \bigl\langle T_p(g), \Theta_p\bigr\rangle_{(\log p)\MAX}
+\quad \text{(defect zero)}, \qquad
+Q(g) = W_\infty(g) + \sum_p \bigl\langle T_p(g), \Theta_p\bigr\rangle_M .
+\]
+The defect of
+the index-face factorization is the archimedean supply $W_\infty$, \emph{identically}.
+\end{corollary}
+
+The geometry this exposes, each clause exact or census-grade as marked: the image of $T$
+avoids the positive cone entirely (the Perron direction --- the thing the Castelnuovo
+mechanism is built around --- is idle in the Weil form); the image cone is the moment cone
+(sample sequences are PSD-Toeplitz, the Connes--Consani Toeplitz mechanism \cite{CC20} now
+carrying an $M$-geometry); on each support rung, RH-at-the-rung is a \emph{dual-cone
+membership}: $(1, \Theta)$ lies in the dual of the image cone
+$K_R = \{(W_\infty(g), T(g))\}$, with slack equal to the program's certified tracking
+quantity $\tau < 1$. The stronger ``positive archimedean budget'' reading \emph{fails},
+measured both ways \grade{Census}: the $W_\infty$ block goes indefinite from support
+$R = 2.30$ and falls while joint margins stay positive --- Weil positivity is a genuine
+\emph{joint cancellation}, so the archimedean unit must couple, not patch. The
+self-intersection identity also kills Davenport--Heilbronn twice over: negative atom weights
+violate $\Lam = -\langle d, d\rangle \ge 0$, and non-prime-power atoms have no tower address.
+And the $s = 1$ pole appears as geometry: $\sum_p \|\Theta_p\|^2_{-M}$ diverges like
+$-4\zeta'/\zeta$ near $1$ --- the KMS vector is not in the lattice completion.
+
+\subsection{Effectivity is a theorem}\label{subsec:kk}
+
+On the strict square (the free effective monoid $M = (\Z_{\ge 1}, \times)$ with
+$v_p$-coupled twist classes $D = (a; m)$, theta-regularized count
+$h^0(a; m) = \log(1 + 2\sum_A e^{-\pi w_D(A)^2})$):
+
+\begin{theorem}[KK.L1, density-RR;
+\grade{Theorem with explicit constants; witness \texttt{prime\_\allowbreak int\_\allowbreak kk\_\allowbreak l1\_\allowbreak density\_\allowbreak rr}}]
+\label{thm:kk}
+\textup{(A)} \emph{Effective cone $=$ finiteness locus}: $h^0(a; m) < \infty$ iff
+$m_p \le 0$ for all $p$; for any $m$ with some $m_p \ge 1$ the count diverges for every
+$a$. Genuinely square divisors have no internal RR dual; the unique duality-stable slice is
+$m = 0$, the curve shadow, where the van der Geer--Schoof RR \cite{vdGS} holds exactly.
+\textup{(B)} For $m \le 0$ with twist support of size $J$:
+$\chi_{\mathrm{tw}}(a; m) - a \to \log\rho(m) = \sum_p \log\rho_p$ with defect
+$O(a^{J-1}e^{-a})$ and all constants explicit --- the RR constant is \emph{additive over
+places}: ``one continuum unit per place'' is a theorem on the strict square's count layer.
+\textup{(C)} $|N_{S_m}(x) - \rho x| \le E_T(x)$ with $E_T$ explicit. Consequently
+$\chi_{\mathrm{ren}} > 0 \Rightarrow N(D) \ge 1$ exactly: effectivity fires at integer
+grade, and $\log N(D)$ is the growing integer observable demanded by
+\S\ref{subsec:ii}.
+\end{theorem}
+
+The proof is elementary in the strict sense: unique factorization at the twisted places,
+inclusion-exclusion, second-order Euler--Maclaurin, geometric series --- no PNT, no Mertens,
+no Poisson, no zeta input. The place where PNT-strength input would become necessary is
+located exactly (infinite twist support). Three companion statements sharpen the boundary:
+
+\begin{proposition}[KK.L1-R, the real wall]\label{prop:kkr}
+Extending $m$ to real values, $h^0(a; m) < \infty$ iff $m_p < 1$ for all $p$; the divergence
+locus is the closed set $\{\max_p m_p \ge 1\}$, whose boundary wall carries the blow-up of
+the RR constant ($\rho_p \to +\infty$ as $m_p \to 1^-$). The first integer class outside the
+effective cone in any positive direction sits exactly on the wall, and the in-family duals
+of the depth-one effective twists land exactly there.
+\end{proposition}
+
+\begin{proposition}[KK.U and KK.P]\label{prop:kku}
+\textup{(Universality)} For any admissible $C^2$ unit $f$ in place of the Gaussian, the RR
+asymptotic holds with constant $\log\rho(m) + \log(2\!\int_0^\infty\! f)$: the place
+structure (the cone, the wall, the per-place product) is independent of the unit; the
+Gaussian's only role in the density theorem is the normalization $2\!\int f = 1$.
+\textup{(Fine structure)} At one twisted place, the renormalized defect is $e^{-a}$ times an
+explicit $\log p^d$-periodic comb --- not a monotone decay; the comb was masked in earlier
+grid measurements by the $e^{-a}$ envelope and is recovered at coefficient level.
+\end{proposition}
+
+Both are consumed later: universality by the terminal specification (the Gaussian must be a
+\emph{fixed point}, not an import, \S\ref{sec:terminal}); the comb by the breakage analysis
+of \S\ref{subsec:nn}.
+
+\subsection{The square dual exists as a duality-renormalized count; the inequality is posed}
+\label{subsec:ll}
+
+\begin{theorem}[LL.1; \grade{Theorem-candidate as recorded: classical proof (telescoping,
+per-lattice Poisson, doubly-exponential block bounds) with every clause witnessed exactly;
+witness \texttt{prime\_\allowbreak int\_\allowbreak ll\_\allowbreak square\_\allowbreak dual}}]\label{thm:ll}
+Let $T$ be a finite set of primes, $D_T(a)$ the strict-square effective twist ($m_p = -1$,
+$p \in T$), $\rho_T = \prod_p p/(p+1)$. Then: \textup{(i)} the K2-paired resummation of the
+divergent dual converges absolutely --- each block's continuum zero modes cancel exactly, and
+the unpaired and point-grouped readings do not converge absolutely (\emph{pairing $=$
+existence}, the GG mechanism verbatim); \textup{(ii)} the dual object is the explicit signed
+measure $c_T(\xi) = \prod_p c_p(v_p(\xi))$; \textup{(iii)} exact inhomogeneous RR:
+$\Theta_T(t) = 1 + \tfrac{1}{t}\Theta_T^{\mathrm{dual}}(1/t)$, i.e.\
+$h^0(D) - h^0_{\mathrm{ren}}(K_{\mathrm{sq}} - D) = \deg D + \varepsilon(D)$ with
+$\varepsilon$ explicit, $0 < \varepsilon = O(e^{-\deg D})$; \textup{(iv)}
+$\Theta_T^{\mathrm{dual}}(u) \to \rho_T$ from below with $\log p^2$-periodic fine structure.
+\end{theorem}
+
+The index inequality is thereby \emph{posable} for the first time with every term defined:
+\[
+h^0(D) + h^0_{\mathrm{ren}}(K_{\mathrm{sq}} - D) \;\ge\; \chi_{\mathrm{sq}}(D),
+\qquad \chi_{\mathrm{sq}}(D) = \deg D + \varepsilon(D),
+\]
+identically equivalent to $h^0_{\mathrm{ren}}(K_{\mathrm{sq}} - D) \ge 0$. Its status, as
+measured: \emph{false} for the bare renormalized count (sign-indefinite at fine-structure
+order on the effective sector; doubly-exponentially false on the Schur-negative sector), and
+the entire failure is \emph{one atom}: the dual side of the functional equation lacks the
+unit class, whose Fourier dual is the continuum unit. Inserted by hand, the unit repairs the
+inequality on the strict family uniformly --- \emph{with zero slack at deep effectivity}: the
+unit must couple, not pad.
+
+\subsection{The graph-class test: wrong face, and the breakage map is the comb}
+\label{subsec:nn}
+
+The cheap fork before any multi-year commitment: test the hand-inserted unit on the
+Frobenius-graph classes, where the zeros' EF weight actually lives. Verdict, deterministic
+across runs, breakage arb-certified, freeze protocol verbatim
+\grade{Certified/Census; witness \texttt{prime\_\allowbreak nn\_\allowbreak graph\_\allowbreak class\_\allowbreak index}}:
+\begin{itemize}
+\item the $\Lam(p)$ prime-atom classes ($k = 1$ steps) \emph{fail always}:
+$m_+ = -e^{-a}/2\,(1 + o(1))$, certified negative at all tested scales, place-independent,
+smooth in $a$ --- the FE-stripped dual carries an exact continuum hole $-1/u$, and an
+inserted \emph{atom} cannot cancel a \emph{continuum} deficit;
+\item the $(p; 2)$ ladder classes fail recurrently for every $p \ge 5$, onset exactly at
+window entry $a = 2\log p$, with negative-phase fraction per scale period
+\begin{center}
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+$p$ & $2$ & $3$ & $5$ & $7$ & $11$ & $13$ & $17$ & ($d{=}1$ limit) \\
+\midrule
+neg.\ fraction & $0.00$ & $0.00$ & $0.25$ & $0.30$ & $0.35$ & $0.36$ & $0.38$ & $1.00$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+--- the strict-family success of \S\ref{subsec:ll} was a \emph{small-place artifact}
+($p \in \{2, 3\}$ are the safe cells; the first breaking cell is $(5; 2)$); the sampled
+interior of the \S\ref{subsec:hh} cone fails $5/5$;
+\item the margin-vs-$\tau$ identification \emph{fails} (Spearman $-0.499$): the
+strict-family inequality is not the dual-cone slack in disguise;
+\item the breakage is $\log p^2$-periodic and comb-determined; against the frozen zero data,
+$z < 3$ everywhere: \emph{no zero correlation}.
+\end{itemize}
+Positive yield en route: the functional equation of Theorem \ref{thm:ll} extends to the whole
+integer graph dictionary (mixed depths, $4.9\cdot10^{-88}$). The gap specification sharpens
+to its final form: the coupled unit is not one object inserted once; it must be
+\emph{class- and scale-coupled} --- one continuum unit per place, paid at each window-entry
+phase, largest exactly on the classes carrying $\Lam(p)$ --- which is, of course, exactly
+what the explicit formula says the archimedean term is.
+
+\subsection{The face hunt: one survivor}\label{subsec:hunt}
+
+Since the lattice dictionary is not unique, the kill was tested for face-dependence. The
+scoreboard \grade{Certified per row; witnesses \texttt{prime\_\allowbreak rr\_\allowbreak face\_\allowbreak cycle},
+\texttt{prime\_\allowbreak qq\_\allowbreak native\_\allowbreak face\_\allowbreak index}, \texttt{prime\_\allowbreak pp\_\allowbreak ku\_\allowbreak face\_\allowbreak index}}:
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\textwidth} p{0.12\textwidth} >{\raggedright\arraybackslash}p{0.56\textwidth}}
+\toprule
+\textbf{face} & \textbf{verdict} & \textbf{decisive fact} \\
+\midrule
+F1: GG re-embedding & dead & repairs $d = 1$ exactly; comb-invisible on the census ---
+zero signs moved \\[2pt]
+F2: theta aggregate & dead & per-place linear program exactly infeasible; the breaking slot
+is an exposed PSD-Toeplitz boundary direction \\[2pt]
+F3: $h^1$ loophole & dead & deficits strictly inside $(0, \log 2)$, place-independent,
+non-additive --- not counts \\[2pt]
+F5: native pairing & dead & the hole is the mirror branch's own pole at $s = 0$; nothing was
+ever stripped; yield: the gap object $\Delta_p$ with period-mean $\times \log p$ equal to
+$\gamma + \log\pi$ ($1.5\cdot10^{-36}$) \\[2pt]
+F6--F8 & parked/dead & by citation at enumeration stage \\[2pt]
+F4: the $\ku$ cell comb & \textbf{survives} & excludes residues $\{0, -1\}$ mod $q$; the
+excluded $0$-coset's Poisson zero-mode is \emph{one continuum unit} --- the FE-homogenizer
+supplied internally; killer cells sign-flip as hand-predicted ($+6.47\cdot10^{-3}$ where the
+graph-class test certified $-2.21\cdot10^{-3}$); 527-point census, zero negatives \\
+\bottomrule
+\end{tabular}
+\end{center} The
+cross-cutting quantification: the repaired \emph{global} aggregate holds while every
+\emph{per-place} measure is exactly infeasible --- the coupled unit \emph{threads} places,
+and the $\ku$ face is exactly the face whose cells do that threading internally (the
+fracture square's internalized sum over places, \S\ref{subsec:ku}). The hunt's negatives and
+its survivor explain each other.
+
+\subsection{The survivor becomes theorems: SS.1--SS.5}\label{subsec:ss}
+
+The stress round turned the surviving census into a closed theorem package, with no named
+gap and no zeros consumed anywhere \grade{Theorem; witness
+\texttt{prime\_\allowbreak ss\_\allowbreak ku\_\allowbreak inequality\_\allowbreak proof}, all proof-internal constants gated}. Write
+$S_q = \{w \in \Z : w \bmod q \notin \{0, q-1\}\}$,
+$\Theta_q(t) = \sum_{w \in S_q} e^{-\pi w^2 t^2}$, $\rho_q = (q-2)/q$ (the comb
+density),
+\[
+D_q(u) \;=\; \theta(u) - \frac1q \sum_{k \in \Z}
+\Bigl(1 + \cos\frac{2\pi k}{q}\Bigr) e^{-\pi k^2 u^2/q^2},
+\qquad \theta(u) = \sum_{w \in \Z} e^{-\pi w^2 u^2},
+\]
+$T(x) = \sum_{m \ge 1} e^{-\pi m^2 x^2}$, $G(x) = 4xT(x)$, and let
+\[
+m_+(q, a) \;=\; \log\bigl(1 + e^a D\bigr) + \log(1 + D) - a -
+\log\bigl(\rho_q (1 + \rho_q)\bigr), \qquad D = D_q(e^a),
+\]
+be the cell margin (at the calibration inherited unchanged from the graph-class test, for
+comparability), with admissibility $a \ge \log(q+1)$ ($u = e^a \ge q+1$).
+
+\begin{theorem}[SS.1, the homogeneous functional equation]\label{thm:ss1}
+For every integer $q \ge 2$ and $t > 0$: $\Theta_q(t) = \tfrac{1}{t} D_q(1/t)$ with
+\emph{no} inhomogeneous term; every correction is Gaussian; the hole coefficient is
+$c_{\mathrm{hole}}(q) = 0$ exactly. (Contrast the half-line comb, whose Poisson carries the
+boundary term $-\tfrac12$: the $d = 1$ hole of \S\ref{subsec:nn} carries exactly minus one
+continuum unit.) The cell comb equals the two-coset comb iff $q$ is a prime power
+(Lemma A, an iff with a CRT counterexample at every composite non-prime-power modulus ---
+the unique point where the prime-power hypothesis is consumed).
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+For the comb identification (Lemma A): since $\gcd(w, w+1) = 1$, a prime $p$ divides at most
+one of $w, w+1$, so for $q = p^j$, $q \mid w(w+1)$ iff $q \mid w$ or $q \mid w+1$ --- the
+cell comb is the two-coset comb. Conversely, for $q = q_1 q_2$ with coprime
+$q_1, q_2 > 1$, CRT produces $w \equiv 0 \ (q_1)$, $w \equiv -1\ (q_2)$ with
+$q \mid w(w+1)$ but $w \not\equiv 0, -1 \ (q)$. For the functional equation: each excluded
+coset is a \emph{full} lattice coset, so per-coset Poisson summation (proved in the record
+from scratch by differentiation under the integral and periodization --- no contour, no
+inherited FE) gives $\Theta_q(t) = \tfrac1t D_q(1/t)$ with no leftover term of any other
+homogeneity. The contrast is exact: the half-line comb $\{n \ge 1\}$ is \emph{not} a full
+coset, and its Poisson carries the boundary term $-\tfrac12$ --- the stripped unit of the
+graph-class kill. The zero-mode ledger inside the proof: an \emph{atom} subtraction dualizes
+to a continuum hole; a full \emph{coset} subtraction dualizes to a density reduction. That
+is the mechanism of the face's survival, made exact.
+\end{proof}
+
+\begin{theorem}[SS.2--SS.3, the all-$(q,a)$ inequality and the deep law]\label{thm:ss23}
+For every prime power $q \ge 3$ and every admissible $a$:
+$m_+(q, a) \ge \log\bigl(1 + e^{-a}/(\rho_q(1+\rho_q))\bigr) \ge \tfrac49 e^{-a} > 0$, with
+entry floor $m_+(q, \log(q+1)) \ge 1/(3q)$ and
+$q\, m_+(q, \mathrm{entry}) \to 1 - 6T(1) = 0.740696\ldots$; and
+$\bigl|e^a \rho_q\, m_+(q, a) - 1\bigr| \le 1.72\,G(e^a/q) + 0.842\, e^{-a}/\rho_q$ ---
+one monotone Gaussian-tail bound covers entry to deep; there is no hard middle range.
+\end{theorem}
+
+The measured census sits exactly on the proved laws \grade{Certified; same witness}: the
+entry products $q\,m_+(q, \mathrm{entry})$ descend monotonically to the derived limit, and
+the deep normalized margins approach the zero-slack value $1$ from below, ordered in
+$\rho_q$ exactly as the second-order term predicts:
+\begin{center}
+\small
+\begin{tabular}{lccccc}
+\toprule
+$q$ & $3$ & $9$ & $25$ & $121$ & $169$ \\
+\midrule
+$q\,m_+(q,\mathrm{entry})$ & $1.6696$ & $0.9638$ & $0.8175$ & $0.7561$ & $0.7517$ \\
+\bottomrule
+\end{tabular}
+\qquad
+\begin{tabular}{lccccc}
+\toprule
+$q$ & $3$ & $4$ & $5$ & $9$ & $25$ \\
+\midrule
+$e^{8}\rho_q\, m_+(q, 8)$ & $0.99950$ & $0.99966$ & $0.99972$ & $0.99978$ & $0.99982$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+(limit $1 - \tfrac32 G(1) = 0.740696\ldots$ on the left; the zero-slack limit $1$ on the
+right).
+
+\begin{theorem}[SS.4, evasion not surplus]\label{thm:ss4}
+$0 < m_+(q, a) \le 1.298\, e^{-a}/\rho_q$ for all admissible $(q, a)$; the infimum over the
+admissible family is $0$; and if $m_+(q, a) \ge (1+\beta)e^{-a}/\rho_q$ persistently for some
+$\beta > 0$, then the hole coefficient satisfies $c_{\mathrm{hole}} \ge \beta' > 0$ ---
+forbidden by Theorem \ref{thm:ss1} as an identity. \emph{A surplus is equivalent to a
+positive hole coefficient. The face evades the kill; it cannot manufacture slack.} The only
+surplus route is aggregation across cells, whose assembled margin is $\Theta(1)$ iff
+$\sum_{q \le x} \log p(q) \sim x$ --- Chebyshev/PNT-grade, external, flagged with no decision
+weight.
+\end{theorem}
+
+(SS.5 is the exact repayment-law identity with $O(q^{-2})$ relative error, derived from the
+same master identity.) The truncated (``honest'', lattice-completion-free) face was then
+settled by the \emph{zero-charge ledger} \grade{Certified;
+\texttt{prime\_\allowbreak tt\_\allowbreak truncated\_\allowbreak face\_\allowbreak chi}}: the entry band's continuum charge is
+$M_0(q) = (2q - 4) - 2q\rho_q = 0$ exactly (Fractions) --- zero continuum units, against the
+$d = 1$ hole's exactly $-1$ --- so the band is chi bookkeeping, absorbable by a derived
+zero-parameter correction $\chi^{\mathrm{corr}} = a + \log(\rho_q E(1 + \rho_q E))$,
+$E = \erfc(\sqrt{\pi}\, q e^{-a})$; on the corrected chi the honest face passes the full
+527-point census with all signs arb-resolved and zero negatives. Bookkeeping can absorb a
+zero-charge defect and cannot manufacture a unit: the survivor and the kills are two sides of
+one ledger.
+
+\subsection{The depth wall and the second evaluation}\label{subsec:uu}
+
+The remaining stress item was the actual index content: the two-dimensional
+weight-$\times$-scale Castelnuovo posing on the $\ku$ face. Verdict
+\grade{Certified, full-value, fail-closed; witness \texttt{prime\_\allowbreak uu\_\allowbreak ku\_\allowbreak castelnuovo\_\allowbreak 2d}}:
+the 2D form exists, is well-posed, and is Lorentzian everywhere admissible --- and it is
+\emph{supply-grade}: it carries no index-grade spectral content, for an exactly characterized
+reason. Every entry of every posing is an explicit function of
+$(\Lam_p, \log q, i, m_+(q,a))$, all congruence/entry-determined, with no zero contact
+($z < 3$ throughout, frozen comparisons). The quantitative mechanism realizes the registered
+risk: the deep law of Theorem \ref{thm:ss23} makes the weight diagonal degenerate onto the
+light cone, and the discriminant inequality then demands Frobenius depth
+$\rho_q \Lam_p^2\, e^a$ against a window that supplies $a/\log q$: \emph{the quadratic step
+fails by $e^a$ versus $a$} --- an exponential wall, not a constant. No re-posing that keeps
+the margin as weight budget and window admissibility of the scale family can cross it.
+
+The characterization that closes the attack: the entry $B' = \Lam_p - m_+$ occupies
+precisely Weil's fixed-point slot ($\Delta \cdot \Gamma_{F^i} = \#\mathrm{Fix}(F^i)$) ---
+but Weil extracts RH because $\#\mathrm{Fix}$ has a \emph{second, independent, spectral
+evaluation} (Lefschetz), and every $\ku$-face entry has exactly one, the supply one.
+Spectral grade would require an independent trace/fixed-point evaluation of the
+weight-class-against-Frobenius pairing --- precisely the missing timelike unit at infinity.
+The 2D posing does not create that object; it relocates its absence into the cross term of a
+quadratic form. No face evades the unit; the face hunt cannot produce the second evaluation;
+only a construction can.
+
+\section{The terminal statement}\label{sec:terminal}
+
+\subsection{One object, demanded six times}
+
+Every route in Sections \ref{sec:compact}--\ref{sec:index} terminates at the same missing
+object, each time from an independent direction and with an independent clause of its
+specification:
+
+\begin{center}
+\small
+\begin{tabular}{p{0.12\textwidth} p{0.80\textwidth}}
+\toprule
+\textbf{source} & \textbf{demand} \\
+\midrule
+BB (\ref{prop:bb1}) & the comb $\leftrightarrow$ continuum coupling that reads the scale
+$\kappa = \pi$ (the archimedean Poisson exchange) \\
+GG & one continuum unit per place, subtracted, as the existence condition of the global
+trace \\
+FF (\ref{prop:ff1}) & a rational/connected (Anderson-layer) carrier, which torsion provably
+lacks \\
+HH (\ref{thm:hh1}) & the signed archimedean coordinate that \emph{jointly cancels} --- the
+timelike unit the certified lattice geometry lacks \\
+LL (\ref{thm:ll}) & the element making the square dual's functional equation homogeneous:
+the unit class whose Fourier dual is the continuum unit \\
+UU (\ref{subsec:uu}) & a second, independent evaluation of the weight-against-Frobenius
+pairing --- Weil's Lefschetz slot \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The graph-class test (\S\ref{subsec:nn}) sharpened the binding: the unit must be class- and
+scale-coupled --- one continuum unit per place, paid at each window-entry phase, at the
+$e^{-a}/2$ scale, in phase with the combs, largest on the classes carrying $\Lam(p)$. The
+zero-slack finding of \S\ref{subsec:ll} and the evasion theorem \ref{thm:ss4} together say it
+cannot be inserted, only derived: any padding either fails at finite scale (atom against
+continuum) or is forbidden as an identity (positive hole coefficient).
+
+\subsection{The computed shadow}
+
+The object has a computed numerical shadow \grade{Certified;
+\texttt{prime\_\allowbreak qq\_\allowbreak native\_\allowbreak face\_\allowbreak index}}. On the native face, the single-place gap
+$\Delta_p(a) := \sum_{m \in \Z} d(e^{-a}p^m)$ (the Gaussian-versus-partition deficit)
+converges, is exactly $\log p$-periodic in $a$ with maxima at window-entry phases, and its
+period-mean is $C^*/\log p$ with
+\[
+C^* \;=\; \int_\R d(e^u)\, du \;=\; \gamma + \log\pi \;=\; 1.72200\ldots
+\]
+(by the classical Frullani/gamma integral; certified to $1.5\cdot10^{-36}$): the native
+smoothed gap per place is \emph{the explicit formula's archimedean constant per $\log p$ of
+scale}, emerging from the deficit with no explicit-formula input. The renormalized
+$\chi_{\mathrm{ren}}(C; a) = |C| - \Delta_p(a)$ repairs all single-place classes including
+the killers by termwise subset monotonicity --- recorded as a \grade{Reading}: it is the
+measured shape of the gap, not a forced identity.
+
+\subsection{The specification}
+
+The construction home, scoped against the literature, is a ``liquid'' (condensed/analytic
+\cite{ClausenScholze}) category $\mathsf{L}$ with six demanded clauses, abbreviated:
+\textbf{LS1} the program's banked carriers embed conservatively (the integral THH tower with
+its Anderson fiber sequence, the mod-$p$ towers including $\Xbar$, the strict count layer);
+\textbf{LS2} internal $\R$ and $T = \R/\Z$ with $\Aut_{\mathsf L}(T) = \{\pm 1\}$
+($2\pi$-rigidity carried inside $\mathsf{L}$), completing the arithmetic fracture square's
+missing corner; \textbf{LS3} an internal Fourier self-duality with $F \circ F = (-1)^*$,
+normalization torsor pinned to $\{\pm 1\}$ by LS2, and \emph{the Gaussian as fixed unit} ---
+$e^{-\pi x^2}$, and with it $\kappa = \pi$, coming out as fixed-point datum, never inserted;
+\textbf{LS4} a trace functional inducing, per place, the comb $\leftrightarrow$ continuum
+exchange with GG's one-unit-per-place subtraction as its regularization; \textbf{LS5}
+compatibility: the trace recovers the van der Geer--Schoof count on the curve shadow and a
+finite renormalized dual exactly where the strict family certifiably diverges (making
+$K_{\mathrm{sq}}$ structural); \textbf{LS6} zero free gluing choices, the Epstein/DH carrier
+guards at the liquid level, and the F-a guard (no zeta continuation, no zero-side input,
+explicit formula as comparison only). The scoping facts \grade{from the program record}:
+liquid $\R$ and liquid Serre duality/HRR are in print; there are \emph{zero}
+Fourier/Poisson statements in the surveyed liquid corpus (verified absence); and
+dualizable-category traces are scale-blind by theorem (Efimov \cite{Efimov24}) --- Proposition
+\ref{prop:ff1} one level up, citable: the coupling cannot come from trace formalism alone.
+To LS1--LS6 the depth wall (\S\ref{subsec:uu}) adds the terminal demand: the coupled unit
+must supply an \emph{independent second evaluation} of the weight-against-Frobenius pairing,
+of Lefschetz type, growing with depth.
+
+\subsection{What a construction would and would not give}
+
+If an object satisfying LS1--LS6 plus the second-evaluation demand exists, then by the chain
+of Sections \ref{sec:index}: $h^0_{\mathrm{ren}} \ge 0$ uniformly on the posed family, the
+index inequality holds there, and the program's conserved obstruction is discharged
+\emph{at the layer where it now sits}. We state the guard with the same prominence as the
+target. By Corollary \ref{cor:feblind} (FE-blindness), achieving the symmetry layer --- all
+local dualities, the global functional equation, even the full self-duality of $\Xbar$ ---
+is structurally insufficient for RH-grade content: that layer is provably blind to the
+constant the explicit formula needs, and Epstein-shaped objects pass every test in it. The
+RH-grade content enters only if the index/density layer does work: the growing observable
+$\log N(D)$ against the Frobenius family, with the second evaluation closing the Lefschetz
+loop. And the charter's failure mode remains live: it is an open possibility that the
+coupled unit's existence, in the form demanded, is itself equivalent to zero-repulsion ---
+in which case the conservation law wins and the construction project inherits RH rather than
+resolving it. The zero-slack findings are exactly the signature such an equivalence would
+leave. Nothing in this paper decides that question; the specification is now precise enough
+that it can be decided.
+
+\appendix
+
+\section{The no-go table}\label{app:nogo}
+
+Each row is a route that would, if valid, simplify or replace the missing object; each is
+closed by a theorem, a certificate, or a citation-grade structural fact, with the witness
+script (in \texttt{scripts/\allowbreak numerics/\allowbreak witness/}) named where one
+exists.
+
+\begin{center}
+\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.44\textwidth} >{\raggedright\arraybackslash}p{0.50\textwidth}}
+\toprule
+\textbf{route} & \textbf{kill (grade; witness)} \\
+\midrule
+Counts $+$ positivity $+$ self-duality $+$ temperedness force the critical line &
+Epstein boundary: all properties hold, zeros off-line (classical; \S\ref{sec:grammar}) \\[2pt]
+Integer signature on curve-level (Hall/module) data &
+Euler form vanishes identically, $\#\Ext^1 = \#\Hom$ (theorem); Hall forms positive definite
+(\texttt{count\_\allowbreak hall\_\allowbreak signature}) \\[2pt]
+Atoms at non-prime-powers, or deformed weights (DH-type supply) &
+no carrier: residue fields of size $n$ exist iff $n$ prime (theorem;
+\texttt{prime\_\allowbreak int\_\allowbreak thh\_\allowbreak supply}) \\[2pt]
+KMS-$\tfrac12$ as a branch/argument convention &
+all windowed schemes have integer vacuum slopes; naturality demands $\tfrac12$ (Theorem
+\ref{thm:rigidity}; \texttt{prime\_\allowbreak int\_\allowbreak hr3\_\allowbreak scheme\_\allowbreak rigidity}) \\[2pt]
+Conjugation/Schwarz symmetry as scheme selector &
+selects nothing: every real-$c$ scheme passes (theorem; same witness) \\[2pt]
+TP of the square as compactification &
+BMS triple: $p$-complete, $\varphi$-semilinear, empty archimedean fracture corner
+(citation \cite{BMS18}) \\[2pt]
+$C_2$-Tate as the archimedean fold carrier &
+$(H\F_p)^{tC_2} = 0$ at odd $p$; the fold lives on fixed points (citation \cite{QS21,DMPR21};
+\texttt{prime\_\allowbreak int\_\allowbreak thr\_\allowbreak fold}) \\[2pt]
+THR's geometric $C_2$ supplies negation directly &
+the residual Weyl action shears, never negates (certified;
+\texttt{prime\_\allowbreak int\_\allowbreak u\_\allowbreak f1\_\allowbreak probes}) \\[2pt]
+Bare Adams family $\{\psi^1..\psi^n\}$ carries the index &
+not Lorentzian at any $n \ge 4$ (certified;
+\texttt{prime\_\allowbreak int\_\allowbreak adams\_\allowbreak family\_\allowbreak signature}) \\[2pt]
+Any invertible (group-like) family carries Castelnuovo growth &
+all graphs bidegree $(1,1)$; groups carry no degrees (theorem in the shadow;
+\S\ref{subsec:maxgram}) \\[2pt]
+Local Euler supply inside the twisted Adams family &
+cooperation lattice monomial through $w \le p^2 - 2$ (citation \cite{Kane81,BakerRichter05}) \\[2pt]
+Strict (non-derived) grading bridge to the B\"okstedt tower &
+universal invariant is the monoid ring $\Z[\Z\setminus 0]$, free; the slot is empty
+(Theorem V.1 of the record; \texttt{prime\_\allowbreak cc\_\allowbreak grading\_\allowbreak invariant\_\allowbreak kernel}) \\[2pt]
+Integer-dimension (tolerance) layer holds $\zeta'(0)$ &
+quantization defect has a pole at $s = 0$, residue $-1/(2\log b)$ (theorem;
+\texttt{prime\_\allowbreak cc\_\allowbreak quantization\_\allowbreak defect}) \\[2pt]
+Plain Brown--Comenetz self-duality of $\Xbar$ &
+unsatisfiable, Erd\H{o}s--Kaplansky (Theorem \ref{thm:dd};
+\texttt{prime\_\allowbreak int\_\allowbreak dd\_\allowbreak bc\_\allowbreak dual}) \\[2pt]
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.44\textwidth} >{\raggedright\arraybackslash}p{0.50\textwidth}}
+\toprule
+\textbf{route} & \textbf{kill (grade; witness)} \\
+\midrule
+Borel-route identification of the $t$-shadow (N1-b) &
+the required bigraded slot vanishes; naturality kills the class (Theorem EE.2;
+\texttt{prime\_\allowbreak int\_\allowbreak ee\_\allowbreak dd4\_\allowbreak lin}) \\[2pt]
+Torsion-level duality determines the scale &
+the continuum is BC-annihilated; $2\pi$-rigidity has no torsion shadow (Prop.\
+\ref{prop:ff1}; \texttt{prime\_\allowbreak int\_\allowbreak ff\_\allowbreak kappa\_\allowbreak xbar}) \\[2pt]
+FE-level properness produces the archimedean constant &
+FE layer exactly $\kappa$-blind (Prop.\ \ref{prop:bb1};
+\texttt{prime\_\allowbreak int\_\allowbreak bb\_\allowbreak global\_\allowbreak assembly}) \\[2pt]
+Integer signature flow detects zeros &
+bounded zero amplitude vs $O(1)$ quantization floor; density tower seen, zeros not
+(census $+$ mechanism; \texttt{prime\_\allowbreak int\_\allowbreak ii\_\allowbreak signature\_\allowbreak flow}) \\[2pt]
+Hand-inserted unit repairs the index inequality on graph classes &
+$\Lam(p)$ classes fail always; $(p;2)$, $p \ge 5$ recurrently; comb-determined breakage
+(certified; \texttt{prime\_\allowbreak nn\_\allowbreak graph\_\allowbreak class\_\allowbreak index}) \\[2pt]
+Alternative faces: GG re-embed / theta aggregate / $h^1$ loophole / native pairing &
+all dead at certificate grade (one repairs $d{=}1$ but moves no sign; one exactly
+LP-infeasible; one non-additive; one relocates the hole to its own pole)
+(\texttt{prime\_\allowbreak rr\_\allowbreak face\_\allowbreak cycle}, \texttt{prime\_\allowbreak qq\_\allowbreak native\_\allowbreak face\_\allowbreak index}) \\[2pt]
+Per-cell surplus on the surviving $\ku$ face &
+surplus $\equiv$ positive hole coefficient, forbidden by the homogeneous FE as an identity
+(Theorem \ref{thm:ss4}; \texttt{prime\_\allowbreak ss\_\allowbreak ku\_\allowbreak inequality\_\allowbreak proof}) \\[2pt]
+Truncation band reopens the hole &
+band charge exactly $0$ continuum units: bookkeeping, not a unit (certified;
+\texttt{prime\_\allowbreak tt\_\allowbreak truncated\_\allowbreak face\_\allowbreak chi}) \\[2pt]
+2D Castelnuovo posing on the $\ku$ face yields spectral content &
+depth wall: $\rho_q\Lam_p^2 e^{a}$ demanded vs $a/\log q$ supplied; single-evaluation
+characterization (certified; \texttt{prime\_\allowbreak uu\_\allowbreak ku\_\allowbreak castelnuovo\_\allowbreak 2d}) \\[2pt]
+DH / Epstein survive any of the above &
+DH dies at the carrier (no ring; negative weights violate
+$\Lam = -\langle d,d\rangle \ge 0$); Epstein keeps exactly the carrier-blind half and dies at
+$\mu$ / $v_p$ / product formula / effectivity (multiple witnesses) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Reproducibility}\label{app:repro}
+
+\subsection*{Witnesses}
+Every certified or census-graded claim in this paper is backed by a witness script in
+\texttt{scripts/numerics/witness/} of the program repository, run as
+\begin{center}
+\texttt{python3 -m scripts.numerics.witness.<name>}
+\end{center}
+Each witness is \emph{fail-closed}: its gates are pre-registered predicates (written before
+the first run, a discipline recorded per worker in the program documents), it exits nonzero
+on any gate failure, and proof-internal constants are gated at the values derived in the
+proofs, not fitted to the outputs. Exact claims use integer/\texttt{Fraction}/$\F_2$
+arithmetic; analytic claims use FLINT/Arb ball arithmetic (typical working precision
+300--600 bits), and an inequality is reported certified only when the ball resolves its
+sign. The load-bearing witnesses, by section:
+\begin{itemize}\raggedright
+\item \S\ref{sec:grammar}: \texttt{count\_\allowbreak fingerprint}, \texttt{count\_\allowbreak hall\_\allowbreak signature};
+\item \S\ref{sec:square}: \texttt{prime\_\allowbreak int\_\allowbreak derived\_\allowbreak square},
+\texttt{prime\_\allowbreak int\_\allowbreak thh\_\allowbreak supply}, \texttt{prime\_\allowbreak int\_\allowbreak ku\_\allowbreak ladder},
+\texttt{prime\_\allowbreak int\_\allowbreak genus\_\allowbreak audit};
+\item \S\ref{sec:ladders}: \texttt{prime\_\allowbreak int\_\allowbreak tate\_\allowbreak ladder},
+\texttt{prime\_\allowbreak int\_\allowbreak deninger\_\allowbreak convention}, \texttt{prime\_\allowbreak int\_\allowbreak thr\_\allowbreak fold},
+\texttt{prime\_\allowbreak int\_\allowbreak hr3\_\allowbreak scheme\_\allowbreak rigidity}, \texttt{prime\_\allowbreak int\_\allowbreak thr\_\allowbreak p2\_\allowbreak anomaly},
+\texttt{prime\_\allowbreak int\_\allowbreak adams\_\allowbreak family\_\allowbreak signature}, \texttt{prime\_\allowbreak monoid\_\allowbreak frobenius\_\allowbreak shadow};
+\item \S\ref{sec:compact}: \texttt{prime\_\allowbreak int\_\allowbreak u\_\allowbreak f1\_\allowbreak probes},
+\texttt{prime\_\allowbreak int\_\allowbreak z\_\allowbreak u2\_\allowbreak glue}, \texttt{prime\_\allowbreak int\_\allowbreak gc\_\allowbreak oddp\_\allowbreak glue},
+\texttt{prime\_\allowbreak int\_\allowbreak gc\_\allowbreak k3\_\allowbreak barnes\_\allowbreak rank}, \texttt{prime\_\allowbreak int\_\allowbreak gc\_\allowbreak k4\_\allowbreak integer\_\allowbreak layer},
+\texttt{prime\_\allowbreak int\_\allowbreak dd\_\allowbreak bc\_\allowbreak dual}, \texttt{prime\_\allowbreak int\_\allowbreak ee\_\allowbreak dd4\_\allowbreak lin},
+\texttt{prime\_\allowbreak int\_\allowbreak ff\_\allowbreak kappa\_\allowbreak xbar};
+\item \S\ref{sec:global}: \texttt{prime\_\allowbreak int\_\allowbreak bb\_\allowbreak global\_\allowbreak assembly},
+\texttt{prime\_\allowbreak cc\_\allowbreak quantization\_\allowbreak defect}, \texttt{prime\_\allowbreak int\_\allowbreak gg\_\allowbreak global\_\allowbreak cancellation},
+\texttt{prime\_\allowbreak int\_\allowbreak ii\_\allowbreak signature\_\allowbreak flow};
+\item \S\ref{sec:index}: \texttt{prime\_\allowbreak hh\_\allowbreak weil\_\allowbreak index\_\allowbreak factorization},
+\texttt{prime\_\allowbreak int\_\allowbreak kk\_\allowbreak l1\_\allowbreak density\_\allowbreak rr}, \texttt{prime\_\allowbreak int\_\allowbreak ll\_\allowbreak square\_\allowbreak dual},
+\texttt{prime\_\allowbreak nn\_\allowbreak graph\_\allowbreak class\_\allowbreak index}, \texttt{prime\_\allowbreak rr\_\allowbreak face\_\allowbreak cycle},
+\texttt{prime\_\allowbreak qq\_\allowbreak native\_\allowbreak face\_\allowbreak index}, \texttt{prime\_\allowbreak pp\_\allowbreak ku\_\allowbreak face\_\allowbreak index},
+\texttt{prime\_\allowbreak ss\_\allowbreak ku\_\allowbreak inequality\_\allowbreak proof}, \texttt{prime\_\allowbreak tt\_\allowbreak truncated\_\allowbreak face\_\allowbreak chi},
+\texttt{prime\_\allowbreak uu\_\allowbreak ku\_\allowbreak castelnuovo\_\allowbreak 2d}.
+\end{itemize}
+Approximately seventy witnesses were produced by the program in total; every one was rerun
+by the lead at the landing of its cycle.
+
+\subsection*{The freeze protocol}
+Any computation that compares an output against nontrivial zeros of $\zeta$ (used in this
+program only as post-hoc comparison data, never as construction input) runs under the freeze
+discipline: all construction inputs and derived loci are computed and hashed
+(\textsc{sha-256}) \emph{before} the zero data is loaded; the comparison statistic ($z$-score
+against shuffled/jittered controls) is computed after; the hash is reported and must be
+byte-identical across reruns. The signature-flow, graph-class, and face witnesses all
+report their freeze hashes in their output and in the program record.
+
+\subsection*{The degrees-of-freedom discipline (G-INT6)}
+Every dictionary claim ships a ledger counting free modeling choices (weight grading, scale,
+regularization scheme, ladder start, place dictionary) against independently matched
+constraints; a claim without surplus constraints is recorded as calibration. The standing
+fitted-dictionary control is the number-ring family of \S\ref{subsec:ku}: a construction
+claiming to produce $\zeta$'s data must, fed $\mathcal{O}_K$, produce $\xi_K$'s. Under this
+audit the exact integer identities (B\"okstedt tower orders, the $\Lam$ dictionary, the
+$\mathrm{lcm}$ ladder, the Lindenstrauss--Madsen orders) pass with zero spent choices; the
+dimensionful readings (the genus number, ``the constant \emph{is} $\zeta'(0)$'') are
+recorded as calibration, and are so labeled in this paper.
+
+\subsection*{Provenance}
+This paper compresses program documents 17--37 (\texttt{research/proof/}) and the worker
+records cited inline (\texttt{research/work/}); the corrections recorded there (the
+ladder-versus-scheme refutation, the genus demotion, the H-r3 vacuity repair, the
+scheme-applied weakening at $p = 2$, and the DD.4 display fix) are reproduced in the text as
+corrections, not silently absorbed.
+
+\begin{thebibliography}{30}
+
+\bibitem{Weil52} A.~Weil, \emph{Sur les ``formules explicites'' de la th\'eorie des nombres
+premiers}, Meddelanden Fr\aa n Lunds Univ. Mat. Sem. (d\'edi\'e \`a M.~Riesz) (1952), 252--265.
+
+\bibitem{Bombieri00} E.~Bombieri, \emph{Remarks on Weil's quadratic functional in the theory
+of prime numbers, I}, Rend. Mat. Acc. Lincei (9) \textbf{11} (2000), 183--233.
+
+\bibitem{Yoshida92} H.~Yoshida, \emph{On Hermitian forms attached to zeta functions}, in:
+Zeta Functions in Geometry, Adv. Stud. Pure Math. \textbf{21}, Math. Soc. Japan (1992), 281--325.
+
+\bibitem{CC20} A.~Connes and C.~Consani, \emph{Weil positivity and trace formula: the
+archimedean place}, Selecta Math. (N.S.) \textbf{27} (2021), no.~77; arXiv:2006.13771.
+
+\bibitem{CCRR22} A.~Connes and C.~Consani, \emph{Riemann--Roch for $\overline{\mathrm{Spec}\,\Z}$},
+arXiv:2205.01391.
+
+\bibitem{CCRR23} A.~Connes and C.~Consani, \emph{Riemann--Roch for the ring $\Z$},
+arXiv:2306.00456.
+
+\bibitem{Bokstedt} M.~B\"okstedt, \emph{The topological Hochschild homology of $\Z$ and of
+$\Z/p$}, unpublished preprint, Bielefeld (ca.~1985).
+
+\bibitem{Hesselholt16} L.~Hesselholt, \emph{Topological Hochschild homology and the Hasse--Weil
+zeta function}, in: An Alpine Bouquet of Algebraic Topology, Contemp. Math. \textbf{708},
+Amer. Math. Soc. (2018), 157--180; arXiv:1602.01980.
+
+\bibitem{Deninger91} C.~Deninger, \emph{On the $\Gamma$-factors attached to motives},
+Invent. Math. \textbf{104} (1991), 245--261.
+
+\bibitem{Deninger92} C.~Deninger, \emph{Local $L$-factors of motives and regularized
+determinants}, Invent. Math. \textbf{107} (1992), 135--150.
+
+\bibitem{DMPR21} E.~Dotto, K.~Moi, I.~Patchkoria and S.~P.~Reeh, \emph{Real topological
+Hochschild homology}, J. Eur. Math. Soc. \textbf{23} (2021), 63--152.
+
+\bibitem{QS21} J.~D.~Quigley and J.~Shah, \emph{On the parametrized Tate construction and two
+theories of real $p$-cyclotomic spectra}, arXiv:1909.03920; \emph{On the equivalence of two
+theories of real cyclotomic spectra}, arXiv:2112.07462.
+
+\bibitem{Lee22} D.~Lee, \emph{Topological Hochschild homology of the connective image-of-$J$
+spectrum and of connective complex $K$-theory}, arXiv:2206.02411.
+
+\bibitem{BakerRichter05} A.~Baker and B.~Richter, \emph{On the cooperation algebra of the
+connective Adams summand}, Tbilisi Math. J. (2008); arXiv:math/0506455.
+
+\bibitem{Kane81} R.~Kane, \emph{Operations in connective $K$-theory}, Mem. Amer. Math. Soc.
+\textbf{34} (1981), no.~254.
+
+\bibitem{vdGS} G.~van der Geer and R.~Schoof, \emph{Effectivity of Arakelov divisors and the
+theta divisor of a number field}, Selecta Math. (N.S.) \textbf{6} (2000), 377--398;
+arXiv:math/9802121.
+
+\bibitem{LM00} A.~Lindenstrauss and I.~Madsen, \emph{Topological Hochschild homology of number
+rings}, Trans. Amer. Math. Soc. \textbf{352} (2000), 2179--2204.
+
+\bibitem{Stonek18} B.~Stonek, \emph{Higher topological Hochschild homology of periodic complex
+$K$-theory}, Topology Appl. \textbf{282} (2020); arXiv:1801.00156.
+
+\bibitem{GM95} J.~P.~C.~Greenlees and J.~P.~May, \emph{Generalized Tate cohomology},
+Mem. Amer. Math. Soc. \textbf{113} (1995), no.~543.
+
+\bibitem{DGI06} W.~G.~Dwyer, J.~P.~C.~Greenlees and S.~Iyengar, \emph{Duality in algebra and
+topology}, Adv. Math. \textbf{200} (2006), 357--402.
+
+\bibitem{GreenleesMeier17} J.~P.~C.~Greenlees and L.~Meier, \emph{Gorenstein duality for real
+spectra}, Algebr. Geom. Topol. \textbf{17} (2017), 3547--3619.
+
+\bibitem{Efimov24} A.~Efimov, \emph{K-theory and localizing invariants of large categories},
+arXiv:2405.12169.
+
+\bibitem{ClausenScholze} D.~Clausen and P.~Scholze, \emph{Lectures on analytic geometry},
+lecture notes, Bonn (2019--2022).
+
+\bibitem{BMS18} B.~Bhatt, M.~Morrow and P.~Scholze, \emph{Topological Hochschild homology and
+integral $p$-adic Hodge theory}, Publ. Math. IH\'ES \textbf{129} (2019), 199--310;
+arXiv:1802.03261.
+
+\bibitem{Zelevinsky81} A.~Zelevinsky, \emph{Representations of finite classical groups: a Hopf
+algebra approach}, Lecture Notes in Math. \textbf{869}, Springer (1981).
+
+\end{thebibliography}
+
+\end{document}
