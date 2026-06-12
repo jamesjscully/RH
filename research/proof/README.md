@@ -826,6 +826,128 @@ scripts/numerics/witness/certify_chain.py
      External-answer scoring rubric for doc123 carrier-reflecting
      envelope replies.
 
+129. `129-b1-candidate-assault-ledger.md`
+     Candidate-driven operating ledger: attack A2/S3, A6/LT76, A3,
+     and S2 directly, and license new no-goes or witnesses only when a
+     concrete shot fails in a way that sharpens the criteria.
+
+130. `130-a2-strict-first-map-assault.md`
+     First candidate-driven attack on A2/S3: names the PFV2-FIRST
+     theorem needed for a product-formula valuation-pair strict source,
+     records FIRST_MAP_HOLD, and keeps A2 witness work blocked.
+
+131. `131-a6-lt76-strict-trace-assault.md`
+     Candidate-driven A6/LT76 attack: demotes broad liquid trace-class
+     packages for B1 purposes, names the surviving LCT-FIRST strict
+     trace theorem target, and keeps A6 witnesses blocked.
+
+132. `132-a3-hh-graph-index-assault.md`
+     Candidate-driven A3 attack: names the HHG-FIRST theorem needed to
+     turn HH graph-index data into primitive carrier object data,
+     records FIRST_MAP_HOLD, and blocks Gram/index witness promotion.
+
+133. `133-s2-metric-equivariant-circle-assault.md`
+     Candidate-driven S2 attack: fills the metric/equivariant circle
+     deletion-test record, names METEQ-A1 as the surviving enriched
+     scale-retention theorem target, and keeps S2 witnesses blocked.
+
+134. `134-b1-assault-followup-board.md`
+     Operational follow-up queue for PFV2-FIRST, LCT-FIRST,
+     HHG-FIRST, and METEQ-A1, with sendable questions and landing
+     rules for PASS/KILL/SHARPEN answers.
+
+135. `135-pfv2-coordinate-pair-obstruction.md`
+     Bounded internal PFV2 result: rejects coordinate-pair
+     B0_p x B0_q plus labels/relations as a strict first map and
+     starts the refinement from PFV2-FIRST toward structural source
+     data.
+
+136. `136-lct-broad-trace-obstruction.md`
+     Bounded internal A6/LT76 result: rejects broad liquid trace-class
+     circle packages under doc-105 overreach hypotheses and sharpens
+     the live A6 target to LCT-STRICT.
+
+137. `137-hhg-diagnostic-shadow-obstruction.md`
+     Bounded internal A3 result: rejects or demotes HH graph/index
+     diagnostic-shadow packages and sharpens the live A3 target to
+     HHG-STRUCTURAL.
+
+138. `138-meteq-late-factor-obstruction.md`
+     Bounded internal S2 result: rejects factor-through or late scale
+     insertion metric/equivariant enrichments and sharpens the live S2
+     target to METEQ-DETECTED.
+
+139. `139-sharpened-assault-dispatch-packets.md`
+     Sendable packet bank for the four sharpened targets:
+     PFV2-ADELIC-LOCAL, LCT-STRICT, HHG-STRUCTURAL, and METEQ-DETECTED,
+     with a universal landing record.
+
+140. `140-pfv2-structural-source-axiom-audit.md`
+     Internal PFV2 source-axiom audit: rejects marked-product and
+     marked-monoid versions, leaving UFD/factorization-domain and
+     adelic/product-formula source objects as HOLD subfamilies.
+
+141. `141-pfv2-ufd-source-boundary.md`
+     Internal PFV2 UFD source audit: demotes bare UFD/factorization
+     pairs to source-control partial and creates the intermediate
+     PFV2-GLOBAL stage before the adelic-local refinement.
+
+142. `142-pfv2-adelic-source-boundary.md`
+     Internal PFV2 adelic source audit: demotes bare all-places
+     product-formula bookkeeping and sharpens the live A2 target to
+     PFV2-ADELIC-LOCAL.
+
+143. `143-pfv2-adelic-local-source-record.md`
+     Smallest honest PFV2-ADELIC-LOCAL source record: accepts
+     PFV2_local_record(p,q) only as calibration, isolates
+     PFV2-COMP-REFLECT as the decisive complement-reflection theorem,
+     and keeps A2 witnesses blocked.
+
+144. `144-lct-strict-src0-record.md`
+     Smallest LCT-STRICT source record: names LCT-STRICT-SRC0(alpha)
+     as the immediate strict source/first-map target before full trace
+     machinery, with LCT-STRICT-REFLECT as the follow-up theorem if
+     trace legality and carrier reflection cannot be separated.
+
+145. `145-hhg-source-1-record.md`
+     Smallest HHG-STRUCTURAL source record: names HHG-SOURCE-1 as the
+     immediate HH_C/kappa_HH source-level target, requiring object
+     graph-depth data, control non-formability, and one downstream
+     load-bearing slot before any witness.
+
+146. `146-meteq-mintrace-record.md`
+     Smallest METEQ-DETECTED trace-detection record: names
+     METEQ-MINTRACE as the frozen (O_l,D_l,Tr_l) target and requires a
+     deletion theorem before any metric/equivariant witness is
+     licensed.
+
+147. `147-pfv2-relative-divisor-complement-shot.md`
+     Concrete PFV2-COMP-REFLECT shot: tests the relative
+     divisor/idele complement PFV2-REL-DIV(p,q), records local
+     complement-structural progress, and sharpens the immediate A2
+     theorem target to PFV2-REL-FIRST.
+
+148. `148-pfv2-classical-relative-divisor-obstruction.md`
+     Bounded no-go from the doc-147 shot: rejects the ordinary
+     classical relative divisor/idele tuple as all-places assembly plus
+     p,q marking, leaving PFV2-REL-UPROP as the surviving A2 target.
+
+149. `149-pfv2-formal-relative-uprop-obstruction.md`
+     Bounded no-go for formal relative universal properties: rejects
+     slice/fiber/pullback/comma-category repairs as marked all-places
+     sources, leaving PFV2-REL-REFLECT as the surviving A2 target.
+
+150. `150-pfv2-postglobal-reflector-obstruction.md`
+     Bounded no-go for post-global reflectors/localizations/envelopes:
+     rejects applying a relative reflector after an all-places source
+     already exists, leaving PFV2-REL-DESCENT as the surviving A2
+     target.
+
+151. `151-pfv2-preglobal-descent-shot.md`
+     Concrete PFV2-REL-DESCENT shot: defines PFV2-DESC(p,q), records
+     local source-priority and complement-structural progress, and
+     sharpens the active A2 target to PFV2-DESC-SELECT.
+
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom
 location/weight sensitivity. The edge-cone witness computes the one-sided convolution target

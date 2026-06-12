@@ -128,6 +128,22 @@ Carrier-reflecting envelope target
   Primary question: whether a traceable envelope Q retains the
   primitive field consumed by kappa_C as pre-trace object data and
   excludes Epstein/DH after Q.
+
+Sharpened B1 assault targets
+  Primary gates: G60.1, G60.2, G60.3, G60.5, G60.10.
+  Primary docs: 139 packet bank; docs 129-151.
+  Primary questions:
+    PFV2-ADELIC-LOCAL / PFV2-DESC-SELECT - pre-global descent/gluing
+      data not equivalent to all-places objects with p,q marking,
+      control-selective and downstream load-bearing;
+    LCT-STRICT / LCT-STRICT-SRC0 - strict carrier-consuming liquid
+      source before trace closure;
+    HHG-STRUCTURAL / HHG-SOURCE-1 - HH graph-depth data as primitive
+      L1 object data with a downstream load-bearing slot;
+    METEQ-DETECTED / METEQ-MINTRACE - trace-visible metric/equivariant
+      scale retention in a frozen trace-domain triple.
+  Every answer lands with PASS/KILL/SHARPEN/OUT_OF_SCOPE and must
+  route back to the local candidate doc before any B1-board update.
 ```
 
 ## 4. Empty Ledger

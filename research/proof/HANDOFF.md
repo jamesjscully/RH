@@ -1,7 +1,7 @@
 # HANDOFF - Prime-Toeplitz / R-INT program: lead-agent onboarding
 
 Written 2026-06-11 by the outgoing lead (Claude, full license granted by
-the user 2026-06-09). Read this first; then doc 45; then docs 46-128 for
+the user 2026-06-09). Read this first; then doc 45; then docs 46-151 for
 the current branch state; then docs 38-44 as needed.
 
 ## 1. What this is
@@ -43,7 +43,7 @@ ku-face inequality package), KK.L1 (effectivity, exact), HH.1 (Lambda =
 lemma (W), O's A0-A6 (scheme rigidity), BB.1 (FE kappa-blindness),
 II's suppression mechanism, AB's split, AC's implication map.
 
-THE QUEUE (doc 45 sec 8, now split into docs 46-128): no banked
+THE QUEUE (doc 45 sec 8, now split into docs 46-151): no banked
 finite-window probe remains. M-C, M-A, and M-B are accounted for.
 Doc 46 gives the construction-facing blueprint. Doc 49 lands the B0
 Tate-curve/liquid-RR calibration and Epstein replacement guard: it is a
@@ -215,6 +215,128 @@ admission matrix.
 Doc 127 applies that matrix to the current board: no
 PASS_CARRIER_REFLECTING_ENVELOPE and no witness.
 Doc 128 is the response-scoring rubric for doc-123 external answers.
+Doc 129 is the current operating ledger after the strategy correction:
+the program remains fail-closed, but no-goes and witnesses are now
+candidate-driven. The live assault rows are A2/S3 two-place strict
+source, A6/LT76 strict liquid trace, A3 HH graph-index liquid lift, and
+S2 metric/equivariant circle enrichment. Future restrictions should be
+introduced only when one of these rows, a later candidate row, or an
+external answer fails in a way that changes the board or sharpens the
+next concrete action.
+Doc 130 executes the first A2/S3 assault row: PFV2(A_p,A_q) is the
+named product-formula valuation-pair source attempt, PFV2-FIRST is the
+missing theorem, and the doc-103 verdict is FIRST_MAP_HOLD. Doc 135
+then rejects coordinate-pair PFV2; docs 140-143 continue the same
+thread to PFV2-ADELIC-LOCAL / PFV2-COMP-REFLECT. No A2 witness is
+licensed.
+Doc 131 executes the A6/LT76 assault row: broad liquid/trace-class
+circle packages are no longer live B1 candidates unless a strict source
+precedes trace closure; the surviving strict theorem target is
+LCT-FIRST. Doc 136 sharpens this to LCT-STRICT after rejecting broad
+trace packages; no A6 witness is licensed.
+Doc 132 executes the A3 HH graph-index assault row: HHG-FIRST is the
+missing theorem needed to make HH graph-depth/index data primitive L1
+object data before Gram, trace, mixed-object, or codomain formation.
+Doc 137 sharpens this to HHG-STRUCTURAL after rejecting diagnostic
+shadow packages; no A3 witness is licensed.
+Doc 133 executes the S2 metric/equivariant circle assault row:
+METEQ-A1 is the surviving enriched scale-retention target after bare
+circle/localizing versions are rejected by existing gates. Doc 138
+sharpens this to METEQ-DETECTED after rejecting late/factor-through
+enrichments; no S2 witness is licensed.
+Doc 134 is the follow-up board for PFV2-ADELIC-LOCAL, LCT-STRICT,
+HHG-STRUCTURAL, and METEQ-DETECTED. It now points at the immediate
+internal targets PFV2-DESC-SELECT, LCT-STRICT-SRC0, HHG-SOURCE-1,
+and METEQ-MINTRACE. No doc-134 answer directly admits B1; every answer
+still routes through the local candidate doc and relevant matrix.
+Doc 135 attacks PFV2-FIRST internally: the coordinate-pair realization
+PFV2_coord is rejected as labeled B0_p x B0_q shadow data; docs 140-142
+then sharpen the live A2 target to PFV2-ADELIC-LOCAL. Q134.1 should
+now ask for PFV2-COMP-REFLECT on PFV2_local_record(p,q): a structural
+two-place adelic/local source with non-free complement, not a relation
+on coordinate labels, a bare UFD pair, or all-places bookkeeping. Doc
+147 first sharpened this to PFV2-REL-FIRST.
+Doc 148 rejects the ordinary classical relative divisor/idele tuple,
+and doc 149 rejects formal slice/fiber/pullback UPROP repairs, so the
+PFV2 thread passes through PFV2-REL-REFLECT. Doc 150 then rejects
+post-global reflectors and makes PFV2-REL-DESCENT the active A2
+target.
+Doc 151 tests that descent shot directly and makes PFV2-DESC-SELECT
+the active A2 target.
+Doc 136 attacks LCT-FIRST internally: broad liquid/analytic
+trace-class circle packages are rejected under doc-105 overreach
+hypotheses, and the live A6 target is sharpened to LCT-STRICT. Q134.2
+should now ask first for LCT-STRICT-SRC0(alpha), then for intrinsic
+trace legality or a carrier-reflecting envelope.
+Doc 137 attacks HHG-FIRST internally: HH graph/index diagnostic-shadow
+packages are rejected or demoted, and the live A3 target is sharpened
+to HHG-STRUCTURAL. Q134.3 should now ask for HHG-SOURCE-1: an HH_C
+object and kappa_HH whose existence requires graph-depth carrier fields
+before diagnostic evaluation and names a downstream load-bearing slot.
+Doc 138 attacks METEQ-A1 internally: enriched-circle packages whose
+scale data factor through bare circle traces or enter only after trace
+are rejected, and the live S2 target is sharpened to METEQ-DETECTED.
+Q134.4 should now ask for METEQ-MINTRACE: a frozen (O_l,D_l,Tr_l)
+triple and deletion theorem before evaluation.
+Doc 139 gives the current sendable packet bank for the four sharpened
+targets and the universal landing record. Use doc 139, not the older
+broader packets, for new outreach.
+Doc 140 audits PFV2-STRUCTURAL source axioms. Marked-product and marked
+commutative-monoid versions are rejected; UFD/factorization-domain and
+adelic/product-formula source objects remain the current A2 HOLD
+subfamilies.
+Doc 141 attacks the UFD/factorization subfamily. Bare UFD pairs are
+demoted to source-control partial because PF remains external unless
+it is source data. This creates the intermediate PFV2-GLOBAL stage,
+with adelic/global product-formula source objects the main remaining
+semantic home before doc 142.
+Doc 142 attacks the adelic/product-formula subfamily. Bare all-places
+product-formula bookkeeping is demoted unless the two-place source and
+the complement of the other places are structural. The live A2 target
+is sharpened to PFV2-ADELIC-LOCAL.
+Doc 143 takes the direct PFV2-ADELIC-LOCAL source-record shot. It
+accepts PFV2_local_record(p,q) only as calibration and localizes the
+decisive theorem to PFV2-COMP-REFLECT. A2 remains
+HOLD_COMPLEMENT_REFLECTION.
+Doc 144 takes the direct LCT-STRICT source-record shot. It names
+LCT-STRICT-SRC0(alpha) as the immediate S_alpha/kappa_L target and
+LCT-STRICT-REFLECT as the trace-legality/reflection follow-up. A6
+remains HOLD_SRC0.
+Doc 145 takes the direct HHG-STRUCTURAL source-record shot. It names
+HHG-SOURCE-1 as the immediate HH_C/kappa_HH target and requires one
+downstream load-bearing slot before witnesses. A3 remains
+HOLD_SOURCE_1.
+Doc 146 takes the direct METEQ-DETECTED trace-domain shot. It names
+METEQ-MINTRACE as the frozen (O_l,D_l,Tr_l) target and requires a
+deletion theorem before any metric/equivariant witness. S2 remains
+HOLD_MINTRACE.
+Doc 147 takes the first concrete PFV2-COMP-REFLECT shot. The relative
+divisor/idele complement PFV2-REL-DIV(p,q) locally passes complement
+structurality, but the route sharpens to PFV2-REL-FIRST because the
+relative p,q+complement source must be first rather than inherited
+from an all-places projection, and downstream dependence remains
+unproved.
+Doc 148 attacks the classical relative divisor/idele subfamily exposed
+by doc 147. Ordinary relative tuples are rejected as all-places
+assembly plus p,q marking. This creates the intermediate
+PFV2-REL-UPROP target: a relative universal property, reflection
+theorem, or descent/gluing axiom not equivalent to all-places
+projection.
+Doc 149 attacks the formal universal-property repair. Slice/fiber/
+pullback/comma relative categories are rejected as marked all-places
+sources unless they add a native relative reflector/descent theorem.
+This creates the intermediate PFV2-REL-REFLECT target.
+Doc 150 attacks the post-global reflector repair. Reflectors,
+localizations, completions, or carrier-reflecting envelopes applied
+after an all-places source exists are rejected as too late. The
+PFV2 thread passes through PFV2-REL-DESCENT: pre-global p,q+complement
+descent/gluing source data from which the all-places object is
+assembled.
+Doc 151 takes the pre-global descent shot directly. PFV2-DESC(p,q)
+locally passes the source-priority schema and complement structurality,
+but holds on effective-descent equivalence, control selectivity, bank
+preservation, and downstream dependence. The active A2 target is
+PFV2-DESC-SELECT.
 Background: cross-edge certificates, C6', AHL verification debt, the
 (A'') spherical delta-ring hunt.
 
@@ -225,7 +347,7 @@ is a cycle synthesis; CORRECTIONS ARE IN PLACE - docs 18/20/23/24/25
 carry dated correction sections; never read an early claim without its
 corrections). research/proof/TODO.md: the risk ladder (historical +
 live). research/work/[G..AC]-*.md: worker records for the older cycle
-theorem statements; docs 51-128 now contain proof-track gates, ledgers,
+theorem statements; docs 51-151 now contain proof-track gates, ledgers,
 routers, audits, theorem targets, and statements that cite those worker
 records. research/proof/refs/: ~40
 archived primary sources (+ .txt extractions). scripts/numerics/

@@ -7,7 +7,7 @@ define a fail-closed test.
 ## Current front - missing-structure characterization (2026-06-11)
 
 The active interface is now `45-final-missing-structure-spec.md`, with
-the doc-45 branches developed in docs 46-128. Docs 41-44 are the
+the doc-45 branches developed in docs 46-151. Docs 41-44 are the
 supporting audits: doc 41 normal form/gates, doc 42 M-C carrier
 classification, doc 43 M-A self-dual LP audit, doc 44 M-B g2 boundary.
 The target is not another finite-window witness but a native structure
@@ -261,6 +261,106 @@ Doc 127 applies that matrix to the current board and records no
 PASS_CARRIER_REFLECTING_ENVELOPE.
 Doc 128 scores external answers to doc 123 so ordinary traceability or
 decorated marks are not promoted to carrier-reflecting progress.
+Doc 129 changes the operating cadence to candidate-driven assault:
+keep A2/S3, A6/LT76, A3, and S2 open as live shots, attack their first
+objects/maps directly, and license new no-goes or witnesses only when a
+shot fails in a way that moves a HOLD row, records a covered rejection,
+or sharpens the next concrete candidate action.
+Doc 130 executes the first A2/S3 assault row. It names PFV2-FIRST as
+the missing theorem for a product-formula valuation-pair strict source
+PFV2(A_p,A_q), fills the doc-103 record with FIRST_MAP_HOLD, and
+records that A2 remains HOLD_STRICT_ROUTE with no witness license.
+Doc 131 executes the A6/LT76 assault row. It separates broad
+liquid/trace-class circle packages from strict carrier-consuming trace
+packages: broad packages demote or reject by carrier overreach/scale
+collapse, while the surviving strict route is the LCT-FIRST theorem
+target and remains HOLD_LT76_STRICT with no witness license.
+Doc 132 executes the A3 HH graph-index assault row. It names
+HHG-FIRST as the missing theorem needed to make HH graph-depth/index
+data primitive L1 object data before Gram, trace, mixed-object, or
+codomain formation. A3 remains HOLD_STRICT_ROUTE with no witness
+license.
+Doc 133 executes the S2 metric/equivariant circle assault row. Bare
+circle/localizing versions remain rejected by existing gates; the
+enriched route is METEQ-A1 and remains HOLD_A1 until a trace/domain
+detects log p before evaluation and can feed same-form LS4. No S2
+witness is licensed.
+Doc 134 is the follow-up board for the four named theorem targets:
+PFV2-ADELIC-LOCAL, LCT-STRICT, HHG-STRUCTURAL, and METEQ-DETECTED. It gives sendable
+questions and the landing record for PASS/KILL/SHARPEN answers. No
+answer from doc 134 directly admits B1.
+Doc 135 attacks Q134.1 internally. It rejects PFV2_coord, the
+coordinate-pair version built from B0_p x B0_q plus valuation labels
+or product-formula relations, by doc-109 relabeling logic. The live A2
+thread is first sharpened to PFV2-STRUCTURAL, then further narrowed by
+docs 140-143.
+Doc 136 attacks Q134.2 internally. It rejects LTC_broad, broad
+liquid/analytic trace-class circle packages formed before primitive
+carrier checking, under doc-105 overreach hypotheses. The live A6
+target is sharpened to LCT-STRICT.
+Doc 137 attacks Q134.3 internally. It rejects or demotes HHG_diag,
+the HH graph/index diagnostic-shadow realization, by doc-70/doc-109
+logic. The live A3 target is sharpened to HHG-STRUCTURAL.
+Doc 138 attacks Q134.4 internally. It rejects METEQ_late,
+factor-through or post-trace scale insertion enriched-circle packages,
+by docs 80/82/85. The live S2 target is sharpened to METEQ-DETECTED.
+Doc 139 gives the current sendable packet bank for the four sharpened
+targets PFV2-ADELIC-LOCAL, LCT-STRICT, HHG-STRUCTURAL, and
+METEQ-DETECTED, plus the universal landing record for future replies.
+Doc 140 audits PFV2-STRUCTURAL source axioms. Marked products and
+marked commutative monoids are rejected; UFD/factorization-domain and
+adelic/product-formula source objects remain HOLD subfamilies.
+Doc 141 attacks the UFD/factorization subfamily. Bare UFD pairs are
+demoted to source-control partial because PF is still external unless
+it is source data. This creates the intermediate PFV2-GLOBAL stage
+before doc 142.
+Doc 142 attacks the adelic/product-formula subfamily. Bare all-places
+product-formula bookkeeping is demoted unless the two-place source and
+the complement of the other places are structural. The live A2 target
+is sharpened to PFV2-ADELIC-LOCAL.
+Doc 143 takes the direct PFV2-ADELIC-LOCAL source-record shot. It
+accepts PFV2_local_record(p,q) only as calibration and localizes the
+decisive theorem to PFV2-COMP-REFLECT: a non-free structural
+complement consumed before trace, unavailable to controls, and
+load-bearing downstream. A2 remains HOLD_COMPLEMENT_REFLECTION.
+Doc 144 takes the direct LCT-STRICT source-record shot. It names
+LCT-STRICT-SRC0(alpha) as the immediate strict S_alpha/kappa_L target,
+with LCT-STRICT-REFLECT as the follow-up if trace legality and carrier
+reflection cannot be separated. A6 remains HOLD_SRC0.
+Doc 145 takes the direct HHG-STRUCTURAL source-record shot. It names
+HHG-SOURCE-1 as the immediate HH_C/kappa_HH target and requires one
+downstream load-bearing slot before any Gram/index witness. A3 remains
+HOLD_SOURCE_1.
+Doc 146 takes the direct METEQ-DETECTED trace-domain shot. It names
+METEQ-MINTRACE as the frozen (O_l,D_l,Tr_l) target and requires a
+deletion theorem before any metric/equivariant witness. S2 remains
+HOLD_MINTRACE.
+Doc 147 takes the first concrete PFV2-COMP-REFLECT shot. The relative
+divisor/idele complement PFV2-REL-DIV(p,q) locally passes complement
+structurality, but the route sharpens to PFV2-REL-FIRST because
+relative-first priority, source selectivity, bank preservation, and
+downstream dependence remain unproved.
+Doc 148 attacks the classical relative divisor/idele subfamily exposed
+by doc 147. Ordinary relative tuples are rejected as all-places
+assembly plus p,q marking. This creates the intermediate
+PFV2-REL-UPROP target: a relative universal property, reflection
+theorem, or descent/gluing axiom not equivalent to all-places
+projection.
+Doc 149 attacks the formal universal-property repair. Slice/fiber/
+pullback/comma relative categories are rejected as marked all-places
+sources unless they add a native relative reflector/descent theorem.
+This creates the intermediate PFV2-REL-REFLECT target.
+Doc 150 attacks the post-global reflector repair. Reflectors,
+localizations, completions, or carrier-reflecting envelopes applied
+after an all-places source exists are rejected as too late. The
+PFV2 thread passes through PFV2-REL-DESCENT: pre-global p,q+complement
+descent/gluing source data from which the all-places object is
+assembled.
+Doc 151 takes the pre-global descent shot directly. PFV2-DESC(p,q)
+locally passes the source-priority schema and complement structurality,
+but holds on effective-descent equivalence, control selectivity, bank
+preservation, and downstream dependence. The active A2 target is
+PFV2-DESC-SELECT.
 
 Carrier-guard hardening rule: doc 64 isolates the Epstein
 x^2+5y^2 obstruction as a proof lemma. Use it instead of re-running
