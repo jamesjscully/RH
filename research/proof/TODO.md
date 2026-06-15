@@ -70,31 +70,45 @@ Cycle 3 (doc 133): the radius is irreducibly GLOBAL. Fork A - the LOCAL
   over Z" to UNKNOWN (no Frobenius over Z; non-exhaustive catalog). New
   witnesses probe_pa_local_split_escape, rs_pole_radius_probe (lead-reran
   exit 0). No banked supplier, local or global, fixes the radius without RH.
+Cycle 4 (doc 134): the Hilbert-Polya / reality route REDUCES to the radius
+  wall (resolves doc 133's UNKNOWN residue). The non-Frobenius purity datum
+  IS the reality theta F theta=F* = a PHASE/line condition (arg m), the
+  phase face of the radius gap (FE/modulus free + DH-shared; reality = RH).
+  Positivity-by-axiom is a NO-GO (cstar_hermitian_witness: off-line admits a
+  consistent Krein-indefinite self-duality, so positive-definiteness imports
+  RH). Forcing it needs ONE relation - the positive Rosati involution
+  F^dag=(deg)F^{-1} on a correspondence algebra End(S^2/Z), present over F_q,
+  absent over Z (frobenius_self_norm). UNIFICATION: docs 130 (second eval),
+  132/133 (radius/modulus), 134 (reality/phase) are THREE FACES of ONE
+  missing object = the positive-Rosati End(S^2/Z) (CC C x C / scaling-site
+  Jacobian). Witnesses cstar_hermitian_witness, positivity_reality,
+  frobenius_self_norm, operator_domination, polarization_relation (exit 0).
 ```
 
-### Next valid work (the relocated frontier)
+### Next valid work (the single named frontier)
 
 ```text
-1. The M4r EVEN-SPLIT lemma: a zero-free proof that the assembled
-   per-prime edge p^{k-1} splits evenly into |alpha|=|beta|=p^{(k-1)/2}
-   without importing the modulus, the automorphy class, or the F_q
-   single-datum identity. Named and attackable, but RH-equivalent (docs
-   132/133) - relocates rather than dissolves the wall.
-2. Decide whether a GLOBAL Rankin-Selberg / Eisenstein-at-the-pole
-   construction can extract the split WITHOUT the absolute-convergence-
-   past-the-edge presupposition (the one doc-133 gap left open), OR build
-   a proper self-product object (CC C x C / scaling-site Jacobian) with a
-   DISCRETE Frobenius gap - with a runnable witness.
-3. The non-Frobenius purity route (doc 133 sec 6 residue, UNKNOWN not
-   excluded): a Hilbert-Polya / self-adjoint purity-by-construction
-   carrying no q. This is what forbids the Frobenius-weight necessity claim.
-4. Harden adjacent no-gos (docs 51-70 + survivors + 130/132/133) into
-   citable statements; each kill names its mechanism.
-Do NOT re-sweep the banked per-prime OR banked global suppliers (each
-killed by KILL-RAD.1/2/3 doc 132, KILL-RAD133.1-4 doc 133). Do NOT cite
-cc_radius_deformation_probe as a DH discriminator (F_q-domain empty for
-DH). Engage a frontier ONLY with a runnable witness or a stated
-impossibility theorem - never a schema (doc 129).
+The post-reset cycles 1-4 reduce the ENTIRE program residue to ONE missing
+object: the positive-Rosati correspondence algebra End(S^2/Z) (= CC C x C /
+scaling-site Jacobian). Two attackable names for it:
+
+1. PHASE-CERT (doc 134 sec 6): an Euler-borne argument-principle / winding
+   certificate for arg m (the line Re s=1/2) - a PHASE positivity, NOT a
+   modulus/norm-square (the banked sym^2/Siegel positivity provably controls
+   the wrong half). The operator-side form of F^dag=(deg)F^{-1} carrying the
+   phase. RH-equivalent; relocates the wall to one object.
+2. The M4r EVEN-SPLIT lemma (docs 132/133): the modulus-side form of the
+   same object (even split |alpha|=|beta| zero-free).
+3. BUILD End(S^2/Z) with a positive Rosati involution directly (CC C x C /
+   scaling-site Jacobian) - with a runnable witness.
+4. Harden adjacent no-gos (docs 51-70 + survivors + 130/132/133/134) into
+   citable statements.
+Do NOT re-sweep the banked per-prime OR global suppliers (KILL-RAD.1/2/3
+doc 132, KILL-RAD133.1-4 doc 133). Do NOT propose a positive self-duality
+by axiom (KILL-REAL.1) or a modulus certificate for the phase (KILL-REAL.2).
+Do NOT cite cc_radius_deformation_probe as a DH discriminator. Engage the
+frontier ONLY with a runnable witness or a stated impossibility - never a
+schema (doc 129).
 ```
 
 Standing hardening rules (carried from the deleted band, still live):
