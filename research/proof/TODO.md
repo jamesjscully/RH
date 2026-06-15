@@ -57,6 +57,19 @@ Cycle 2 (doc 131 pre-reg -> doc 132): radius-circularity no-go. The one
   acting map's own modulus = RH. Witness cc_radius_deformation_probe
   (flip_tracks=IMPORTED_ONLY, lead-reran exit 0). Doc 130 extends to the
   proper object; doc-45 clause E is closed even there, at the radius.
+Cycle 3 (doc 133): the radius is irreducibly GLOBAL. Fork A - the LOCAL
+  even split is RH-equivalent (the only weaker local predicate, a uniform
+  eps-band incl. Kim-Sarnak 7/64, is radius-silent; firewall = AUTOMORPHY,
+  Deligne). Fork B - both banked GLOBAL suppliers are FE-blind at the
+  radius: Rankin-Selberg-at-the-edge presupposes Ramanujan; CC curve-level
+  RR+PS duality is DH-shared (arakelov_signature max|A_zeta-A_DH|=0.0).
+  Both banked FLOWS (CC scaling site, dBN) reproduce only the DH-shared
+  FE/Haar self-dual axis 1/2 and carry NO discrete arithmetic gap q -
+  "the flow = the missing Frobenius" is a FALSE ANALOGY at the radius.
+  Adversarial verification downgraded "radius = a Frobenius-WEIGHT datum
+  over Z" to UNKNOWN (no Frobenius over Z; non-exhaustive catalog). New
+  witnesses probe_pa_local_split_escape, rs_pole_radius_probe (lead-reran
+  exit 0). No banked supplier, local or global, fixes the radius without RH.
 ```
 
 ### Next valid work (the relocated frontier)
@@ -64,18 +77,24 @@ Cycle 2 (doc 131 pre-reg -> doc 132): radius-circularity no-go. The one
 ```text
 1. The M4r EVEN-SPLIT lemma: a zero-free proof that the assembled
    per-prime edge p^{k-1} splits evenly into |alpha|=|beta|=p^{(k-1)/2}
-   without importing the modulus and without the F_q single-datum
-   identity. Named and attackable, but RH-equivalent in content (doc 132
-   sec 6) - it relocates rather than dissolves the wall.
-2. The GLOBAL / built-proper-object radius supplier: over Z the per-prime
-   purity carrier is empty (M2d), so the radius is a GLOBAL property of
-   the completed product (Connes-Consani C x C / scaling site) or a
-   forcing of Lambda <= 0 (de Bruijn-Newman) - with a runnable witness.
-3. Harden adjacent no-gos (docs 51-70 + survivors + 130/132) into
+   without importing the modulus, the automorphy class, or the F_q
+   single-datum identity. Named and attackable, but RH-equivalent (docs
+   132/133) - relocates rather than dissolves the wall.
+2. Decide whether a GLOBAL Rankin-Selberg / Eisenstein-at-the-pole
+   construction can extract the split WITHOUT the absolute-convergence-
+   past-the-edge presupposition (the one doc-133 gap left open), OR build
+   a proper self-product object (CC C x C / scaling-site Jacobian) with a
+   DISCRETE Frobenius gap - with a runnable witness.
+3. The non-Frobenius purity route (doc 133 sec 6 residue, UNKNOWN not
+   excluded): a Hilbert-Polya / self-adjoint purity-by-construction
+   carrying no q. This is what forbids the Frobenius-weight necessity claim.
+4. Harden adjacent no-gos (docs 51-70 + survivors + 130/132/133) into
    citable statements; each kill names its mechanism.
-Do NOT re-sweep the banked per-prime suppliers (each killed by
-KILL-RAD.1/2/3, doc 132). Engage a frontier ONLY with a runnable witness
-or a stated impossibility theorem - never a schema (doc 129).
+Do NOT re-sweep the banked per-prime OR banked global suppliers (each
+killed by KILL-RAD.1/2/3 doc 132, KILL-RAD133.1-4 doc 133). Do NOT cite
+cc_radius_deformation_probe as a DH discriminator (F_q-domain empty for
+DH). Engage a frontier ONLY with a runnable witness or a stated
+impossibility theorem - never a schema (doc 129).
 ```
 
 Standing hardening rules (carried from the deleted band, still live):

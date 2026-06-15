@@ -47,6 +47,7 @@
     {"doc": 118, "path": "research/proof/118-traceable-envelope-collapse-no-go.md", "name": "traceable-envelope collapse"},
     {"doc": 125, "path": "research/proof/125-decorated-envelope-reflection-no-go.md", "name": "decorated-envelope reflection"},
     {"doc": 130, "path": "research/proof/130-second-evaluation-properness-no-go.md", "name": "second-evaluation requires properness (Sylvester inertia-lock + self-supply + untruncated tower)"},
-    {"doc": 132, "path": "research/proof/132-radius-circularity-no-go.md", "name": "radius-circularity: the weight-2 proper object cannot supply its own radius (Euler edge free, even split = RH)"}
+    {"doc": 132, "path": "research/proof/132-radius-circularity-no-go.md", "name": "radius-circularity: the weight-2 proper object cannot supply its own radius (Euler edge free, even split = RH)"},
+    {"doc": 133, "path": "research/proof/133-radius-is-global-no-go.md", "name": "the radius is irreducibly global: local route automorphy-firewalled, banked global suppliers (RS-at-edge, CC curve-level, both flows) FE-blind"}
   ]
 }
