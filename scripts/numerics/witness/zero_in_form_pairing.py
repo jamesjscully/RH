@@ -313,9 +313,9 @@ def summary():
     print(f"  base T non-self-adjoint part ||antisym(T_z)||={v['||antisym(T_z)|| (raw non-self-adjoint part)']:.3e}, "
           f"base FE-defect={v['||T_z - Theta T_z^T Theta|| (base FE-defect)']:.3e} (||sym(T_z)||="
           f"{v['||sym(T_z)|| (for scale)']:.3f}).")
-    print(f"  FE-defect inertia flips? {v['sig(sym Omega_theta) flips (FE-defect inertia)']}; "
-          f"normality-defect inertia flips? {v['sig(C) flips (normality-defect inertia)']}; "
-          f"antisym-count flips? {v['antisym-count(T-T^T) flips']}.")
+    print(f"  FE-defect inertia flips? {v['sig(sym Omega_theta) flips (FE-defect inertia, two-sided T)']}; "
+          f"normality-defect inertia flips? {v['sig(C) flips (normality-defect inertia, two-sided T)']}; "
+          f"antisym-count flips? {v['antisym-count(T-T^T) flips (two-sided T)']}.")
     print(f"  VERDICT: {v['VERDICT']}")
 
 
