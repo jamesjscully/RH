@@ -16,16 +16,26 @@ banned=(
 )
 for f in "${banned[@]}"; do
   if [ -e "$f" ]; then
-    echo "ERROR: '$f' is deleted futility (STRATEGY.md §2). Do not reintroduce."
+    echo "ERROR: '$f' is deleted futility (STRATEGY.md section 2). Do not reintroduce."
     fail=1
   fi
 done
 
 # the Lean witness apparatus (forward=RH formalization) must not return
 if [ -d "RH" ] || ls ./*.lean >/dev/null 2>&1; then
-  echo "ERROR: Lean witness apparatus reappeared (STRATEGY.md §6: do not formalize ahead of the math)."
+  echo "ERROR: Lean witness apparatus reappeared (STRATEGY.md section 6: do not formalize ahead of the math)."
   fail=1
 fi
 
 [ "$fail" -eq 0 ] && echo "futility-guard: OK"
+if [ "$fail" -eq 0 ]; then
+  python3 scripts/automation/check_proof_targets.py || fail=1
+fi
+if [ "$fail" -eq 0 ]; then
+  python3 scripts/automation/test_check_proof_targets.py || fail=1
+fi
+if [ "$fail" -eq 0 ]; then
+  python3 -m scripts.numerics.witness.pfv2_gate_calibration || fail=1
+fi
+
 exit "$fail"

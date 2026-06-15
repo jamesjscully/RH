@@ -288,3 +288,24 @@ doc 103
 doc 111
   Still blocks downstream forgetfulness.
 ```
+
+## 10. Post-doc-152 Update
+
+Doc 152 rejects ordinary effective descent:
+
+```text
+PFV2_DESC_effective:
+  REJECT_EFFECTIVE_DESCENT_COLLAPSE.
+```
+
+The surviving target is:
+
+```text
+PFV2-DESC-RESIDUAL.
+```
+
+Thus PFV2-DESC(p,q) remains useful as the first correctly ordered
+descent shot, but ordinary effective reconstruction is not enough.
+Future work should ask for residual descent data rho that are not
+erased by assembly, cannot be formed by controls, and remain
+load-bearing downstream.

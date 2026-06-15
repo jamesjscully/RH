@@ -131,11 +131,21 @@ Carrier-reflecting envelope target
 
 Sharpened B1 assault targets
   Primary gates: G60.1, G60.2, G60.3, G60.5, G60.10.
-  Primary docs: 139 packet bank; docs 129-151.
+  Primary docs: 139 packet bank; docs 129-196.
   Primary questions:
-    PFV2-ADELIC-LOCAL / PFV2-DESC-SELECT - pre-global descent/gluing
-      data not equivalent to all-places objects with p,q marking,
-      control-selective and downstream load-bearing;
+    PFV2-ADELIC-LOCAL / PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE -
+      same-readout residual pair rho_G^{fib,0}, rho_G^{fib,1} in
+      Fib_Eff^{res}(Read_{desc}) with separator sep_G^{fib} and first
+      downstream load slot DLoad_G^{sep}, where changing sep_G^{fib}
+      or delta_rho_G^{fib} changes DLoad_G^{sep} before M_C/F_C/Tr_L
+      and the route to M_C/F_C/Tr_L or the strict trace interface
+      preserves and consumes sep_G^{fib} or delta_rho_G^{fib} in one
+      mixed p/q trace-facing object/map formation that Epstein/DH and
+      broad shadow controls cannot instantiate and that derives F_C,
+      Tr_L, or the trace-facing codomain natively, with trace-facing
+      value sensitive to the separator before positivity/zero use,
+      without a free codomain wrapper, split p-bank/q-bank
+      factorization, or carrier-forgetting envelope;
     LCT-STRICT / LCT-STRICT-SRC0 - strict carrier-consuming liquid
       source before trace closure;
     HHG-STRUCTURAL / HHG-SOURCE-1 - HH graph-depth data as primitive

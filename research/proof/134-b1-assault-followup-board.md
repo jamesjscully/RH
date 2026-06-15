@@ -49,7 +49,57 @@ Q134.1 PFV2-ADELIC-LOCAL
   relative-divisor tuple and doc 149 rejects formal slice/fiber/
   pullback universal-property repairs. Doc 150 rejects post-global
   reflectors and leaves PFV2-REL-DESCENT. Doc 151 tests the pre-global
-  descent shot and leaves PFV2-DESC-SELECT.
+  descent shot and leaves PFV2-DESC-SELECT. Doc 152 rejects ordinary
+  effective-descent presentations and leaves PFV2-DESC-RESIDUAL.
+  Doc 153 writes the residual source record and leaves
+  PFV2-RHO-SELECT. Doc 154 rejects marking/bookkeeping residuals and
+  leaves PFV2-RHO-NONTRIVIAL. Doc 155 rejects vanishing obstruction or
+  scalar defect residuals and leaves PFV2-RHO-SURVIVES. Doc 156 tests
+  torsor/extension/cocycle residuals and leaves PFV2-TOR-SELECT. Doc
+  157 rejects decorative torsors and leaves PFV2-TOR-NATIVE. Doc 158
+  writes the native torsor source record and leaves PFV2-TOR-CARRIER.
+  Doc 159 rejects broad carrier-torsor formability and leaves
+  PFV2-TOR-EULER-BAND. Doc 160 tests the product-formula valuation
+  vector as an Euler-band source and leaves PFV2-EULER-OP. Doc 161
+  rejects linear product-formula operations and leaves
+  PFV2-EULER-TOWER-OP. Doc 162 writes the effective tower operation
+  shot and leaves PFV2-TOWER-EFFECTIVE. Doc 163 rejects marked tower
+  effectivity and leaves PFV2-TOWER-GLOBAL. Doc 164 writes the global
+  PF tower source and leaves PFV2-GLOBAL-PF-AXIOM. Doc 165 rejects
+  all-places-first global PF readouts and leaves PFV2-GPF-LOCAL. Doc
+  166 writes the p,q+complement GPF local source and leaves
+  PFV2-GPF-SELECT. Doc 167 rejects effective-descent equivalent GPF
+  local sources and leaves PFV2-GPF-RESIDUAL. Doc 168 writes the
+  residual monodromy/action source shot and leaves PFV2-GPF-RMON-SELECT.
+  Doc 169 rejects presentation/gauge/coherence monodromy and leaves
+  PFV2-GPF-RMON-NATIVE. Doc 170 writes the p/q tower commutator
+  action shot and leaves PFV2-GPF-RMON-COMM-SELECT. Doc 171 rejects
+  scalar/abelian/bookkeeping commutators and leaves PFV2-GPF-RMON-COMM-NONSCALAR.
+  Doc 172 writes the filtered complement-action shot and leaves PFV2-GPF-RMON-FILT-SELECT.
+  Doc 173 rejects bookkeeping filtrations and leaves PFV2-GPF-RMON-FILT-STRUCT.
+  Doc 174 writes the extension-depth filtration shot and leaves PFV2-GPF-RMON-EXTDEPTH-SELECT.
+  Doc 175 rejects passive structural/extension-depth filtrations and leaves PFV2-GPF-RMON-EXTDEPTH-ACTIVE.
+  Doc 176 writes the commutator-extension shot and leaves PFV2-GPF-RMON-EXTCOMM-SELECT.
+  Doc 177 rejects formal ambient extcomm packages and leaves PFV2-GPF-RMON-EXTCOMM-NATIVE.
+  Doc 178 writes the effectivity-boundary commutator shot and leaves PFV2-GPF-RMON-EFFCOMM-SELECT.
+  Doc 179 rejects descent-coherence effectivity boundaries and leaves PFV2-GPF-RMON-EFFCOMM-RESIDUAL.
+  Doc 180 writes the fixed-readout residual-fiber shot and leaves PFV2-GPF-RMON-EFFFIBER-SELECT.
+  Doc 181 rejects empty/singleton/readout-forced residual fibers and leaves PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL.
+  Doc 182 writes the same-readout residual-pair shot and leaves PFV2-GPF-RMON-EFFPAIR-SELECT.
+  Doc 183 rejects identified same-readout residual pairs and leaves PFV2-GPF-RMON-EFFPAIR-SEPARATED.
+  Doc 184 writes the internal separator shot and leaves PFV2-GPF-RMON-EFFSEP-SELECT.
+  Doc 185 rejects external or representative-dependent separators and leaves PFV2-GPF-RMON-EFFSEP-INTERNAL.
+  Doc 186 rejects internal but control-formable separators and leaves PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED.
+  Doc 187 rejects separator sources that replace the B0_p/B0_q banks and leaves PFV2-GPF-RMON-EFFSEP-BANKED.
+  Doc 188 rejects downstream erasure of separator data and leaves PFV2-GPF-RMON-EFFSEP-LOADBEARING.
+  Doc 189 writes the downstream load shot and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT.
+  Doc 190 rejects separator-insensitive downstream load slots and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE.
+  Doc 191 rejects separator-sensitive downstream load slots whose only trace-legal route forgets separator data and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL.
+  Doc 192 rejects nonforgetful downstream routes that preserve the separator only as sidecar data and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED.
+  Doc 193 rejects separator-consuming operations that split over the two banks before mixed p/q use and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED.
+  Doc 194 rejects mixed consumers that controls can still instantiate and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE.
+  Doc 195 rejects free/external trace codomains after mixed selective consumers and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE.
+  Doc 196 rejects native trace interfaces whose trace-facing value is separator-insensitive and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE.
 
 Q134.2 LCT-STRICT
   Second. It asks whether the broad liquid trace route has a strict
@@ -121,6 +171,100 @@ PFV2-DESC-SELECT: pre-global descent data not equivalent to all-places
 objects with p,q marking, unformable for controls, bank-preserving, and
 downstream load-bearing.
 
+Doc 152 rejects ordinary effective descent when it is equivalent to
+assembled all-places objects with p,q marking. The current ask is
+PFV2-DESC-RESIDUAL: residual descent data rho that are not erased by
+assembly, consumed by kappa_desc, unavailable to controls, and
+load-bearing downstream.
+
+Doc 153 makes the residual shot concrete as PFV2-RES(p,q). The current
+ask is PFV2-RHO-SELECT: residual data rho must be non-erased by
+assembly, not marking/bookkeeping, consumed before assembly,
+unavailable to controls, bank-preserving, and downstream
+load-bearing.
+
+Doc 154 rejects rho when it is only p,q marking, complement
+bookkeeping, or a scalar product-formula defect. The current ask is
+PFV2-RHO-NONTRIVIAL: rho must have independent obstruction, torsor,
+extension, automorphism, cocycle, or coherence content.
+
+Doc 155 rejects obstruction/defect rho that vanishes on successful
+assembly or is only a scalar error. The current ask is
+PFV2-RHO-SURVIVES: a nontrivial residual datum must remain object data
+after successful assembly and stay source-selective downstream.
+
+Doc 156 makes the torsor/extension/cocycle shot concrete as
+PFV2-RHO-TOR(p,q). The current ask is PFV2-TOR-SELECT: rho_tor must
+survive successful assembly as object data, not decoration, and remain
+control-selective, bank-preserving, and downstream load-bearing.
+
+Doc 157 rejects rho_tor when it is only gauge, presentation, ordinary
+cohomology decoration, automorphism label, or coherence witness for an
+assembled object. It leaves the intermediate PFV2-TOR-NATIVE ask:
+rho_tor must be carrier-native before assembly.
+
+Doc 158 writes PFV2-NATIVE-TOR(p,q), with a carrier-native
+band/groupoid G_car, tau_car, bank_iota, and surv. The current ask is
+PFV2-TOR-CARRIER: name G_car and tau_car before assembly and prove
+first-map dependence, control exclusion, bank preservation, and
+downstream visibility.
+
+Doc 159 rejects broad carrier-torsor/groupoid packages that are
+functorial for local-shadow data and therefore formable by controls.
+It leaves the intermediate PFV2-TOR-EULER-BAND ask: name an Euler-carrier band or
+groupoid whose defining operation is unavailable to Epstein/DH controls
+before trace, sign, regularization, positivity, or zero comparison.
+
+Doc 160 writes PFV2-EULER-BAND(p,q), using the product-formula
+valuation vector as the proposed Euler-band source. It leaves the
+intermediate PFV2-EULER-OP ask: name the operation taking that
+valuation vector to G_E/tau_E before assembly, prove it is not broad,
+and prove controls cannot instantiate it.
+
+Doc 161 rejects scalar product-formula balance, affine-hyperplane, and
+normalization torsor operations as broad/control-formable. The current
+ask is the intermediate PFV2-EULER-TOWER-OP: name an operation consuming the actual
+valuation towers, prime-power combs, atom fields, and effectivity
+before assembly.
+
+Doc 162 writes PFV2-TOWER-OP(p,q), with atom, comb, valuation,
+structural length, PF, and effectivity fields. It leaves the
+intermediate PFV2-TOWER-EFFECTIVE ask: prove those fields are primitive
+effective carrier data, not marked monoid/factorization labels, and
+prove the operation excludes controls.
+
+Doc 163 rejects marked monoids, bare UFD/factorization pairs,
+independent towers plus later PF, and effectivity labels. The current
+ask is the intermediate PFV2-TOWER-GLOBAL: name a global
+product-formula tower object whose definition simultaneously contains
+tower, PF, and effectivity data before assembly.
+
+Doc 164 writes PFV2-GLOBAL-TOWER(p,q). The current ask is
+the intermediate PFV2-GLOBAL-PF-AXIOM: name the object-level axiom for
+a simultaneous global PF tower source and prove it is not a
+marked-tower unfolding.
+
+Doc 165 rejects all-places adelic/divisor/idele/product-formula objects
+whose p,q tower data are selected after D exists. The current ask is
+the intermediate PFV2-GPF-LOCAL: name a p,q+complement global PF tower
+source formed before all-places assembly.
+
+Doc 166 writes PFV2-GPF-LOCAL(p,q). The current ask is
+the intermediate PFV2-GPF-SELECT: prove the local GPF source is not
+equivalent to all-places marking, excludes controls, preserves banks,
+and remains load-bearing downstream.
+
+Doc 167 rejects GPF local sources that are ordinary effective-descent
+presentations equivalent to all-places objects with p,q marking. The
+current ask is PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE:
+name DLoad_G^{sep}, lambda_G^{sep}, the route to M_C/F_C/Tr_L or the
+strict trace interface, the first mixed p/q trace-facing object/map
+formation that consumes sep_G^{fib} or delta_rho_G^{fib}, and the
+native derivation of F_C/Tr_L or the trace-facing codomain; prove
+changing that data changes the trace-facing value before
+positivity/zero use and that Epstein/DH controls cannot instantiate
+the consumer, while preserving B0_p/B0_q load and control exclusion.
+
 The required test is structural: Epstein represented-norm and DH
 coefficient/measure controls may retain theta/count shadows, but they
 must fail to form the same source or first map before signs,
@@ -144,7 +288,7 @@ KILL:
 
 SHARPEN:
   Record the exact source-category axiom or product-formula theorem
-  that decides PFV2-DESC-SELECT inside PFV2-COMP-REFLECT.
+  that decides PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE inside PFV2-COMP-REFLECT.
 ```
 
 Do not accept:
@@ -324,7 +468,7 @@ target:
   PFV2-ADELIC-LOCAL | LCT-STRICT | HHG-STRUCTURAL | METEQ-DETECTED
 
 immediate theorem target:
-  PFV2-DESC-SELECT | LCT-STRICT-SRC0 | HHG-SOURCE-1 |
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE | LCT-STRICT-SRC0 | HHG-SOURCE-1 |
   METEQ-MINTRACE
 
 source:
@@ -391,7 +535,56 @@ PFV2-ADELIC-LOCAL:
   Doc 148 rejects the ordinary classical relative-divisor presentation;
   doc 149 rejects formal UPROP repairs; doc 150 rejects post-global
   reflectors. Doc 151 tests the pre-global descent shot and sharpens
-  the surviving ask to PFV2-DESC-SELECT.
+  the surviving ask to PFV2-DESC-SELECT. Doc 152 rejects effective
+  descent collapse; doc 153 writes the residual source record. The
+  active ask is PFV2-RHO-SELECT. Doc 154 rejects marking/bookkeeping
+  residuals and leaves PFV2-RHO-NONTRIVIAL. Doc 155 rejects vanishing
+  obstruction/scalar defect residuals and leaves PFV2-RHO-SURVIVES.
+  Doc 156 tests the torsor/extension/cocycle shot and leaves
+  PFV2-TOR-SELECT. Doc 157 rejects decorative torsors and leaves
+  PFV2-TOR-NATIVE. Doc 158 writes the native torsor source record and
+  leaves PFV2-TOR-CARRIER. Doc 159 rejects broad carrier-torsor
+  formability and leaves PFV2-TOR-EULER-BAND. Doc 160 tests the
+  product-formula valuation vector as an Euler-band source and leaves
+  PFV2-EULER-OP. Doc 161 rejects linear product-formula operations and
+  leaves PFV2-EULER-TOWER-OP. Doc 162 writes the effective tower
+  operation shot and leaves PFV2-TOWER-EFFECTIVE. Doc 163 rejects
+  marked tower effectivity and leaves PFV2-TOWER-GLOBAL. Doc 164
+  writes the global PF tower source and leaves PFV2-GLOBAL-PF-AXIOM.
+  Doc 165 rejects all-places-first global PF readouts and leaves
+  PFV2-GPF-LOCAL. Doc 166 writes the p,q+complement GPF local source
+  and leaves PFV2-GPF-SELECT. Doc 167 rejects effective-descent
+  equivalent GPF local sources and leaves PFV2-GPF-RESIDUAL. Doc 168
+  writes the residual monodromy/action source shot and leaves
+  PFV2-GPF-RMON-SELECT. Doc 169 rejects presentation/gauge/coherence
+  monodromy and leaves PFV2-GPF-RMON-NATIVE. Doc 170 writes the p/q
+  tower commutator action shot and leaves PFV2-GPF-RMON-COMM-SELECT.
+  Doc 171 rejects scalar/abelian/bookkeeping commutators and leaves PFV2-GPF-RMON-COMM-NONSCALAR.
+  Doc 172 writes the filtered complement-action shot and leaves PFV2-GPF-RMON-FILT-SELECT.
+  Doc 173 rejects bookkeeping filtrations and leaves PFV2-GPF-RMON-FILT-STRUCT.
+  Doc 174 writes the extension-depth filtration shot and leaves PFV2-GPF-RMON-EXTDEPTH-SELECT.
+  Doc 175 rejects passive structural/extension-depth filtrations and leaves PFV2-GPF-RMON-EXTDEPTH-ACTIVE.
+  Doc 176 writes the commutator-extension shot and leaves PFV2-GPF-RMON-EXTCOMM-SELECT.
+  Doc 177 rejects formal ambient extcomm packages and leaves PFV2-GPF-RMON-EXTCOMM-NATIVE.
+  Doc 178 writes the effectivity-boundary commutator shot and leaves PFV2-GPF-RMON-EFFCOMM-SELECT.
+  Doc 179 rejects descent-coherence effectivity boundaries and leaves PFV2-GPF-RMON-EFFCOMM-RESIDUAL.
+  Doc 180 writes the fixed-readout residual-fiber shot and leaves PFV2-GPF-RMON-EFFFIBER-SELECT.
+  Doc 181 rejects empty/singleton/readout-forced residual fibers and leaves PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL.
+  Doc 182 writes the same-readout residual-pair shot and leaves PFV2-GPF-RMON-EFFPAIR-SELECT.
+  Doc 183 rejects identified same-readout residual pairs and leaves PFV2-GPF-RMON-EFFPAIR-SEPARATED.
+  Doc 184 writes the internal separator shot and leaves PFV2-GPF-RMON-EFFSEP-SELECT.
+  Doc 185 rejects external or representative-dependent separators and leaves PFV2-GPF-RMON-EFFSEP-INTERNAL.
+  Doc 186 rejects internal but control-formable separators and leaves PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED.
+  Doc 187 rejects separator sources that replace the B0_p/B0_q banks and leaves PFV2-GPF-RMON-EFFSEP-BANKED.
+  Doc 188 rejects downstream erasure of separator data and leaves PFV2-GPF-RMON-EFFSEP-LOADBEARING.
+  Doc 189 writes the downstream load shot and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT.
+  Doc 190 rejects separator-insensitive downstream load slots and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE.
+  Doc 191 rejects separator-sensitive downstream load slots whose only trace-legal route forgets separator data and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL.
+  Doc 192 rejects nonforgetful downstream routes that preserve the separator only as sidecar data and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED.
+  Doc 193 rejects separator-consuming operations that split over the two banks before mixed p/q use and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED.
+  Doc 194 rejects mixed consumers that controls can still instantiate and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE.
+  Doc 195 rejects free/external trace codomains after mixed selective consumers and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE.
+  Doc 196 rejects native trace interfaces whose trace-facing value is separator-insensitive and leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE.
 
 LCT-STRICT:
   HOLD. Broad LTC_broad is rejected by doc 136; no strict trace-domain

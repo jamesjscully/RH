@@ -32,6 +32,45 @@ the load-bearing target is the Schur inequality
 C* A^{-1} C <= D.
 ```
 
+## Trajectory Checks
+
+The active PFV2 target chain is machine-tracked in:
+
+```text
+research/proof/target-ledger.json
+```
+
+Run:
+
+```bash
+python3 scripts/automation/check_proof_targets.py
+```
+
+This validates the doc-to-doc target transitions and checks that
+`README.md`, `HANDOFF.md`, `TODO.md`, `61`, `129`, `134`, and `139`
+agree on the live target. It also rejects keyword-only stubs: shot
+docs must carry candidate/gate/verdict/next-target/kill-condition
+sections, and no-go docs must carry covered-class/lemma/proof/
+surviving-escape/kill-condition sections with exact target-transition
+claims. The repository guard also runs this check:
+
+```bash
+scripts/automation/guard.sh
+```
+
+The current PFV2 gate criteria also have a small executable
+calibration harness:
+
+```bash
+python3 -m scripts.numerics.witness.pfv2_gate_calibration
+```
+
+It does not construct PFV2. It checks a structural toy source record
+against the present gate logic, reports every failed gate for known
+false-positive classes, and leaves only the declared schema-survivor
+profile. It also fails if `target-ledger.json` moves to a new current
+target without updating the calibration object.
+
 ## Current files
 
 0. `00-reduction-to-rh.md`
@@ -947,6 +986,302 @@ scripts/numerics/witness/certify_chain.py
      Concrete PFV2-REL-DESCENT shot: defines PFV2-DESC(p,q), records
      local source-priority and complement-structural progress, and
      sharpens the active A2 target to PFV2-DESC-SELECT.
+
+152. `152-pfv2-effective-descent-collapse.md`
+     Bounded no-go from the PFV2-DESC shot: rejects ordinary effective
+     descent presentations equivalent to all-places objects with p,q
+     marking, leaving PFV2-DESC-RESIDUAL as the active A2 target.
+
+153. `153-pfv2-residual-descent-source-record.md`
+     Concrete PFV2-DESC-RESIDUAL source record: defines
+     PFV2-RES(p,q), makes the residual datum rho explicit, and
+     sharpens the active A2 target to PFV2-RHO-SELECT.
+
+154. `154-pfv2-rho-marking-collapse.md`
+     Bounded no-go from the PFV2-RHO-SELECT target: rejects rho that
+     is only p,q marking, complement bookkeeping, or scalar defect
+     data, leaving PFV2-RHO-NONTRIVIAL as the active A2 target.
+
+155. `155-pfv2-rho-obstruction-defect-collapse.md`
+     Bounded no-go from PFV2-RHO-NONTRIVIAL: rejects obstruction or
+     defect rho that vanishes on successful assembly or is only a
+     scalar error, leaving PFV2-RHO-SURVIVES as the active A2 target.
+
+156. `156-pfv2-rho-torsor-extension-shot.md`
+     Concrete PFV2-RHO-SURVIVES shot: tests torsor/extension/cocycle
+     residual data, records local nontrivial-rho progress, and sharpens
+     the active A2 target to PFV2-TOR-SELECT.
+
+157. `157-pfv2-torsor-decoration-collapse.md`
+     Bounded no-go from PFV2-TOR-SELECT: rejects torsor/extension/
+     cocycle residuals that are only gauge, presentation, ordinary
+     decoration, automorphism labels, or coherence witnesses, leaving
+     PFV2-TOR-NATIVE as the active A2 target.
+
+158. `158-pfv2-native-torsor-source-record.md`
+     Concrete PFV2-TOR-NATIVE source record: defines
+     PFV2-NATIVE-TOR(p,q) with a carrier-native band/groupoid G_car,
+     tau_car, bank_iota, and surv fields, records local native-position
+     progress, and sharpens the active A2 target to PFV2-TOR-CARRIER.
+
+159. `159-pfv2-carrier-torsor-formability-collapse.md`
+     Bounded no-go from PFV2-TOR-CARRIER: rejects broadly functorial
+     carrier-torsor/groupoid packages formable by local-shadow controls,
+     leaving PFV2-TOR-EULER-BAND as the active A2 target.
+
+160. `160-pfv2-euler-band-valuation-shot.md`
+     Concrete PFV2-TOR-EULER-BAND shot: tests whether the
+     product-formula valuation vector can define an Euler band/groupoid
+     G_E and torsor tau_E, records local Euler-field placement progress,
+     and sharpens the active A2 target to PFV2-EULER-OP.
+
+161. `161-pfv2-linear-pf-operation-collapse.md`
+     Bounded no-go from PFV2-EULER-OP: rejects scalar
+     product-formula balance, affine-hyperplane, and normalization
+     torsor operations as broad/control-formable, leaving
+     PFV2-EULER-TOWER-OP as the active A2 target.
+
+162. `162-pfv2-euler-tower-operation-shot.md`
+     Concrete PFV2-EULER-TOWER-OP shot: defines
+     PFV2-TOWER-OP(p,q), requiring atom, comb, valuation, structural
+     length, product-formula, and effectivity fields before assembly,
+     and sharpens the active A2 target to PFV2-TOWER-EFFECTIVE.
+
+163. `163-pfv2-effective-tower-marking-collapse.md`
+     Bounded no-go from PFV2-TOWER-EFFECTIVE: rejects effective tower
+     operations that are only marked monoid data, bare UFD/factorization
+     pairs, or independent towers plus a later PF relation, leaving
+     PFV2-TOWER-GLOBAL as the active A2 target.
+
+164. `164-pfv2-global-tower-source-shot.md`
+     Concrete PFV2-TOWER-GLOBAL shot: defines
+     PFV2-GLOBAL-TOWER(p,q), a simultaneous global product-formula
+     tower source object, and sharpens the active A2 target to
+     PFV2-GLOBAL-PF-AXIOM.
+
+165. `165-pfv2-global-pf-allplaces-collapse.md`
+     Bounded no-go from PFV2-GLOBAL-PF-AXIOM: rejects all-places
+     adelic/divisor/idele/product-formula sources whose p,q tower data
+     are selected after the global object exists, leaving
+     PFV2-GPF-LOCAL as the active A2 target.
+
+166. `166-pfv2-gpf-local-source-shot.md`
+     Concrete PFV2-GPF-LOCAL shot: defines PFV2-GPF-LOCAL(p,q), a
+     p,q+complement global product-formula tower source formed before
+     all-places assembly, records local source-priority and complement
+     schema progress, and sharpens the active A2 target to
+     PFV2-GPF-SELECT.
+
+167. `167-pfv2-gpf-effective-descent-collapse.md`
+     Bounded no-go from PFV2-GPF-SELECT: rejects GPF local sources that
+     are ordinary effective-descent presentations equivalent to
+     all-places objects with p,q marking, leaving PFV2-GPF-RESIDUAL as
+     the active A2 target.
+
+168. `168-pfv2-gpf-residual-monodromy-shot.md`
+     Concrete PFV2-GPF-RESIDUAL shot: defines
+     PFV2-GPF-RMON(p,q), a residual p,q+complement monodromy/action
+     class inside the local GPF source, records local residual-source
+     schema progress, and sharpens the active A2 target to
+     PFV2-GPF-RMON-SELECT as the next deciding theorem.
+
+169. `169-pfv2-gpf-rmon-presentation-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-SELECT: rejects residual
+     monodromy/action classes that are only presentation, gauge, or
+     coherence data for assembly, leaving PFV2-GPF-RMON-NATIVE as the
+     active A2 target.
+
+170. `170-pfv2-gpf-rmon-commutator-shot.md`
+     Concrete PFV2-GPF-RMON-NATIVE shot: defines
+     PFV2-GPF-RMON-COMM(p,q), a p/q tower commutator or holonomy
+     action on the structural complement, records local native-action
+     schema progress, and sharpens the active A2 target to
+     PFV2-GPF-RMON-COMM-SELECT as the next deciding theorem.
+
+171. `171-pfv2-gpf-rmon-commutator-scalar-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-COMM-SELECT: rejects
+     commutator/holonomy classes that are only scalar product-formula
+     balance, p,q marking, complement bookkeeping, or abelian
+     compatibility, leaving PFV2-GPF-RMON-COMM-NONSCALAR as the active
+     A2 target.
+
+172. `172-pfv2-gpf-rmon-filtered-action-shot.md`
+     Concrete PFV2-GPF-RMON-COMM-NONSCALAR shot: defines
+     PFV2-GPF-RMON-FILT(p,q), a filtered non-scalar p/q action residue
+     on the structural complement, records local filtered-residue
+     schema progress, and sharpens the active A2 target to
+     PFV2-GPF-RMON-FILT-SELECT as the next deciding theorem.
+
+173. `173-pfv2-gpf-rmon-filtration-bookkeeping-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-FILT-SELECT: rejects filtered
+     action proposals where the filtration is only degree/order/
+     valuation/support bookkeeping determined by scalar/readout data,
+     leaving PFV2-GPF-RMON-FILT-STRUCT as the active A2 target.
+
+174. `174-pfv2-gpf-rmon-extension-depth-filtration-shot.md`
+     Concrete PFV2-GPF-RMON-FILT-STRUCT shot: defines
+     PFV2-GPF-RMON-EXTDEPTH(p,q), an extension-depth filtration on the
+     structural complement generated by simultaneous p/q tower action,
+     records local extension-depth schema progress, and sharpens the
+     active A2 target to PFV2-GPF-RMON-EXTDEPTH-SELECT as the next
+     deciding theorem.
+
+175. `175-pfv2-gpf-rmon-passive-extension-depth-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EXTDEPTH-SELECT: rejects
+     structural or extension-depth filtrations that are passive
+     functorial invariants of the complement or broad filtered local
+     category, leaving PFV2-GPF-RMON-EXTDEPTH-ACTIVE as the active A2
+     target.
+
+176. `176-pfv2-gpf-rmon-commutator-extension-shot.md`
+     Concrete PFV2-GPF-RMON-EXTDEPTH-ACTIVE shot: defines
+     PFV2-GPF-RMON-EXTCOMM(p,q), a commutator-extension operator
+     Delta_{p,q} whose iterated extension/cone operations generate the
+     active filtration, records local commutator-extension schema
+     progress, and sharpens the active A2 target to
+     PFV2-GPF-RMON-EXTCOMM-SELECT as the next deciding theorem.
+
+177. `177-pfv2-gpf-rmon-formal-ambient-extcomm-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EXTCOMM-SELECT: rejects
+     commutator-extension packages where Delta_{p,q} or its
+     cones/extensions are supplied by broad ambient additive, stable,
+     derived, completed, or traceable-envelope closure, leaving
+     PFV2-GPF-RMON-EXTCOMM-NATIVE as the active A2 target.
+
+178. `178-pfv2-gpf-rmon-effectivity-boundary-commutator-shot.md`
+     Concrete PFV2-GPF-RMON-EXTCOMM-NATIVE shot: defines
+     PFV2-GPF-RMON-EFFCOMM(p,q), an effectivity-boundary commutator
+     Delta_{p,q}^{Eff} inside Eff_{p,q}, records local
+     effectivity-boundary schema progress, and sharpens the active A2
+     target to PFV2-GPF-RMON-EFFCOMM-SELECT as the next deciding
+     theorem.
+
+179. `179-pfv2-gpf-rmon-effcomm-descent-coherence-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFCOMM-SELECT: rejects
+     effectivity-boundary commutators whose boundary is only
+     effective-descent coherence, assembly gauge, or compatibility
+     bookkeeping, leaving PFV2-GPF-RMON-EFFCOMM-RESIDUAL as the active
+     A2 target.
+
+180. `180-pfv2-gpf-rmon-effcomm-residual-fiber-shot.md`
+     Concrete PFV2-GPF-RMON-EFFCOMM-RESIDUAL shot: defines
+     PFV2-GPF-RMON-EFFFIBER(p,q), a fixed-readout residual fiber
+     Fib_Eff^{res}(Read_{desc}) for effectivity-boundary commutator
+     data, records local residual-fiber schema progress, and sharpens
+     the active A2 target to PFV2-GPF-RMON-EFFFIBER-SELECT as the next
+     deciding theorem.
+
+181. `181-pfv2-gpf-rmon-efffiber-trivial-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFFIBER-SELECT: rejects
+     fixed-readout residual fibers that are empty, singleton,
+     contractible, or forced to the descent-coherent/readout-determined
+     point, leaving PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL or another
+     nontrivial fixed-readout residual source as the active A2 target.
+
+182. `182-pfv2-gpf-rmon-efffiber-pair-shot.md`
+     Concrete PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL shot: defines
+     PFV2-GPF-RMON-EFFPAIR(p,q), a same-readout pair
+     rho_G^{fib,0}, rho_G^{fib,1} with fiber-internal difference
+     delta_rho_G^{fib}, records local residual-pair schema progress,
+     and sharpens the active A2 target to
+     PFV2-GPF-RMON-EFFPAIR-SELECT as the next deciding theorem.
+
+183. `183-pfv2-gpf-rmon-effpair-identification-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFPAIR-SELECT: rejects
+     same-readout residual pairs whose two classes are identified by
+     descent/readout/shadow equivalence before first-map use, leaving
+     PFV2-GPF-RMON-EFFPAIR-SEPARATED as the active A2 target.
+
+184. `184-pfv2-gpf-rmon-effpair-separator-shot.md`
+     Concrete PFV2-GPF-RMON-EFFPAIR-SEPARATED shot: defines
+     PFV2-GPF-RMON-EFFSEP(p,q), a same-readout residual pair equipped
+     with a fiber-internal separator sep_G^{fib}, records local
+     separator schema progress, and sharpens the active A2 target to
+     PFV2-GPF-RMON-EFFSEP-SELECT as the next deciding theorem.
+
+185. `185-pfv2-gpf-rmon-effsep-external-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-SELECT: rejects
+     separators that distinguish only after changing readout, choosing
+     representatives, passing through bookkeeping/shadows, or using
+     downstream diagnostics, leaving PFV2-GPF-RMON-EFFSEP-INTERNAL as
+     the active A2 target.
+
+186. `186-pfv2-gpf-rmon-effsep-control-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-INTERNAL: rejects
+     internal separators whose defining rule is still available to
+     Epstein/DH controls while theta/count shadows remain meaningful,
+     leaving PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED as the active A2
+     target.
+
+187. `187-pfv2-gpf-rmon-effsep-bank-replacement-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED:
+     rejects separator sources that replace or erase the B0_p/B0_q
+     banks, leaving PFV2-GPF-RMON-EFFSEP-BANKED as the active A2
+     target.
+
+188. `188-pfv2-gpf-rmon-effsep-downstream-erasure-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-BANKED: rejects
+     separators erased before M_C/F_C/Tr_L or the strict trace
+     interface, leaving PFV2-GPF-RMON-EFFSEP-LOADBEARING as the active
+     A2 target.
+
+189. `189-pfv2-gpf-rmon-effsep-downstream-load-shot.md`
+     Concrete PFV2-GPF-RMON-EFFSEP-LOADBEARING shot: defines
+     PFV2-GPF-RMON-EFFSEP-DLOAD(p,q), a first downstream load slot
+     DLoad_G^{sep} receiving sep_G^{fib} or delta_rho_G^{fib}, records
+     local downstream-load schema progress, and sharpens the active A2
+     target to PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT as the next deciding
+     theorem.
+
+190. `190-pfv2-gpf-rmon-effsep-dload-insensitive-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT: rejects
+     downstream load slots unchanged by changing sep_G^{fib} or
+     delta_rho_G^{fib}, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE as the then-active A2 target.
+
+191. `191-pfv2-gpf-rmon-effsep-dload-forgetful-route-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE: rejects
+     separator-sensitive DLoad_G^{sep} slots whose only trace-legal
+     route to M_C/F_C/Tr_L forgets sep_G^{fib} or delta_rho_G^{fib},
+     leaving PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL as the then-active
+     A2 target.
+
+192. `192-pfv2-gpf-rmon-effsep-dload-sidecar-route-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL:
+     rejects nonforgetful routes that preserve sep_G^{fib} or
+     delta_rho_G^{fib} only as unconsumed sidecar data, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED as the then-active A2 target.
+
+193. `193-pfv2-gpf-rmon-effsep-dload-split-consumption-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED: rejects
+     first separator-consuming trace-facing operations that split into
+     independent p-bank and q-bank consumers, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED as the then-active A2
+     target.
+
+194. `194-pfv2-gpf-rmon-effsep-dload-mixed-control-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED:
+     rejects mixed p/q separator-consuming operations that are still
+     formable for Epstein/DH or broad shadow controls, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE as the then-active A2
+     target.
+
+195. `195-pfv2-gpf-rmon-effsep-dload-free-trace-codomain-collapse.md`
+     Bounded no-go from PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE:
+     rejects mixed carrier-selective consumers whose trace codomain,
+     trace wrapper, determinant target, or regularized value is
+     supplied externally, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE as the
+     then-active A2 target.
+
+196. `196-pfv2-gpf-rmon-effsep-dload-native-trace-insensitive-collapse.md`
+     Bounded no-go from
+     PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE: rejects
+     native trace interfaces whose actual trace value, determinant,
+     kernel, regularized value, or comparison output is unchanged by
+     sep_G^{fib} or delta_rho_G^{fib}, leaving
+     PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE as the
+     active A2 target.
 
 This extracts the late active Schur-debt direction and reports the smooth-vs-atom arithmetic current
 on the debt stress, including the boundary edge-profile diagnostic and the repair atom

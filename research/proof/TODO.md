@@ -7,7 +7,7 @@ define a fail-closed test.
 ## Current front - missing-structure characterization (2026-06-11)
 
 The active interface is now `45-final-missing-structure-spec.md`, with
-the doc-45 branches developed in docs 46-151. Docs 41-44 are the
+the doc-45 branches developed in docs 46-196. Docs 41-44 are the
 supporting audits: doc 41 normal form/gates, doc 42 M-C carrier
 classification, doc 43 M-A self-dual LP audit, doc 44 M-B g2 boundary.
 The target is not another finite-window witness but a native structure
@@ -361,6 +361,130 @@ locally passes the source-priority schema and complement structurality,
 but holds on effective-descent equivalence, control selectivity, bank
 preservation, and downstream dependence. The active A2 target is
 PFV2-DESC-SELECT.
+Doc 152 attacks the effective-descent equivalence gap. Ordinary descent
+presentations equivalent to all-places objects with p,q marking are
+rejected as presentational priority. The active A2 target is
+PFV2-DESC-RESIDUAL: residual descent data not erased by assembly,
+source-selective against controls, and downstream load-bearing.
+Doc 153 writes the residual descent source record. PFV2-RES(p,q)
+locally passes source-priority schema, but residual non-erasure,
+control selectivity, bank preservation, and downstream dependence
+remain HOLD. This creates the intermediate PFV2-RHO-SELECT target.
+Doc 154 attacks the first residual false positive. Rho fields that are
+only p,q marking, complement bookkeeping, or scalar defects are
+rejected. This creates the intermediate PFV2-RHO-NONTRIVIAL target:
+rho must have independent obstruction, torsor, extension, automorphism,
+cocycle, or coherence content.
+Doc 155 attacks the obstruction/defect residual subfamily. Obstructions
+that vanish on successful assembly and scalar defect terms are
+rejected. This creates the intermediate PFV2-RHO-SURVIVES target:
+nontrivial rho must remain object data after successful assembly.
+Doc 156 takes the torsor/extension/cocycle residual shot. PFV2-RHO-TOR
+locally passes the nontrivial-rho schema, but survival through
+assembly, control selectivity, bank preservation, and downstream
+dependence remain HOLD. This creates the intermediate PFV2-TOR-SELECT
+target.
+Doc 157 attacks the first torsor false positive. Torsors/extensions/
+cocycles that are only gauge, presentation, ordinary decoration,
+automorphism labels, or coherence witnesses are rejected. The active
+A2 target is PFV2-TOR-NATIVE.
+Doc 158 writes PFV2-NATIVE-TOR(p,q). It locally passes native
+position, but native existence, non-decoration, control selectivity,
+first-map dependence, bank preservation, and downstream dependence
+remain HOLD. This creates the intermediate PFV2-TOR-CARRIER target.
+Doc 159 attacks the broad carrier-torsor false positive. Carrier
+bands/groupoids that are functorial for local-shadow data and formable
+by Epstein/DH controls are rejected. This creates the intermediate
+PFV2-TOR-EULER-BAND target: a named Euler-carrier band or groupoid whose
+defining operation is unavailable to controls before trace, sign,
+regularization, positivity, or zero comparison.
+Doc 160 writes PFV2-EULER-BAND(p,q), using the product-formula
+valuation vector as the proposed Euler-band source. Euler field
+placement locally passes, but operation construction, non-broadness,
+first-map dependence, bank preservation, and downstream dependence
+remain HOLD. This creates the intermediate PFV2-EULER-OP target.
+Doc 161 attacks the scalar product-formula operation false positive.
+Linear balance, affine-hyperplane, and normalization torsor operations
+are rejected as broad/control-formable. This creates the intermediate
+PFV2-EULER-TOWER-OP target: a named operation consuming the actual
+valuation towers, prime-power combs, atom fields, and effectivity
+before assembly.
+Doc 162 writes PFV2-TOWER-OP(p,q). Tower field placement locally
+passes, but non-monoid status, operation construction, control
+exclusion, first-map dependence, bank preservation, and downstream
+dependence remain HOLD. This creates the intermediate
+PFV2-TOWER-EFFECTIVE target.
+Doc 163 attacks the marked tower false positive. Marked monoids, bare
+UFD/factorization pairs, independent towers plus later PF, and
+effectivity labels are rejected. This creates the intermediate
+PFV2-TOWER-GLOBAL target: a global product-formula tower object whose
+definition simultaneously contains tower, PF, and effectivity data
+before assembly.
+Doc 164 writes PFV2-GLOBAL-TOWER(p,q). Simultaneous source shape
+locally passes, but global PF axiom existence, non-markedness, control
+exclusion, first-map dependence, bank preservation, and downstream
+dependence remain HOLD. This creates the intermediate
+PFV2-GLOBAL-PF-AXIOM target.
+Doc 165 attacks the all-places-first false positive. All-places
+adelic/divisor/idele/product-formula objects with p,q selected after D
+exists are rejected. This creates the intermediate PFV2-GPF-LOCAL: a
+p,q+complement global product-formula tower source formed before
+all-places assembly.
+Doc 166 writes PFV2-GPF-LOCAL(p,q). Local source priority and
+complement structurality locally pass, but axiom existence,
+non-equivalence, control exclusion, bank preservation, and downstream
+dependence remain HOLD. This creates the intermediate
+PFV2-GPF-SELECT target.
+Doc 167 attacks the effective-descent equivalence gap. GPF local
+sources equivalent to all-places objects with p,q marking are rejected.
+Doc 168 writes the residual monodromy/action shot.
+Doc 169 rejects presentation/gauge/coherence monodromy.
+Doc 170 writes the p/q tower commutator action shot.
+Doc 171 rejects scalar/abelian/bookkeeping commutators.
+Doc 172 writes the filtered complement-action shot.
+Doc 173 rejects bookkeeping filtrations.
+Doc 174 writes the extension-depth filtration shot.
+Doc 175 rejects passive structural/extension-depth filtrations.
+Doc 176 writes the commutator-extension shot.
+Doc 177 rejects formal ambient extcomm packages.
+Doc 178 writes the effectivity-boundary commutator shot.
+Doc 179 rejects descent-coherence effectivity boundaries.
+Doc 180 writes the fixed-readout residual-fiber shot.
+Doc 181 rejects empty/singleton/readout-forced residual fibers.
+Doc 182 writes the same-readout residual-pair shot.
+Doc 183 rejects identified same-readout residual pairs.
+Doc 184 writes the internal separator shot.
+Doc 185 rejects external or representative-dependent separators.
+Doc 186 rejects internal but control-formable separators.
+Doc 187 rejects separator sources that replace the B0_p/B0_q banks.
+Doc 188 rejects downstream erasure of separator data.
+Doc 189 writes the downstream load shot.
+Doc 190 rejects separator-insensitive downstream load slots.
+Doc 191 rejects DLoad routes whose only trace-legal path forgets
+separator data.
+Doc 192 rejects nonforgetful DLoad routes where the separator is
+preserved only as unconsumed auxiliary data.
+Doc 193 rejects separator consumption that splits over independent
+p-bank and q-bank operations.
+Doc 194 rejects mixed p/q consumers that Epstein/DH or broad shadow
+controls can still instantiate.
+Doc 195 rejects mixed selective consumers whose trace codomain or
+trace wrapper is supplied externally.
+Doc 196 rejects native trace interfaces whose trace value, determinant,
+kernel, regularized value, or comparison output is unchanged by the
+separator.
+The active A2 target is PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE: a
+same-readout residual pair rho_G^{fib,0}, rho_G^{fib,1} in
+Fib_Eff^{res}(Read_{desc}) with separator sep_G^{fib}, first
+downstream load slot DLoad_G^{sep}, sensitivity theorem showing that
+changing sep_G^{fib} or delta_rho_G^{fib} changes DLoad_G^{sep}, and a
+route from DLoad_G^{sep} to M_C/F_C/Tr_L or the strict trace interface
+that preserves and consumes sep_G^{fib} or delta_rho_G^{fib} in one
+mixed p/q trace-facing object/map formation that controls cannot
+instantiate and that natively derives F_C/Tr_L or the trace-facing
+codomain, with a trace-facing value sensitive to the separator before
+positivity/zero use, while preserving B0_p/B0_q load, control
+exclusion, and no carrier-forgetting envelope.
 
 Carrier-guard hardening rule: doc 64 isolates the Epstein
 x^2+5y^2 obstruction as a proof lemma. Use it instead of re-running

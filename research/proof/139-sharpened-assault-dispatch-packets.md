@@ -88,6 +88,105 @@ effective-descent collapse to all-places objects with p,q marking,
 exclude Epstein/DH at the descent source, preserve B0_p/B0_q, and
 remain load-bearing downstream?
 
+Doc 152 rejects ordinary effective descent if assembly is an equivalence
+to all-places objects with p,q marking. The current precise ask is
+PFV2-DESC-RESIDUAL: is there residual descent data rho not erased by
+assembly, consumed by kappa_desc, unavailable to controls, and
+load-bearing downstream?
+
+Doc 153 makes the residual shot concrete as PFV2-RES(p,q). The current
+precise ask is PFV2-RHO-SELECT: is there residual data rho that is not
+erased by assembly, not marking/bookkeeping, consumed before assembly,
+unavailable to controls, bank-preserving, and downstream
+load-bearing?
+
+Doc 154 rejects rho when it is only p,q marking, complement
+bookkeeping, or a scalar product-formula defect. The current precise
+ask is PFV2-RHO-NONTRIVIAL: is there nontrivial obstruction, torsor,
+extension, automorphism, cocycle, or coherence content that remains
+source-selective and downstream load-bearing?
+
+Doc 155 rejects obstruction/defect rho that vanishes on successful
+assembly or is only a scalar error. The current precise ask is
+PFV2-RHO-SURVIVES: is there nontrivial rho, for example torsor,
+extension, automorphism, cocycle, coherence, or surviving non-scalar
+obstruction content, that remains object data after successful
+assembly?
+
+Doc 156 makes the torsor/extension/cocycle shot concrete as
+PFV2-RHO-TOR(p,q). It leaves the intermediate PFV2-TOR-SELECT ask:
+does rho_tor survive successful assembly as object data rather than
+decoration, remain unavailable to controls, preserve B0_p/B0_q, and stay
+load-bearing downstream?
+
+Doc 157 rejects rho_tor when it is only gauge, presentation, ordinary
+cohomology decoration, automorphism label, or coherence witness for an
+assembled object. It leaves the intermediate PFV2-TOR-NATIVE ask: is
+there a carrier-native torsor/extension/cocycle datum before assembly?
+
+Doc 158 writes the native source record PFV2-NATIVE-TOR(p,q). The
+intermediate ask is PFV2-TOR-CARRIER: can one name the
+carrier-native band/groupoid G_car and tau_car before assembly, with
+first-map dependence, conservative bank embedding, control exclusion,
+and downstream visibility?
+
+Doc 159 rejects broad carrier-torsor/groupoid packages functorial for
+local-shadow data. It leaves the intermediate PFV2-TOR-EULER-BAND ask:
+can one name an Euler-carrier band or groupoid whose defining operation
+cannot be instantiated by Epstein/DH controls before trace, sign,
+regularization, positivity, or zero comparison?
+
+Doc 160 tests the product-formula valuation vector as the proposed
+Euler-band source. It leaves the intermediate PFV2-EULER-OP ask: can
+one name the operation taking that valuation vector to G_E/tau_E before
+assembly, prove it is not broad, and prove controls cannot instantiate
+it?
+
+Doc 161 rejects scalar product-formula balance, affine-hyperplane, and
+normalization torsor operations as broad/control-formable. The current
+precise ask is the intermediate PFV2-EULER-TOWER-OP: can one name an operation consuming
+the actual valuation towers, prime-power combs, atom fields, and
+effectivity before assembly?
+
+Doc 162 writes PFV2-TOWER-OP(p,q), with atom, comb, valuation,
+structural length, PF, and effectivity fields. It leaves the
+intermediate PFV2-TOWER-EFFECTIVE ask: can one prove those fields are
+primitive effective carrier data rather than marked
+monoid/factorization labels, and that the operation excludes controls?
+
+Doc 163 rejects marked monoids, bare UFD/factorization pairs,
+independent towers plus later PF, and effectivity labels. The current
+precise ask is the intermediate PFV2-TOWER-GLOBAL: can one name a
+global product-formula tower object whose definition simultaneously
+contains tower, PF, and effectivity data before assembly?
+
+Doc 164 writes PFV2-GLOBAL-TOWER(p,q). The current precise ask is
+the intermediate PFV2-GLOBAL-PF-AXIOM: can one name the object-level
+axiom for a simultaneous global PF tower source and prove it is not a
+marked-tower unfolding?
+
+Doc 165 rejects all-places adelic/divisor/idele/product-formula objects
+whose p,q tower data are selected after D exists. The current precise
+ask is the intermediate PFV2-GPF-LOCAL: can one name a p,q+complement
+global PF tower source formed before all-places assembly?
+
+Doc 166 writes PFV2-GPF-LOCAL(p,q). The current precise ask is
+the intermediate PFV2-GPF-SELECT: can one prove the local GPF source
+is not equivalent to all-places marking, excludes controls, preserves
+banks, and remains load-bearing downstream?
+
+Doc 167 rejects GPF local sources that are ordinary effective-descent
+presentations equivalent to all-places objects with p,q marking. The
+current precise ask is
+PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE: can one
+name DLoad_G^{sep}, lambda_G^{sep}, the route to M_C/F_C/Tr_L or the
+strict trace interface, the first mixed p/q trace-facing object/map
+formation that consumes sep_G^{fib} or delta_rho_G^{fib}, and the
+native derivation of F_C/Tr_L or the trace-facing codomain, then prove
+changing that data changes the trace-facing value before
+positivity/zero use and Epstein/DH controls cannot instantiate the
+consumer while preserving B0_p/B0_q load and control exclusion?
+
 Is there a first map
 
   kappa_PF: S_C -> Y_C
@@ -121,7 +220,8 @@ Landing:
 target:
   PFV2-ADELIC-LOCAL
 primary docs:
-  130, 135, 142, 143, 147, 148, 149, 150, 151, 134, 103, 113
+  130, 135, 142, 143, 147, 148, 149, 150, 151, 152, 153, 154, 155,
+  156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 134, 103, 113
 if PASS:
   fill doc 103 FIRST_MAP_PASS for PFV2_local_record(p,q), then route
   docs 113, 98, 94, 111, 112, 118, 120, 126.
@@ -129,7 +229,7 @@ if KILL:
   route to KILL-A2.1-KILL-A2.5 in doc 130 and doc 135.
 if SHARPEN:
   update doc 134 and create a smaller theorem target only if it changes
-  PFV2-DESC-SELECT.
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE.
 ```
 
 Post-doc-142 refinement:
@@ -346,7 +446,7 @@ date:
 target:
   PFV2-ADELIC-LOCAL | LCT-STRICT | HHG-STRUCTURAL | METEQ-DETECTED
 immediate theorem target:
-  PFV2-DESC-SELECT | LCT-STRICT-SRC0 | HHG-SOURCE-1 |
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE | LCT-STRICT-SRC0 | HHG-SOURCE-1 |
   METEQ-MINTRACE
 expert/community:
 answer type:

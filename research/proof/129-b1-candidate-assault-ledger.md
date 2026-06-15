@@ -181,7 +181,110 @@ current landing:
   locally passes source-priority schema and complement structurality
   but holds on effective-descent equivalence, control selectivity, bank
   preservation, and downstream dependence. The active target sharpens
-  to PFV2-DESC-SELECT.
+  to PFV2-DESC-SELECT. Doc 152 rejects ordinary effective-descent
+  presentations equivalent to all-places objects with p,q marking. The
+  active target sharpens again to PFV2-DESC-RESIDUAL: residual descent
+  data not erased by assembly, source-selective against controls, and
+  downstream load-bearing. Doc 153 writes the residual source
+  PFV2-RES(p,q) and sharpens the active target to PFV2-RHO-SELECT:
+  residual data rho must be non-erased, non-marking, control-selective,
+  bank-preserving, and downstream load-bearing. Doc 154 rejects
+  residuals that are only p,q marking, complement bookkeeping, or
+  scalar product-formula defects. The active target sharpens to
+  PFV2-RHO-NONTRIVIAL. Doc 155 rejects obstruction/defect rho that
+  vanishes on successful assembly or is only a scalar error. The active
+  target sharpens to PFV2-RHO-SURVIVES: a nontrivial residual datum
+  must remain object data after successful assembly. Doc 156 tests the
+  torsor/extension/cocycle residual shot PFV2-RHO-TOR(p,q). It locally
+  passes the nontrivial-rho schema but holds on survival, control
+  selectivity, bank preservation, and downstream dependence. The active
+  target sharpens to PFV2-TOR-SELECT. Doc 157 rejects torsor/extension/
+  cocycle residuals that are only gauge, presentation, ordinary
+  cohomology decoration, automorphism labels, or coherence witnesses
+  for an assembled object. The active target sharpens to
+  PFV2-TOR-NATIVE. Doc 158 writes the native torsor source record and
+  sharpens the active target to PFV2-TOR-CARRIER. Doc 159 rejects broad
+  functorial carrier-torsor/groupoid packages and sharpens the active
+  target to PFV2-TOR-EULER-BAND. Doc 160 tests the product-formula
+  valuation vector as the Euler-band source and sharpens the active
+  target to PFV2-EULER-OP. Doc 161 rejects scalar product-formula
+  balance/normalization operations and sharpens the active target to
+  PFV2-EULER-TOWER-OP. Doc 162 writes the effective Euler tower
+  operation shot and sharpens the active target to
+  PFV2-TOWER-EFFECTIVE. Doc 163 rejects marked/effectivity-label tower
+  operations and sharpens the active target to PFV2-TOWER-GLOBAL.
+  Doc 164 writes the global product-formula tower source shot and
+  sharpens the active target to PFV2-GLOBAL-PF-AXIOM.
+  Doc 165 rejects all-places-first global PF tower readouts and
+  sharpens the active target to PFV2-GPF-LOCAL.
+  Doc 166 writes the p,q+complement GPF local source shot and sharpens
+  the active target to PFV2-GPF-SELECT.
+  Doc 167 rejects effective-descent-equivalent GPF local sources and
+  sharpens the active target to PFV2-GPF-RESIDUAL.
+  Doc 168 writes the residual GPF monodromy/action source shot and
+  sharpens the active target to PFV2-GPF-RMON-SELECT.
+  Doc 169 rejects presentation/gauge/coherence monodromy and sharpens
+  the active target to PFV2-GPF-RMON-NATIVE.
+  Doc 170 writes the p/q tower commutator action shot and sharpens the
+  active target to PFV2-GPF-RMON-COMM-SELECT.
+  Doc 171 rejects scalar/abelian/bookkeeping commutators and sharpens
+  the active target to PFV2-GPF-RMON-COMM-NONSCALAR.
+  Doc 172 writes the filtered complement-action shot and sharpens the
+  active target to PFV2-GPF-RMON-FILT-SELECT.
+  Doc 173 rejects bookkeeping filtrations and sharpens the active
+  target to PFV2-GPF-RMON-FILT-STRUCT.
+  Doc 174 writes the extension-depth filtration shot and sharpens the
+  active target to PFV2-GPF-RMON-EXTDEPTH-SELECT.
+  Doc 175 rejects passive structural/extension-depth filtrations and
+  sharpens the active target to PFV2-GPF-RMON-EXTDEPTH-ACTIVE.
+  Doc 176 writes the commutator-extension shot and sharpens the active
+  target to PFV2-GPF-RMON-EXTCOMM-SELECT.
+  Doc 177 rejects formal ambient extcomm packages and sharpens the
+  active target to PFV2-GPF-RMON-EXTCOMM-NATIVE.
+  Doc 178 writes the effectivity-boundary commutator shot and sharpens
+  the active target to PFV2-GPF-RMON-EFFCOMM-SELECT.
+  Doc 179 rejects descent-coherence effectivity boundaries and
+  sharpens the active target to PFV2-GPF-RMON-EFFCOMM-RESIDUAL.
+  Doc 180 writes the fixed-readout residual-fiber shot and sharpens
+  the active target to PFV2-GPF-RMON-EFFFIBER-SELECT.
+  Doc 181 rejects empty/singleton/readout-forced residual fibers and
+  sharpens the active target to PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL.
+  Doc 182 writes the same-readout residual-pair shot and sharpens the
+  active target to PFV2-GPF-RMON-EFFPAIR-SELECT.
+  Doc 183 rejects identified same-readout residual pairs and sharpens
+  the active target to PFV2-GPF-RMON-EFFPAIR-SEPARATED.
+  Doc 184 writes the internal separator shot and sharpens the active
+  target to PFV2-GPF-RMON-EFFSEP-SELECT.
+  Doc 185 rejects external or representative-dependent separators and
+  sharpens the active target to PFV2-GPF-RMON-EFFSEP-INTERNAL.
+  Doc 186 rejects internal but control-formable separators and sharpens
+  the active target to PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED.
+  Doc 187 rejects separator sources that replace the B0_p/B0_q banks
+  and sharpens the active target to PFV2-GPF-RMON-EFFSEP-BANKED.
+  Doc 188 rejects downstream erasure of separator data and sharpens the
+  active target to PFV2-GPF-RMON-EFFSEP-LOADBEARING.
+  Doc 189 writes the downstream load shot and sharpens the active
+  target to PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT.
+  Doc 190 rejects separator-insensitive downstream load slots and
+  sharpens the active target to PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE.
+  Doc 191 rejects separator-sensitive downstream load slots whose only
+  trace-legal route forgets separator data and sharpens the active
+  target to PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL.
+  Doc 192 rejects nonforgetful downstream routes that preserve the
+  separator only as sidecar data and sharpens the active target to
+  PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED.
+  Doc 193 rejects separator-consuming operations that split over the
+  two banks before mixed p/q use and sharpens the active target to
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED.
+  Doc 194 rejects mixed consumers that controls can still instantiate
+  and sharpens the active target to
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE.
+  Doc 195 rejects free/external trace codomains after mixed selective
+  consumers and sharpens the active target to
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE.
+  Doc 196 rejects native trace interfaces whose trace-facing value is
+  separator-insensitive and sharpens the active target to
+  PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE.
 ```
 
 ### A3/S3 - HH graph-index liquid lift
@@ -482,8 +585,8 @@ It is in a candidate assault phase with no witness currently licensed.
 The next useful artifact is one of:
 
 ```text
-1. a PASS/KILL/SHARPEN theorem for PFV2-DESC-SELECT inside
-   PFV2-ADELIC-LOCAL after the doc-151 pre-global descent shot;
+1. a PASS/KILL/SHARPEN theorem for PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE
+   inside PFV2-ADELIC-LOCAL after the doc-196 native-trace-insensitivity collapse, now sharpened by docs 158-196 to PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE;
 2. a PASS/KILL/SHARPEN theorem for LCT-STRICT-SRC0 after the doc-144
    strict-source record;
 3. a PASS/KILL/SHARPEN theorem for HHG-SOURCE-1 after the doc-145
