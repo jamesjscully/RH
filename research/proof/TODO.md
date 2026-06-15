@@ -43,17 +43,39 @@ degrees-of-freedom violation (G-INT6). Doc 129 is the autopsy and the
 standing no-go against re-entering that regress. The deletion is
 recoverable in git history at the checkpoint commit preceding the reset.
 
-### Next valid work
+### Post-reset cycles landed
 
 ```text
-1. Improve and re-verify the witness suite (computational base must be
-   known-green before building on it; see scripts/numerics/witness/).
-2. Harden the existing no-go theorems (docs 51-70 + survivors) into
+Cycle 1 (doc 130): second-evaluation no-go. No carrier in the banked
+  non-proper class supplies an unforced, zero-seeing odd slot (Sylvester
+  inertia-lock + self-supply + untruncated tower). Surviving escape: a
+  properness/Poincare-duality truncation (E4'/E5').
+Cycle 2 (doc 131 pre-reg -> doc 132): radius-circularity no-go. The one
+  banked realization of doc 130's escape - the weight-2 NS Hodge-index
+  duality - fixes the Euler determinant EDGE (det = p^{k-1}) for free but
+  cannot fix its own radius: the even SPLIT |alpha|=|beta|=sqrt q is the
+  acting map's own modulus = RH. Witness cc_radius_deformation_probe
+  (flip_tracks=IMPORTED_ONLY, lead-reran exit 0). Doc 130 extends to the
+  proper object; doc-45 clause E is closed even there, at the radius.
+```
+
+### Next valid work (the relocated frontier)
+
+```text
+1. The M4r EVEN-SPLIT lemma: a zero-free proof that the assembled
+   per-prime edge p^{k-1} splits evenly into |alpha|=|beta|=p^{(k-1)/2}
+   without importing the modulus and without the F_q single-datum
+   identity. Named and attackable, but RH-equivalent in content (doc 132
+   sec 6) - it relocates rather than dissolves the wall.
+2. The GLOBAL / built-proper-object radius supplier: over Z the per-prime
+   purity carrier is empty (M2d), so the radius is a GLOBAL property of
+   the completed product (Connes-Consani C x C / scaling site) or a
+   forcing of Lambda <= 0 (de Bruijn-Newman) - with a runnable witness.
+3. Harden adjacent no-gos (docs 51-70 + survivors + 130/132) into
    citable statements; each kill names its mechanism.
-3. Sharpen the doc-45 spec by proving the next no-go: a named class
-   that cannot supply a doc-45 clause.
-4. Engage a genuine frontier ONLY with a runnable witness or a stated
-   impossibility theorem - never a schema (doc 129).
+Do NOT re-sweep the banked per-prime suppliers (each killed by
+KILL-RAD.1/2/3, doc 132). Engage a frontier ONLY with a runnable witness
+or a stated impossibility theorem - never a schema (doc 129).
 ```
 
 Standing hardening rules (carried from the deleted band, still live):

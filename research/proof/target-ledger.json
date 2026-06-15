@@ -46,6 +46,7 @@
     {"doc": 112, "path": "research/proof/112-late-carrier-reintroduction-no-go.md", "name": "late carrier reintroduction"},
     {"doc": 118, "path": "research/proof/118-traceable-envelope-collapse-no-go.md", "name": "traceable-envelope collapse"},
     {"doc": 125, "path": "research/proof/125-decorated-envelope-reflection-no-go.md", "name": "decorated-envelope reflection"},
-    {"doc": 130, "path": "research/proof/130-second-evaluation-properness-no-go.md", "name": "second-evaluation requires properness (Sylvester inertia-lock + self-supply + untruncated tower)"}
+    {"doc": 130, "path": "research/proof/130-second-evaluation-properness-no-go.md", "name": "second-evaluation requires properness (Sylvester inertia-lock + self-supply + untruncated tower)"},
+    {"doc": 132, "path": "research/proof/132-radius-circularity-no-go.md", "name": "radius-circularity: the weight-2 proper object cannot supply its own radius (Euler edge free, even split = RH)"}
   ]
 }
