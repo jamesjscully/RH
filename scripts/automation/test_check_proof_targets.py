@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Mutation tests for check_proof_targets.py.
+"""Mutation tests for check_proof_targets.py (disciplined-narrowing regime).
 
-These tests keep the trajectory checker honest. They exercise the failure
+These tests keep the discipline checker honest. They exercise the failure
 modes the checker is meant to catch without mutating repository files.
 """
 from __future__ import annotations
 
 import importlib.util
+import re
 from pathlib import Path
 
 
@@ -23,86 +24,55 @@ def _load_checker():
     return module
 
 
-def _with_fake_reader(checker, docs: dict[str, str], fn) -> None:
-    original = checker._read_text
+def test_regress_signature_matches_dead_lineage() -> None:
+    checker = _load_checker()
+    sig = re.compile(r"[A-Z][A-Z0-9]*(-[A-Z0-9]+){5,}")
+    dead = "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE"
+    if sig.search(dead) is None:
+        raise AssertionError("regress signature failed to match the dead lineage")
+    # A short, legitimate hyphenated token must NOT trip the guard.
+    if sig.search("OC1-OC4") is not None:
+        raise AssertionError("regress signature false-positived on a short token")
 
-    def fake_read_text(path: Path) -> str:
-        rel = path.relative_to(ROOT).as_posix()
-        if rel in docs:
-            return docs[rel]
-        raise AssertionError(f"unexpected read: {rel}")
 
-    checker._read_text = fake_read_text
+def test_missing_nogo_doc_fails() -> None:
+    checker = _load_checker()
+    ledger = {"nogo_bank": [{"doc": 999, "path": "research/proof/999-nope.md"}]}
+    errors: list[str] = []
     try:
-        fn()
+        checker._check_nogo_bank(ledger, errors)
+    except AssertionError:
+        return  # missing-file raises, which is also a valid failure signal
+    if not errors:
+        raise AssertionError("missing no-go doc was not caught")
+
+
+def test_nav_missing_marker_fails(tmp_path: Path = None) -> None:
+    checker = _load_checker()
+    # Point a nav doc read at a string lacking the marker via monkeypatch.
+    original = checker._read_text
+    ledger = {
+        "discipline_marker": "numerics + no-go theorems + sharp narrowing",
+        "nav_docs": ["research/proof/FAKE.md"],
+    }
+
+    def fake_read(path: Path) -> str:
+        return "# nav doc with no marker\n"
+
+    checker._read_text = fake_read
+    try:
+        errors: list[str] = []
+        checker._check_nav_agreement(ledger, errors)
+        if not any("discipline marker" in e for e in errors):
+            raise AssertionError("missing nav marker was not caught")
     finally:
         checker._read_text = original
 
 
-def test_keyword_only_shot_fails() -> None:
-    checker = _load_checker()
-    entry = {
-        "doc": 999,
-        "path": "research/proof/999-shot.md",
-        "target": "TARGET-A",
-        "next_target": "TARGET-B",
-        "kind": "shot",
-        "verdict": "LOCAL_SCHEMA_PASS",
-    }
-    text = "# 999 - Shot\nTARGET-A\nTARGET-B\nLOCAL_SCHEMA_PASS\ncandidate\n"
-
-    def run() -> None:
-        errors: list[str] = []
-        checker._check_doc_entry(entry, errors)
-        if not any("missing required section" in error for error in errors):
-            raise AssertionError(f"keyword-only shot unexpectedly passed: {errors}")
-
-    _with_fake_reader(checker, {entry["path"]: text}, run)
-
-
-def test_keyword_only_no_go_fails() -> None:
-    checker = _load_checker()
-    entry = {
-        "doc": 998,
-        "path": "research/proof/998-no-go.md",
-        "target": "TARGET-A",
-        "next_target": "TARGET-B",
-        "kind": "no-go",
-        "verdict": "REJECT_STUB",
-    }
-    text = (
-        "# 998 - No-go\n"
-        "TARGET-A\nTARGET-B\nREJECT_STUB\n"
-        "`stub` does not satisfy TARGET-A.\n"
-    )
-
-    def run() -> None:
-        errors: list[str] = []
-        checker._check_doc_entry(entry, errors)
-        if not any("missing required section" in error for error in errors):
-            raise AssertionError(f"keyword-only no-go unexpectedly passed: {errors}")
-        if not any("live-route phrase" in error for error in errors):
-            raise AssertionError(f"no-go live-route mutation was not caught: {errors}")
-
-    _with_fake_reader(checker, {entry["path"]: text}, run)
-
-
-def test_broken_chain_fails() -> None:
-    checker = _load_checker()
-    entries = [
-        {"doc": 1, "target": "A", "next_target": "B"},
-        {"doc": 2, "target": "C", "next_target": "D"},
-    ]
-    errors: list[str] = []
-    checker._check_chain(entries, "D", errors)
-    if not any("broken target chain" in error for error in errors):
-        raise AssertionError(f"broken chain was not caught: {errors}")
-
-
 def main() -> int:
-    test_keyword_only_shot_fails()
-    test_keyword_only_no_go_fails()
-    test_broken_chain_fails()
+    test_regress_signature_matches_dead_lineage()
+    test_missing_nogo_doc_fails()
+    test_nav_missing_marker_fails()
     print("proof-target-check-tests: OK")
     return 0
 

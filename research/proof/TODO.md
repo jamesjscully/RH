@@ -4,503 +4,62 @@ Purpose: keep the proof program oriented around theorem-shaped checkpoints, not 
 ever-growing list of diagnostics. Diagnostics stay here only when they change the theorem target or
 define a fail-closed test.
 
-## Current front - missing-structure characterization (2026-06-11)
+## Current front - disciplined narrowing (reset 2026-06-14)
 
-The active interface is now `45-final-missing-structure-spec.md`, with
-the doc-45 branches developed in docs 46-196. Docs 41-44 are the
-supporting audits: doc 41 normal form/gates, doc 42 M-C carrier
-classification, doc 43 M-A self-dual LP audit, doc 44 M-B g2 boundary.
-The target is not another finite-window witness but a native structure
-filling:
+Operating mode: **numerics + no-go theorems + sharp narrowing**. Every
+cycle ships a certified numerical witness OR a no-go theorem with a
+named mechanism (doc 129). The active interface is the doc-45
+missing-structure spec; the no-go bank (docs 51-70 + survivors 74, 79,
+80, 82, 85, 93, 97, 100, 107-112, 118, 125) is the primary product and
+narrows that spec monotonically.
+
+The target is a native structure filling:
 
 ```text
 carrier + liquid address + derived unit + Frobenius action + unforced
 odd slot + forced-nonnegative index/Gram + independent count comparison.
 ```
 
-M-C status:
+M-C / M-A / M-B status (docs 41-44): DONE first pass. No promoted banked
+carrier survives BC-E3'/BC13 at decision grade. Positive residue =
+ku-face supply + liquid/metrized address + index/Gram positivity +
+Quillen-style second-evaluation independence, held separately in the
+bank but not merged by any object. Do not promote Gaussian conformance,
+payment constants, solenoid entropy/address, or FE-layer silhouette to
+object evidence unless the candidate also passes BC13 and BC-E3'.
+
+The two genuine open frontiers (STRATEGY.md sec 7): (i) the missing
+arithmetic object (Connes-Consani C x C / scaling site; exists at curve
+level as a theorem); (ii) forcing Lambda <= 0 (de Bruijn-Newman). The
+located wall is PROPERNESS / an S-level duality that does more than
+reproduce the functional equation.
+
+### The 2026-06-14 reset
+
+Docs 129-196 (the construction-naming "assault" era) and the 71-128
+process bloat were deleted: 68 documents that produced zero theorems and
+zero witnesses while one target name grew by qualifier accretion - a
+degrees-of-freedom violation (G-INT6). Doc 129 is the autopsy and the
+standing no-go against re-entering that regress. The deletion is
+recoverable in git history at the checkpoint commit preceding the reset.
+
+### Next valid work
 
 ```text
-DONE first pass: no promoted banked carrier survives BC-E3'/BC13 at
-decision grade. Positive residue = ku-face supply + liquid/metrized
-address + index/Gram positivity + Quillen-style second-evaluation
-independence, held separately in the bank but not merged by any object.
+1. Improve and re-verify the witness suite (computational base must be
+   known-green before building on it; see scripts/numerics/witness/).
+2. Harden the existing no-go theorems (docs 51-70 + survivors) into
+   citable statements; each kill names its mechanism.
+3. Sharpen the doc-45 spec by proving the next no-go: a named class
+   that cannot supply a doc-45 clause.
+4. Engage a genuine frontier ONLY with a runnable witness or a stated
+   impossibility theorem - never a schema (doc 129).
 ```
 
-M-A status:
-
-```text
-DONE first pass: the banked Gaussian deep-cell obstruction is slot data.
-The self-dual Hermite unit flips `(11;2)@4.96` positive. OC2 remains
-k=1 per-place deficit plus global cross-place payability; OC3 keeps the
-unit-free depth wall.
-```
-
-M-B status:
-
-```text
-DONE for the strict proxy: NN kills strict-square / hand-inserted-unit
-exhaustion of the Frobenius-graph cone. NOT RUNNABLE for the live
-target until there is a genuine liquid/index candidate with its own
-unit, forced-positive index/Gram, and P3-grade odd-slot comparison.
-```
-
-Do not promote Gaussian conformance, payment constants, solenoid
-entropy/address, or FE-layer silhouette to object evidence unless the
-candidate also passes BC13 and BC-E3'.
-
-Immediate work is split into three live branches:
-
-```text
-No banked finite-window probe remains in the doc-40 queue.
-
-Construction branch: docs 46, 49, and 54. DONE B0 Tate-curve/liquid-RR
-calibration plus Epstein replacement guard
-(`prime_b0_tate_rr_calibration.py`). Do not promote B0 to the missing
-carrier. B1 now has an admission gate: name retained log p before trace
-evaluation, state LS3 status, write a same-form LS4 coupling, and make
-Epstein die at carrier/effectivity before positivity or RH talk.
-
-External scoping branch: docs 47 and 50. The field-native questions are
-now sendable falsification packets. A useful answer decides a doc-45
-clause, supplies a named missing theorem, or proves a no-go. Encouraging
-analogy without clause movement is background only.
-
-Negative theorem branch: docs 48, 51-53, and 55-59. DONE broad no-go gates
-for scale-blind bare sheaf/localizing traces, transport/self-supplied
-second evaluations, carrier-blind Poisson/Epstein formalisms, and
-one-place/inserted units, strict-face positivity, p-complete
-archimedean blindness, max-Gram/signature insufficiency, and zero-import
-circularity. The doc-48 no-go list is now covered; continue by tightening
-these into citable theorem statements or by building a B1 candidate that
-escapes the gates.
-
-Gate-stack rule: doc 60 now forbids another witness cycle until the
-candidate answers G60.1-G60.10. B1 may leave D/E open only if it passes
-the required carrier, scale-retention, internal-R/T-or-honest-partial,
-LS3-status, same-form-LS4, and zero-free-freeze gates.
-
-External-answer rule: record every expert answer in doc 61 before using
-it to update HANDOFF, TODO, doc 60, doc 76, doc 81, doc 82, or the
-trajectory. Score LT76/A6 answers by doc 83 and route them through doc
-92. Route S3 answers through docs 94, 95, 96, 98, 99, and 103, with
-collapse checked by docs 93, 97, and 100-102.
-
-Citation-hardening rule: doc 62 audits the Efimov source for doc 51.
-When polishing no-go gates, separate directly cited external theorems
-from derived program lemmas. Doc 63 supplies the first such derived
-lemma for the scale-blind bare lattice diagram. Docs 64-67 similarly
-isolate the Epstein carrier guard, P3 independence normal form,
-unit-covariance/threading normal form, and BC13 exhaustion normal form.
-Doc 68 isolates the p-complete archimedean escape normal form. Doc 69
-isolates the zero-free freeze normal form: every load-bearing choice
-must have a zero-free supplier and frozen record before zero contact.
-Doc 70 isolates the Gram diagnostic normal form: Gram/signature/stress
-packages are supply or diagnostics unless independent P3 and BC13 data
-are added. Doc 71 is the B1 proposal ledger; fill one concrete entry
-and classify it before building any new B1 witness. Doc 72 fills the
-initial B1 slots and points the next concrete work at trace-derived S3
-structure, an external S1/S2 trace-retention theorem, or the S5
-A6/LT76 route through doc 92.
-Doc 73 preregisters the S3 kernel interface; the next construction
-task is no longer a bare `K_B1` formula, but a doc-94 trace-supplied
-`M_C/F_C` object that also survives docs 97 and 98, or a covered no-go.
-Doc 74 proves the generic-kernel carrier-blindness no-go, so any
-surviving `K_B1` must require valuation/depth carrier data rather than
-theta/count/Poisson shadows.
-Doc 75 records the remaining K_B1 ansatz classes; all remain HOLD or
-REJECT until a native trace/product-formula/graph-index theorem is
-written. Doc 76 turns the best remaining A6 liquid trace route into a
-field-native theorem target for external experts. Doc 77 is the
-focused packet to send for that target. Doc 78 audits local LT76
-status: the cheap/bare and Route A cases are settled, but the broad
-real/liquid trace question is still open. Doc 79 isolates the
-side-block archimedean no-go: external archimedean summands are not
-same-form LS4 coupling. Doc 80 isolates late scale insertion:
-post-processing a scale-blind trace by `log p` is not A1 scale
-retention. Doc 81 supplies the A1 scale-retention decision ledger:
-no G60.2/LT76.1 claim advances until it records the pre-trace carrier,
-deletion test, late-insertion audit, and same-form coupling status.
-Doc 82 proves the bounded NO76.1 factor-through no-go: any proposed
-trace whose load-bearing data factors through the bare scale-blind
-diagram remains scale-blind; non-factor-through packages remain open.
-Doc 83 supplies the LT76 external-answer scoring rubric; every answer
-must land in doc 61 before gate or trajectory updates.
-Doc 84 states the minimal non-factorization theorem target required to
-escape doc 82 without promoting A1 success to B1 admission.
-Doc 85 proves the trace-detection guard: object-level non-isomorphism
-does not count unless the load-bearing trace/domain/value detects it.
-Doc 86 supplies the LS4 same-form coupling decision ledger: A1 success
-does not advance G60.5/LT76.5 without one mixed trace object receiving
-both banked comb and continuum before evaluation.
-Doc 87 supplies the carrier-selectivity decision ledger: same-form
-coupling does not advance G60.1/LT76.6 unless Epstein/DH die at a
-named carrier/effectivity map while theta/count shadows survive.
-Doc 88 supplies the LT76.3 traceability/proper-pushforward ledger:
-`Tr_L` cannot be used before a named theorem makes the enriched
-`T_C -> pt` trace legal.
-Doc 89 supplies the LT76.4 conservative bank-embedding ledger: B1/A6
-must preserve the B0 comb/address/count/guard data instead of replacing
-it with a parallel analogy.
-Doc 90 supplies the LT76.2 internal archimedean object ledger:
-`R_L`, `T=R/Z`, and the archimedean completion must be structural
-objects in `L1`, not p-complete notation or readout.
-Doc 91 supplies the LT76.7 zero-free freeze ledger. The LT76.1-LT76.7
-stack now has clause ledgers; no A6/S3 witness should run before the
-relevant ledgers have PASS entries or a NO76 kill is recorded.
-Doc 92 supplies the LT76 admission matrix/router: external answers and
-candidate proposals must be routed through the exact clause ledger,
-with local PASS/HOLD/REJECT/OUT_OF_SCOPE verdicts and no cross-gate
-inference, before doc 60, doc 76, or doc 71 changes.
-Doc 93 supplies the S3 free-weight kernel no-go: valuation/depth
-decoration is calibration unless the weights, windows, forms,
-parameters, determinant wrapper, and codomain are derived from the
-candidate trace on one same-form object.
-Doc 94 supplies the positive S3 escape target: derive the mixed object
-M_C and same-form codomain F_C from a named L1 trace theorem, or route
-the ansatz to the exact collapse mode.
-Doc 95 packages that S3 question for external trace/index/kernel
-experts and requires an ADVANCE/KILL/SHARPEN answer to land with a
-Doc94 verdict and adjacent unknowns.
-Doc 96 gives short dispatch messages for the LT76 and S3 external
-fronts and normalizes the doc-61 landing fields for replies.
-Doc 97 supplies the S3 monoid-functorial overreach no-go: a
-trace-derived-looking form is still carrier-blind if its naturality
-domain accepts represented-norm, commutative-monoid, or measure
-shadows for Epstein/DH.
-Doc 98 supplies the strict Euler-carrier trace-domain target: any
-surviving S3 proposal must exclude Epstein/DH at the first
-carrier-consuming map while preserving trace legality, bank embedding,
-same-form coupling, and freeze.
-Doc 99 audits the local S3 state after docs 73/74/93/94/97/98: no
-witness is licensed; generic shadows, free weights, and overbroad
-naturality are rejected; the only live route is a strict ECar_L1 record
-or a broad no-go against that class.
-Doc 100 proves the bounded shadow-enlargement no-go: if M_C, F_C, and
-the trace are functorial in broad shadow data before primitive carrier
-checking, Epstein/DH still enter and doc 97 carrier overreach applies.
-Doc 101 turns that no-go into an operation audit for tensor/sum/
-completion/pushforward/coend/kernel/correspondence/determinant/cokernel
-and trace-class closure constructions.
-Doc 102 applies the operation audit to the doc-75 A0-A6 ansatz classes:
-only strict ECar_L1-first variants remain HOLD; shadow-stable mixed
-object constructions route to docs 100 and 97.
-Doc 103 supplies the positive-side first-map record: a future strict S3
-proposal must name the source object, first primitive carrier-consuming
-map, operation order, and Epstein/DH exclusion before returning to doc
-98.
-Doc 104 fills that record at current status level: no A1-A6 class has
-`FIRST_MAP_PASS`; the next positive S3 work is to fill one doc-103
-record before any witness.
-Doc 105 adds the parallel LT76/A6 overreach audit: broad
-measure/kernel/trace-class operations before primitive carrier checking
-fail LT76.6 if Epstein/DH controls still enter.
-Doc 106 records the current LT76 status after doc 105: no local PASS
-entries, broad trace-operation packages route to overreach, and strict
-carrier-consuming trace packages remain HOLD targets.
-Doc 107 extracts the shared carrier-overreach meta-lemma behind docs
-97, 100, and 105, so future proposals cite one theorem-shaped statement
-instead of re-killing Epstein/DH examples.
-Doc 108 turns doc 107 into a theorem-polish proof skeleton: it records
-the exact hypotheses H108.1-H108.7, the branch verdicts, local
-dependencies, instantiation checklist, and strict-first-map escape
-clause.
-Doc 109 hardens doc 103 by rejecting labeled-shadow first maps:
-decorating a shadow object with alpha/v/depth/ell data does not count
-as primitive carrier consumption unless the source category and map
-become structurally unavailable for Epstein/DH before M_C/F_C/Tr_L.
-Doc 110 packages the strict-first-map question for external experts:
-ask for an ADVANCE/KILL/SHARPEN answer on whether S_C and kappa_C can
-be named before any shadow-stable trace, mixed-object, or codomain
-construction.
-Doc 111 handles the next false positive: even if S_C and kappa_C are
-plausible, the proposal still fails if M_C/F_C/Tr_L factors through a
-forgetful shadow that no longer depends on the primitive field consumed
-by kappa_C.
-Doc 112 rejects the downstream repair version: forming a shadow-stable
-trace package first and adding carrier fields later through weights,
-codomains, normalizations, regularizations, or second maps does not
-repair carrier selectivity.
-Doc 113 is the current S3 strict-route admission matrix: no S3 witness
-is licensed until a candidate passes doc 103, avoids docs
-109/111/112/118,
-and then supplies doc 98 and doc 94 records.
-Doc 114 is the current LT76/A6 strict-trace admission matrix: no A6
-witness is licensed until the doc-92 clause rows pass and docs
-105/108/112/118/120/121 do not trigger.
-Doc 115 is the current external decision queue. It lists the exact
-sendable packet for LT76, S3 first-map, S3 trace-derived codomain, and
-no-go-reviewer questions, with ADVANCE/KILL/SHARPEN criteria.
-Doc 116 is the current B1 admission board. It records that S1-S5 and
-S3 A0-A6 remain HOLD or REJECT, so no B1 witness is licensed.
-Doc 117 fills the smallest honest post-B0 calibration record: an A2
-two-place valuation-vector route card with FIRST_MAP_HOLD and no
-witness license.
-Doc 118 adds the traceable-envelope collapse no-go: a strict first map
-does not advance if the trace becomes legal only after a
-carrier-forgetting envelope.
-Doc 119 records the current sendable strict-first-map dispatch and
-landing template for the Q115.2 external question.
-Doc 120 supplies the traceable-envelope operation audit: classify the
-envelope/completion Q before using trace legality for S3/LT76 carrier
-selectivity.
-Doc 121 applies that audit to the current S3/LT76 board and records no
-carrier-reflecting envelope pass.
-Doc 122 states the positive carrier-reflecting envelope theorem target
-that would be needed to turn an envelope-mediated trace route into a
-local pass.
-Doc 123 packages that target into a sendable external question with
-ADVANCE/KILL/SHARPEN landing fields.
-Doc 124 records the current external priority order: doc 119 first
-unless a concrete envelope Q is already named for doc 123.
-Doc 125 rejects the decorated-envelope false positive: inert marks,
-metadata, or post-completion tags do not count as carrier reflection.
-Doc 126 is the carrier-reflecting envelope admission matrix, collecting
-docs 118/120/121/122/125 into one router.
-Doc 127 applies that matrix to the current board and records no
-PASS_CARRIER_REFLECTING_ENVELOPE.
-Doc 128 scores external answers to doc 123 so ordinary traceability or
-decorated marks are not promoted to carrier-reflecting progress.
-Doc 129 changes the operating cadence to candidate-driven assault:
-keep A2/S3, A6/LT76, A3, and S2 open as live shots, attack their first
-objects/maps directly, and license new no-goes or witnesses only when a
-shot fails in a way that moves a HOLD row, records a covered rejection,
-or sharpens the next concrete candidate action.
-Doc 130 executes the first A2/S3 assault row. It names PFV2-FIRST as
-the missing theorem for a product-formula valuation-pair strict source
-PFV2(A_p,A_q), fills the doc-103 record with FIRST_MAP_HOLD, and
-records that A2 remains HOLD_STRICT_ROUTE with no witness license.
-Doc 131 executes the A6/LT76 assault row. It separates broad
-liquid/trace-class circle packages from strict carrier-consuming trace
-packages: broad packages demote or reject by carrier overreach/scale
-collapse, while the surviving strict route is the LCT-FIRST theorem
-target and remains HOLD_LT76_STRICT with no witness license.
-Doc 132 executes the A3 HH graph-index assault row. It names
-HHG-FIRST as the missing theorem needed to make HH graph-depth/index
-data primitive L1 object data before Gram, trace, mixed-object, or
-codomain formation. A3 remains HOLD_STRICT_ROUTE with no witness
-license.
-Doc 133 executes the S2 metric/equivariant circle assault row. Bare
-circle/localizing versions remain rejected by existing gates; the
-enriched route is METEQ-A1 and remains HOLD_A1 until a trace/domain
-detects log p before evaluation and can feed same-form LS4. No S2
-witness is licensed.
-Doc 134 is the follow-up board for the four named theorem targets:
-PFV2-ADELIC-LOCAL, LCT-STRICT, HHG-STRUCTURAL, and METEQ-DETECTED. It gives sendable
-questions and the landing record for PASS/KILL/SHARPEN answers. No
-answer from doc 134 directly admits B1.
-Doc 135 attacks Q134.1 internally. It rejects PFV2_coord, the
-coordinate-pair version built from B0_p x B0_q plus valuation labels
-or product-formula relations, by doc-109 relabeling logic. The live A2
-thread is first sharpened to PFV2-STRUCTURAL, then further narrowed by
-docs 140-143.
-Doc 136 attacks Q134.2 internally. It rejects LTC_broad, broad
-liquid/analytic trace-class circle packages formed before primitive
-carrier checking, under doc-105 overreach hypotheses. The live A6
-target is sharpened to LCT-STRICT.
-Doc 137 attacks Q134.3 internally. It rejects or demotes HHG_diag,
-the HH graph/index diagnostic-shadow realization, by doc-70/doc-109
-logic. The live A3 target is sharpened to HHG-STRUCTURAL.
-Doc 138 attacks Q134.4 internally. It rejects METEQ_late,
-factor-through or post-trace scale insertion enriched-circle packages,
-by docs 80/82/85. The live S2 target is sharpened to METEQ-DETECTED.
-Doc 139 gives the current sendable packet bank for the four sharpened
-targets PFV2-ADELIC-LOCAL, LCT-STRICT, HHG-STRUCTURAL, and
-METEQ-DETECTED, plus the universal landing record for future replies.
-Doc 140 audits PFV2-STRUCTURAL source axioms. Marked products and
-marked commutative monoids are rejected; UFD/factorization-domain and
-adelic/product-formula source objects remain HOLD subfamilies.
-Doc 141 attacks the UFD/factorization subfamily. Bare UFD pairs are
-demoted to source-control partial because PF is still external unless
-it is source data. This creates the intermediate PFV2-GLOBAL stage
-before doc 142.
-Doc 142 attacks the adelic/product-formula subfamily. Bare all-places
-product-formula bookkeeping is demoted unless the two-place source and
-the complement of the other places are structural. The live A2 target
-is sharpened to PFV2-ADELIC-LOCAL.
-Doc 143 takes the direct PFV2-ADELIC-LOCAL source-record shot. It
-accepts PFV2_local_record(p,q) only as calibration and localizes the
-decisive theorem to PFV2-COMP-REFLECT: a non-free structural
-complement consumed before trace, unavailable to controls, and
-load-bearing downstream. A2 remains HOLD_COMPLEMENT_REFLECTION.
-Doc 144 takes the direct LCT-STRICT source-record shot. It names
-LCT-STRICT-SRC0(alpha) as the immediate strict S_alpha/kappa_L target,
-with LCT-STRICT-REFLECT as the follow-up if trace legality and carrier
-reflection cannot be separated. A6 remains HOLD_SRC0.
-Doc 145 takes the direct HHG-STRUCTURAL source-record shot. It names
-HHG-SOURCE-1 as the immediate HH_C/kappa_HH target and requires one
-downstream load-bearing slot before any Gram/index witness. A3 remains
-HOLD_SOURCE_1.
-Doc 146 takes the direct METEQ-DETECTED trace-domain shot. It names
-METEQ-MINTRACE as the frozen (O_l,D_l,Tr_l) target and requires a
-deletion theorem before any metric/equivariant witness. S2 remains
-HOLD_MINTRACE.
-Doc 147 takes the first concrete PFV2-COMP-REFLECT shot. The relative
-divisor/idele complement PFV2-REL-DIV(p,q) locally passes complement
-structurality, but the route sharpens to PFV2-REL-FIRST because
-relative-first priority, source selectivity, bank preservation, and
-downstream dependence remain unproved.
-Doc 148 attacks the classical relative divisor/idele subfamily exposed
-by doc 147. Ordinary relative tuples are rejected as all-places
-assembly plus p,q marking. This creates the intermediate
-PFV2-REL-UPROP target: a relative universal property, reflection
-theorem, or descent/gluing axiom not equivalent to all-places
-projection.
-Doc 149 attacks the formal universal-property repair. Slice/fiber/
-pullback/comma relative categories are rejected as marked all-places
-sources unless they add a native relative reflector/descent theorem.
-This creates the intermediate PFV2-REL-REFLECT target.
-Doc 150 attacks the post-global reflector repair. Reflectors,
-localizations, completions, or carrier-reflecting envelopes applied
-after an all-places source exists are rejected as too late. The
-PFV2 thread passes through PFV2-REL-DESCENT: pre-global p,q+complement
-descent/gluing source data from which the all-places object is
-assembled.
-Doc 151 takes the pre-global descent shot directly. PFV2-DESC(p,q)
-locally passes the source-priority schema and complement structurality,
-but holds on effective-descent equivalence, control selectivity, bank
-preservation, and downstream dependence. The active A2 target is
-PFV2-DESC-SELECT.
-Doc 152 attacks the effective-descent equivalence gap. Ordinary descent
-presentations equivalent to all-places objects with p,q marking are
-rejected as presentational priority. The active A2 target is
-PFV2-DESC-RESIDUAL: residual descent data not erased by assembly,
-source-selective against controls, and downstream load-bearing.
-Doc 153 writes the residual descent source record. PFV2-RES(p,q)
-locally passes source-priority schema, but residual non-erasure,
-control selectivity, bank preservation, and downstream dependence
-remain HOLD. This creates the intermediate PFV2-RHO-SELECT target.
-Doc 154 attacks the first residual false positive. Rho fields that are
-only p,q marking, complement bookkeeping, or scalar defects are
-rejected. This creates the intermediate PFV2-RHO-NONTRIVIAL target:
-rho must have independent obstruction, torsor, extension, automorphism,
-cocycle, or coherence content.
-Doc 155 attacks the obstruction/defect residual subfamily. Obstructions
-that vanish on successful assembly and scalar defect terms are
-rejected. This creates the intermediate PFV2-RHO-SURVIVES target:
-nontrivial rho must remain object data after successful assembly.
-Doc 156 takes the torsor/extension/cocycle residual shot. PFV2-RHO-TOR
-locally passes the nontrivial-rho schema, but survival through
-assembly, control selectivity, bank preservation, and downstream
-dependence remain HOLD. This creates the intermediate PFV2-TOR-SELECT
-target.
-Doc 157 attacks the first torsor false positive. Torsors/extensions/
-cocycles that are only gauge, presentation, ordinary decoration,
-automorphism labels, or coherence witnesses are rejected. The active
-A2 target is PFV2-TOR-NATIVE.
-Doc 158 writes PFV2-NATIVE-TOR(p,q). It locally passes native
-position, but native existence, non-decoration, control selectivity,
-first-map dependence, bank preservation, and downstream dependence
-remain HOLD. This creates the intermediate PFV2-TOR-CARRIER target.
-Doc 159 attacks the broad carrier-torsor false positive. Carrier
-bands/groupoids that are functorial for local-shadow data and formable
-by Epstein/DH controls are rejected. This creates the intermediate
-PFV2-TOR-EULER-BAND target: a named Euler-carrier band or groupoid whose
-defining operation is unavailable to controls before trace, sign,
-regularization, positivity, or zero comparison.
-Doc 160 writes PFV2-EULER-BAND(p,q), using the product-formula
-valuation vector as the proposed Euler-band source. Euler field
-placement locally passes, but operation construction, non-broadness,
-first-map dependence, bank preservation, and downstream dependence
-remain HOLD. This creates the intermediate PFV2-EULER-OP target.
-Doc 161 attacks the scalar product-formula operation false positive.
-Linear balance, affine-hyperplane, and normalization torsor operations
-are rejected as broad/control-formable. This creates the intermediate
-PFV2-EULER-TOWER-OP target: a named operation consuming the actual
-valuation towers, prime-power combs, atom fields, and effectivity
-before assembly.
-Doc 162 writes PFV2-TOWER-OP(p,q). Tower field placement locally
-passes, but non-monoid status, operation construction, control
-exclusion, first-map dependence, bank preservation, and downstream
-dependence remain HOLD. This creates the intermediate
-PFV2-TOWER-EFFECTIVE target.
-Doc 163 attacks the marked tower false positive. Marked monoids, bare
-UFD/factorization pairs, independent towers plus later PF, and
-effectivity labels are rejected. This creates the intermediate
-PFV2-TOWER-GLOBAL target: a global product-formula tower object whose
-definition simultaneously contains tower, PF, and effectivity data
-before assembly.
-Doc 164 writes PFV2-GLOBAL-TOWER(p,q). Simultaneous source shape
-locally passes, but global PF axiom existence, non-markedness, control
-exclusion, first-map dependence, bank preservation, and downstream
-dependence remain HOLD. This creates the intermediate
-PFV2-GLOBAL-PF-AXIOM target.
-Doc 165 attacks the all-places-first false positive. All-places
-adelic/divisor/idele/product-formula objects with p,q selected after D
-exists are rejected. This creates the intermediate PFV2-GPF-LOCAL: a
-p,q+complement global product-formula tower source formed before
-all-places assembly.
-Doc 166 writes PFV2-GPF-LOCAL(p,q). Local source priority and
-complement structurality locally pass, but axiom existence,
-non-equivalence, control exclusion, bank preservation, and downstream
-dependence remain HOLD. This creates the intermediate
-PFV2-GPF-SELECT target.
-Doc 167 attacks the effective-descent equivalence gap. GPF local
-sources equivalent to all-places objects with p,q marking are rejected.
-Doc 168 writes the residual monodromy/action shot.
-Doc 169 rejects presentation/gauge/coherence monodromy.
-Doc 170 writes the p/q tower commutator action shot.
-Doc 171 rejects scalar/abelian/bookkeeping commutators.
-Doc 172 writes the filtered complement-action shot.
-Doc 173 rejects bookkeeping filtrations.
-Doc 174 writes the extension-depth filtration shot.
-Doc 175 rejects passive structural/extension-depth filtrations.
-Doc 176 writes the commutator-extension shot.
-Doc 177 rejects formal ambient extcomm packages.
-Doc 178 writes the effectivity-boundary commutator shot.
-Doc 179 rejects descent-coherence effectivity boundaries.
-Doc 180 writes the fixed-readout residual-fiber shot.
-Doc 181 rejects empty/singleton/readout-forced residual fibers.
-Doc 182 writes the same-readout residual-pair shot.
-Doc 183 rejects identified same-readout residual pairs.
-Doc 184 writes the internal separator shot.
-Doc 185 rejects external or representative-dependent separators.
-Doc 186 rejects internal but control-formable separators.
-Doc 187 rejects separator sources that replace the B0_p/B0_q banks.
-Doc 188 rejects downstream erasure of separator data.
-Doc 189 writes the downstream load shot.
-Doc 190 rejects separator-insensitive downstream load slots.
-Doc 191 rejects DLoad routes whose only trace-legal path forgets
-separator data.
-Doc 192 rejects nonforgetful DLoad routes where the separator is
-preserved only as unconsumed auxiliary data.
-Doc 193 rejects separator consumption that splits over independent
-p-bank and q-bank operations.
-Doc 194 rejects mixed p/q consumers that Epstein/DH or broad shadow
-controls can still instantiate.
-Doc 195 rejects mixed selective consumers whose trace codomain or
-trace wrapper is supplied externally.
-Doc 196 rejects native trace interfaces whose trace value, determinant,
-kernel, regularized value, or comparison output is unchanged by the
-separator.
-The active A2 target is PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE: a
-same-readout residual pair rho_G^{fib,0}, rho_G^{fib,1} in
-Fib_Eff^{res}(Read_{desc}) with separator sep_G^{fib}, first
-downstream load slot DLoad_G^{sep}, sensitivity theorem showing that
-changing sep_G^{fib} or delta_rho_G^{fib} changes DLoad_G^{sep}, and a
-route from DLoad_G^{sep} to M_C/F_C/Tr_L or the strict trace interface
-that preserves and consumes sep_G^{fib} or delta_rho_G^{fib} in one
-mixed p/q trace-facing object/map formation that controls cannot
-instantiate and that natively derives F_C/Tr_L or the trace-facing
-codomain, with a trace-facing value sensitive to the separator before
-positivity/zero use, while preserving B0_p/B0_q load, control
-exclusion, and no carrier-forgetting envelope.
-
-Carrier-guard hardening rule: doc 64 isolates the Epstein
-x^2+5y^2 obstruction as a proof lemma. Use it instead of re-running
-Epstein as another example whenever the question is carrier
-selectivity.
-
-Second-evaluation hardening rule: doc 65 isolates P3 independence as a
-normal form. Use extension-domain asymmetry, contentful comparison, and
-unforced odd spectrum instead of counting multiple presentations of one
-value.
-
-Unit/threading hardening rule: doc 66 isolates the C-side normal form.
-Do not promote unit-dependent signs or one-place bookkeeping; require
-candidate-native unit, covariant local deficit/global payability, and
-unit-free depth wall.
-```
+Standing hardening rules (carried from the deleted band, still live):
+doc 64 isolates the Epstein x^2+5y^2 obstruction as a proof lemma - use
+it instead of re-running Epstein. Doc 65 isolates P3 independence as a
+normal form. Doc 66 isolates the C-side unit/threading normal form.
 
 ## Risk Ladder (2026-06-09 reorganization)
 

@@ -1,427 +1,50 @@
 {
-  "current_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE",
-  "branch": "PFV2-ADELIC-LOCAL",
-  "doc_range": {
-    "start": 151,
-    "end": 196
-  },
-  "entries": [
-    {
-      "doc": 151,
-      "path": "research/proof/151-pfv2-preglobal-descent-shot.md",
-      "target": "PFV2-REL-DESCENT",
-      "next_target": "PFV2-DESC-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_SCHEMA_PASS"
-    },
-    {
-      "doc": 152,
-      "path": "research/proof/152-pfv2-effective-descent-collapse.md",
-      "target": "PFV2-DESC-SELECT",
-      "next_target": "PFV2-DESC-RESIDUAL",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFECTIVE_DESCENT_COLLAPSE"
-    },
-    {
-      "doc": 153,
-      "path": "research/proof/153-pfv2-residual-descent-source-record.md",
-      "target": "PFV2-DESC-RESIDUAL",
-      "next_target": "PFV2-RHO-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_SCHEMA_PASS"
-    },
-    {
-      "doc": 154,
-      "path": "research/proof/154-pfv2-rho-marking-collapse.md",
-      "target": "PFV2-RHO-SELECT",
-      "next_target": "PFV2-RHO-NONTRIVIAL",
-      "kind": "no-go",
-      "verdict": "REJECT_RHO_MARKING"
-    },
-    {
-      "doc": 155,
-      "path": "research/proof/155-pfv2-rho-obstruction-defect-collapse.md",
-      "target": "PFV2-RHO-NONTRIVIAL",
-      "next_target": "PFV2-RHO-SURVIVES",
-      "kind": "no-go",
-      "verdict": "REJECT_OBSTRUCTION_VANISHES"
-    },
-    {
-      "doc": 156,
-      "path": "research/proof/156-pfv2-rho-torsor-extension-shot.md",
-      "target": "PFV2-RHO-SURVIVES",
-      "next_target": "PFV2-TOR-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_RHO_CLASS_PASS"
-    },
-    {
-      "doc": 157,
-      "path": "research/proof/157-pfv2-torsor-decoration-collapse.md",
-      "target": "PFV2-TOR-SELECT",
-      "next_target": "PFV2-TOR-NATIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_TOR_DECORATION"
-    },
-    {
-      "doc": 158,
-      "path": "research/proof/158-pfv2-native-torsor-source-record.md",
-      "target": "PFV2-TOR-NATIVE",
-      "next_target": "PFV2-TOR-CARRIER",
-      "kind": "shot",
-      "verdict": "LOCAL_NATIVE_POSITION_PASS"
-    },
-    {
-      "doc": 159,
-      "path": "research/proof/159-pfv2-carrier-torsor-formability-collapse.md",
-      "target": "PFV2-TOR-CARRIER",
-      "next_target": "PFV2-TOR-EULER-BAND",
-      "kind": "no-go",
-      "verdict": "REJECT_BROAD_CARRIER_TOR"
-    },
-    {
-      "doc": 160,
-      "path": "research/proof/160-pfv2-euler-band-valuation-shot.md",
-      "target": "PFV2-TOR-EULER-BAND",
-      "next_target": "PFV2-EULER-OP",
-      "kind": "shot",
-      "verdict": "LOCAL_EULER_FIELD_SCHEMA_PASS"
-    },
-    {
-      "doc": 161,
-      "path": "research/proof/161-pfv2-linear-pf-operation-collapse.md",
-      "target": "PFV2-EULER-OP",
-      "next_target": "PFV2-EULER-TOWER-OP",
-      "kind": "no-go",
-      "verdict": "REJECT_LINEAR_PF_OP"
-    },
-    {
-      "doc": 162,
-      "path": "research/proof/162-pfv2-euler-tower-operation-shot.md",
-      "target": "PFV2-EULER-TOWER-OP",
-      "next_target": "PFV2-TOWER-EFFECTIVE",
-      "kind": "shot",
-      "verdict": "LOCAL_TOWER_FIELD_SCHEMA_PASS"
-    },
-    {
-      "doc": 163,
-      "path": "research/proof/163-pfv2-effective-tower-marking-collapse.md",
-      "target": "PFV2-TOWER-EFFECTIVE",
-      "next_target": "PFV2-TOWER-GLOBAL",
-      "kind": "no-go",
-      "verdict": "REJECT_TOWER_MARKED_MONOID"
-    },
-    {
-      "doc": 164,
-      "path": "research/proof/164-pfv2-global-tower-source-shot.md",
-      "target": "PFV2-TOWER-GLOBAL",
-      "next_target": "PFV2-GLOBAL-PF-AXIOM",
-      "kind": "shot",
-      "verdict": "LOCAL_SIMULTANEOUS_SCHEMA_PASS"
-    },
-    {
-      "doc": 165,
-      "path": "research/proof/165-pfv2-global-pf-allplaces-collapse.md",
-      "target": "PFV2-GLOBAL-PF-AXIOM",
-      "next_target": "PFV2-GPF-LOCAL",
-      "kind": "no-go",
-      "verdict": "REJECT_ALLPLACES_GPF"
-    },
-    {
-      "doc": 166,
-      "path": "research/proof/166-pfv2-gpf-local-source-shot.md",
-      "target": "PFV2-GPF-LOCAL",
-      "next_target": "PFV2-GPF-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_GPF_SOURCE_SCHEMA_PASS"
-    },
-    {
-      "doc": 167,
-      "path": "research/proof/167-pfv2-gpf-effective-descent-collapse.md",
-      "target": "PFV2-GPF-SELECT",
-      "next_target": "PFV2-GPF-RESIDUAL",
-      "kind": "no-go",
-      "verdict": "REJECT_GPF_EFFECTIVE_DESCENT"
-    },
-    {
-      "doc": 168,
-      "path": "research/proof/168-pfv2-gpf-residual-monodromy-shot.md",
-      "target": "PFV2-GPF-RESIDUAL",
-      "next_target": "PFV2-GPF-RMON-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_GPF_RESIDUAL_SCHEMA_PASS"
-    },
-    {
-      "doc": 169,
-      "path": "research/proof/169-pfv2-gpf-rmon-presentation-collapse.md",
-      "target": "PFV2-GPF-RMON-SELECT",
-      "next_target": "PFV2-GPF-RMON-NATIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_RMON_PRESENTATION"
-    },
-    {
-      "doc": 170,
-      "path": "research/proof/170-pfv2-gpf-rmon-commutator-shot.md",
-      "target": "PFV2-GPF-RMON-NATIVE",
-      "next_target": "PFV2-GPF-RMON-COMM-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_RMON_COMM_SCHEMA_PASS"
-    },
-    {
-      "doc": 171,
-      "path": "research/proof/171-pfv2-gpf-rmon-commutator-scalar-collapse.md",
-      "target": "PFV2-GPF-RMON-COMM-SELECT",
-      "next_target": "PFV2-GPF-RMON-COMM-NONSCALAR",
-      "kind": "no-go",
-      "verdict": "REJECT_COMM_SCALAR"
-    },
-    {
-      "doc": 172,
-      "path": "research/proof/172-pfv2-gpf-rmon-filtered-action-shot.md",
-      "target": "PFV2-GPF-RMON-COMM-NONSCALAR",
-      "next_target": "PFV2-GPF-RMON-FILT-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_FILTERED_RESIDUE_SCHEMA_PASS"
-    },
-    {
-      "doc": 173,
-      "path": "research/proof/173-pfv2-gpf-rmon-filtration-bookkeeping-collapse.md",
-      "target": "PFV2-GPF-RMON-FILT-SELECT",
-      "next_target": "PFV2-GPF-RMON-FILT-STRUCT",
-      "kind": "no-go",
-      "verdict": "REJECT_FILT_BOOKKEEPING"
-    },
-    {
-      "doc": 174,
-      "path": "research/proof/174-pfv2-gpf-rmon-extension-depth-filtration-shot.md",
-      "target": "PFV2-GPF-RMON-FILT-STRUCT",
-      "next_target": "PFV2-GPF-RMON-EXTDEPTH-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EXTDEPTH_SCHEMA_PASS"
-    },
-    {
-      "doc": 175,
-      "path": "research/proof/175-pfv2-gpf-rmon-passive-extension-depth-collapse.md",
-      "target": "PFV2-GPF-RMON-EXTDEPTH-SELECT",
-      "next_target": "PFV2-GPF-RMON-EXTDEPTH-ACTIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_EXTDEPTH_PASSIVE"
-    },
-    {
-      "doc": 176,
-      "path": "research/proof/176-pfv2-gpf-rmon-commutator-extension-shot.md",
-      "target": "PFV2-GPF-RMON-EXTDEPTH-ACTIVE",
-      "next_target": "PFV2-GPF-RMON-EXTCOMM-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EXTCOMM_SCHEMA_PASS"
-    },
-    {
-      "doc": 177,
-      "path": "research/proof/177-pfv2-gpf-rmon-formal-ambient-extcomm-collapse.md",
-      "target": "PFV2-GPF-RMON-EXTCOMM-SELECT",
-      "next_target": "PFV2-GPF-RMON-EXTCOMM-NATIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_EXTCOMM_FORMAL_AMBIENT"
-    },
-    {
-      "doc": 178,
-      "path": "research/proof/178-pfv2-gpf-rmon-effectivity-boundary-commutator-shot.md",
-      "target": "PFV2-GPF-RMON-EXTCOMM-NATIVE",
-      "next_target": "PFV2-GPF-RMON-EFFCOMM-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EFFCOMM_SCHEMA_PASS"
-    },
-    {
-      "doc": 179,
-      "path": "research/proof/179-pfv2-gpf-rmon-effcomm-descent-coherence-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFCOMM-SELECT",
-      "next_target": "PFV2-GPF-RMON-EFFCOMM-RESIDUAL",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFCOMM_DESCENT_COHERENCE"
-    },
-    {
-      "doc": 180,
-      "path": "research/proof/180-pfv2-gpf-rmon-effcomm-residual-fiber-shot.md",
-      "target": "PFV2-GPF-RMON-EFFCOMM-RESIDUAL",
-      "next_target": "PFV2-GPF-RMON-EFFFIBER-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EFFFIBER_SCHEMA_PASS"
-    },
-    {
-      "doc": 181,
-      "path": "research/proof/181-pfv2-gpf-rmon-efffiber-trivial-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFFIBER-SELECT",
-      "next_target": "PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFFIBER_TRIVIAL"
-    },
-    {
-      "doc": 182,
-      "path": "research/proof/182-pfv2-gpf-rmon-efffiber-pair-shot.md",
-      "target": "PFV2-GPF-RMON-EFFFIBER-NONTRIVIAL",
-      "next_target": "PFV2-GPF-RMON-EFFPAIR-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EFFPAIR_SCHEMA_PASS"
-    },
-    {
-      "doc": 183,
-      "path": "research/proof/183-pfv2-gpf-rmon-effpair-identification-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFPAIR-SELECT",
-      "next_target": "PFV2-GPF-RMON-EFFPAIR-SEPARATED",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFPAIR_IDENTIFIED"
-    },
-    {
-      "doc": 184,
-      "path": "research/proof/184-pfv2-gpf-rmon-effpair-separator-shot.md",
-      "target": "PFV2-GPF-RMON-EFFPAIR-SEPARATED",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EFFSEP_SCHEMA_PASS"
-    },
-    {
-      "doc": 185,
-      "path": "research/proof/185-pfv2-gpf-rmon-effsep-external-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-SELECT",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-INTERNAL",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFSEP_EXTERNAL"
-    },
-    {
-      "doc": 186,
-      "path": "research/proof/186-pfv2-gpf-rmon-effsep-control-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-INTERNAL",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED",
-      "kind": "no-go",
-      "verdict": "REJECT_EFFSEP_CONTROL_FORMABLE"
-    },
-    {
-      "doc": 187,
-      "path": "research/proof/187-pfv2-gpf-rmon-effsep-bank-replacement-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-CONTROL-EXCLUDED",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-BANKED",
-      "kind": "no-go",
-      "verdict": "REJECT_BANK_REPLACEMENT"
-    },
-    {
-      "doc": 188,
-      "path": "research/proof/188-pfv2-gpf-rmon-effsep-downstream-erasure-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-BANKED",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-LOADBEARING",
-      "kind": "no-go",
-      "verdict": "REJECT_DOWNSTREAM_ERASURE"
-    },
-    {
-      "doc": 189,
-      "path": "research/proof/189-pfv2-gpf-rmon-effsep-downstream-load-shot.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-LOADBEARING",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT",
-      "kind": "shot",
-      "verdict": "LOCAL_EFFSEP_DLOAD_SCHEMA_PASS"
-    },
-    {
-      "doc": 190,
-      "path": "research/proof/190-pfv2-gpf-rmon-effsep-dload-insensitive-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-SELECT",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_INSENSITIVE"
-    },
-    {
-      "doc": 191,
-      "path": "research/proof/191-pfv2-gpf-rmon-effsep-dload-forgetful-route-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-SENSITIVE",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_FORGETFUL_ROUTE"
-    },
-    {
-      "doc": 192,
-      "path": "research/proof/192-pfv2-gpf-rmon-effsep-dload-sidecar-route-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-NONFORGETFUL",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_SIDECAR_ROUTE"
-    },
-    {
-      "doc": 193,
-      "path": "research/proof/193-pfv2-gpf-rmon-effsep-dload-split-consumption-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-CONSUMED",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_SPLIT_CONSUMPTION"
-    },
-    {
-      "doc": 194,
-      "path": "research/proof/194-pfv2-gpf-rmon-effsep-dload-mixed-control-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-CONSUMED",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_MIXED_CONTROL_FORMABLE"
-    },
-    {
-      "doc": 195,
-      "path": "research/proof/195-pfv2-gpf-rmon-effsep-dload-free-trace-codomain-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_FREE_TRACE_CODOMAIN"
-    },
-    {
-      "doc": 196,
-      "path": "research/proof/196-pfv2-gpf-rmon-effsep-dload-native-trace-insensitive-collapse.md",
-      "target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-NATIVE",
-      "next_target": "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE",
-      "kind": "no-go",
-      "verdict": "REJECT_DLOAD_NATIVE_TRACE_INSENSITIVE"
-    }
+  "regime": "disciplined-narrowing",
+  "reset": "2026-06-14",
+  "live_front": "doc-45 missing-structure spec; mode = numerics + no-go theorems + sharp narrowing",
+  "discipline_marker": "numerics + no-go theorems + sharp narrowing",
+  "autopsy_doc": "research/proof/129-construction-naming-regress-no-go.md",
+  "banned_lineage": "PFV2",
+  "regress_signature": "[A-Z][A-Z0-9]*(-[A-Z0-9]+){5,}",
+  "quarantine_allowlist": [
+    "research/proof/129-construction-naming-regress-no-go.md"
   ],
-  "active_slots": [
-    {
-      "path": "research/proof/HANDOFF.md",
-      "patterns": [
-        "internal targets PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE,",
-        "The active A2 target is PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE:"
-      ]
-    },
-    {
-      "path": "research/proof/TODO.md",
-      "patterns": [
-        "The active A2 target is PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE:"
-      ]
-    },
-    {
-      "path": "research/proof/README.md",
-      "patterns": [
-        "196. `196-pfv2-gpf-rmon-effsep-dload-native-trace-insensitive-collapse.md`",
-        "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE as"
-      ]
-    },
-    {
-      "path": "research/proof/61-external-answer-ledger.md",
-      "patterns": [
-        "Primary docs: 139 packet bank; docs 129-196.",
-        "PFV2-ADELIC-LOCAL / PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE"
-      ]
-    },
-    {
-      "path": "research/proof/129-b1-candidate-assault-ledger.md",
-      "patterns": [
-        "now sharpened by docs 158-196 to PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE;"
-      ]
-    },
-    {
-      "path": "research/proof/134-b1-assault-followup-board.md",
-      "patterns": [
-        "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE | LCT-STRICT-SRC0 | HHG-SOURCE-1 |",
-        "leaves PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE."
-      ]
-    },
-    {
-      "path": "research/proof/139-sharpened-assault-dispatch-packets.md",
-      "patterns": [
-        "PFV2-GPF-RMON-EFFSEP-DLOAD-MIXED-SELECTIVE-TRACE-SENSITIVE | LCT-STRICT-SRC0 | HHG-SOURCE-1 |",
-        "156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 134, 103, 113"
-      ]
-    }
+  "nav_docs": [
+    "research/proof/HANDOFF.md",
+    "research/proof/TODO.md",
+    "research/proof/README.md"
+  ],
+  "nogo_bank": [
+    {"doc": 51, "path": "research/proof/51-scale-blind-localizing-trace-no-go.md", "name": "scale-blind localizing trace"},
+    {"doc": 52, "path": "research/proof/52-transport-self-supplied-second-evaluation-no-go.md", "name": "transport / self-supplied second evaluation"},
+    {"doc": 53, "path": "research/proof/53-carrier-blind-poisson-epstein-no-go.md", "name": "carrier-blind Poisson/Epstein"},
+    {"doc": 55, "path": "research/proof/55-one-place-inserted-unit-no-go.md", "name": "one-place / inserted unit"},
+    {"doc": 56, "path": "research/proof/56-strict-face-positivity-no-go.md", "name": "strict-face positivity"},
+    {"doc": 57, "path": "research/proof/57-p-complete-archimedean-blindness-no-go.md", "name": "p-complete archimedean blindness"},
+    {"doc": 58, "path": "research/proof/58-max-gram-signature-insufficiency-no-go.md", "name": "max-Gram / signature insufficiency"},
+    {"doc": 59, "path": "research/proof/59-zero-import-circularity-no-go.md", "name": "zero-import circularity"},
+    {"doc": 63, "path": "research/proof/63-scale-blind-diagram-naturality-lemma.md", "name": "scale-blind diagram naturality lemma"},
+    {"doc": 64, "path": "research/proof/64-epstein-carrier-guard-lemma.md", "name": "Epstein carrier guard lemma"},
+    {"doc": 65, "path": "research/proof/65-p3-independence-normal-form.md", "name": "P3 independence normal form"},
+    {"doc": 66, "path": "research/proof/66-unit-covariance-and-threading-lemma.md", "name": "unit covariance / threading"},
+    {"doc": 67, "path": "research/proof/67-bc13-exhaustion-normal-form.md", "name": "BC13 exhaustion normal form"},
+    {"doc": 68, "path": "research/proof/68-archimedean-escape-normal-form.md", "name": "archimedean escape normal form"},
+    {"doc": 69, "path": "research/proof/69-zero-free-freeze-normal-form.md", "name": "zero-free freeze normal form"},
+    {"doc": 70, "path": "research/proof/70-gram-diagnostic-normal-form.md", "name": "Gram diagnostic normal form"},
+    {"doc": 74, "path": "research/proof/74-s3-generic-kernel-carrier-blindness.md", "name": "generic-kernel carrier blindness"},
+    {"doc": 79, "path": "research/proof/79-side-block-archimedean-no-go.md", "name": "side-block archimedean"},
+    {"doc": 80, "path": "research/proof/80-late-scale-insertion-no-go.md", "name": "late scale insertion"},
+    {"doc": 82, "path": "research/proof/82-factor-through-scale-collapse-no-go.md", "name": "factor-through scale collapse"},
+    {"doc": 85, "path": "research/proof/85-trace-detection-required-no-go.md", "name": "trace-detection required"},
+    {"doc": 93, "path": "research/proof/93-s3-free-weight-kernel-no-go.md", "name": "free-weight kernel"},
+    {"doc": 97, "path": "research/proof/97-monoid-functorial-carrier-overreach-no-go.md", "name": "monoid-functorial carrier overreach"},
+    {"doc": 100, "path": "research/proof/100-mixed-object-shadow-enlargement-no-go.md", "name": "mixed-object shadow enlargement"},
+    {"doc": 107, "path": "research/proof/107-carrier-overreach-meta-lemma.md", "name": "carrier-overreach meta-lemma"},
+    {"doc": 108, "path": "research/proof/108-carrier-overreach-proof-skeleton.md", "name": "carrier-overreach proof skeleton"},
+    {"doc": 109, "path": "research/proof/109-strict-first-map-relabeling-no-go.md", "name": "strict-first-map relabeling"},
+    {"doc": 111, "path": "research/proof/111-strict-prefix-erasure-no-go.md", "name": "strict-prefix erasure"},
+    {"doc": 112, "path": "research/proof/112-late-carrier-reintroduction-no-go.md", "name": "late carrier reintroduction"},
+    {"doc": 118, "path": "research/proof/118-traceable-envelope-collapse-no-go.md", "name": "traceable-envelope collapse"},
+    {"doc": 125, "path": "research/proof/125-decorated-envelope-reflection-no-go.md", "name": "decorated-envelope reflection"}
   ]
 }

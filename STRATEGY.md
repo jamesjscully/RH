@@ -115,6 +115,15 @@ A candidate forcing structure / bridge is admitted only if it:
 - Do not formalize ahead of the math. Lean was premature; the witness formalization is
   deleted. Re-introduce a formal substrate only when there is a certified obstruction or
   forcing-structure theorem worth checking.
+- **Do not chase a concrete construction by qualifier accretion** (the construction-naming
+  regress; autopsy in `research/proof/129`). Proposing an object as a wishlist of properties
+  and "refining" it by appending one more adjective each document matches **zero** constraints
+  while adding free choices — by the degrees-of-freedom gate (G-INT6) it has negative
+  information content, producing neither a witness nor an impossibility theorem. A target name
+  growing past ~6 hyphenated ALLCAPS segments is a stopping signal: refactor into a runnable
+  witness or a stated no-go. The proof-track guard (`check_proof_targets.py`) enforces this by
+  quarantining the dead PFV2 lineage. Every cycle ships a certified witness **or** a no-go
+  theorem with a named mechanism — nothing else is progress.
 
 ## 7. The live work
 

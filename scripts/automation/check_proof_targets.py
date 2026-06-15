@@ -1,9 +1,19 @@
 #!/usr/bin/env python3
-"""Validate the proof target ledger against the markdown routing docs.
+"""Discipline checker for the proof track (disciplined-narrowing regime).
 
-This is a discipline check, not a proof checker. It makes the current
-research trajectory machine-auditable enough to catch the failure mode where
-docs are created quickly but HANDOFF/TODO/dispatch records silently drift.
+This is not a proof checker. It enforces the operating discipline restored
+in the 2026-06-14 reset (see research/proof/129):
+
+  1. The no-go bank docs declared in target-ledger.json all exist and carry
+     a proper '# N - ' title. The no-go theorems are the program's primary
+     product; this keeps the bank from silently rotting.
+  2. The dead PFV2 construction-naming lineage is QUARANTINED: the banned
+     token and the long-hyphenated "regress signature" (Cor 129.2) may
+     appear only in the allowlisted autopsy doc, nowhere else under
+     research/proof/. This is the anti-futility guard that stops the
+     project from drifting back into the deleted regress.
+  3. The navigation docs (HANDOFF/TODO/README) exist and agree on the
+     restored front by carrying the discipline marker string.
 
 Run from repo root:
 
@@ -19,13 +29,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 LEDGER = ROOT / "research/proof/target-ledger.json"
+PROOF_DIR = ROOT / "research/proof"
 
 
 def _read_text(path: Path) -> str:
     try:
         return path.read_text(encoding="utf-8")
     except FileNotFoundError:
-        raise AssertionError(f"missing file: {path.relative_to(ROOT)}")
+        raise AssertionError(f"missing file: {path}")
 
 
 def _require(condition: bool, message: str, errors: list[str]) -> None:
@@ -33,168 +44,71 @@ def _require(condition: bool, message: str, errors: list[str]) -> None:
         errors.append(message)
 
 
-def _contains(text: str, needle: str) -> bool:
-    return needle in text
-
-
-def _has_section(text: str, phrase: str) -> bool:
-    return bool(
-        re.search(rf"^##+ (?:\d+\. )?.*{re.escape(phrase)}", text, re.MULTILINE)
-    )
-
-
-def _require_sections(
-    rel: Path,
-    text: str,
-    sections: tuple[str, ...],
-    errors: list[str],
-) -> None:
-    for section in sections:
-        _require(
-            _has_section(text, section),
-            f"{rel}: missing required section containing {section!r}",
-            errors,
-        )
-
-
-def _check_doc_entry(entry: dict, errors: list[str]) -> None:
-    rel = Path(entry["path"])
-    path = ROOT / rel
-    text = _read_text(path)
-
-    doc = entry["doc"]
-    title_re = re.compile(rf"^# {doc} - ", re.MULTILINE)
-    _require(bool(title_re.search(text)), f"{rel}: missing '# {doc} -' title", errors)
-
-    for key in ("target", "next_target", "verdict"):
-        value = entry[key]
-        _require(
-            _contains(text, value),
-            f"{rel}: missing ledger {key} {value!r}",
-            errors,
-        )
-
-    kind = entry["kind"]
-    if kind == "shot":
-        _require_sections(
-            rel,
-            text,
-            (
-                "Candidate Record",
-                "Gate Run",
-                "Current Verdict",
-                "Sharpened Theorem Target",
-                "Kill Conditions",
-            ),
-            errors,
-        )
-        _require(
-            f"SHARPEN to {entry['next_target']}" in text,
-            f"{rel}: shot entry lacks exact SHARPEN to {entry['next_target']}",
-            errors,
-        )
-        _require(
-            "candidate" in text.lower() or "source record" in text.lower(),
-            f"{rel}: shot entry lacks candidate/source-record language",
-            errors,
-        )
-    elif kind == "no-go":
-        _require_sections(
-            rel,
-            text,
-            (
-                "Covered Class",
-                "Lemma",
-                "Proof",
-                "Surviving Escape",
-                "Kill Conditions",
-            ),
-            errors,
-        )
-        _require(
-            f"does not satisfy {entry['target']}" in text,
-            f"{rel}: no-go entry lacks exact 'does not satisfy {entry['target']}'",
-            errors,
-        )
-        _require(
-            f"still live only through {entry['next_target']}" in text,
-            f"{rel}: no-go entry lacks exact live-route phrase for {entry['next_target']}",
-            errors,
-        )
-        _require(
-            "does not satisfy" in text or "reject" in text.lower(),
-            f"{rel}: no-go entry lacks rejection language",
-            errors,
-        )
-    else:
-        errors.append(f"{rel}: unknown kind {kind!r}")
-
-
-def _check_chain(entries: list[dict], current_target: str, errors: list[str]) -> None:
-    docs = [entry["doc"] for entry in entries]
-    _require(docs == sorted(docs), f"ledger entries are not sorted: {docs}", errors)
-    _require(len(set(docs)) == len(docs), "ledger contains duplicate doc ids", errors)
-
-    for prev, cur in zip(entries, entries[1:]):
-        _require(
-            prev["next_target"] == cur["target"],
-            (
-                f"broken target chain: doc {prev['doc']} next_target "
-                f"{prev['next_target']!r} != doc {cur['doc']} target {cur['target']!r}"
-            ),
-            errors,
-        )
-
-    if entries:
-        _require(
-            entries[-1]["next_target"] == current_target,
-            (
-                f"current_target {current_target!r} does not match final next_target "
-                f"{entries[-1]['next_target']!r}"
-            ),
-            errors,
-        )
-
-
-def _check_active_slots(slots: list[dict], errors: list[str]) -> None:
-    for slot in slots:
-        rel = Path(slot["path"])
+def _check_nogo_bank(ledger: dict, errors: list[str]) -> None:
+    for entry in ledger.get("nogo_bank", []):
+        rel = entry["path"]
         text = _read_text(ROOT / rel)
-        for pattern in slot["patterns"]:
-            _require(
-                pattern in text,
-                f"{rel}: missing active-slot pattern {pattern!r}",
-                errors,
+        doc = entry["doc"]
+        _require(
+            bool(re.search(rf"^# {doc} - ", text, re.MULTILINE)),
+            f"{rel}: missing '# {doc} -' title",
+            errors,
+        )
+
+
+def _check_nav_agreement(ledger: dict, errors: list[str]) -> None:
+    marker = ledger["discipline_marker"]
+    for rel in ledger.get("nav_docs", []):
+        text = _read_text(ROOT / rel)
+        _require(
+            marker in text,
+            f"{rel}: missing discipline marker {marker!r} (nav docs must "
+            f"agree on the restored front)",
+            errors,
+        )
+
+
+def _check_quarantine(ledger: dict, errors: list[str]) -> None:
+    """The dead lineage may live only in the allowlisted autopsy doc."""
+    banned = ledger["banned_lineage"]
+    signature = re.compile(ledger["regress_signature"])
+    allow = {(ROOT / p).resolve() for p in ledger.get("quarantine_allowlist", [])}
+
+    for path in sorted(PROOF_DIR.glob("*.md")):
+        if path.resolve() in allow:
+            continue
+        text = _read_text(path)
+        rel = path.relative_to(ROOT)
+        _require(
+            banned not in text,
+            f"{rel}: banned lineage token {banned!r} reappeared outside the "
+            f"quarantine doc (see research/proof/129)",
+            errors,
+        )
+        m = signature.search(text)
+        if m is not None:
+            errors.append(
+                f"{rel}: construction-naming regress signature {m.group(0)!r} "
+                f"reappeared (Cor 129.2: refactor into a witness or an "
+                f"impossibility theorem)"
             )
-
-
-def _check_doc_range(ledger: dict, entries: list[dict], errors: list[str]) -> None:
-    doc_range = ledger.get("doc_range", {})
-    start = doc_range.get("start")
-    end = doc_range.get("end")
-    if start is None or end is None:
-        errors.append("ledger doc_range must contain start and end")
-        return
-
-    docs = [entry["doc"] for entry in entries]
-    expected = list(range(start, end + 1))
-    _require(
-        docs == expected,
-        f"ledger docs {docs} do not match declared doc_range {expected}",
-        errors,
-    )
 
 
 def main() -> int:
     ledger = json.loads(_read_text(LEDGER))
-    entries = ledger["entries"]
     errors: list[str] = []
 
-    _check_doc_range(ledger, entries, errors)
-    _check_chain(entries, ledger["current_target"], errors)
-    for entry in entries:
-        _check_doc_entry(entry, errors)
-    _check_active_slots(ledger.get("active_slots", []), errors)
+    # The autopsy doc itself must exist and be titled.
+    autopsy = ledger["autopsy_doc"]
+    _require(
+        bool(re.search(r"^# 129 - ", _read_text(ROOT / autopsy), re.MULTILINE)),
+        f"{autopsy}: missing '# 129 -' title",
+        errors,
+    )
+
+    _check_nogo_bank(ledger, errors)
+    _check_nav_agreement(ledger, errors)
+    _check_quarantine(ledger, errors)
 
     if errors:
         print("proof-target-check: FAIL")
@@ -202,9 +116,10 @@ def main() -> int:
             print(f"  - {error}")
         return 1
 
+    n = len(ledger.get("nogo_bank", []))
     print(
-        "proof-target-check: OK "
-        f"({len(entries)} docs, current={ledger['current_target']})"
+        f"proof-target-check: OK ({n} no-go theorems banked, "
+        f"regime={ledger['regime']})"
     )
     return 0
 

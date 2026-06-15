@@ -34,8 +34,5 @@ fi
 if [ "$fail" -eq 0 ]; then
   python3 scripts/automation/test_check_proof_targets.py || fail=1
 fi
-if [ "$fail" -eq 0 ]; then
-  python3 -m scripts.numerics.witness.pfv2_gate_calibration || fail=1
-fi
 
 exit "$fail"
