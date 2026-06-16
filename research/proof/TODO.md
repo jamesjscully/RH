@@ -83,29 +83,41 @@ Cycle 4 (doc 134): the Hilbert-Polya / reality route REDUCES to the radius
   missing object = the positive-Rosati End(S^2/Z) (CC C x C / scaling-site
   Jacobian). Witnesses cstar_hermitian_witness, positivity_reality,
   frobenius_self_norm, operator_domination, polarization_relation (exit 0).
+Cycle 5 (doc 135): PHASE-CERT COLLAPSES - the last analytic door shuts. The
+  argument-principle / winding positivity for arg m reduces term-by-term to
+  the Weil explicit formula int w g = arch(g)-prime(g) (probe_pa_argm_to_tau,
+  rel 5e-12, independently ~1e-16): arch (Euler-FREE, DH-shared, RH-silent)
+  minus prime (signed von Mangoldt, no Euler-borne lower bound); manifest
+  positivity only via the dual-positive zero side = 2 sum khat^2 = the doc-13
+  tracking residual r = uniform tau<1 = RH. GENUINE-DH kill-test
+  (probe_pb_dh_phase_killtest, real off-line zero rho0=0.8085+85.699i): on-line
+  w_DH>=0 holds verbatim (min 0.298 over [5,95]) = FE-shared/RH-silent;
+  detection of rho0 needs its off-line location = RH-strength. No weaker
+  Euler-borne phase statement escapes (probe_pc firewall: modulus-in-disguise /
+  FE-arch-shared / partial-count). Adversarial verification 0/4 refuted.
 ```
 
-### Next valid work (the single named frontier)
+### Next valid work (the single non-analytic frontier)
 
 ```text
-The post-reset cycles 1-4 reduce the ENTIRE program residue to ONE missing
-object: the positive-Rosati correspondence algebra End(S^2/Z) (= CC C x C /
-scaling-site Jacobian). Two attackable names for it:
+BOTH analytic faces of the missing object are now RH-equivalent: the MODULUS
+face (even split, docs 132/133) and the PHASE face (reality/arg m, docs
+134/135). There is NO analytic shortcut on either face. The ENTIRE program
+residue is one NON-ANALYTIC construction:
 
-1. PHASE-CERT (doc 134 sec 6): an Euler-borne argument-principle / winding
-   certificate for arg m (the line Re s=1/2) - a PHASE positivity, NOT a
-   modulus/norm-square (the banked sym^2/Siegel positivity provably controls
-   the wrong half). The operator-side form of F^dag=(deg)F^{-1} carrying the
-   phase. RH-equivalent; relocates the wall to one object.
-2. The M4r EVEN-SPLIT lemma (docs 132/133): the modulus-side form of the
-   same object (even split |alpha|=|beta| zero-free).
-3. BUILD End(S^2/Z) with a positive Rosati involution directly (CC C x C /
-   scaling-site Jacobian) - with a runnable witness.
-4. Harden adjacent no-gos (docs 51-70 + survivors + 130/132/133/134) into
-   citable statements.
-Do NOT re-sweep the banked per-prime OR global suppliers (KILL-RAD.1/2/3
-doc 132, KILL-RAD133.1-4 doc 133). Do NOT propose a positive self-duality
-by axiom (KILL-REAL.1) or a modulus certificate for the phase (KILL-REAL.2).
+1. BUILD End(S^2/Z) with a positive Rosati involution F^dag=(deg)F^{-1}
+   (the Connes-Consani C x C / scaling-site Jacobian; the self-product
+   correspondence algebra whose self-norm is the sum over zeros). Present
+   over F_q (Frobenius), absent over Z - this IS the F_1 / Connes / Deninger
+   problem. Engage ONLY with a runnable witness or a stated theorem; a
+   famous decades-open construction, expect a long arc.
+2. Consolidate cycles 1-5 (the unification: every banked analytic route
+   factors through the one missing algebra) into the no-go map / preprint -
+   the program's banked product.
+3. Harden adjacent no-gos (51-70 + survivors + 130-135) into citable
+   statements.
+Do NOT re-attack the analytic faces (each killed: KILL-RAD.1/2/3 doc 132,
+KILL-RAD133.1-4 doc 133, KILL-REAL.1/2/3 doc 134, KILL-PHASE.1/2/3/4 doc 135).
 Do NOT cite cc_radius_deformation_probe as a DH discriminator. Engage the
 frontier ONLY with a runnable witness or a stated impossibility - never a
 schema (doc 129).
