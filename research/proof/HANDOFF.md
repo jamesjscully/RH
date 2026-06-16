@@ -80,6 +80,35 @@ choices. Doc 129 is the autopsy and standing no-go; it is the only doc
 permitted to name the dead lineage. The deletion is recoverable in git
 history at the checkpoint commit preceding the reset.
 
+## 3a. Post-reset cycles 1-5 + consolidation (read doc 136 FIRST for state)
+
+Five disciplined no-go cycles (2026-06-14..16) then closed the analytic
+frontier, each shipping a no-go theorem with a named mechanism and
+lead-verified witnesses:
+
+  130  second-evaluation no-go (no unforced odd slot without properness);
+  132  radius-circularity (the proper object can't fix its own radius:
+       Euler EDGE free, even SPLIT = RH);
+  133  the radius is irreducibly global (local route automorphy-firewalled;
+       banked global suppliers + both flows FE-blind);
+  134  the Hilbert-Polya/reality route reduces to the radius wall
+       (positivity-by-axiom imports RH; forcing needs the missing Rosati);
+  135  PHASE-CERT collapses (arg m positivity = the doc-13 zero
+       cross-correlation = Weil positivity, RH-equivalent).
+
+DOC 136 IS THE CONSOLIDATION MAP and the current state-of-program: every
+banked analytic route (local/global, modulus/phase) factors through ONE
+missing object -- End(S^2/Z) with a positive Rosati involution
+F^dag = (deg) F^{-1} (the CC C x C / scaling-site Jacobian, present over
+F_q, absent over Z = the F_1/Connes/Deninger object). BOTH analytic faces
+(modulus 132/133, phase 134/135) are RH-equivalent; there is no analytic
+shortcut. This is STRATEGY sec-4's win-win NEGATIVE branch, executed. The
+sole remaining target is BUILDING End(S^2/Z) (a famous decades-open
+construction -- a long arc, not a quick cycle); do not re-attack the closed
+analytic faces (standing kill-ledger, doc 136 sec 7). Honest scope: these
+are relocations + characterizations at the program's float-witness rigor,
+not unconditional impossibility theorems (doc 136 sec 6).
+
 ## 4. How to navigate the record
 
 research/proof/00-16: the tracking arc. 17-40: the R-INT arc (each doc
