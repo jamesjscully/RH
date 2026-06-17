@@ -112,10 +112,26 @@ Risk-ladder (doc 137 sec 4): R0 foundation DONE (S.1, Xbar) -> R1 DD.4
   weights>=1 (THE ENTRY, building on EE.1) -> R2 the archimedean unit ->
   R3 the positive Rosati (Layer II). Routes (doc 137 sec 6): PFD/Xbar
   in-house (default), CC scaling-site / C x C, condensed-metric.
-ENTRY = R1 (DD.4 weights>=1); first cycle = doc 138. Run ultracode-scale
-  when authorized: ground EE.1 + the branch-exchange/O(2)/N1-b'/weight-torsor
-  clauses, then build the weight>=1 duality datum (exit-gated pi_* witness)
-  OR prove the no-go.
+R1 CYCLE 1 DONE (doc 138): NO-GO with a named computed obstruction. The
+  EE.1 Lin-block (weight-0) singleton does NOT extend to a Weyl-shear-fixed
+  (genuinely O(2)-equivariant) weight>=1 duality datum: the DDG7b defect
+  c=(1+z)^{-1} is the NONZERO class of H^1(<phi>;U_1)=Z/2 (phi = Artin-Schreier
+  shear z->z(1+z)^{-1}), gauge-free (res_1(c)=1), enumerated exact-F_2 at
+  L=6..12 (witness prime_int_pb_shear_h1_obstruction, corroborated by
+  dd4_weight1_datum; lead-reran exit 0). This is Z's kappa-shear obstruction
+  (doc 27 worker U) made a COMPUTED falsifiable class. STAGE/Layer I - NOT RH
+  (BB.1). The anti-regress contract WORKED: PROBE PC's "BUILT weight-1 datum"
+  was refuted 3/4 lenses (hardcoded PCG4 + index-set tautology) and its
+  witness was deleted, not banked. R1 is SHARPENED, NOT closed.
+ENTRY/NEXT = R1 still open via its ONE untouched clause: N1-b' (the geometric
+  y-vs-t comparison) riding on HNS Thm A.2 (Harpaz-Nikolaus-Shah fiber
+  formula, attributed-forthcoming, NOT archived) made precise on THR(F_2) -
+  the single load-bearing missing external input. Alternative: an EXTERNAL
+  phi-invariant normalization (the conjectured dlog(1+z) pinning) selecting a
+  canonical torsor element. Either needs a runnable witness. Do NOT claim a
+  Weyl-fixed extension (KILL-DD4.1), an index-set involution as duality
+  (KILL-DD4.2), or a hardcoded carrier-death (KILL-DD4.3). R2 NOT unblocked
+  (Layer I self-duality unfinished).
 BINDING (doc 137 sec 7, the doc-129 anti-regress contract): this arc is the
   exact shape that went off the rails before. Every cycle = a VERIFIED
   sub-object (exit-gated witness) or a no-go with a mechanism. NO

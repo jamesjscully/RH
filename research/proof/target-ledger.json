@@ -50,6 +50,7 @@
     {"doc": 132, "path": "research/proof/132-radius-circularity-no-go.md", "name": "radius-circularity: the weight-2 proper object cannot supply its own radius (Euler edge free, even split = RH)"},
     {"doc": 133, "path": "research/proof/133-radius-is-global-no-go.md", "name": "the radius is irreducibly global: local route automorphy-firewalled, banked global suppliers (RS-at-edge, CC curve-level, both flows) FE-blind"},
     {"doc": 134, "path": "research/proof/134-hilbert-polya-reality-reduction-no-go.md", "name": "the Hilbert-Polya/reality route reduces to the radius wall: positivity-by-axiom imports RH, forcing needs the missing positive-Rosati End(S^2/Z); unifies docs 130/132/133"},
-    {"doc": 135, "path": "research/proof/135-phase-cert-collapse-no-go.md", "name": "PHASE-CERT collapses: the argument-principle positivity for arg m is the doc-13 zero cross-correlation / Weil positivity (RH-equivalent); both analytic faces (modulus, phase) now closed"}
+    {"doc": 135, "path": "research/proof/135-phase-cert-collapse-no-go.md", "name": "PHASE-CERT collapses: the argument-principle positivity for arg m is the doc-13 zero cross-correlation / Weil positivity (RH-equivalent); both analytic faces (modulus, phase) now closed"},
+    {"doc": 138, "path": "research/proof/138-dd4-weights-ge1-no-go.md", "name": "arc R1 STAGE no-go: the EE.1 Lin-block duality datum does not extend to a Weyl-shear-fixed weight>=1 datum; obstruction = nonzero class of H^1(<phi>;U_1)=Z/2 (res_1=1). Not RH (Layer I); N1-b'/HNS A.2 untouched"}
   ]
 }
