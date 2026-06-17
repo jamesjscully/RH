@@ -109,6 +109,23 @@ analytic faces (standing kill-ledger, doc 136 sec 7). Honest scope: these
 are relocations + characterizations at the program's float-witness rigor,
 not unconditional impossibility theorems (doc 136 sec 6).
 
+## 3b. The construction arc is OPEN (doc 137 charter)
+
+As of 2026-06-17 the End(S^2/Z) construction arc is open; DOC 137 IS ITS
+CHARTER. The object has two layers: LAYER I the stage (the FE/symmetry
+object Xbar -- already realized, pi_*=G mod the banked Thm S.1, doc 25/30;
+DD.4 Lin clause proven EE.1) and LAYER II the play (the positive Rosati
+involution F^dag=(deg)F^{-1} whose positivity <=> RH -- the RH-grade target
+no analytic route supplies, doc 136). Risk-ladder: R0 foundation (done:
+S.1, Xbar) -> R1 DD.4 weights>=1 (THE ENTRY, building on EE.1) -> R2 the
+archimedean unit -> R3 the positive Rosati (Layer II). Three candidate
+routes (doc 137 sec 6): in-house PFD/Xbar (default), Connes-Consani
+scaling-site / C x C, condensed-metric enrichment. BINDING: this arc is the
+exact shape that went off the rails before, so it runs under the strictest
+doc-129 anti-regress contract (doc 137 sec 7) -- every cycle a verified
+sub-object or a no-go; no qualifier-accretion; stage results never promoted
+(BB.1). The first cycle (doc 138) attacks R1.
+
 ## 4. How to navigate the record
 
 research/proof/00-16: the tracking arc. 17-40: the R-INT arc (each doc

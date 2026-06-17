@@ -97,30 +97,36 @@ Cycle 5 (doc 135): PHASE-CERT COLLAPSES - the last analytic door shuts. The
   FE-arch-shared / partial-count). Adversarial verification 0/4 refuted.
 ```
 
-### Next valid work (the single non-analytic frontier)
+### Current front - the End(S^2/Z) construction arc (OPEN 2026-06-17)
 
 ```text
-BOTH analytic faces of the missing object are now RH-equivalent: the MODULUS
-face (even split, docs 132/133) and the PHASE face (reality/arg m, docs
-134/135). There is NO analytic shortcut on either face. The ENTIRE program
-residue is one NON-ANALYTIC construction:
-
-1. BUILD End(S^2/Z) with a positive Rosati involution F^dag=(deg)F^{-1}
-   (the Connes-Consani C x C / scaling-site Jacobian; the self-product
-   correspondence algebra whose self-norm is the sum over zeros). Present
-   over F_q (Frobenius), absent over Z - this IS the F_1 / Connes / Deninger
-   problem. Engage ONLY with a runnable witness or a stated theorem; a
-   famous decades-open construction, expect a long arc.
-2. Consolidate cycles 1-5 (the unification: every banked analytic route
-   factors through the one missing algebra) into the no-go map / preprint -
-   the program's banked product.
-3. Harden adjacent no-gos (51-70 + survivors + 130-135) into citable
-   statements.
-Do NOT re-attack the analytic faces (each killed: KILL-RAD.1/2/3 doc 132,
+Both analytic faces are closed (modulus 132/133, phase 134/135); the
+consolidation is banked (doc 136). The construction arc is now OPEN, with
+DOC 137 as its CHARTER. Target: End(S^2/Z) with a positive Rosati involution
+F^dag=(deg)F^{-1} -- the F_1/Connes/Deninger object. Two layers:
+  LAYER I (the stage, FE/symmetry): Xbar realized (pi_*=G mod S.1 [done
+    doc 25]); DD.4 Lin clause proven (EE.1). Necessary, not sufficient (BB.1).
+  LAYER II (the play, the RH half): the positive Rosati / Hodge-index
+    positivity, positivity <=> RH (doc 136); gated behind Layer I.
+Risk-ladder (doc 137 sec 4): R0 foundation DONE (S.1, Xbar) -> R1 DD.4
+  weights>=1 (THE ENTRY, building on EE.1) -> R2 the archimedean unit ->
+  R3 the positive Rosati (Layer II). Routes (doc 137 sec 6): PFD/Xbar
+  in-house (default), CC scaling-site / C x C, condensed-metric.
+ENTRY = R1 (DD.4 weights>=1); first cycle = doc 138. Run ultracode-scale
+  when authorized: ground EE.1 + the branch-exchange/O(2)/N1-b'/weight-torsor
+  clauses, then build the weight>=1 duality datum (exit-gated pi_* witness)
+  OR prove the no-go.
+BINDING (doc 137 sec 7, the doc-129 anti-regress contract): this arc is the
+  exact shape that went off the rails before. Every cycle = a VERIFIED
+  sub-object (exit-gated witness) or a no-go with a mechanism. NO
+  qualifier-accretion (Cor 129.2). Stage results never promoted (BB.1).
+  Carrier guards (DH/Epstein death, doc 64); no unit insertion (zero-slack);
+  G-INT6; freeze.
+Do NOT re-attack the closed analytic faces (KILL-RAD.1/2/3 doc 132,
 KILL-RAD133.1-4 doc 133, KILL-REAL.1/2/3 doc 134, KILL-PHASE.1/2/3/4 doc 135).
-Do NOT cite cc_radius_deformation_probe as a DH discriminator. Engage the
-frontier ONLY with a runnable witness or a stated impossibility - never a
-schema (doc 129).
+
+Adjacent standing work (anytime): harden the no-go bank (51-70 + survivors +
+130-136) into citable statements; a preprint section from doc 136.
 ```
 
 Standing hardening rules (carried from the deleted band, still live):
