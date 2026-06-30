@@ -234,7 +234,7 @@ def main():
         print(f"     {k}: {v}")
 
     print("\n[ATTEMPT C]  GRADED/tensor repair: F_inf = U (x) m -- does the grading FORCE m=sqrt(q)?")
-    c = attempt_C_graded_repair(g, q)
+    c = attempt_C_graded_repair(g, q, off=True)
     for k, v in c.items():
         print(f"     {k}: {v}")
 

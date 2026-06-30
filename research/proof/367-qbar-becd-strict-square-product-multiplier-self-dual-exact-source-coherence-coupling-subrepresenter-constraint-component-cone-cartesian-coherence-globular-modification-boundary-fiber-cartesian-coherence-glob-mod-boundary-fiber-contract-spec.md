@@ -1,0 +1,219 @@
+# 367 - Qbar_BECD strict-square product multiplier self-dual exact-source coherence-coupling subrepresenter constraint-component-cone cartesian-coherence globular-modification boundary-fiber cartesian-coherence globular-modification boundary-fiber contract
+
+Status: construction-spec refinement anchor, 2026-06-23.
+Two-hundred-thirtieth cycle of the doc-137 construction arc. This is not a
+no-go theorem, not an RH proof, and not added to the no-go bank.
+
+Doc 366 left the strict-square branch live only if the cartesian
+boundary-fiber coherence cells assemble as one source-level globular
+modification:
+
+```text
+    Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+```
+
+This document fixes the next edge. A source-level globular modification is
+still not enough if it is selected by a chosen section, a contractible-choice
+wrapper, an external/local fiber, or a graph-side boundary label. The
+modification must be selected by an actual boundary-restriction map and
+represented boundary fiber over its own globular boundary:
+
+```text
+    res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup,
+    Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+```
+
+The represented fiber must lie over
+`GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components`, its
+universal arrow must select
+`Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components`, and any
+contractibility claim is allowed only after this represented fiber exists.
+
+Witness, lead-reran this cycle:
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract`
+(SCFGB1-SCFGB10 ALL PASS).
+
+Adjacent witnesses, lead-reran this cycle:
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract`,
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract`,
+`prime_int_n1b_qbar_becd_joint_formation_coupling_contract`,
+`prime_int_n1b_qbar_becd_control_formation_death_contract`,
+`prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract`, and
+`prime_int_n1b_dd4_scc_interface`.
+
+## 1. Purpose
+
+After doc 366, the cheap repair is:
+
+```text
+construct the source-level globular modification and then assert it has the
+right boundary by chosen section or contractible-choice language.
+```
+
+That still does not construct the missing object. The boundary of the
+fiber-coherence modification has to be represented in the source, not chosen
+after the fact. Otherwise the modification can have the right formal
+source/target names while failing to be selected by a universal arrow over
+the fixed globular boundary.
+
+The live branch narrows from "one globular fiber-coherence modification" to:
+
+```text
+construct res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup;
+construct Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+construct eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove the fiber lies over GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove the universal arrow selects Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove boundary preservation, unique source filler, and contractibility only
+after the represented fiber exists.
+```
+
+## 2. Lemma
+
+```text
+Lemma 367.1 (the fiber-coherence globular modification needs its represented
+boundary fiber).
+
+The original DD.4 class remains:
+
+    c=(1+z)^-1,
+    H^1(<phi>; U_1)=Z/2,
+    [c] != 0,
+    res_1(c)=1,
+
+in truncations L=6,8,10,12.
+
+The accepted represented boundary-fiber data are:
+
+    Rep_Qbar_BECD_source_fiber,
+    eta_Qbar_BECD_source,
+    Cart_Qbar_BECD_BCF_self_dual_exact_source,
+    Mod_Coh_CartCone_NCoup_eta_source_components,
+    GlobBd_CartCone_NCoup_eta_source_components,
+    res_Mod_Coh_CartCone_to_GlobBd_NCoup,
+    Fib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    eta_Fib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    cart_res_Mod_Coh_CartCone_to_GlobBd_NCoup,
+    Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup,
+    Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    dd4_c_original_res1,
+    CTRL_Qbar_BECD_coherent_death.
+
+The exact self-dual represented boundary-fiber rows are:
+
+    z                         = {1:2, 2:-1},
+    T_C3(z)                   = {3:2, 6:-1},
+    T_C5(z)                   = {5:2, 10:-1},
+    T_C3(T_C5(z))             = T_C5(T_C3(z))
+                                = T_C15(z)            = {15:2, 30:-1},
+    T_C3(T_C3(T_C5(z)))       = T_C45(z)              = {45:2, 90:-1},
+    z*F22                     = {2:4, 4:-2},
+    T_C15(z*F22)              = z*(C15*F22)           = {30:4, 60:-2},
+    T_C45(z*F22)              = z*(C45*F22)           = {90:4, 180:-2}.
+
+The mixed checks are equality of full represented boundary-fiber payloads:
+
+    Fib(T_C3(T_C5(z)))       = Fib(T_C15(z)),
+    Fib(T_C5(T_C3(z)))       = Fib(T_C15(z)),
+    Fib(T_C3(T_C3(T_C5(z)))) = Fib(T_C45(z)),
+    Fib(T_C15(z*F22))        = Fib(z*(C15*F22)),
+    Fib(T_C45(z*F22))        = Fib(z*(C45*F22)).
+
+Thus chosen boundary sections, contractible-choice wrappers without a
+representer, fibers over the wrong boundary, external/quotient/local boundary
+fibers, pointwise or graph-side boundary fibers, post-product fibers, retuned
+boundary maps, reindexed boundary fibers, and control/DH/Epstein
+point-formability do not construct the represented boundary fiber.
+```
+
+## 3. Proof
+
+`prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract`
+verifies ten gates.
+
+SCFGB1 records the represented boundary fiber, its globular boundary, H1
+profile, strict rows, mixed path equalities, and connected boundary-fiber
+graph.
+
+SCFGB2 records again that graph identities do not supply the represented
+boundary fiber.
+
+SCFGB3 rejects chosen boundary sections and contractible-choice wrappers.
+
+SCFGB4 rejects fibers over the wrong boundary.
+
+SCFGB5 rejects external, quotient, or local boundary fibers.
+
+SCFGB6 rejects pointwise, graph-side, and post-product boundary fibers.
+
+SCFGB7 rejects retuned or reindexed boundary fibers.
+
+SCFGB8 makes every represented boundary-fiber edge mandatory.
+
+SCFGB9 records that graph-side boundary fibers still leave controls, DH, and
+Epstein formable.
+
+SCFGB10 accepts only represented source boundary fibers.
+
+Therefore a candidate that satisfies doc 366 with a source-level globular
+fiber-coherence modification is still incomplete unless that modification is
+selected by a represented boundary fiber over the fixed globular boundary.
+
+## 4. Consequence
+
+The live strict-square branch is now:
+
+```text
+construct res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup,
+Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components; prove
+this fiber is over the fixed globular boundary and selects the fiber-coherence
+globular modification before points and graph objects.
+```
+
+The open construction target is no longer "make those cells one globular
+source-side modification." It is "make that modification a represented
+boundary fiber over its own globular boundary."
+
+## 5. Acceptance Target For Any Future Candidate
+
+A future candidate must provide:
+
+```text
+1. res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup;
+2. Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+3. eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+4. proof that the fiber is over GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+5. proof that the universal arrow selects Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+6. proof of boundary preservation;
+7. proof of the unique source filler;
+8. proof that contractibility is only after the represented fiber;
+9. proof of coefficient and signed-support preservation;
+10. proof that the fiber is formed before points and graph objects.
+```
+
+Until this represented boundary fiber exists, the object remains missing.

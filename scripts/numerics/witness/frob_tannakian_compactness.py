@@ -69,6 +69,7 @@ def frob_block(r, t):
 def step_A_rigidity(F):
     d = F.shape[0]
     detF = np.linalg.det(F)
+    det_display = float(detF.real) if abs(detF.imag) < 1e-9 else complex(detF)
     Fdual = np.linalg.inv(F).T            # action on V* = the dual/contragredient
     ev = np.linalg.eigvals(F)
     evdual = np.linalg.eigvals(Fdual)
@@ -80,7 +81,7 @@ def step_A_rigidity(F):
     # holds at any radius).  V** = V canonically (finite dim).  These are the rigid-category data.
     return {
         "F invertible": bool(abs(detF) > 1e-12),
-        "det F (= the Tate/[q] twist)": float(detF),
+        "det F (= the Tate/[q] twist)": det_display,
         "dual eigenvalues = 1/alpha (contragredient)": bool(duality_ok),
         "V** = V (finite-dim reflexive)": True,   # automatic for finite-dim V
         "perfect FE pairing exists (any radius)": True,

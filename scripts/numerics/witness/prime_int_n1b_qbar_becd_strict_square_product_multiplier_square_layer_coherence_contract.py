@@ -1,0 +1,787 @@
+r"""Square-layer coherence contract for strict-square multiplier lifts.
+
+Doc 343 pins represented cartesian coherence cells for the C3, C9, F22, and
+C3F22 multiplier lifts.  This witness pins the next edge: those coherence
+cells must commute with the square layers themselves.  A detached monoidal
+coherence package, a declared Beck-Chevalley square, a boundary/pushforward
+filter applied after the fact, or degree/count/support equality does not
+construct DD.4 boundary, endpoint-degree, p1/p2-pushforward, graph/Rosati,
+count, and control-death compatibility.
+
+Run:
+    python3 -m scripts.numerics.witness.prime_int_n1b_qbar_becd_strict_square_product_multiplier_square_layer_coherence_contract
+"""
+
+from __future__ import annotations
+
+import numpy as np
+
+from scripts.numerics.witness.ns_diagonal_representability import (
+    frobenius,
+    ns_intersection,
+    primitive_hodge_index,
+    rosati,
+    weil_pairing,
+)
+
+
+failures: list[str] = []
+
+DOMAIN_ID = "D_Qbar_BECD_eff"
+BOUNDARY_ID = "B_Qbar_BECD_DD4"
+ENDPOINT_ID = "ED_Qbar_BECD_endpoint_degree"
+PUSHFORWARD_ID = "PF_Qbar_BECD_p1p2"
+GRAPH_ID = "G_Qbar_BECD_prop"
+ROSATI_ID = "R_Qbar_BECD_pos"
+COUNT_ID = "CD_Qbar_BECD"
+CONTROL_DEATH_ID = "CTRL_Qbar_BECD_coherent_death"
+SOURCE_TOKEN_ID = "SRC_Qbar_BECD_strict_square"
+FORMATION_FIBER_ID = "Fib_Qbar_BECD_graph_formation"
+REPRESENTING_OBJECT_ID = "Rep_Qbar_BECD_source_fiber"
+UNIVERSAL_ARROW_ID = "eta_Qbar_BECD_source"
+CARTESIAN_COHERENCE_ID = "Coh_Qbar_BECD_cartesian_lifts"
+SQUARE_LAYER_COHERENCE_ID = "SLC_Qbar_BECD_boundary_pushforward_graph"
+
+REQUIRED_LAYER_EDGES = {
+    ("universal_arrow", "coherence_cells"),
+    ("coherence_cells", "dd4_boundary"),
+    ("coherence_cells", "endpoint_degree"),
+    ("coherence_cells", "p1_pushforward"),
+    ("coherence_cells", "p2_pushforward"),
+    ("coherence_cells", "graph_composition"),
+    ("coherence_cells", "rosati"),
+    ("coherence_cells", "count_degree"),
+    ("coherence_cells", "control_death"),
+    ("dd4_boundary", "endpoint_degree"),
+    ("dd4_boundary", "p1_pushforward"),
+    ("dd4_boundary", "p2_pushforward"),
+    ("endpoint_degree", "p1_pushforward"),
+    ("endpoint_degree", "p2_pushforward"),
+    ("p1_pushforward", "graph_composition"),
+    ("p2_pushforward", "graph_composition"),
+    ("graph_composition", "rosati"),
+    ("rosati", "count_degree"),
+    ("count_degree", "control_death"),
+}
+
+Corr = tuple[float, np.ndarray, float]
+
+
+def gate(name: str, ok: bool, detail: str = "") -> None:
+    print(("PASS" if ok else "FAIL"), name, detail)
+    if not ok:
+        failures.append(name)
+
+
+def normalize(chi: dict[int, int]) -> dict[int, int]:
+    return {key: val for key, val in sorted(chi.items()) if val != 0}
+
+
+def chi_col(a, b, edges) -> dict[int, int]:
+    out: dict[int, int] = {}
+    for j, bj in enumerate(b):
+        aj = sum(a[i] for i, jj in edges if jj == j)
+        if bj != 0 and aj != 0:
+            out[aj] = out.get(aj, 0) + bj
+    return normalize(out)
+
+
+def convolve_chi(left: dict[int, int], right: dict[int, int]) -> dict[int, int]:
+    out: dict[int, int] = {}
+    for a, ca in left.items():
+        for b, cb in right.items():
+            out[a * b] = out.get(a * b, 0) + ca * cb
+    return normalize(out)
+
+
+def support(chi: dict[int, int]) -> tuple[int, ...]:
+    return tuple(sorted(chi))
+
+
+def endpoint_degrees(chi: dict[int, int]) -> tuple[int, int]:
+    positive = sum(key * val for key, val in chi.items() if val > 0)
+    negative = sum(key * (-val) for key, val in chi.items() if val < 0)
+    return positive, negative
+
+
+def multiplier_degree(chi: dict[int, int]) -> int:
+    return sum(key * val for key, val in chi.items() if val > 0)
+
+
+def corr(d1: float, z: np.ndarray, d2: float) -> Corr:
+    return (float(d1), z, float(d2))
+
+
+def delta(F: np.ndarray) -> Corr:
+    return corr(1.0, np.eye(F.shape[0]), 1.0)
+
+
+def graph_corr(F: np.ndarray, q: float, n: int) -> Corr:
+    return corr(q**n, np.linalg.matrix_power(F, n), 1.0)
+
+
+def compose(A: Corr, B: Corr) -> Corr:
+    d1, z, d2 = A
+    e1, w, e2 = B
+    return corr(d1 * e1, z @ w, d2 * e2)
+
+
+def dagger(A: Corr, E: np.ndarray) -> Corr:
+    d1, z, d2 = A
+    return corr(d2, rosati(z, E), d1)
+
+
+def corr_defect(A: Corr, B: Corr) -> float:
+    return float(abs(A[0] - B[0]) + np.linalg.norm(A[1] - B[1]) + abs(A[2] - B[2]))
+
+
+def graph_law_defect(F: np.ndarray, q: float, m: int, n: int) -> float:
+    return corr_defect(
+        compose(graph_corr(F, q, m), graph_corr(F, q, n)),
+        graph_corr(F, q, m + n),
+    )
+
+
+def anti_defect(A: Corr, B: Corr, E: np.ndarray) -> float:
+    return corr_defect(dagger(compose(A, B), E), compose(dagger(B, E), dagger(A, E)))
+
+
+def qsim_defect(F: np.ndarray, E: np.ndarray, q: float) -> float:
+    return float(np.linalg.norm(F.T @ E @ F - q * E))
+
+
+def projection_sides(A: Corr, B: Corr, C: Corr, E: np.ndarray) -> tuple[float, float]:
+    lhs = ns_intersection(compose(A, B), C)
+    rhs = ns_intersection(B, compose(dagger(A, E), C))
+    return float(lhs), float(rhs)
+
+
+def projection_defect(A: Corr, B: Corr, C: Corr, E: np.ndarray) -> float:
+    lhs, rhs = projection_sides(A, B, C, E)
+    return abs(lhs - rhs)
+
+
+def retune_first_degree_for_projection(A: Corr, B: Corr, C: Corr, E: np.ndarray) -> Corr:
+    product = compose(A, B)
+    lhs, rhs = projection_sides(A, B, C, E)
+    return corr(product[0] + (rhs - lhs) / C[2], product[1], product[2])
+
+
+def trace_power(F: np.ndarray, n: int) -> float:
+    return float(np.trace(np.linalg.matrix_power(F, n)).real)
+
+
+def point_count(F: np.ndarray, q: float, n: int) -> float:
+    return float(q**n + 1.0 - trace_power(F, n))
+
+
+def formal_graph_signature(F: np.ndarray, E: np.ndarray, q: float) -> tuple[bool, bool, bool]:
+    G = graph_corr(F, q, 1)
+    H = graph_corr(F, q, 2)
+    return (
+        graph_law_defect(F, q, 1, 2) < 1e-12,
+        qsim_defect(F, E, q) < 1e-12,
+        anti_defect(G, H, E) < 1e-12,
+    )
+
+
+def row(name: str, chi: dict[int, int], transport: str, cart_degree: int) -> dict[str, object]:
+    p1, p2 = endpoint_degrees(chi)
+    return {
+        "representing_object": REPRESENTING_OBJECT_ID,
+        "universal_arrow": UNIVERSAL_ARROW_ID,
+        "cartesian_coherence": CARTESIAN_COHERENCE_ID,
+        "square_layer_coherence": SQUARE_LAYER_COHERENCE_ID,
+        "domain": DOMAIN_ID,
+        "boundary": BOUNDARY_ID,
+        "endpoint_degree": ENDPOINT_ID,
+        "pushforward": PUSHFORWARD_ID,
+        "graph": GRAPH_ID,
+        "rosati": ROSATI_ID,
+        "count_degree": COUNT_ID,
+        "control_death": CONTROL_DEATH_ID,
+        "source_token": SOURCE_TOKEN_ID,
+        "formation_fiber": FORMATION_FIBER_ID,
+        "cartesian_lift": "cart_%s" % transport,
+        "cartesian_degree": cart_degree,
+        "source": name,
+        "transport": transport,
+        "support": support(chi),
+        "coefficients": tuple(chi.items()),
+        "p1_degree": p1,
+        "p2_degree": p2,
+        "graph_degree": p1,
+        "count_degree_value": p1 * p2,
+        "endpoint_defect": p1 - p2,
+        "pushforward_defect": p1 - p2,
+        "boundary_defect": int(p1 != p2),
+        "layer_chain": (
+            BOUNDARY_ID,
+            ENDPOINT_ID,
+            PUSHFORWARD_ID,
+            GRAPH_ID,
+            ROSATI_ID,
+            COUNT_ID,
+            CONTROL_DEATH_ID,
+        ),
+    }
+
+
+def source(**kwargs):
+    data = {
+        "carrier_native": False,
+        "represented_source_fiber": False,
+        "universal_arrow_actual": False,
+        "cartesian_lifts_actual": False,
+        "cartesian_coherence_actual": False,
+        "coherence_cells_actual": False,
+        "coherence_generated_by_universal_arrow": False,
+        "square_layer_coherence_actual": False,
+        "dd4_boundary_actual": False,
+        "endpoint_degree_maps_actual": False,
+        "p1_pushforward_square_actual": False,
+        "p2_pushforward_square_actual": False,
+        "graph_composition_actual": False,
+        "rosati_actual": False,
+        "count_degree_actual": False,
+        "control_death_actual": False,
+        "boundary_commutes_with_coherence": False,
+        "endpoint_commutes_with_coherence": False,
+        "p1_commutes_with_coherence": False,
+        "p2_commutes_with_coherence": False,
+        "graph_commutes_with_coherence": False,
+        "rosati_commutes_with_coherence": False,
+        "count_commutes_with_coherence": False,
+        "control_death_commutes_with_coherence": False,
+        "same_coherence_id_all_layers": False,
+        "preserves_coefficients_and_support": False,
+        "finite_anchors_generated": False,
+        "controls_not_points": False,
+        "dh_not_points": False,
+        "epstein_not_points": False,
+        "required_edges": set(),
+        "detached_cartesian_coherence": False,
+        "boundaryless_coherence": False,
+        "boundary_after_coherence_filter": False,
+        "pushforward_after_coherence_filter": False,
+        "graph_after_coherence_filter": False,
+        "declared_beck_chevalley_square": False,
+        "formal_projection_square": False,
+        "degree_equality_only": False,
+        "count_equality_only": False,
+        "support_equality_only": False,
+        "weighted_zero_only": False,
+        "local_layer_table": False,
+        "layerwise_patchwork": False,
+        "external_choice_of_2cells": False,
+        "retuned_layer_map": False,
+        "graph_object_coherence": False,
+        "control_point_formable": True,
+        "dh_point_formable": True,
+        "epstein_point_formable": True,
+    }
+    data.update(kwargs)
+    return data
+
+
+REQUIRED = (
+    ("carrier_native", "not_carrier_native"),
+    ("represented_source_fiber", "represented_source_fiber_missing"),
+    ("universal_arrow_actual", "universal_arrow_not_actual"),
+    ("cartesian_lifts_actual", "cartesian_lifts_not_actual"),
+    ("cartesian_coherence_actual", "cartesian_coherence_missing"),
+    ("coherence_cells_actual", "coherence_cells_not_actual"),
+    (
+        "coherence_generated_by_universal_arrow",
+        "coherence_not_generated_by_universal_arrow",
+    ),
+    ("square_layer_coherence_actual", "square_layer_coherence_missing"),
+    ("dd4_boundary_actual", "dd4_boundary_missing"),
+    ("endpoint_degree_maps_actual", "endpoint_degree_maps_missing"),
+    ("p1_pushforward_square_actual", "p1_pushforward_square_missing"),
+    ("p2_pushforward_square_actual", "p2_pushforward_square_missing"),
+    ("graph_composition_actual", "graph_composition_missing"),
+    ("rosati_actual", "rosati_missing"),
+    ("count_degree_actual", "count_degree_missing"),
+    ("control_death_actual", "control_death_missing"),
+    ("boundary_commutes_with_coherence", "boundary_not_coherent"),
+    ("endpoint_commutes_with_coherence", "endpoint_degree_not_coherent"),
+    ("p1_commutes_with_coherence", "p1_pushforward_not_coherent"),
+    ("p2_commutes_with_coherence", "p2_pushforward_not_coherent"),
+    ("graph_commutes_with_coherence", "graph_not_coherent"),
+    ("rosati_commutes_with_coherence", "rosati_not_coherent"),
+    ("count_commutes_with_coherence", "count_degree_not_coherent"),
+    ("control_death_commutes_with_coherence", "control_death_not_coherent"),
+    ("same_coherence_id_all_layers", "same_coherence_id_not_all_layers"),
+    (
+        "preserves_coefficients_and_support",
+        "does_not_preserve_coefficients_and_support",
+    ),
+    ("finite_anchors_generated", "finite_anchors_not_generated"),
+    ("controls_not_points", "controls_are_points"),
+    ("dh_not_points", "dh_is_point"),
+    ("epstein_not_points", "epstein_is_point"),
+)
+
+BANNED = (
+    ("detached_cartesian_coherence", "detached_cartesian_coherence"),
+    ("boundaryless_coherence", "boundaryless_coherence"),
+    ("boundary_after_coherence_filter", "boundary_after_coherence_filter"),
+    ("pushforward_after_coherence_filter", "pushforward_after_coherence_filter"),
+    ("graph_after_coherence_filter", "graph_after_coherence_filter"),
+    ("declared_beck_chevalley_square", "declared_beck_chevalley_square"),
+    ("formal_projection_square", "formal_projection_square"),
+    ("degree_equality_only", "degree_equality_only"),
+    ("count_equality_only", "count_equality_only"),
+    ("support_equality_only", "support_equality_only"),
+    ("weighted_zero_only", "weighted_zero_only"),
+    ("local_layer_table", "local_layer_table"),
+    ("layerwise_patchwork", "layerwise_patchwork"),
+    ("external_choice_of_2cells", "external_choice_of_2cells"),
+    ("retuned_layer_map", "retuned_layer_map"),
+    ("graph_object_coherence", "graph_object_coherence"),
+    ("control_point_formable", "control_point_formable"),
+    ("dh_point_formable", "dh_point_formable"),
+    ("epstein_point_formable", "epstein_point_formable"),
+)
+
+
+def reasons(data) -> list[str]:
+    out = [label for key, label in REQUIRED if not data[key]]
+    if not REQUIRED_LAYER_EDGES <= set(data["required_edges"]):
+        out.append("required_square_layer_coherence_edges_missing")
+    out.extend(label for key, label in BANNED if data[key])
+    return out
+
+
+def accepts_square_layer_coherence(data) -> bool:
+    return (
+        all(data[key] for key, _ in REQUIRED)
+        and REQUIRED_LAYER_EDGES <= set(data["required_edges"])
+        and not any(data[key] for key, _ in BANNED)
+    )
+
+
+def live_source(**kwargs):
+    data = source(
+        carrier_native=True,
+        represented_source_fiber=True,
+        universal_arrow_actual=True,
+        cartesian_lifts_actual=True,
+        cartesian_coherence_actual=True,
+        coherence_cells_actual=True,
+        coherence_generated_by_universal_arrow=True,
+        square_layer_coherence_actual=True,
+        dd4_boundary_actual=True,
+        endpoint_degree_maps_actual=True,
+        p1_pushforward_square_actual=True,
+        p2_pushforward_square_actual=True,
+        graph_composition_actual=True,
+        rosati_actual=True,
+        count_degree_actual=True,
+        control_death_actual=True,
+        boundary_commutes_with_coherence=True,
+        endpoint_commutes_with_coherence=True,
+        p1_commutes_with_coherence=True,
+        p2_commutes_with_coherence=True,
+        graph_commutes_with_coherence=True,
+        rosati_commutes_with_coherence=True,
+        count_commutes_with_coherence=True,
+        control_death_commutes_with_coherence=True,
+        same_coherence_id_all_layers=True,
+        preserves_coefficients_and_support=True,
+        finite_anchors_generated=True,
+        controls_not_points=True,
+        dh_not_points=True,
+        epstein_not_points=True,
+        required_edges=set(REQUIRED_LAYER_EDGES),
+        control_point_formable=False,
+        dh_point_formable=False,
+        epstein_point_formable=False,
+    )
+    data.update(kwargs)
+    return data
+
+
+C3 = ((3,), (1,), ((0, 0),))
+C9 = ((9,), (1,), ((0, 0),))
+F22 = ((2,), (2,), ((0, 0),))
+ZERO_SPLIT = ((1, 2), (2, -1), ((0, 0), (1, 1)))
+
+z = chi_col(*ZERO_SPLIT)
+chi_C3 = chi_col(*C3)
+chi_C9 = chi_col(*C9)
+chi_F22 = chi_col(*F22)
+chi_C3F22 = convolve_chi(chi_C3, chi_F22)
+chi_C9F22 = convolve_chi(chi_C9, chi_F22)
+
+T3_z = convolve_chi(z, chi_C3)
+T3_T3_z = convolve_chi(T3_z, chi_C3)
+T9_z = convolve_chi(z, chi_C9)
+zF22 = convolve_chi(z, chi_F22)
+T3_zF22 = convolve_chi(zF22, chi_C3)
+T3_z_then_F22 = convolve_chi(T3_z, chi_F22)
+z_C3F22 = convolve_chi(z, chi_C3F22)
+T3_T3_zF22 = convolve_chi(T3_zF22, chi_C3)
+T9_zF22 = convolve_chi(zF22, chi_C9)
+z_C9F22 = convolve_chi(z, chi_C9F22)
+
+rows = [
+    row("z", z, "id", 1),
+    row("T3_z", T3_z, "C3", 3),
+    row("T3_T3_z", T3_T3_z, "C3_then_C3", 9),
+    row("T9_z", T9_z, "C9", 9),
+    row("zF22", zF22, "F22", 4),
+    row("T3_zF22", T3_zF22, "C3_after_F22", 12),
+    row("T3_z_then_F22", T3_z_then_F22, "F22_after_C3", 12),
+    row("z_C3F22", z_C3F22, "C3F22", 12),
+    row("T3_T3_zF22", T3_T3_zF22, "C3_C3_after_F22", 36),
+    row("T9_zF22", T9_zF22, "C9_after_F22", 36),
+    row("z_C9F22", z_C9F22, "C9F22", 36),
+]
+
+base_graph_degree = rows[0]["graph_degree"]
+base_count_degree = rows[0]["count_degree_value"]
+c3_degree = multiplier_degree(chi_C3)
+c9_degree = multiplier_degree(chi_C9)
+f22_degree = multiplier_degree(chi_F22)
+c3f22_degree = multiplier_degree(chi_C3F22)
+c9f22_degree = multiplier_degree(chi_C9F22)
+
+q_true = 7
+F_true = frobenius(q_true, 1)
+E_true = weil_pairing(F_true, q_true)
+D_true = delta(F_true)
+G_true = graph_corr(F_true, q_true, 1)
+H_true = graph_corr(F_true, q_true, 2)
+true_signature = formal_graph_signature(F_true, E_true, q_true)
+true_hodge = primitive_hodge_index(F_true, E_true, 1)
+true_count_defects = [
+    abs(ns_intersection(D_true, graph_corr(F_true, q_true, n)) - point_count(F_true, q_true, n))
+    for n in (1, 2, 3)
+]
+true_anti = anti_defect(G_true, H_true, E_true)
+
+control_q = 3
+control = np.array([[1.0, 2.0], [1.0, 5.0]])
+control_E = weil_pairing(control, control_q)
+control_D = delta(control)
+control_G = graph_corr(control, control_q, 1)
+control_signature = formal_graph_signature(control, control_E, control_q)
+control_hodge = primitive_hodge_index(control, control_E, 1)
+control_projection = projection_defect(control_G, control_D, control_G, control_E)
+control_retuned = retune_first_degree_for_projection(
+    control_G, control_D, control_G, control_E
+)
+
+
+gate(
+    "SLC1 represented coherence commutes with every square layer",
+    max(true_count_defects) < 1e-12
+    and true_anti < 1e-12
+    and {item["cartesian_coherence"] for item in rows} == {CARTESIAN_COHERENCE_ID}
+    and {item["square_layer_coherence"] for item in rows} == {SQUARE_LAYER_COHERENCE_ID}
+    and {item["layer_chain"] for item in rows}
+    == {
+        (
+            BOUNDARY_ID,
+            ENDPOINT_ID,
+            PUSHFORWARD_ID,
+            GRAPH_ID,
+            ROSATI_ID,
+            COUNT_ID,
+            CONTROL_DEATH_ID,
+        )
+    }
+    and all(item["endpoint_defect"] == 0 for item in rows)
+    and all(item["pushforward_defect"] == 0 for item in rows)
+    and all(item["boundary_defect"] == 0 for item in rows)
+    and T3_T3_z == T9_z
+    and T3_zF22 == T3_z_then_F22 == z_C3F22
+    and T3_T3_zF22 == T9_zF22 == z_C9F22
+    and rows[2]["cartesian_degree"] == c3_degree * c3_degree == c9_degree
+    and rows[5]["cartesian_degree"] == rows[6]["cartesian_degree"]
+    and rows[5]["cartesian_degree"] == c3_degree * f22_degree == c3f22_degree
+    and rows[8]["cartesian_degree"] == rows[9]["cartesian_degree"] == rows[10]["cartesian_degree"]
+    and rows[8]["cartesian_degree"] == c3_degree * c3_degree * f22_degree == c9f22_degree
+    and rows[8]["graph_degree"] == base_graph_degree * c9f22_degree
+    and rows[8]["count_degree_value"] == base_count_degree * c9f22_degree**2,
+    "count=%.1e anti=%.1e square=%s C9F22=%s"
+    % (max(true_count_defects), true_anti, SQUARE_LAYER_COHERENCE_ID, z_C9F22),
+)
+
+
+gate(
+    "SLC2 graph identities still do not supply square-layer coherence",
+    true_signature == (True, True, True)
+    and control_signature == true_signature
+    and true_hodge < 0
+    and control_hodge > 0
+    and control_projection == 24.0
+    and control_retuned[0] == 27.0,
+    "true_sig=%s control_sig=%s true_H=%.3f control_H=%.3f proj=%.1f retuned_d1=%.1f"
+    % (
+        true_signature,
+        control_signature,
+        true_hodge,
+        control_hodge,
+        control_projection,
+        control_retuned[0],
+    ),
+)
+
+
+detached = live_source(
+    square_layer_coherence_actual=False,
+    dd4_boundary_actual=False,
+    boundary_commutes_with_coherence=False,
+    endpoint_commutes_with_coherence=False,
+    p1_commutes_with_coherence=False,
+    p2_commutes_with_coherence=False,
+    detached_cartesian_coherence=True,
+    boundaryless_coherence=True,
+    graph_object_coherence=True,
+    control_point_formable=True,
+)
+
+gate(
+    "SLC3 detached cartesian coherence is too late",
+    not accepts_square_layer_coherence(detached)
+    and {
+        "square_layer_coherence_missing",
+        "dd4_boundary_missing",
+        "boundary_not_coherent",
+        "endpoint_degree_not_coherent",
+        "p1_pushforward_not_coherent",
+        "p2_pushforward_not_coherent",
+        "detached_cartesian_coherence",
+        "boundaryless_coherence",
+        "graph_object_coherence",
+        "control_point_formable",
+    }
+    <= set(reasons(detached)),
+    ",".join(reasons(detached)),
+)
+
+
+after_filters = live_source(
+    boundary_commutes_with_coherence=False,
+    p1_commutes_with_coherence=False,
+    p2_commutes_with_coherence=False,
+    graph_commutes_with_coherence=False,
+    boundary_after_coherence_filter=True,
+    pushforward_after_coherence_filter=True,
+    graph_after_coherence_filter=True,
+    retuned_layer_map=True,
+)
+
+gate(
+    "SLC4 boundary or pushforward filters after coherence are rejected",
+    not accepts_square_layer_coherence(after_filters)
+    and {
+        "boundary_not_coherent",
+        "p1_pushforward_not_coherent",
+        "p2_pushforward_not_coherent",
+        "graph_not_coherent",
+        "boundary_after_coherence_filter",
+        "pushforward_after_coherence_filter",
+        "graph_after_coherence_filter",
+        "retuned_layer_map",
+    }
+    <= set(reasons(after_filters)),
+    ",".join(reasons(after_filters)),
+)
+
+
+declared_square = live_source(
+    coherence_generated_by_universal_arrow=False,
+    square_layer_coherence_actual=False,
+    declared_beck_chevalley_square=True,
+    formal_projection_square=True,
+)
+
+gate(
+    "SLC5 declared Beck-Chevalley and projection squares are labels",
+    not accepts_square_layer_coherence(declared_square)
+    and {
+        "coherence_not_generated_by_universal_arrow",
+        "square_layer_coherence_missing",
+        "declared_beck_chevalley_square",
+        "formal_projection_square",
+    }
+    <= set(reasons(declared_square)),
+    ",".join(reasons(declared_square)),
+)
+
+
+numeric_only = live_source(
+    endpoint_commutes_with_coherence=False,
+    count_commutes_with_coherence=False,
+    preserves_coefficients_and_support=False,
+    degree_equality_only=True,
+    count_equality_only=True,
+    support_equality_only=True,
+    weighted_zero_only=True,
+)
+
+gate(
+    "SLC6 degree count support and weighted-zero tests are diagnostics",
+    not accepts_square_layer_coherence(numeric_only)
+    and {
+        "endpoint_degree_not_coherent",
+        "count_degree_not_coherent",
+        "does_not_preserve_coefficients_and_support",
+        "degree_equality_only",
+        "count_equality_only",
+        "support_equality_only",
+        "weighted_zero_only",
+    }
+    <= set(reasons(numeric_only)),
+    ",".join(reasons(numeric_only)),
+)
+
+
+local_layers = live_source(
+    same_coherence_id_all_layers=False,
+    p1_commutes_with_coherence=False,
+    p2_commutes_with_coherence=False,
+    graph_commutes_with_coherence=False,
+    local_layer_table=True,
+    layerwise_patchwork=True,
+    external_choice_of_2cells=True,
+)
+
+gate(
+    "SLC7 local layer tables and external patchwork do not cohere",
+    not accepts_square_layer_coherence(local_layers)
+    and {
+        "same_coherence_id_not_all_layers",
+        "p1_pushforward_not_coherent",
+        "p2_pushforward_not_coherent",
+        "graph_not_coherent",
+        "local_layer_table",
+        "layerwise_patchwork",
+        "external_choice_of_2cells",
+    }
+    <= set(reasons(local_layers)),
+    ",".join(reasons(local_layers)),
+)
+
+
+missing_sources = [
+    live_source(dd4_boundary_actual=False),
+    live_source(endpoint_degree_maps_actual=False),
+    live_source(p1_pushforward_square_actual=False),
+    live_source(p2_pushforward_square_actual=False),
+    live_source(graph_composition_actual=False),
+    live_source(rosati_actual=False),
+    live_source(count_degree_actual=False),
+    live_source(control_death_actual=False),
+    live_source(required_edges=REQUIRED_LAYER_EDGES - {("coherence_cells", "dd4_boundary")}),
+    live_source(required_edges=REQUIRED_LAYER_EDGES - {("coherence_cells", "control_death")}),
+]
+missing_reasons = set().union(*(set(reasons(data)) for data in missing_sources))
+
+gate(
+    "SLC8 every square-layer edge is mandatory",
+    not any(accepts_square_layer_coherence(data) for data in missing_sources)
+    and {
+        "dd4_boundary_missing",
+        "endpoint_degree_maps_missing",
+        "p1_pushforward_square_missing",
+        "p2_pushforward_square_missing",
+        "graph_composition_missing",
+        "rosati_missing",
+        "count_degree_missing",
+        "control_death_missing",
+        "required_square_layer_coherence_edges_missing",
+    }
+    <= missing_reasons,
+    "missing=%s" % sorted(missing_reasons),
+)
+
+
+control_shadow = live_source(
+    carrier_native=False,
+    controls_not_points=False,
+    dh_not_points=False,
+    epstein_not_points=False,
+    graph_object_coherence=True,
+    control_point_formable=True,
+    dh_point_formable=True,
+    epstein_point_formable=True,
+)
+
+gate(
+    "SLC9 control/DH/Epstein coherent square shadows are rejected",
+    not accepts_square_layer_coherence(control_shadow)
+    and {
+        "not_carrier_native",
+        "controls_are_points",
+        "dh_is_point",
+        "epstein_is_point",
+        "graph_object_coherence",
+        "control_point_formable",
+        "dh_point_formable",
+        "epstein_point_formable",
+    }
+    <= set(reasons(control_shadow)),
+    ",".join(reasons(control_shadow)),
+)
+
+
+static_square = live_source(
+    required_edges=REQUIRED_LAYER_EDGES
+    - {
+        ("coherence_cells", "dd4_boundary"),
+        ("coherence_cells", "p1_pushforward"),
+        ("coherence_cells", "graph_composition"),
+    },
+    square_layer_coherence_actual=False,
+)
+
+live = live_source()
+dead_sources = {
+    "detached": detached,
+    "after_filters": after_filters,
+    "declared_square": declared_square,
+    "numeric_only": numeric_only,
+    "local_layers": local_layers,
+    "control_shadow": control_shadow,
+    "static_square": static_square,
+}
+
+gate(
+    "SLC10 only carrier-native square-layer coherence passes",
+    not accepts_square_layer_coherence(static_square)
+    and {
+        "square_layer_coherence_missing",
+        "required_square_layer_coherence_edges_missing",
+    }
+    <= set(reasons(static_square))
+    and accepts_square_layer_coherence(live)
+    and REQUIRED_LAYER_EDGES <= live["required_edges"]
+    and not any(accepts_square_layer_coherence(data) for data in dead_sources.values()),
+    "dead accepted=%d live accepted=%s"
+    % (
+        sum(accepts_square_layer_coherence(data) for data in dead_sources.values()),
+        accepts_square_layer_coherence(live),
+    ),
+)
+
+
+if failures:
+    print("\nFAILURES:")
+    for failure in failures:
+        print(" -", failure)
+    raise SystemExit(1)
+
+print("\nSLC1-SLC10 ALL PASS: square-layer coherence contract pinned")
+print(
+    "VERDICT: represented universal-arrow coherence must commute with DD.4 "
+    "boundary, endpoint degree, p1/p2 pushforward, graph composition, Rosati, "
+    "count/degree, and control death. Detached cartesian coherence, declared "
+    "Beck-Chevalley or projection squares, late filters, numeric equalities, "
+    "local layer tables, external 2-cells, retuned layer maps, and "
+    "control/DH/Epstein shadows do not construct this square layer."
+)

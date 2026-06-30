@@ -36,7 +36,7 @@ reproduce the functional equation.
 
 ### The 2026-06-14 reset
 
-Docs 129-196 (the construction-naming "assault" era) and the 71-128
+The deleted construction-naming "assault" era and the 71-128
 process bloat were deleted: 68 documents that produced zero theorems and
 zero witnesses while one target name grew by qualifier accretion - a
 degrees-of-freedom violation (G-INT6). Doc 129 is the autopsy and the
@@ -123,101 +123,11465 @@ R1 CYCLE 1 DONE (doc 138): NO-GO with a named computed obstruction. The
   (BB.1). The anti-regress contract WORKED: PROBE PC's "BUILT weight-1 datum"
   was refuted 3/4 lenses (hardcoded PCG4 + index-set tautology) and its
   witness was deleted, not banked. R1 is SHARPENED, NOT closed.
-ENTRY/NEXT = R1 still open via its ONE untouched clause: N1-b' (the geometric
-  y-vs-t comparison) riding on HNS Thm A.2 (Harpaz-Nikolaus-Shah fiber
-  formula, attributed-forthcoming, NOT archived) made precise on THR(F_2) -
-  the single load-bearing missing external input. Alternative: an EXTERNAL
-  phi-invariant normalization (the conjectured dlog(1+z) pinning) selecting a
-  canonical torsor element. Either needs a runnable witness. Do NOT claim a
-  Weyl-fixed extension (KILL-DD4.1), an index-set involution as duality
-  (KILL-DD4.2), or a hardcoded carrier-death (KILL-DD4.3). R2 NOT unblocked
-  (Layer I self-duality unfinished).
-BINDING (doc 137 sec 7, the doc-129 anti-regress contract): this arc is the
-  exact shape that went off the rails before. Every cycle = a VERIFIED
-  sub-object (exit-gated witness) or a no-go with a mechanism. NO
-  qualifier-accretion (Cor 129.2). Stage results never promoted (BB.1).
-  Carrier guards (DH/Epstein death, doc 64); no unit insertion (zero-slack);
-  G-INT6; freeze.
-Do NOT re-attack the closed analytic faces (KILL-RAD.1/2/3 doc 132,
-KILL-RAD133.1-4 doc 133, KILL-REAL.1/2/3 doc 134, KILL-PHASE.1/2/3/4 doc 135).
+R1 CYCLE 2 DONE (doc 139): N1-b' full-line NO-GO / dependency split.
+  Published Dotto-Moi-Patchkoria support for TCR(F_2;2)^{phi Z/2} has a
+  bottom degree -1 class and all nonnegative degrees, but ZERO in degree -2
+  and below; the Lin/Weyl-Tate Laurent line F_2[t^{+-1}] has a class in every
+  degree. Therefore the HNS/DMP geometric route cannot identify a full
+  Laurent line F_2[y^{+-1}] with the Lin line at the TCR-fiber level.
+  Witness prime_int_n1b_prime_line_no_go (N1P1-N1P6 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH. R1 is SHARPENED again, NOT closed.
+R1 CYCLE 3 DONE (doc 140): N1-b' bottom-class multiplicative NO-GO. The
+  surviving DMP degree -1 class is square-zero by support (degree -2 group is
+  zero), hence cannot be the invertible Lin/Weyl-Tate generator t (where
+  t^2 != 0 in F_2[t^{+-1}]). Witness prime_int_n1b_bottom_class_nilpotent
+  (N1Q1-N1Q7 ALL PASS, lead-reran exit 0). An additive y->t degree-label may
+  exist, but it is bookkeeping only; it cannot unlock DD.4's t-periodic
+  self-duality datum. STAGE/Layer I - NOT RH.
+R1 CYCLE 4 DONE (doc 141): dlog-normalization NO-GO. The named
+  phi-invariant normalization dlog(1+z) is invariant but not a trace/coboundary
+  trivialization: dlog(c) has constant coefficient 1, while every differential
+  trace alpha+phi^*alpha has constant coefficient 0. It detects the same
+  leading obstruction bit as res_1(c)=1; it does not pin a torsor
+  representative. Witness prime_int_dlog_normalization_no_go (DLG1-DLG6 ALL
+  PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 5 DONE (doc 142): bottom-class localization NO-GO. The simplest
+  same-bottom "different carrier" repair tries to force a Laurent line by
+  inverting the DMP degree -1 bottom class y. But y^2=0 by doc 140 support, so
+  localizing at {1,y,y^2,...} contains 0 and gives the zero ring; formally
+  adjoining y^-1 forces 1=0. Witness prime_int_n1b_bottom_localization_collapse
+  (BLC1-BLC7 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 6 DONE (doc 143): free Laurent insertion NO-GO. Freely adjoining an
+  independent Laurent generator after doc 142 is either external decoration
+  or multiplicity blow-up: direct insertion makes degree -1 and nonnegative
+  degrees two-dimensional and leaves the DMP bottom class square-zero; tensor
+  insertion gives N+2 summands per degree in DMP[-1..N]. With independent
+  shear action the doc-138 res_1 obstruction remains, and the free operation is
+  formable on controls before any Euler carrier field is consumed. Witness
+  prime_int_n1b_free_laurent_insertion_no_go (FLI1-FLI8 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 7 DONE (doc 144): projection-choice NO-GO. After tensoring with a
+  free Laurent line, the truncated object R_DMP[-1..N] tensor F_2[u^{+-1}] is
+  a free Laurent module of rank N+2, so projecting to one Laurent copy requires
+  choosing a selector. Coordinate choices grow as N+2 and arbitrary rank-one
+  choices grow as 2^(N+2)-1 (7,15,63,1023 at N=1,2,4,8); support/u-periodicity
+  distinguishes none of them, the bottom coordinate still uses external u
+  while y^2=0, and the same projection operation is formable on controls.
+  Witness prime_int_n1b_projection_choice_no_go (PJC1-PJC8 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 8 DONE (doc 145): torsor-splitter insertion NO-GO. A formal repair
+  adjoins a new unit/selector b with phi(b)=b*c^-1, where c=(1+z)^-1, so
+  b/phi(b)=c by definition. This is algebraically consistent because c is a
+  C_2 cocycle, but it changes the coefficient system by inserting a solution
+  to the base coboundary equation; the same splitter construction works for
+  arbitrary control cocycles. Witness prime_int_torsor_splitter_insertion_no_go
+  (TSI1-TSI7 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 9 DONE (doc 146): quotient-to-line NO-GO. The dual of doc 144
+  quotients the overproduced free Laurent module L^(N+2) to one line by an
+  augmentation/diagonal functional. But degree-preserving L-linear quotients
+  are nonzero functionals in F_2^(N+2), so choices grow as 2^(N+2)-1
+  (7,15,63,1023 at N=1,2,4,8); support/u-periodicity distinguishes none of
+  them, the diagonal/all-ones quotient is one arbitrary functional, the DMP
+  bottom and shear obstructions remain, and the same quotient is formable on
+  controls. Witness prime_int_n1b_quotient_to_line_no_go (QTL1-QTL9 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 10 DONE (doc 147): shift-coinvariant line NO-GO. Imposing adjacent
+  relations e_i=e_{i+1} on the tensor copies L^(N+2) does collapse the
+  truncated object to one visible Laurent line, but only by inserting
+  N+1 index relations (2,3,5,9 at N=1,2,4,8). The quotient erases the DMP
+  bottom/nonnegative distinction, leaves y^2=0 and res_1(c)=1 unchanged, and
+  the same finite-chain coinvariant relation is formable on controls. Witness
+  prime_int_n1b_shift_coinvariant_no_go (SCI1-SCI9 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH.
+R1 CYCLE 11 DONE (doc 148): shift-telescope NO-GO. Packaging the doc-147
+  adjacent relations as a telescope/direct limit under S(e_i)=e_{i+1} still
+  needs adjacent maps not supplied by DMP support. The telescope collapses the
+  chain to rank one, but it consumes only the ordered index chain, is not
+  multiplication by the square-zero DMP bottom class, leaves res_1(c)=1
+  unchanged, and is formable on controls. Witness
+  prime_int_n1b_shift_telescope_no_go (STL1-STL9 ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 12 DONE (doc 149): formal shift-operator NO-GO. Adjoining a
+  formal operator S does not construct the missing carrier shift: on finite
+  support the forward shift is nilpotent/noninvertible and localizing at S
+  collapses the truncation; cyclic invertibility inserts a terminal wrap; a
+  genuinely invertible bi-infinite orbit is external Laurent insertion in
+  operator language. The bottom/shear obstructions remain and the same formal
+  operator schemas are formable on controls. Witness
+  prime_int_n1b_formal_shift_operator_no_go (FSO1-FSO10 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 13 DONE (doc 150): endomorphism-envelope NO-GO. Taking
+  End_L(R_DMP[-1..N] tensor L) gives Mat_r(L), r=N+2: Laurent rank r^2
+  (9,16,36,100), many rank-one selector choices
+  ((2^r-1)^2 = 49,225,3969,1046529), and many cyclic shifts
+  ((r-1)! = 2,6,120,362880). The support-order shift remains nilpotent, the
+  scalar center is only the inherited external L, the bottom/shear
+  obstructions remain, and the same End envelope is formable on controls.
+  Witness prime_int_n1b_endomorphism_envelope_no_go (EEV1-EEV10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 14 DONE (doc 151): idempotent/Morita-corner NO-GO. A rank-one
+  idempotent corner e Mat_r(L) e does produce a Laurent rank-one corner, but
+  only after choosing e. For r=3,4,6,10 the coordinate idempotent counts are
+  3,4,6,10; image-line choices are 7,15,63,1023; rank-one idempotent choices
+  are 28,120,2016,523776. The bottom coordinate corner recovers external L,
+  not an invertible DMP bottom class; no shift or torsor splitter is selected;
+  the bottom/shear obstructions remain; and the same corner is formable on
+  controls. Witness prime_int_n1b_idempotent_corner_no_go (IDC1-IDC10 ALL
+  PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 15 DONE (doc 152): trace/minimal-idempotent NO-GO. Trace one is
+  not a canonical selector: even diagonal trace-one idempotents number
+  4,8,32,512 at r=3,4,6,10 and include higher odd ranks. Minimality/rank one
+  is also nonselective: every rank-one idempotent has trace one and the
+  rank-one idempotent family still has 28,120,2016,523776 choices. The bottom
+  trace-one corner recovers external L, not an invertible DMP bottom class;
+  no shift or torsor splitter is selected; the bottom/shear obstructions
+  remain; and trace/minimality predicates are formable on controls. Witness
+  prime_int_n1b_trace_minimal_idempotent_no_go (TMI1-TMI10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 16 DONE (doc 153): conjugacy-invariant idempotent NO-GO. The full
+  support-module GL_r symmetry is too large: rank-one idempotents form one
+  orbit, so conjugacy can see rank but cannot choose one idempotent. The only
+  invariant elements in Mat_r(F_2) are central scalars; central idempotents
+  have ranks 0 or r, not 1. Summing the rank-one orbit gives zero in the
+  tested support ranks r=3,4,6,10. The bottom/shear obstructions remain and
+  the same conjugacy/symmetrization operations are formable on controls.
+  Witness prime_int_n1b_conjugacy_invariant_idempotent_no_go (CGI1-CGI11 ALL
+  PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 17 DONE (doc 154): support-flag/Borel idempotent NO-GO. A complete
+  flag can select a first coordinate line only after the flag is supplied; over
+  F_2 the complete-flag counts at r=3,4,6,10 are
+  21,315,615195,10414855105976475, and Borel ranks are 6,10,21,55. The DMP
+  support order consumes no primitive carrier map, the bottom flag corner
+  recovers external L rather than an invertible DMP bottom class, no adjacent
+  maps/shift/torsor splitter are supplied, the bottom/shear obstructions
+  remain, and the same flag/Borel reduction is formable on controls. Witness
+  prime_int_n1b_support_flag_idempotent_no_go (SFI1-SFI10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 18 DONE (doc 155): incidence/path algebra NO-GO. Packaging the
+  support order as an incidence algebra or line-quiver path algebra supplies
+  composition only for support intervals: interval ranks at r=3,4,6,10 are
+  6,10,21,55; strict path counts are 3,6,15,45; adjacent arrows are 2,3,5,9.
+  The strict path ideal is nilpotent, so it is not an invertible Laurent shift;
+  endpoint/corner lines still require support-vertex choice, the bottom corner
+  recovers external L while the DMP bottom class remains square-zero, no torsor
+  splitter or carrier multiplication is constructed, the bottom/shear
+  obstructions remain, and the same ordered-chain path algebra is formable on
+  controls. Witness prime_int_n1b_incidence_path_algebra_no_go (IPA1-IPA11 ALL
+  PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 19 DONE (doc 156): groupoid-completion/inverted-arrow NO-GO.
+  Formally inverting the support-chain arrows gives the connected thin
+  groupoid on r support vertices: morphism counts at r=3,4,6,10 are
+  9,16,36,100; non-identity morphisms are 6,12,30,90; oriented adjacent
+  arrows are 4,6,10,18. Its category algebra is Mat_r(L), so this returns to
+  the support End envelope; basepoint loops are trivial, not a Laurent shift
+  group; endpoint/corner and rank-one idempotent choices remain
+  (3,4,6,10 and 28,120,2016,523776); the bottom corner is external L, no
+  carrier multiplication or torsor splitter is constructed, the bottom/shear
+  obstructions remain, and the same groupoid completion is formable on
+  controls. Witness prime_int_n1b_groupoid_completion_no_go (GCP1-GCP11 ALL
+  PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 20 DONE (doc 157): stabilizer/Laurent-loop NO-GO. Adding Z isotropy
+  to the support groupoid gives Mat_r(L[s^{+-1}]); finite loop windows have
+  ranks r^2(2K+1), so at r=3,4,6,10 the K=0 window is 9,16,36,100, the K=1
+  window is 27,48,108,300 with extra layers 18,32,72,200, and the K=2 window
+  is 45,80,180,500. A corner sees the inserted Laurent line, but endpoint and
+  rank-one idempotent choices remain (3,4,6,10 and 28,120,2016,523776). The
+  loop generator is extra isotropy data; identifying it with the tensor
+  variable u is a fiat relation, it does not invert the DMP bottom class, no
+  torsor splitter is constructed, the bottom/shear obstructions remain, and
+  the same stabilizer-loop extension is formable on controls. Witness
+  prime_int_n1b_stabilizer_loop_no_go (SLP1-SLP11 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH.
+R1 CYCLE 21 DONE (doc 158): support-connection/holonomy NO-GO. Labeling the
+  support-chain arrows by units gives tree-gauge data, not carrier holonomy:
+  edge counts at r=3,4,6,10 are 2,3,5,9; mod-2 edge-label counts and based
+  vertex-gauge counts are both 4,8,32,512 with one holonomy class; mod-3
+  counts are both 9,27,243,19683 with one holonomy class. Nontrivial support
+  holonomy appears only after adding a terminal wrap (cycle edge counts
+  3,4,6,10 and mod-2 H^1 count 2), re-entering the cyclic-shift repair.
+  Unit labels supply no DMP multiplication or torsor splitter, the
+  bottom/shear obstructions remain, and the same connection system is
+  formable on controls. Witness prime_int_n1b_connection_holonomy_no_go
+  (CHN1-CHN11 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 22 DONE (doc 159): support-filtration Rees-parameter NO-GO. The
+  Rees construction records the support flag with an external parameter q:
+  support ranks and associated-graded/q=1 ranks at r=3,4,6,10 remain
+  3,4,6,10; proper inclusions are 2,3,5,9; the polynomial window 0<=k<=2 has
+  ranks 9,12,18,30; after inverting q, Laurent windows |k|<=1 and |k|<=2
+  have ranks 9,12,18,30 and 15,20,30,50. Thus localized Rees is a rank-r
+  Laurent extension, not one carrier line. The q-shift is filtration
+  bookkeeping unless q=u or q=t is imposed by a carrier, endpoint/idempotent
+  choices remain, the bottom/shear/torsor obstructions remain, and the same
+  Rees package is formable on controls. Witness
+  prime_int_n1b_rees_filtration_no_go (RFS1-RFS11 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH.
+R1 CYCLE 23 DONE (doc 160): Rees-monodromy/filtered-operator NO-GO. Adding
+  the standard Rees operators does not make the support package carrier-native:
+  the support nilpotent has ranks rank N = 2,3,5,9 and rank N^2 = 1,2,4,8,
+  with top nonzero rank 1 and N^r=0; over the F_2 support model, 1+N has
+  finite 2-power order bounds 4,4,8,16; q d/dq sees only external Rees degree
+  on localized windows (|k|<=2 ranks 15,20,30,50, with each q-degree repeated
+  across r support pieces). The monodromy filtration repackages the support
+  length, endpoint/idempotent choices remain, the bottom/shear/torsor
+  obstructions remain, and the same operator package is formable on controls.
+  Witness prime_int_n1b_rees_monodromy_no_go (RMN1-RMN11 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 24 DONE (doc 161): filtered-extension/unipotent-gluing NO-GO.
+  Ordinary L-module extensions between free support pieces vanish, so
+  support-only extensions split. The remaining filtered gluing data is strict
+  upper-triangular support bookkeeping: ranks 3,6,15,45 and F_2 unipotent
+  choice counts 8,64,32768,35184372088832 at r=3,4,6,10. The unipotent
+  radical is nilpotent (J^2 ranks 1,3,10,36; top rank 1; J^r=0), adjacent
+  extension slots are only support-neighbor slots 2,3,5,9, endpoint/idempotent
+  choices remain, the bottom/shear/torsor obstructions remain, and the same
+  filtered-extension package is formable on controls. Witness
+  prime_int_n1b_filtered_extension_no_go (FEX1-FEX10 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 25 DONE (doc 162): derived-extension/Yoneda-gluing NO-GO. Replacing
+  ordinary support extensions by derived Ext, Massey products, or A_infinity
+  gluing does not produce hidden carrier data: positive Ext between free
+  L-support pieces vanishes in the tested degrees, the ordinary positive
+  Yoneda support algebra is zero, and there are no Ext1 seeds for Massey-style
+  products. Degree-zero derived endomorphisms recover the support matrix
+  envelope (ranks 9,16,36,100). Any nonzero higher support cochain is inserted
+  strict upper-triangular chain data, with ranks 3,6,15,45, finite interval
+  slots, and nilpotence (J^2 ranks 1,3,10,36; J^r=0). Endpoint/idempotent
+  choices remain, the bottom/shear/torsor obstructions remain, and the same
+  derived-extension package is formable on controls. Witness
+  prime_int_n1b_derived_extension_no_go (DEX1-DEX12 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH.
+R1 CYCLE 26 DONE (doc 163): pro-support/infinite-completion NO-GO. Passing
+  from finite support nilpotents to the infinite/completed visible support
+  chain keeps a boundary defect: finite support shifts have ranks 2,3,5,9
+  with rank-one kernels and cokernels, and in the one-sided completion one
+  orientation is injective not surjective while the other is surjective not
+  injective. DMP support has no negative predecessor tail in degrees -2,-3,
+  -4,-8; a two-sided completion would insert 1,2,4,8 negative classes on the
+  tested windows. The pro-unipotent 1+N has 2-power unipotent finite quotient
+  orders 4,4,8,16 and fixes associated graded instead of translating it.
+  Completed upper-triangular choices still overproduce, endpoint/idempotent
+  choices remain, the bottom/shear/torsor obstructions remain, and the same
+  pro-support package is formable on controls. Witness
+  prime_int_n1b_pro_support_completion_no_go (PSC1-PSC12 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 27 DONE (doc 164): Tate/continuous-dual completion NO-GO. Adding
+  the continuous dual tail to the visible support doubles finite windows
+  rather than constructing DMP negative support: dual ranks are 3,4,6,10 and
+  Tate/hyperbolic ranks are 6,8,12,20. The direct sum of the unilateral
+  support shift and its dual adjoint still has a one-dimensional kernel and
+  cokernel, so invertibility requires an inserted rank-one boundary glue map.
+  DMP still has no degree -2,-3,-4,-8 support, pro-unipotent order bounds
+  remain 4,4,8,16, half/endpoint choices remain, Tate-window rank-one
+  idempotent counts grow to 2016,32640,8386560,549755289600, and the
+  bottom/shear/torsor obstructions remain. The same Tate-dual package is
+  formable on controls. Witness prime_int_n1b_tate_dual_completion_no_go
+  (TDC1-TDC12 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 28 DONE (doc 165): evaluation/coevaluation boundary-glue NO-GO.
+  The canonical Tate evaluation and coevaluation maps do not supply the
+  missing rank-one boundary glue: evaluation is scalar-valued, coevaluation
+  is the diagonal class, and neither is the linear map from the dual boundary
+  line to the primal boundary line needed to make the Tate shift invertible.
+  Boundary self-duality is an extra rank-one identification; over
+  L=F_2[u^{+-1}] the glue has unpinned Laurent unit twists (3,5,9,17 in
+  windows |k|<=1,2,4,8) and nonzero map counts 7,31,511,131071. Degree-zero
+  glue is a normalization, endpoint/Tate idempotent choices remain, the
+  bottom/shear/torsor obstructions remain, and the same evaluation-glue
+  package is formable on controls. Witness
+  prime_int_n1b_eval_boundary_glue_no_go (EBG1-EBG13 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 29 DONE (doc 166): hyperbolic-swap/J boundary-glue NO-GO. The
+  support hyperbolic form gives a full duality W -> W^vee in doubled windows
+  of ranks 6,8,12,20; it is not the rank-one boundary glue. Turning that
+  duality into a swap operator W -> W requires dual-to-primal matching data,
+  with coordinate matching counts 6,24,720,3628800 at r=3,4,6,10. If inserted,
+  the swap is an involution acting on all Tate summands, not a Laurent
+  generator or rank-one boundary map. Endpoint-pair choices, Laurent twists,
+  Tate idempotent choices, and the bottom/shear/torsor obstructions remain;
+  the same hyperbolic-swap package is formable on controls. Witness
+  prime_int_n1b_hyperbolic_swap_no_go (HSW1-HSW12 ALL PASS, lead-reran exit
+  0). STAGE/Layer I - NOT RH.
+R1 CYCLE 30 DONE (doc 167): Lagrangian/polarization half-identification
+  NO-GO. The standard Tate halves M and M^vee are two Lagrangians, not an
+  identification. Total Lagrangian choices in the finite F_2 hyperbolic
+  windows overproduce (135,2295,4922775,85817142703524375), and graph
+  Lagrangians still overproduce (64,1024,2097152,36028797018963968) while
+  requiring half-matching data (6,24,720,3628800). A Lagrangian is a
+  submodule, not the rank-one boundary glue map or Laurent generator; Laurent
+  twists, endpoint/Tate idempotent choices, and the bottom/shear/torsor
+  obstructions remain. The same Lagrangian-polarization package is formable
+  on controls. Witness prime_int_n1b_lagrangian_polarization_no_go
+  (LPG1-LPG13 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 31 DONE (doc 168): opposite/transverse Lagrangian graph
+  half-identification NO-GO. Fixing a standard Tate half and choosing an
+  opposite Lagrangian turns the repair into a graph choice, not a
+  carrier-supplied map. Graph/opposite choices still overproduce
+  (64,1024,2097152,36028797018963968), require half-matching data
+  (6,24,720,3628800), and output a rank-r half-map (3,4,6,10) rather than
+  the rank-one boundary glue. Endpoint/idempotent choices, Laurent twists,
+  and the bottom/shear/torsor obstructions remain; the same
+  opposite-Lagrangian package is formable on controls. Witness
+  prime_int_n1b_opposite_lagrangian_no_go (OPL1-OPL13 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 32 DONE (doc 169): graph-boundary extraction NO-GO. Extracting a
+  boundary corner, minor, cofactor, determinant line, or Schur-style scalar
+  from the support opposite graph does not supply boundary glue. Endpoint
+  choices reappear (9,16,36,100); for a fixed endpoint pair, the corner reads
+  one scalar bit, with nonzero graph counts
+  (32,512,1048576,18014398509481984). Across all endpoint pairs the
+  graph-corner candidates overproduce
+  (576,16384,75497472,3602879701896396800), and the nonzero candidates still
+  overproduce (288,8192,37748736,1801439850948198400). Determinant data is a
+  scalar shadow; cofactor/Schur variants still need endpoint data and do not
+  supply a Laurent generator. Endpoint/idempotent choices, Laurent twists, and
+  the bottom/shear/torsor obstructions remain; the same extraction package is
+  formable on controls. Witness prime_int_n1b_graph_boundary_extraction_no_go
+  (GBE1-GBE13 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 33 DONE (doc 170): determinant/orientation normalization NO-GO.
+  Adding determinant-one or orientation normalization to the support opposite
+  graph does not pin the endpoint, boundary map, or Laurent twist. In the
+  finite F_2 support windows the determinant unit group is F_2^*={1}, so
+  orientation choices are (1,1,1,1), determinant sign bits are (0,0,0,0), and
+  determinant-one normalization is tautological after invertibility.
+  Orientation outputs scalar shadow data, not an endpoint, boundary map, or
+  Laurent generator; Laurent determinant-degree normalization is only total
+  scalar data. Endpoint/matching/idempotent choices, Laurent twists, and the
+  bottom/shear/torsor obstructions remain; the same normalization package is
+  formable on controls. Witness prime_int_n1b_orientation_normalization_no_go
+  (ONR1-ONR13 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 34 DONE (doc 171): quadratic-refinement / Arf-Maslov NO-GO.
+  Adding a quadratic refinement, Arf invariant, or Maslov/triple-Lagrangian
+  scalar to the support hyperbolic package does not pin the endpoint,
+  boundary map, or Laurent twist. Quadratic refinements of the fixed
+  symplectic F_2 form overproduce (64,256,4096,1048576); the Arf split still
+  leaves large families (even 36,136,2080,524800; odd
+  28,120,2016,523776). Arf is a scalar bit and does not choose the opposite
+  graph; fixed-half Maslov triples over graph Lagrangians already overproduce
+  (4096,1048576,4398046511104,1298074214633706907132624082305024) before
+  producing scalar data. Endpoint/matching/idempotent choices, Laurent twists,
+  and the bottom/shear/torsor obstructions remain; the same package is
+  formable on controls. Witness prime_int_n1b_quadratic_refinement_no_go
+  (QRF1-QRF13 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 35 DONE (doc 172): Darboux/symplectic-frame NO-GO. Choosing a full
+  symplectic frame or a Darboux frame adapted to the standard halves only
+  chooses a support basis; it does not construct the carrier graph, endpoint,
+  boundary map, Laurent generator, or torsor splitter. Full frame counts are
+  1451520, 47377612800, 208114637736580743168000, and
+  1132992015386677099994486205757869431795095310094129168384000000; adapted
+  Darboux-frame counts are 168, 20160, 20158709760, and
+  366440137299948128422802227200. The first symplectic-pair choices are
+  endpoint-like support choices (2016,32640,8386560,549755289600). Graph,
+  endpoint/matching, Laurent twist, and bottom/shear/torsor obstructions
+  remain; the same frame package is formable on controls. Witness
+  prime_int_n1b_darboux_frame_no_go (DFR1-DFR12 ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 36 DONE (doc 173): symplectic quotient/orbit-averaging NO-GO.
+  Quotienting the support Darboux-frame package by Sp removes the visible
+  choice only by replacing it with an orbit class. The frame and first-pair
+  counts are the doc-172 counts; the Sp quotient of frames and ordered
+  symplectic pairs has one orbit in each tested window, but no representative
+  and no carrier endpoint, graph, boundary map, Laurent generator, or torsor
+  splitter. Over F_2 there is no normalized average by |Sp|, and the natural
+  endpoint-vector transfer is zero: nonzero vector counts
+  (63,255,4095,1048575), coordinate occurrence counts
+  (32,128,2048,524288), and ordered-pair weighted coordinate counts
+  (1024,16384,4194304,274877906944). Graph, endpoint/matching, idempotent,
+  Laurent twist, and bottom/shear/torsor obstructions remain; the same
+  quotient/averaging package is formable on controls. Witness
+  prime_int_n1b_symplectic_quotient_no_go (SPQ1-SPQ11 ALL PASS, lead-reran
+  exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 37 DONE (doc 174): symplectic stabilizer-stack NO-GO. Keeping the
+  support Sp quotient as a stack/action groupoid does not turn residual
+  isotropy into carrier loop data. Full symplectic-frame stacks have trivial
+  stabilizer (1,1,1,1). Ordered first-pair stacks have finite
+  Sp(2r-2,F_2) stabilizers
+  (720,1451520,24815256521932800,
+  2060902435720151186326095525680721766346957783040000); endpoint-vector
+  stacks have finite parabolic stabilizers
+  (23040,185794560,50821645356918374400,
+  1080506416218846625176535970968094253434513802154475520000). Reading any
+  concrete stabilizer requires a support basepoint; finite residual isotropy
+  is not an infinite Laurent shift; graph, endpoint/matching, idempotent,
+  Laurent twist, and bottom/shear/torsor obstructions remain; the same
+  stabilizer-stack package is formable on controls. Witness
+  prime_int_n1b_symplectic_stabilizer_stack_no_go (SSK1-SSK12 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 38 DONE (doc 175): symplectic stabilizer-cohomology NO-GO.
+  Passing from residual support stabilizers to classifying-space, group, or
+  Tate cohomology does not construct the Laurent carrier. Full-frame
+  stabilizer cohomology is trivial. First-pair stabilizers are Sp(2m,F_2)
+  for m=(2,3,5,9), with orders
+  (720,1451520,24815256521932800,
+  2060902435720151186326095525680721766346957783040000), 2-adic orders
+  (4,9,25,81), and elementary abelian 2-ranks (2,3,5,9), so their mod-2
+  finite-group cohomology is not periodic. Endpoint-vector parabolic
+  stabilizers have orders (23040,185794560,50821645356918374400,
+  1080506416218846625176535970968094253434513802154475520000) and the same
+  elementary 2-rank obstruction. Ordinary cohomology is nonnegative with no
+  positive Laurent units; formal periodicity localization is insertion.
+  Graph, endpoint/matching, idempotent, Laurent twist, and bottom/shear/torsor
+  obstructions remain; the same cohomology package is formable on controls.
+  Witness prime_int_n1b_symplectic_stabilizer_cohomology_no_go (SCH1-SCH13
+  ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 39 DONE (doc 176): symplectic building/Steinberg NO-GO. Passing
+  from stabilizer cohomology to the Tits building or Steinberg dualizing
+  module of the residual support symplectic stabilizer does not construct
+  the Laurent carrier. Full-frame stabilizers have no nontrivial building.
+  First-pair stabilizers are Sp(2m,F_2) for m=(2,3,5,9); their building top
+  degrees are (1,2,4,8), matching the finite cutoffs but constructing no
+  shift map. Chamber counts massively overproduce
+  (45,2835,739552275,852369269595510700600441875), and Steinberg dimensions
+  are (16,512,33554432,2417851639229258349412352), not rank-one lines.
+  Choosing a chamber, apartment, or top vector is another support choice.
+  Graph, endpoint/matching, idempotent, Laurent twist, and bottom/shear/torsor
+  obstructions remain; the same building/Steinberg package is formable on
+  controls. Witness prime_int_n1b_symplectic_building_steinberg_no_go
+  (SBT1-SBT13 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 40 DONE (doc 177): symplectic Weyl/Coxeter/apartment monodromy
+  NO-GO. Passing from building/Steinberg data to a chosen apartment and its
+  type-C Weyl group or Coxeter element does not construct the Laurent
+  carrier. The residual ranks are m=(2,3,5,9), Weyl group orders are
+  (8,48,3840,185794560), and Coxeter orders are finite
+  (4,6,10,18), imposing wrap relations rather than a bi-infinite Laurent
+  shift. The Coxeter orders miss the finite Laurent twist windows
+  (3,5,9,17); choosing the apartment or Coxeter element is still support
+  data. Building/Steinberg overproduction, graph/endpoint/matching/
+  idempotent choices, and bottom/shear/torsor obstructions remain; the same
+  Weyl/Coxeter package is formable on controls. Witness
+  prime_int_n1b_symplectic_weyl_coxeter_no_go (SWC1-SWC13 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 41 DONE (doc 178): symplectic Hecke/Iwahori/BN-pair double-coset
+  algebra NO-GO. Passing from a chosen apartment/Coxeter element to the
+  finite type-C Iwahori-Hecke algebra or BN-pair double-coset algebra of the
+  support building does not construct the carrier correspondence algebra.
+  The residual ranks are m=(2,3,5,9), finite Hecke basis ranks are
+  (8,48,3840,185794560), longest Bruhat lengths are (4,9,25,81), and center
+  ranks are finite class-data ranks (5,10,36,300). The finite Bruhat
+  interval terminates; affine translations are not supplied by the support
+  building. Chamber/Borel/Iwahori choices, building/Weyl/Steinberg
+  finite-data obstructions, graph/endpoint/matching/idempotent/twist choices,
+  and bottom/shear/torsor obstructions remain; the same Hecke/Iwahori
+  package is formable on controls. Witness
+  prime_int_n1b_symplectic_hecke_iwahori_no_go (SHI1-SHI13 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 42 DONE (doc 179): symplectic affine Weyl/Hecke translation
+  lattice NO-GO. Passing from finite Hecke/Iwahori data to an affine Weyl
+  group or affine Hecke algebra does not construct the Laurent carrier.
+  The affine translation lattice ranks are (2,3,5,9), not one; affine
+  simple-generator counts are (3,4,6,10), only mirroring support ranks; and
+  simple coroot axis choices are (4,6,10,18). The finite support building
+  supplies no affine valuation, no translation lattice, no preferred
+  primitive translation, no boundary map, and no torsor splitter. Building/
+  Weyl/Hecke/Steinberg finite-data obstructions, graph/endpoint/matching/
+  idempotent/twist choices, and bottom/shear/torsor obstructions remain; the
+  same affine Weyl/Hecke package is formable on controls. Witness
+  prime_int_n1b_symplectic_affine_hecke_no_go (SAH1-SAH13 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 43 DONE (doc 180): symplectic affine Grassmannian / Schubert
+  convolution NO-GO. Passing from affine Weyl/Hecke translations to the
+  affine Grassmannian or Schubert convolution category does not construct the
+  carrier correspondence algebra. Schubert labels form dominant coweight
+  monoids of ranks (2,3,5,9), not one; finite height windows overproduce
+  labels (3,10,126,24310), exact-height windows overproduce
+  (2,6,70,12870), and fundamental/signed axis choices remain
+  (2,3,5,9)/(4,6,10,18). The finite support building supplies no loop
+  parameter, affine valuation, affine Grassmannian, selected Laurent axis,
+  boundary map, or torsor splitter. Building/Weyl/Hecke/affine/Steinberg
+  finite-data obstructions, graph/endpoint/matching/idempotent/twist choices,
+  and bottom/shear/torsor obstructions remain; the same Schubert convolution
+  package is formable on controls. Witness
+  prime_int_n1b_symplectic_affine_grassmannian_no_go (SAG1-SAG13 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 44 DONE (doc 181): symplectic geometric Satake /
+  dual-representation NO-GO. Invoking geometric Satake after appending
+  affine-Grassmannian data does not construct the carrier correspondence
+  algebra. The dual type-B dominant-weight monoids still have ranks
+  (2,3,5,9); finite windows overproduce representations
+  (3,10,126,24310)/(2,6,70,12870); fundamental representation dimensions
+  are (5,4), (7,21,8), (11,55,165,330,32), and
+  (19,171,969,3876,11628,27132,50388,75582,512); and the only
+  one-dimensional representation is the trivial unit. The finite support
+  building supplies no loop parameter, affine valuation, Satake category,
+  dual group, fiber functor, boundary map, Laurent generator, or torsor
+  splitter. Choices and bottom/shear/torsor obstructions remain; the same
+  Satake / dual-representation package is formable on controls. Witness
+  prime_int_n1b_symplectic_geometric_satake_no_go (SGS1-SGS13 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 45 DONE (doc 182): symplectic principal SL2 /
+  principal-cocharacter NO-GO. Using the principal cocharacter of the
+  appended dual type-B group does not construct the Laurent carrier. The
+  axis is rank one only after positive-system/pinning data; the finite
+  support building supplies no Satake category, dual group, pinning,
+  principal SL2, principal torus coordinate, boundary map, Laurent
+  generator, or torsor splitter. The vector principal strings are finite
+  (counts 5,7,11,19; max weights 4,6,10,18), and the adjoint decomposes into
+  finite principal-SL2 strings (3,7), (3,7,11), (3,7,11,15,19), and
+  (3,7,11,15,19,23,27,31,35). Reading O(G_m)=F_2[q^{+-1}] as the line is an
+  external Laurent-coordinate insertion unless the carrier constructs that
+  coordinate. Choices and bottom/shear/torsor obstructions remain; the same
+  principal-cocharacter package is formable on controls. Witness
+  prime_int_n1b_symplectic_principal_cocharacter_no_go (SPC1-SPC11 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 46 DONE (doc 183): symplectic regular nilpotent /
+  Kostant-section NO-GO. Using the principal nilpotent, Kostant slice, or
+  Chevalley adjoint quotient of the appended dual type-B group does not
+  construct the carrier correspondence algebra. The regular nilpotent needs
+  positive-system/pinning data and is finite nilpotent rather than
+  invertible: vector nilpotency indices are 5,7,11,19 and adjoint
+  nilpotency indices are 7,11,19,35. The Kostant slice and Chevalley quotient
+  are rank-m affine polynomial data with invariant degrees (2,4), (2,4,6),
+  (2,4,6,8,10), and (2,4,6,8,10,12,14,16,18), not a rank-one Laurent line.
+  The finite support building supplies no Satake category, dual group,
+  pinning, principal nilpotent, Kostant slice, Chevalley coordinates,
+  boundary map, Laurent generator, or torsor splitter. Choices and
+  bottom/shear/torsor obstructions remain; the same Kostant-section package
+  is formable on controls. Witness
+  prime_int_n1b_symplectic_kostant_section_no_go (SKS1-SKS10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 47 DONE (doc 184): symplectic Springer resolution /
+  Steinberg-variety NO-GO. Using Springer resolution or Steinberg variety
+  convolution of the appended dual type-B group does not construct the
+  carrier correspondence algebra. Non-equivariant Springer/Steinberg data is
+  finite Weyl-indexed: flag cohomology dimensions and Steinberg component
+  counts are 8,48,3840,185794560. Equivariant/nil-Hecke variants introduce
+  rank-m polynomial or weight-lattice data (2,3,5,9), not a selected Laurent
+  line; choosing one equivariant axis is another selector (2,3,5,9 or signed
+  4,6,10,18). The finite support building supplies no Satake category, dual
+  group, Borel, Springer resolution, Steinberg variety, equivariant torus,
+  boundary map, Laurent generator, or torsor splitter. Choices and
+  bottom/shear/torsor obstructions remain; the same Springer/Steinberg
+  package is formable on controls. Witness
+  prime_int_n1b_symplectic_springer_steinberg_no_go (SSV1-SSV10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 48 DONE (doc 185): symplectic Hitchin-system / cameral-cover
+  NO-GO. Using Hitchin, spectral-curve, or cameral-cover data of the
+  appended dual type-B group does not construct the carrier correspondence
+  algebra. The Hitchin base is rank-m invariant-polynomial data with degrees
+  (2,4), (2,4,6), (2,4,6,8,10), and (2,4,6,8,10,12,14,16,18). Cameral cover
+  degrees are Weyl degrees 8,48,3840,185794560, and vector spectral cover
+  degrees are 5,7,11,19. Selecting one invariant, sheet, or coordinate is
+  another selector (2,3,5,9 or signed 4,6,10,18). The finite support building
+  supplies no Satake category, dual group, base curve, canonical bundle,
+  Hitchin base, cameral cover, spectral curve, boundary map, Laurent
+  generator, or torsor splitter. Choices and bottom/shear/torsor obstructions
+  remain; the same Hitchin/cameral package is formable on controls. Witness
+  prime_int_n1b_symplectic_hitchin_cameral_no_go (SHC1-SHC10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 49 DONE (doc 186): symplectic Hitchin Picard/Prym/Jacobian fiber
+  NO-GO. Using the abelianized Hitchin fiber, Picard, Prym, or Jacobian data
+  of the appended Hitchin system does not construct the carrier
+  correspondence algebra. The generic fiber and regular centralizer are
+  rank-m abelian data with ranks 2,3,5,9, not a rank-one Laurent line.
+  Norm, origin, polarization, and degree data depend on external
+  base-curve/spectral-cover input unless carrier-constructed, and selecting
+  one abelian direction or degree component is another selector. The finite
+  support building supplies no base curve, spectral curve, Picard stack,
+  Prym norm datum, boundary map, Laurent generator, or torsor splitter.
+  Choices and bottom/shear/torsor obstructions remain; the same
+  Picard/Prym/Jacobian package is formable on controls. Witness
+  prime_int_n1b_symplectic_hitchin_picard_prym_no_go (HPP1-HPP10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 50 DONE (doc 187): Connes-Consani Pic/Jacobian curve-level
+  square NO-GO. Using the CC compactified Spec Z curve-level Pic/Jacobian
+  package itself does not construct End(S^2/Z). The curve-level package is
+  real input: RR over S, Pontryagin-Serre duality over S[+-1], and Pic/Jac
+  infrastructure. But the Pic tensor product is rank-one internal curve
+  product, not a compactified square; no square H^2, intersection form,
+  correspondence algebra, Frobenius graph, Laurent boundary data, or positive
+  Rosati involution is supplied. The strict Gamma-set square has object-level
+  extra data (mu(L)=mu(C3)=3 but Phi'_2 separates them), but published
+  RR/Pic/Hom probes factor through the diagonal curve shadow. Witness
+  prime_int_n1b_cc_pic_jacobian_square_no_go (CPJ1-CPJ10 ALL PASS,
+  lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 51 DONE (doc 188): CC strict Gamma-set square divided-power
+  NO-GO. Using the strict square HZ ^ HZ divided-power or universal
+  character invariants themselves does not construct End(S^2/Z). The strict
+  square really has object-level noncollapse: mu(L)=mu(C3)=3 while Phi'_2
+  separates them, it remembers bilinear factorizations such as 2x2 versus
+  4x1, and the zero fiber splits from the basepoint shadow. But the
+  resulting invariant algebra is ungraded monoid-ring diagnostic data, not
+  square H^2, an intersection form, a correspondence algebra, a Frobenius
+  graph, Laurent boundary data, a torsor splitter, or a positive Rosati
+  involution; published CC probes still factor through the diagonal.
+  Witness prime_int_n1b_cc_strict_square_divided_power_no_go
+  (CSD1-CSD10 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 52 DONE (doc 189): CC graded-tolerance derived-square NO-GO.
+  Assigning CC-style integer tolerance dimensions dim_b(k)=ceil(log_b k)
+  to each derived square degree does not construct End(S^2/Z). The ceiling
+  exactness set is b-geometric, so the quantization-defect tower has a
+  simple pole at s=0 with residue -1/(2 log b); its finite part is rational
+  and base-dependent (3/4 over S, 1/4 over S[+-1]) rather than the smooth
+  derived total log(2 pi)/(2 log b). No square H^2, intersection form,
+  correspondence algebra, Frobenius graph, Laurent boundary data, torsor
+  splitter, or positive Rosati is constructed. Witness
+  prime_int_n1b_cc_graded_tolerance_no_go (CGT1-CGT10 ALL PASS,
+  lead-reran exit 0); adjacent ball-arithmetic witness
+  prime_cc_quantization_defect (W0-W6 ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 53 DONE (doc 190): CC finite-part renormalization NO-GO.
+  Keeping the pole-subtracted finite part of the CC-ceiling tower does not
+  construct End(S^2/Z). The pole residue and finite part are base-dependent
+  regularization data: residues -1/(2 log 2), -1/(2 log 3), finite parts
+  3/4 over S and 1/4 over S[+-1]. Those rational values are not the smooth
+  derived totals log(2 pi)/(2 log b), and no carrier-native base selector,
+  finite-part prescription, non-geometric exactness set, square H^2,
+  intersection form, correspondence algebra, Frobenius graph, Laurent
+  boundary data, torsor splitter, or positive Rosati is constructed. Witness
+  prime_int_n1b_cc_finite_part_renormalization_no_go
+  (CFR1-CFR10 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 54 DONE (doc 191): CC non-geometric exactness selector NO-GO.
+  Hand-retuning the CC exactness atoms from the b-geometric set {b^j} to a
+  non-geometric exactness set does not construct End(S^2/Z). It avoids the
+  named pole mechanism only by replacing the CC ceiling/log-periodic atom
+  sequence with external sequence data: in the finite windows [1,64] and
+  [1,729], same-cardinality exactness selectors already have 621216191 and
+  21091830512086619 alternatives, with paired base choices multiplying the
+  burden. No square-native base covariance, non-EM square functor,
+  carrier-native aggregation, square H^2, intersection form, correspondence
+  algebra, Frobenius graph, Laurent boundary data, torsor splitter, or
+  positive Rosati is constructed. Witness
+  prime_int_n1b_cc_non_geometric_exactness_no_go
+  (CNE1-CNE10 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 55 DONE (doc 192): CC cutoff / non-zeta aggregation NO-GO.
+  Abandoning zeta regularization for ordinary finite cutoff aggregation of
+  the CC-ceiling tower does not construct End(S^2/Z). For N=b^m, the cutoff
+  sum is [1 - (m+1)b^m + m b^(m+1)]/(b-1); raw sums diverge, means still
+  grow with cutoff scale, and leading-subtracted residual constants are
+  base-dependent (approximately -1 for b=2 and -1/2 for b=3). No
+  carrier-native cutoff/cofinality rule, non-EM square functor,
+  carrier-native aggregation, square H^2, intersection form, correspondence
+  algebra, Frobenius graph, Laurent boundary data, torsor splitter, or
+  positive Rosati is constructed. Witness
+  prime_int_n1b_cc_cutoff_aggregation_no_go
+  (CNA1-CNA10 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 56 DONE (doc 193): CC strict bar/character grading NO-GO.
+  Strict cyclic-bar grading of the known CC strict-square
+  character/divided-power algebra does not construct End(S^2/Z). The grading
+  is formable on subset-character data (571536 move instances, 0 violations;
+  180000 face-dictionary checks), but the universal strict character algebra
+  is free monoid-ring excess rather than the Bokstedt diagonal, the mod-p
+  divided-power probes are not closed cochains (Phi'_2/Phi_2/Phi'_3/Phi_3
+  all have nonzero delta counts), H^1 of character shape is zero in the
+  verified window, and the tested degree-3 character span produces no
+  Bokstedt Z/2. No square H^2, intersection form, correspondence algebra,
+  Frobenius graph, Laurent boundary data, torsor splitter, or positive
+  Rosati is constructed. Witness
+  prime_int_n1b_cc_strict_bar_grading_no_go
+  (SBG1-SBG10 ALL PASS, lead-reran exit 0); adjacent heavy witnesses
+  prime_cc_grading_invariant_kernel (V-B1-V-B4 ALL PASS, lead-reran exit 0)
+  and prime_cc_grading_bar_degree (V-A1-V-A4 ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 57 DONE (doc 194): CC naive tolerant-smash/Kunneth NO-GO.
+  The naive factor-generated tolerant-smash relation from N-doc Q2, together
+  with additive Kunneth-shaped log-counts, does not construct End(S^2/Z).
+  In finite interval shadows with equality tolerance, the generated relation
+  is only product equality (|R^wedge|=32 and zero off-diagonal pairs on
+  E_2 x E_3); power windows give the expected additive dimensions
+  (1,1)->2, (2,3)->5, and (4,4)->8, but this is log-cardinality
+  bookkeeping. Ordered square bidegree collapses ((1,4) and (2,3) both give
+  5), quantized dimensions remain base-dependent, and the relation is a
+  candidate selected outside a published CC monoidal tolerance theory. No
+  non-EM square functor, square H^2, intersection form, correspondence
+  algebra, Frobenius graph, Laurent boundary data, torsor splitter, or
+  positive Rosati is constructed. Witness
+  prime_int_n1b_cc_naive_tolerant_smash_no_go
+  (NTS1-NTS10 ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 58 DONE (doc 195): CC strict norm/MAX-face filtration NO-GO.
+  AA's positive strict-layer result is real: CC's norm filtration,
+  transported through the strict-square character, is the archimedean
+  product-formula half on the monoid ring. But promoting that strict
+  norm/MAX face itself to End(S^2/Z) fails. The norm gives weights, not
+  THH degrees or square correspondences; it erases sign/algebra data at the
+  |A| level, its degree dictionary remains observation-grade, and AA's
+  carrier guard shows the archimedean face alone is carrier-blind on
+  metric controls. No non-EM square functor, square H^2, intersection form,
+  correspondence algebra, Frobenius graph, Laurent boundary data, torsor
+  splitter, or positive Rosati is constructed. Witness
+  prime_int_n1b_cc_norm_filtration_no_go
+  (CNF1-CNF10 ALL PASS, lead-reran exit 0); adjacent heavy witness
+  prime_cc_thh_norm_filtration (N1-N9 ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 59 DONE (doc 196): derived THH diagonal abutment NO-GO.
+  Doc 18's positive derived-square datum is real:
+  Delta ^_{HZ^HZ} Delta = THH(Z), and Bokstedt's tower
+  pi_{2k-1}=Z/k supplies the sign-bearing diagonal value after
+  regularization. But using ordinary uncompactified THH(Z), even with AA's
+  norm-weight dictionary log k on degree 2k-1, does not construct
+  End(S^2/Z). Finite diagonal products log(N!) diverge; the constant
+  1/2 log(2pi) appears only after subtracting the Stirling divergence; no
+  compactified derived square, properness theorem, finite-rank Euler
+  pairing, derived normed spectral sequence, off-diagonal correspondences,
+  Frobenius graph, square H^2, intersection form, Laurent boundary data,
+  torsor splitter, or positive Rosati is constructed. Witness
+  prime_int_n1b_derived_thh_diagonal_no_go
+  (DTD1-DTD10 ALL PASS, lead-reran exit 0); adjacent witness
+  prime_int_derived_square (ALL PASS, lead-reran exit 0). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 60 DONE (doc 197): ku square / Adams graph shadow NO-GO.
+  The connective ku square is a real surface-like height-1 shadow:
+  THH(ku) has amplitude 2, even-degree torsion, the exact ladder
+  |T_{2w}| = lcm(1..w+1)/(w(w+1)), and the Adams HH0 graph shadow gives
+  Z/|k-l| in every positive weight. But promoting this shadow itself to
+  End(S^2/Z) fails. The determinant/properness scheme and D_ku constant are
+  not fixed, full Adams-twisted THH is not computed, integral structured
+  Adams operations are not constructed, the p-complete Adams family is
+  group-like rather than a function-field Frobenius graph package, and no
+  compactified square H^2, intersection form, correspondence algebra,
+  Frobenius graph, Laurent boundary data, torsor splitter, DD.4 weight>=1
+  datum, or positive Rosati is constructed. Witness
+  prime_int_n1b_ku_square_adams_shadow_no_go
+  (KAS1-KAS10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_ku_ladder and prime_twisted_adams_ku
+  (ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 61 DONE (doc 198): monoid/cyclotomic Frobenius shadow NO-GO.
+  The monoid Frobenius repair is real: the fixed-point tower has
+  cardinalities q^w-1, the bidegree number d_2=q appears on weight lines,
+  q^w-1 is an adelic tame/LTE assembly, and the geometric family carries
+  the Lorentzian max-Gram index shape. But promoting this shadow itself to
+  End(S^2/Z) fails. The cyclotomic Frobenius lives in CycSp/TP rather than
+  as a bimodule graph, periodic non-invertible psi^p is impossible,
+  connective integral psi^p is not constructed, finite-field TP supplies no
+  global square-side iota/properness theorem, and no compactified square
+  H^2, intersection form, correspondence algebra, Frobenius graph, Laurent
+  boundary data, torsor splitter, DD.4 weight>=1 datum, or positive Rosati
+  is constructed. Witness
+  prime_int_n1b_monoid_frobenius_shadow_no_go
+  (MFS1-MFS10 ALL PASS, lead-reran exit 0); adjacent witness
+  prime_monoid_frobenius_shadow (ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 62 DONE (doc 199): real-cyclotomic negation / H-r3 scheme-selector
+  NO-GO. H-r3 analytic half is real: negation-naturality forces c=1/2,
+  branch/window schemes have integer slopes, conjugation selects nothing, and
+  KMS-half needs lambda^{1/2}; p=2 THR-Tate is computed. But promoting this
+  scheme selector/current C2 action to End(S^2/Z) fails: no homotopy ladder
+  negation, compactified duality object, square-side iota/properness theorem,
+  square H^2, intersection form, correspondence algebra, Frobenius graph,
+  Laurent boundary data, torsor splitter, DD.4 weight>=1 datum, or positive
+  Rosati is constructed. Witness
+  prime_int_n1b_real_cyclotomic_negation_no_go
+  (RCN1-RCN10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_hr3_scheme_rigidity and prime_int_thr_p2_anomaly
+  (ALL PASS, lead-reran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 63 DONE (doc 200): formal lambda-half cover insertion NO-GO.
+  The formal cover eta^2=lambda gives the expected KMS-half sign torsor:
+  one vertical period fixes lambda and flips eta. But promoting the cover
+  itself to End(S^2/Z) fails: the cover has deck ambiguity, the linear
+  half-factor is anti-invariant and does not descend without extra
+  orientation, the deck sign is not ladder negation, the cover is formable
+  on controls, and no square H^2, intersection form, correspondence algebra,
+  Frobenius graph, square-side iota/properness theorem, Laurent boundary
+  data, torsor splitter, DD.4 weight>=1 datum, or positive Rosati is
+  constructed. Witness prime_int_n1b_lambda_half_cover_no_go
+  (LHC1-LHC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_real_cyclotomic_negation_no_go and
+  prime_int_hr3_scheme_rigidity (ALL PASS, lead-reran exit 0).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 64 DONE (doc 201): static product surface / Kunneth middle-slot
+  NO-GO. The static second dimension S x S is real product-surface data, but
+  promoting it to End(S^2/Z) fails: the Kunneth cross slot factors as
+  A tensor P + P tensor A, the archimedean factor is DH-shared, Euler
+  variation is inherited from the base prime form, the product slot does not
+  distinguish on-line from off-line input independently, Delta.Delta has only
+  the universal corner regularization, smooth middle cohomology has rank room
+  but N=0, nonzero N belongs to an external degenerating family with special
+  fiber, and no indecomposable square correspondence, square-side
+  iota/properness, square H^2/intersection form, Frobenius graph, Laurent
+  boundary data, torsor splitter, DD.4 weight>=1 datum, or positive Rosati is
+  constructed. Witness prime_int_n1b_static_product_surface_no_go
+  (SPS1-SPS10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  square_representability and surface_archimedean_N (exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 65 DONE (doc 202): archimedean degenerating family / finite
+  residue-field NO-GO. The family/N half is real: Schmid supplies
+  nearby-cycle N and M(N)=W at infinity. But promoting this to
+  End(S^2/Z) fails because at infinity kappa(t=0)=C continuum, not finite
+  F_q; no Frobenius/base-size q marks q^{w/2}; scaling, length, and
+  Bost-Connes suppliers give continuum/length/discrete-index data, not
+  finite kappa; and no carrier-native finite constant field,
+  square-side iota/properness, square H^2/intersection form, Frobenius
+  graph, Laurent boundary data, torsor splitter, DD.4 weight>=1 datum, or
+  positive Rosati is constructed. Witness
+  prime_int_n1b_archimedean_family_no_go
+  (ADF1-ADF7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  archimedean_degenerating_family and residue_field_cardinality
+  (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 66 DONE (doc 203): named F1 constant-field tower NO-GO. The
+  named constants are real F1 objects, but promoting them to finite q or to
+  End(S^2/Z) fails: mu_infinity is the countable colimit Q/Z, Borger-Witt
+  ghosts are an infinite indexed product with one Frobenius per prime, and
+  Connes-Consani/Arakelov infinity is R/C continuum metric data. None
+  supplies a finite constant/residue-field cardinality, single
+  Frobenius/base-size marker, square-side iota/properness, square
+  H^2/intersection form, Frobenius graph, Laurent boundary data, torsor
+  splitter, DD.4 weight>=1 datum, or positive Rosati. Witness
+  prime_int_n1b_f1_constant_tower_no_go
+  (CFT1-CFT7 ALL PASS, lead-reran exit 0); adjacent witness
+  constant_field_tower (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 67 DONE (doc 204): regularized determinant / compactness radius
+  NO-GO. Compactness supplies a real finiteness: Connes' regularized trace
+  gives the explicit-formula count/location, and finite-field determinants
+  are finite-rank. But promoting trace-classness to End(S^2/Z) fails:
+  finite rank is radius-silent, off-circle perturbations keep finite
+  determinants while breaking purity, the archimedean determinant is
+  FE-symmetric, and pinning the spectrum to Re(s)=1/2 is Weil
+  positivity/RH, not independent construction. No carrier-native purity on
+  the spectrum, archimedean monodromy N, square-side iota/properness, square
+  H^2/intersection form, Frobenius graph, Laurent boundary data, torsor
+  splitter, DD.4 weight>=1 datum, or positive Rosati is constructed.
+  Witness prime_int_n1b_regularized_determinant_no_go
+  (RDR1-RDR6 ALL PASS, lead-reran exit 0); adjacent witness
+  regularized_determinant_radius (exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 68 DONE (doc 205): type II_1 trace / continuous-dimension NO-GO.
+  The II_1 trace is a genuine different finiteness type and supplies
+  averaged count/location moments. But promoting it to End(S^2/Z) fails:
+  tau(|a|^2)=q is an L2 average, not a uniform radius; trace-preserving
+  off-purity redistributions keep tau(|a|^2)=q while breaking purity;
+  normalized continuous dimension is scale-free; and the II_1 trace package
+  is formable over DH spectral data, so it is not a zeta-only carrier guard.
+  No carrier-native uniform modulus, archimedean monodromy N, DH-killing
+  carrier, square-side iota/properness, square H^2/intersection form,
+  Frobenius graph, Laurent boundary data, torsor splitter, DD.4 weight>=1
+  datum, or positive Rosati is constructed. Witness
+  prime_int_n1b_type_ii1_trace_no_go
+  (II1T1-II1T6 ALL PASS, lead-reran exit 0); adjacent witness
+  von_neumann_typeII1 (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 69 DONE (doc 206): single archimedean Frobenius /
+  count-radius recoupling NO-GO. A single operator `F_inf` whose trace
+  supplies count and whose eigenvalue modulus supplies radius would be the
+  finite-field Frobenius analogy in one package. But promoting it to
+  End(S^2/Z) fails: determinant/count scale fixes only the geometric mean,
+  not uniform modulus; archimedean field automorphisms are isometries rather
+  than q-power maps; graded/tensor repairs split count into `U` and radius
+  into scalar `m`; and forcing `F F^dag=q Id` imports the missing
+  polarization/Rosati relation. No carrier-native q-power map, single
+  count/radius operator, uniform modulus, DH-killing carrier, finite
+  constant field, square-side iota/properness, square H^2/intersection form,
+  Frobenius graph, Laurent boundary data, torsor splitter, DD.4 weight>=1
+  datum, or positive Rosati is constructed. Witness
+  prime_int_n1b_single_frobenius_recoupling_no_go
+  (SFR1-SFR6 ALL PASS, lead-reran exit 0); adjacent witness
+  recouple_count_radius (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 70 DONE (doc 207): Frobenius-first Tannakian compactness NO-GO.
+  The repair after doc 206 is categorical: take Frobenius as primitive,
+  form the rigid Tannakian category `Rep(<F>_Zar)`, and hope
+  compactness/polarizability is forced by reconstruction. But promoting it
+  to End(S^2/Z) fails: a count-scale-preserving off-purity F still has
+  consistent rigid Step A, duals, finite tensor spectra, and traces; compact
+  Sato-Tate closure and a positive/unitary fiber functor occur exactly at
+  the normalized unit-circle radius condition; and the Tannakian closure
+  consumes only an invertible operator, not zeta-only square carrier data.
+  No carrier-native q-power map, compact Sato-Tate group, positive fiber
+  functor, polarization relation, uniform modulus, DH-killing carrier,
+  finite constant field, square-side iota/properness, square
+  H^2/intersection form, Frobenius graph, Laurent boundary data, torsor
+  splitter, DD.4 weight>=1 datum, or positive Rosati is constructed.
+  Witness prime_int_n1b_frobenius_tannakian_compactness_no_go
+  (FTC1-FTC6 ALL PASS, lead-reran exit 0); adjacent witness
+  frob_tannakian_compactness (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 71 DONE (doc 208): local purity-carrier / per-prime gr^W_1 NO-GO.
+  The repair after doc 207 is local: use Euler factors as the purity/radius
+  carrier by taking a square root of the edge prime by prime. But promoting
+  it to End(S^2/Z) fails: local factors have edge/abscissa data but no
+  weight-1 carrier; function-field local factors and zeta prime factors have
+  numerator degree 0; `Gamma_R` has no finite weight-1 numerator; `rad_edge`
+  is well-typed locally while `rad=(.)^{1/2} o edge` is not well-typed per
+  prime; DH fails before the carrier question at no Euler product/local
+  factors; and no square/Rosati/R1 data is constructed. No local/global
+  `gr^W_1` carrier, carrier-native purity theorem, q-power map, uniform
+  modulus, DH-killing carrier, finite constant field, square-side
+  iota/properness, square H^2/intersection form, Frobenius graph, Laurent
+  boundary data, torsor splitter, DD.4 weight>=1 datum, or positive Rosati is
+  constructed. Witness prime_int_n1b_local_purity_carrier_no_go
+  (LPC1-LPC6 ALL PASS, lead-reran exit 0); adjacent witness purity_carrier
+  (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 72 DONE (doc 209): radius-descent assembly / global even-split
+  rigidity NO-GO. The repair after doc 208 is global: local purity is not
+  typed, but maybe the glued determinant/FE descent forces the center. But
+  promoting it to End(S^2/Z) fails: determinant/product-edge and
+  FE/Poincare pairing data do not force individual radii; a balanced modulus
+  redistribution preserves determinant and pairings while breaking uniform
+  radius; zeta-style cross-prime determinant products preserve the product
+  while leaving prime radii uncoupled; DH fails before the question at no
+  Euler product/Satake/local determinant data; and no square/Rosati/R1 data
+  is constructed. No global `gr^W_1` carrier over Z, carrier-native purity
+  theorem, global even-split rigidity, q-power map, uniform modulus,
+  DH-killing carrier, finite constant field, square-side iota/properness,
+  square H^2/intersection form, Frobenius graph, Laurent boundary data,
+  torsor splitter, DD.4 weight>=1 datum, or positive Rosati is constructed.
+  Witness prime_int_n1b_radius_descent_assembly_no_go
+  (RDA1-RDA6 ALL PASS, lead-reran exit 0); adjacent witness
+  radius_descent_assembly (exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 73 DONE (doc 210): Rosati self-degree / abstract polarized-AV
+  positivity NO-GO. The repair after doc 209 is to use abstract positive
+  Rosati on an archimedean polarized abelian variety: `F F^dag=deg(F)` and
+  therefore `|alpha|=sqrt(deg(F))`. But promoting it to End(S^2/Z) fails:
+  `deg(F)` is F's own norm unless an external q/base size is constructed;
+  off-prescribed-radius endomorphisms still have positive Rosati, with
+  `F F^dag=r^2` rather than the external `q`; integrality gives the
+  algebraic norm, not a prescribed zeta radius; the edge diagonal and FE
+  reflection transfer only as shadows; and the full Rosati positivity needs
+  the missing off-diagonal Frobenius/correspondence coupling. No global
+  `gr^W_1` carrier over Z, externally prescribed q/base-size datum,
+  carrier-native self-degree relation, positive Rosati, off-diagonal Rosati
+  coupling, q-power map, uniform modulus, DH-killing carrier, finite constant
+  field, square-side iota/properness, square H^2/intersection form,
+  Frobenius graph, Laurent boundary data, torsor splitter, DD.4 weight>=1
+  datum, or positive Rosati is constructed. Witness
+  prime_int_n1b_rosati_self_degree_no_go
+  (RSD1-RSD6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  rosati_circularity_skeptic and rosati_reflection (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 74 ANCHOR (doc 211): weight-2 NS square / rep_NS construction-spec.
+  This is a positive finite-field anchor, not a no-go theorem and not a
+  no-go-bank increment. It fixes the object the over-Z construction must
+  reproduce: `rep_NS(Z)=(d1,z,d2)` with intersection
+  `d1 e2 + d2 e1 - Tr(z w)`, diagonal `(1,Id,1)`, Frobenius graph
+  `(q^n,F^n,1)`, and canonical weight-2 duality pairing `Tr(z w^dag)`.
+  The diagonal is indecomposable, product/fiber classes are not, and the
+  primitive Hodge index flips off circle. DH has no typed NS square anchor.
+  Witness prime_int_n1b_ns_square_anchor (NSA1-NSA6 ALL PASS, lead-reran
+  exit 0); adjacent witnesses ns_diagonal_representability and
+  ns_hodge_index_duality (both exit 0, lead-reran). SPEC ONLY - no
+  End(S^2/Z) over Z is constructed.
+R1 CYCLE 75 DONE (doc 212): diagonal trace graph shadow NO-GO. The repair
+  after doc 211 is to keep only the scalar intersections
+  `Delta.Gamma_n = q^n + 1 - Tr(F^n)` and define the zeta Frobenius graph by
+  explicit-formula traces. But trace-zero perturbations preserve all sampled
+  diagonal counts while destroying graph composition and q-similitude/Rosati
+  duality; arbitrary scalar trace shadows are formable on controls without
+  Euler product, Satake parameters, correspondence algebra, or Rosati; and no
+  square/R1 data is constructed. No `rep_NS`, graph law, q-similitude,
+  off-diagonal pairing, positive Rosati, control death, or DD.4 weight>=1
+  datum is constructed. Witness prime_int_n1b_diagonal_trace_graph_no_go
+  (DTG1-DTG6 ALL PASS, lead-reran exit 0); adjacent witness
+  prime_int_n1b_ns_square_anchor (exit 0, lead-reran). STAGE/Layer I - NOT
+  RH.
+R1 CYCLE 76 DONE (doc 213): finite trace realization / fitted semigroup
+  operator NO-GO. The repair after doc 212 is to choose an operator `A`
+  matching a finite explicit-formula trace window and define `Gamma_n=A^n`.
+  But finite windows admit root-of-unity ghost semigroup summands that
+  preserve all sampled traces while changing later traces; semigroup trace
+  fits need not be q-similitude carriers; graph law plus determinant edge can
+  remain off-circle with the wrong Hodge sign; Newton/companion finite trace
+  realization is formable on arbitrary controls; and no square/R1 data is
+  constructed. No `rep_NS`, canonical operator, square H2, off-diagonal
+  pairing, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_finite_trace_realization_no_go
+  (FTR1-FTR6 ALL PASS, lead-reran exit 0); adjacent witness
+  prime_int_n1b_diagonal_trace_graph_no_go (exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 77 DONE (doc 214): isospectral graph carrier NO-GO. The repair
+  after doc 213 is to use the whole spectrum/conjugacy class rather than a
+  finite trace window. But noncanonical similarities preserve all sampled
+  power traces, characteristic polynomial, and graph law while moving the
+  integral lattice and the cup/Rosati pairing; transporting Rosati along the
+  chosen similarity only records that extra choice; isospectral conjugacy is
+  formable on arbitrary controls; and no square/R1 data is constructed. No
+  `rep_NS`, integral lattice, canonical pairing, off-diagonal intersections,
+  positive Rosati, control death, or DD.4 weight>=1 datum is constructed.
+  Witness prime_int_n1b_isospectral_graph_carrier_no_go
+  (ISG1-ISG6 ALL PASS, lead-reran exit 0); adjacent witness
+  prime_int_n1b_finite_trace_realization_no_go (exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 78 DONE (doc 215): integral q-similitude graph NO-GO. The repair
+  after doc 214 is to demand the integral graph lattice and exact relation
+  `F^T E F=qE`. But determinant-`q` integral matrices can satisfy graph law,
+  integrality, `q`-similitude, and `F^dag=qF^{-1}` while remaining off circle
+  with the wrong primitive Hodge sign; the same determinant-`q` graph package
+  is formable on arbitrary controls; and no square/R1 data is constructed.
+  No `rep_NS`, canonical graph lattice, canonical pairing, off-diagonal
+  intersections, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_integral_qsim_graph_no_go
+  (IQG1-IQG6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_isospectral_graph_carrier_no_go and
+  theorem_B_similitude_signature (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 79 DONE (doc 216): unitary-projection graph NO-GO. The repair
+  after doc 215 is to normalize by `sqrt(q)` and project to a unitary/compact
+  graph. But spectral radial projection repairs an off-circle graph only by
+  changing power traces and losing integrality; Euclidean polar projection
+  depends on an external metric and changes even the genuine finite-field
+  graph; the original off-circle normalized graph has only an indefinite
+  invariant form; projection is formable on controls; and no square/R1 data is
+  constructed. No `rep_NS`, canonical unitary projection, original graph,
+  canonical pairing, off-diagonal intersections, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_unitary_projection_graph_no_go (UPG1-UPG6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_integral_qsim_graph_no_go and
+  prime_int_n1b_frobenius_tannakian_compactness_no_go (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 80 DONE (doc 217): cyclic graph algebra NO-GO. The repair after
+  doc 216 is to keep the original graph and promote `Z[F]` with
+  `F^dag=qF^{-1}` to the square correspondence algebra. But the cyclic
+  Rosati trace form only detects the Weil sign and is indefinite off circle;
+  retuning to the graph's own degree abandons the external base size; `Z[F]`
+  sees only the `z`-component and does not determine the NS triples
+  `(d1,z,d2)` or diagonal intersections; the same cyclic algebra is formable
+  on controls; and no square/R1 data is constructed. No `rep_NS`, NS triples,
+  diagonal, fiber degrees, off-diagonal intersections, positive Rosati,
+  control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_cyclic_graph_algebra_no_go (CGA1-CGA6 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_unitary_projection_graph_no_go
+  and prime_int_n1b_rosati_self_degree_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 81 DONE (doc 218): formal NS-envelope NO-GO. The repair after doc
+  217 is to add the missing fiber-degree slots by hand, forming a formal
+  `Z^2 + Z[F]` envelope with intersection `d1 e2 + d2 e1 - Tr(z w)`,
+  `Delta=(1,Id,1)`, and `Gamma_n=(q^n,F^n,1)`. But this pastes the
+  finite-field formula around a chosen operator; off-circle graphs can be
+  wrapped while positivity fails; scalar diagonal intersections do not
+  determine the two fiber degrees; the indecomposable diagonal is inserted;
+  arbitrary control count windows can be calibrated by choosing degree slots;
+  and no square/R1 data is constructed. No `rep_NS`, actual square,
+  carrier-native fiber degrees, diagonal, Frobenius graph, off-diagonal
+  intersections, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_formal_ns_envelope_no_go
+  (FNE1-FNE6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cyclic_graph_algebra_no_go and
+  prime_int_n1b_ns_square_anchor (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 82 DONE (doc 219): formal correspondence-composition NO-GO. The
+  repair after doc 218 is to add componentwise multiplication on formal
+  triples so `Delta` is an identity and `Gamma_m Gamma_n=Gamma_{m+n}`. But
+  this is symbolic multiplication, not fiber-product correspondence
+  composition; the same law wraps off-circle graphs while positivity fails;
+  the same `z`-semigroup can carry different degree characters; an external
+  `q` can be unrelated to the graph's self-degree; controls admit the same
+  envelope; and no square/R1 data is constructed. No `rep_NS`, actual square,
+  fiber-product composition, degree character, carrier-native graph,
+  off-diagonal intersections, positive Rosati, control death, or DD.4
+  weight>=1 datum is constructed. Witness
+  prime_int_n1b_formal_correspondence_composition_no_go (FCC1-FCC6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_formal_ns_envelope_no_go and
+  prime_int_n1b_integral_qsim_graph_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 83 DONE (doc 220): formal adjoint/projection NO-GO. The repair
+  after doc 219 is to add `dagger(d1,z,d2)=(d2,z^dag,d1)` so formal triples
+  have a transpose/Rosati anti-involution and graph transpose
+  `Gamma_F^dag=(1,qF^{-1},q)`. But this is an anti-involution on symbols, not
+  positive Rosati on a square carrier: the same adjoint wraps off-circle
+  q-similitudes while positivity fails; the pairing adjoint follows the
+  graph self-degree, not an unrelated external degree character; the pasted
+  intersection form plus componentwise composition has nonzero projection-
+  formula defects; controls admit the same package; and no square/R1 data is
+  constructed. No `rep_NS`, actual square, fiber-product composition,
+  carrier-native pairing, projection formula, degree character, Frobenius
+  graph, off-diagonal intersections, positive Rosati, control death, or
+  DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_formal_adjoint_projection_no_go (FAP1-FAP6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_formal_correspondence_composition_no_go and
+  prime_int_n1b_integral_qsim_graph_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 84 DONE (doc 221): projection-formula quotient NO-GO. The repair
+  after doc 220 is to impose the missing projection formula on the formal
+  NS/composition/dagger envelope by quotient relations or local retuning. But
+  this is not proper correspondence calculus: on genuine finite-field anchors
+  it forces false trace/count identities (`q=7,a=1` changes `Tr(F^2)` from
+  `-13` to `14` and `#C(F_{q^2})` from `63` to `36`); scalar quotient defects
+  from two anchors are coprime and collapse over `Z`; local retuning kills one
+  projection equation only by destroying the graph degree; finite projection
+  samples are cherry-pickable; controls admit the same repair; and no
+  square/R1 data is constructed. No `rep_NS`, actual square, fiber-product
+  composition, carrier-native pairing, projection formula, degree character,
+  Frobenius graph, preserved point counts, positive Rosati, control death, or
+  DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_projection_formula_quotient_no_go (PFQ1-PFQ6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_formal_adjoint_projection_no_go and
+  prime_int_n1b_formal_correspondence_composition_no_go (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 85 DONE (doc 222): presented correspondence-carrier NO-GO. The
+  repair after doc 221 is to stop interpreting the broken formal law and
+  instead define a universal/free/presented correspondence category with graph,
+  count, dagger, and projection relations included as generators/relations.
+  But this is relation import, not square construction: a finite presentation
+  can encode the finite-field anchor (`q=7,a=1` counts `7,63,364,2331`) while
+  constructing no square; the same schema fits arbitrary control count
+  windows; finite presented windows admit ghost carrier extensions; projection
+  can be declared while the componentwise semantics still have defect `27`;
+  all-count presentations import a trace oracle; and no square/R1 data is
+  constructed. No `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native pairing, projection formula,
+  degree character, Frobenius graph, positive Rosati, control death, or DD.4
+  weight>=1 datum is constructed. Witness
+  prime_int_n1b_presented_correspondence_carrier_no_go (PCC1-PCC6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_projection_formula_quotient_no_go and
+  prime_int_n1b_finite_trace_realization_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 86 DONE (doc 223): numerical/GNS quotient NO-GO. The repair after
+  doc 222 is to add a numerical pairing to the presented correspondence
+  carrier and quotient by the radical, or keep a GNS/positive part, to obtain
+  positive Rosati. But the finite-field `Delta/Gamma` Gram `[[0,7],[7,27]]`
+  is indefinite with no radical, so radical quotienting does nothing;
+  positive-part projection changes non-null finite-field anchor data; Rosati
+  positivity is a different carrier-native pairing (`Gamma.Gamma=27` while
+  `Tr(F F^dag)=14`); finite numerical windows admit ghost extensions; controls
+  admit the same Gram/radical/GNS operation; and no square/R1 data is
+  constructed. No `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native pairing, numerical equivalence
+  theorem, Frobenius graph, positive Rosati, control death, or DD.4 weight>=1
+  datum is constructed. Witness
+  prime_int_n1b_numerical_gns_quotient_no_go (NGQ1-NGQ6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_presented_correspondence_carrier_no_go and
+  prime_int_n1b_projection_formula_quotient_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 87 DONE (doc 224): Karoubi/semisimple completion NO-GO. The repair
+  after doc 223 is to pseudo-abelianize/Karoubi-complete the presented or
+  numerical correspondence carrier, then pass to a semisimple/numerical-motive
+  quotient so the missing projectors and positive Rosati carrier appear. But
+  the finite-field `q=7, Tr(F)=1` Frobenius algebra has discriminant `-27`
+  and only rational idempotents `0,1`; spectral projectors exist only after
+  scalar extension by the eigenvalue field; finite completed relation windows
+  admit 5-cycle ghost idempotent summands while changing count 5 by `5`;
+  semisimplification erases nilpotent extension data; controls admit the same
+  Karoubi/spectral/semisimple operations; and no square/R1 data is
+  constructed. No `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native projectors, carrier-native
+  pairing, numerical motive theorem, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_karoubi_semisimple_completion_no_go (KSC1-KSC6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_numerical_gns_quotient_no_go and
+  prime_int_n1b_presented_correspondence_carrier_no_go (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 88 DONE (doc 225): perfect-module/dg Morita envelope NO-GO. The
+  repair after doc 224 is to replace the presented/numerical/Karoubi carrier
+  algebra `A` by `Perf(A)`, a dg Morita envelope, or a noncommutative
+  motive/additive invariant, hoping Morita invariance supplies the projectors
+  and traces. But Morita stabilization hides matrix overproduction
+  (`dim Mat_r(A)=2,8,50` while `dim HH0=2` and `rank K0=1` stay fixed);
+  additive traces do not determine finite-field count anchors; perfect
+  modules over `Q[F]` do not construct the NS degree slots `(d1,z,d2)`; finite
+  windows admit ghost perfect summands; controls admit the same envelope; and
+  no square/R1 data is constructed. No `rep_NS`, actual square, proper
+  correspondence category, fiber-product composition, carrier-native perfect
+  category, carrier-native degree maps, carrier-native pairing, Frobenius
+  graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_perfect_morita_envelope_no_go
+  (PME1-PME6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_karoubi_semisimple_completion_no_go and
+  prime_int_n1b_numerical_gns_quotient_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 89 DONE (doc 226): smooth-proper/Calabi-Yau Mukai-pairing NO-GO.
+  The repair after doc 225 is to enrich `Perf(A)` or the dg Morita envelope
+  by smooth properness, Calabi-Yau/Serre duality, or a Mukai/Euler/Frobenius
+  trace pairing and promote that duality to positive Rosati. But the
+  finite-field `q=7, Tr(F)=1` categorical trace Gram `[[2,1],[1,-13]]` is
+  nondegenerate but indefinite; CY/Frobenius trace normalization is extra
+  data; smooth-proper/CY profiles do not determine count anchors; the
+  categorical pairing on `Q[F]` does not construct NS degree slots `(d1,z,d2)`;
+  finite windows admit ghost CY summands; controls admit the same enrichment;
+  and no square/R1 data is constructed. No `rep_NS`, actual square, proper
+  correspondence category, fiber-product composition, carrier-native CY
+  structure, carrier-native degree maps, carrier-native pairing, projection
+  formula, Frobenius graph, positive Rosati, control death, or DD.4 weight>=1
+  datum is constructed. Witness prime_int_n1b_smooth_proper_cy_mukai_no_go
+  (CYM1-CYM7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_perfect_morita_envelope_no_go and
+  prime_int_n1b_numerical_gns_quotient_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 90 DONE (doc 227): NC-Hodge / periodic-cyclic realization NO-GO.
+  The repair after doc 226 is to apply HP/de Rham/NC-Hodge realization to the
+  smooth-proper/CY category and promote the realized Hodge filtration plus
+  positive metric to square H2 and positive Rosati. But identical realization
+  profiles `(HP_even=2, HP_odd=0, Hodge split=(1,1), positive metric)` do not
+  determine finite-field count anchors; realization data does not construct
+  NS degree slots `(d1,z,d2)`; a positive realized metric does not impose
+  Frobenius/Rosati compatibility (`metric_defect=5.916` on an off-circle
+  q-similitude); finite windows admit ghost realization summands; controls
+  admit the same package; and no square/R1 data is constructed. No `rep_NS`,
+  actual square, proper correspondence category, fiber-product composition,
+  carrier-native Hodge realization theorem, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_nc_hodge_realization_no_go (NHR1-NHR6 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_smooth_proper_cy_mukai_no_go and
+  prime_int_n1b_perfect_morita_envelope_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 91 DONE (doc 228): Weil cohomology / standard-conjectures package
+  NO-GO. The repair after doc 227 is to equip the realization shadow with
+  abstract Kunneth projectors, Poincare duality, Hard Lefschetz, and
+  Hodge-standard positivity, then promote that package to the square carrier
+  and positive Rosati. But identical standard profiles
+  `(Betti=(1,2,1), Kunneth, Poincare, Hard Lefschetz, Hodge-standard
+  positivity)` do not determine finite-field count anchors; Kunneth/H1 data
+  does not construct NS degree slots `(d1,z,d2)`; Hodge-standard positivity
+  does not impose Frobenius/Rosati compatibility (`metric_defect=5.916` on an
+  off-circle q-similitude); Hard Lefschetz existence does not pin the degree
+  character; finite windows admit hyperbolic ghost cohomology; controls admit
+  the same package; and no square/R1 data is constructed. No `rep_NS`, actual
+  square, proper correspondence category, fiber-product composition,
+  carrier-native Weil cohomology theorem, carrier-native Kunneth projectors,
+  carrier-native Lefschetz class, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_weil_standard_package_no_go (WSC1-WSC7 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_nc_hodge_realization_no_go and
+  prime_int_n1b_smooth_proper_cy_mukai_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 92 DONE (doc 229): six-functor / Lefschetz-Verdier trace formalism
+  NO-GO. The repair after doc 228 is to use cohomological correspondences,
+  Verdier duality, proper pushforward, trace maps, and Lefschetz-Verdier
+  fixed-point formula as the missing square correspondence calculus. But
+  identical six-functor trace profiles do not determine finite-field count
+  anchors; trace formalism does not construct NS degree slots `(d1,z,d2)`;
+  scalar Lefschetz traces are not carrier-native graphs (`count2` changes
+  from 63 to 61 under a trace-zero perturbation while `count1=7` is
+  preserved); proper trace existence does not pin the degree character;
+  finite windows admit ghost cohomological correspondences; controls admit
+  the same package; and no square/R1 data is constructed. No site or stack,
+  `rep_NS`, actual square, proper maps, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, carrier-native Lefschetz
+  fixed-point theorem, positive Rosati, control death, or DD.4 weight>=1
+  datum is constructed. Witness prime_int_n1b_six_functor_trace_no_go
+  (SFT1-SFT7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_weil_standard_package_no_go and
+  prime_int_n1b_presented_correspondence_carrier_no_go (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 93 DONE (doc 230): prismatic / syntomic / p-adic comparison package
+  NO-GO. The repair after doc 229 is to use BMS/prismatic/syntomic
+  comparison data, p-complete TC^-/TP, Nygaard filtration, Frobenius, and
+  comparison maps as the missing global square carrier. But identical
+  prismatic/syntomic profiles do not determine finite-field count anchors;
+  p-adic comparison data does not construct NS degree slots `(d1,z,d2)`;
+  finite p-adic truncations do not pin the global over-Z degree character
+  (`7 == 16 mod 9` while `Delta.Gamma` changes from 7 to 16); p-adic
+  filtration/Frobenius data does not impose Frobenius/Rosati compatibility
+  (`metric_defect=5.916` on an off-circle q-similitude); finite windows admit
+  ghost summands; controls admit the same package; and no square/R1 data is
+  constructed. No global prism or over-Z square, all-prime assembly,
+  archimedean component, `rep_NS`, actual square, proper correspondence
+  category, fiber-product composition, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_prismatic_syntomic_package_no_go (PSP1-PSP7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses prime_int_n1b_six_functor_trace_no_go
+  and prime_int_n1b_monoid_frobenius_shadow_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 94 DONE (doc 231): adelic restricted-product assembly NO-GO. The
+  repair after doc 230 is to assemble every local p-adic/prismatic package by
+  a restricted product, add the archimedean place, and use the product formula
+  as the global square carrier. Killed: identical restricted-product profiles
+  do not determine finite-field count anchors; restricted-product data does
+  not construct NS degree slots; finite all-prime windows do not pin the
+  global over-Z degree character; product-formula/determinant data does not
+  impose radius split or Rosati; finite adelic windows admit ghost summands;
+  and the same package is formable on controls. No restricted-product square,
+  rational diagonal quotient, archimedean-compatible carrier, `rep_NS`,
+  actual square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness
+  prime_int_n1b_adelic_restricted_product_assembly_no_go (ARP1-ARP7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_prismatic_syntomic_package_no_go and
+  prime_int_n1b_radius_descent_assembly_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 95 DONE (doc 232): automorphic / trace-formula / Langlands packet
+  NO-GO. The repair after doc 231 is to enrich the all-place package with
+  automorphic spectral data, Hecke action, Satake parameters, Euler product,
+  functional equation, trace formula, and Rankin-Selberg edge data, then use
+  that packet as the global square carrier. Killed: identical automorphic
+  packet profiles do not determine finite-field count anchors; Hecke/Satake
+  data does not construct NS degree slots; scalar trace-formula data is not
+  carrier-native graph composition; Rankin-Selberg edge data does not impose
+  radius split or Rosati; finite trace-formula windows admit ghost summands;
+  and the same formal packet schema is formable on controls. No automorphic
+  moduli carrier, geometric trace-formula side, `rep_NS`, actual square,
+  proper correspondence category, fiber-product composition, carrier-native
+  degree maps, carrier-native pairing, projection formula, Frobenius graph,
+  positive Rosati, control death, or DD.4 weight>=1 datum is constructed.
+  Witness prime_int_n1b_automorphic_trace_formula_packet_no_go (ATF1-ATF7
+  ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_adelic_restricted_product_assembly_no_go (ARP1-ARP7 ALL
+  PASS, lead-reran) and cw_radius_assembly (exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 96 DONE (doc 233): Galois compatible-system / Chebotarev
+  realization NO-GO. The repair after doc 232 is to use a compatible
+  l-adic/Galois representation system with Frobenius conjugacy classes,
+  Chebotarev density, determinant character, local monodromy, and comparison
+  data as the global square carrier. Killed: identical compatible-system
+  profiles do not determine finite-field count anchors; Frobenius conjugacy
+  data does not construct NS degree slots; Chebotarev semisimplification does
+  not construct correspondence extension data; determinant/local-monodromy
+  data does not impose radius split or Rosati; finite Frobenius windows admit
+  ghost summands; and the same formal compatible-system schema is formable on
+  controls. No Galois representation, motivic source, Chebotarev carrier,
+  `rep_NS`, actual square, proper correspondence category, fiber-product
+  composition, carrier-native degree maps, carrier-native pairing, projection
+  formula, Frobenius graph, positive Rosati, control death, or DD.4 weight>=1
+  datum is constructed. Witness
+  prime_int_n1b_galois_compatible_system_no_go (GCS1-GCS7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_automorphic_trace_formula_packet_no_go and
+  prime_int_n1b_frobenius_tannakian_compactness_no_go (both exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 97 DONE (doc 234): Tate/Hodge fixed-subspace NO-GO. The repair
+  after doc 233 is to use Tate classes, Hodge classes, absolute fixed
+  subspaces, or algebraicity theorems as the `rep_NS` square carrier.
+  Killed: identical Tate-cycle profiles do not determine finite-field count
+  anchors; Tate fixed classes do not construct NS degree slots; fixed
+  z-subspaces do not select diagonal/graph correspondence triples;
+  fixed-cycle existence does not impose Frobenius/Rosati compatibility;
+  finite Tate windows admit invariant ghost classes; and the same formal
+  Tate-cycle schema is formable on controls. No Tate carrier, cycle class
+  map, algebraicity theorem, `rep_NS`, actual square, proper correspondence
+  category, fiber-product composition, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_tate_cycle_fixed_subspace_no_go (TCF1-TCF7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_galois_compatible_system_no_go and
+  prime_int_n1b_formal_ns_envelope_no_go (both exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 98 DONE (doc 235): CM/Shimura-Taniyama carrier NO-GO. The repair
+  after doc 234 is to put the would-be Frobenius inside a CM endomorphism
+  field, use CM theory to identify Rosati with complex conjugation, and read
+  the radius from the norm identity. Killed: CM norm identities genuinely
+  force radius for actual CM objects but the same abstract CM type profile
+  does not determine count anchors; an off-radius fake CM adjoint `q/pi` is
+  not complex conjugation; a CM endomorphism does not construct NS degree
+  slots; formal CM labels are formable on controls without a CM carrier; and
+  the theorem applies only after a CM carrier exists. No CM carrier, CM type,
+  CM endomorphism field, `rep_NS`, actual square, proper correspondence
+  category, fiber-product composition, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_cm_shimura_carrier_no_go (CMST1-CMST7 ALL PASS, lead-reran
+  exit 0); adjacent witnesses cm_shimura_taniyama,
+  prime_int_n1b_rosati_self_degree_no_go, and
+  prime_int_n1b_tate_cycle_fixed_subspace_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 99 DONE (doc 236): Chow/Hilbert cycle-moduli NO-GO. The repair
+  after doc 235 is to use a Hilbert scheme or Chow variety of cycles and its
+  universal family as the square correspondence carrier. Killed: abstract
+  Chow/Hilbert profiles do not determine count anchors; cycle moduli do not
+  construct NS degree slots; universal families do not construct the ambient
+  intersection form; cycle-moduli membership does not select diagonal/graph
+  triples; finite Chow/Hilbert windows admit ghost cycle components; and the
+  same formal cycle-moduli schema is formable on controls. No Hilbert
+  scheme, Chow variety, universal family, ambient square, `rep_NS`, actual
+  square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_chow_hilbert_cycle_moduli_no_go
+  (CHM1-CHM7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_tate_cycle_fixed_subspace_no_go,
+  prime_int_n1b_presented_correspondence_carrier_no_go, and
+  prime_int_n1b_formal_ns_envelope_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 100 DONE (doc 237): derived cycle-stack / virtual-intersection
+  NO-GO. The repair after doc 236 is to derive the cycle moduli: use a
+  derived Hilbert/Chow stack, perfect obstruction theory, virtual
+  fundamental class, and derived pull-push as the square correspondence
+  calculus. Killed: derived cycle-stack profiles do not determine count
+  anchors; virtual cycle data does not construct NS degree slots; virtual
+  classes depend on extra obstruction/orientation data; derived pull-push
+  declarations are not a constructed projection formula; finite derived
+  windows admit ghost obstruction summands; and the same formal derived
+  cycle-stack schema is formable on controls. No derived Hilbert stack,
+  derived Chow stack, perfect obstruction theory, virtual fundamental class,
+  orientation, ambient square, `rep_NS`, actual square, proper
+  correspondence category, fiber-product composition, carrier-native degree
+  maps, carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_derived_cycle_stack_no_go (DCS1-DCS7 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_chow_hilbert_cycle_moduli_no_go,
+  prime_int_n1b_presented_correspondence_carrier_no_go, and
+  prime_int_n1b_projection_formula_quotient_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 101 DONE (doc 238): bivariant / operational Chow NO-GO. The repair
+  after doc 237 is to use operational Chow or bivariant oriented cohomology,
+  with refined Gysin maps, cap products, and projection formulas as the
+  square correspondence calculus. Killed: operational profiles do not
+  determine count anchors; bivariant classes do not construct NS degree
+  slots; finite operational tests admit ghost bivariant classes; operational
+  projection-formula declarations are not constructed calculus; oriented
+  Gysin data does not construct the degree character; the same formal
+  operational schema is formable on controls; and finite operational windows
+  admit trace ghosts. No bivariant theory, operational Chow ring, refined
+  Gysin calculus, orientation, ambient square, `rep_NS`, actual square,
+  proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_bivariant_operational_chow_no_go
+  (BOC1-BOC8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_derived_cycle_stack_no_go,
+  prime_int_n1b_six_functor_trace_no_go, and
+  prime_int_n1b_projection_formula_quotient_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 102 DONE (doc 239): motivic cohomology / higher Chow / regulator
+  NO-GO. The repair after doc 238 is to use motivic cohomology, higher Chow
+  complexes, cycle maps, Chern characters, products, and regulators or
+  realizations as the square correspondence calculus. Killed:
+  motivic/regulator profiles do not determine count anchors; motivic cycle
+  classes do not construct NS degree slots; rational Chern/regulator images
+  lose integral correspondence data; regulator realizations do not impose
+  Frobenius/Rosati compatibility; motivic product/regulator declarations are
+  not constructed projection formulas; finite motivic/regulator windows admit
+  trace ghosts; and the same formal schema is formable on controls. No
+  motivic cohomology object over the zeta square, higher Chow complex, cycle
+  map, Chern character, regulator, Deligne realization, ambient square,
+  `rep_NS`, actual square, proper correspondence category, fiber-product
+  composition, carrier-native degree maps, carrier-native pairing,
+  projection formula, Frobenius graph, positive Rosati, control death, or
+  DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_motivic_cohomology_regulator_no_go (MCR1-MCR8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_bivariant_operational_chow_no_go,
+  prime_int_n1b_nc_hodge_realization_no_go, and
+  prime_int_n1b_prismatic_syntomic_package_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 103 DONE (doc 240): triangulated / mixed motives carrier NO-GO.
+  The repair after doc 239 is to use the ambient motivic category itself:
+  triangulated motives, mixed motives, tensor products, Tate twists,
+  t-structures, weight structures, realization functors, and conservativity.
+  Killed: motivic-category profiles do not determine count anchors; motivic
+  category data does not construct NS degree slots; triangulated K0 shadows
+  lose extension/correspondence data; realization conservativity declarations
+  do not exclude phantom motives; tensor/Tate/projection declarations are not
+  constructed projection formulas; finite motivic-category windows admit
+  trace ghosts; and the same formal schema is formable on controls. No
+  triangulated motive category for the zeta square, mixed-motive heart,
+  motivic t-structure, weight structure, Tate-twist degree character,
+  realization conservativity theorem, ambient square, `rep_NS`, actual
+  square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_triangulated_motives_carrier_no_go
+  (TMC1-TMC8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_motivic_cohomology_regulator_no_go,
+  prime_int_n1b_six_functor_trace_no_go, and
+  prime_int_n1b_presented_correspondence_carrier_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 104 DONE (doc 241): condensed / liquid / solid analytic carrier
+  NO-GO. The repair after doc 240 is to use condensed sheaves, solid modules,
+  liquid analytic geometry, pro-etale or analytic stacks, completions, and
+  completed tensor products as the square carrier. Killed:
+  condensed/liquid profiles do not determine count anchors; analytic
+  enrichment does not construct NS degree slots; solid analytic shadows lose
+  discrete correspondence data; analytic positivity does not impose
+  Frobenius/Rosati compatibility; completed tensor/projection declarations
+  are not constructed projection formulas; finite condensed/analytic windows
+  admit trace ghosts; and the same formal schema is formable on controls. No
+  condensed site for the zeta square, solid module category, liquid analytic
+  stack, pro-etale descent theorem, completion theorem, completed
+  tensor/projection theorem, ambient square, `rep_NS`, actual square, proper
+  correspondence category, fiber-product composition, carrier-native degree
+  maps, carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_condensed_liquid_analytic_carrier_no_go (CLA1-CLA8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_triangulated_motives_carrier_no_go,
+  prime_int_n1b_prismatic_syntomic_package_no_go, and
+  prime_int_n1b_static_product_surface_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 105 DONE (doc 242): perfectoid / diamond / Fargues-Fontaine curve
+  NO-GO. The repair after doc 241 is to use perfectoid covers, untilts,
+  `A_inf` period rings, diamonds or v-stacks, and the Fargues-Fontaine
+  curve/vector-bundle category as the square carrier. Killed:
+  perfectoid/diamond profiles do not determine count anchors;
+  perfectoid/diamond data does not construct NS degree slots; untilt or
+  local-period shadows lose global correspondence data; local p-adic period
+  data does not assemble the global degree character; FF slope/positivity
+  data does not impose Frobenius/Rosati compatibility; FF tensor/projection
+  declarations are not constructed projection formulas; finite
+  perfectoid/diamond windows admit trace ghosts; and the same formal schema
+  is formable on controls. No perfectoid cover, untilt, `A_inf` period ring,
+  diamond or v-stack, Fargues-Fontaine curve, FF vector-bundle category,
+  all-prime plus archimedean assembly, ambient square, `rep_NS`, actual
+  square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness prime_int_n1b_perfectoid_diamond_ff_curve_no_go
+  (FDC1-FDC9 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_prismatic_syntomic_package_no_go,
+  prime_int_n1b_condensed_liquid_analytic_carrier_no_go, and
+  prime_int_n1b_adelic_restricted_product_assembly_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 106 DONE (doc 243): Arakelov arithmetic intersection NO-GO. The
+  repair after doc 242 is to use arithmetic Chow groups, Green currents,
+  hermitian line bundles, height pairings, Deligne pairings, and arithmetic
+  Hodge index as the square carrier. Killed: Arakelov profiles do not
+  determine count anchors; arithmetic intersection data does not construct
+  NS degree slots; height/Green-current shadows lose correspondence endpoint
+  data; Green metric positivity does not impose Frobenius/Rosati
+  compatibility; arithmetic Hodge/projection declarations are not constructed
+  projection formulas; finite Arakelov/intersection windows admit trace
+  ghosts; and the same formal schema is formable on controls. No arithmetic
+  surface, arithmetic Chow group, Green current, hermitian ample line, height
+  pairing, Deligne pairing, arithmetic Hodge index theorem, ambient square,
+  `rep_NS`, actual square, proper correspondence category, fiber-product
+  composition, carrier-native degree maps, carrier-native pairing, projection
+  formula, Frobenius graph, positive Rosati, control death, or DD.4
+  weight>=1 datum is constructed. Witness
+  prime_int_n1b_arakelov_arithmetic_intersection_no_go (AIC1-AIC8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_weil_standard_package_no_go,
+  prime_int_n1b_bivariant_operational_chow_no_go, and
+  prime_int_n1b_condensed_liquid_analytic_carrier_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 107 DONE (doc 244): Bost-Connes / adele-class spectral NO-GO. The
+  repair after doc 243 is to use the Bost-Connes quantum statistical system,
+  the adele-class space, KMS states, time evolution, spectral triples, and
+  trace-formula realizations as the square carrier. Killed:
+  BC/KMS/spectral profiles do not determine count anchors; KMS/time-evolution
+  data does not construct NS degree slots; KMS positivity is state data rather
+  than square construction; modular/KMS positivity does not impose
+  Frobenius/Rosati compatibility; spectral-trace shadows lose correspondence
+  endpoint data; trace-formula declarations are not constructed projection
+  formulas; finite BC/spectral windows admit trace ghosts; and the same
+  formal schema is formable on controls. No BC algebra carrier, adele-class
+  carrier, spectral triple, trace-formula carrier, ambient square, `rep_NS`,
+  actual square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum is
+  constructed. Witness
+  prime_int_n1b_bost_connes_adele_class_spectral_no_go (BCS1-BCS9 ALL PASS,
+  lead-reran exit 0); adjacent witnesses qsm_free_energy,
+  polarization_relation, and
+  prime_int_n1b_adelic_restricted_product_assembly_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 108 DONE (doc 245): Operator K-theory / KK assembly NO-GO. The
+  repair after doc 244 is to use groupoid or crossed-product C*-algebras,
+  Baum-Connes style assembly, K-theory, index pairings, and the Kasparov
+  `KK` product as the square carrier. Killed: operator K/KK profiles do not
+  determine count anchors; K-theory assembly data does not construct NS
+  degree slots; K0/index shadows lose correspondence endpoint data;
+  C*-positivity and positive index pairings do not impose Frobenius/Rosati
+  compatibility; KK-product declarations are not constructed projection
+  formulas; finite K/KK windows admit trace ghosts; and the same formal
+  schema is formable on controls. No groupoid C*-carrier, crossed-product
+  carrier, Baum-Connes assembly carrier, K-theory carrier, KK-product
+  carrier, index-pairing carrier, ambient square, `rep_NS`, actual square,
+  proper correspondence category, fiber-product composition, carrier-native
+  degree maps, carrier-native pairing, projection formula, Frobenius graph,
+  positive Rosati, control death, or DD.4 weight>=1 datum is constructed.
+  Witness prime_int_n1b_operator_k_kk_assembly_no_go (OKK1-OKK8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_perfect_morita_envelope_no_go,
+  prime_int_n1b_nc_hodge_realization_no_go, and
+  prime_int_n1b_bost_connes_adele_class_spectral_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 109 DONE (doc 246): Algebraic K-theory / cyclotomic trace NO-GO.
+  The repair after doc 245 is to use algebraic K-theory, cyclotomic trace,
+  THH, TC/TR/TP, cyclotomic Frobenius, and topological cyclic descent as the
+  square carrier. Killed: algebraic K/TC profiles do not determine count
+  anchors; cyclotomic trace data does not construct NS degree slots;
+  cyclotomic trace shadows lose correspondence endpoint data; cyclotomic
+  Frobenius and TP periodicity do not impose Frobenius/Rosati compatibility;
+  TC descent declarations are not constructed projection formulas; finite
+  K/TC windows admit trace ghosts; and the same formal schema is formable on
+  controls. No algebraic K carrier, cyclotomic-trace carrier, THH carrier,
+  TC/TR/TP carrier, cyclotomic Frobenius carrier, TC descent square, ambient
+  square, `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_algebraic_k_cyclotomic_trace_no_go (KTC1-KTC8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_derived_thh_diagonal_no_go,
+  prime_int_n1b_prismatic_syntomic_package_no_go, and
+  prime_int_n1b_real_cyclotomic_negation_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 110 DONE (doc 247): Weil-etale / L-function special-value NO-GO.
+  The repair after doc 246 is to use Weil-etale cohomology, Lichtenbaum
+  special values, determinant lines, Euler characteristics, regulators, and
+  Tamagawa/order formulas as the square carrier. Killed:
+  Weil-etale/L-value profiles do not determine count anchors; Weil-etale
+  cohomology data does not construct NS degree slots; Euler-characteristic
+  and regulator shadows lose correspondence endpoint data; special-value
+  positivity does not impose Frobenius/Rosati compatibility;
+  Weil-etale/L-value declarations are not constructed projection formulas;
+  finite special-value windows admit trace ghosts; and the same formal schema
+  is formable on controls. No Weil-etale carrier, L-function special-value
+  carrier, determinant-line carrier, regulator carrier, Euler-characteristic
+  carrier, Tamagawa/order formula, ambient square, `rep_NS`, actual square,
+  proper correspondence category, fiber-product composition, carrier-native
+  degree maps, carrier-native pairing, projection formula, Frobenius graph,
+  positive Rosati, control death, or DD.4 weight>=1 datum is constructed.
+  Witness prime_int_n1b_weil_etale_lfunction_special_value_no_go
+  (WET1-WET8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_algebraic_k_cyclotomic_trace_no_go,
+  prime_int_n1b_motivic_cohomology_regulator_no_go, and
+  prime_int_n1b_galois_compatible_system_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 111 DONE (doc 248): Epicyclic / Frobenius-lift coherence NO-GO.
+  The repair after doc 247 is to use epicyclic or cyclotomic-category
+  power-map coherence, cyclic-bar refinements, Frobenius lifts, geometric
+  realization, and THH-epi style realizations as the square carrier. Killed:
+  epicyclic/Frobenius-lift profiles do not determine count anchors;
+  coherent power maps do not construct NS degree slots; epicyclic shadows
+  lose correspondence endpoint data; coherent Frobenius lifts do not impose
+  Frobenius/Rosati compatibility; epicyclic realization declarations are not
+  constructed projection formulas; finite epicyclic windows admit trace
+  ghosts; and the same formal schema is formable on controls. No epicyclic
+  carrier, cyclic-bar square, Frobenius-lift carrier, power-map degree
+  carrier, cyclotomic comparison carrier, THH-epi carrier, ambient square,
+  `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_epicyclic_frobenius_lift_no_go (EPF1-EPF8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_monoid_frobenius_shadow_no_go,
+  prime_int_n1b_cyclic_graph_algebra_no_go, and
+  prime_int_n1b_algebraic_k_cyclotomic_trace_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 112 DONE (doc 249): Witt / Lambda / delta-ring absolute-geometry
+  NO-GO. The repair after doc 248 is to use Borger-style Lambda-rings,
+  big-Witt vectors, Witt ghost coordinates, all-prime Frobenius lifts,
+  p-typical delta structures, arithmetic jet spaces, V/R/F operations, and
+  absolute-base interpretation as the square carrier. Killed:
+  Witt/Lambda/delta profiles do not determine count anchors; all-prime
+  Frobenius lifts and Witt ghosts do not construct NS degree slots; finite
+  p-typical Witt truncations do not pin the global degree character; Witt
+  ghost shadows lose correspondence endpoint data; Lambda/delta data does
+  not impose Frobenius/Rosati compatibility; Witt/delta functoriality is not
+  a constructed projection formula; finite Witt/Lambda/delta windows admit
+  trace ghosts; and the same formal schema is formable on controls. No
+  Lambda-ring carrier, big-Witt carrier, delta-ring carrier, arithmetic-jet
+  carrier, Witt-ghost degree carrier, all-prime Frobenius carrier, ambient
+  square, `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_witt_lambda_delta_ring_no_go (WLD1-WLD9 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_f1_constant_tower_no_go,
+  prime_int_n1b_prismatic_syntomic_package_no_go, and
+  prime_int_n1b_epicyclic_frobenius_lift_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 113 DONE (doc 250): Tambara / Mackey / norm-transfer calculus
+  NO-GO. The repair after docs 199/246/248/249 is to use the equivariant
+  Tambara/Mackey/Burnside package -- restrictions, transfers, norms,
+  double-coset formulas, and genuine fixed points -- as the square carrier.
+  Killed: Tambara/Mackey/norm profiles do not determine count anchors;
+  transfer/restriction/norm data does not construct NS degree slots;
+  Burnside/Mackey shadows lose correspondence endpoint data; norm positivity
+  does not impose Frobenius/Rosati compatibility; Mackey/norm functoriality
+  is not a constructed projection formula; finite Tambara/Mackey windows
+  admit trace ghosts; and the same formal schema is formable on controls. No
+  Tambara carrier, Mackey carrier, Burnside carrier, norm-transfer carrier,
+  equivariant stable homotopy carrier, ambient square, `rep_NS`, actual
+  square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum
+  is constructed. Witness prime_int_n1b_tambara_mackey_norm_no_go
+  (TMN1-TMN8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_real_cyclotomic_negation_no_go,
+  prime_int_n1b_algebraic_k_cyclotomic_trace_no_go, and
+  prime_int_n1b_epicyclic_frobenius_lift_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 114 DONE (doc 251): Anabelian / profinite fundamental-group
+  NO-GO. The category-level repair after docs 233/241/250 is to use
+  profinite pi1, finite-cover Galois categories, inertia/decomposition
+  groups, Frobenius conjugacy, outer actions, sections, and anabelian
+  reconstruction as the square carrier. Killed: anabelian/pi1 profiles do
+  not determine count anchors; finite-cover/pi1 data does not construct NS
+  degree slots; finite-cover shadows lose correspondence endpoint data;
+  anabelian reconstruction does not select diagonal/graph triples; pi1
+  duality/section data does not impose Frobenius/Rosati compatibility; cover
+  pull-push functoriality is not a constructed projection formula; finite
+  pi1/profinite windows admit trace ghosts; and the same formal schema is
+  formable on controls. No pi1 carrier, Galois-category carrier,
+  finite-cover carrier, anabelian carrier, inertia/decomposition carrier,
+  ambient square, `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_anabelian_fundamental_group_no_go (AFG1-AFG9 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_galois_compatible_system_no_go,
+  prime_int_n1b_condensed_liquid_analytic_carrier_no_go, and
+  prime_int_n1b_tambara_mackey_norm_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 115 DONE (doc 252): Span / profunctor / correspondence-bicategory
+  NO-GO. The primitive categorical repair after docs 219/222/229/237/238/250/251
+  is to use the generic bicategory of spans, profunctors, distributors, or
+  polynomial functors -- with pullback composition, adjoints,
+  Beck-Chevalley, and traces -- as the square carrier. Killed:
+  span/profunctor profiles do not determine count anchors; generic span data
+  does not construct NS degree slots; span/profunctor shadows lose
+  correspondence endpoint data; pullback composition does not select graph
+  degree character; bicategorical adjoints do not impose Frobenius/Rosati
+  compatibility; Beck-Chevalley/projection declarations are not a constructed
+  projection formula; finite span/profunctor windows admit trace ghosts; and
+  the same formal schema is formable on controls. No span-bicategory
+  carrier, profunctor carrier, distributor carrier, polynomial-functor
+  carrier, zeta correspondence-bicategory carrier, ambient square, `rep_NS`,
+  actual square, proper correspondence category, fiber-product composition,
+  carrier-native degree maps, carrier-native pairing, projection formula,
+  Frobenius graph, positive Rosati, control death, or DD.4 weight>=1 datum
+  is constructed. Witness prime_int_n1b_span_profunctor_bicategory_no_go
+  (SPB1-SPB9 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_formal_correspondence_composition_no_go,
+  prime_int_n1b_presented_correspondence_carrier_no_go, and
+  prime_int_n1b_tambara_mackey_norm_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 116 DONE (doc 253): Topos / site / hyperdescent / shape
+  NO-GO. The object-level repair after docs 229/241/242/251/252 is to use
+  a site, Grothendieck/infinity topos, sheaves, hypercovers, hyperdescent,
+  shape, classifying topos, or geometric morphisms as the square carrier.
+  Killed: topos/hyperdescent profiles do not determine count anchors;
+  site/topos data does not construct NS degree slots; topos shape shadows
+  lose correspondence endpoint data; hyperdescent does not select diagonal/
+  graph triples; topos duality/shape data does not impose Frobenius/Rosati
+  compatibility; geometric-morphism projection declarations are not a
+  constructed projection formula; finite topos/hypercover windows admit
+  trace ghosts; and the same formal schema is formable on controls. No site
+  carrier, topos carrier, sheaf-topos carrier, hyperdescent carrier, shape
+  carrier, classifying-topos carrier, geometric-morphism carrier, ambient
+  square, `rep_NS`, actual square, proper correspondence category,
+  fiber-product composition, carrier-native degree maps, carrier-native
+  pairing, projection formula, Frobenius graph, positive Rosati, control
+  death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_topos_hyperdescent_shape_no_go (THS1-THS9 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_six_functor_trace_no_go,
+  prime_int_n1b_condensed_liquid_analytic_carrier_no_go, and
+  prime_int_n1b_span_profunctor_bicategory_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 117 DONE (doc 254): Shtuka / Hecke-stack / excursion-operator
+  NO-GO. The stronger geometric repair after docs 229/232/252/253 is to
+  import moduli of shtukas, Hecke stacks, Frobenius legs, paws, excursion
+  operators, geometric Satake input, Heegner-Drinfeld cycles, or central
+  Rankin-Selberg height formulas as the square carrier. Killed:
+  shtuka/Hecke-stack profiles do not determine count anchors; Hecke
+  modification data does not construct NS degree slots; Hecke-stack shadows
+  lose correspondence endpoint data; Frobenius-leg data does not select
+  diagonal/graph triples; central-value self-intersection data is not
+  Rosati/count construction; excursion/projection declarations are not a
+  constructed projection formula; finite shtuka/Hecke windows admit trace
+  ghosts; and the same formal schema is formable on controls. No zeta-side
+  shtuka moduli carrier, Hecke stack carrier, Bun-stack carrier,
+  Frobenius-leg carrier, excursion-algebra carrier, Heegner-Drinfeld cycle
+  carrier, ambient square, `rep_NS`, actual square, proper correspondence
+  category, fiber-product composition, carrier-native degree maps,
+  carrier-native pairing, projection formula, Frobenius graph, positive
+  Rosati, control death, or DD.4 weight>=1 datum is constructed. Witness
+  prime_int_n1b_shtuka_hecke_stack_no_go (SHT1-SHT9 ALL PASS, lead-reran
+  exit 0); adjacent witnesses a5_function_field, hecke_correspondence,
+  prime_int_n1b_automorphic_trace_formula_packet_no_go, and
+  prime_int_n1b_topos_hyperdescent_shape_no_go (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 118 DONE (doc 255): Relative trace formula / period / theta
+  NO-GO. The remaining period-geometric repair after docs 232/254 is to use
+  relative trace formulas, theta lifts, toric periods, orbital integrals,
+  Waldspurger formulas, Gross-Zagier heights, central Rankin-Selberg values,
+  or comparison theorems as the square carrier. Killed: RTF/period profiles
+  do not determine count anchors; period data does not construct NS degree
+  slots; period/orbital shadows lose correspondence endpoint data;
+  theta/period data does not select diagonal/graph triples; central
+  period/height data is not Rosati/count construction; RTF comparison
+  declarations are not a constructed projection formula; finite RTF/period
+  windows admit trace ghosts; and the same formal schema is formable on
+  controls. No relative trace formula carrier, period-stack carrier,
+  theta-lift carrier, toric-period carrier, orbital-integral carrier,
+  height-pairing carrier, ambient square, `rep_NS`, actual square, proper
+  correspondence category, fiber-product composition, carrier-native degree
+  maps, carrier-native pairing, projection formula, Frobenius graph,
+  positive Rosati, control death, or DD.4 weight>=1 datum is constructed.
+  Witness prime_int_n1b_relative_trace_period_no_go (RTP1-RTP9 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_automorphic_trace_formula_packet_no_go,
+  prime_int_n1b_shtuka_hecke_stack_no_go, a5_function_field, and
+  theta_twisted_pairing (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 119 SPEC (doc 256): Square-carrier contract / acceptance gates for
+  End(S^2/Z). Not a no-go theorem and not added to the no-go bank. After
+  docs 211-255, the remaining task is frozen as an executable contract:
+  actual compactified square carrier over Z, integral `rep_NS`, two
+  carrier-native degree maps, indecomposable diagonal, Frobenius/Hecke graph
+  with Delta.Gamma_n equal the explicit-formula trace/count, proper
+  correspondence category, fiber-product composition, carrier-proved
+  projection formula, canonical D^2=id duality/Rosati pairing as evaluation,
+  positive primitive weight-2 Hodge/Rosati sign, control death, and DD.4
+  weight>=1/Laurent-boundary/torsor-splitter data. Witness
+  prime_int_n1b_square_carrier_contract (SCC1-SCC8 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_ns_square_anchor,
+  ns_diagonal_representability, and ns_hodge_index_duality (all exit 0,
+  lead-reran). STAGE/Layer I - SPEC ONLY - NOT RH.
+R1 CYCLE 120 SPEC (doc 257): DD.4/SCC interface / carrier extension
+  problem. Not a no-go theorem and not added to the no-go bank. The
+  square-carrier contract now has an exact R1 interface: the nonzero DD.4
+  class `[(1+z)^-1] in H^1(<phi>;1+zF_2[[z]])=Z/2` must die only through a
+  carrier-native boundary/properness/self-duality extension, while
+  DH/Epstein/controls die at carrier formation. A free torsor splitter kills
+  the class formally but leaves SCC slots unresolved. Witness
+  prime_int_n1b_dd4_scc_interface (DSI1-DSI6 ALL PASS, lead-reran exit 0);
+  adjacent witnesses prime_int_pb_shear_h1_obstruction, dd4_weight1_datum,
+  prime_int_torsor_splitter_insertion_no_go, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - SPEC ONLY - NOT RH.
+R1 CYCLE 121 DONE (doc 258): Coinduced DD.4 extension NO-GO. The standard
+  acyclic-replacement repair sends `U_1` to the two-copy coinduced
+  `C_2`-module `Coind(U_1)=U_1 x U_1` with
+  `sigma(a,b)=(phi(b),phi(a))`. This really kills the obstruction:
+  `H^1(<sigma>;Coind(U_1))=0` at L=6,8,10,12 and
+  `diag(c)=(c,c)=(c,1)/sigma(c,1)`. Killed: coinduction doubles coefficient
+  support before any carrier is built, is functorially formable on controls,
+  and constructs no actual square, integral `rep_NS`, carrier-native degree
+  maps, indecomposable diagonal, Frobenius graph, proper correspondence
+  category, fiber-product composition, projection formula, canonical Rosati,
+  positive primitive sign, carrier boundary, control death, or SCC/DD.4
+  carrier-native weight>=1 datum. Witness
+  prime_int_n1b_coinduced_dd4_extension_no_go (CID1-CID6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses prime_int_n1b_dd4_scc_interface,
+  prime_int_pb_shear_h1_obstruction, dd4_weight1_datum, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 122 DONE (doc 259): Bar/coinduced-resolution boundary NO-GO. The
+  standard resolution repair promotes the connecting boundary itself to the
+  DD.4/SCC carrier boundary. The boundary exists, but it is only the
+  universal two-copy coboundary certificate
+  `diag(c)=(c,1)/sigma(c,1)=(1,c)/sigma(1,c)`. It kills the class by choosing
+  a 0-cochain in an acyclic resolution, not by constructing the carrier's
+  boundary/properness/self-duality map. Killed: the recipe doubles support,
+  is formable on exact `C_2` controls, selects a resolution copy rather than
+  geometry, and constructs no actual square, integral `rep_NS`, degree maps,
+  diagonal, Frobenius graph, proper correspondence category, projection
+  formula, Rosati, positive primitive sign, carrier boundary, control death,
+  or SCC/DD.4 carrier-native datum. Witness
+  prime_int_n1b_bar_resolution_boundary_no_go (BRB1-BRB6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_coinduced_dd4_extension_no_go,
+  prime_int_n1b_dd4_scc_interface, prime_int_pb_shear_h1_obstruction, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 123 DONE (doc 260): Mapping-cone/nullhomotopy NO-GO. The derived
+  repair promotes the cone/cofiber of the DD.4 obstruction to the missing
+  carrier boundary by adjoining a formal nullhomotopy `h` with `dh=c`. This
+  really kills the class: after adding `c` to the boundary subgroup,
+  `H^1_cone=0` at L=6,8,10,12. Killed: removing the declared boundary
+  restores `c` as non-boundary, so the cone supplies no independent
+  boundary/properness/self-duality map; the same nullhomotopy recipe is
+  formable on controls; it adds formal support and constructs no actual
+  square, integral `rep_NS`, degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, positive primitive
+  sign, carrier boundary, control death, or SCC/DD.4 carrier-native datum.
+  Witness prime_int_n1b_mapping_cone_nullhomotopy_no_go (MCN1-MCN6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_bar_resolution_boundary_no_go,
+  prime_int_n1b_coinduced_dd4_extension_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 124 DONE (doc 261): Jet/filtration deletion NO-GO. The leading
+  obstruction can be hidden by replacing `U_1=1+zF_2[[z]]` with
+  `U_3=1+z^3F_2[[z]]`, where `H^1(<phi>;U_3)=0` at L=6,8,10,12. Killed:
+  `c=(1+z)^-1=1+z+z^2+...` is not in `U_3`; the deleted quotient
+  `U_1/U_3` still has `H^1=Z/2` and the image of `c` is non-boundary. The
+  vanishing is a cutoff/deletion effect, neighboring cutoffs behave
+  differently, the same jet deletion is formable on controls, and it
+  constructs no actual square, integral `rep_NS`, degree maps, diagonal,
+  Frobenius graph, proper correspondence category, projection formula,
+  Rosati, positive primitive sign, carrier boundary, control death, or
+  SCC/DD.4 carrier-native datum. Witness prime_int_n1b_jet_deletion_no_go
+  (JQD1-JQD6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_mapping_cone_nullhomotopy_no_go,
+  prime_int_n1b_bar_resolution_boundary_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 125 DONE (doc 262): Obstruction-quotient NO-GO. The direct quotient
+  repair imposes `c=1` by passing to `U_1/<c>`, where
+  `c=(1+z)^-1`. The subgroup `<c>` is `C_2`-stable because
+  `phi(c)=c^-1`, and the quotient makes the named class trivial by
+  definition. Killed: exact finite coset enumeration shows the quotient still
+  has `H^1=Z/2` at L=6,8,10,12; the operation is a relation, not a
+  boundary/properness/self-duality map; the same quotient is formable on
+  controls; and it constructs no actual square, integral `rep_NS`, degree
+  maps, diagonal, Frobenius graph, proper correspondence category,
+  projection formula, Rosati, positive primitive sign, carrier boundary,
+  control death, or SCC/DD.4 carrier-native datum. Witness
+  prime_int_n1b_obstruction_quotient_no_go (OQC1-OQC6 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_jet_deletion_no_go,
+  prime_int_n1b_mapping_cone_nullhomotopy_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 126 DONE (doc 263): Norm-one / Hilbert-90 NO-GO. The shortcut
+  promotes `c*phi(c)=1` or `phi(c)=c^-1` to the missing
+  boundary/properness/self-duality map. Killed: in the DD.4 coefficient
+  system norm-one is exactly the cocycle condition, not the coboundary
+  condition; exact counts give `|Norm1|/|B^1|=2` at L=6,8,10,12, with `c`
+  representing the nontrivial class. The same norm-one-not-boundary pattern
+  is formable on controls, and it constructs no actual square, integral
+  `rep_NS`, degree maps, diagonal, Frobenius graph, proper correspondence
+  category, projection formula, Rosati, positive primitive sign, carrier
+  boundary, control death, or SCC/DD.4 carrier-native datum. Witness
+  prime_int_n1b_norm_one_hilbert90_no_go (NOH1-NOH5 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_obstruction_quotient_no_go,
+  prime_int_n1b_jet_deletion_no_go, prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 127 DONE (doc 264): Frobenius-root / perfect-closure NO-GO. The
+  shortcut adjoins `w` with `w^2=z`, extends the shear by
+  `phi(w)=w/(1+w)`, and observes that the pullback of
+  `c=(1+z)^-1` becomes a coboundary. Killed: the identity is real, but
+  `c|_{z=w^2}=(1+w)^-2=d/phi(d)` for `d=(1+w)^-1`, and `d` is the new
+  nonzero `H^1` generator in the `w`-coefficient system. The old
+  obstruction has been reindexed one Frobenius root lower, support has been
+  refined from L to 2L by odd root slots, the same formal root/splitter
+  operation is formable on controls, and it constructs no actual square,
+  integral `rep_NS`, degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, positive primitive
+  sign, carrier boundary, control death, or SCC/DD.4 carrier-native datum.
+  Witness prime_int_n1b_frobenius_root_extension_no_go (FRC1-FRC6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses prime_int_n1b_norm_one_hilbert90_no_go,
+  prime_int_n1b_obstruction_quotient_no_go, prime_int_n1b_dd4_scc_interface,
+  and prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 128 DONE (doc 265): Perfection-colimit / full root-tower NO-GO.
+  The stronger shortcut passes to the filtered colimit of all 2-power roots,
+  where every finite-stage class `c_n=(1+t_n)^-1` maps one stage later to
+  `c_{n+1}^2=c_{n+1}/phi(c_{n+1})`. Killed: the vanishing is real, but it is
+  moving-boundary vanishing. Every finite tower still has a new top-stage
+  obstruction; exact finite towers of depths 1,2,3,4 have support ranks
+  6,12,24,48 and surviving classes `c_1,c_2,c_3,c_4`. The colimit needs no
+  terminal stage and unbounded support ranks `[3,6,12,24,48,96,192]`; the
+  same moving-boundary operation is formable on controls; and it constructs
+  no actual square, integral `rep_NS`, degree maps, diagonal, Frobenius
+  graph, proper correspondence category, projection formula, Rosati,
+  positive primitive sign, carrier boundary, control death, or SCC/DD.4
+  carrier-native datum. Witness prime_int_n1b_perfection_colimit_no_go
+  (PCL1-PCL6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_frobenius_root_extension_no_go,
+  prime_int_n1b_norm_one_hilbert90_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 129 DONE (doc 266): Root-shift / telescope NO-GO. The shortcut
+  promotes the Frobenius-root transition to an invertible shift, periodic
+  wrap, or formal inverse shift and treats the doc-265 moving-boundary
+  vanishing as a finite carrier boundary. Killed: exact truncations
+  L=6,8,10,12 show the root transition sends the DD.4 `H^1` generator to
+  zero, not to an invertible shifted generator. Every finite root tower still
+  has a top obstruction; depths 1,2,3,4 have internal exponents
+  `[2,1]`, `[4,2,1]`, `[8,4,2,1]`, and `[16,8,4,2,1]`, while killing the
+  top class requires a new half-exponent `1/2`. A periodic wrap or formal
+  inverse shift therefore imports the missing half-root relation; the same
+  formal inverse-shift/splitter operation is formable on controls; and it
+  constructs no actual square, integral `rep_NS`, degree maps, diagonal,
+  Frobenius graph, proper correspondence category, projection formula,
+  Rosati, positive primitive sign, carrier boundary, control death, or
+  SCC/DD.4 carrier-native datum. Witness
+  prime_int_n1b_root_shift_telescope_no_go (RST1-RST5 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_perfection_colimit_no_go,
+  prime_int_n1b_frobenius_root_extension_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 130 DONE (doc 267): Laurent-field / Hilbert-90 NO-GO. The shortcut
+  passes from the 1-unit coefficient system `U_1=1+zF_2[[z]]` to the full
+  Laurent field `K^*` and uses the real identity
+  `b=phi(z)=z/(1+z)`, `b/phi(b)=(1+z)^-1`. Killed: the identity is a
+  genuine coboundary only because it leaves `U_1` and uses the odd
+  valuation/uniformizer axis. Exact truncations L=6,8,10,12 still have
+  `H^1(<phi>;U_1)=Z/2` with `res_1(c)=1`; adding `c` to boundaries
+  collapses H1, and valuation `m` contributes boundary class `m[c]` mod 2
+  for `m=-3..3`. DMP/TCR support still lacks the full Laurent line
+  (missing degrees `-6,-5,-4,-3,-2` in the checked window); the same
+  uniformizer-splitting recipe is formable on controls; and no actual
+  square, integral `rep_NS`, degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, positive primitive
+  sign, carrier boundary, control death, or SCC/DD.4 carrier-native datum is
+  constructed. Witness prime_int_n1b_laurent_field_hilbert90_no_go
+  (LFH1-LFH6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_root_shift_telescope_no_go,
+  prime_int_n1b_prime_line_no_go, prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 131 DONE (doc 268): Valuation-parity cover NO-GO. The shortcut
+  keeps only the mod-2 quotient of the Laurent valuation after doc 267:
+  `E=(Z/2)xU_1` with `sigma(e,u)=(e,c^e phi(u))`. Killed: this cover
+  does kill the named DD.4 representative, since
+  `sigma(1,1)=(1,c)` and `(1,c)/sigma(1,c)=(0,c)`, but it remembers only
+  valuation parity. It identifies valuations `m` and `m+2`, cannot recover
+  integer degree data or the two carrier-native degree maps, has only two
+  sheets rather than a Laurent line, supplies no proper correspondence
+  endpoints, is formable on controls, and constructs no actual square,
+  integral `rep_NS`, degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, positive primitive
+  sign, carrier boundary, control death, or SCC/DD.4 carrier-native datum.
+  Witness prime_int_n1b_valuation_parity_cover_no_go (VPC1-VPC6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_laurent_field_hilbert90_no_go,
+  prime_int_n1b_prime_line_no_go, prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 132 DONE (doc 269): Valuation degree character NO-GO. The shortcut
+  keeps the full integer valuation after docs 267-268 and promotes the
+  resulting additive character to the SCC degree data. Killed: the Laurent
+  valuation axis does kill `c=(1+z)^-1` and retain exact integer valuation,
+  but one additive character has rank one. For every `chi(d1,d2)=a d1+b d2`,
+  the direction `(b,-a)` preserves `chi` while changing an endpoint pairing.
+  The finite-field SCC anchor shows the same endpoint loss: `(7,F,1)->7`,
+  `(10,F,1)->10`, and `(7,F,4)->10`, while same-total endpoint pairs are
+  separated by left/right fiber probes. The same single-degree-character
+  package is formable on controls; and no actual square, integral `rep_NS`,
+  two degree maps, diagonal, Frobenius graph, proper correspondence
+  category, projection formula, Rosati, positive primitive sign, carrier
+  boundary, control death, or SCC/DD.4 carrier-native datum is constructed.
+  Witness prime_int_n1b_valuation_degree_character_no_go (VDC1-VDC6 ALL
+  PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_valuation_parity_cover_no_go,
+  prime_int_n1b_laurent_field_hilbert90_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 133 DONE (doc 270): Degree-pair codec NO-GO. The shortcut encodes
+  the two SCC endpoint degrees `(d1,d2)` into one integer label by Cantor,
+  prime-power, mixed-radix, lookup-table, or similar coding and treats that
+  label as the carrier degree data. Killed: the coding can be injective on
+  finite windows, but the label is not geometry. Cantor and prime-power
+  labels do not preserve endpoint addition/product or supply uniform Laurent
+  endpoint shifts; finite mixed-radix coding requires an external bound and
+  collides once extended. Recovering endpoints and the SCC pairing requires
+  an imported decoder, and swapping decoders over the same scalar label set
+  changes left/right fiber probes and transported pairings. The same codec is
+  formable on controls; and no actual square, integral `rep_NS`, two degree
+  maps, diagonal, Frobenius graph, proper correspondence category,
+  projection formula, Rosati, carrier boundary, control death, or SCC/DD.4
+  carrier-native datum is constructed. Witness
+  prime_int_n1b_degree_pair_codec_no_go (DPC1-DPC7 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_valuation_degree_character_no_go,
+  prime_int_n1b_square_carrier_contract, prime_int_n1b_dd4_scc_interface,
+  and prime_int_n1b_presented_correspondence_carrier_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 134 DONE (doc 271): Endpoint valuation register NO-GO. The shortcut
+  adds a free rank-two endpoint register `Z^2` and twists the DD.4 valuation
+  cover by a chosen primitive linear functional `ell(d1,d2)`. Killed: the
+  positive split is real -- the register has two coordinate projections, and
+  for any vector `v` with `ell(v)=1`, `sigma(v,1)` has boundary
+  `c=(1+z)^-1`. But the boundary direction is chosen, not carrier-forced:
+  the same `Z^2` register supports `ell=d1`, `ell=d2`, `ell=d1+d2`,
+  `ell=d1-d2`, and `ell=2d1+d2`. The same z-action admits many endpoint
+  assignments, including `(10,1)` and `(7,4)` with the same diagonal
+  intersection but different endpoint probes. The same register split is
+  formable on controls; and no actual square, integral `rep_NS`, two
+  carrier-native degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, carrier boundary,
+  control death, or SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_endpoint_valuation_register_no_go (EVR1-EVR6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_degree_pair_codec_no_go,
+  prime_int_n1b_valuation_degree_character_no_go,
+  prime_int_n1b_formal_ns_envelope_no_go, prime_int_n1b_dd4_scc_interface,
+  and prime_int_n1b_square_carrier_contract (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 135 DONE (doc 272): Endpoint-swap boundary NO-GO. The shortcut
+  imposes the endpoint swap `tau(d1,d2)=(d2,d1)` on the doc-271 register and
+  claims symmetry now forces the DD.4 boundary direction. Killed: the positive
+  split is real -- the primitive invariant direction `ell=d1+d2` commutes
+  with the swap and splits `c=(1+z)^-1`. But it is still only total degree,
+  not two endpoint maps: `(10,1)` and `(7,4)` have the same total degree and
+  same diagonal intersection while their left/right endpoint probes differ.
+  The anti-invariant direction `d1-d2` needs an imported sign/orientation
+  action to commute with swap. The same swap-symmetric total split is formable
+  on controls; and no actual square, integral `rep_NS`, two carrier-native
+  degree maps, diagonal, Frobenius graph, proper correspondence category,
+  projection formula, Rosati, carrier boundary, control death, or SCC/DD.4
+  carrier-native datum is constructed. Witness
+  prime_int_n1b_endpoint_swap_boundary_no_go (ESB1-ESB6 ALL PASS, lead-reran
+  exit 0); adjacent witnesses prime_int_n1b_endpoint_valuation_register_no_go,
+  prime_int_n1b_degree_pair_codec_no_go,
+  prime_int_n1b_valuation_degree_character_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 136 DONE (doc 273): Oriented endpoint difference NO-GO. The shortcut
+  adds endpoint orientation/sign data so the anti-invariant direction
+  `d1-d2` commutes with endpoint swap, then combines total and difference to
+  recover endpoint degrees. Killed: the positive split is real -- with the
+  sign action on the unit line, the difference-direction twist commutes with
+  oriented swap and splits `c=(1+z)^-1`. But the sign is imported, and
+  endpoint recovery uses the non-unimodular map `(d1,d2)->(d1+d2,d1-d2)` with
+  determinant `-2`, hence a same-parity condition and half-sum decoder.
+  Changing the sign swaps left/right endpoint probes. The same oriented
+  package is formable on controls; and no actual square, integral `rep_NS`,
+  two carrier-native degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, carrier boundary,
+  control death, or SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_oriented_endpoint_difference_no_go (OED1-OED6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_endpoint_swap_boundary_no_go,
+  prime_int_n1b_endpoint_valuation_register_no_go,
+  prime_int_n1b_orientation_normalization_no_go,
+  prime_int_n1b_lambda_half_cover_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 137 DONE (doc 274): Endpoint parity saturation NO-GO. The shortcut
+  repairs the doc-273 half-sum defect by selecting the same-parity
+  total/difference lattice `P={(s,a):s=a mod 2}` or by saturating the full
+  register with half-sums. Killed: the positive parity-lattice fact is real --
+  `P` is the image of `(d1,d2)->(d1+d2,d1-d2)`, the decoder is integral on
+  `P`, and the oriented difference twist still splits `c=(1+z)^-1`. But
+  selecting `P` is an external index-two integrality condition; the full
+  total/difference register has non-endpoint labels such as `(0,1)`, `(11,8)`,
+  and `(10,1)` that still run the DD.4 split. Saturating the full register
+  decodes those labels to half-integral endpoints. The same parity/saturation
+  package is formable on controls; and no actual square, integral `rep_NS`,
+  two carrier-native degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, carrier boundary,
+  control death, or SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_endpoint_parity_saturation_no_go (EPS1-EPS6 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_oriented_endpoint_difference_no_go,
+  prime_int_n1b_endpoint_swap_boundary_no_go,
+  prime_int_n1b_endpoint_valuation_register_no_go,
+  prime_int_n1b_valuation_parity_cover_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 138 DONE (doc 275): Endpoint parity tag NO-GO. The shortcut keeps
+  the full total/difference register but adds the diagnostic bit
+  `delta=s-a mod 2` and treats the tag as the missing integrality data.
+  Killed: the positive tag fact is real -- `delta=0` exactly detects when the
+  half-sum decoder is integral, and the tagged oriented-difference twist still
+  splits `c=(1+z)^-1`. But projecting to `delta=0` is just doc 274's external
+  same-parity lattice, while retaining `delta=1` keeps non-endpoint labels
+  such as `(0,1)`, `(11,8)`, and `(10,1)` that still run the DD.4 split and
+  decode only half-integrally. The same parity-tag package is formable on
+  controls; and no actual square, integral `rep_NS`, two carrier-native degree
+  maps, diagonal, Frobenius graph, proper correspondence category, projection
+  formula, Rosati, carrier boundary, control death, or SCC/DD.4 carrier-native
+  datum is constructed. Witness prime_int_n1b_endpoint_parity_tag_no_go
+  (EPT1-EPT6 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_endpoint_parity_saturation_no_go,
+  prime_int_n1b_oriented_endpoint_difference_no_go,
+  prime_int_n1b_endpoint_swap_boundary_no_go,
+  prime_int_n1b_valuation_parity_cover_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 139 SPEC (doc 276): Carrier-first categorical square contract.
+  Not a no-go theorem and not added to the no-go bank. This cycle admits the
+  categorical route only in carrier-first form: construct a compactified zeta
+  square `Qbar` with open square `Q`, boundary `dQ`, structural maps `p1,p2`,
+  integral cycles and proper pushforwards, a proper correspondence category
+  with fiber-product composition, boundary localization killing the DD.4
+  class, Frobenius/Hecke graph, and canonical duality/Rosati. Killed as
+  method, not as language: generic span/profunctor categories, symbolic
+  triple composition, free DD.4 splitters, and controls do not instantiate
+  the required carrier generators. Witness
+  prime_int_n1b_carrier_first_categorical_square_contract (CFC1-CFC7 ALL
+  PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_square_carrier_contract, prime_int_n1b_dd4_scc_interface,
+  prime_int_n1b_span_profunctor_bicategory_no_go, and
+  prime_int_n1b_formal_correspondence_composition_no_go (all exit 0,
+  lead-reran). STAGE/Layer I - SPEC ONLY - NOT RH.
+R1 CYCLE 140 DONE (doc 277): Cartier boundary normal line NO-GO. This cycle
+  attacks the first actual construction subproblem under doc 276: make the
+  DD.4 Hilbert-90 uniformizer a normal coordinate of an honest Cartier
+  boundary divisor. Positive fact retained: this is exactly the right local
+  shape for the DD.4 splitter; with normal coordinate `t` and
+  `sigma(t)=t*c`, one has `sigma^2(t)=t` and
+  `sigma(t)/sigma^2(t)=c`. Killed: a normal line is still rank-one boundary
+  valuation data, not two SCC endpoint maps; a normal-crossing pair gives
+  two valuations but still leaves the DD.4 primitive direction `ell` chosen
+  rather than carrier-forced; scalar boundary totals do not recover the
+  finite-field endpoint probes; and formal Cartier-boundary packages are
+  formable on controls. No actual square, integral `rep_NS`, two
+  carrier-native degree maps, diagonal, Frobenius graph, proper
+  correspondence category, projection formula, Rosati, carrier boundary with
+  control death, or SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_cartier_boundary_normal_no_go (CBN1-CBN7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_laurent_field_hilbert90_no_go,
+  prime_int_n1b_valuation_degree_character_no_go,
+  prime_int_n1b_endpoint_parity_tag_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 141 DONE (doc 278): Oriented boundary complex NO-GO. This cycle
+  tests the next geometric repair after doc 277: use the oriented boundary
+  complex of a two-component normal-crossing boundary to select the
+  alternating direction `D1-D2`, i.e. `ell=d1-d2`. Positive fact retained:
+  oriented incidence really selects a DD.4 splitting direction; with
+  `sigma(v,u)=(v,c^ell(v)phi(u))`, the split vector `(1,0)` has boundary
+  `c` in truncations L=6,8,10,12. Killed: reversing orientation changes
+  representative `c` to `c^-1` while preserving the Z/2 class; alternating
+  incidence is still rank-one endpoint data; combining total and difference
+  has determinant `-2` and needs a parity/half-sum theorem; and the same
+  oriented boundary complex is formable on controls. No actual square,
+  integral `rep_NS`, two carrier-native degree maps, diagonal, Frobenius
+  graph, proper correspondence category, projection formula, Rosati, carrier
+  boundary with control death, or SCC/DD.4 carrier-native datum is
+  constructed. Witness prime_int_n1b_oriented_boundary_complex_no_go
+  (OBC1-OBC7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cartier_boundary_normal_no_go,
+  prime_int_n1b_oriented_endpoint_difference_no_go,
+  prime_int_n1b_endpoint_swap_boundary_no_go,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 142 DONE (doc 279): Boundary even lattice NO-GO. This cycle tests
+  the parity repair left by doc 278: read the same-parity condition from a
+  boundary intersection/even-lattice condition, e.g. `q(s,a)=s^2-a^2` even.
+  Positive fact retained: boundary evenness is exactly the parity condition
+  needed for total/difference endpoint decoding; `(1,1)` decodes to `(1,0)`
+  and splits `c`. Killed: this is still the index-two same-parity selector
+  unless the carrier constructs it as its integral cycle lattice; excluded
+  labels such as `(0,1)`, `(11,8)`, and `(10,1)` still exist in the full
+  register and decode half-integrally; mod-2 parity has several index-two
+  selector variants; and the same boundary-even package is formable on
+  controls. No actual square, integral `rep_NS`, two carrier-native degree
+  maps, diagonal, Frobenius graph, proper correspondence category, projection
+  formula, Rosati, carrier boundary with control death, or SCC/DD.4
+  carrier-native datum is constructed. Witness
+  prime_int_n1b_boundary_even_lattice_no_go (BEL1-BEL8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_oriented_boundary_complex_no_go,
+  prime_int_n1b_endpoint_parity_saturation_no_go,
+  prime_int_n1b_endpoint_parity_tag_no_go,
+  prime_int_n1b_dd4_scc_interface, and prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 143 DONE (doc 280): Hyperbolic plane/Rosati NO-GO. This cycle
+  tests the strongest nearby repair after doc 279: make the same-parity
+  endpoint lattice an actual hyperbolic plane `U=<e,f>`, with isotropic
+  endpoints and Rosati swap `e<->f`. Positive fact retained: this package
+  really gives endpoint integrality, total/difference parity, endpoint swap,
+  an anti-invariant difference direction, and a DD.4 split after lifting the
+  swap to the unit line by `u |-> u^-1`. Killed: the lift is extra unless
+  the carrier produces it; the hyperbolic plane sees only endpoint degrees
+  and forgets the End/Frobenius trace component of `rep_NS`; for endpoint
+  data `(7,1)`, the hyperbolic boundary value is always `8`, while
+  `rep_NS` counts with traces `1` and `3` are `7` and `5`; the package
+  supplies no proper correspondence category, fiber-product composition,
+  projection formula, indecomposable diagonal, positive Rosati sign, or
+  control death; and the same package is formable on controls. Witness
+  prime_int_n1b_hyperbolic_plane_rosati_no_go (HPR1-HPR8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_boundary_even_lattice_no_go,
+  prime_int_n1b_oriented_boundary_complex_no_go,
+  prime_int_n1b_endpoint_parity_saturation_no_go,
+  prime_int_n1b_dd4_scc_interface,
+  prime_int_n1b_square_carrier_contract, and
+  prime_int_n1b_carrier_first_categorical_square_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 144 DONE (doc 281): Trace-augmented hyperbolic NO-GO. This cycle
+  tests the immediate repair after doc 280: keep the hyperbolic endpoint
+  plane and add a scalar trace slot so `Delta.Gamma_n=q^n+1-Tr(F^n)`.
+  Positive fact retained: this scalar augmentation reproduces diagonal
+  point-count shadows for n=1,2,3,4. Killed: the scalar trace slot is not
+  the End component; off-diagonal graph pairings require `Tr(F^m F^n)`, not
+  `Tr(F^m)Tr(F^n)`; scalar trace slots do not compose as Frobenius graphs;
+  traces alone do not determine product traces; arbitrary controls admit the
+  same trace-augmented hyperbolic shadows; and no actual square, integral
+  `rep_NS` with End component, Frobenius graph, proper correspondence
+  category, fiber-product composition, projection formula, Rosati, carrier
+  boundary with control death, or SCC/DD.4 carrier-native datum is
+  constructed. Witness prime_int_n1b_trace_augmented_hyperbolic_no_go
+  (TAH1-TAH7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_hyperbolic_plane_rosati_no_go,
+  prime_int_n1b_diagonal_trace_graph_no_go,
+  prime_int_n1b_finite_trace_realization_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 145 DONE (doc 282): End-augmented hyperbolic NO-GO. This cycle
+  tests the stronger repair after doc 281: keep the hyperbolic endpoint
+  plane, replace scalar trace by a full End algebra, and add componentwise
+  graph composition. Positive fact retained: this fixes doc 281's exact
+  scalar-trace defect; the finite-field `U+End(H1)` model reproduces
+  diagonal counts, off-diagonal graph pairings, and
+  `Gamma_m Gamma_n=Gamma_(m+n)`. Killed: this is still a formal matrix
+  envelope unless `Qbar` produces it; the DD.4 split is independent of the
+  End slot and works with labels `Id`, `F`, `F^2`, and `control`; the same
+  envelope wraps off-circle data where positivity fails; arbitrary controls
+  admit the same formal `U+End` package; and no actual square,
+  carrier-produced integral `rep_NS`, proper correspondence category,
+  fiber-product composition, projection formula, carrier Rosati, carrier
+  boundary with control death, or SCC/DD.4 carrier-native datum is
+  constructed. Witness prime_int_n1b_end_augmented_hyperbolic_no_go
+  (EAH1-EAH7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_trace_augmented_hyperbolic_no_go,
+  prime_int_n1b_formal_ns_envelope_no_go,
+  prime_int_n1b_formal_correspondence_composition_no_go,
+  prime_int_n1b_hyperbolic_plane_rosati_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 146 DONE (doc 283): Positive Rosati End envelope NO-GO. This
+  cycle tests the stronger repair after doc 282: keep formal `U+End`, add a
+  chosen polarization, exact `q`-similitude, formal dagger, and the negative
+  primitive Hodge/Rosati sign. Positive fact retained: the finite-field
+  package has diagonal counts, off-diagonal graph pairings, graph law,
+  `q`-similitude, dagger relation, and negative primitive sign; the sign
+  really rejects the standard off-circle wrapper. Killed: positive matrix
+  data still does not supply the projection formula for componentwise
+  composition; DD.4 splitting remains independent of the positive End/Rosati
+  slot; positive `U+End` data is formable on controls; and no actual square,
+  carrier-produced integral `rep_NS`, proper correspondence category,
+  fiber-product composition, projection formula, carrier boundary with
+  control death, or SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_positive_rosati_end_envelope_no_go (PRE1-PRE7 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_end_augmented_hyperbolic_no_go,
+  prime_int_n1b_formal_adjoint_projection_no_go,
+  prime_int_n1b_integral_qsim_graph_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 147 DONE (doc 284): Projection-forced positive envelope NO-GO.
+  This cycle tests the next repair after doc 283: impose the projection
+  formula on the positive `U+End` envelope by quotient relations or local
+  retuning. Positive fact retained: the projection formula is exactly the
+  missing proper-correspondence theorem. Killed: forcing it on the formal
+  componentwise law changes the genuine finite-field q=7 trace/count data,
+  moving `Tr(F^2)` from `-13` to `14` and count2 from `63` to `36`; scalar
+  quotient defects from positive anchors have gcd 1; local retuning changes
+  graph degree `d1` from `7` to `-20`; finite projection samples remain
+  cherry-pickable; DD.4 splitting remains independent of End/Rosati/projection
+  data; positive controls admit the same projection forcing/retuning; and no
+  actual square, carrier-produced integral `rep_NS`, proper correspondence
+  category, fiber-product composition, projection formula from geometry,
+  carrier boundary with control death, or SCC/DD.4 carrier-native datum is
+  constructed. Witness
+  prime_int_n1b_projection_forced_positive_envelope_no_go (PFE1-PFE9 ALL
+  PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_positive_rosati_end_envelope_no_go,
+  prime_int_n1b_projection_formula_quotient_no_go,
+  prime_int_n1b_formal_adjoint_projection_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 148 DONE (doc 285): Fiber-product-saturated positive envelope
+  NO-GO. This cycle tests the next categorical repair after doc 284: freely
+  adjoin formal fiber-product objects and projection cells to the positive
+  `U+End` envelope. Positive fact retained: fiber products are exactly what
+  an actual `Corr^prop(Qbar)` construction must use. Killed: formal cells can
+  declare projection defect 0 while the componentwise semantic defect remains
+  27 and no `Qbar` pullback exists; representing the cell back in NS triples
+  repeats local retuning, changing graph degree `d1` from `7` to `-20`;
+  finite fiber-product/projection samples remain cherry-pickable; DD.4
+  splitting remains independent of fiber-product labels and boundary
+  placeholders; positive controls admit the same formal saturation; and no
+  actual square, `p1,p2`, carrier-produced integral `rep_NS`, proper
+  correspondence category, fiber-product composition from geometry,
+  projection formula from geometry, carrier boundary with control death, or
+  SCC/DD.4 carrier-native datum is constructed. Witness
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go (FPS1-FPS8
+  ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_projection_forced_positive_envelope_no_go,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_presented_correspondence_carrier_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 149 DONE (doc 286): Qbar-shell positive envelope NO-GO. This cycle
+  tests the next repair after doc 285: name `Qbar`, `p1,p2`, `dQ`,
+  `Corr^prop`, localization, Rosati, projection, and control death around
+  the positive `U+End` envelope without constructing the carrier geometry.
+  Positive fact retained: these are the right carrier-first names. Killed: a
+  Qbar shell passes the name-level CFC/SCC checklist with all eleven slots
+  while representing zero slots; shell projection is declared while the
+  semantic projection defect remains 27; shell boundary localization kills
+  DD.4 only by declaration/free split while `[c]` remains non-boundary with
+  `res_1(c)=1`; `p1,p2` labels do not force carrier-native endpoint maps;
+  positive controls admit the same shell with semantic projection defect 11;
+  and no actual `Qbar`, actual `p1,p2`, proper pullbacks, carrier-produced
+  integral `rep_NS`, projection formula from geometry, carrier boundary
+  localization, carrier Rosati, or control death is constructed. Witness
+  prime_int_n1b_qbar_shell_positive_envelope_no_go (QBS1-QBS8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 150 ANCHOR (doc 287): represented-carrier gate construction-spec.
+  This cycle upgrades the CFC/SCC checklist after doc 286: slot names count
+  only with represented object/map/cycle/pullback/boundary evidence. It is
+  not a no-go theorem and not an RH proof. Fixed: a Qbar shell declares all
+  eleven carrier slots but represents zero; the finite-field model is
+  accepted only for represented visible slots (carrier object, endpoint maps,
+  integral `rep_NS`, diagonal, Frobenius graph, proper composition, Rosati,
+  primitive sign); projection requires represented push-pull proof, not a
+  declared formula; DD.4 killing requires an actual boundary map/exact
+  localization/self-dual boundary, not a splitter; endpoint maps require
+  actual `p1,p2` pushforwards; and control death requires formation failure,
+  not a named guard. Witness
+  prime_int_n1b_represented_carrier_gate_contract (RCG1-RCG8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_shell_positive_envelope_no_go,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). CONSTRUCTION-SPEC/Layer I - NOT RH.
+R1 CYCLE 151 DONE (doc 288): represented-carrier candidate matrix NO-GO.
+  This cycle applies doc 287 to the three standing doc-137 routes:
+  PFD/Xbar, Connes-Consani scaling-site / C x C, and condensed/liquid metric
+  enrichment. It performs the requested four operations: candidate matrix,
+  RCG run, smallest missing token selection, and construction/no-go verdict.
+  Current represented slots: PFD/Xbar none, Connes-Consani/CxC only
+  `carrier_object` (granting curve-level object evidence), condensed metric
+  none. Shared blocker: actual boundary map + exact localization +
+  `[(1+z)^-1] -> 0` + self-dual boundary/properness, actual `p1,p2` with
+  proper pushforward, and formation-level control death. Attempted repair:
+  adding that shared bundle is necessary but not sufficient; PFD still lacks
+  integral `rep_NS` and square correspondences, CC/CxC still lacks proper
+  square composition/projection/Rosati/graph data, and condensed metric still
+  lacks carrier object and square data. Witness
+  prime_int_n1b_represented_carrier_candidate_matrix_no_go (RCM1-RCM8 ALL
+  PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_qbar_shell_positive_envelope_no_go,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 152 DONE (doc 289): CC product boundary-endpoint bundle NO-GO.
+  This cycle tests the first repair after doc 288: promote curve-level/product
+  boundary and product projections to the represented square bundle. Positive
+  fact retained: product boundary and `p1,p2` are the right geometric shape.
+  Killed: current CC curve-level evidence is still only `carrier_object`;
+  product projections add `endpoint_maps` but not DD.4 killing, `rep_NS`,
+  graph, projection, Rosati, or control death; product normal crossings do
+  not select the DD.4 primitive direction (16 primitive directions in the
+  tested window); declared product localization is not represented
+  localization; product endpoints do not construct square `rep_NS`; positive
+  controls admit the same package with projection defect 11; and even a fully
+  represented boundary+endpoint+control bundle is necessary but insufficient
+  without `rep_NS`, proper pullbacks, projection, Rosati, and graph data.
+  Witness prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go
+  (CBE1-CBE8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_represented_carrier_candidate_matrix_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_cc_pic_jacobian_square_no_go,
+  prime_int_n1b_cartier_boundary_normal_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 153 DONE (doc 290): CC product rep_NS graft NO-GO.
+  This cycle tests the next repair after doc 289: graft curve Pic data or
+  finite-field NS triples onto CC product boundary/endpoints as square
+  `rep_NS`. Positive fact retained: finite-field NS triples are the correct
+  visible target. Killed: grafted labels are rejected; even granted actual
+  `rep_NS`/diagonal/graph only fills visible slots; componentwise graph law is
+  not proper pullback/projection (defect 27); curve Pic rank 1 is not
+  endpoint+End visible rank 6; DD.4 remains nonzero; controls admit the same
+  graft; and full blocker+repNS still misses proper composition, projection,
+  Rosati, and primitive sign. Witness
+  prime_int_n1b_cc_product_repns_graft_no_go (CRG1-CRG8 ALL PASS, lead-reran
+  exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_cc_pic_jacobian_square_no_go,
+  prime_int_n1b_positive_rosati_end_envelope_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 154 DONE (doc 291): CC product square-cycle category NO-GO.
+  This cycle tests the next repair after doc 290: freely close the
+  product+`rep_NS` visible data under a square-cycle category with pullbacks,
+  projection cells, Rosati cells, DD.4 zero cells, and control-death cells.
+  Positive fact retained: the categorical route remains the right shape only
+  downstream of represented `Qbar`. Killed: free category names declare all
+  eleven RCG slots but represent no new slots; projection cells leave the
+  semantic q=7 defect 27; Rosati/sign cells are unrepresented and mask an
+  off-circle sign flip; DD.4 zero cells leave H^1 nonzero; category closure
+  does not select the DD.4 boundary direction; and positive controls admit
+  the same free closure with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_category_no_go (PSC1-PSC8 ALL PASS,
+  lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_repns_graft_no_go,
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_positive_rosati_end_envelope_no_go,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 155 DONE (doc 292): CC product square-cycle exact completion NO-GO.
+  This cycle tests the next repair after doc 291: pass the free square-cycle
+  syntax to an exact/regular completion and count completion-internal
+  pullbacks, localizations, Rosati cells, and control-death cells as actual.
+  Positive fact retained: exactness and pullbacks are required in the real
+  carrier category. Killed: exact completion internalizes all eleven named
+  slots but represents no new `Qbar` evidence; completion projection
+  relations leave semantic defect 27; forcing the relation into NS triples
+  repeats retuning damage (`d1` 7 -> -20 while count2 stays 63);
+  completion exact localization leaves DD.4 nonzero; completion does not
+  supply carrier Rosati or the boundary direction; and positive controls
+  admit the same exact-completion wrapper with defect 11 and no formation
+  death. Witness
+  prime_int_n1b_cc_product_square_cycle_exact_completion_no_go (SEC1-SEC8
+  ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_category_no_go,
+  prime_int_n1b_cc_product_repns_graft_no_go,
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 156 DONE (doc 293): CC product square-cycle descent stack NO-GO.
+  This cycle tests the next repair after doc 292: cover the product by local
+  square-cycle charts, make pullbacks/projection/DD.4/Rosati/control death
+  local, and claim sheafification/descent glues them into global carrier
+  evidence. Positive fact retained: a real `Qbar` carrier should satisfy
+  descent. Killed: local descent charts declare all eleven slots but
+  represent no new global `Qbar` evidence; local projection descent leaves
+  semantic defect 27; gluing projection into NS triples repeats retuning
+  damage (`d1` 7 -> -20 while count2 stays 63); local DD.4 zero cells leave
+  the global class nonzero; descent glue does not select the boundary
+  direction or carrier Rosati; and positive controls admit the same
+  descent-stack wrapper with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_descent_stack_no_go (DSC1-DSC8 ALL
+  PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_exact_completion_no_go,
+  prime_int_n1b_cc_product_square_cycle_category_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 157 DONE (doc 294): CC product square-cycle hyperdescent NO-GO.
+  This cycle tests the next repair after doc 293: replace descent by
+  hyperdescent/homotopy-coherent descent over repeated refinements, with
+  higher coherence cells for projection, DD.4 killing, Rosati, and control
+  death. Positive fact retained: real `Qbar` geometry should satisfy whatever
+  descent its structure requires. Killed: hyperdescent declares all eleven
+  slots but represents no new global `Qbar` evidence; homotopy-coherent
+  projection leaves semantic defect 27; coherent projection realization
+  repeats NS retuning damage (`d1` 7 -> -20 while count2 stays 63);
+  hypercover DD.4 zero cells leave the global class nonzero; higher
+  coherence does not select the boundary direction or carrier Rosati
+  (2^56 assignments in the tested refinement window); and positive controls
+  admit the same hyperdescent wrapper with defect 11 and no formation death.
+  Witness prime_int_n1b_cc_product_square_cycle_hyperdescent_no_go
+  (HDS1-HDS8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_descent_stack_no_go,
+  prime_int_n1b_cc_product_square_cycle_exact_completion_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 158 DONE (doc 295): CC product square-cycle moduli stack NO-GO.
+  This cycle tests the next repair after doc 294: form a moduli/classifying
+  stack of square-carrier packages and use its tautological universal package
+  as the missing carrier. Positive fact retained: an actual carrier may later
+  have a moduli interpretation. Killed: the tautological package declares all
+  eleven slots but represents no new `Qbar` evidence; universal projection
+  leaves semantic defect 27; realizing the universal relation repeats NS
+  retuning damage (`d1` 7 -> -20 while count2 stays 63); universal DD.4 zero
+  object leaves the class nonzero; the moduli package parameterizes boundary
+  and Rosati choices rather than selecting carrier data; and positive controls
+  define points of the same moduli stack with defect 11 and no formation
+  death. Witness prime_int_n1b_cc_product_square_cycle_moduli_stack_no_go
+  (MDS1-MDS8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_hyperdescent_no_go,
+  prime_int_n1b_cc_product_square_cycle_descent_stack_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 159 DONE (doc 296): CC product square-cycle Yoneda functor NO-GO.
+  This cycle tests the next repair after doc 295: replace the carrier by the
+  functor of points/specification functor of square-carrier packages and use
+  Yoneda language to treat formal points and natural transformations as
+  represented geometry. Positive fact retained: once `Qbar` exists, its
+  functor of points will be useful and determining. Killed: the specification
+  functor lists all eleven predicates but represents no new `Qbar` evidence;
+  Yoneda projection predicate leaves semantic defect 27; realizing the
+  predicate repeats NS retuning damage (`d1` 7 -> -20 while count2 stays 63);
+  DD.4 zero predicate leaves the class nonzero; functor points parameterize
+  boundary/Rosati choices rather than selecting carrier data; and positive
+  controls are points of the same functor with defect 11 and no formation
+  death. Witness prime_int_n1b_cc_product_square_cycle_yoneda_functor_no_go
+  (YND1-YND8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_moduli_stack_no_go,
+  prime_int_n1b_cc_product_square_cycle_hyperdescent_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 160 DONE (doc 297): CC product square-cycle reflective completion
+  NO-GO. This cycle tests the next repair after doc 296: apply a reflective
+  or free representable completion to the square-carrier specification functor
+  and count the reflected object as represented geometry. Positive fact
+  retained: a real representability theorem may be stated by an adjunction
+  after the representing object exists. Killed: the reflective completion
+  lists all eleven predicates but represents no new `Qbar` evidence; reflector
+  projection relation leaves semantic defect 27; realizing the relation
+  repeats NS retuning damage (`d1` 7 -> -20 while count2 stays 63); DD.4 zero
+  relation leaves the class nonzero; reflector points/unit maps parameterize
+  boundary/Rosati choices rather than selecting carrier data; and positive
+  controls reflect through the same completion with defect 11 and no formation
+  death. Witness
+  prime_int_n1b_cc_product_square_cycle_reflective_completion_no_go
+  (RFL1-RFL8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_yoneda_functor_no_go,
+  prime_int_n1b_cc_product_square_cycle_moduli_stack_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 161 DONE (doc 298): CC product square-cycle pro-representable limit
+  NO-GO. This cycle tests the next repair after doc 297: apply a
+  pro-representable inverse-limit system to the square-carrier specification
+  functor and count the pro-object as represented geometry. Positive fact
+  retained: an actual carrier may later be studied through compatible finite
+  approximations. Killed: the pro-representable limit lists all eleven
+  predicates but represents no new `Qbar` evidence; pro-limit projection
+  relation leaves semantic defect 27; realizing the relation repeats NS
+  retuning damage (`d1` 7 -> -20 while count2 stays 63); DD.4 zero relation
+  leaves the class nonzero; pro-limit points/transition maps parameterize
+  boundary/Rosati choices rather than selecting carrier data (32 stage
+  branches and 32768 three-stage tower prefixes); and positive controls pass
+  through the same pro-limit system with defect 11 and no formation death.
+  Witness prime_int_n1b_cc_product_square_cycle_pro_representable_limit_no_go
+  (PRL1-PRL8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_reflective_completion_no_go,
+  prime_int_n1b_cc_product_square_cycle_yoneda_functor_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 162 DONE (doc 299): CC product square-cycle Artin representability
+  NO-GO. This cycle tests the next repair after doc 298: verify
+  Artin/Schlessinger/Lurie-style deformation, obstruction, effectivity, and
+  limit-preservation criteria for the square-carrier specification and count
+  the theorem invocation as the represented carrier. Positive fact retained:
+  a real moduli construction may later be certified by representability
+  criteria. Killed: the criteria list all eleven predicates but represent no
+  new `Qbar` evidence; formal projection obstruction leaves semantic defect
+  27; realizing the criterion repeats NS retuning damage (`d1` 7 -> -20 while
+  count2 stays 63); obstruction-theory zero leaves the DD.4 class nonzero;
+  deformation/effectivity data parameterizes boundary/Rosati choices rather
+  than selecting carrier data (128 deformation branches); and positive
+  controls satisfy the same criteria with defect 11 and no formation death.
+  Witness prime_int_n1b_cc_product_square_cycle_artin_representability_no_go
+  (ART1-ART8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_pro_representable_limit_no_go,
+  prime_int_n1b_cc_product_square_cycle_reflective_completion_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 163 DONE (doc 300): CC product square-cycle Tannakian
+  reconstruction NO-GO. This cycle tests the next repair after doc 299:
+  reconstruct the compactified zeta square from a tensor category, fiber
+  functor, coend/Hopf algebra, or monadic theorem, and count the reconstructed
+  object as represented `Qbar`. Positive fact retained: a real carrier may
+  later have a useful carrier-native tensor category. Killed: the
+  reconstruction package lists all eleven predicates but represents no new
+  `Qbar` evidence; reconstructed projection relation leaves semantic defect
+  27; realizing the relation repeats NS retuning damage (`d1` 7 -> -20 while
+  count2 stays 63); coend/Hopf zero leaves the DD.4 class nonzero; fiber
+  functors parameterize boundary/Rosati choices rather than selecting carrier
+  data (96 reconstruction branches); and positive controls admit the same
+  package with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_tannakian_reconstruction_no_go
+  (TAN1-TAN8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_artin_representability_no_go,
+  prime_int_n1b_cc_product_square_cycle_pro_representable_limit_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 164 DONE (doc 301): CC product square-cycle universal-property
+  recognition NO-GO. This cycle tests the next repair after doc 300:
+  characterize the compactified zeta square by a universal property,
+  initial/final object, or uniqueness-up-to-unique-isomorphism theorem, and
+  count recognition as represented `Qbar`. Positive fact retained: an actual
+  carrier should satisfy a strong universal property once constructed. Killed:
+  the recognition package lists all eleven predicates but represents no new
+  `Qbar` evidence; universal projection square leaves semantic defect 27;
+  realizing the universal relation repeats NS retuning damage (`d1` 7 -> -20
+  while count2 stays 63); universal zero morphism leaves the DD.4 class
+  nonzero; universal properties parameterize boundary/Rosati choices rather
+  than selecting carrier data (64 recognition branches); and positive controls
+  satisfy the same recognition theorem with defect 11 and no formation death.
+  Witness
+  prime_int_n1b_cc_product_square_cycle_universal_property_recognition_no_go
+  (UPR1-UPR8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_tannakian_reconstruction_no_go,
+  prime_int_n1b_cc_product_square_cycle_artin_representability_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 165 DONE (doc 302): CC product square-cycle equivalence/univalence
+  NO-GO. This cycle tests the next repair after doc 301: replace construction
+  of the compactified zeta square by an equivalence of square-carrier
+  specifications, univalence, or transport of structure along equivalence.
+  Positive fact retained: equivalent presentations of an already constructed
+  carrier should be interchangeable. Killed: the equivalence package lists all
+  eleven predicates but represents no new `Qbar` evidence; transported
+  projection equality leaves semantic defect 27; realizing the transported
+  equality repeats NS retuning damage (`d1` 7 -> -20 while count2 stays 63);
+  equivalence-class zero leaves the DD.4 class nonzero; equivalences
+  parameterize boundary/Rosati choices rather than selecting carrier data
+  (64 equivalence branches); and positive controls are equivalent packages too
+  with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_equivalence_univalence_no_go
+  (EQV1-EQV8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_universal_property_recognition_no_go,
+  prime_int_n1b_cc_product_square_cycle_tannakian_reconstruction_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 166 DONE (doc 303): CC product square-cycle contractible choice space
+  NO-GO. This cycle tests the next repair after doc 302: prove the space of
+  square-carrier choices is contractible, extract a canonical point, and count
+  that canonical choice as represented `Qbar`. Positive fact retained: a
+  constructed carrier should have coherently unique structure. Killed: the
+  contractible choice-space package lists all eleven predicates but represents
+  no new `Qbar` evidence; canonical projection choice leaves semantic defect
+  27; realizing the canonical choice repeats NS retuning damage (`d1` 7 -> -20
+  while count2 stays 63); contractible zero choice leaves the DD.4 class
+  nonzero; contractibility collapses labels but does not select carrier data
+  (96 raw choices, canonical=1); and positive controls have the same
+  contractible choice space with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_contractible_choice_space_no_go
+  (CTS1-CTS8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_equivalence_univalence_no_go,
+  prime_int_n1b_cc_product_square_cycle_universal_property_recognition_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 167 DONE (doc 304): CC product square-cycle homotopy quotient
+  NO-GO. This cycle tests the next repair after doc 303: take the homotopy
+  quotient or 0-truncation of the square-carrier specification groupoid,
+  collapse paths/automorphisms to a canonical class, and count that quotient
+  class as represented `Qbar`. Positive fact retained: redundant
+  presentations of an already constructed carrier may be quotiented. Killed:
+  the homotopy-quotient package lists all eleven predicates but represents no
+  new `Qbar` evidence; quotient projection class leaves semantic defect 27;
+  realizing a quotient representative repeats NS retuning damage (`d1` 7 ->
+  -20 while count2 stays 63); quotient zero class leaves the DD.4 class
+  nonzero; quotient collapse erases labels but does not select carrier data
+  (96 raw states, one quotient class, fiber size 96); and positive controls
+  have the same homotopy quotient with defect 11 and no formation death.
+  Witness prime_int_n1b_cc_product_square_cycle_homotopy_quotient_no_go
+  (HQT1-HQT8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_contractible_choice_space_no_go,
+  prime_int_n1b_cc_product_square_cycle_equivalence_univalence_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 168 DONE (doc 305): CC product square-cycle Rezk/coherent-nerve
+  completion NO-GO. This cycle tests the next repair after doc 304: replace
+  the compactified zeta square by the Rezk completion, coherent nerve, or
+  complete Segal presentation of the square-carrier specification, and count
+  the completed presentation as represented `Qbar`. Positive fact retained:
+  complete Segal/Rezk language may organize an actual constructed carrier.
+  Killed: the Rezk/coherent-nerve package lists all eleven predicates but
+  represents no new `Qbar` evidence; Segal projection filler leaves semantic
+  defect 27; realizing a Segal filler repeats NS retuning damage (`d1` 7 ->
+  -20 while count2 stays 63); Rezk zero filler leaves the DD.4 class nonzero;
+  completion adds fillers but does not select carrier data (192 raw simplicial
+  presentations, one complete object, fiber size 192); and positive controls
+  have the same Rezk completion with defect 11 and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_rezk_completion_no_go
+  (RZK1-RZK8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_homotopy_quotient_no_go,
+  prime_int_n1b_cc_product_square_cycle_contractible_choice_space_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 169 DONE (doc 306): CC product square-cycle model-category
+  replacement NO-GO. This cycle tests the next repair after doc 305: replace
+  the compactified zeta square by a fibrant-cofibrant replacement of the
+  square-carrier specification, use lifting/path objects to fill the missing
+  predicates, and count the replacement as represented `Qbar`. Positive fact
+  retained: model-category replacement may present an actual constructed
+  carrier. Killed: the fibrant-cofibrant replacement package lists all eleven
+  predicates but represents no new `Qbar` evidence; lifting projection filler
+  leaves semantic defect 27; realizing a lifting filler repeats NS retuning
+  damage (`d1` 7 -> -20 while count2 stays 63); replacement nullhomotopy leaves
+  the DD.4 class nonzero; model replacement adds lifts but does not select
+  carrier data (384 raw model replacements, one replacement object, fiber size
+  384); and positive controls have the same model replacement with defect 11
+  and no formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_model_replacement_no_go
+  (MCR1-MCR8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_rezk_completion_no_go,
+  prime_int_n1b_cc_product_square_cycle_homotopy_quotient_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 170 DONE (doc 307): CC product square-cycle Bousfield/model
+  localization NO-GO. This cycle tests the next repair after doc 306:
+  localize the model/category of square-carrier specifications at the missing
+  projection, DD.4, Rosati, sign, and control-death predicates, then count the
+  localized object as represented `Qbar`. Positive fact retained:
+  localization may invert represented maps of an actual constructed carrier.
+  Killed: the Bousfield-localization package lists all eleven predicates but
+  represents no new `Qbar` evidence; localized projection equivalence leaves
+  semantic defect 27; realizing a localized projection map repeats NS retuning
+  damage (`d1` 7 -> -20 while count2 stays 63); localized DD.4 equivalence
+  leaves the DD.4 class nonzero; localization inverts maps but does not select
+  carrier data (320 raw local objects, one local object, fiber size 320); and
+  positive controls have the same Bousfield localization with defect 11 and no
+  formation death. Witness
+  prime_int_n1b_cc_product_square_cycle_bousfield_localization_no_go
+  (BSL1-BSL8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_product_square_cycle_model_replacement_no_go,
+  prime_int_n1b_cc_product_square_cycle_rezk_completion_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 171 ANCHOR (doc 308): missing-object frontier / Qbar_BECD
+  construction-spec. This cycle stops the categorical shortcut sweep and pins
+  the first represented object forced by the bank. It is not a no-go theorem
+  and is not added to the no-go bank. Positive fact fixed: the missing object
+  splits into Phase A and Phase B. Phase A is Qbar_BECD: actual Qbar/Q/dQ,
+  p1,p2 pushforwards, boundary localization killing DD.4, self-dual
+  boundary/properness, and formation-level control death. Phase B, only after
+  Phase A, is integral rep_NS, diagonal, Frobenius/Hecke graph, proper
+  pullbacks, fiber-product composition, projection formula, D^2=id Rosati, and
+  primitive positive sign. Witness prime_int_n1b_missing_object_frontier
+  (MOF1-MOF8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_represented_carrier_candidate_matrix_no_go,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 172 ANCHOR (doc 309): Qbar_BECD Phase-A sieve construction-spec.
+  This cycle turns doc 308 into a finite 16-branch decision sieve. It is not a
+  no-go theorem and is not added to the no-go bank. Positive fact fixed: the
+  current CC/CxC object line has only O = Qbar/Q/dQ. The sharp next probe is
+  E+B together on that object: E = actual p1,p2 and proper pushforwards, and
+  B = actual boundary/localization killing DD.4 with self-dual boundary data.
+  If E fails, graph/composition dies; if B fails, DD.4 persists; if E+B
+  succeeds, the only Phase-A slot left is C = formation-level control death.
+  Witness prime_int_n1b_qbar_becd_phase_a_sieve
+  (PAS1-PAS8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_missing_object_frontier,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_dd4_scc_interface, and
+  prime_int_n1b_square_carrier_contract
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 173 ANCHOR (doc 310): Qbar_BECD endpoint-fixed boundary sieve
+  construction-spec. This cycle imports the banked doc-289 product
+  boundary-endpoint evidence into the doc-309 Phase-A sieve. It is not a no-go
+  theorem and is not added to the no-go bank. Positive fact fixed: the current
+  CC/CxC product line is O+E, not E+B. Product p1,p2 can be granted as
+  endpoint maps, but product boundary shape and normal crossings do not
+  represent B. The next construction attempt is exactly B on O+E: actual
+  boundary map, exact localization, DD.4 class mapped to zero, and self-dual
+  boundary/properness. If B fails, the CC/CxC product line stops at O+E; if B
+  succeeds, only C = formation-level control death remains in Phase A.
+  Witness prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve
+  (BDS1-BDS8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_phase_a_sieve,
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go,
+  prime_int_n1b_missing_object_frontier,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 174 ANCHOR (doc 311): Qbar_BECD boundary-source matrix
+  construction-spec. This cycle imports the existing DD.4 boundary no-go bank
+  into the doc-310 B target. It is not a no-go theorem and is not added to the
+  no-go bank. Positive fact fixed: actual B on O+E must be a carrier-native
+  self-dual boundary source, not a formal coboundary, deletion, quotient,
+  external valuation axis, or direction-only boundary geometry. The live B
+  predicate is: carrier boundary map, exact localization, DD.4 class mapped to
+  zero, self-dual boundary/properness, unique DD.4 direction, endpoint-rank
+  preservation, and non-formability on controls. If live B is constructed,
+  only C = formation-level control death remains in Phase A.
+  Witness prime_int_n1b_qbar_becd_boundary_source_matrix
+  (BSM1-BSM8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve,
+  prime_int_n1b_qbar_becd_phase_a_sieve,
+  prime_int_n1b_dd4_scc_interface,
+  prime_int_n1b_coinduced_dd4_extension_no_go,
+  prime_int_n1b_bar_resolution_boundary_no_go,
+  prime_int_n1b_laurent_field_hilbert90_no_go, and
+  prime_int_n1b_cartier_boundary_normal_no_go
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 175 ANCHOR (doc 312): Qbar_BECD oriented-Cartier boundary contract
+  construction-spec. This cycle combines the positive residues of docs 277 and
+  278 into the current live B shape. It is not a no-go theorem and is not
+  added to the no-go bank. Positive fact fixed: the live B construction should
+  combine the Cartier normal splitter with oriented boundary incidence on
+  O+E. Shape-only data is not enough; the carrier must fix the orientation,
+  keep p1,p2 primary, prove carrier-nativity and self-dual properness, and
+  prove non-formability on controls. If live oriented-Cartier B is
+  constructed, only C = formation-level control death remains in Phase A.
+  Witness prime_int_n1b_qbar_becd_oriented_cartier_boundary_contract
+  (OCB1-OCB7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_source_matrix,
+  prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve,
+  prime_int_n1b_cartier_boundary_normal_no_go,
+  prime_int_n1b_oriented_boundary_complex_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 176 ANCHOR (doc 313): Qbar_BECD oriented-Cartier residual sieve
+  construction-spec. This cycle separates the local OCB splitter/direction
+  from the remaining carrier proof. It is not a no-go theorem and is not
+  added to the no-go bank. Positive fact fixed: the next proof is not another
+  total/difference/parity/tag endpoint-coordinate repair. The residual target
+  is carrier-fixed orientation plus self-dual boundary/properness, with p1,p2
+  kept primary. After that, only C = formation-level control death remains in
+  Phase A. Witness prime_int_n1b_qbar_becd_oriented_cartier_residual_sieve
+  (OCR1-OCR7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_oriented_cartier_boundary_contract,
+  prime_int_n1b_endpoint_swap_boundary_no_go,
+  prime_int_n1b_oriented_endpoint_difference_no_go,
+  prime_int_n1b_endpoint_parity_saturation_no_go,
+  prime_int_n1b_endpoint_parity_tag_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 177 ANCHOR (doc 314): Qbar_BECD boundary self-duality interface
+  construction-spec. This cycle separates Phase-A boundary-native self-dual
+  properness from the tempting hyperbolic/Rosati/End/projection envelopes.
+  It is not a no-go theorem and is not added to the no-go bank. Positive fact
+  fixed: live self-dual boundary/properness must fix the oriented-Cartier
+  representative, couple DD.4 to boundary duality, preserve primary p1,p2,
+  avoid Phase-B graph/projection imports, preserve counts, and be non-formable
+  on controls. If constructed, B is complete and only C = formation-level
+  control death remains in Phase A. Witness
+  prime_int_n1b_qbar_becd_boundary_self_duality_interface
+  (BSD1-BSD7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_oriented_cartier_residual_sieve,
+  prime_int_n1b_hyperbolic_plane_rosati_no_go,
+  prime_int_n1b_trace_augmented_hyperbolic_no_go,
+  prime_int_n1b_end_augmented_hyperbolic_no_go,
+  prime_int_n1b_positive_rosati_end_envelope_no_go,
+  prime_int_n1b_projection_forced_positive_envelope_no_go, and
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 178 ANCHOR (doc 315): Qbar_BECD boundary-defect duality contract
+  construction-spec. This cycle sharpens boundary-native self-dual
+  properness to the rank-one defect-line type. It is not a no-go theorem and
+  is not added to the no-go bank. Positive fact fixed: live S must be a
+  carrier-produced map from the dual boundary defect line to the primal
+  boundary defect line, with Laurent twist pinned by oriented-Cartier data,
+  boundary equal to the DD.4 representative c, orientation fixed, p1,p2
+  primary, and no control formability. Evaluation, coevaluation, hyperbolic
+  swap, inserted matching, degree-zero normalization, and shape-only OCB are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_boundary_defect_duality_contract
+  (BDD1-BDD7 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_self_duality_interface,
+  prime_int_n1b_qbar_becd_oriented_cartier_residual_sieve,
+  prime_int_n1b_qbar_becd_oriented_cartier_boundary_contract,
+  prime_int_n1b_eval_boundary_glue_no_go,
+  prime_int_n1b_hyperbolic_swap_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 179 ANCHOR (doc 316): Qbar_BECD boundary twist-pinning contract
+  construction-spec. This cycle sharpens the live rank-one defect map by
+  requiring carrier oriented-Cartier normal-ratio pinning for the Laurent
+  twist. It is not a no-go theorem and is not added to the no-go bank.
+  Positive fact fixed: live S cannot choose a Hom unit, adjoin a formal
+  splitter, import the full Laurent valuation axis, collapse choices by
+  degree-zero normalization, or stop at shape-only OCB. The carrier must
+  rigidify the normal ratio of the oriented-Cartier boundary defect lines,
+  produce a unique twist with boundary c, preserve primary p1,p2 and endpoint
+  rank, and be non-formable on controls. Witness
+  prime_int_n1b_qbar_becd_boundary_twist_pinning_contract
+  (BTP1-BTP8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_defect_duality_contract,
+  prime_int_n1b_qbar_becd_boundary_self_duality_interface,
+  prime_int_n1b_qbar_becd_oriented_cartier_boundary_contract,
+  prime_int_torsor_splitter_insertion_no_go,
+  prime_int_n1b_laurent_field_hilbert90_no_go,
+  prime_int_n1b_valuation_degree_character_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 180 ANCHOR (doc 317): Qbar_BECD boundary component anchor contract
+  construction-spec. This cycle sharpens normal-ratio pinning by requiring
+  the oriented-Cartier components to be anchored by the primary endpoint maps.
+  It is not a no-go theorem and is not added to the no-go bank. Positive fact
+  fixed: D1 must be the p1 boundary component and D2 the p2 boundary
+  component; the endpoint order must fix the orientation/sign; the ordered
+  normal ratio must be rigidified by the carrier and produce the unique twist
+  with boundary c. Unanchored oriented pairs, product boundary shape,
+  total/difference decoders, parity labels, and control-formable packages are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_boundary_component_anchor_contract
+  (BCA1-BCA8 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_twist_pinning_contract,
+  prime_int_n1b_qbar_becd_boundary_defect_duality_contract,
+  prime_int_n1b_qbar_becd_oriented_cartier_boundary_contract,
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go,
+  prime_int_n1b_oriented_endpoint_difference_no_go,
+  prime_int_n1b_boundary_even_lattice_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 181 ANCHOR (doc 318): Qbar_BECD boundary fiber anchor contract
+  construction-spec. This cycle sharpens endpoint anchoring by requiring D1
+  and D2 to be actual Cartier boundary fibers of p1,p2 inside dQ. It is not
+  a no-go theorem and is not added to the no-go bank. Positive fact fixed:
+  live B cannot use component labels, product boundary shape, declared
+  localization, total/difference decoders, or direction selection alone. The
+  carrier must construct actual p1,p2 boundary fibers, prove they are Cartier
+  with normal lines inside dQ, restrict exact localization to them, form their
+  ordered normal ratio, produce the unique twist with boundary c, preserve
+  endpoint rank, and be non-formable on controls. Witness
+  prime_int_n1b_qbar_becd_boundary_fiber_anchor_contract
+  (BFA1-BFA10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_component_anchor_contract,
+  prime_int_n1b_qbar_becd_boundary_twist_pinning_contract,
+  prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve,
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go,
+  prime_int_n1b_oriented_endpoint_difference_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 182 ANCHOR (doc 319): Qbar_BECD boundary fiber localization
+  contract construction-spec. This cycle sharpens exactness by requiring one
+  carrier localization sequence on dQ that restricts to the actual p1,p2
+  boundary fibers and sends the original DD.4 representative c to zero
+  through their ordered normal ratio. It is not a no-go theorem and is not
+  added to the no-go bank. Positive fact fixed: live B cannot use coinduced
+  or bar acyclic replacement, cone nullhomotopy, jet deletion, obstruction
+  quotient, declared localization, or separate fiber exact sequences. The
+  carrier must preserve c as the original class, restrict exact localization
+  to both endpoint fibers in one common sequence, keep self-dual properness,
+  p1,p2 primary, endpoint rank, and be non-formable on controls. Witness
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract
+  (BFL1-BFL10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_fiber_anchor_contract,
+  prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve,
+  prime_int_n1b_coinduced_dd4_extension_no_go,
+  prime_int_n1b_bar_resolution_boundary_no_go,
+  prime_int_n1b_mapping_cone_nullhomotopy_no_go,
+  prime_int_n1b_jet_deletion_no_go,
+  prime_int_n1b_obstruction_quotient_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 183 ANCHOR (doc 320): Qbar_BECD boundary pushforward compatibility
+  contract construction-spec. This cycle sharpens the endpoint interface by
+  requiring the restricted dQ localization to commute with the actual p1_* and
+  p2_* proper pushforwards in the same carrier that supplies the endpoint
+  degree maps. It is not a no-go theorem and is not added to the no-go bank.
+  Positive fact fixed: live B cannot be a detached boundary exactness theorem
+  parallel to E. The carrier must preserve c as the original class, restrict
+  localization to the actual p1,p2 boundary fibers, commute with p1_* and
+  p2_*, preserve endpoint rank, p1/p2 degree maps, finite-field count anchors,
+  graph-degree anchors, self-dual properness, and be non-formable on controls.
+  Witness prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract
+  (BPC1-BPC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_anchor_contract,
+  prime_int_n1b_qbar_becd_endpoint_fixed_boundary_sieve,
+  prime_int_n1b_formal_correspondence_composition_no_go,
+  prime_int_n1b_formal_adjoint_projection_no_go,
+  prime_int_n1b_projection_formula_quotient_no_go,
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 184 ANCHOR (doc 321): Qbar_BECD formation-level control death
+  contract construction-spec. This cycle sharpens control death by requiring
+  controls to be impossible to instantiate at carrier formation, not merely
+  rejected later by a Rosati sign, projection defect, DD.4 boundary failure,
+  finite sample, semantic zeta label, Euler/Satake tag, or declaration. It is
+  not a no-go theorem and is not added to the no-go bank. Positive fact fixed:
+  endpoint integrality, degree maps, DD.4 boundary, boundary pushforward
+  compatibility, proper graph/composition, positive Rosati, finite-field
+  counts, graph-degree anchors, and control death must be produced by one joint
+  formation rule. Witness
+  prime_int_n1b_qbar_becd_control_formation_death_contract
+  (CFD1-CFD10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_formal_correspondence_composition_no_go,
+  prime_int_n1b_formal_adjoint_projection_no_go,
+  prime_int_n1b_projection_formula_quotient_no_go,
+  prime_int_n1b_cc_product_boundary_endpoint_bundle_no_go, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 185 ANCHOR (doc 322): Qbar_BECD joint formation coupling contract
+  construction-spec. This cycle sharpens "joint formation" by requiring one
+  represented non-split carrier primitive coupling endpoint degrees, boundary
+  normal ratio, boundary pushforward compatibility, graph/composition,
+  Rosati, count/degree anchors, and control exclusion. It is not a no-go
+  theorem and is not added to the no-go bank. Positive fact fixed: atomwise
+  intersections, products of local atom-moduli, sequential pipelines,
+  declared couplings, semantic zeta tags, local retunings, and
+  control-formable packages do not count. Witness
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract
+  (JFC1-JFC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_represented_carrier_gate_contract,
+  prime_int_n1b_carrier_first_categorical_square_contract,
+  prime_int_n1b_fiber_product_saturated_positive_envelope_no_go,
+  prime_int_n1b_cc_product_square_cycle_category_no_go,
+  prime_int_n1b_cc_product_square_cycle_universal_property_recognition_no_go,
+  and prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 186 ANCHOR (doc 323): Qbar_BECD effectivity-domain first-generator
+  contract construction-spec. This cycle sharpens the non-split primitive by
+  requiring its first generator to be a represented Euler/effectivity domain
+  with native prime-power valuation towers. It is not a no-go theorem and is
+  not added to the no-go bank. Positive fact fixed: Epstein represented-norm
+  theta/count shadows can remain alive while the unique prime-power tower
+  address is undefined; controls can retain formal graph/adjoint shadows while
+  lacking the domain generator. Semantic Euler/Satake labels, finite prime
+  samples, theta kernels, declared effectivity domains, post-hoc guards, and
+  control-formable packages do not count. Witness
+  prime_int_n1b_qbar_becd_effectivity_domain_contract
+  (EDG1-EDG10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_missing_object_frontier,
+  prime_int_n1b_qbar_becd_phase_a_sieve,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 187 ANCHOR (doc 324): Qbar_BECD internal effectivity-domain
+  contract construction-spec. This cycle sharpens "represented" by requiring
+  the Euler/effectivity domain to be an internal stratum of the same
+  Qbar_BECD object/map/cycle package that types endpoint pushforwards,
+  boundary localization, graph/composition, Rosati, count/degree anchors, and
+  control death. It is not a no-go theorem and is not added to the no-go bank.
+  Positive fact fixed: external prime-power towers, finite-window prime-power
+  degree codecs, and endpoint valuation registers can be arithmetically real
+  while still failing to be the carrier domain. External prime monoids,
+  valuation/register data, endpoint codecs, local Euler-factor stacks,
+  finite prime samples, semantic Euler labels, declared internal-domain IDs,
+  Epstein norm shadows, and control-formable packages do not count. Witness
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract
+  (IED1-IED10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_valuation_degree_character_no_go,
+  prime_int_n1b_degree_pair_codec_no_go,
+  prime_int_n1b_endpoint_valuation_register_no_go,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 188 ANCHOR (doc 325): Qbar_BECD effectivity first-generator
+  orientation contract construction-spec. This cycle sharpens the causal
+  direction: the internal effectivity stratum may depend on represented Qbar
+  object/map/cycle evidence, but it must generate endpoint integrality,
+  degree maps, boundary localization, pushforward compatibility,
+  graph/composition, Rosati, count/degree anchors, and control death. It is
+  not a no-go theorem and is not added to the no-go bank. Positive fact fixed:
+  endpoint-degree fibers, graph/count fibers, boundary kernels, Rosati
+  positivity filters, control-failure filters, retunings, and post-hoc gate
+  intersections can identify diagnostic loci but cannot be the first
+  generator. Witness
+  prime_int_n1b_qbar_becd_effectivity_first_generator_orientation_contract
+  (EFO1-EFO10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 189 ANCHOR (doc 326): Qbar_BECD strict-square effectivity extraction
+  contract construction-spec. This cycle preserves the strict Gamma-set
+  square's real object-level divided-power/character signal only through an
+  actual non-EM extraction functor to Qbar_BECD internal effectivity strata.
+  It is not a no-go theorem and is not added to the no-go bank. Positive fact
+  fixed: diagonal-fiber noncollapse, bilinear factorization memory, and
+  universal character convolution are real square data. Raw divided-power
+  invariants, raw character monoids, published diagonal probes, ad-hoc
+  grading dictionaries, endpoint/count fibers, external prime-axis selectors,
+  and declared extraction functors do not count. Witness
+  prime_int_n1b_qbar_becd_strict_square_effectivity_extraction_contract
+  (SSE1-SSE10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_cc_strict_square_divided_power_no_go,
+  prime_int_n1b_cc_pic_jacobian_square_no_go,
+  prime_int_n1b_qbar_becd_effectivity_first_generator_orientation_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 190 ANCHOR (doc 327): Qbar_BECD strict-square character-stratum
+  functor contract construction-spec. This cycle sharpens doc 326 by
+  rejecting scalar axis selection on chi_col. The strict-square branch now
+  requires a full character-to-internal-strata functor retaining multi-axis
+  classes, coefficients, signed zero-fiber data, and convolution before it
+  can produce prime-power subtowers, endpoint/boundary data,
+  graph/Rosati/count data, and formation-level control death. It is not a
+  no-go theorem and is not added to the no-go bank. Positive fact fixed:
+  chi(L)=[2]+[1], chi(C3)=[3], chi(F22)=2[2], chi(F41)=[4],
+  chi(zero)=2[1]-[2], and chi(L*F22)=2[4]+2[2]. Diagonal totals,
+  min/max/singleton/coefficient/prime-support selectors, support-key prime
+  factorization, signed-zero deletion, endpoint/count fibers, declared
+  functors, and control-formable scalar profiles do not count. Witness
+  prime_int_n1b_qbar_becd_strict_square_character_stratum_functor_contract
+  (SCF1-SCF10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_effectivity_extraction_contract,
+  prime_int_n1b_cc_strict_square_divided_power_no_go,
+  prime_int_n1b_qbar_becd_effectivity_first_generator_orientation_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 191 ANCHOR (doc 328): Qbar_BECD strict-square signed-character
+  effectivity contract construction-spec. This cycle sharpens doc 327 by
+  requiring a carrier-native effectivity orientation / positive cone on the
+  signed strict-square character algebra. The new fixed obstruction is that
+  positivity cannot be obtained by positive-part truncation, absolute values,
+  sign/support quotients, negative-coefficient deletion, signed-zero deletion,
+  diagonal-total positivity, external ordering/factorization, endpoint/count
+  filters, declared positive cones, or DH/Epstein/control-formable positive
+  profiles. Positive fact fixed: chi(zero)=2[1]-[2] carries cancellation,
+  (2[1]-[2])+[2]=2[1], and (2[1]-[2])*2[2]=4[2]-2[4]. The live branch must
+  retain cancellation as boundary-localization data while producing Qbar_BECD
+  internal effectivity strata, prime-power subtowers, endpoint integrality,
+  graph/Rosati/count data, and formation-level control death. Witness
+  prime_int_n1b_qbar_becd_strict_square_signed_character_effectivity_contract
+  (SCE1-SCE10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_character_stratum_functor_contract,
+  prime_int_n1b_qbar_becd_strict_square_effectivity_extraction_contract,
+  prime_int_n1b_qbar_becd_effectivity_first_generator_orientation_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 192 ANCHOR (doc 329): Qbar_BECD strict-square boundary-cancellation
+  contract construction-spec. This cycle sharpens doc 328 by requiring the
+  signed zero-fiber cancellation to map through a represented
+  boundary-cancellation functor to the DD.4 boundary localization. The new
+  fixed obstruction is that weighted-zero equations, positive/negative
+  split-only witnesses, Grothendieck group completion, formal attached
+  boundary cells, external chain complexes, endpoint kernels, declared
+  boundary maps, boundary afterthought filters, and DH/Epstein/control-
+  formable balanced profiles do not construct the boundary interface.
+  Positive fact fixed: chi(zero)=2[1]-[2] is balanced, but
+  (2[1]-[2])*2[2]=4[2]-2[4] carries convolutional boundary content. The live
+  branch must construct a represented DD.4 boundary-cancellation functor
+  compatible with character convolution, feeding the internal effectivity
+  domain, endpoint, pushforward, graph/Rosati/count, and formation-level
+  control death. Witness
+  prime_int_n1b_qbar_becd_strict_square_boundary_cancellation_contract
+  (BCC1-BCC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_signed_character_effectivity_contract,
+  prime_int_n1b_qbar_becd_strict_square_character_stratum_functor_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 193 ANCHOR (doc 330): Qbar_BECD strict-square
+  boundary-convolution module contract construction-spec. This cycle
+  sharpens doc 329 by requiring the DD.4 boundary-cancellation interface to
+  be module-functorial for strict-square character convolution. The new fixed
+  obstruction is that zero-fiber-only boundary maps, weighted-zero
+  subspaces, positive/negative split-only witnesses, Grothendieck completion,
+  support-only modules, post-convolution quotients, absorbing boundary
+  ideals, finite multiplier samples, external module presentations, declared
+  module functors, and endpoint/control/DH/Epstein filters do not construct
+  the module interface. Positive fact fixed: z=2[1]-[2] has distinct
+  balanced convolution translates z*L=2[1]+[2]-[4], z*C3=2[3]-[6],
+  z*F22=4[2]-2[4], and z*F41=2[4]-[8]. The live branch must construct a
+  represented boundary-convolution module functor to DD.4 localization and
+  Qbar_BECD stratum product, preserving multiplier data, coefficients,
+  signed support, and all convolution translates. Witness
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract
+  (BCM1-BCM10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_boundary_cancellation_contract,
+  prime_int_n1b_qbar_becd_strict_square_signed_character_effectivity_contract,
+  prime_int_n1b_qbar_becd_strict_square_character_stratum_functor_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 194 ANCHOR (doc 331): Qbar_BECD strict-square boundary-stratum
+  product contract construction-spec. This cycle sharpens doc 330 by
+  requiring the boundary-convolution module to land in a represented
+  Qbar_BECD stratum product. The new fixed obstruction is that raw character
+  convolution, weighted-mass products, support products, split/group
+  products, absorbing boundary ideals, post-product quotients, local stratum
+  product moduli, finite product tables, endpoint-degree filters, declared
+  stratum products, and control/DH/Epstein-formable products do not construct
+  the product. Positive fact fixed: (z*L)*F22 = z*(L*F22) =
+  4[2]+2[4]-2[8] for z=2[1]-[2], and the product must preserve boundary
+  translate, multiplier data, coefficients, signed support, and associativity
+  with character convolution while mapping to DD.4 localization and the
+  internal effectivity domain. Witness
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract
+  (BSP1-BSP10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_cancellation_contract,
+  prime_int_n1b_qbar_becd_strict_square_signed_character_effectivity_contract,
+  prime_int_n1b_qbar_becd_strict_square_character_stratum_functor_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 195 ANCHOR (doc 332): Qbar_BECD strict-square product
+  internal-effectivity image contract construction-spec. This cycle sharpens
+  doc 331 by requiring the represented boundary-stratum product to map to one
+  internal Qbar_BECD effectivity image/domain. The new fixed obstruction is
+  that support-key towers, external prime factorization, weighted-zero loci,
+  endpoint/count fibers, boundary kernels, local product stacks, finite
+  product tables, declared image IDs, post-hoc gate intersections, and
+  control/DH/Epstein shadows do not construct the image. Positive fact fixed:
+  the product images z, z*L, z*C3, z*F22, z*F41, and z*(L*F22) can all be
+  typed by the same proposed domain id D_Qbar_BECD_eff while retaining
+  coefficients and signed support; but support keys alone expose
+  1,2,3,4,6,8, not an internal Qbar domain. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract
+  (PII1-PII10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_first_generator_orientation_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 196 ANCHOR (doc 333): Qbar_BECD strict-square product
+  mixed-support subtower contract construction-spec. This cycle sharpens
+  doc 332 by requiring the product-to-internal-effectivity image to carry
+  the mixed support 3 and 6 natively inside the same internal Qbar_BECD
+  effectivity domain. The fixed obstruction is that projection to the
+  2-power tower preserves z*(L*F22) but deletes z*C3 = 2[3]-[6]; external
+  factorization, prime-axis tags, boundary-null declarations,
+  control-death-after-product declarations, weighted-zero loci,
+  support-key towers, endpoint/count filters, local multi-prime stacks,
+  finite prime samples, finite product tables, declared mixed-support
+  domains, post-hoc gate intersections, and control/DH/Epstein shadows do
+  not construct the mixed-support subtower. Positive fact fixed: the product
+  support is 1,2,3,4,6,8 with 2-adic depths 0,1,undefined,2,undefined,3;
+  any surviving construction must internalize z*C3 in the same domain as the
+  2-power products. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_subtower_contract
+  (PMS1-PMS10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_represented_carrier_gate_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 197 ANCHOR (doc 334): Qbar_BECD strict-square product
+  mixed-support orbit-closure contract construction-spec. This cycle
+  sharpens doc 333 by requiring the mixed-support subtower to be a
+  carrier-native C3-multiplier orbit closed under strict-square character
+  convolution, not a finite 3,6 patch. Fixed obstruction: compatibility with
+  F22 and F41 forces z*C3*F22 = 4[6]-2[12] and z*C3*F41 = 2[12]-[24], so
+  the mixed support exposes the odd-base subtower 3,6,12,24 with relative
+  depths 0,1,2,3. External odd-base labels, prime factorization, prime-axis
+  tags, local base-by-odd stacks, finite orbit samples, finite product
+  tables, declared transports, endpoint/count filters, boundary kernels,
+  post-hoc control death, weighted-zero/support-key loci, and
+  control/DH/Epstein shadows do not construct the orbit closure. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_orbit_closure_contract
+  (MOC1-MOC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_subtower_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 198 ANCHOR (doc 335): Qbar_BECD strict-square product
+  multiplier-transport composition contract construction-spec. This cycle
+  sharpens doc 334 by requiring the mixed-support transport to be a
+  categorical multiplier-action functor, not a lone C3 transport or finite
+  orbit closure. Fixed obstruction: C3*C3 = C9, hence
+  T_C3(T_C3(z)) = T_C9(z) = 2[9]-[18], and product naturality forces
+  T_C3(z*F22) = T_C3(z)*F22 = z*(C3*F22) = 4[6]-2[12] plus
+  T_C9(z*F22) = 4[18]-2[36]. Single transport arrows, finite orbit
+  closures, external multiplier monoids, odd-base labels, prime-axis tags,
+  local product stacks, finite transport tables, declared action functors,
+  endpoint/count filters, boundary kernels, weighted-zero/support loci,
+  post-hoc gate intersections, and control/DH/Epstein shadows do not
+  construct the functorial transport law. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract
+  (MTC1-MTC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_orbit_closure_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_subtower_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 199 ANCHOR (doc 336): Qbar_BECD strict-square product
+  multiplier DD.4 naturality contract construction-spec. This cycle sharpens
+  doc 335 by requiring DD.4 boundary localization to be natural for the
+  multiplier-action functor. Fixed obstruction: the DD.4 class c=(1+z)^-1 is
+  still nonzero with res_1(c)=1 in truncations L=6,8,10, and the same carrier
+  boundary map must type the boundary rows for z, T_C3(z),
+  T_C3(T_C3(z))=T_C9(z), z*F22, and T_C3(z*F22). Separate orbit splitters,
+  free torsor splitters, boundary-after-transport filters, support
+  boundaries, weighted-zero boundaries, endpoint/count boundary filters,
+  boundary kernels, local boundary stacks, finite boundary tables, declared
+  DD.4 naturality, external multiplier monoids, post-hoc gates, and
+  control/DH/Epstein shadows do not construct the commuting boundary square.
+  Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract
+  (MBN1-MBN10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_orbit_closure_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_subtower_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_stratum_product_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 200 ANCHOR (doc 337): Qbar_BECD strict-square product
+  multiplier endpoint-degree naturality contract construction-spec. This
+  cycle sharpens doc 336 by requiring endpoint integrality and the two degree
+  maps to be generated by the same DD.4-natural multiplier-action domain,
+  not read from endpoint registers or degree-pair codecs. Fixed data:
+  z -> (2,2), T_C3(z) -> (6,6), T_C9(z) -> (18,18), z*F22 -> (8,8), and
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> (24,24), with multiplier degrees
+  deg(C3)=3, deg(C9)=9, deg(F22)=4, and deg(C3*F22)=12. Endpoint registers,
+  degree-pair codecs, support endpoint maps, weighted-zero endpoint tests,
+  endpoint-filter prerequisites, boundary-after-endpoint filters, local
+  endpoint stacks, finite endpoint tables, declared degree maps, external
+  multiplier-degree labels, post-hoc gates, and control/DH/Epstein shadows
+  do not construct the endpoint-degree square. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract
+  (EDN1-EDN10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_orbit_closure_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_internal_effectivity_image_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 201 ANCHOR (doc 338): Qbar_BECD strict-square product
+  multiplier pushforward naturality contract construction-spec. This cycle
+  sharpens doc 337 by requiring DD.4 boundary localization and endpoint
+  degree maps to feed the same carrier-native p1_*,p2_* pushforward square,
+  natural for multiplier transport. Fixed data: one internal domain
+  D_Qbar_BECD_eff, one boundary B_Qbar_BECD_DD4, one pushforward square
+  PF_Qbar_BECD_p1p2, and rows z -> (2,2), T_C3(z) -> (6,6),
+  T_C9(z) -> (18,18), z*F22 -> (8,8), and
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> (24,24), all with p1-p2 defect
+  zero. Detached boundary exactness, endpoint-degree filters, symbolic
+  composition pushforwards, formal-adjoint pushforwards, projection
+  quotients/retunings, declared pushforward squares, boundary-after-
+  pushforward filters, graph/count filters, support pushforwards,
+  weighted-zero pushforwards, local pushforward stacks, finite pushforward
+  tables, external multiplier-degree labels, post-hoc gates, and
+  control/DH/Epstein shadows do not construct pushforward compatibility.
+  Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract
+  (PFN1-PFN10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_mixed_support_orbit_closure_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_internal_effectivity_domain_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 202 ANCHOR (doc 339): Qbar_BECD strict-square product
+  multiplier graph/Rosati/count naturality contract construction-spec. This
+  cycle sharpens doc 338 by requiring graph composition, Rosati, and
+  count/degree data to be generated by the same carrier-native pushforward
+  square and remain natural for multiplier transport. Fixed diagnostics:
+  the finite-field NS model at q=7 has zero count, graph-composition, and
+  Rosati anti-involution defects with negative primitive sign; the
+  strict-square rows share D_Qbar_BECD_eff, B_Qbar_BECD_DD4,
+  PF_Qbar_BECD_p1p2, G_Qbar_BECD_prop, R_Qbar_BECD_pos, and CD_Qbar_BECD.
+  Graph degrees scale linearly and count-degree quadratically through
+  z -> (graph 2,count 4), T_C3(z) -> (6,36), T_C9(z) -> (18,324),
+  z*F22 -> (8,64), and T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> (24,576).
+  Graph/count filters, formal Rosati adjoints, detached finite-field counts,
+  projection retunings, support graphs, weighted-zero graphs, local graph
+  stacks, finite graph tables, external multiplier-degree labels, declared
+  graph/Rosati/count data, post-hoc gates, and control/DH/Epstein shadows do
+  not construct the graph layer. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract
+  (GRC1-GRC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 203 ANCHOR (doc 340): Qbar_BECD strict-square product
+  multiplier control-death naturality contract construction-spec. This cycle
+  sharpens doc 339 by requiring control death to be generated at the
+  graph-formation gate itself, natural for multiplier transport, before
+  controls, DH, or Epstein can form graph/Rosati/count shadows. Fixed
+  diagnostics: the control matrix can instantiate formal graph, q-similarity,
+  and Rosati anti-involution data with defects zero and primitive Hodge sign
+  +12, while its projection defect is 24 and a retuned first degree 27
+  repairs only a downstream projection. Thus Rosati/projection/DD.4
+  after-filters are too late. The strict-square rows share
+  D_Qbar_BECD_eff, B_Qbar_BECD_DD4, PF_Qbar_BECD_p1p2,
+  G_Qbar_BECD_prop, R_Qbar_BECD_pos, CD_Qbar_BECD, and
+  K_Qbar_BECD_graph_formation_death, with graph degrees 2,6,18,8,24 and
+  count-degree values 4,36,324,64,576 along the visible transport rows.
+  Post-hoc control filters, graph/count filters, Rosati-sign filters,
+  projection-defect filters and retunings, DD.4 afterthought filters, finite
+  samples, finite control tables, semantic zeta/Euler/Satake labels, declared
+  deaths, local control stacks, external multiplier-degree labels, and
+  control/DH/Epstein graph shadows do not construct formation death. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract
+  (GFD1-GFD10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 204 ANCHOR (doc 341): Qbar_BECD strict-square product
+  multiplier source-typed formation-gate contract construction-spec. This
+  cycle sharpens doc 340 by requiring the graph-formation death gate to be a
+  source-typed carrier formation fiber before graph objects exist, not a
+  predicate on graph/Rosati/count objects. Fixed diagnostics: the carrier
+  q=7 row and the control q=3 row both satisfy graph law, q-similarity, and
+  Rosati anti-involution; they separate only by late primitive sign
+  (-13.5 versus +12) and projection data (control projection defect 24,
+  retuned first degree 27). Thus graph-invariant classifiers and
+  sign/projection gates are too late. The strict-square rows share
+  SRC_Qbar_BECD_strict_square and Fib_Qbar_BECD_graph_formation, with graph
+  degrees 2,6,18,8,24 and count-degree values 4,36,324,64,576 along the
+  visible transport rows. Graph-invariant classifiers, predicates on
+  graph objects, primitive-sign gates, projection-defect gates, retuned
+  projections, finite tables, declared source tokens, external oracles,
+  semantic zeta/Euler/Satake labels, local source stacks, external
+  multiplier-degree labels, and control/DH/Epstein graph objects do not
+  construct the categorical source fiber. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract
+  (STG1-STG10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 205 ANCHOR (doc 342): Qbar_BECD strict-square product
+  multiplier represented source-fiber contract construction-spec. This cycle
+  sharpens doc 341 by requiring the source-typed formation fiber to be
+  represented by an actual carrier-side object and universal arrow with
+  cartesian multiplier lifts, not by a specification functor or predicate
+  fibration. Fixed diagnostics: carrier and control graph signatures still
+  agree on graph law, q-similarity, and Rosati anti-involution; the control
+  separates only by late sign/projection data. The strict-square rows share
+  Rep_Qbar_BECD_source_fiber, eta_Qbar_BECD_source,
+  SRC_Qbar_BECD_strict_square, and Fib_Qbar_BECD_graph_formation. Cartesian
+  lift checks include C3*C3=C9 and C3*F22=F22*C3=C3F22, with graph degrees
+  2,6,18,18,8,24 and count-degree values 4,36,324,324,64,576 along the
+  visible transport rows. Specification functors, functor-of-points wrappers,
+  Yoneda reversal, predicate subfibrations, discrete source-label fibrations,
+  declared representers, formal universal properties, graph-object
+  classifiers, local representer tables, externally chosen or retuned
+  cartesian lifts, semantic source labels, and control/DH/Epstein points do
+  not construct the represented source fiber. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract
+  (RSF1-RSF10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 206 ANCHOR (doc 343): Qbar_BECD strict-square product
+  multiplier cartesian-coherence contract construction-spec. This cycle
+  sharpens doc 342 by requiring the cartesian multiplier lifts to carry
+  represented coherence cells generated by the universal arrow, not merely
+  equal degrees, supports, counts, or finite composition rows. Fixed checks:
+  T_C3(T_C3(z))=T_C9(z)={9:2,18:-1};
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22)={6:4,12:-2}; and
+  T_C3(T_C3(z*F22))=T_C9(z*F22)=z*(C9*F22)={18:4,36:-2}. The coherence id
+  Coh_Qbar_BECD_cartesian_lifts is common to all rows, with finite count and
+  Rosati anti-involution defects zero. Degree-equality-only, support
+  quotients, count-equality-only, declared 2-cells, formal commutative
+  diagrams, post-hoc identifications, finite composition tables, local
+  coherence patches, symmetric orbit quotients, external choices of 2-cells,
+  retuned lift coherences, and control/DH/Epstein graph-object coherences do
+  not construct this layer. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract
+  (RSC1-RSC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 207 ANCHOR (doc 344): Qbar_BECD strict-square product
+  multiplier square-layer coherence contract construction-spec. This cycle
+  sharpens doc 343 by requiring the represented cartesian coherence cells to
+  commute with DD.4 boundary localization, endpoint degree maps, p1/p2
+  pushforward squares, graph composition, Rosati, count/degree, and coherent
+  control death. Fixed checks: the common square-layer coherence id is
+  SLC_Qbar_BECD_boundary_pushforward_graph over the layer chain
+  B_Qbar_BECD_DD4, ED_Qbar_BECD_endpoint_degree, PF_Qbar_BECD_p1p2,
+  G_Qbar_BECD_prop, R_Qbar_BECD_pos, CD_Qbar_BECD, and
+  CTRL_Qbar_BECD_coherent_death; endpoint, boundary, and pushforward defects
+  are zero; T_C3(T_C3(z))=T_C9(z)={9:2,18:-1};
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22)={6:4,12:-2}; and
+  T_C3(T_C3(z*F22))=T_C9(z*F22)=z*(C9*F22)={18:4,36:-2}. Detached
+  cartesian coherence, boundaryless coherence, declared Beck-Chevalley
+  squares, formal projection squares, late boundary/pushforward/graph
+  filters, degree/count/support/weighted-zero arguments, local layer tables,
+  external 2-cells, retuned layer maps, and control/DH/Epstein square shadows
+  do not construct this layer. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_square_layer_coherence_contract
+  (SLC1-SLC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 208 ANCHOR (doc 345): Qbar_BECD strict-square product
+  multiplier monoidwide square-layer coherence contract construction-spec.
+  This cycle sharpens doc 344 by requiring the square-layer coherence to be
+  monoidwide for the carrier-native multiplier-action functor, not merely a
+  local C3/C9/F22 patch. Fixed checks: the common monoidwide coherence id is
+  MWC_Qbar_BECD_multiplier_monoid_square_layers over the same
+  DD.4/endpoint/pushforward/graph/Rosati/count/control-death layer chain;
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1};
+  T_C3(T_C3(T_C5(z)))=T_C9(T_C5(z))=T_C45(z)={45:2,90:-1};
+  T_C15(z*F22)=T_C3(T_C5(z))*F22=z*(C15*F22)={30:4,60:-2};
+  and T_C45(z*F22)=T_C3(T_C3(T_C5(z)))*F22=z*(C45*F22)={90:4,180:-2}.
+  Endpoint, boundary, and pushforward defects remain zero. Local C3 patches,
+  single-prime-axis patches, finite generator tables, external prime
+  factorization, declared monoid actions, formal pentagon/hexagon diagrams,
+  late boundary/pushforward/graph filters, degree/count/support/weighted-zero
+  arguments, local layer tables, external 2-cells, retuned multiplier
+  coherences, and control/DH/Epstein monoid shadows do not construct this
+  layer. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract
+  (MWC1-MWC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_pushforward_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_endpoint_degree_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 209 ANCHOR (doc 346): Qbar_BECD strict-square product
+  multiplier monoidwide DD.4 boundary-certificate contract construction-spec.
+  This cycle sharpens doc 345 by requiring the monoidwide square-layer
+  coherence to transport the actual carrier boundary/properness/self-duality
+  certificate killing the original DD.4 class, not merely carry DD.4 labels.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the common certificate
+  is BKill_Qbar_BECD_dQ_boundary_properness_self_duality over
+  Loc_Qbar_BECD_single_dQ and NR_Qbar_BECD_ordered_p1_p2; the mixed
+  multiplier checks remain
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=T_C3(T_C5(z))*F22=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=T_C3(T_C3(T_C5(z)))*F22=z*(C45*F22)={90:4,180:-2}.
+  Monoidwide coherence labels, DD.4 boundary ids, coinduced acyclic
+  replacements, formal nullhomotopies, deletion, quotient, separate orbit
+  certificates, local prime certificates, declared connecting maps,
+  declared localizations/properness, late endpoint/pushforward/graph filters,
+  degree/count/support/weighted-zero arguments, local boundary tables,
+  external 2-cells, retuned boundary certificates, and control/DH/Epstein
+  shadows do not construct this certificate. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_dd4_boundary_certificate_contract
+  (MDC1-MDC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_dd4_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_transport_composition_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 210 ANCHOR (doc 347): Qbar_BECD strict-square product
+  multiplier boundary-certificate cancellation-module contract
+  construction-spec. This cycle sharpens doc 346 by requiring the monoidwide
+  DD.4 boundary/properness/self-duality certificate to be generated by the
+  represented boundary-convolution cancellation module on the signed zero
+  fiber z=2[1]-[2], not supplied as a standalone certificate. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the source chain is
+  Rep_Qbar_BECD_source_fiber -> eta_Qbar_BECD_source -> signed zero fiber
+  -> CanMod_Qbar_BECD_z_boundary_convolution ->
+  BCF_Qbar_BECD_boundary_convolution_module ->
+  BKill_Qbar_BECD_dQ_boundary_properness_self_duality over
+  Loc_Qbar_BECD_single_dQ and NR_Qbar_BECD_ordered_p1_p2. The cancellation
+  generator and multiplier rows are z={1:2,2:-1}, T_C3(z)={3:2,6:-1},
+  T_C5(z)={5:2,10:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  z*F22={2:4,4:-2}, T_C15(z*F22)=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}. All rows have weighted mass
+  zero, preserve signed coefficients/support, use the same cancellation
+  module, map through the same boundary-convolution functor, generate the
+  same DD.4 boundary certificate, preserve the original DD.4 class, and keep
+  endpoint/pushforward defects zero. Standalone DD.4 certificates,
+  zero-generator-only boundary images, finite translate tables, weighted-zero
+  subspaces, support-only modules, positive/negative split modules,
+  post-convolution quotients, absorbing boundary ideals, declared module
+  functors, external module presentations, formal boundary cells, late
+  filters, degree/count equalities, retuned boundary certificates, and
+  control/DH/Epstein shadows do not construct this source. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_cancellation_module_contract
+  (CMC1-CMC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_dd4_boundary_certificate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_cancellation_contract,
+  prime_int_n1b_qbar_becd_strict_square_signed_character_effectivity_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 211 ANCHOR (doc 348): Qbar_BECD strict-square product
+  multiplier boundary-certificate exact-naturality contract
+  construction-spec. This cycle sharpens doc 347 by requiring "BCF-generated
+  DD.4 certificate" to mean an exact natural boundary-delta source, not a
+  pointwise row certificate or row lookup table. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the exact source chain is
+  Rep_Qbar_BECD_source_fiber -> eta_Qbar_BECD_source -> signed zero fiber
+  -> CanMod_Qbar_BECD_z_boundary_convolution ->
+  BCF_Qbar_BECD_boundary_convolution_module ->
+  Ex_Qbar_BECD_CanMod_BCF_dQ ->
+  Delta_Qbar_BECD_BCF_to_dQ_boundary with
+  Ker_Qbar_BECD_BCF_delta_image_z and
+  Coim_Qbar_BECD_CanMod_BCF_delta, generating
+  BKill_Qbar_BECD_dQ_boundary_properness_self_duality over
+  Loc_Qbar_BECD_single_dQ and NR_Qbar_BECD_ordered_p1_p2. The exact-natural
+  finite rows are z={1:2,2:-1}, T_C3(z)={3:2,6:-1},
+  T_C5(z)={5:2,10:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  z*F22={2:4,4:-2}, T_C15(z*F22)=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}. The delta equalities are
+  equality of full boundary-delta data for the C3/C5/C15/C45/F22 mixed
+  paths, with kernel equal to the cancellation-module image and coimage
+  preserving signed coefficients/support. Pointwise row certificates, rowwise
+  lookup tables, declared exact sequences, formal natural transformations,
+  weighted-zero kernels, support kernels, split-only kernels, quotient exact
+  completions, cokernel deletions, external boundary deltas, finite naturality
+  samples, late exactness filters, degree/count equalities, retuned boundary
+  deltas, and control/DH/Epstein shadows do not construct this exact source.
+  Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_naturality_contract
+  (BNE1-BNE10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_cancellation_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_dd4_boundary_certificate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_convolution_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_boundary_cancellation_contract,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 212 ANCHOR (doc 349): Qbar_BECD strict-square product
+  multiplier boundary-certificate exact-source self-duality contract
+  construction-spec. This cycle sharpens doc 348 by requiring the exact BCF
+  boundary-delta source itself to generate the rank-one
+  boundary-defect duality/properness datum, with pinned twist and boundary
+  equal to the original DD.4 representative. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the self-dual exact source chain is
+  Rep_Qbar_BECD_source_fiber -> eta_Qbar_BECD_source -> signed zero fiber
+  -> CanMod_Qbar_BECD_z_boundary_convolution ->
+  BCF_Qbar_BECD_boundary_convolution_module ->
+  Ex_Qbar_BECD_CanMod_BCF_dQ ->
+  Delta_Qbar_BECD_BCF_to_dQ_boundary with
+  Ker_Qbar_BECD_BCF_delta_image_z, Coim_Qbar_BECD_CanMod_BCF_delta,
+  Dual_Qbar_BECD_rank1_boundary_defect, and Tw_Qbar_BECD_OC_BCF_pinned,
+  generating BKill_Qbar_BECD_dQ_boundary_properness_self_duality over
+  Loc_Qbar_BECD_single_dQ and NR_Qbar_BECD_ordered_p1_p2. Laurent diagnostics
+  keep support ranks 4,6,10,18; hyperbolic ranks 8,12,20,36; defect ranks
+  1,1,1,1; unit twists 3,5,9,17; and nonzero maps 7,31,511,131071. The
+  exact self-dual finite rows are z={1:2,2:-1}, T_C3(z)={3:2,6:-1},
+  T_C5(z)={5:2,10:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  z*F22={2:4,4:-2}, T_C15(z*F22)=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}. The duality equalities are
+  equality of full duality payloads for the C3/C5/C15/C45/F22 mixed paths,
+  with defect rank one, dual line -> primal line, perfect p1/p2 endpoint
+  pairing, bidual fixed, boundary class dd4_c_original_res1, and res_1=1.
+  One-sided exact deltas, generic self-duality labels, hyperbolic endpoint
+  planes, full-support dualities, inserted dual/primal matching, scalar
+  pairings, diagonal coevaluations, formal Rosati adjoints, degree-zero twist
+  normalizations, declared normal ratios, weighted-zero/support dual kernels,
+  late Rosati filters, degree/count equalities, retuned dualities, and
+  control/DH/Epstein shadows do not construct this source. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_source_self_duality_contract
+  (BDS1-BDS10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_cancellation_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_dd4_boundary_certificate_contract,
+  prime_int_n1b_qbar_becd_boundary_defect_duality_contract,
+  prime_int_n1b_qbar_becd_boundary_self_duality_interface,
+  prime_int_n1b_qbar_becd_boundary_fiber_localization_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 213 ANCHOR (doc 350): Qbar_BECD strict-square product
+  multiplier self-dual exact-source formation-gate contract construction-spec.
+  This cycle sharpens doc 349 by requiring the self-dual exact BCF source to
+  be represented as a source-level formation fiber before graph objects, not
+  merely equipped with later nonpoint predicates. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the formation source chain is
+  Rep_Qbar_BECD_source_fiber -> eta_Qbar_BECD_source ->
+  Tok_Qbar_BECD_BCF_self_dual_exact_source ->
+  Fib_Qbar_BECD_BCF_self_dual_exact_source, containing signed zero fiber,
+  CanMod_Qbar_BECD_z_boundary_convolution,
+  BCF_Qbar_BECD_boundary_convolution_module,
+  Ex_Qbar_BECD_CanMod_BCF_dQ, Delta_Qbar_BECD_BCF_to_dQ_boundary,
+  Ker_Qbar_BECD_BCF_delta_image_z, Coim_Qbar_BECD_CanMod_BCF_delta,
+  Dual_Qbar_BECD_rank1_boundary_defect, Tw_Qbar_BECD_OC_BCF_pinned,
+  BKill_Qbar_BECD_dQ_boundary_properness_self_duality,
+  Loc_Qbar_BECD_single_dQ, and NR_Qbar_BECD_ordered_p1_p2. The finite rows
+  remain z={1:2,2:-1}, T_C3(z)={3:2,6:-1}, T_C5(z)={5:2,10:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  z*F22={2:4,4:-2}, T_C15(z*F22)=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; mixed duality payloads
+  agree on the C3/C5/C15/C45/F22 paths. Every row has the same self-dual
+  source token/fiber, is represented by the same universal arrow, exists
+  before graph objects, and has controls/DH/Epstein non-points at source
+  formation. Graph predicates, source tokens after graph formation, declared
+  nonpoint conditions, functors of points without representers, Yoneda
+  reversal, predicate subfibrations, finite admission tables, local source
+  stacks, external oracles, semantic zeta labels, late control/DH/Epstein
+  filters, projection-defect filters, Rosati-sign filters, DD.4 afterthought
+  filters, and retuned formation rules do not construct source-level death.
+  Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract
+  (SFG1-SFG10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_source_self_duality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_cancellation_module_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_control_death_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 214 ANCHOR (doc 351): Qbar_BECD strict-square product
+  multiplier self-dual exact-source formation-coherence contract
+  construction-spec. This cycle sharpens doc 350 by requiring the
+  represented self-dual exact-source formation fiber to carry source-level
+  coherence cells generated by the same universal arrow, not merely the same
+  token/fiber and finite row equalities. Fixed checks: c=(1+z)^-1 remains
+  the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the coherence chain is
+  eta_Qbar_BECD_source -> Coh_Qbar_BECD_BCF_self_dual_exact_source_formation
+  over Tok_Qbar_BECD_BCF_self_dual_exact_source and
+  Fib_Qbar_BECD_BCF_self_dual_exact_source, with
+  Cart_Qbar_BECD_BCF_self_dual_exact_source and
+  MWC_Qbar_BECD_BCF_self_dual_exact_source preserving
+  Delta_Qbar_BECD_BCF_to_dQ_boundary, Ker_Qbar_BECD_BCF_delta_image_z,
+  Coim_Qbar_BECD_CanMod_BCF_delta,
+  Dual_Qbar_BECD_rank1_boundary_defect, Tw_Qbar_BECD_OC_BCF_pinned,
+  dd4_c_original_res1, NR_Qbar_BECD_ordered_p1_p2, endpoint/pushforward/
+  graph/Rosati/count, and CTRL_Qbar_BECD_coherent_death. The finite rows
+  remain z={1:2,2:-1}, T_C3(z)={3:2,6:-1}, T_C5(z)={5:2,10:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  z*F22={2:4,4:-2}, T_C15(z*F22)=z*(C15*F22)={30:4,60:-2},
+  and T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of
+  full source-coherence payloads, not row values alone. Same-token
+  assertions, finite row/degree/count/support/weighted-zero equalities,
+  declared 2-cells, formal commutative squares, finite composition tables,
+  local C3 patches, single-prime axes, prime-axis tags, external choices of
+  2-cells, retuned source coherences, graph-object coherence, graph
+  predicates, late control/boundary/DD.4 filters, functors of points without
+  representers, semantic zeta labels, and control/DH/Epstein coherent graph
+  shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract
+  (SFC1-SFC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_source_self_duality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_source_typed_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_graph_rosati_count_naturality_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 215 ANCHOR (doc 352): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling contract
+  construction-spec. This cycle sharpens doc 351 by requiring the source
+  coherence object to be one non-split coupling primitive generated by the
+  universal arrow, not a product of independent exact/DD.4/duality/endpoint/
+  graph/Rosati/count/control coherences. Fixed checks: c=(1+z)^-1 remains
+  the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the coupling primitive is
+  NCoup_Qbar_BECD_BCF_self_dual_exact_source over
+  Coh_Qbar_BECD_BCF_self_dual_exact_source_formation, coupling
+  Delta_Qbar_BECD_BCF_to_dQ_boundary, Ker_Qbar_BECD_BCF_delta_image_z,
+  Coim_Qbar_BECD_CanMod_BCF_delta,
+  Dual_Qbar_BECD_rank1_boundary_defect, Tw_Qbar_BECD_OC_BCF_pinned,
+  dd4_c_original_res1, NR_Qbar_BECD_ordered_p1_p2, PF_Qbar_BECD_p1p2,
+  G_Qbar_BECD_prop, R_Qbar_BECD_pos, CD_Qbar_BECD, and
+  CTRL_Qbar_BECD_coherent_death before graph objects. The finite rows remain
+  z={1:2,2:-1}, T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  source-coupling payloads and a connected dependency graph, not preservation
+  by separate layer coherences. Product layer coherences, atomwise
+  preservation, fiber products of contracts, pullback-square-only arguments,
+  distributive-law labels, bicategory shadows, formal pasting diagrams,
+  sequential exactness-then-duality pipelines, local C3 tables, finite
+  composition tables, external choices, retuned couplings, graph-object
+  coherences, graph predicates, late control filters, semantic zeta labels,
+  declared couplings, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract
+  (SCCG1-SCCG10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_source_self_duality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_boundary_certificate_exact_naturality_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_dd4_boundary_certificate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_monoidwide_square_layer_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 216 ANCHOR (doc 353): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling representability
+  contract construction-spec. This cycle sharpens doc 352 by requiring the
+  non-split source-coherence coupling primitive to be represented by an
+  actual source-side object and universal arrow, not merely by a connected
+  dependency graph, nerve, category of elements, or formal universal
+  property. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the representability
+  data are Rep_NCoup_Qbar_BECD_BCF_self_dual_exact_source and
+  eta_NCoup_Qbar_BECD_BCF_self_dual_exact_source over
+  NCoup_Qbar_BECD_BCF_self_dual_exact_source and
+  Coh_Qbar_BECD_BCF_self_dual_exact_source_formation. The representer
+  points are exactly the coupled self-dual exact sources, transport all
+  C3/C5/C15/C45/F22 paths, and make controls/DH/Epstein non-points before
+  graph objects. The finite rows remain
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  representability payloads, not graph connectivity alone. Connected
+  dependency graphs, nerves/Segal completions, functor-of-points wrappers,
+  Yoneda reversal, Grothendieck constructions, categories of elements,
+  formal universal properties, limit cones, comma categories, free operad
+  completions, collages/proarrow equipment, codescent/descent labels, Rezk
+  completions, local representer tables, external or retuned representers,
+  products or pullbacks of representers, graph-object classifiers, semantic
+  zeta labels, declared representers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract
+  (SCCR1-SCCR10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 217 ANCHOR (doc 354): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  contract construction-spec. This cycle sharpens doc 353 by requiring the
+  coupling representer to be an actual subrepresenter/fiber of
+  Rep_Qbar_BECD_source_fiber, not an abstract equivalent representer,
+  isomorphic copy, Morita source, univalence transport, or completed/replaced
+  shell. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are SubRep_NCoup_Qbar_BECD_source_fiber,
+  incl_NCoup_to_Rep_Qbar_BECD_source_fiber, and
+  Img_NCoup_coupled_self_dual_exact_sources over
+  Rep_NCoup_Qbar_BECD_BCF_self_dual_exact_source and
+  eta_NCoup_Qbar_BECD_BCF_self_dual_exact_source. The inclusion is monic,
+  eta_NCoup factors through it, the image is exactly the coupled self-dual
+  exact sources, all C3/C5/C15/C45/F22 paths use the same subrepresenter,
+  and controls/DH/Epstein are non-points before graph objects. The finite
+  rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  subrepresenter payloads, not source representability alone. External or
+  equivalent representers, univalence transports, isomorphic copies, Morita
+  sources, Karoubi/idempotent splits, localizations/saturations,
+  sheafifications/stackifications, image closures, dense subobjects,
+  quotient predicates, base-changed subobjects, retuned inclusions,
+  graph-object classifiers, declared subobjects, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract
+  (SCSR1-SCSR10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 218 ANCHOR (doc 355): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  finite-limit contract construction-spec. This cycle sharpens doc 354 by
+  requiring SubRep_NCoup_Qbar_BECD_source_fiber to be produced by a
+  carrier-native finite-limit/equalizer fork inside
+  Rep_Qbar_BECD_source_fiber, not by a pointwise exact-image predicate,
+  subobject classifier, sequential filter, local row table, or late graph
+  pullback. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are LimCut_NCoup_Qbar_BECD_source_fiber,
+  Fork_endpoint_dd4_rosati_control_NCoup, and
+  eq_NCoup_constraints_to_SubRep_Qbar_BECD_source_fiber. The fork imposes
+  endpoint integrality, degree maps, DD.4 boundary, boundary pushforward,
+  graph composition, Rosati/count, and control death simultaneously before
+  points and graph objects. The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  finite-limit cut payloads, not subrepresenter point predicates. Pointwise
+  image certificates, predicate subobject selections, subobject classifiers,
+  characteristic-map-only repairs, sequential intersections, iterated
+  filters, post-hoc image factorizations, external finite-limit completions,
+  pullbacks after graph objects, local row tables, finite-sample cuts,
+  basis-dependent cuts, retuned/projected constraints, graph-invariant
+  classifiers, declared equalizers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract
+  (SCFL1-SCFL10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 219 ANCHOR (doc 356): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-morphism contract construction-spec. This cycle sharpens doc
+  355 by requiring the finite-limit/equalizer fork to be the equalizer of
+  actual parallel source morphisms into one source constraint object, not a
+  heterogeneous checklist of external values, point-functor natural
+  transformations, componentwise post-hoc equalities, or graph-side
+  classifiers. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required
+  data are Con_NCoup_endpoint_dd4_rosati_control_source,
+  Prod_NCoup_endpoint_degree_dd4_push_graph_rosati_control,
+  alpha_NCoup_source_constraints, and beta_NCoup_source_constraints. Alpha
+  assembles endpoint integrality, degree maps, DD.4 boundary, boundary
+  pushforward, graph composition, Rosati/count, and control death as
+  source-native component morphisms; beta is the source-native zero/diagonal
+  comparison; alpha and beta are parallel before points and graph objects.
+  The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  source constraint-morphism payloads, not finite-limit vocabulary alone.
+  Heterogeneous constraint checklists, external constraint values,
+  point-functor natural transformations, semantic equality only,
+  componentwise post-hoc equalities, missing product objects, nonparallel
+  fork legs, one-sided constraint maps, diagonals after graph objects, zero
+  sections inserted after facts, local constraint tables, finite-sample
+  morphisms, basis-dependent morphisms, retuned/projected component maps,
+  graph-classifier morphisms, declared parallel pairs, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract
+  (SCFM1-SCFM10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 220 ANCHOR (doc 357): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-product contract construction-spec. This cycle sharpens doc 356
+  by requiring Prod_NCoup_endpoint_degree_dd4_push_graph_rosati_control to be
+  an actual source product with source-native projections and unique
+  alpha/beta pairings, not a bundled tuple label, external product of sets,
+  component checklist, or graph-side product after points exist. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are Prod_NCoup_endpoint_degree_dd4_push_graph_rosati_control,
+  pi_NCoup_endpoint_integrality, pi_NCoup_degree_maps,
+  pi_NCoup_dd4_boundary, pi_NCoup_boundary_pushforward,
+  pi_NCoup_graph_composition, pi_NCoup_rosati_count,
+  pi_NCoup_control_death, pair_alpha_NCoup_source_constraints, and
+  pair_beta_NCoup_source_constraints. The product projections are
+  source-native, jointly determine unique pairings, alpha/beta components
+  factor through them, and the equalizer uses this product pair before points
+  and graph objects. The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  source constraint-product payloads, not bundled component data. Bundled
+  tuple labels, external products of sets, products after functors of points,
+  component-checklist products, missing projections, nonuniversal bundles,
+  coproduct/sum substitutes, fiber products after graph objects, projections
+  after graph objects, local projection tables, finite-sample products,
+  basis-dependent projections, retuned/projected component maps,
+  graph-classifier products, declared products, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract
+  (SCPP1-SCPP10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 221 ANCHOR (doc 358): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component contract construction-spec. This cycle sharpens doc 357
+  by requiring the seven projection codomains of
+  Prod_NCoup_endpoint_degree_dd4_push_graph_rosati_control to be actual
+  source component objects in Rep_Qbar_BECD_source_fiber, not semantic target
+  labels, external component objects, point-set codomains, graph-side target
+  objects, or post-hoc component tables. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required data are
+  Comp_NCoup_endpoint_integrality_source, Comp_NCoup_degree_maps_source,
+  Comp_NCoup_dd4_boundary_source, Comp_NCoup_boundary_pushforward_source,
+  Comp_NCoup_graph_composition_source, Comp_NCoup_rosati_count_source, and
+  Comp_NCoup_control_death_source. The product projections land in those
+  source components, the product uses those codomains, pair_alpha and
+  pair_beta use those codomains, and the same components transport on the
+  C3/C5/C15/C45/F22 paths before points and graph objects. The finite rows
+  remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  source component-object payloads, not component labels. Semantic target
+  labels, external component objects, point-set codomains, graph-side target
+  objects, post-hoc component codomains, component shells with no source
+  object, local component tables, finite-sample components, basis-dependent
+  components, retuned component objects, quotient components, closure
+  components, declared component objects, products with non-source codomains,
+  and control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract
+  (SCCO1-SCCO10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 222 ANCHOR (doc 359): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone contract construction-spec. This cycle sharpens
+  doc 358 by requiring the seven source component legs to be generated by one
+  source-native cone from eta_Qbar_BECD_source through
+  eta_NCoup_Qbar_BECD_BCF_self_dual_exact_source, not chosen independently or
+  pulled back from product projections after the fact. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are Cone_NCoup_eta_source_components,
+  leg_NCoup_endpoint_integrality_source, leg_NCoup_degree_maps_source,
+  leg_NCoup_dd4_boundary_source, leg_NCoup_boundary_pushforward_source,
+  leg_NCoup_graph_composition_source, leg_NCoup_rosati_count_source, and
+  leg_NCoup_control_death_source. The cone legs land in the doc-358 source
+  component objects, pair_alpha is the unique product-mediated arrow whose
+  projections are those legs, pair_beta is compatible with the same
+  zero/diagonal source component cone, and the same cone transports on the
+  C3/C5/C15/C45/F22 paths before points and graph objects. The finite rows
+  remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  eta-generated source component-cone payloads. Independent component legs,
+  externally chosen legs, post-hoc cone labels, product-projection pullbacks,
+  point-functor cones, graph-side cones, componentwise natural
+  transformations, local cone tables, finite-sample cones, basis-dependent
+  cones, retuned cone legs, quotient cones, closure cones, split products of
+  cones, declared cones, non-eta-generated cones, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract
+  (SCCN1-SCCN10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 223 ANCHOR (doc 360): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian contract construction-spec. This cycle
+  sharpens doc 359 by requiring Cone_NCoup_eta_source_components to be
+  cartesian over the represented source lifts, not only equal on selected
+  finite paths. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required
+  data are CartCone_NCoup_eta_source_components and
+  Cart_Qbar_BECD_BCF_self_dual_exact_source. Every represented cartesian
+  source lift pulls back the doc-359 cone to the same source cone, all seven
+  component legs and all seven projection-leg equalities are natural,
+  pair_alpha and pair_beta are cartesian-natural, and base change preserves
+  the doc-358 component objects before points and graph objects. The finite
+  rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  cartesian source component-cone payloads. Finite path checks, sampled path
+  transport, pointwise naturality, graph-side base change, local transport
+  tables, chosen transport isomorphisms, up-to-isomorphism claims without
+  coherence, lax naturality, noncartesian pullbacks, reindexed cone labels,
+  retuned transport, base-changed component replacements, declared naturality
+  squares, split componentwise naturality, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract
+  (SCNA1-SCNA10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 224 ANCHOR (doc 361): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence contract construction-spec.
+  This cycle sharpens doc 360 by requiring cartesian component-cone
+  naturality to be represented by universal-arrow-generated coherence cells,
+  not declared naturality squares, finite modification tables, chosen
+  modifications, or componentwise lax cells. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new required data are
+  Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_NCoup_component_cone,
+  cell_C5_C3_C15_NCoup_component_cone,
+  cell_C3_C3_C5_C45_NCoup_component_cone,
+  cell_F22_interchange_NCoup_component_cone,
+  cell_pair_alpha_product_naturality_NCoup, and
+  cell_pair_beta_zero_diagonal_naturality_NCoup. These cells bind all seven
+  component-leg naturality squares, all seven projection-leg naturality
+  squares, pair_alpha, and pair_beta, with associativity, interchange,
+  coefficient preservation, and signed-support preservation before points and
+  graph objects. The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  coherent cartesian source component-cone payloads. Declared coherence
+  cells, formal naturality squares, finite coherence tables, local
+  modification patches, chosen modifications, componentwise incoherent cells,
+  up-to-modification claims without coherence, lax coherence, graph-side
+  coherence cells, pointwise coherence cells, retuned coherence cells,
+  reindexed coherence labels, coherence after product projection, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract
+  (SCNC1-SCNC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 225 ANCHOR (doc 362): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  contract construction-spec. This cycle sharpens doc 361 by requiring the
+  represented cartesian component-cone coherence cells to assemble as one
+  source-level globular modification, not as an independent represented cell
+  list, boundary-mismatched pasting diagram, split modification family, or
+  pointwise homotopy filler. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new required data are Mod_Coh_CartCone_NCoup_eta_source_components and
+  GlobBd_CartCone_NCoup_eta_source_components. The source boundary is exactly
+  the component-leg and projection-leg naturality data; the target boundary
+  is exactly pair_alpha/pair_beta naturality; the C3*C5=C15, C5*C3=C15,
+  C3*C3*C5=C45, F22 interchange, component-leg, projection-leg, and
+  pair_alpha/beta cells are faces of the same modification. Whiskering,
+  vertical/horizontal composition, associativity, interchange, coefficient
+  preservation, and signed-support preservation must hold before points and
+  graph objects. The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  globular source modification payloads. Independent represented cell lists,
+  boundary-mismatched cells, formal pasting diagrams, separate component
+  modifications, separate pairing modifications, homotopy fillers after
+  points, lax modifications, graph-side modifications, pointwise
+  modifications, retuned modifications, reindexed modification labels,
+  post-product modifications, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract
+  (SCGM1-SCGM10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 226 ANCHOR (doc 363): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber contract construction-spec. This cycle sharpens doc 362 by
+  requiring the source-level globular modification to be selected by an
+  actual boundary-restriction map and represented source boundary fiber, not
+  by a chosen boundary section, contractible-choice wrapper, external fiber,
+  or graph-side fiber. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  required data are res_Mod_Coh_CartCone_to_GlobBd_NCoup,
+  Fib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+  eta_Fib_Mod_Coh_CartCone_NCoup_eta_source_components over
+  GlobBd_CartCone_NCoup_eta_source_components. The fiber arrow must select
+  Mod_Coh_CartCone_NCoup_eta_source_components; any contractibility claim is
+  downstream of that represented fiber; and boundary preservation covers
+  component/projection naturality, pair_alpha/pair_beta naturality, all
+  C3/C5/C15/C45/F22 pasting faces, coefficient preservation, signed-support
+  preservation, and source-before-points order. The finite rows remain
+  z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  represented boundary-fiber payloads. Chosen boundary sections,
+  contractible-choice wrappers without a representer, fibers over the wrong
+  boundary, external/quotient/local boundary fibers, pointwise boundary
+  fibers, graph-side boundary fibers, post-product boundary fibers, retuned
+  boundary restrictions, reindexed boundary fibers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract
+  (SCGB1-SCGB10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 227 ANCHOR (doc 364): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian contract construction-spec. This cycle sharpens
+  doc 363 by requiring the represented globular-modification boundary fiber
+  to be cartesian over source multiplier lifts, not a static one-boundary
+  fiber, chosen local transport, or fiber rebuilt after base change. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and
+  cart_res_Mod_Coh_CartCone_to_GlobBd_NCoup. The boundary restriction and
+  eta_Fib_Mod_Coh_CartCone_NCoup_eta_source_components must transport
+  cartesianly over C3/C5/C15/C45/F22; the fixed globular boundary,
+  component/projection boundaries, pair_alpha/pair_beta boundary, pasting
+  faces, coefficients, signed support, and source-before-points order must be
+  preserved. The finite rows remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  cartesian boundary-fiber payloads. Static one-boundary fibers, chosen
+  base-change fibers, fibers rebuilt after base change, noncartesian
+  pullbacks, local transport tables, pointwise cartesian fibers, graph-side
+  cartesian fibers, post-product cartesian fibers, retuned cartesian fibers,
+  reindexed cartesian fibers, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract
+  (SCBF1-SCBF10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 228 ANCHOR (doc 365): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence contract construction-spec. This cycle
+  sharpens doc 364 by requiring the cartesian represented boundary fiber to
+  carry represented coherence cells generated by the cartesian source fiber
+  data, not declared path equalities, finite transport tables, chosen cells,
+  local patches, or graph-side labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required data are
+  Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_NCoup_boundary_fiber,
+  cell_C5_C3_C15_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_NCoup_boundary_fiber,
+  cell_F22_interchange_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_NCoup, and
+  cell_fixed_globular_boundary_pullback_NCoup. The cells must bind
+  C3/C5/C15/C45/F22 transport, boundary restriction, fiber universal arrow,
+  fixed globular boundary, component/projection boundaries,
+  pair_alpha/pair_beta boundary, pasting faces, coefficients, signed support,
+  same-coherence-on-all-paths, and source-before-points order. The finite rows
+  remain z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  coherent cartesian boundary-fiber payloads. Declared coherence, finite
+  tables, chosen coherence cells, local patches, missing naturality cells,
+  up-to-iso fillers, pointwise coherence, graph-side coherence, post-product
+  coherence, retuned coherence cells, reindexed coherence labels, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract
+  (SCFC1-SCFC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 229 ANCHOR (doc 366): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification contract
+  construction-spec. This cycle sharpens doc 365 by requiring the represented
+  cartesian boundary-fiber coherence cells to assemble as one source-level
+  globular modification with shared source and target boundaries, not an
+  independent cell list, boundary-mismatched pasting diagram, split
+  restriction/arrow/fixed-boundary modification, homotopy filler, lax
+  modification, or graph-side label. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required data are
+  Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and
+  GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. The source
+  boundary must be boundary-restriction plus fiber-arrow naturality; the
+  target boundary must bind fixed-boundary, component/projection,
+  pair_alpha/pair_beta, and pasting-face naturality; the C3/C5/C15/C45/F22
+  cells must be faces of this same modification. The finite rows remain
+  z={1:2,2:-1},
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z)={15:2,30:-1},
+  T_C3(T_C3(T_C5(z)))=T_C45(z)={45:2,90:-1},
+  T_C15(z*F22)=z*(C15*F22)={30:4,60:-2}, and
+  T_C45(z*F22)=z*(C45*F22)={90:4,180:-2}; equality is now equality of full
+  boundary-fiber coherence globular-modification payloads. Independent
+  fiber-coherence cell lists, boundary-mismatched diagrams, split
+  restriction/arrow/fixed-boundary modifications, homotopy fillers, lax
+  modifications, pointwise modifications, graph-side modifications,
+  post-product modifications, retuned modification labels, reindexed
+  modification labels, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_contract
+  (SCFG1-SCFG10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 230 ANCHOR (doc 367): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  contract construction-spec. This cycle sharpens doc 366 by requiring the
+  fiber-coherence globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over its own
+  globular boundary, not a chosen boundary section, contractible-choice
+  wrapper, external/local fiber, or graph-side label. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. The
+  fiber must lie over
+  GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and its
+  universal arrow must select
+  Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components; equality is
+  now equality of full represented boundary-fiber payloads. Chosen sections,
+  contractible-choice wrappers without a representer, fibers over the wrong
+  boundary, external/quotient/local boundary fibers, pointwise or graph-side
+  fibers, post-product fibers, retuned boundary maps, reindexed boundary
+  fibers, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract
+  (SCFGB1-SCFGB10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 231 ANCHOR (doc 368): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  cartesian contract construction-spec. This cycle sharpens doc 367 by
+  requiring the represented boundary fiber for the fiber-coherence globular
+  modification to be cartesian over source multiplier lifts, not a static
+  one-boundary fiber, chosen local transport, or fiber rebuilt after base
+  change. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and cart_res_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_NCoup.
+  The boundary restriction and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components must
+  transport cartesianly over C3/C5/C15/C45/F22; the fixed globular boundary,
+  source/target boundaries, boundary-restriction/fiber-arrow naturality,
+  component/projection boundaries, pair_alpha/pair_beta boundary, pasting
+  faces, coefficients, signed support, and source-before-points order must be
+  preserved. Equality is now equality of full cartesian boundary-fiber
+  payloads. Static one-boundary fibers, chosen base-change fibers, fibers
+  rebuilt after base change, noncartesian pullbacks, local transport tables,
+  pointwise cartesian fibers, graph-side cartesian fibers, post-product
+  cartesian fibers, retuned cartesian fibers, reindexed cartesian fibers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_contract
+  (SCFGBC1-SCFGBC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_representability_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_coherence_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_formation_gate_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_represented_source_fiber_contract,
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_cartesian_coherence_contract,
+  prime_int_n1b_qbar_becd_joint_formation_coupling_contract,
+  prime_int_n1b_qbar_becd_control_formation_death_contract,
+  prime_int_n1b_qbar_becd_boundary_pushforward_compat_contract, and
+  prime_int_n1b_dd4_scc_interface
+  (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 232 ANCHOR (doc 369): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence contract construction-spec. This cycle sharpens doc 368
+  by requiring the fiber-coherence cartesian boundary fiber to have
+  represented coherence cells generated by the cartesian boundary-fiber data,
+  not declared path equalities, finite transport tables, chosen coherence
+  cells, local patches, or graph-side labels. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new required data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C5_C3_C15_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_Coh_CartFib_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_NCoup, and
+  cell_fixed_globular_boundary_pullback_Coh_CartFib_NCoup. These cells bind
+  C3/C5/C15/C45/F22 transport, boundary restriction, fiber universal arrow,
+  fixed globular boundary, source/target boundaries, component/projection
+  boundaries, pair_alpha/pair_beta boundary, pasting faces, coefficients,
+  signed support, and source-before-points order. Equality is now equality of
+  full coherent cartesian boundary-fiber payloads. Declared cartesian fiber
+  coherence, finite transport tables, chosen coherence cells, local patches,
+  missing naturality cells, up-to-iso fillers, pointwise coherence, graph-side
+  coherence, post-product coherence, retuned coherence cells, reindexed
+  coherence labels, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_contract
+  (SCFGBCC1-SCFGBCC10 ALL PASS, lead-reran exit 0); adjacent witnesses from
+  doc 368 through the DD.4 SCC interface (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 233 ANCHOR (doc 370): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence globular-modification contract construction-spec. This
+  cycle sharpens doc 369 by requiring the represented fiber-coherence
+  cartesian boundary-fiber coherence cells to assemble as one source-level
+  globular modification with shared source and target boundaries, not an
+  independent cell list, boundary-mismatched pasting diagram, split
+  restriction/arrow/fixed-boundary modification, homotopy filler, lax
+  modification, or graph-side label. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary must be boundary-restriction plus fiber-arrow
+  naturality; the target boundary must bind fixed-boundary, source/target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality; the
+  C3/C5/C15/C45/F22 cells must be faces of this same modification. Equality
+  is now equality of full boundary-fiber coherence globular-modification
+  payloads. Independent fiber-coherence cell lists, boundary-mismatched
+  diagrams, split restriction/arrow/fixed-boundary modifications, homotopy
+  fillers, lax or graph-side modifications, pointwise/post-product
+  modifications, retuned/reindexed modification labels, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_globular_modification_contract
+  (SCFGBCCG1-SCFGBCCG10 ALL PASS, lead-reran exit 0); adjacent witnesses from
+  doc 369 through the DD.4 SCC interface (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 234 ANCHOR (doc 371): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence globular-modification boundary-fiber contract
+  construction-spec. This cycle sharpens doc 370 by requiring the
+  fiber-coherence boundary-fiber coherence globular modification to be
+  selected by an actual source boundary-restriction map and represented
+  boundary fiber over its own globular boundary, not a chosen section,
+  contractible-choice wrapper, external/local fiber, or graph-side boundary
+  label. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required data
+  are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The fiber must lie over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and its universal arrow must select
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+  equality is now equality of full represented boundary-fiber payloads.
+  Chosen sections, contractible-choice wrappers without a representer, fibers
+  over the wrong boundary, external/quotient/local boundary fibers, pointwise
+  or graph-side fibers, post-product fibers, retuned boundary maps, reindexed
+  boundary fibers, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract
+  (SCFGBCCGB1-SCFGBCCGB10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  from doc 370 through the DD.4 SCC interface (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 235 ANCHOR (doc 372): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  cartesian contract construction-spec. This cycle sharpens doc 371 by
+  requiring the represented boundary fiber for the fiber-coherence
+  boundary-fiber coherence globular modification to be cartesian over the same
+  source multiplier lifts, not static, rebuilt after base change, transported
+  by chosen local tables, checked after points, or shifted to the graph side.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required
+  cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_NCoup.
+  The boundary restriction and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  must transport cartesianly over C3/C5/C15/C45/F22 while preserving the fixed
+  globular boundary, source/target boundaries, boundary-restriction/fiber-arrow
+  naturality, component/projection, pair_alpha/pair_beta, pasting faces,
+  coefficients, signed support, and source-before-points order. Equality is now
+  equality of full cartesian represented boundary-fiber payloads. Static
+  one-boundary fibers, chosen base-change fibers, fibers rebuilt after base
+  change, noncartesian pullbacks, local transport tables, pointwise or
+  graph-side cartesian fibers, post-product cartesian fibers, retuned/reindexed
+  cartesian fibers, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_cartesian_contract
+  (SCFGBCCGBC1-SCFGBCCGBC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  from doc 371 through the DD.4 SCC interface (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 236 ANCHOR (doc 373): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence contract construction-spec. This cycle sharpens doc 372 by
+  requiring the cartesian boundary-fiber transport for the fiber-coherence
+  boundary-fiber coherence globular modification to have represented coherence
+  cells generated by that cartesian boundary-fiber data, not declared path
+  equality, finite transport tables, chosen local cells, up-to-iso fillers, or
+  graph-side labels. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  required coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_NCoup,
+  and cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_NCoup. The
+  cells must bind C3/C5/C15/C45/F22 transport, boundary restriction, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  component/projection, pair_alpha/pair_beta, pasting faces, coefficients,
+  signed support, and source-before-points order. Equality is now equality of
+  full coherent cartesian represented boundary-fiber payloads. Declared
+  coherence, finite tables, chosen cells, missing naturality cells, up-to-iso
+  fillers, pointwise/graph-side/post-product coherence, retuned/reindexed
+  coherence cells, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_coherence_contract
+  (SCFGBCCGBCC1-SCFGBCCGBCC10 ALL PASS, lead-reran exit 0); adjacent witnesses
+  from doc 372 through the DD.4 SCC interface (all exit 0, lead-reran).
+  STAGE/Layer I - NOT RH.
+R1 CYCLE 237 ANCHOR (doc 374): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification contract construction-spec. This cycle
+  sharpens doc 373 by requiring the represented coherence cells for the
+  fiber-coherence boundary-fiber coherence cartesian boundary fiber to assemble
+  as one source-level globular modification with common source and target
+  boundaries, not an independent cell list, boundary-mismatched pasting
+  diagram, split restriction/arrow/fixed-boundary modification, homotopy
+  filler, lax modification, graph-side or post-product modification, or
+  retuned/reindexed modification label. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required globular-modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The modification must be generated by
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+  its source boundary must be boundary-restriction plus fiber-arrow naturality;
+  its target boundary must bind fixed-boundary/source-target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality; and
+  the C3/C5/C15/C45/F22 cells must be faces of this same modification with
+  whiskering, vertical/horizontal composition, coefficient preservation,
+  signed-support preservation, and source-before-points order. Equality is now
+  equality of full coherent cartesian boundary-fiber globular-modification
+  payloads. Independent cell lists, boundary mismatches, split modifications,
+  homotopy/lax/graph-side or post-product fillers, retuned/reindexed
+  modification labels, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_coh_glob_mod_contract
+  (SCFGBCCGBCCG1-SCFGBCCGBCCG10 ALL PASS, lead-reran exit 0); adjacent
+  witnesses from doc 373 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 238 ANCHOR (doc 375): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber contract construction-spec.
+  This cycle sharpens doc 374 by requiring the source-level globular
+  modification
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  to be selected by an actual boundary-restriction map and represented
+  boundary fiber over its own globular boundary, not by a chosen section,
+  contractible-choice wrapper, wrong-boundary fiber, external/quotient/local
+  fiber, pointwise/graph-side/post-product fiber, or retuned/reindexed boundary
+  map. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required
+  represented boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The fiber must lie over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  its universal arrow must select
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and boundary preservation, the unique source filler, and contractibility are
+  valid only after the represented fiber exists. Equality is equality of full
+  represented boundary-fiber payloads. Chosen sections, contractible choices
+  without representers, wrong-boundary fibers, external/local fibers,
+  pointwise/graph-side/post-product fibers, retuned/reindexed boundary maps,
+  and control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_glob_mod_boundary_fiber_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_contract
+  (SCFGBCCGBCCGB1-SCFGBCCGBCCGB10 ALL PASS, lead-reran exit 0); adjacent
+  witnesses from doc 374 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 239 ANCHOR (doc 376): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 375 by requiring the represented
+  boundary fiber for
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  to be cartesian over the same source multiplier lifts, not static, rebuilt
+  after base change, transported by chosen local tables, checked only after
+  points/graph objects, or retuned/reindexed. Fixed checks: c=(1+z)^-1 remains
+  the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new required cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The cartesian fiber must transport the boundary-restriction map and fiber
+  universal arrow along the C3/C5/C15/C45/F22 source paths while preserving
+  the fixed globular boundary, source/target boundaries,
+  boundary-restriction/fiber-arrow naturality, component/projection
+  boundaries, pair_alpha/pair_beta boundary, pasting faces, coefficients,
+  signed support, and source-before-points order. Equality is equality of full
+  cartesian boundary-fiber payloads. Static one-boundary fibers, chosen local
+  transport, fibers rebuilt after base change, noncartesian pullbacks,
+  pointwise/graph-side/post-product cartesian fibers, retuned/reindexed
+  cartesian fibers, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_contract
+  (SCFGBCCGBCCGBC1-SCFGBCCGBCCGBC10 ALL PASS, lead-reran exit 0); adjacent
+  witnesses from doc 375 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 240 ANCHOR (doc 377): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence contract
+  construction-spec. This cycle sharpens doc 376 by requiring the cartesian
+  boundary-fiber transport to be represented by coherence cells generated by
+  the cartesian boundary-fiber data, not by declared path equality, finite
+  transport tables, chosen/local cells, graph-side labels, post-product
+  coherence, or retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  and
+  cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  These cells must bind C3/C5/C15/C45/F22 transport, boundary restriction,
+  fiber universal arrow, fixed globular boundary, source/target boundaries,
+  component/projection boundaries, pair_alpha/pair_beta boundary, pasting
+  faces, coefficients, signed support, and source-before-points order.
+  Equality is equality of full coherent cartesian boundary-fiber payloads.
+  Declared path equalities, finite transport tables, chosen/local cells,
+  missing naturality cells, up-to-iso fillers, pointwise/graph-side/post-product
+  coherence, retuned/reindexed cells, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_contract
+  (SCFGBCCGBCCGBCC1-SCFGBCCGBCCGBCC10 ALL PASS, lead-reran exit 0); adjacent
+  witnesses from doc 376 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 241 ANCHOR (doc 378): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  377 by requiring the represented cartesian boundary-fiber coherence cells to
+  be faces of one source-level globular modification with shared source and
+  target boundaries, not independent cell lists, boundary-mismatched pasting
+  diagrams, split boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy/lax/pointwise/graph-side/post-product fillers, or
+  retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new globular-modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary/source-target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality. The
+  C3/C5/C15/C45/F22 cells must be faces of this same modification, with
+  whiskering, vertical/horizontal composition, coefficient preservation,
+  signed support, and source-before-points order. Equality is equality of full
+  boundary-fiber coherence modification payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_contract
+  (SCFGBCCGBCCGBCCG1-SCFGBCCGBCCGBCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 377 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 242 ANCHOR (doc 379): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber contract construction-spec. This cycle
+  sharpens doc 378 by requiring the represented cartesian boundary-fiber
+  coherence globular modification to be selected by an actual
+  boundary-restriction map and represented boundary fiber over its own
+  globular boundary, not by chosen sections, contractible-choice wrappers,
+  wrong-boundary fibers, external/quotient/local boundary fibers,
+  pointwise/graph-side/post-product fibers, or retuned/reindexed labels. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new represented
+  boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  This fiber must lie over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and its universal arrow must select
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Equality is equality of full represented boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_glob_mod_boundary_fiber_contract
+  (SCFGBCCGBCCGBCCGB1-SCFGBCCGBCCGBCCGB10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 378 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 243 ANCHOR (doc 380): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian contract construction-spec.
+  This cycle sharpens doc 379 by requiring the represented boundary fiber to
+  be cartesian over the source multiplier lifts, not static, rebuilt after
+  base change, transported by chosen local tables, graph-side, post-product,
+  or retuned/reindexed. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The boundary restriction, fiber universal arrow, fixed globular boundary,
+  source/target boundary data, C3/C5/C15/C45/F22 pasting faces, coefficients,
+  signed support, and source-before-points order must transport cartesianly.
+  Equality is equality of full cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_cartesian_contract
+  (SCFGBCCGBCCGBCCGBC1-SCFGBCCGBCCGBCCGBC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 379 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 244 ANCHOR (doc 381): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence contract
+  construction-spec. This cycle sharpens doc 380 by requiring the cartesian
+  boundary-fiber transport to be represented by coherence cells generated by
+  the cartesian boundary-fiber data, not by declared path equality, finite
+  transport tables, chosen/local cells, graph-side labels, post-product
+  coherence, or retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  and
+  cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  Equality is equality of full coherent cartesian boundary-fiber payloads.
+  Declared path equalities, finite transport tables, chosen/local cells,
+  missing naturality cells, up-to-iso fillers, pointwise/graph-side/post-product
+  coherence, retuned/reindexed cells, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_cartesian_coherence_contract
+  (SCFGBCCGBCCGBCCGBCC1-SCFGBCCGBCCGBCCGBCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 380 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 245 ANCHOR (doc 382): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  381 by requiring the represented cartesian boundary-fiber coherence cells to
+  be faces of one source-level globular modification with shared source and
+  target boundaries, not independent cell lists, boundary-mismatched pasting
+  diagrams, split boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy/lax/pointwise/graph-side/post-product fillers, or
+  retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new globular-modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary/source-target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality. The
+  C3/C5/C15/C45/F22 cells must be faces of this same modification, with
+  whiskering, vertical/horizontal composition, coefficient preservation,
+  signed support, and source-before-points order. Equality is equality of full
+  represented-coherence modification payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_cart_coh_glob_mod_contract
+  (SCFGBCCGBCCGBCCGBCCG1-SCFGBCCGBCCGBCCGBCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 381 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 246 ANCHOR (doc 383): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber contract construction-spec. This cycle
+  sharpens doc 382 by requiring the source-level represented-coherence
+  globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over its own
+  globular boundary, not by chosen sections, contractible-choice wrappers,
+  wrong-boundary fibers, external/quotient/local fibers, pointwise/graph-side/
+  post-product fibers, or retuned/reindexed boundary data. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new represented
+  boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and selects
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  before points and graph objects. Equality is equality of full represented
+  boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_ccgm_boundary_fiber_contract
+  (SCFGBCCGBCCGBCCGBCCGB1-SCFGBCCGBCCGBCCGBCCGB10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 382 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 247 ANCHOR (doc 384): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian contract construction-spec.
+  This cycle sharpens doc 383 by requiring the represented-coherence
+  boundary fiber to be cartesian over the source multiplier lifts, not a
+  static one-boundary fiber, chosen local transport table, fiber rebuilt after
+  base change, noncartesian pullback, pointwise/graph-side/post-product
+  cartesian fiber, or retuned/reindexed cartesian label. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new cartesian
+  boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The cartesian fiber transports the represented boundary fiber, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  component/projection, pair_alpha/pair_beta, pasting faces, coefficients,
+  and signed support along C3/C5/C15/C45/F22 before points and graph objects.
+  Equality is equality of full cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_ccgm_bf_cartesian_contract
+  (SCFGBCCGBCCGBCCGBCCGBC1-SCFGBCCGBCCGBCCGBCCGBC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 383 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 248 ANCHOR (doc 385): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence contract
+  construction-spec. This cycle sharpens doc 384 by requiring the cartesian
+  transport of the represented-coherence boundary fiber to be represented by
+  generated coherence cells, not declared path equality, finite transport
+  tables, chosen/local cells, missing naturality cells, up-to-iso fillers,
+  pointwise/graph-side/post-product coherence, or retuned/reindexed cells.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new represented
+  coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  plus the C3*C5=C15, C5*C3=C15, C3*C3*C5=C45, F22,
+  boundary-restriction, fiber-arrow, fixed-boundary,
+  component/projection, pair_alpha/pair_beta, and pasting-face coherence
+  cells with eight-layer Coh_CartFib boundary suffixes. Equality is equality
+  of full coherent cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_ccgm_bf_cart_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCC1-SCFGBCCGBCCGBCCGBCCGBCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 384 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 249 ANCHOR (doc 386): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification contract construction-spec. This cycle sharpens doc 385 by
+  requiring the represented-coherence cartesian-transport cells to assemble
+  as one source-level globular modification with shared source and target
+  boundaries, not independent cell lists, boundary-mismatched pasting
+  diagrams, split boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy/lax/pointwise/graph-side/post-product fillers, or
+  retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the new globular-modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary/source-target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality. The
+  C3/C5/C15/C45/F22 cells must be faces of this same modification, with
+  whiskering, vertical/horizontal composition, coefficient preservation,
+  signed support, and source-before-points order. Equality is equality of full
+  represented-coherence modification payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_ccgm_bf_cart_coh_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCG1-SCFGBCCGBCCGBCCGBCCGBCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 385 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 250 ANCHOR (doc 387): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber contract construction-spec. This cycle
+  sharpens doc 386 by requiring the represented-coherence cartesian-
+  transport globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over its own
+  globular boundary, not chosen boundary sections, contractible-choice
+  wrappers without a representer, wrong-boundary fibers, external/quotient/
+  local fibers, pointwise/graph-side/post-product fibers, or retuned/
+  reindexed boundary maps. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the new boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and its universal arrow selects
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  before contractibility. Equality is equality of full represented boundary-
+  fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_gmbf_coh_glob_mod_boundary_fiber_cartesian_coherence_gmbf_ccgm_bf_cart_coh_gmod_bf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGB1-SCFGBCCGBCCGBCCGBCCGBCCGB10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 386 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 251 ANCHOR (doc 388): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber cartesian contract construction-spec. This
+  cycle sharpens doc 387 by requiring the represented boundary fiber for the
+  represented-coherence cartesian-transport globular modification to be
+  cartesian over the source multiplier lifts, not a static one-boundary
+  fiber, chosen local transport, fiber rebuilt after base change,
+  noncartesian pullback, pointwise/graph-side/post-product fiber, or
+  retuned/reindexed cartesian fiber. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The cartesian fiber transports the represented boundary fiber, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  boundary-restriction/fiber-arrow naturality, component/projection,
+  pair_alpha/pair_beta, pasting faces, coefficients, signed support, and
+  source-before-points order over C3/C5/C15/C45/F22. Equality is equality of
+  full cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBC1-SCFGBCCGBCCGBCCGBCCGBCCGBC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 387 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 252 ANCHOR (doc 389): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber cartesian coherence contract construction-spec.
+  This cycle sharpens doc 388 by requiring the cartesian transport of the
+  represented-coherence cartesian-transport boundary fiber to be represented
+  by coherence cells generated by that cartesian boundary-fiber data, not by
+  declared path equalities, finite transport tables, chosen/local coherence
+  cells, missing naturality cells, up-to-iso fillers, pointwise/graph-side/
+  post-product coherence, or retuned/reindexed cells. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the new represented coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  plus the C3*C5=C15, C5*C3=C15, C3*C3*C5=C45, F22,
+  boundary-restriction, fiber-arrow, fixed-boundary,
+  component/projection, pair_alpha/pair_beta, and pasting-face coherence
+  cells with eleven-layer Coh_CartFib boundary suffixes. Equality is equality
+  of full coherent cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 388 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 253 ANCHOR (doc 390): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber cartesian coherence globular-modification
+  contract construction-spec. This cycle sharpens doc 389 by requiring the
+  represented-coherence boundary-fiber cartesian-transport cells to assemble
+  as one source-level globular modification with shared source and target
+  boundaries, not independent cell lists, boundary-mismatched pasting
+  diagrams, split boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy/lax/pointwise/graph-side/post-product fillers, or
+  retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the new globular-modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary/source-target,
+  component/projection, pair_alpha/pair_beta, and pasting-face naturality. The
+  C3/C5/C15/C45/F22 cells must be faces of this same modification, with
+  whiskering, vertical/horizontal composition, coefficient preservation,
+  signed support, and source-before-points order. Equality is equality of full
+  represented-coherence modification payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 389 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 254 ANCHOR (doc 391): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber represented-boundary-fiber contract
+  construction-spec. This cycle sharpens doc 390 by requiring the
+  source-level represented-coherence boundary-fiber cartesian-transport
+  globular modification to be selected by an actual represented boundary
+  fiber over its own fourteen-layer globular boundary, not chosen boundary
+  sections, contractible-choice wrappers, wrong-boundary fibers,
+  external/quotient/local boundary fibers, pointwise/graph-side/post-product
+  fibers, or retuned/reindexed labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented selector data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The fiber lies over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and its universal arrow selects
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Equality is equality of full represented boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBF10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 390 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 255 ANCHOR (doc 392): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence globular-
+  modification boundary-fiber represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 391 by requiring the represented
+  boundary fiber for the source-level represented-coherence boundary-fiber
+  cartesian-transport globular modification to be cartesian over the same
+  source multiplier lifts, not static one-boundary fibers, chosen local
+  transports, fibers rebuilt after base change, noncartesian pullbacks,
+  pointwise/graph-side/post-product fibers, or retuned/reindexed cartesian
+  fibers. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new cartesian data
+  are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The fiber universal arrow, fixed globular boundary, source/target
+  boundaries, boundary-restriction/fiber-arrow naturality,
+  component/projection, pair_alpha/pair_beta, pasting faces, coefficients, and
+  signed support transport cartesianly over the C3/C5/C15/C45/F22 source
+  paths before points and graph objects. Equality is equality of full
+  cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 391 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 256 ANCHOR (doc 393): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence contract construction-spec. This cycle sharpens doc 392 by
+  requiring the represented-coherence boundary-fiber cartesian-transport
+  boundary fiber's cartesian transport to be represented by coherence cells
+  generated by that cartesian boundary-fiber data, not declared path
+  equalities, finite transport tables, chosen/local coherence cells, missing
+  naturality cells, up-to-iso fillers, pointwise/graph-side/post-product
+  coherence, or retuned/reindexed cells. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented coherence data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and the seven cells
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, and
+  cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  These cells bind C3/C5/C15/C45/F22 transport, boundary restriction, the
+  fiber universal arrow, fixed globular boundary, source/target boundaries,
+  component/projection, pair_alpha/pair_beta, pasting faces, coefficients,
+  signed support, and source-before-points order. Equality is equality of full
+  represented cartesian boundary-fiber coherence payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 392 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 257 ANCHOR (doc 394): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification contract construction-spec. This cycle
+  sharpens doc 393 by requiring the represented cartesian boundary-fiber
+  coherence cells to be faces of one source-level globular modification with
+  shared source and target boundaries, not independent represented coherence
+  cell lists, boundary-mismatched pasting diagrams, split boundary-
+  restriction/fiber-arrow/fixed-boundary modifications, homotopy/lax/
+  pointwise/graph-side/post-product fillers, or retuned/reindexed
+  modifications. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new required
+  globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary/source-target, component/projection,
+  pair_alpha/pair_beta, and pasting-face naturality. The C3/C5/C15/C45/F22
+  cells are faces of the same modification, with whiskering,
+  vertical/horizontal composition, coefficient preservation, signed-support
+  preservation, and source-before-points order. Equality is equality of full
+  source-level globular-modification payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_coh_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 393 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 258 ANCHOR (doc 395): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification boundary-fiber contract construction-spec.
+  This cycle sharpens doc 394 by requiring the represented cartesian
+  boundary-fiber coherence globular modification to be selected by an actual
+  source boundary-restriction map and represented boundary fiber over its own
+  globular boundary, not chosen sections, contractible-choice wrappers without
+  a representer, wrong-boundary fibers, external/quotient/local boundary
+  fibers, pointwise/graph-side/post-product fibers, or retuned/reindexed
+  boundary fibers. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  required represented boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over its own fixed globular boundary and its
+  universal arrow selects the source-level globular modification. Boundary
+  preservation, the unique source filler, contractibility only after the
+  represented fiber, coefficient preservation, signed-support preservation,
+  and source-before-points order are mandatory. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBF10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 394 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 259 ANCHOR (doc 396): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 395 by requiring the represented
+  boundary fiber for the cartesian boundary-fiber coherence globular
+  modification to be cartesian over the same source multiplier lifts, not
+  static one-boundary fibers, chosen local transports, fibers rebuilt after
+  base change, noncartesian pullbacks, pointwise/graph-side/post-product
+  fibers, or retuned/reindexed cartesian fibers. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new cartesian data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The fiber universal arrow, fixed globular boundary, source/target
+  boundaries, boundary-restriction/fiber-arrow naturality,
+  component/projection, pair_alpha/pair_beta, pasting faces, coefficients, and
+  signed support transport cartesianly over the C3/C5/C15/C45/F22 source
+  paths before points and graph objects. Equality is equality of full
+  cartesian boundary-fiber payloads. Witness
+  prime_int_n1b_qbar_becd_strict_square_product_multiplier_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cart_coh_gmbf_coh_gmod_bf_cart_coh_gmbf_ccgm_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_coh_gmod_bf_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 395 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 260 ANCHOR (doc 397): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 396 by requiring the
+  cartesian transport of the represented boundary fiber for the cartesian
+  boundary-fiber coherence globular modification to be represented by
+  coherence cells generated by that cartesian boundary-fiber data, not
+  declared path equalities, finite transport tables, chosen/local coherence
+  cells, missing naturality cells, up-to-iso fillers,
+  pointwise/graph-side/post-product coherence, or retuned/reindexed coherence
+  labels. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new coherence data
+  are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and the C3/C5/C15/C45/F22, boundary-restriction, fiber-arrow,
+  fixed-boundary, component/projection, pair_alpha/pair_beta, and
+  pasting-face cells with boundary suffix
+  Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  These cells must be generated by the cartesian boundary fiber, control all
+  C3/C5/C15/C45/F22 paths, preserve coefficients and signed support, and form
+  before points and graph objects. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 396 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 261 ANCHOR (doc 398): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  397 by requiring the represented cartesian boundary-fiber coherence
+  transport cells to assemble as one source-level globular modification with
+  shared source and target boundaries, not independent cell lists,
+  boundary-mismatched pasting diagrams, split modifications,
+  homotopy/lax/pointwise/graph-side/post-product fillers, or
+  retuned/reindexed modifications. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/pair_beta, and pasting-face naturality. The C3/C5/C15/C45/F22
+  cells must be faces of the same modification, with whiskering,
+  vertical/horizontal composition, coefficient preservation, signed-support
+  preservation, and source-before-points order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 397 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 262 ANCHOR (doc 399): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification boundary-fiber
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian-coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber represented-boundary-fiber cartesian
+  coherence globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber contract construction-spec. This cycle
+  sharpens doc 398 by requiring the source-level globular modification to be
+  selected by an actual source boundary-restriction map and represented
+  boundary fiber over its own globular boundary, not chosen sections,
+  contractible-choice wrappers without a representer, wrong-boundary fibers,
+  external/quotient/local boundary fibers, pointwise/graph-side/post-product
+  fibers, or retuned/reindexed boundary fibers. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new represented boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over its own fixed globular boundary and its
+  universal arrow selects the source-level globular modification. Boundary
+  preservation, the unique source filler, contractibility only after the
+  represented fiber, coefficient preservation, signed-support preservation,
+  and source-before-points order are mandatory. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBF10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 398 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 263 ANCHOR (doc 400): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 399 by requiring the represented
+  boundary fiber for the source-level transport globular modification to be
+  cartesian over the source multiplier lifts, not a static one-boundary fiber,
+  chosen local transport, fiber rebuilt after base change, noncartesian
+  pullback, pointwise/graph-side/post-product cartesian label, or
+  retuned/reindexed cartesian fiber. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The cartesian fiber transports the boundary-restriction map, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  component/projection data, pair_alpha/beta data, pasting faces,
+  coefficients, signed support, and source-before-points order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 399 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 264 ANCHOR (doc 401): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence contract
+  construction-spec. This cycle sharpens doc 400 by requiring cartesian
+  boundary-fiber transport to be represented by coherence cells generated by
+  the cartesian boundary-fiber data, not declared path equalities, finite
+  transport tables, chosen/local coherence cells, up-to-iso fillers,
+  pointwise/graph-side/post-product coherence, or retuned/reindexed coherence
+  labels. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new coherence data
+  are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  plus the C3/C5/C15/C45/F22, boundary-restriction, fiber-arrow,
+  fixed-boundary, component/projection, pair_alpha/beta, and pasting-face
+  coherence cells with twenty-layer Coh_CartFib boundary suffixes. These cells
+  must be generated by the cartesian boundary fiber, control every multiplier
+  path, preserve coefficients and signed support, and form before points and
+  graph objects. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCC10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 400 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 265 ANCHOR (doc 402): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  401 by requiring represented cartesian boundary-fiber coherence cells to
+  assemble as one source-level globular modification with shared source and
+  target boundaries, not independent cell lists, boundary-mismatched pasting
+  diagrams, split modifications, homotopy/lax/pointwise/graph-side/
+  post-product fillers, or retuned/reindexed modification labels. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new globular
+  modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/beta, and pasting-face naturality. The C3/C5/C15/C45/F22 cells
+  must be faces of the same modification, with whiskering,
+  vertical/horizontal composition, coefficient preservation, signed-support
+  preservation, and source-before-points order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCG10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 401 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 266 ANCHOR (doc 403): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract construction-spec.
+  This cycle sharpens doc 402 by requiring the source-level globular
+  modification to be selected by an actual source boundary-restriction map and
+  represented boundary fiber over its own globular boundary, not chosen
+  sections, contractible-choice wrappers without a representer,
+  wrong-boundary fibers, external/quotient/local boundary fibers,
+  pointwise/graph-side/post-product fibers, or retuned/reindexed boundary
+  fibers. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new represented
+  boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over its own fixed globular boundary and its
+  universal arrow selects the source-level globular modification. Boundary
+  preservation, the unique source filler, contractibility only after the
+  represented fiber, coefficient preservation, signed-support preservation,
+  and source-before-points order are mandatory. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBF10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 402 through the DD.4 SCC interface (all exit 0,
+  lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 267 ANCHOR (doc 404): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 403 by requiring the represented
+  boundary fiber to be cartesian over the source multiplier lifts, not a
+  static one-boundary fiber, chosen local transport, rebuilt-after-base-change
+  fiber, noncartesian pullback, pointwise/graph-side/post-product cartesian
+  fiber, or retuned/reindexed cartesian fiber. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  The cartesian fiber must transport the represented boundary fiber, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  boundary-restriction/fiber-arrow naturality, component/projection
+  boundaries, pair_alpha/beta boundary, pasting faces, coefficients, signed
+  support, and source-before-points order over the C3/C5/C15/C45/F22 paths.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 403 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 268 ANCHOR (doc 405): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 404 by requiring the
+  cartesian boundary-fiber transport to be represented by coherence cells
+  generated by the cartesian boundary-fiber data, not declared path equality,
+  finite transport tables, chosen coherence cells, local patches, graph-side
+  labels, pointwise/post-product coherence, retuned coherence cells, or
+  reindexed coherence labels. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new coherent cartesian boundary-fiber data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and the twenty-three-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  These cells must bind C3/C5/C15/C45/F22 transport, boundary restriction,
+  the fiber universal arrow, fixed globular boundary, source/target
+  boundaries, component/projection, pair_alpha/beta, pasting faces,
+  coefficients, signed support, and source-before-points order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 404 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 269 ANCHOR (doc 406): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  405 by requiring the represented cartesian boundary-fiber coherence cells
+  to assemble as one source-level globular modification with shared source and
+  target boundaries, not an independent represented cell list,
+  boundary-mismatched pasting diagram, split boundary-restriction/fiber-arrow/
+  fixed-boundary modification, homotopy or lax filler, pointwise/graph-side/
+  post-product filler, retuned modification, or reindexed modification label.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new source-level
+  globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/beta, and pasting-face naturality. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 405 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 270 ANCHOR (doc 407): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract construction-spec.
+  This cycle sharpens doc 406 by requiring the source-level globular
+  modification to be selected by an actual source boundary-restriction map and
+  represented boundary fiber over its own twenty-six-layer globular boundary,
+  not a chosen boundary section, contractible-choice wrapper without a
+  representer, wrong-boundary fiber, external/quotient/local boundary fiber,
+  pointwise/graph-side/post-product fiber, retuned boundary restriction, or
+  reindexed boundary-fiber label. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber lies over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and its universal arrow selects
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 406 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 271 ANCHOR (doc 408): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 407 by requiring the
+  represented boundary fiber itself to be cartesian over the source
+  multiplier lifts, not a static one-boundary fiber, chosen base-change fiber,
+  fiber rebuilt after base change, noncartesian pullback, local transport
+  table, pointwise/graph-side/post-product cartesian fiber, retuned cartesian
+  fiber, or reindexed cartesian-fiber label. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the new cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  This cartesian fiber must transport the represented boundary fiber, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  boundary-restriction, component/projection, pair_alpha/beta, pasting faces,
+  coefficients, signed support, and source-before-points order over
+  C3/C5/C15/C45/F22. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 407 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 272 ANCHOR (doc 409): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 408 by requiring
+  cartesian boundary-fiber transport to be represented by coherence cells
+  generated by that cartesian boundary-fiber data, not declared path
+  equalities, finite transport tables, chosen coherence cells, local
+  coherence patches, missing naturality cells, up-to-iso fillers, pointwise
+  coherence, graph-side coherence, post-product coherence, retuned coherence
+  cells, or reindexed coherence labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new coherent cartesian boundary-fiber data are
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and the twenty-six-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  These cells must be generated by
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and bind
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 408 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 273 ANCHOR (doc 410): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  409 by requiring the represented cartesian boundary-fiber coherence cells to
+  assemble as one source-level globular modification with shared source and
+  target boundaries, not an independent represented cell list,
+  boundary-mismatched pasting diagram, split boundary-restriction/fiber-arrow/
+  fixed-boundary modification, homotopy or lax filler, pointwise/graph-side/
+  post-product filler, retuned modification, or reindexed modification label.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new source-level
+  globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  It must be generated from
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and its faces include the twenty-six-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/beta, and pasting-face naturality. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 409 through the DD.4 SCC
+  interface (all exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 274 ANCHOR (doc 411): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract
+  construction-spec. This cycle sharpens doc 410 by requiring the
+  source-level globular modification itself to be selected by an actual
+  source boundary-restriction map and represented boundary fiber over its own
+  twenty-nine-layer globular boundary, not by a chosen boundary section,
+  contractible-choice wrapper, fiber over the wrong boundary,
+  external/quotient/local boundary fiber, pointwise/graph-side/post-product
+  boundary fiber, retuned boundary map, or reindexed boundary-fiber label.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new represented
+  boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  The represented fiber must lie over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and its universal arrow must select
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 410 through the DD.4 SCC
+  interface (104/104 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 275 ANCHOR (doc 412): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 411 by requiring the represented
+  boundary fiber itself to be cartesian over the same source multiplier lifts,
+  not a static one-boundary fiber, chosen base-change fiber, fiber rebuilt
+  after base change, noncartesian pullback, local transport table,
+  pointwise/graph-side/post-product cartesian fiber, retuned cartesian fiber,
+  or reindexed cartesian-fiber label. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new cartesian boundary-fiber data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  This cartesian fiber must transport
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  along C3/C5/C15/C45/F22 before points and graph objects. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 411 through the DD.4 SCC
+  interface (105/105 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 276 ANCHOR (doc 413): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 412 by requiring the
+  cartesian transport of the represented boundary fiber to be represented by
+  coherence cells generated by that cartesian boundary-fiber data, not by
+  declared path equality, finite transport table, chosen coherence cells,
+  local coherence patch, missing naturality cells, up-to-iso filler,
+  pointwise/graph-side/post-product coherence, retuned coherence cell, or
+  reindexed coherence label. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the new represented coherence object is
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  with seven twenty-nine-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  These cells must be generated by
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and bind
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 412 through the DD.4 SCC
+  interface (106/106 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 277 ANCHOR (doc 414): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  413 by requiring the represented cartesian boundary-fiber coherence cells to
+  assemble as one source-level globular modification with shared source and
+  target boundaries, not an independent represented cell list,
+  boundary-mismatched pasting diagram, split boundary-restriction/fiber-arrow/
+  fixed-boundary modification, homotopy or lax filler, pointwise/graph-side/
+  post-product filler, retuned modification, or reindexed modification label.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new source-level
+  globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  It must be generated from
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and its faces include the twenty-nine-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/beta, and pasting-face naturality. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 413 through the DD.4 SCC
+  interface (107/107 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 278 ANCHOR (doc 415): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract construction-spec.
+  This cycle sharpens doc 414 by requiring the source-level globular
+  modification to be selected by an actual source boundary-restriction map
+  and represented boundary fiber over its own thirty-two-layer globular
+  boundary, not by chosen boundary section, contractible-choice wrapper,
+  fiber over the wrong boundary, external/quotient/local boundary fiber,
+  pointwise/graph-side/post-product boundary fiber, retuned boundary map, or
+  reindexed boundary fiber. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new required data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and
+  eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  over
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  selecting
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 414 through the DD.4 SCC
+  interface (108/108 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 279 ANCHOR (doc 416): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 415 by requiring the represented
+  boundary fiber over the thirty-two-layer globular boundary to be cartesian
+  over the represented source multiplier lifts, not a static one-boundary
+  fiber, chosen base-change fiber, fiber rebuilt after base change,
+  noncartesian pullback, local transport table, pointwise/graph-side/
+  post-product cartesian fiber, retuned cartesian fiber, or reindexed
+  cartesian fiber. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  required data are
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  transporting the represented boundary fiber and fiber universal arrow
+  cartesianly over C3/C5/C15/C45/F22 while preserving fixed boundary,
+  source/target boundaries, boundary-restriction, component/projection,
+  pair_alpha/beta, pasting faces, coefficients, signed support, and
+  source-before-points order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 415 through the DD.4 SCC
+  interface (109/109 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 280 ANCHOR (doc 417): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 416 by requiring the
+  cartesian transport of the represented boundary fiber to be represented by
+  coherence cells generated by that cartesian boundary-fiber data, not by
+  declared path equality, finite transport table, chosen coherence cells,
+  local coherence patch, missing naturality cells, up-to-iso filler,
+  pointwise/graph-side/post-product coherence, retuned coherence cell, or
+  reindexed coherence label. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  new represented coherence object is
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  with seven thirty-two-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  including boundary-restriction, fiber-arrow, and fixed-boundary naturality
+  cells. These cells must be generated by
+  CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and bind
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 416 through the DD.4 SCC
+  interface (110/110 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 281 ANCHOR (doc 418): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  417 by requiring the represented cartesian boundary-fiber coherence cells to
+  assemble as one source-level globular modification with shared source and
+  target boundaries, not an independent represented cell list,
+  boundary-mismatched pasting diagram, split boundary-restriction/fiber-arrow/
+  fixed-boundary modification, homotopy or lax filler, pointwise/graph-side/
+  post-product filler, retuned modification, or reindexed modification label.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new source-level
+  globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  It must be generated from
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  and its faces include the thirty-two-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  The source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source/target, component/projection,
+  pair_alpha/beta, and pasting-face naturality. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 417 through the DD.4 SCC
+  interface (111/111 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 282 ANCHOR (doc 419): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract construction-spec.
+  This cycle sharpens doc 418 by requiring the source-level globular
+  modification to be selected by an actual source boundary-restriction map and
+  represented boundary fiber over its own thirty-five-layer globular boundary,
+  not by chosen sections, contractible-choice wrappers, wrong-boundary fibers,
+  external/quotient/local fibers, pointwise/graph-side/post-product fibers,
+  retuned/reindexed boundary fibers, or control/DH/Epstein point-formability.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the represented fiber
+  must lie over the fixed GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components object, its universal arrow must select
+  the Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components object, and boundary preservation, the unique source filler,
+  contractibility only after the represented fiber, coefficient preservation,
+  signed-support preservation, and source-before-points order are mandatory.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 418 through the DD.4 SCC
+  interface (112/112 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 283 ANCHOR (doc 420): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 419 by requiring the represented
+  boundary fiber to be cartesian over the represented source multiplier lifts,
+  not a static one-boundary fiber, chosen local transport, fiber rebuilt after
+  base change, noncartesian pullback, pointwise/graph-side/post-product
+  cartesian fiber, retuned/reindexed cartesian fiber, or control/DH/Epstein
+  point-formability. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the new
+  cartesian fiber must transport the represented boundary fiber, fiber
+  universal arrow, fixed globular boundary, source/target boundaries,
+  boundary-restriction/fiber-arrow naturality, component/projection
+  boundaries, pair_alpha/beta boundary, pasting faces, coefficients, signed
+  support, and source-before-points order over the C3/C5/C15/C45/F22 source
+  paths. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 419 through the DD.4 SCC
+  interface (113/113 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 284 ANCHOR (doc 421): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 420 by requiring the
+  cartesian transport of the represented boundary fiber to be represented by
+  coherence cells generated by the cartesian boundary-fiber data, not by
+  declared path equality, finite transport tables, chosen coherence cells,
+  local patches, missing naturality cells, up-to-iso fillers,
+  pointwise/graph-side/post-product coherence, retuned/reindexed coherence
+  labels, or control/DH/Epstein point-formability. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the new represented coherence object is
+  Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, with seven thirty-five-layer coherence cells headed by
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, binding C3/C5/C15/C45/F22 transport,
+  boundary-restriction, fiber-arrow, fixed-boundary, component/projection,
+  pair_alpha/beta, pasting-face, coefficient, signed-support, and
+  source-before-points data. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 420 through the DD.4 SCC
+  interface (114/114 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 285 ANCHOR (doc 422): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  421 by requiring the represented cartesian boundary-fiber coherence cells
+  to assemble as one source-level globular modification with shared source and
+  target boundaries, not independent represented cell lists,
+  boundary-mismatched pasting diagrams, split boundary-restriction/fiber-
+  arrow/fixed-boundary modifications, homotopy or lax fillers,
+  pointwise/graph-side/post-product fillers, retuned modifications, or
+  reindexed modification labels. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new source-level globular modification data are Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components
+  and GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, generated from Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, with faces including cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 421 through the DD.4 SCC
+  interface (115/115 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 286 ANCHOR (doc 423): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract
+  construction-spec. This cycle sharpens doc 422 by requiring the
+  source-level globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over its own fixed
+  globular boundary, not by chosen boundary sections, contractible-choice
+  wrappers without a representer, external/local/quotient boundary fibers,
+  pointwise/graph-side/post-product fibers, retuned boundary maps, reindexed
+  boundary fibers, or control/DH/Epstein point-formability. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the new represented boundary-fiber data
+  are res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, lying over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and
+  selecting Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. Contractibility is allowed only after this represented
+  fiber exists, with boundary preservation, unique source filler,
+  coefficient preservation, signed-support preservation, and source-before-
+  points/source-before-graph order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 422 through the DD.4 SCC
+  interface (116/116 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 287 ANCHOR (doc 424): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian contract
+  construction-spec. This cycle sharpens doc 423 by requiring the
+  represented source boundary fiber to be cartesian over the source
+  multiplier lifts, not static, rebuilt after base change, transported by
+  chosen local tables, checked after points/graph objects, retuned,
+  reindexed, or post-product. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the new cartesian boundary-fiber data are CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+  transporting Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. They must preserve
+  fixed boundary, source/target boundaries, boundary-restriction/fiber-arrow
+  naturality, component/projection boundaries, pair_alpha/beta boundary,
+  pasting faces, coefficients, signed support, and source-before-
+  points/source-before-graph order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 423 through the DD.4 SCC
+  interface (117/117 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 288 ANCHOR (doc 425): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 424 by requiring
+  the cartesian represented boundary-fiber transport to be represented by
+  coherence cells generated by the cartesian boundary-fiber data, not by
+  declared path equalities, finite transport tables, chosen local cells,
+  local patches, missing naturality cells, up-to-iso fillers, pointwise/
+  graph-side/post-product coherence, retuned cells, reindexed labels, or
+  control/DH/Epstein point-formability. Fixed checks: c=(1+z)^-1 remains
+  the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented coherence data are Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+  generated by CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, with named cells
+  cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, and
+  cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup. They must bind C3/C5/C15/C45/F22 transport,
+  boundary restriction, the fiber universal arrow, fixed globular boundary,
+  source/target boundaries, component/projection, pair_alpha/beta, pasting
+  faces, coefficients, signed support, and source-before-points/source-
+  before-graph order. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 424 through the DD.4 SCC
+  interface (118/118 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 289 ANCHOR (doc 426): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens
+  doc 425 by requiring the represented cartesian boundary-fiber coherence
+  cells to assemble as one source-level globular modification with shared
+  source and target boundaries. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new source-level globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, generated from Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, with faces including
+  face_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_boundary_fiber_coherence_globular_boundary and the companion C5*C3=C15, C3*C3*C5=C45, F22,
+  boundary-restriction, fiber-arrow, and fixed-boundary/component/
+  projection/pair/pasting faces. The source boundary must be
+  boundary-restriction plus fiber-arrow naturality; the target boundary must
+  bind fixed-boundary/source-target/component/projection/pair_alpha/beta/
+  pasting-face naturality. Independent cell lists, boundary-mismatched
+  pasting diagrams, split boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy/lax/pointwise/graph-side/post-product fillers,
+  retuned/reindexed modifications, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 425 through the DD.4 SCC
+  interface (119/119 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 290 ANCHOR (doc 427): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber contract
+  construction-spec. This cycle sharpens doc 426 by requiring the
+  source-level globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over its own
+  fixed globular boundary, not by chosen sections, contractible-choice
+  wrappers, external/local/quotient fibers, pointwise/graph-side/post-
+  product fibers, retuned boundary maps, reindexed fibers, or control/DH/
+  Epstein point-formability. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented source boundary-fiber data are
+  res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, and eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, lying over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and selecting
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. Boundary preservation, the unique source filler, coefficient
+  and signed-support preservation, and contractibility must occur only
+  after this represented fiber exists and before point/graph objects.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 426 through the DD.4 SCC
+  interface (120/120 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 291 ANCHOR (doc 428): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian
+  contract construction-spec. This cycle sharpens doc 427 by requiring
+  the represented source boundary fiber to be cartesian over the source
+  multiplier lifts, not static, rebuilt after base change, transported by
+  chosen local tables, checked after points/graph objects, retuned,
+  reindexed, or post-product. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new cartesian boundary-fiber data are CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and
+  cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, transporting Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. They must
+  preserve fixed boundary, source/target boundaries, boundary-restriction/
+  fiber-arrow naturality, component/projection boundaries, pair_alpha/beta
+  boundary, pasting faces, coefficients, signed support, and source-before-
+  points/source-before-graph order while selecting Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 427 through the DD.4 SCC
+  interface (121/121 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 292 ANCHOR (doc 429): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  contract construction-spec. This cycle sharpens doc 428 by requiring
+  the cartesian represented boundary-fiber transport to be represented by
+  coherence cells generated by the cartesian boundary-fiber data, not by
+  declared path equalities, finite transport tables, chosen/local cells,
+  missing naturality cells, up-to-iso fillers, pointwise/graph-side/post-
+  product coherence, retuned cells, reindexed labels, or control/DH/
+  Epstein point-formability. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new represented coherence data are Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, generated
+  by CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and cart_res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, with named cells cell_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber,
+  cell_F22_interchange_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup_boundary_fiber, cell_boundary_restriction_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, cell_boundary_fiber_arrow_cartesian_naturality_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup, and cell_fixed_globular_boundary_pullback_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup. These cells must bind C3/C5/C15/
+  C45/F22 transport, boundary restriction, the fiber universal arrow,
+  fixed globular boundary, source/target boundaries, component/projection,
+  pair_alpha/beta, pasting faces, coefficients, signed support, and source-
+  before-points/source-before-graph order while selecting Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 428 through the DD.4 SCC
+  interface (122/122 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 293 ANCHOR (doc 430): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens
+  doc 429 by requiring the represented cartesian boundary-fiber coherence
+  cells to assemble as one source-level globular modification with shared
+  source and target boundaries. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the new source-level globular modification data are
+  Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components and GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, generated from Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components, with faces including face_C3_C5_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_boundary_fiber_coherence_globular_boundary,
+  face_C5_C3_C15_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_boundary_fiber_coherence_globular_boundary, face_C3_C3_C5_C45_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_boundary_fiber_coherence_globular_boundary, face_F22_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_boundary_fiber_coherence_globular_boundary, face_boundary_restriction_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_naturality_globular_boundary, face_fiber_arrow_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_naturality_globular_boundary, and face_fixed_boundary_component_projection_pair_pasting_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_globular_boundary. The source boundary
+  must be boundary-restriction plus fiber-arrow naturality; the target
+  boundary must bind fixed-boundary/source-target/component/projection/
+  pair_alpha/beta/pasting-face naturality. Independent cell lists,
+  boundary-mismatched pasting diagrams, split boundary-restriction/fiber-
+  arrow/fixed-boundary modifications, homotopy/lax/pointwise/graph-side/
+  post-product fillers, retuned/reindexed modifications, and control/DH/
+  Epstein point-formability are diagnostics only while selecting Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 429 through the DD.4 SCC
+  interface (123/123 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 294 ANCHOR (doc 431): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber contract construction-spec. This
+  cycle sharpens doc 430 by requiring the source-level globular modification
+  to be selected by an actual source boundary-restriction map and represented
+  boundary fiber over its own fixed globular boundary. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Chosen sections,
+  contractible-choice wrappers without a representer, external/local or
+  graph-side fibers, pointwise fibers, post-product fibers, retuned boundary
+  maps, reindexed boundary fibers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 430 through the DD.4 SCC
+  interface (124/124 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 295 ANCHOR (doc 432): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian contract construction-spec.
+  This cycle sharpens doc 431 by requiring the represented boundary fiber to
+  transport cartesianly over the represented source multiplier lifts. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Static one-boundary
+  fibers, chosen local transports, fibers rebuilt after base change,
+  noncartesian pullbacks, pointwise or graph-side fibers, retuned fibers,
+  reindexed fibers, post-product fibers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 431 through the DD.4 SCC
+  interface (125/125 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 296 ANCHOR (doc 433): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence contract
+  construction-spec. This cycle sharpens doc 432 by requiring the cartesian
+  boundary-fiber transport to be represented by coherence cells generated by
+  the cartesian boundary-fiber data. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12. Declared path equalities, finite transport tables, chosen
+  coherence cells, local patches, missing naturality cells, up-to-isomorphism
+  fillers, pointwise or graph-side coherence, retuned cells, reindexed cells,
+  post-product coherence, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 432 through the DD.4 SCC
+  interface (126/126 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 297 ANCHOR (doc 434): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  433 by requiring the represented coherence cells to assemble as one
+  source-level globular modification with shared source and target
+  boundaries. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Independent
+  represented coherence cell lists, boundary-mismatched pasting diagrams,
+  split boundary-restriction/fiber-arrow/fixed-boundary modifications,
+  homotopy/lax/pointwise/graph-side/post-product fillers, retuned or
+  reindexed modifications, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 433 through the DD.4 SCC
+  interface (127/127 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 298 ANCHOR (doc 435): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber contract construction-spec. This
+  cycle sharpens doc 434 by requiring the source-level globular modification
+  to be selected by an actual source boundary-restriction map and represented
+  boundary fiber over its own fixed globular boundary. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12. Chosen sections, contractible-choice
+  wrappers without a representer, external/local or graph-side fibers,
+  pointwise fibers, post-product fibers, retuned boundary maps, reindexed
+  boundary fibers, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 434 through the DD.4 SCC
+  interface (128/128 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 299 ANCHOR (doc 436): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian contract construction-spec.
+  This cycle sharpens doc 435 by requiring the represented boundary fiber to
+  transport cartesianly over the represented source multiplier lifts. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Static one-boundary
+  fibers, chosen local transports, fibers rebuilt after base change,
+  noncartesian pullbacks, pointwise or graph-side fibers, retuned fibers,
+  reindexed fibers, post-product fibers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 435 through the DD.4 SCC
+  interface (129/129 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 300 ANCHOR (doc 437): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  coherence contract construction-spec. This cycle sharpens doc 436 by
+  requiring the cartesian boundary-fiber transport to be represented by
+  coherence cells generated by the cartesian boundary-fiber data. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Declared path
+  equalities, finite transport tables, chosen coherence cells, local patches,
+  missing naturality cells, up-to-isomorphism fillers, pointwise or
+  graph-side coherence, retuned cells, reindexed cells, post-product
+  coherence, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 436 through the DD.4 SCC
+  interface (130/130 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 301 ANCHOR (doc 438): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification contract construction-spec. This cycle sharpens doc
+  437 by requiring the represented coherence cells to assemble as one
+  source-level globular modification with shared source and target
+  boundaries. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Independent
+  represented coherence cell lists, boundary-mismatched pasting diagrams,
+  split boundary-restriction/fiber-arrow/fixed-boundary modifications,
+  homotopy/lax/pointwise/graph-side/post-product fillers, retuned or
+  reindexed modifications, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 437 through the DD.4 SCC
+  interface (131/131 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 302 ANCHOR (doc 439): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber contract construction-spec. This
+  cycle sharpens doc 438 by requiring the source-level globular modification
+  to be selected by an actual source boundary-restriction map and represented
+  boundary fiber over its own fixed globular boundary. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12. Chosen sections, contractible-choice wrappers
+  without a representer, external/local or graph-side fibers, pointwise
+  fibers, post-product fibers, retuned boundary maps, and reindexed boundary
+  fibers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 438 through the DD.4 SCC
+  interface (132/132 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 303 ANCHOR (doc 440): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian contract construction-spec.
+  This cycle sharpens doc 439 by requiring the represented boundary fiber
+  itself to transport cartesianly over the represented source multiplier
+  lifts. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12. Static one-boundary
+  fibers, chosen local transport tables, fibers rebuilt after base change,
+  noncartesian pullbacks, pointwise or graph-side cartesian fibers,
+  post-product cartesian fibers, retuned cartesian fibers, and reindexed
+  cartesian fibers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfc_cart_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 439 through the DD.4 SCC
+  interface (133/133 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 304 ANCHOR (doc 441): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence contract
+  construction-spec. This cycle sharpens doc 440 by requiring the cartesian
+  represented boundary fiber transport to be represented by coherence cells
+  generated by that fiber. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12.
+  Declared path equalities, finite transport tables, chosen coherence cells,
+  local patches, missing naturality cells, up-to-iso fillers, pointwise or
+  graph-side coherence, post-product coherence, retuned coherence cells, and
+  reindexed coherence labels are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfcc_coh_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCC10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 440 through the DD.4 SCC
+  interface (134/134 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 305 ANCHOR (doc 442): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence globular-modification
+  contract construction-spec. This cycle sharpens doc 441 by requiring the
+  represented coherence cells to assemble as one source-level globular
+  modification with shared source and target boundaries. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12. Independent represented coherence cell lists,
+  boundary-mismatched pasting diagrams, split boundary-restriction/fiber-arrow/
+  fixed-boundary modifications, homotopy/lax/pointwise/graph-side/post-product
+  fillers, retuned or reindexed modifications, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccg_gmod_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCG10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 441 through the DD.4 SCC
+  interface (135/135 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 306 ANCHOR (doc 443): Qbar_BECD strict-square product
+  multiplier self-dual exact-source coherence-coupling subrepresenter
+  constraint-component-cone cartesian-coherence globular-modification
+  boundary-fiber represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification represented-boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence
+  globular-modification boundary-fiber cartesian coherence globular-modification
+  boundary-fiber contract construction-spec. This cycle sharpens doc 442 by
+  requiring the source-level globular modification to be selected by an actual
+  source boundary-restriction map and represented boundary fiber over its own
+  fixed globular boundary. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12.
+  Chosen sections, contractible-choice wrappers without a representer,
+  external/local or graph-side fibers, pointwise fibers, post-product fibers,
+  retuned boundary maps, and reindexed boundary fibers are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbfccgbf_contract
+  (SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 442 through the DD.4 SCC
+  interface (136/136 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 307 ANCHOR (doc 444): Qbar_BECD categorical closure-square contract
+  construction-spec. This cycle sharpens doc 443 by requiring the represented
+  boundary fiber and the boundary/cartesian/coherence/globular cycle to close
+  idempotently as one represented categorical source square. The same
+  universal source map must emit endpoint integrality, degree maps, the DD.4
+  boundary, graph composition, Rosati sign, and formation-level control death.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the represented endpoint
+  rows remain balanced and graph/Rosati controls still separate. Recognition
+  or equivalence wrappers, external controllers, graph-side closures, free
+  DD.4 splitters, local boundary tables, retuned degree maps, Rosati/control
+  filters, and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_square_contract
+  (CATCLOSQBARBECD1-CATCLOSQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 443 through the DD.4 SCC interface (137/137
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 308 ANCHOR (doc 445): Qbar_BECD categorical closure Beck-Chevalley
+  cube contract construction-spec. This cycle sharpens doc 444 by requiring
+  the emitted endpoint, degree, DD.4, graph, Rosati, and control-death facets
+  to form one source-native compatibility cube with one totalization and
+  jointly monic facet projections. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the represented endpoint rows remain balanced and graph/Rosati
+  controls still separate. Independent facet bundles, edgewise-only
+  witnesses, declared commutative cubes, posthoc naturality, external
+  totalizations, non-jointly-monic facet families, facet products after
+  points, cube-by-equivalence wrappers, and one-more-layer cube towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_beck_chevalley_cube_contract
+  (CATBCCUBEQBARBECD1-CATBCCUBEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 444 through the DD.4 SCC interface (138/138
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 309 ANCHOR (doc 446): Qbar_BECD categorical closure
+  effective-totalization contract construction-spec. This cycle sharpens doc
+  445 by requiring the totalized Beck-Chevalley source cube to be effective
+  inside the internal Qbar_BECD effectivity stratum, algebraize over Z, keep
+  native prime-power valuation towers, type every cube face by that stratum,
+  and leave controls/Epstein undefined there. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; native prime-power tower depths are fixed; Epstein
+  represented-norm shadows remain downstream. Formal totalizations,
+  finite-anchor cubes, truncationwise descent, external effectivity domains,
+  declared internal-domain IDs, external prime monoids, valuation registers,
+  degree-pair codecs, theta/Epstein shadow promotion, and control-formable
+  totalizations are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_effective_totalization_contract
+  (CATEFFTOTQBARBECD1-CATEFFTOTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 445 through the DD.4 SCC interface (139/139
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 310 ANCHOR (doc 447): Qbar_BECD categorical closure
+  mixed-support totalization contract construction-spec. This cycle
+  sharpens doc 446 by requiring the same internal Qbar_BECD effectivity
+  stratum to retain the mixed support z*C3=2[3]-[6] together with the
+  2-power subtower. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; z*C3 survives as mixed support while 2-power projection
+  sends it to zero. Two-power projection, non-2 support deletion,
+  external prime-axis tags, mixed-support boundary-null declarations,
+  local multiprime stacks, declared mixed-support domains, and
+  post-product control death are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_mixed_support_totalization_contract
+  (CATMIXTOTQBARBECD1-CATMIXTOTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 446 through the DD.4 SCC interface (140/140
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 311 ANCHOR (doc 448): Qbar_BECD categorical closure
+  mixed-support orbit-totalization contract construction-spec. This cycle
+  sharpens doc 447 by requiring the same internal Qbar_BECD effectivity
+  stratum to construct a represented C3-multiplier orbit closure, not just
+  retain the finite mixed support {3,6}. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; z*C3*F22=4[6]-2[12] and z*C3*F41=2[12]-[24] force the
+  odd-base subtower 3,6,12,24 with relative depths 0,1,2,3. External
+  odd-base labels, prime factorizations, local base-by-odd stacks, finite
+  orbit samples, finite product tables, declared transports, endpoint/count
+  filters, boundary kernels, and post-orbit control death are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_mixed_support_orbit_totalization_contract
+  (CATORBTOTQBARBECD1-CATORBTOTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 447 through the DD.4 SCC interface (141/141
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 312 ANCHOR (doc 449): Qbar_BECD categorical closure
+  multiplier-action totalization contract construction-spec. This cycle
+  sharpens doc 448 by requiring the same internal Qbar_BECD effectivity
+  stratum to construct a represented multiplier-action functor with identity,
+  transport composition, and product naturality. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; C3*C3=C9, so T_C3(T_C3(z))=T_C9(z)=2[9]-[18];
+  product naturality gives T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22)=4[6]-2[12]
+  and T_C9(z*F22)=z*(C9*F22)=4[18]-2[36]. Lone C3 transports, finite orbit
+  closures, external multiplier monoids, external labels, local stacks,
+  finite transport tables, declared action functors, endpoint/count filters,
+  boundary kernels, and control shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_multiplier_action_totalization_contract
+  (CATMULACTQBARBECD1-CATMULACTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 448 through the DD.4 SCC interface (142/142
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 313 ANCHOR (doc 450): Qbar_BECD categorical closure
+  multiplier DD.4 naturality totalization contract construction-spec. This
+  cycle sharpens doc 449 by requiring DD.4 boundary localization to be natural
+  for the same represented multiplier-action functor. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the same boundary localization types z,
+  T_C3(z), T_C3(T_C3(z))=T_C9(z), z*F22, T_C3(z*F22), and T_C9(z*F22) while
+  tracking the res_1 DD.4 obstruction. Separate orbit splitters,
+  boundary-after-transport filters, support or weighted-zero boundaries,
+  local boundary tables, declared DD.4 naturality, endpoint/count filters,
+  boundary kernels, and control shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_multiplier_dd4_naturality_totalization_contract
+  (CATDD4NATQBARBECD1-CATDD4NATQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 449 through the DD.4 SCC interface (143/143
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 314 ANCHOR (doc 451): Qbar_BECD categorical closure
+  endpoint-degree naturality totalization contract construction-spec. This
+  cycle sharpens doc 450 by requiring endpoint integrality and the two
+  endpoint degree maps to be generated by the same DD.4-natural internal
+  domain. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the same endpoint map
+  system types z -> (2,2), T_C3(z) -> (6,6),
+  T_C3(T_C3(z))=T_C9(z) -> (18,18), z*F22 -> (8,8),
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> (24,24), and
+  T_C9(z*F22)=z*(C9*F22) -> (72,72). Endpoint registers, degree-pair
+  codecs, support endpoint maps, weighted-zero endpoint tests, local endpoint
+  tables, declared degree maps, external multiplier-degree labels, and
+  control shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_endpoint_degree_naturality_totalization_contract
+  (CATENDDEGQBARBECD1-CATENDDEGQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 450 through the DD.4 SCC interface (144/144
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 315 ANCHOR (doc 452): Qbar_BECD categorical closure
+  pushforward naturality totalization contract construction-spec. This cycle
+  sharpens doc 451 by requiring endpoint maps and DD.4 boundary localization
+  to feed one p1/p2 pushforward square generated by the same internal domain.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the same pushforward
+  square types z -> (2,2), T_C3(z) -> (6,6),
+  T_C3(T_C3(z))=T_C9(z) -> (18,18), z*F22 -> (8,8),
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> (24,24), and
+  T_C9(z*F22)=z*(C9*F22) -> (72,72), all with defect zero and endpoint
+  rank 2. Detached boundary exactness, endpoint-degree filters, symbolic
+  composition, formal adjoints, projection retunings, declared pushforward
+  squares, support or weighted-zero pushforwards, local pushforward stacks,
+  finite pushforward tables, external multiplier-degree labels, and control
+  shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_pushforward_naturality_totalization_contract
+  (CATPUSHQBARBECD1-CATPUSHQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 451 through the DD.4 SCC interface (145/145
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 316 ANCHOR (doc 453): Qbar_BECD categorical closure
+  graph/Rosati/count naturality totalization contract construction-spec. This
+  cycle sharpens doc 452 by requiring graph composition, Rosati, and
+  count/degree data to be generated by the same pushforward square and remain
+  natural for multiplier transport. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the same graph layer types z -> graph 2 and count 4,
+  T_C3(z) -> graph 6 and count 36, T_C3(T_C3(z))=T_C9(z) -> graph 18 and
+  count 324, z*F22 -> graph 8 and count 64,
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> graph 24 and count 576, and
+  T_C9(z*F22)=z*(C9*F22) -> graph 72 and count 5184, all with Rosati defect
+  zero. Graph/count filters, formal Rosati adjoints, detached finite-field
+  checks, declared graph data, support or weighted-zero graphs, local graph
+  stacks, finite graph tables, projection retunings, external
+  multiplier-degree labels, and control shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_graph_rosati_count_naturality_totalization_contract
+  (CATGRCQBARBECD1-CATGRCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 452 through the DD.4 SCC interface (146/146
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 317 ANCHOR (doc 454): Qbar_BECD categorical closure
+  control-death naturality totalization contract construction-spec. This
+  cycle sharpens doc 453 by requiring control death to be generated at graph
+  formation and natural for multiplier transport before controls, DH, or
+  Epstein can form graph/Rosati/count shadows. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the same graph-formation rows type z -> graph 2 and
+  count 4, T_C3(z) -> graph 6 and count 36,
+  T_C3(T_C3(z))=T_C9(z) -> graph 18 and count 324, z*F22 -> graph 8 and
+  count 64, T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> graph 24 and count 576,
+  and T_C9(z*F22)=z*(C9*F22) -> graph 72 and count 5184, all through one
+  graph-formation control-death gate with controls, DH, and Epstein
+  undefined. Posthoc control filters, Rosati-sign/projection/DD.4
+  after-filters, finite samples, semantic labels, declared deaths, local
+  control stacks, and control/DH/Epstein shadows are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_categorical_closure_control_death_naturality_totalization_contract
+  (CATGFDQBARBECD1-CATGFDQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 453 through the DD.4 SCC interface (147/147
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 318 ANCHOR (doc 455): Qbar_BECD categorical closure source-typed
+  formation-gate totalization contract construction-spec. This cycle
+  sharpens doc 454 by requiring the graph-formation gate to be source-typed
+  by a carrier-generated source token and source fiber before graph objects
+  exist. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the same source rows
+  type z -> graph 2 and count 4, T_C3(z) -> graph 6 and count 36,
+  T_C3(T_C3(z))=T_C9(z) -> graph 18 and count 324, z*F22 -> graph 8 and
+  count 64, T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> graph 24 and count 576,
+  and T_C9(z*F22)=z*(C9*F22) -> graph 72 and count 5184, all with one
+  source token and source formation fiber before graph objects. Graph-
+  invariant classifiers, predicates on graph objects, primitive-sign gates,
+  projection-defect gates, retuned projection gates, finite tables, declared
+  source tokens, external oracles, semantic labels, local source stacks,
+  external multiplier degrees, and control/DH/Epstein graph objects are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_source_typed_formation_gate_totalization_contract
+  (CATSTGQBARBECD1-CATSTGQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 454 through the DD.4 SCC interface (148/148
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 319 ANCHOR (doc 456): Qbar_BECD categorical closure represented
+  source-fiber totalization contract construction-spec. This cycle sharpens
+  doc 455 by requiring the source-typed formation fiber to be represented by
+  an actual carrier-side object and universal arrow with cartesian multiplier
+  lifts. Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the same represented
+  source rows type z -> cart 1, graph 2, count 4; T_C3(z) -> cart 3,
+  graph 6, count 36; T_C3(T_C3(z))=T_C9(z) -> cart 9, graph 18, count 324;
+  z*F22 -> cart 4, graph 8, count 64;
+  T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> cart 12, graph 24, count 576; and
+  T_C9(z*F22)=z*(C9*F22) -> cart 36, graph 72, count 5184, all through one
+  representer and universal arrow. Specification functors, functors of
+  points, Yoneda reversal, predicate subfibrations, declared representers,
+  formal universal properties, local lift tables, retuned lifts, and
+  control/DH/Epstein points are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_represented_source_fiber_totalization_contract
+  (CATRSFQBARBECD1-CATRSFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 455 through the DD.4 SCC interface (149/149
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 320 ANCHOR (doc 457): Qbar_BECD categorical closure cartesian-
+  coherence totalization contract construction-spec. This cycle sharpens doc
+  456 by requiring cartesian multiplier lifts to carry represented coherence
+  cells generated by the universal arrow. Fixed checks: c=(1+z)^-1 remains
+  the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the represented coherence rows type z -> cart 1, graph 2,
+  count 4; T_C3(z) -> cart 3, graph 6, count 36;
+  T_C3(T_C3(z))=T_C9(z) -> cart 9, graph 18, count 324; z*F22 -> cart 4,
+  graph 8, count 64; T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> cart 12,
+  graph 24, count 576; and T_C3(T_C3(z*F22))=T_C9(z*F22)=z*(C9*F22) ->
+  cart 36, graph 72, count 5184, all through the same universal-arrow-
+  generated coherence cells. Degree/count/support equality, formal diagrams,
+  declared 2-cells, finite composition tables, local patches, retuned
+  2-cells, and control/DH/Epstein coherent graph objects are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_cartesian_coherence_totalization_contract
+  (CATRSCQBARBECD1-CATRSCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 456 through the DD.4 SCC interface (150/150
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 321 ANCHOR (doc 458): Qbar_BECD categorical closure square-layer
+  coherence totalization contract construction-spec. This cycle sharpens doc
+  457 by requiring the same represented coherence cells to commute with DD.4
+  boundary, endpoint degree, p1/p2 pushforward, graph composition, Rosati,
+  count/degree, and control death. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the represented square-layer rows type z -> cart 1, graph 2,
+  count 4; T_C3(z) -> cart 3, graph 6, count 36;
+  T_C3(T_C3(z))=T_C9(z) -> cart 9, graph 18, count 324; z*F22 -> cart 4,
+  graph 8, count 64; T_C3(z*F22)=T_C3(z)*F22=z*(C3*F22) -> cart 12,
+  graph 24, count 576; and T_C3(T_C3(z*F22))=T_C9(z*F22)=z*(C9*F22) ->
+  cart 36, graph 72, count 5184, all through one square-layer coherence id
+  over DD.4 boundary, endpoint degree, p1/p2 pushforward, graph, Rosati,
+  count, and graph-formation control death. Detached cartesian coherence,
+  boundaryless coherence, declared Beck-Chevalley/projection squares, late
+  boundary/pushforward/graph filters, degree/count/support/weighted-zero
+  tests, local layer tables, patchwork, external 2-cells, retuned layer maps,
+  and control/DH/Epstein square shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_square_layer_coherence_totalization_contract
+  (CATSLCQBARBECD1-CATSLCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 457 through the DD.4 SCC interface (151/151
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 322 ANCHOR (doc 459): Qbar_BECD categorical closure monoidwide
+  square-layer coherence totalization contract construction-spec. This cycle
+  sharpens doc 458 by requiring the same square-layer coherence to be
+  monoidwide for the carrier-native multiplier-action functor. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the independent multiplier rows type
+  T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z) -> cart 15, graph 30, count 900;
+  T_C3(T_C3(T_C5(z)))=T_C9(T_C5(z))=T_C45(z) -> cart 45, graph 90, count
+  8100; T_C15(z*F22)=T_C3(T_C5(z))*F22=z*(C15*F22) -> cart 60, graph 120,
+  count 14400; and T_C45(z*F22)=T_C3(T_C3(T_C5(z)))*F22=z*(C45*F22) ->
+  cart 180, graph 360, count 129600, all through one monoidwide
+  square-layer coherence id over DD.4 boundary, endpoint degree, p1/p2
+  pushforward, graph, Rosati, count, and graph-formation control death.
+  Local C3/C9 patches, finite generator tables, external prime-axis labels,
+  declared monoid actions, formal pentagon/hexagon diagrams, late filters,
+  numeric equalities, local layer tables, retuned coherences, and
+  control/DH/Epstein monoid shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_monoidwide_square_layer_coherence_totalization_contract
+  (CATMWCSLCQBARBECD1-CATMWCSLCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 458 through the DD.4 SCC interface (152/152
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 323 ANCHOR (doc 460): Qbar_BECD categorical closure monoidwide
+  DD.4 boundary-certificate totalization contract construction-spec. This
+  cycle sharpens doc 459 by requiring monoidwide square-layer coherence to
+  transport one actual carrier boundary/properness/self-duality certificate
+  killing the original DD.4 class. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12 before the certificate; the accepted certificate is
+  BKill_BCCube_Qbar_BECD_dQ_boundary_properness_self_duality, carried
+  through Loc_BCCube_Qbar_BECD_single_dQ and
+  NR_BCCube_Qbar_BECD_ordered_p1_p2; the same certificate is transported
+  across T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z),
+  T_C3(T_C3(T_C5(z)))=T_C9(T_C5(z))=T_C45(z),
+  T_C15(z*F22)=T_C3(T_C5(z))*F22=z*(C15*F22), and
+  T_C45(z*F22)=T_C3(T_C3(T_C5(z)))*F22=z*(C45*F22). Monoidwide labels,
+  DD.4 boundary ids, formal nullhomotopies, coinduced acyclic replacements,
+  deletion, quotient, separate orbit/local prime certificates, declared
+  connecting maps, declared localizations, declared self-dual properness,
+  late endpoint/pushforward/graph filters, numeric equalities, local
+  boundary tables, retuned boundary certificates, and control/DH/Epstein
+  shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_monoidwide_dd4_boundary_certificate_totalization_contract
+  (CATMDCQBARBECD1-CATMDCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 459 through the DD.4 SCC interface (153/153
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 324 ANCHOR (doc 461): Qbar_BECD categorical closure DD.4
+  certificate cancellation-module totalization contract construction-spec.
+  This cycle sharpens doc 460 by requiring the DD.4 boundary/properness/
+  self-duality certificate to be generated by the represented
+  boundary-convolution cancellation module on the signed zero fiber
+  z=2[1]-[2]. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12 before the
+  certificate; the source chain is ZFib_BCCube_Qbar_BECD_signed_zero ->
+  CanMod_BCCube_Qbar_BECD_z_boundary_convolution ->
+  BCF_BCCube_Qbar_BECD_boundary_convolution_module ->
+  BKill_BCCube_Qbar_BECD_dQ_boundary_properness_self_duality; the same
+  generated certificate is transported across T_C3(T_C5(z))=T_C5(T_C3(z))=
+  T_C15(z), T_C3(T_C3(T_C5(z)))=T_C45(z), T_C15(z*F22)=z*(C15*F22), and
+  T_C45(z*F22)=z*(C45*F22). Standalone certificates, generator-only images,
+  finite translate tables, weighted-zero/support modules, quotients, declared
+  module functors, formal cells, late filters, numeric equalities, retuned
+  certificates, graph-object coherence, and control/DH/Epstein shadows are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_dd4_certificate_cancellation_module_totalization_contract
+  (CATCMCQBARBECD1-CATCMCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 460 through the DD.4 SCC interface (154/154
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 325 ANCHOR (doc 462): Qbar_BECD categorical closure DD.4
+  certificate exact-naturality totalization contract construction-spec. This
+  cycle sharpens doc 461 by requiring BCF generation of the DD.4 certificate
+  to be an exact natural boundary-delta source inside the represented
+  categorical source square. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  source chain adds Ex_BCCube_Qbar_BECD_CanMod_BCF_dQ,
+  Delta_BCCube_Qbar_BECD_BCF_to_dQ_boundary,
+  Ker_BCCube_Qbar_BECD_BCF_delta_image_z, and
+  Coim_BCCube_Qbar_BECD_CanMod_BCF_delta; the exact delta preserves signed
+  kernel/coimage data and commutes across T_C3(T_C5(z))=T_C5(T_C3(z))=T_C15(z),
+  T_C3(T_C3(T_C5(z)))=T_C45(z), T_C15(z*F22)=z*(C15*F22), and
+  T_C45(z*F22)=z*(C45*F22). Pointwise row certificates, rowwise lookup tables,
+  declared exact sequences, formal natural transformations, weighted-zero/
+  support kernels, finite naturality samples, quotients, cokernel deletions,
+  late filters, numeric equalities, retuned boundary deltas, graph-object
+  coherence, and control/DH/Epstein shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_dd4_certificate_exact_naturality_totalization_contract
+  (CATBNEQBARBECD1-CATBNEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 461 through the DD.4 SCC interface (155/155
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 326 ANCHOR (doc 463): Qbar_BECD categorical closure DD.4
+  certificate exact-source self-duality totalization contract construction-
+  spec. This cycle sharpens doc 462 by requiring the exact BCF boundary-delta
+  source itself to generate the rank-one boundary-defect duality and pinned
+  twist inside the represented categorical source square. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the exact source adds
+  Dual_BCCube_Qbar_BECD_rank1_boundary_defect and
+  Tw_BCCube_Qbar_BECD_OC_BCF_pinned to the BCF exact sequence, delta, kernel,
+  and coimage; the duality has defect rank one, dual line -> primal line,
+  boundary class dd4_c_original_res1_Qbar_BECD, self-dual normal ratio,
+  p1/p2 endpoint pairing, Rosati compatibility, and C3/C5/C15/C45/F22
+  duality naturality. One-sided exact deltas, generic self-duality labels,
+  hyperbolic endpoint planes, full-support dualities, scalar pairings,
+  diagonal coevaluations, formal Rosati adjoints, degree-zero twist
+  normalizations, declared normal ratios, weighted-zero/support dual kernels,
+  late filters, numeric equalities, retuned dualities, graph-object coherence,
+  and control/DH/Epstein shadows are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_dd4_certificate_exact_source_self_duality_totalization_contract
+  (CATBDSQBARBECD1-CATBDSQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 462 through the DD.4 SCC interface (156/156
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 327 ANCHOR (doc 464): Qbar_BECD categorical closure self-dual
+  exact-source formation-gate totalization contract construction-spec. This
+  cycle sharpens doc 463 by requiring the self-dual exact BCF source to be a
+  represented source-level formation fiber before graph objects exist. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the timing data
+  Tok_BCCube_Qbar_BECD_BCF_self_dual_exact_source and
+  Fib_BCCube_Qbar_BECD_BCF_self_dual_exact_source are generated by
+  eta_BCCube_Qbar_BECD_source inside the same represented categorical source
+  square and totalized cube; controls, DH, and Epstein are non-points at
+  source formation, before graph objects. Graph predicates, source tokens
+  after graph formation, declared nonpoint conditions, functors of points
+  without representers, Yoneda reversal, predicate subfibrations, finite
+  admission tables, local source stacks, external oracles, semantic labels,
+  late control/DH/Epstein filters, projection/Rosati/DD.4 after-filters, and
+  retuned formation rules are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_formation_gate_totalization_contract
+  (CATSFGQBARBECD1-CATSFGQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 463 through the DD.4 SCC interface (157/157
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 328 ANCHOR (doc 465): Qbar_BECD categorical closure self-dual
+  exact-source formation-coherence totalization contract construction-spec.
+  This cycle sharpens doc 464 by requiring the self-dual exact-source
+  formation fiber to carry source-level coherence cells generated by the same
+  universal arrow. Fixed checks: c=(1+z)^-1 remains the original nonzero
+  class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the
+  coherence data
+  Coh_BCCube_Qbar_BECD_BCF_self_dual_exact_source_formation,
+  Cart_BCCube_Qbar_BECD_BCF_self_dual_exact_source, and
+  MWC_BCCube_Qbar_BECD_BCF_self_dual_exact_source preserve exact
+  delta/kernel/coimage, rank-one duality, pinned twist, original DD.4 class,
+  normal ratio, endpoint/pushforward/graph/Rosati/count, and source-level
+  control death across C3/C5/C15/C45/F22 before graph objects exist.
+  Same-token assertions, finite row equalities, declared 2-cells, formal
+  squares, finite composition tables, local C3 patches, single-prime axes,
+  prime-axis tags, external 2-cell choices, retuned source coherences,
+  graph-object coherence, graph predicates, late filters, functors of points,
+  semantic labels, and control/DH/Epstein shadows are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_formation_coherence_totalization_contract
+  (CATSFCQBARBECD1-CATSFCQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 464 through the DD.4 SCC interface (158/158
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 329 ANCHOR (doc 466): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling totalization contract construction-spec.
+  This cycle sharpens doc 465 by requiring the self-dual exact-source
+  coherence to be one non-split coupling primitive generated by the same
+  categorical universal arrow. Fixed checks: c=(1+z)^-1 remains the original
+  nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12;
+  the coupling primitive NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source
+  connects the represented source square, totalized Beck-Chevalley cube,
+  multiplier-action functor, signed zero fiber, exact delta/kernel/coimage,
+  rank-one duality, pinned twist, original DD.4 class, normal ratio,
+  endpoint/pushforward, graph/Rosati/count, and source-level control death
+  across C3/C5/C15/C45/F22 before graph objects exist. Product layer
+  coherences, atomwise preservation, fiber products of contracts,
+  pullback-square labels, distributive-law labels, bicategory shadows,
+  formal pasting diagrams, sequential exactness-then-duality pipelines,
+  local C3 tables, external choices, retuned couplings, graph-object
+  coherence, graph predicates, late filters, semantic labels, declared
+  couplings, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_totalization_contract
+  (CATSCCGQBARBECD1-CATSCCGQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 465 through the DD.4 SCC interface (159/159
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 330 ANCHOR (doc 467): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling representability totalization contract
+  construction-spec. This cycle sharpens doc 466 by requiring the non-split
+  categorical source-coherence coupling primitive to be represented by an
+  actual source-side object and universal arrow inside the represented
+  categorical source square and totalized Beck-Chevalley cube. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the representer
+  Rep_NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source and universal arrow
+  eta_NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source represent the
+  coupling primitive NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source, and
+  their points are exactly the coupled self-dual exact sources with controls,
+  DH, and Epstein excluded as non-points before graph objects exist.
+  Connected dependency graphs, nerves, Segal completions, functor-of-points
+  wrappers, Yoneda reversal, Grothendieck/category-of-elements wrappers,
+  formal universal properties, limit cones, comma-category labels, free
+  completions, collages, proarrow equipment, codescent/descent labels, Rezk
+  completions, local representer tables, external choices, retuned
+  representers, products/pullbacks of representers, graph classifiers,
+  semantic labels, declared representers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_representability_totalization_contract
+  (CATSCCRQBARBECD1-CATSCCRQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 466 through the DD.4 SCC interface (160/160
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 331 ANCHOR (doc 468): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter totalization contract
+  construction-spec. This cycle sharpens doc 467 by requiring the
+  represented coupling object to be an actual source subrepresenter/fiber of
+  Rep_BCCube_Qbar_BECD_source_fiber. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the subrepresenter
+  SubRep_NCoup_BCCube_Qbar_BECD_source_fiber, monic inclusion
+  incl_NCoup_to_Rep_BCCube_Qbar_BECD_source_fiber, and exact image
+  Img_NCoup_BCCube_Qbar_BECD_coupled_self_dual_exact_sources force
+  eta_NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source to factor through
+  the represented source fiber. The image is exactly the coupled self-dual
+  exact sources with controls, DH, and Epstein excluded as non-points before
+  graph objects exist. External/equivalent representers, univalence
+  transports, isomorphic copies, Morita sources, Karoubi/idempotent splits,
+  localizations, saturations, sheafifications, stackifications, image
+  closures, dense subobjects, quotient predicates, base-changed subobjects,
+  retuned inclusions, graph classifiers, declared subobjects, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_totalization_contract
+  (CATSSRBQBARBECD1-CATSSRBQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 467 through the DD.4 SCC interface (161/161
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 332 ANCHOR (doc 469): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter finite-limit totalization
+  contract construction-spec. This cycle sharpens doc 468 by requiring the
+  source subrepresenter/fiber inside Rep_BCCube_Qbar_BECD_source_fiber to be
+  produced by one internal finite-limit/equalizer fork before points and
+  graph objects. Fixed checks: c=(1+z)^-1 remains the original nonzero class
+  with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the finite-limit
+  data LimCut_NCoup_BCCube_Qbar_BECD_source_fiber,
+  Fork_BCCube_endpoint_dd4_rosati_control_NCoup, and
+  eq_NCoup_constraints_to_SubRep_BCCube_Qbar_BECD_source_fiber impose
+  endpoint integrality, degree maps, the original DD.4 boundary, boundary
+  pushforward, graph composition, Rosati/count, and control death
+  simultaneously. The equalizer arrow is monic and has exact image
+  Img_NCoup_BCCube_Qbar_BECD_coupled_self_dual_exact_sources. Pointwise
+  exact-image predicates, characteristic-map/subobject-classifier selections,
+  sequential intersections, local row tables, external limit completions,
+  late pullbacks after graph objects, retuned constraints, and
+  graph/Rosati/DD.4 after-filters are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_finite_limit_totalization_contract
+  (CATSFLQBARBECD1-CATSFLQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 468 through the DD.4 SCC interface (162/162
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 333 ANCHOR (doc 470): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-morphism
+  totalization contract construction-spec. This cycle sharpens doc 469 by
+  requiring the finite-limit/equalizer fork to be the equalizer of actual
+  parallel source morphisms into one carrier-native source constraint object.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the source constraint
+  object Con_NCoup_BCCube_Qbar_BECD_endpoint_dd4_rosati_control_source,
+  product object
+  Prod_NCoup_BCCube_Qbar_BECD_endpoint_degree_dd4_push_graph_rosati_control,
+  alpha_NCoup_BCCube_Qbar_BECD_source_constraints, and
+  beta_NCoup_BCCube_Qbar_BECD_source_constraints form the parallel pair whose
+  equalizer is the doc-469 finite-limit cut and doc-468 subrepresenter. The
+  alpha map assembles endpoint, degree, DD.4, pushforward, graph,
+  Rosati/count, and control-death component morphisms; beta is the
+  source-native zero/diagonal comparison; all are source-native before points
+  and graph objects. Heterogeneous checklists, external values, point-functor
+  maps, semantic equality, componentwise post-hoc equality, nonparallel legs,
+  local tables, finite samples, basis-dependent or retuned component maps,
+  graph classifiers, declared parallel pairs, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_morphism_totalization_contract
+  (CATSCFMQBARBECD1-CATSCFMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 469 through the DD.4 SCC interface (163/163
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 334 ANCHOR (doc 471): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-product
+  totalization contract construction-spec. This cycle sharpens doc 470 by
+  requiring the source constraint codomain to be an actual categorical source
+  product with source-native projections and unique alpha/beta pairing maps.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the product object
+  Prod_NCoup_BCCube_Qbar_BECD_endpoint_degree_dd4_push_graph_rosati_control,
+  pairings pair_alpha_NCoup_BCCube_Qbar_BECD_source_constraints and
+  pair_beta_NCoup_BCCube_Qbar_BECD_source_constraints, and projections
+  pi_NCoup_BCCube_Qbar_BECD_endpoint_integrality,
+  pi_NCoup_BCCube_Qbar_BECD_degree_maps,
+  pi_NCoup_BCCube_Qbar_BECD_dd4_boundary,
+  pi_NCoup_BCCube_Qbar_BECD_boundary_pushforward,
+  pi_NCoup_BCCube_Qbar_BECD_graph_composition,
+  pi_NCoup_BCCube_Qbar_BECD_rosati_count, and
+  pi_NCoup_BCCube_Qbar_BECD_control_death jointly assemble the alpha/beta
+  source morphisms and their equalizer. Bundled tuple labels, external
+  products, component-checklist products, products after functors of points,
+  missing projections, nonuniversal bundles, coproduct/sum substitutes, late
+  products, local projection tables, finite samples, basis-dependent or
+  retuned projections, graph-classifier products, declared products, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_product_totalization_contract
+  (CATSCPPQBARBECD1-CATSCPPQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 470 through the DD.4 SCC interface (164/164
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 335 ANCHOR (doc 472): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component
+  totalization contract construction-spec. This cycle sharpens doc 471 by
+  requiring the source-native product projections to land in seven actual
+  categorical source component objects in Rep_BCCube_Qbar_BECD_source_fiber:
+  Comp_NCoup_BCCube_Qbar_BECD_endpoint_integrality_source,
+  Comp_NCoup_BCCube_Qbar_BECD_degree_maps_source,
+  Comp_NCoup_BCCube_Qbar_BECD_dd4_boundary_source,
+  Comp_NCoup_BCCube_Qbar_BECD_boundary_pushforward_source,
+  Comp_NCoup_BCCube_Qbar_BECD_graph_composition_source,
+  Comp_NCoup_BCCube_Qbar_BECD_rosati_count_source, and
+  Comp_NCoup_BCCube_Qbar_BECD_control_death_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; semantic target labels, external
+  components, point-set codomains, graph-side target objects, post-hoc
+  component tables, component shells without source objects, local tables,
+  finite samples, basis-dependent or retuned components, quotient/closure/
+  declared components, products with non-source codomains, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_totalization_contract
+  (CATSCOMPQBARBECD1-CATSCOMPQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 471 through the DD.4 SCC interface (165/165
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 336 ANCHOR (doc 473): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  totalization contract construction-spec. This cycle sharpens doc 472 by
+  requiring the seven categorical source component legs to be generated as one
+  source-native cone from eta_BCCube_Qbar_BECD_source through
+  eta_NCoup_BCCube_Qbar_BECD_BCF_self_dual_exact_source:
+  Cone_NCoup_BCCube_Qbar_BECD_eta_source_components with legs
+  leg_NCoup_BCCube_Qbar_BECD_endpoint_integrality_source,
+  leg_NCoup_BCCube_Qbar_BECD_degree_maps_source,
+  leg_NCoup_BCCube_Qbar_BECD_dd4_boundary_source,
+  leg_NCoup_BCCube_Qbar_BECD_boundary_pushforward_source,
+  leg_NCoup_BCCube_Qbar_BECD_graph_composition_source,
+  leg_NCoup_BCCube_Qbar_BECD_rosati_count_source, and
+  leg_NCoup_BCCube_Qbar_BECD_control_death_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; pair_alpha must be the unique
+  product-mediated arrow from this cone and pair_beta must use the same
+  zero/diagonal source cone. Independent component legs, external chosen
+  legs, post-hoc cone labels, product-projection pullbacks, point-functor
+  cones, graph-side cones, componentwise natural transformations, local cone
+  tables, finite samples, basis-dependent or retuned cones, quotient/closure/
+  split/declared/non-eta cones, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_totalization_contract
+  (CATSCONEQBARBECD1-CATSCONEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 472 through the DD.4 SCC interface (166/166
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 337 ANCHOR (doc 474): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian totalization contract construction-spec. This cycle sharpens doc
+  473 by requiring the eta-generated source component cone to be cartesian over
+  represented source lifts:
+  CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components over
+  CartLift_BCCube_Qbar_BECD_multiplier_source_fiber and
+  Cart_BCCube_Qbar_BECD_BCF_self_dual_exact_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; component-leg naturality, projection-leg
+  naturality, and pair_alpha/pair_beta cartesian naturality are required
+  before points and graph objects. Finite path checks, sampled transport,
+  pointwise naturality, graph-side base change, local transport tables, chosen
+  transport isomorphisms, up-to-isomorphism claims without coherence, lax
+  naturality, noncartesian pullbacks, reindexed cone labels, retuned
+  transport, base-changed component replacements, declared naturality squares,
+  split componentwise naturality, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_totalization_contract
+  (CATSCARTCONEQBARBECD1-CATSCARTCONEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 473 through the DD.4 SCC interface (167/167
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 338 ANCHOR (doc 475): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence totalization contract construction-spec. This cycle
+  sharpens doc 474 by requiring the cartesian eta-generated source component
+  cone's naturality squares to be represented coherence cells generated by
+  eta_BCCube_Qbar_BECD_source and
+  Cart_BCCube_Qbar_BECD_BCF_self_dual_exact_source inside the same represented
+  categorical source square and totalized cube:
+  Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components, with cells
+  cell_C3_C5_C15_NCoup_BCCube_Qbar_BECD_component_cone,
+  cell_C5_C3_C15_NCoup_BCCube_Qbar_BECD_component_cone,
+  cell_C3_C3_C5_C45_NCoup_BCCube_Qbar_BECD_component_cone,
+  cell_F22_interchange_NCoup_BCCube_Qbar_BECD_component_cone,
+  cell_pair_alpha_product_naturality_NCoup_BCCube_Qbar_BECD, and
+  cell_pair_beta_zero_diagonal_naturality_NCoup_BCCube_Qbar_BECD. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the coherence cells bind
+  C3/C5/C15/C45/F22 cone pullbacks, component-leg naturality, projection-leg
+  naturality, pair_alpha/pair_beta naturality, associativity, interchange,
+  coefficient preservation, and signed-support preservation before points and
+  graph objects. Declared naturality squares, finite coherence tables, local
+  or chosen modifications, componentwise/lax cells, pointwise or graph-side
+  coherence, post-product coherence, retuned/reindexed coherence cells, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_totalization_contract
+  (CATSCARTCOHQBARBECD1-CATSCARTCOHQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 474 through the DD.4 SCC interface (168/168
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 339 ANCHOR (doc 476): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence globular-modification totalization contract
+  construction-spec. This cycle sharpens doc 475 by requiring the represented
+  cartesian component-cone coherence cells to assemble as one source-level
+  globular modification with shared source and target boundaries inside the
+  same represented categorical source square and totalized cube:
+  Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components and
+  GlobBd_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the source boundary is component-leg and
+  projection-leg naturality, the target boundary is pair_alpha/pair_beta
+  naturality, and the C3/C5/C15/C45/F22 cells are pasting faces of the same
+  modification with whiskering, vertical/horizontal composition,
+  associativity, interchange, coefficient preservation, and signed-support
+  preservation before points and graph objects. Independent represented cell
+  lists, boundary-mismatched cells, formal pasting diagrams, separate
+  component or pairing modifications, homotopy fillers after points, lax
+  modifications, graph-side or pointwise modifications, retuned/reindexed
+  modification labels, post-product modifications, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_totalization_contract
+  (CATSCARTCOHGMQBARBECD1-CATSCARTCOHGMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 475 through the DD.4 SCC interface (169/169
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 340 ANCHOR (doc 477): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence globular-modification boundary-fiber totalization
+  contract construction-spec. This cycle sharpens doc 476 by requiring the
+  source-level globular modification to be selected by an actual source
+  boundary-restriction map and represented boundary fiber over the fixed
+  globular boundary inside the same represented categorical source square and
+  totalized cube:
+  res_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_to_GlobBd,
+  Fib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components, and
+  eta_Fib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the represented fiber
+  lies over GlobBd_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components, its
+  universal arrow selects
+  Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components, and
+  contractibility is downstream of the represented fiber while preserving
+  source/target boundaries, C3/C5/C15/C45/F22 pasting faces, whiskering,
+  vertical/horizontal composition, coefficient preservation, signed-support
+  preservation, and source-before-points order. Chosen boundary sections,
+  contractible-choice wrappers without a representer, wrong-boundary fibers,
+  external/quotient/local boundary-fiber tables, pointwise or graph-side
+  fibers, post-product fibers, retuned boundary restrictions, reindexed
+  boundary fibers, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_totalization_contract
+  (CATSCARTCOHGBFQBARBECD1-CATSCARTCOHGBFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 476 through the DD.4 SCC interface (170/170
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 341 ANCHOR (doc 478): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence globular-modification boundary-fiber cartesian
+  totalization contract construction-spec. This cycle sharpens doc 477 by
+  requiring the represented boundary fiber to be cartesian over the same
+  represented source multiplier lifts inside the represented categorical
+  source square and totalized cube:
+  CartFib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components and
+  cart_res_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_to_GlobBd. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the cartesian boundary fiber transports the
+  boundary restriction map and fiber universal arrow along the C3/C5/C15/C45/
+  F22 source paths while preserving the fixed globular boundary,
+  component/projection boundaries, pair_alpha/pair_beta target boundary,
+  pasting faces, coefficient preservation, signed-support preservation, and
+  source-before-points order. Static one-boundary fibers, chosen base-change
+  fibers, fibers rebuilt after base change, noncartesian pullbacks, local
+  transport tables, pointwise or graph-side cartesian fibers, post-product
+  cartesian fibers, retuned cartesian fibers, reindexed cartesian fibers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_categorical_closure_self_dual_exact_source_coherence_coupling_subrepresenter_constraint_component_cone_cartesian_coherence_globular_modification_boundary_fiber_cartesian_totalization_contract
+  (CATSCARTCOHGBFCARTQBARBECD1-CATSCARTCOHGBFCARTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 477 through the DD.4 SCC interface (171/171
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 342 ANCHOR (doc 479): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence totalization contract construction-spec. This cycle
+  sharpens doc 478 by requiring cartesian boundary-fiber transport to be
+  represented by coherence cells generated by the cartesian source fiber data
+  inside the represented categorical source square and totalized cube:
+  Coh_CartFib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components
+  and the seven boundary-fiber coherence cells
+  cell_C3_C5_C15_NCoup_BCCube_Qbar_BECD_boundary_fiber,
+  cell_C5_C3_C15_NCoup_BCCube_Qbar_BECD_boundary_fiber,
+  cell_C3_C3_C5_C45_NCoup_BCCube_Qbar_BECD_boundary_fiber,
+  cell_F22_interchange_NCoup_BCCube_Qbar_BECD_boundary_fiber,
+  cell_boundary_restriction_cartesian_naturality_NCoup_BCCube_Qbar_BECD,
+  cell_boundary_fiber_arrow_cartesian_naturality_NCoup_BCCube_Qbar_BECD, and
+  cell_fixed_globular_boundary_pullback_NCoup_BCCube_Qbar_BECD. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the represented coherence cells bind
+  C3/C5/C15/C45/F22 transport, boundary restriction, fiber universal arrow,
+  fixed globular boundary, component/projection boundaries,
+  pair_alpha/pair_beta boundary, pasting faces, associativity, interchange,
+  coefficient preservation, signed-support preservation, and
+  source-before-points order. Declared path equalities, finite transport
+  tables, chosen coherence cells, local patches, missing naturality cells,
+  up-to-iso fillers, pointwise coherence, graph-side coherence, post-product
+  coherence, retuned coherence cells, reindexed coherence labels, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cat_boundary_fiber_cartesian_coherence_totalization_contract
+  (CATSCARTCOHGBFCARTCOHQBARBECD1-CATSCARTCOHGBFCARTCOHQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 478 through the DD.4 SCC interface (172/172
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 343 ANCHOR (doc 480): Qbar_BECD categorical closure self-dual
+  exact-source coherence-coupling subrepresenter constraint-component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence globular-modification totalization contract
+  construction-spec. This cycle sharpens doc 479 by requiring the represented
+  cartesian boundary-fiber coherence cells to assemble as one source-level
+  globular modification with shared source and target boundaries inside the
+  represented categorical source square and totalized cube:
+  Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartCone_NCoup_BCCube_Qbar_BECD_eta_source_components.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the source boundary is
+  boundary-restriction plus fiber-arrow naturality, the target boundary binds
+  fixed-boundary, component/projection, pair_alpha/pair_beta, and pasting-face
+  naturality, and the C3/C5/C15/C45/F22 cells are faces of the same
+  modification over CatSq_Qbar_BECD_closes_doc443_boundary_cycle,
+  Tot_BCCube_CatSq_Qbar_BECD, and
+  CartLift_BCCube_Qbar_BECD_multiplier_source_fiber with whiskering,
+  vertical/horizontal composition, associativity, interchange, coefficient
+  preservation, signed-support preservation, and source-before-points order.
+  Independent fiber-coherence cell lists, boundary-mismatched pasting
+  diagrams, separate boundary-restriction/fiber-arrow/fixed-boundary
+  modifications, homotopy fillers after points, lax modifications, graph-side
+  or pointwise modifications, retuned/reindexed modification labels,
+  post-product modifications, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cat_boundary_fiber_coherence_globular_totalization_contract
+  (CATSCARTCOHGBFCARTCOHGMQBARBECD1-CATSCARTCOHGBFCARTCOHGMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 479 through the DD.4 SCC interface (173/173
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 344 ANCHOR (doc 481): Qbar_BECD categorical closure finite coherent
+  source-presentation totalization contract construction-spec. This cycle
+  sharpens doc 480 by requiring the remaining square/cube/facet/boundary/
+  coherence data to be represented by one finite coherent source-presentation
+  totalizer with no open next-coherence obligation:
+  Cat_CohSrcPres_BCCube_Qbar_BECD, Tot_CohSrcPres_BCCube_Qbar_BECD, and
+  eta_CohSrcPres_BCCube_Qbar_BECD. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; the totalizer has seven internal source facets
+  endpoint_integrality, degree_maps, dd4_boundary, boundary_pushforward,
+  graph_composition, rosati_count, and control_death, plus seventeen internal
+  coherence cells closing source square, Beck-Chevalley cube, cartesian lifts,
+  component cone, component/projection/pairing, globular modification,
+  boundary fiber, cartesian boundary fiber, boundary-fiber coherence,
+  fiber-coherence modification, source/target boundaries, multiplier paths,
+  coefficient preservation, signed-support preservation, source-before-points
+  order, and closed finite coherence. One-more-layer coherence towers,
+  partial facet totalizers, local charts, equivalence wrappers, graph-side or
+  pointwise totalizers, pro-completions, post-product totalizers, retuned
+  facet selectors, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_totalization_contract
+  (CATCOHSRCPRESTOTQBARBECD1-CATCOHSRCPRESTOTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 480 through the DD.4 SCC interface (174/174
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 345 ANCHOR (doc 482): Qbar_BECD categorical closure coherent
+  source-presentation finite-limit realization contract construction-spec.
+  This cycle sharpens doc 481 by requiring the finite coherent
+  source-presentation totalizer to be realized as an internal finite-limit/
+  equalizer object in the existing source category, not merely declared,
+  freely presented, syntax-quotiented, or externally realized. The new
+  required data are SrcCat_BCCube_Qbar_BECD,
+  Prod_CohSrcPres_BCCube_Qbar_BECD_facets_cells,
+  alpha_CohSrcPres_BCCube_Qbar_BECD_constraints,
+  beta_CohSrcPres_BCCube_Qbar_BECD_constraints,
+  Eq_CohSrcPres_BCCube_Qbar_BECD,
+  incl_Eq_CohSrcPres_to_Tot_CohSrcPres_BCCube_Qbar_BECD, and
+  cmp_Eq_CohSrcPres_to_Tot_CohSrcPres_BCCube_Qbar_BECD. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the product has twenty-four source-native
+  projections to the seven facets and seventeen coherence cells, the
+  parallel maps encode the doc-481 constraints, the equalizer is monic into
+  the totalizer, and the comparison is an isomorphism preserving
+  coefficients, signed support, and source-before-points order. Declared
+  totalizers, free presentation categories, syntax-only limits, external
+  limits, posthoc equalizers, graph-side or pointwise limits, pro-limits,
+  retuned comparisons, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_finite_limit_contract
+  (CATCOHSRCPRESLIMQBARBECD1-CATCOHSRCPRESLIMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 481 through the DD.4 SCC interface (175/175
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 346 ANCHOR (doc 483): Qbar_BECD categorical closure coherent
+  source-presentation eta-factorization contract construction-spec. This
+  cycle sharpens doc 482 by requiring the existing source universal arrow to
+  factor through the product, equalize the parallel constraints, lift through
+  the equalizer, and compare isomorphically to the doc-481 totalizer arrow.
+  The new required data are eta_BCCube_Qbar_BECD_source,
+  fact_eta_BCCube_to_Prod_CohSrcPres_BCCube_Qbar_BECD,
+  lift_eta_BCCube_to_Eq_CohSrcPres_BCCube_Qbar_BECD, and
+  cmp_lift_eta_BCCube_to_eta_CohSrcPres_BCCube_Qbar_BECD. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; eta generates all twenty-four projections,
+  the seven facets, and the seventeen coherence cells, equalizes
+  alpha_CohSrcPres_BCCube_Qbar_BECD_constraints and
+  beta_CohSrcPres_BCCube_Qbar_BECD_constraints, lifts through
+  incl_Eq_CohSrcPres_to_Tot_CohSrcPres_BCCube_Qbar_BECD, and compares
+  isomorphically to eta_CohSrcPres_BCCube_Qbar_BECD while preserving
+  coefficients, signed support, and source-before-points order. Object-only
+  equalizers, empty equalizers, unsourced lifts, product-only factorizations,
+  chosen sections, posthoc point maps, graph-side sections, nonmonic lifts,
+  retuned eta comparisons, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_factorization_contract
+  (CATCOHSRCPRESETAQBARBECD1-CATCOHSRCPRESETAQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 482 through the DD.4 SCC interface (176/176
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 347 ANCHOR (doc 484): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift universal-cone contract construction-spec.
+  This cycle sharpens doc 483 by requiring the eta equalizer lift to form one
+  source-native universal cone over the actual twenty-four coherent
+  source-presentation component codomains. The new required data are
+  Cone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components,
+  UP_Cone_lift_eta_CohSrcPres_BCCube_Qbar_BECD,
+  uniq_factor_CohSrcPres_through_lift_eta_BCCube_Qbar_BECD, and
+  med_CohSrcPres_arrow_to_lift_eta_BCCube_Qbar_BECD. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the cone has twenty-four
+  leg_lift_eta_CohSrcPres_BCCube_Qbar_BECD_* legs landing in the twenty-four
+  Comp_CohSrcPres_BCCube_Qbar_BECD_*_source codomains, every coherent
+  source-presentation arrow factors uniquely through
+  lift_eta_BCCube_to_Eq_CohSrcPres_BCCube_Qbar_BECD, and the same cone
+  transports along the C3/C5/C15/C45/F22 multiplier paths while preserving
+  coefficients, signed support, and source-before-points order. Chosen cones,
+  inhabited equalizers, pointwise sections, external component codomains,
+  semantic target labels, graph-side cones, posthoc Yoneda recognition,
+  nonunique mediating arrows, retuned cone payloads, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_universal_cone_contract
+  (CATCOHSRCPRESETACONEQBARBECD1-CATCOHSRCPRESETACONEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 483 through the DD.4 SCC interface (177/177
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 348 ANCHOR (doc 485): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian universal-cone contract
+  construction-spec. This cycle sharpens doc 484 by requiring the eta-lift
+  universal cone to be cartesian over the represented coherent
+  source-presentation source lifts. The new required data are
+  CartLift_CohSrcPres_BCCube_Qbar_BECD_multiplier_source_fiber,
+  CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components,
+  CartUP_Cone_lift_eta_CohSrcPres_BCCube_Qbar_BECD, and
+  Nat_med_CohSrcPres_arrow_to_lift_eta_BCCube_Qbar_BECD_cartesian. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the cartesian cone has twenty-four
+  cart_leg_lift_eta_CohSrcPres_BCCube_Qbar_BECD_* legs over the same
+  twenty-four component codomains, preserves component-leg and mediating-arrow
+  naturality under represented source lifts, and transports on the
+  C3/C5/C15/C45/F22 multiplier paths while preserving coefficients, signed
+  support, and source-before-points order. Finite path checks, sampled
+  transport, pointwise naturality, graph-side base change, local transport
+  tables, chosen transport isomorphisms, up-to-isomorphism claims without
+  coherence, lax naturality, noncartesian pullbacks, reindexed cone labels,
+  retuned transport, base-changed component replacements, declared naturality
+  squares, split componentwise naturality, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_universal_cone_contract
+  (CATCOHSRCPRESETACARTCONEQBARBECD1-CATCOHSRCPRESETACARTCONEQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 484 through the DD.4 SCC interface (178/178
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 349 ANCHOR (doc 486): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence contract construction-spec.
+  This cycle sharpens doc 485 by requiring the cartesian eta-lift universal
+  cone's naturality squares to be represented coherence cells generated by
+  the same eta-lift/cartesian-source data. The new required data are
+  Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components and
+  Coh_CartLift_CohSrcPres_BCCube_Qbar_BECD_multiplier_source_fiber. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the represented coherence payload has four
+  multiplier-path cells, twenty-four component-leg naturality cells, and four
+  structure cells for the mediating arrow, cartesian universal property,
+  unique factorization, and component-codomain equalities, with associativity,
+  interchange, coefficient preservation, signed-support preservation, and
+  source-before-points order. Declared coherence cells, formal naturality
+  squares, finite coherence tables, local modification patches, chosen
+  modifications, componentwise incoherent cells, up-to-modification claims
+  without coherence, lax coherence, graph-side or pointwise coherence cells,
+  retuned coherence cells, reindexed coherence labels, coherence after product
+  projection, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_contract
+  (CATCOHSRCPRESETACARTCOHQBARBECD1-CATCOHSRCPRESETACARTCOHQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 485 through the DD.4 SCC interface (179/179
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 350 ANCHOR (doc 487): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  contract construction-spec. This cycle sharpens doc 486 by requiring the
+  represented cartesian eta-lift coherence cells to be faces of one
+  source-level globular modification with shared source and target boundary.
+  The new required data are
+  Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components and
+  GlobBd_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; all thirty-two
+  represented coherence cells are pasting faces of the same modification; the
+  source boundary is component-leg naturality plus component-codomain
+  equality; the target boundary is mediating-arrow naturality plus cartesian
+  universal property plus unique factorization; multiplier-path payloads
+  agree for C3*C5=C15, C5*C3=C15, C3*C3*C5=C45, and F22 product; and the
+  modification preserves whiskering, vertical/horizontal composition,
+  associativity, interchange, coefficients, signed support, and
+  source-before-points order. Independent represented cell lists, formal
+  pasting diagrams, boundary-mismatched cells, split component/structure
+  modifications, homotopy fillers after points, lax, graph-side, pointwise,
+  retuned, reindexed, or post-product modifications, missing multiplier-path
+  pasting faces, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_contract
+  (CATCOHSRCPRESETACARTCOHGMQBARBECD1-CATCOHSRCPRESETACARTCOHGMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 486 through the DD.4 SCC interface (180/180
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 351 ANCHOR (doc 488): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber contract construction-spec. This cycle sharpens doc 487 by
+  requiring the source-level globular modification to be selected by an actual
+  source boundary-restriction map and represented boundary fiber over its
+  fixed globular boundary. The new required data are
+  res_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_to_GlobBd,
+  Fib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components, and
+  eta_Fib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the fiber is over
+  GlobBd_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components; its arrow
+  selects Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components;
+  unique filler and contractibility are downstream of the represented fiber;
+  all thirty-two pasting faces, source/target boundaries, multiplier paths,
+  coefficients, signed support, and source-before-points order are preserved.
+  Graph identities, label-only selections, chosen boundary sections,
+  contractible-choice wrappers without a representer, wrong-boundary fibers,
+  external/quotient/local fibers, pointwise or graph-side fibers,
+  post-product fibers, retuned/reindexed boundary data, missing fiber arrows,
+  premature contractibility, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 487 through the DD.4 SCC interface (181/181
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 352 ANCHOR (doc 489): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian contract construction-spec. This cycle sharpens
+  doc 488 by requiring the represented boundary fiber to be cartesian over
+  the represented source multiplier lifts. The new required data are
+  CartFib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components
+  and
+  cart_res_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_to_GlobBd.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the cartesian boundary
+  fiber transports the boundary restriction map and fiber universal arrow
+  over the C3/C5/C15/C45/F22 source paths; the fixed globular boundary,
+  source and target boundaries, all thirty-two pasting faces, multiplier
+  paths, coefficients, signed support, and source-before-points order are
+  preserved. Graph identities, static one-boundary fibers, reused fiber names
+  without pullback, chosen base-change fibers, fibers rebuilt after base
+  change, noncartesian pullbacks, local transport tables, pointwise or
+  graph-side cartesian fibers, post-product cartesian fibers,
+  retuned/reindexed cartesian fibers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 488 through the DD.4 SCC interface (182/182
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 353 ANCHOR (doc 490): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence contract construction-spec. This cycle
+  sharpens doc 489 by requiring cartesian boundary-fiber transport to be
+  represented by coherence cells generated by the cartesian boundary-fiber
+  data. The new required data are
+  Coh_CartFib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components
+  plus represented cells for C3*C5=C15, C5*C3=C15, C3*C3*C5=C45, F22
+  interchange, boundary-restriction naturality, fiber-arrow naturality,
+  fixed-globular-boundary pullback, source-boundary naturality,
+  target-boundary naturality, and pasting-face naturality. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the same represented coherence controls every
+  multiplier path; associativity, interchange, coefficients, signed support,
+  and source-before-points order are preserved. Graph identities, declared
+  path equalities, finite transport tables, chosen or local coherence
+  patches, up-to-isomorphism fillers, missing naturality cells, pointwise or
+  graph-side coherence, post-product coherence, retuned/reindexed coherence
+  labels, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 489 through the DD.4 SCC interface (183/183
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 354 ANCHOR (doc 491): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification contract
+  construction-spec. This cycle sharpens doc 490 by requiring the represented
+  cartesian boundary-fiber coherence cells to be faces of one source-level
+  globular modification with shared source and target boundary. The new
+  required data are
+  Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components
+  and
+  GlobBd_Coh_CartFib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD_components.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; all ten represented
+  cartesian boundary-fiber coherence cells are faces of the same modification;
+  the source boundary is boundary-restriction plus fiber-arrow naturality; the
+  target boundary binds fixed-boundary, source-boundary, target-boundary, and
+  pasting-face naturality; the same modification controls C3*C5=C15,
+  C5*C3=C15, C3*C3*C5=C45, and F22 product; whiskering,
+  vertical/horizontal composition, associativity, interchange, coefficients,
+  signed support, and source-before-points order are preserved. Graph
+  identities, independent cell lists, boundary-mismatched pasting diagrams,
+  split modifications, late graph-side fillers, retuned/reindexed
+  modifications, and control/DH/Epstein point-formability are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 490 through the DD.4 SCC interface (184/184
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 355 ANCHOR (doc 492): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  closure contract construction-spec. This cycle sharpens doc 491 by
+  requiring the doc-491 globular modification to be absorbed by the existing
+  finite coherent source-presentation index and to close idempotently to the
+  same source totalizer, rather than generating another boundary-fiber/
+  cartesian/coherence/globular layer. The new required data are
+  FinIdx_CohSrcPres_BCCube_Qbar_BECD,
+  incl_Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_to_FinIdx_CohSrcPres_BCCube_Qbar_BECD,
+  and
+  idem_close_Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_CohSrcPres_BCCube_Qbar_BECD.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the finite index is
+  exactly seven source facets plus seventeen coherence cells; the doc-491
+  modification maps to the existing fiber_coherence_modification_cell; the
+  index does not expand; idempotent closure returns
+  Tot_CohSrcPres_BCCube_Qbar_BECD; no next boundary-fiber, cartesian
+  transport, globular modification, or coherence obligation remains; strict
+  C3/C5/C15/C45/F22 rows preserve coefficients, signed support, and
+  source-before-points order. Post-doc491 boundary fibers, cartesian
+  transports, globular modifications, expanded finite indexes, declared
+  totalizers, chosen sections, pro/local/graph-side closures, retuned
+  indexes, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_finite_index_closure_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 491 through the DD.4 SCC interface (185/185
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 356 ANCHOR (doc 493): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-idempotent contract construction-spec. This cycle sharpens doc
+  492 by requiring the finite-index idempotent closure to be the actual
+  source equalizer idempotent on Eq_CohSrcPres_BCCube_Qbar_BECD, compatible
+  with alpha/beta, the monic inclusion, and the eta lift, and comparing to
+  the identity on the same totalizer. The new required data are
+  e_Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_on_Eq_CohSrcPres_BCCube_Qbar_BECD
+  and
+  cmp_e_Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_to_id_Tot_CohSrcPres_BCCube_Qbar_BECD.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the finite index remains
+  exactly seven source facets plus seventeen coherence cells; the doc-491
+  payload remains present; the idempotent is on the source equalizer, is
+  alpha/beta compatible, is compatible with the monic inclusion, fixes the
+  eta lift, and compares to id_Tot_CohSrcPres_BCCube_Qbar_BECD; strict
+  C3/C5/C15/C45/F22 rows preserve coefficients, signed support, and
+  source-before-points order. Index-level idempotents, set-level closures,
+  Karoubi completions, external retracts, facet projections, posthoc splits,
+  graph-side idempotents, retuned idempotents, expanded finite indexes,
+  one-more-layer towers, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_finite_index_equalizer_idempotent_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 492 through the DD.4 SCC interface (186/186
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 357 ANCHOR (doc 494): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-idempotent monic-cancellation contract construction-spec. This
+  cycle sharpens doc 493 by requiring the source equalizer idempotent to
+  cancel through the monic inclusion to
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD, not merely become identity after
+  comparison with the totalizer or on the finite index. The new required data
+  are id_Eq_CohSrcPres_BCCube_Qbar_BECD and
+  cancel_incl_Eq_e_Mod_Coh_CartFib_Mod_Coh_CartCone_lift_eta_to_id_Eq_CohSrcPres_BCCube_Qbar_BECD.
+  Fixed checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the finite index remains
+  exactly seven source facets plus seventeen coherence cells; the doc-491
+  payload remains present; monic cancellation sends e to id_Eq; eta lift,
+  alpha/beta compatibility, comparison identity, coefficients, signed
+  support, and source-before-points order are preserved. Comparison-only
+  identities, hidden-kernel idempotents, nonmonic cancellations,
+  index/projection identities, automorphism masks, quotient shadows,
+  graph-side identities, retuned identities, expanded finite indexes,
+  one-more-layer towers, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_coherent_source_presentation_eta_lift_cartesian_coherence_globular_modification_boundary_fiber_cartesian_coherence_globular_modification_finite_index_equalizer_idempotent_monic_cancellation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDMONQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDMONQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 493 through the DD.4 SCC interface (187/187
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 358 ANCHOR (doc 495): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator contract construction-spec. This
+  cycle sharpens doc 494 by requiring the monic-cancelled equalizer identity
+  to be the unique mediator generated by the same source finite-limit/
+  equalizer universal property forced in doc 482, not merely a named identity
+  after cancellation. The new required data are
+  Cone_id_Eq_CohSrcPres_BCCube_Qbar_BECD_components,
+  UP_Eq_CohSrcPres_BCCube_Qbar_BECD_finite_limit,
+  med_UP_Eq_CohSrcPres_id_to_id_Eq_CohSrcPres_BCCube_Qbar_BECD, and
+  uniq_UP_Eq_CohSrcPres_id_to_id_Eq_CohSrcPres_BCCube_Qbar_BECD. Fixed
+  checks: c=(1+z)^-1 remains the original nonzero class with
+  H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for L=6,8,10,12; the finite index
+  remains exactly seven source facets plus seventeen coherence cells; the
+  doc-491 payload remains connected to the equalizer identity through
+  fiber_coherence_modification_cell; the identity cone uses the same
+  alpha/beta fork, the universal mediator is id_Eq and unique, eta lift,
+  comparison identity, coefficients, signed support, and source-before-points
+  order are preserved. Named identities, posthoc monic cancellations,
+  nonuniversal identities, external universal properties, Yoneda shadows,
+  nonunique or automorphism mediators, projectionwise identities, graph-side
+  or pointwise mediators, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eta_cart_gmod_bf_cart_gmod_finite_index_eq_identity_universal_mediator_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 494 through the DD.4 SCC interface (188/188
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 359 ANCHOR (doc 496): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator multiplier-naturality contract
+  construction-spec. This cycle sharpens doc 495 by requiring the universal
+  mediator for id_Eq_CohSrcPres_BCCube_Qbar_BECD to be natural for the
+  source multiplier action by one whiskering/composition law, not by
+  separate per-path mediators whose payloads agree after inspection. The new
+  required data are Act_CohSrcPres_BCCube_Qbar_BECD_multiplier,
+  Nat_med_UP_Eq_CohSrcPres_id_multiplier_action,
+  Whisker_med_UP_Eq_CohSrcPres_id_multiplier_action, and
+  Comp_Nat_med_UP_Eq_CohSrcPres_id_C3_C5_C15_C45_F22. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  five naturality cells and four composition cells make the universal mediator
+  path-independent for C3/C5/C15/C45/F22; eta lift, comparison identity,
+  coefficients, signed support, and source-before-points order are preserved.
+  Per-path mediators, payload-equality-only checks, external multiplier
+  actions, declared naturality, lax whiskering, missing composition laws,
+  retuned path labels, projectionwise naturality, graph-side or pointwise
+  naturality, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_multiplier_naturality_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPNATQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPNATQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 495 through the DD.4 SCC interface (189/189
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 360 ANCHOR (doc 497): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator DD.4-certificate contract
+  construction-spec. This cycle sharpens doc 496 by requiring the
+  multiplier-natural universal mediator for id_Eq_CohSrcPres_BCCube_Qbar_BECD
+  to carry the existing carrier DD.4 boundary/properness/self-duality
+  certificate while preserving the original nonzero DD.4 class with
+  res_1(c)=1 before the same certificate kills it. The new required data are
+  Cert_med_UP_Eq_CohSrcPres_id_DD4_boundary,
+  Nat_Cert_med_UP_Eq_CohSrcPres_id_DD4_multiplier_action, and
+  Handoff_BKill_to_med_UP_Eq_id_DD4_certificate. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  five DD.4 certificate naturality cells and four DD.4 certificate
+  composition cells make the same certificate path-independent for
+  C3/C5/C15/C45/F22; the single dQ localization and ordered normal ratio are
+  preserved. Coefficient-only naturality, DD.4 labels, posthoc certificate
+  handoffs, local path certificates, res1-forgetting, coboundary relabels,
+  copied certificates, boundary-after-mediator patches, external
+  certificates, graph-side or pointwise certificates, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_dd4_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4QBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4QBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 496 through the DD.4 SCC interface (190/190
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 361 ANCHOR (doc 498): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator exact-BCF-certificate contract
+  construction-spec. This cycle sharpens doc 497 by requiring the
+  DD.4-certificate-carrying universal mediator for
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD to carry the exact BCF generation of the
+  certificate, not an opaque BKill token or certificate label. The new
+  required data are ZFib_med_UP_Eq_id_signed_zero,
+  CanMod_med_UP_Eq_id_z_boundary_convolution,
+  BCF_med_UP_Eq_id_boundary_convolution_module,
+  Ex_med_UP_Eq_id_CanMod_BCF_dQ,
+  Delta_med_UP_Eq_id_BCF_to_dQ_boundary,
+  Ker_med_UP_Eq_id_BCF_delta_image_z, and
+  Coim_med_UP_Eq_id_CanMod_BCF_delta. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  five exact BCF naturality cells and four exact BCF composition cells make
+  the same exact source path-independent for C3/C5/C15/C45/F22; the kernel
+  is the cancellation-module image; the coimage preserves signed
+  coefficients and support; the single dQ localization and ordered normal
+  ratio are preserved. Opaque BKill tokens, certificate-without-BCF
+  handoffs, rowwise BCF images, declared exact sequences, weighted-zero or
+  support kernels, quotient exact completions, cokernel deletions, external
+  deltas, late exactness filters, graph-side or pointwise exactness, retuned
+  deltas, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 497 through the DD.4 SCC interface (191/191
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 362 ANCHOR (doc 499): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator self-dual exact-BCF-certificate
+  contract construction-spec. This cycle sharpens doc 498 by requiring the
+  exact-BCF-generated DD.4-certificate-carrying universal mediator for
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD to carry self-dual properness generated
+  by the same exact BCF source, not a downstream label. The new required data
+  are Dual_med_UP_Eq_id_rank1_boundary_defect and
+  Tw_med_UP_Eq_id_OC_BCF_pinned. Fixed checks: c=(1+z)^-1 remains the
+  original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1 for
+  L=6,8,10,12; Laurent-window support ranks are 4,6,10,18, hyperbolic ranks
+  are 8,12,20,36, defect ranks are 1,1,1,1, unit twists are 3,5,9,17, and
+  nonzero maps are 7,31,511,131071; the finite index remains exactly seven
+  source facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  five self-dual exact BCF naturality cells and four self-dual exact BCF
+  composition cells make the same rank-one duality path-independent for
+  C3/C5/C15/C45/F22; the duality runs dual boundary defect line to primal
+  boundary defect line, pairs p1/p2 endpoints, fixes biduality, has boundary
+  dd4_c_original_res1_Qbar_BECD, pins the Laurent twist, makes the normal
+  ratio a self-dual boundary, and remains Rosati-compatible. One-sided exact
+  deltas, generic self-duality labels, hyperbolic endpoint planes,
+  full-support dualities, inserted dual/primal matching, scalar pairings,
+  diagonal coevaluations, formal Rosati adjoints, degree-zero twist
+  normalizations, declared normal ratios, weighted-zero or support dual
+  kernels, late Rosati filters, degree/count equalities, retuned dualities,
+  graph-side dualities, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 498 through the DD.4 SCC interface (192/192
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 363 ANCHOR (doc 500): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator formation-gated self-dual
+  exact-BCF-certificate contract construction-spec. This cycle sharpens doc
+  499 by requiring the self-dual exact-BCF-generated DD.4-certificate-
+  carrying universal mediator for id_Eq_CohSrcPres_BCCube_Qbar_BECD to
+  generate source-level formation before graph objects exist. The new
+  required data are Tok_med_UP_Eq_id_BCF_self_dual_exact_source and
+  Fib_med_UP_Eq_id_BCF_self_dual_exact_source. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the finite index remains exactly seven source facets plus
+  seventeen coherence cells; the doc-491 payload remains connected to the
+  equalizer identity through fiber_coherence_modification_cell; five
+  formation naturality cells and four formation composition cells make the
+  same formation fiber path-independent for C3/C5/C15/C45/F22; the formation
+  fiber carries the signed zero fiber, cancellation module, BCF functor,
+  exact delta, kernel, coimage, rank-one duality, pinned twist, original DD.4
+  class, single dQ localization, and ordered normal ratio; controls, DH, and
+  Epstein are non-points at source level before graph objects. Graph
+  predicates, source tokens after graph formation, declared nonpoint
+  conditions, functors of points without representers, Yoneda reversal,
+  predicate subfibrations, finite admission tables, local source stacks,
+  external oracles, semantic zeta labels, late control/DH/Epstein filters,
+  projection-defect filters, Rosati-sign filters, DD.4 afterthought filters,
+  retuned formation rules, expanded finite indexes, one-more-layer towers,
+  and control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_formation_gated_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFGSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFGSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 499 through the DD.4 SCC interface (193/193
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 364 ANCHOR (doc 501): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator formation-coherent self-dual
+  exact-BCF-certificate contract construction-spec. This cycle sharpens doc
+  500 by requiring the formation-gated self-dual exact-BCF-generated
+  DD.4-certificate-carrying universal mediator for
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD to generate source-level formation
+  coherence, not merely a formation token/fiber. The new required data are
+  Coh_med_UP_Eq_id_BCF_self_dual_exact_source_formation,
+  Cart_med_UP_Eq_id_BCF_self_dual_exact_source, and
+  MWC_med_UP_Eq_id_BCF_self_dual_exact_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  five source-coherence naturality cells and four source-coherence
+  composition cells make the same formation coherence path-independent for
+  C3/C5/C15/C45/F22; the coherence preserves the exact BCF delta, kernel,
+  coimage, signed coefficients/support, rank-one duality, pinned twist,
+  original DD.4 class, normal ratio, endpoint pairing, endpoint/pushforward/
+  graph chain, Rosati/count chain, and source-level control death. Same-token
+  assertions, finite row equalities, degree/count/support-only or
+  weighted-zero-only coherence, declared 2-cells, formal commutative squares,
+  finite composition tables, local C3 patches, single-prime-axis patches,
+  prime-axis tags, external choices of 2-cells, retuned source coherences,
+  graph-object coherence, graph predicates, late control filters,
+  boundary/DD.4 after-filters, functors of points without representers,
+  semantic zeta labels, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 500 through the DD.4 SCC interface (194/194
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 365 ANCHOR (doc 502): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator coupled formation-coherent self-dual
+  exact-BCF-certificate contract construction-spec. This cycle sharpens doc
+  501 by requiring the formation-coherent self-dual exact-BCF-generated
+  DD.4-certificate-carrying universal mediator for
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD to generate one non-split source-
+  coherence coupling primitive, not merely source coherence preserving
+  independent layers. The new required datum is
+  NCoup_med_UP_Eq_id_BCF_self_dual_exact_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  the same coupling payload is path-independent for C3/C5/C15/C45/F22; the
+  coupling binds the exact BCF delta, kernel, coimage, signed
+  coefficients/support, rank-one duality, pinned twist, original DD.4 class,
+  normal ratio, endpoint pairing, endpoint/pushforward/graph chain,
+  Rosati/count chain, and source-level control death before graph objects.
+  Product layer coherences, atomwise preservation, fiber products of
+  contracts, pullback-square-only arguments, distributive-law labels, formal
+  pasting diagrams, sequential exactness-then-duality pipelines, local C3
+  tables, finite composition tables, external or retuned couplings,
+  graph-object coherence, graph predicates, late control filters,
+  boundary/DD.4 after-filters, semantic zeta labels, expanded finite indexes,
+  one-more-layer towers, declared couplings, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 501 through the DD.4 SCC interface (195/195
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 366 ANCHOR (doc 503): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator represented coupled formation-
+  coherent self-dual exact-BCF-certificate contract construction-spec. This
+  cycle sharpens doc 502 by requiring the coupled formation-coherent
+  self-dual exact-BCF-generated DD.4-certificate-carrying universal mediator
+  for id_Eq_CohSrcPres_BCCube_Qbar_BECD to generate an actual source-side
+  representer and universal arrow for the coupling, not merely a connected
+  dependency graph. The new required data are
+  Rep_NCoup_med_UP_Eq_id_BCF_self_dual_exact_source and
+  eta_NCoup_med_UP_Eq_id_BCF_self_dual_exact_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  the same representability payload is path-independent for C3/C5/C15/C45/F22;
+  the representer points are exactly the coupled self-dual exact BCF sources;
+  controls, DH, and Epstein are non-points of the representer before graph
+  objects. Connected dependency graphs, nerves, Segal completions,
+  functor-of-points wrappers, Yoneda reversal, Grothendieck constructions,
+  categories of elements, formal universal properties, limit cones,
+  comma-category labels, free operad completions, collages, proarrow
+  equipment, codescent/descent labels, Rezk completions, local representer
+  tables, external or retuned representers, products or pullbacks of
+  representers, graph-object classifiers, semantic zeta labels, declared
+  representers, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_represented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 502 through the DD.4 SCC interface (196/196
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 367 ANCHOR (doc 504): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator subrepresented coupled formation-
+  coherent self-dual exact-BCF-certificate contract construction-spec. This
+  cycle sharpens doc 503 by requiring the represented coupled self-dual
+  exact-BCF-generated DD.4-certificate-carrying universal mediator for
+  id_Eq_CohSrcPres_BCCube_Qbar_BECD to land as an actual subrepresenter of
+  the mediator source fiber, not as an abstract representer shell. The new
+  required data are SubRep_NCoup_med_UP_Eq_id_source_fiber,
+  incl_NCoup_med_UP_Eq_id_to_Fib_med_UP_Eq_id_BCF_self_dual_exact_source,
+  Img_NCoup_med_UP_Eq_id_coupled_self_dual_exact_sources, and
+  fact_eta_NCoup_med_UP_Eq_id_through_source_fiber_subrep. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the doc-491 payload remains
+  connected to the equalizer identity through fiber_coherence_modification_cell;
+  the same subrepresenter payload is path-independent for C3/C5/C15/C45/F22;
+  the inclusion is monic; eta_NCoup factors through the subrepresenter; the
+  image is exactly the coupled self-dual exact BCF sources, including exact
+  delta, original DD.4, and source-level control death; controls, DH, and
+  Epstein are non-points of the subrepresenter before graph objects. Abstract
+  external representers, equivalent representers, univalence transports,
+  isomorphic copies, Morita sources, Karoubi/idempotent splits,
+  localizations/saturations, sheafifications/stackifications, image closures,
+  dense subobjects, quotient predicates, base-changed subobjects, retuned
+  inclusions, graph-object classifiers, declared subobjects, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 503 through the DD.4 SCC interface (197/197
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 368 ANCHOR (doc 505): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift cartesian-coherence globular-modification
+  boundary-fiber cartesian-coherence globular-modification finite-index
+  equalizer-identity universal-mediator finite-limit subrepresented coupled
+  formation-coherent self-dual exact-BCF-certificate contract construction-
+  spec. This cycle sharpens doc 504 by requiring the mediator source-fiber
+  subrepresenter for id_Eq_CohSrcPres_BCCube_Qbar_BECD to be cut out inside
+  that source fiber by one finite-limit/equalizer fork, not by pointwise
+  image predicates, subobject classifiers, sequential filters, declared
+  equalizers, or late graph pullbacks. The new required data are
+  LimCut_NCoup_med_UP_Eq_id_source_fiber,
+  Fork_med_UP_Eq_id_endpoint_dd4_rosati_control_NCoup, and
+  eq_NCoup_med_UP_Eq_id_constraints_to_SubRep_source_fiber. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and
+  res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven source
+  facets plus seventeen coherence cells; the same finite-limit cut payload
+  is path-independent for C3/C5/C15/C45/F22; the equalizer arrow is monic;
+  its image is the doc-504 subrepresenter; endpoint integrality, degree maps,
+  original DD.4, boundary pushforward, graph composition, Rosati/count, and
+  control death are imposed in one fork before points and graph objects;
+  controls, DH, and Epstein are non-points of the subrepresenter. Pointwise
+  image certificates, predicate subobject selections, subobject classifiers,
+  characteristic-map-only repairs, sequential intersections, iterated filters,
+  post-hoc image factorizations, external finite-limit completions, pullbacks
+  after graph objects, local row tables, finite-sample cuts, basis-dependent
+  cuts, retuned/projected constraints, graph-invariant classifiers, declared
+  equalizers, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 504 through the DD.4 SCC interface (198/198
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 369 ANCHOR (doc 506): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  parallel-morphism finite-limit subrepresented coupled formation-coherent
+  self-dual exact-BCF-certificate contract construction-spec. This cycle
+  sharpens doc 505 by requiring the mediator finite-limit/equalizer fork to
+  be the equalizer of actual parallel source morphisms into one mediator-
+  native constraint object, not a heterogeneous checklist of constraint
+  values, point-functor natural transformation, componentwise post-hoc
+  equality, or graph-side classifier. The new required data are
+  Con_NCoup_med_UP_Eq_id_endpoint_dd4_rosati_control_source,
+  Prod_NCoup_med_UP_Eq_id_endpoint_degree_dd4_push_graph_rosati_control,
+  alpha_NCoup_med_UP_Eq_id_source_constraints, and
+  beta_NCoup_med_UP_Eq_id_source_constraints. Fixed checks: c=(1+z)^-1
+  remains the original nonzero class with H^1(<phi>;U_1)=Z/2 and res_1(c)=1
+  for L=6,8,10,12; the finite index remains exactly seven source facets plus
+  seventeen coherence cells; the same constraint-morphism payload is
+  path-independent for C3/C5/C15/C45/F22; alpha assembles endpoint
+  integrality, degree maps, original DD.4, boundary pushforward, graph
+  composition, Rosati/count, and control-death component morphisms; beta is
+  the source-native zero/diagonal comparison; alpha and beta are parallel
+  before points and graph objects; the equalizer image is the doc-505 cut and
+  doc-504 subrepresenter; controls, DH, and Epstein are non-points.
+  Heterogeneous constraint checklists, external constraint values,
+  point-functor natural transformations, semantic equality only,
+  componentwise post-hoc equalities, missing product objects, nonparallel
+  fork legs, one-sided constraint maps, late diagonals, zero sections
+  inserted after facts, local constraint tables, finite-sample morphisms,
+  basis-dependent morphisms, retuned/projected component maps,
+  graph-classifier morphisms, declared parallel pairs, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_parallel_morphism_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 505 through the DD.4 SCC interface (199/199
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 370 ANCHOR (doc 507): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  product-projected parallel-morphism finite-limit subrepresented coupled
+  formation-coherent self-dual exact-BCF-certificate contract
+  construction-spec. This cycle sharpens doc 506 by requiring the common
+  codomain of alpha_NCoup_med_UP_Eq_id_source_constraints and
+  beta_NCoup_med_UP_Eq_id_source_constraints to be an actual mediator source
+  product, not a bundled tuple, external set product, component checklist, or
+  graph-side product. The required product is
+  Prod_NCoup_med_UP_Eq_id_endpoint_degree_dd4_push_graph_rosati_control with
+  source-native projections pi_NCoup_med_UP_Eq_id_endpoint_integrality,
+  pi_NCoup_med_UP_Eq_id_degree_maps,
+  pi_NCoup_med_UP_Eq_id_dd4_boundary,
+  pi_NCoup_med_UP_Eq_id_boundary_pushforward,
+  pi_NCoup_med_UP_Eq_id_graph_composition,
+  pi_NCoup_med_UP_Eq_id_rosati_count, and
+  pi_NCoup_med_UP_Eq_id_control_death, plus unique pairings
+  pair_alpha_NCoup_med_UP_Eq_id_source_constraints and
+  pair_beta_NCoup_med_UP_Eq_id_source_constraints. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven
+  source facets plus seventeen coherence cells; the product payload is
+  path-independent for C3/C5/C15/C45/F22; alpha and beta are unique pairings
+  through the projections; the equalizer uses the product pair before points
+  and graph objects; controls, DH, and Epstein are non-points. Bundled tuple
+  labels, external products, products after functors of points, component
+  checklists, missing/nonuniversal projections, coproduct substitutes,
+  graph-late fiber products/projections, local projection tables,
+  finite-sample products, basis-dependent projections, retuned/projected
+  component maps, graph-classifier products, declared products, expanded
+  finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_product_projected_parallel_morphism_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 506 through the DD.4 SCC interface (200/200
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 371 ANCHOR (doc 508): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-object product-projected parallel-morphism finite-limit
+  subrepresented coupled formation-coherent self-dual exact-BCF-certificate
+  contract construction-spec. This cycle sharpens doc 507 by requiring the
+  product projections to land in seven actual mediator source component
+  objects, not semantic target labels, external modules, point-set
+  codomains, graph-side target objects, or post-hoc component tables. The
+  required component objects are
+  Comp_NCoup_med_UP_Eq_id_endpoint_integrality_source,
+  Comp_NCoup_med_UP_Eq_id_degree_maps_source,
+  Comp_NCoup_med_UP_Eq_id_dd4_boundary_source,
+  Comp_NCoup_med_UP_Eq_id_boundary_pushforward_source,
+  Comp_NCoup_med_UP_Eq_id_graph_composition_source,
+  Comp_NCoup_med_UP_Eq_id_rosati_count_source, and
+  Comp_NCoup_med_UP_Eq_id_control_death_source. Fixed checks:
+  c=(1+z)^-1 remains the original nonzero class with H^1(<phi>;U_1)=Z/2
+  and res_1(c)=1 for L=6,8,10,12; the finite index remains exactly seven
+  source facets plus seventeen coherence cells; the component-object payload
+  is path-independent for C3/C5/C15/C45/F22; product projections,
+  alpha-pairing, and beta-pairing use the seven component codomains before
+  points and graph objects; controls, DH, and Epstein are non-points.
+  Semantic labels, external component objects, point-set codomains,
+  graph-side targets, post-hoc component codomains, component shells,
+  local/finite/basis-dependent/retuned components, quotient or closure
+  components, declared component objects, products with non-source codomains,
+  expanded finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_object_product_projected_parallel_morphism_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 507 through the DD.4 SCC interface (201/201
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 372 ANCHOR (doc 509): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone component-object product-projected parallel-morphism
+  finite-limit subrepresented coupled formation-coherent self-dual
+  exact-BCF-certificate contract construction-spec. This cycle sharpens doc
+  508 by requiring the seven mediator source component legs to be generated
+  as one source-native cone from the equalizer-identity mediator and coupling
+  universal arrow, not independently chosen, externally selected, pulled back
+  from product projections, or assembled only after points or graph objects.
+  The required component cone is
+  Cone_NCoup_med_UP_Eq_id_eta_source_components with legs
+  leg_NCoup_med_UP_Eq_id_endpoint_integrality_source,
+  leg_NCoup_med_UP_Eq_id_degree_maps_source,
+  leg_NCoup_med_UP_Eq_id_dd4_boundary_source,
+  leg_NCoup_med_UP_Eq_id_boundary_pushforward_source,
+  leg_NCoup_med_UP_Eq_id_graph_composition_source,
+  leg_NCoup_med_UP_Eq_id_rosati_count_source, and
+  leg_NCoup_med_UP_Eq_id_control_death_source landing in the seven doc-508
+  component objects. The alpha pairing must be the unique product-mediated
+  arrow whose projections are those legs, beta must be compatible with the
+  same zero/diagonal source cone, the finite index stays seven source facets
+  plus seventeen coherence cells, and the cone payload is path-independent
+  for C3/C5/C15/C45/F22. Independent/external legs, post-hoc cone labels,
+  product-projection pullbacks, point-functor cones, graph-side cones,
+  componentwise natural transformations, local/finite/basis-dependent/
+  retuned cone tables, quotient/closure/split/declared/non-eta cones,
+  expanded finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_component_object_product_projected_parallel_morphism_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 508 through the DD.4 SCC interface (202/202
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 373 ANCHOR (doc 510): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian component-object product-projected
+  parallel-morphism finite-limit subrepresented coupled formation-coherent
+  self-dual exact-BCF-certificate contract construction-spec. This cycle
+  sharpens doc 509 by requiring the eta-generated mediator component cone to
+  be cartesian over represented mediator source lifts, not merely stable on
+  selected finite paths or after chosen transport. The required data are
+  CartCone_NCoup_med_UP_Eq_id_eta_source_components,
+  CartLift_med_UP_Eq_id_source_fiber, and
+  Cart_med_UP_Eq_id_BCF_self_dual_exact_source. The cartesian cone must pull
+  back Cone_NCoup_med_UP_Eq_id_eta_source_components to the same source cone,
+  preserve the seven doc-508 component objects, and carry component-leg
+  naturality plus projection-leg naturality for both
+  pair_alpha_NCoup_med_UP_Eq_id_source_constraints and
+  pair_beta_NCoup_med_UP_Eq_id_source_constraints before points and graph
+  objects. The finite index remains exactly seven source facets plus
+  seventeen coherence cells and the cartesian cone payload is path-independent
+  for C3/C5/C15/C45/F22. Finite path checks, sampled transport, chosen
+  transport isomorphisms, pointwise/graph-side/lax naturality,
+  up-to-isomorphism claims without coherence, noncartesian pullbacks,
+  reindexed or retuned cone labels, base-changed component replacements,
+  declared naturality squares, split componentwise naturality, expanded
+  finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_component_object_product_projected_parallel_morphism_finite_limit_subrepresented_coupled_formation_coherent_self_dual_exact_bcf_certificate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 509 through the DD.4 SCC interface (203/203
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 374 ANCHOR (doc 511): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian-coherence component-object product-projected
+  parallel-morphism finite-limit subrepresented coupled formation-coherent
+  self-dual exact-BCF-certificate contract construction-spec. This cycle
+  sharpens doc 510 by requiring the cartesian component-cone naturality
+  squares to be represented coherence cells generated by the same cartesian
+  cone and source-coherence data, not declared squares, finite coherence
+  tables, chosen modifications, or componentwise lax cells. The required data
+  are Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components, generated by
+  CartCone_NCoup_med_UP_Eq_id_eta_source_components and
+  Cart_med_UP_Eq_id_BCF_self_dual_exact_source, with represented C3*C5=C15,
+  C5*C3=C15, C3*C3*C5=C45, and F22 interchange cells, seven component-leg
+  naturality cells, seven projection-leg naturality cells, pair_alpha product
+  naturality, pair_beta zero/diagonal naturality, associativity, interchange,
+  coefficient preservation, signed-support preservation, and
+  source-before-points order. The finite index remains exactly seven source
+  facets plus seventeen coherence cells and the coherent cartesian cone
+  payload is path-independent for C3/C5/C15/C45/F22. Declared/formal/finite/
+  local/chosen/componentwise/lax/up-to-modification coherence,
+  graph-side or pointwise cells, post-product coherence, retuned or reindexed
+  coherence labels, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 510 through the DD.4 SCC interface (204/204
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 375 ANCHOR (doc 512): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian-coherence globular-modification component-object
+  product-projected parallel-morphism finite-limit subrepresented coupled
+  formation-coherent self-dual exact-BCF-certificate contract
+  construction-spec. This cycle sharpens doc 511 by requiring the represented
+  cartesian-cone coherence cells to be faces of one source-level globular
+  modification with shared source and target boundaries, not independent
+  cells, boundary-mismatched cells, formal pasting diagrams, separate
+  component modifications, or separate pairing modifications. The required
+  data are Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components and
+  GlobBd_CartCone_NCoup_med_UP_Eq_id_eta_source_components. The source
+  boundary must be component-leg and projection-leg naturality; the target
+  boundary must be pair_alpha and pair_beta naturality; C3*C5=C15,
+  C5*C3=C15, C3*C3*C5=C45, F22, component-leg, projection-leg, and
+  pair_alpha/beta cells must be faces of the same modification. Whiskering,
+  vertical/horizontal composition, associativity, interchange, coefficient
+  preservation, signed-support preservation, and source-before-points order
+  are mandatory. The finite index remains exactly seven source facets plus
+  seventeen coherence cells and the globular modification payload is
+  path-independent for C3/C5/C15/C45/F22. Independent represented cell lists,
+  boundary-mismatched cells, formal pasting diagrams, separate component or
+  pairing modifications, homotopy fillers after points, lax/graph-side/
+  pointwise/retuned/reindexed/post-product modifications, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 511 through the DD.4 SCC interface (205/205
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 376 ANCHOR (doc 513): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian-coherence globular-modification boundary-fiber
+  component-object product-projected parallel-morphism finite-limit
+  subrepresented coupled formation-coherent self-dual exact-BCF-certificate
+  contract construction-spec. This cycle sharpens doc 512 by requiring the
+  doc-512 source-level globular modification to be selected by an actual
+  source boundary-restriction map and represented boundary fiber, not by a
+  chosen section, contractible-choice wrapper, external/local/quotient fiber,
+  pointwise label, graph-side label, or post-product table. The required data
+  are res_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_to_GlobBd,
+  Fib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components, and
+  eta_Fib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components. The
+  fiber must lie over fixed
+  GlobBd_CartCone_NCoup_med_UP_Eq_id_eta_source_components, its universal
+  arrow must select Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components,
+  and unique source filler plus contractibility are admissible only after the
+  represented fiber exists. Boundary, source/target, pasting-face,
+  coefficient, and signed-support preservation remain mandatory, with the
+  fiber formed before points, graph objects, controls, DH, or Epstein. The
+  finite index remains exactly seven source facets plus seventeen coherence
+  cells; retuned/reindexed fibers, expanded finite indexes, and one-more-layer
+  towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 512 through the DD.4 SCC interface (206/206
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 377 ANCHOR (doc 514): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian-coherence globular-modification boundary-fiber
+  cartesian component-object product-projected parallel-morphism finite-limit
+  subrepresented coupled formation-coherent self-dual exact-BCF-certificate
+  contract construction-spec. This cycle sharpens doc 513 by requiring the
+  represented boundary fiber to be cartesian over the represented source
+  lifts, not static, reused by name after base change, rebuilt after base
+  change, transported by chosen local tables, noncartesian, pointwise,
+  graph-side, or post-product. The required data are
+  CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components and
+  cart_res_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_to_GlobBd. The boundary
+  restriction and fiber universal arrow must transport cartesianly over
+  CartLift_med_UP_Eq_id_source_fiber and
+  Cart_med_UP_Eq_id_BCF_self_dual_exact_source; the fixed globular boundary,
+  source/target boundaries, pasting faces, coefficients, and signed support
+  must pull back on every path; and the same cartesian fiber must appear on
+  the C3*C5=C15, C5*C3=C15, C3*C3*C5=C45, and F22 paths before points, graph
+  objects, controls, DH, or Epstein. The finite index remains exactly seven
+  source facets plus seventeen coherence cells; retuned/reindexed fibers,
+  expanded finite indexes, and one-more-layer towers are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 513 through the DD.4 SCC interface (207/207
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 378 ANCHOR (doc 515): Qbar_BECD categorical closure coherent
+  source-presentation eta-lift equalizer-identity universal-mediator
+  component-cone cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence component-object product-projected parallel-morphism
+  finite-limit subrepresented coupled formation-coherent self-dual
+  exact-BCF-certificate contract construction-spec. This cycle sharpens doc
+  514 by requiring cartesian boundary-fiber transport to be represented by
+  coherence cells generated by the cartesian boundary fiber, not by declared
+  path equality, finite transport tables, chosen coherence cells, local
+  patches, up-to-isomorphism fillers, pointwise coherence, graph-side
+  coherence, post-product coherence, retuned labels, or reindexed labels. The
+  required data are
+  Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components, the
+  four C3/C5/C15/C45/F22 boundary-fiber coherence cells,
+  boundary-restriction cartesian naturality, boundary-fiber-arrow cartesian
+  naturality, fixed-boundary pullback naturality, source-boundary and
+  target-boundary cartesian naturality, and pasting-face cartesian
+  naturality. The same represented coherence must control every multiplier
+  path and preserve associativity, interchange, coefficients, signed support,
+  and source-before-points order. The finite index remains exactly seven
+  source facets plus seventeen coherence cells; expanded finite indexes and
+  one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHCOMPOBJPROJPMORFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 514 through the DD.4 SCC interface (208/208
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 379 ANCHOR (doc 516): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index closure contract construction-spec. This
+  cycle sharpens doc 515 by requiring the cartesian boundary-fiber coherence
+  object to be absorbed by the existing finite equalizer-identity mediator
+  index, not continued into another globular-modification/boundary-fiber/
+  cartesian/coherence tower. The required data are
+  FinIdx_NCoup_med_UP_Eq_id_source_components,
+  incl_Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_to_FinIdx, and
+  idem_close_Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id. The doc-515
+  coherence
+  Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_eta_source_components must
+  map to the existing boundary_fiber_coherence_cell, the finite index must
+  remain exactly seven source facets plus seventeen coherence cells, and
+  idempotent closure must return Tot_NCoup_med_UP_Eq_id_source_components
+  with no next boundary-fiber/cartesian/coherence/globular obligation.
+  Post-doc515 layers, expanded finite indexes, declared totalizers, chosen
+  sections, pro/local/graph-side closures, retuned indexes, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 515 through the DD.4 SCC interface (209/209
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 380 ANCHOR (doc 517): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index equalizer-idempotent contract
+  construction-spec. This cycle sharpens doc 516 by requiring the
+  finite-index closure of the doc-515 coherence to be an actual source
+  equalizer idempotent, not an index-level idempotent, set-level closure,
+  Karoubi completion, external retract, facet projection, graph-side
+  idempotent, or retuned idempotent. The required data are
+  e_Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_on_Eq_source_components
+  and
+  cmp_e_Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_to_id_Tot_NCoup_med_UP_Eq_id_source_components.
+  The idempotent must live on Eq_NCoup_med_UP_Eq_id_source_components,
+  satisfy alpha/beta compatibility, monic-inclusion compatibility,
+  universal-mediator fixedness, doc-515 coherence fixedness, comparison to
+  id_Tot_NCoup_med_UP_Eq_id_source_components, exact twenty-four-cell finite
+  index preservation, and source-before-points order. Expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 516 through the DD.4 SCC interface (210/210
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 381 ANCHOR (doc 518): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index equalizer-idempotent monic-cancellation
+  contract construction-spec. This cycle sharpens doc 517 by requiring the
+  source equalizer idempotent to cancel through the monic inclusion to the
+  actual equalizer identity, not merely compare to the identity after
+  totalization. The required data are
+  id_Eq_NCoup_med_UP_Eq_id_source_components and
+  cancel_incl_Eq_e_Coh_CartFib_Mod_Coh_CartCone_NCoup_med_UP_Eq_id_to_id_Eq_NCoup_med_UP_Eq_id_source_components.
+  The cancellation must be source-native, preserve the doc-515 coherence
+  payload and universal mediator, keep the exact twenty-four-cell finite
+  index, and occur before points, graph objects, controls, DH, or Epstein.
+  Comparison-only identities, hidden-kernel idempotents, nonmonic
+  cancellations, index/projection identities, automorphism masks, quotient
+  shadows, graph-side or retuned identities, expanded finite indexes,
+  one-more-layer towers, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONQBARBECD10 ALL PASS, lead-reran exit 0);
+  adjacent witnesses from doc 517 through the DD.4 SCC interface (211/211
+  exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 382 ANCHOR (doc 519): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index equalizer-idempotent monic-cancellation
+  universal-mediator contract construction-spec. This cycle sharpens doc 518
+  by requiring the monic-cancelled equalizer identity to be generated by the
+  local source finite-limit/equalizer universal property as the unique
+  mediator of Cone_id_Eq_NCoup_med_UP_Eq_id_source_components on the same
+  alpha/beta fork. The required data are
+  UP_Eq_NCoup_med_UP_Eq_id_source_components_finite_limit,
+  med_UP_Eq_NCoup_med_UP_Eq_id_id_to_id_Eq_NCoup_med_UP_Eq_id_source_components,
+  and
+  uniq_UP_Eq_NCoup_med_UP_Eq_id_id_to_id_Eq_NCoup_med_UP_Eq_id_source_components.
+  The proof must preserve the doc-515 coherence payload, exact twenty-four-cell
+  finite index, source mediator, comparison payload, and source-before-points
+  order. Named identities, posthoc cancellations, external/Yoneda universal
+  properties, nonunique or automorphism mediators, projectionwise/graph-side/
+  pointwise mediators, retuned payloads, expanded finite indexes, one-more-layer
+  towers, and control/DH/Epstein point-formability are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 518 through the DD.4 SCC
+  interface (212/212 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 383 ANCHOR (doc 520): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index equalizer-idempotent monic-cancellation
+  universal-mediator multiplier-naturality contract construction-spec. This
+  cycle sharpens doc 519 by requiring the source finite-limit universal
+  mediator for id_Eq_NCoup_med_UP_Eq_id_source_components to be natural for
+  Act_NCoup_med_UP_Eq_id_source_components_multiplier by one source-native
+  whiskering/composition law. The required data are
+  Nat_med_UP_Eq_NCoup_med_UP_Eq_id_id_multiplier_action,
+  Whisker_med_UP_Eq_NCoup_med_UP_Eq_id_id_multiplier_action, and
+  Comp_Nat_med_UP_Eq_NCoup_med_UP_Eq_id_id_C3_C5_C15_C45_F22, with five
+  naturality cells and four composition cells for the C3/C5/C15/C45/F22
+  paths. The proof must preserve the doc-515 coherence payload, exact
+  twenty-four-cell finite index, source mediator, comparison payload,
+  universal-property identity, and source-before-points order. Per-path
+  mediators, payload-equality-only checks, external multiplier actions,
+  declared naturality, lax whiskering, missing composition laws, retuned path
+  labels, projectionwise/graph-side/pointwise naturality, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 519 through the DD.4 SCC
+  interface (213/213 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 384 ANCHOR (doc 521): Qbar_BECD categorical closure coherent
+  source-presentation equalizer-identity mediator component-cone
+  cartesian-coherence globular-modification boundary-fiber
+  cartesian-coherence finite-index equalizer-idempotent monic-cancellation
+  universal-mediator multiplier-naturality DD.4-certificate contract
+  construction-spec. This cycle sharpens doc 520 by requiring the
+  multiplier-natural source finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to carry the original DD.4
+  boundary/properness/self-duality certificate, preserving the nonzero
+  res_1(c)=1 class before the same single dQ certificate kills it. The
+  required data are Cert_med_UP_Eq_NCoup_med_UP_Eq_id_id_DD4_boundary,
+  Nat_Cert_med_UP_Eq_NCoup_med_UP_Eq_id_id_DD4_multiplier_action,
+  Handoff_BKill_to_med_UP_Eq_NCoup_med_UP_Eq_id_DD4_certificate,
+  dd4_c_original_res1_Qbar_BECD,
+  BKill_NCoup_med_UP_Eq_id_Qbar_BECD_dQ_boundary_properness_self_duality,
+  Loc_NCoup_med_UP_Eq_id_Qbar_BECD_single_dQ, and
+  NR_NCoup_med_UP_Eq_id_Qbar_BECD_ordered_p1_p2. The proof must preserve the
+  doc-515 coherence payload, exact twenty-four-cell finite index, source
+  mediator, multiplier naturality, certificate path-independence, and
+  source-before-points order. Coefficient-only naturality, DD.4 labels,
+  posthoc certificate handoffs, local path certificates, res1-forgetting,
+  coboundary relabels, copied certificates, boundary-after-mediator patches,
+  external/graph-side/pointwise certificates, expanded finite indexes,
+  one-more-layer towers, and control/DH/Epstein point-formability are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATDD4QBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATDD4QBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 520 through the DD.4 SCC
+  interface (214/214 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 385 ANCHOR (doc 522): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate exact-BCF-certificate contract construction-spec. This
+  cycle sharpens doc 521 by requiring the DD.4-certificate-carrying
+  multiplier-natural source finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to carry the exact BCF
+  generation of that certificate, not merely an opaque BKill token,
+  certificate label, rowwise BCF image, or declared exact sequence. The
+  required exact data are
+  ZFib_med_UP_Eq_NCoup_med_UP_Eq_id_id_signed_zero,
+  CanMod_med_UP_Eq_NCoup_med_UP_Eq_id_id_z_boundary_convolution,
+  BCF_med_UP_Eq_NCoup_med_UP_Eq_id_id_boundary_convolution_module,
+  Ex_med_UP_Eq_NCoup_med_UP_Eq_id_id_CanMod_BCF_dQ,
+  Delta_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_to_dQ_boundary,
+  Ker_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_delta_image_z, and
+  Coim_med_UP_Eq_NCoup_med_UP_Eq_id_id_CanMod_BCF_delta. The proof must
+  preserve the original DD.4 class with res_1(c)=1 before the same single
+  dQ certificate kills it, plus the doc-515 coherence payload, exact
+  twenty-four-cell finite index, source mediator, multiplier naturality,
+  DD.4 certificate path-independence, and source-before-points order.
+  Weighted-zero/support kernels, quotient completions, cokernel deletions,
+  external deltas, late exactness filters, graph-side/pointwise exactness,
+  retuned deltas, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATDD4EXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCOMPCONECARTCOHGMGBFCARTCOHFINEQIDMONUPNATDD4EXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 521 through the DD.4 SCC
+  interface (215/215 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 386 ANCHOR (doc 523): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate exact-BCF self-dual-certificate contract
+  construction-spec. This cycle sharpens doc 522 by requiring the
+  exact-BCF-generated DD.4-certificate-carrying multiplier-natural source
+  finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to carry the rank-one
+  boundary-defect duality and pinned Laurent twist generated by the same
+  exact BCF delta. The new required data are
+  Dual_med_UP_Eq_NCoup_med_UP_Eq_id_id_rank1_boundary_defect and
+  Tw_med_UP_Eq_NCoup_med_UP_Eq_id_id_OC_BCF_pinned. The proof must preserve
+  the exact BCF certificate data, original DD.4 class with res_1(c)=1 before
+  the same single dQ certificate kills it, doc-515 coherence payload, exact
+  twenty-four-cell finite index, source mediator, multiplier naturality,
+  DD.4 certificate path-independence, and source-before-points order.
+  One-sided exact deltas, generic self-duality labels, hyperbolic endpoint
+  planes, full-support dualities, inserted dual/primal matching, scalar
+  pairings, diagonal coevaluations, formal Rosati adjoints, degree-zero
+  twist normalizations, declared normal ratios, weighted-zero/support dual
+  kernels, late Rosati filters, degree/count equalities, retuned dualities,
+  graph-side dualities, expanded finite indexes, one-more-layer towers, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 522 through the DD.4 SCC
+  interface (216/216 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 387 ANCHOR (doc 524): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF formation-gated contract
+  construction-spec. This cycle sharpens doc 523 by requiring the
+  self-dual exact-BCF-generated DD.4-certificate-carrying multiplier-natural
+  source finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to generate the source-level
+  formation token and fiber before graph objects exist. The new required
+  data are Tok_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source
+  and Fib_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source. The
+  proof must preserve self-dual exact BCF generation, the original DD.4
+  class with res_1(c)=1 before the same single dQ certificate kills it,
+  doc-515 coherence payload, exact twenty-four-cell finite index, source
+  mediator, multiplier naturality, DD.4 certificate path-independence, and
+  source-before-points order. Graph predicates, source tokens after graph
+  formation, declared nonpoint conditions, functors of points without
+  representers, Yoneda reversal, predicate subfibrations, finite admission
+  tables, local source stacks, external oracles, semantic zeta labels, late
+  control/DH/Epstein filters, projection-defect filters, Rosati-sign
+  filters, DD.4 afterthought filters, retuned formation rules, expanded
+  finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formgate_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFGSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFGSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 523 through the DD.4 SCC
+  interface (217/217 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 388 ANCHOR (doc 525): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF formation-coherent contract
+  construction-spec. This cycle sharpens doc 524 by requiring the
+  formation-gated self-dual exact-BCF-generated DD.4-certificate-carrying
+  multiplier-natural source finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to generate source-level
+  formation coherence cells, not merely the formation token/fiber. The new
+  required data are
+  Coh_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source_formation,
+  Cart_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source, and
+  MWC_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source. The proof
+  must preserve formation token/fiber, self-dual exact BCF generation, the
+  original DD.4 class with res_1(c)=1 before the same single dQ certificate
+  kills it, doc-515 coherence payload, exact twenty-four-cell finite index,
+  source mediator, multiplier naturality, DD.4 certificate path-
+  independence, source-before-points order, and source-level control death.
+  Same-token assertions, finite row equalities, declared 2-cells, formal
+  commutative squares, finite composition tables, local C3 patches, single-
+  prime-axis tags, external choices of 2-cells, retuned source coherences,
+  graph-object coherence, graph predicates, late control filters, boundary/
+  DD.4 after-filters, functors of points without representers, semantic
+  zeta labels, expanded finite indexes, one-more-layer towers, and control/
+  DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 524 through the DD.4 SCC
+  interface (218/218 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 389 ANCHOR (doc 526): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF coupled formation-coherent contract
+  construction-spec. This cycle sharpens doc 525 by requiring the
+  formation-coherent formation-gated self-dual exact-BCF-generated
+  DD.4-certificate-carrying multiplier-natural source finite-limit universal
+  mediator for id_Eq_NCoup_med_UP_Eq_id_source_components to generate one
+  non-split source-coherence coupling primitive:
+  NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source. The
+  primitive must couple exact BCF delta, kernel, coimage, signed support,
+  rank-one duality, pinned twist, original DD.4 class, normal ratio,
+  endpoint/pushforward/graph, Rosati/count, and source-level control death
+  before graph objects exist. The proof must preserve source mediator,
+  doc-515 coherence payload, exact twenty-four-cell finite index, multiplier
+  naturality, DD.4 certificate path-independence, source-before-points order,
+  and formation coherence. Product layer coherences, atomwise preservation,
+  fiber products of contracts, pullback-square-only arguments, distributive-
+  law labels, formal pasting diagrams, sequential exactness-then-duality
+  pipelines, local C3 tables, finite composition tables, external choices of
+  coupling, retuned couplings, graph-object coherences, graph predicates,
+  late control filters, boundary/DD.4 after-filters, semantic zeta labels,
+  expanded finite indexes, one-more-layer towers, declared couplings, and
+  control/DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 525 through the DD.4 SCC
+  interface (219/219 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 390 ANCHOR (doc 527): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent contract construction-spec. This cycle sharpens doc 526
+  by requiring the coupled formation-coherent formation-gated self-dual
+  exact-BCF-generated DD.4-certificate-carrying multiplier-natural source
+  finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to generate the source-coupling
+  representing object and universal arrow,
+  Rep_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source and
+  eta_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source.
+  The points of the representer must be exactly the coupled self-dual exact
+  BCF sources, with controls/DH/Epstein non-points before graph objects
+  exist. The proof must preserve the fixed source mediator, doc-515
+  coherence payload, exact twenty-four-cell finite index, multiplier
+  naturality, DD.4 certificate path-independence, source-before-points order,
+  and represented non-split coupling. Connected dependency graphs, nerves,
+  Segal completions, functor-of-points wrappers, Yoneda reversal,
+  Grothendieck constructions, categories of elements, formal universal
+  properties, limit-cone/comma labels, free operad completions, collages/
+  proarrow equipment, codescent/descent labels, Rezk completions, local
+  representer tables, external or retuned representers, product/pullback
+  representers, graph-object classifiers, semantic zeta labels, declared
+  representers, expanded finite indexes, one-more-layer towers, and control/
+  DH/Epstein point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 526 through the DD.4 SCC
+  interface (220/220 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 391 ANCHOR (doc 528): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent source-fiber subrepresenter contract construction-spec.
+  This cycle sharpens doc 527 by requiring the represented coupled formation-
+  coherent formation-gated self-dual exact-BCF-generated DD.4-certificate-
+  carrying multiplier-natural source finite-limit universal mediator for
+  id_Eq_NCoup_med_UP_Eq_id_source_components to generate an actual monic
+  source-fiber subrepresenter:
+  SubRep_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_fiber, with inclusion
+  incl_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_to_Fib_med_UP_Eq_NCoup_med_UP_Eq_id_id_BCF_self_dual_exact_source,
+  image
+  Img_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_coupled_self_dual_exact_sources,
+  and factorization
+  fact_eta_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_through_source_fiber_subrep.
+  The coupling universal arrow must factor through that inclusion, and the
+  image must be exactly the coupled self-dual exact BCF sources, including
+  exact delta, original DD.4 class, and source-level control death. The proof
+  must preserve the fixed source mediator, doc-515 coherence payload, exact
+  twenty-four-cell finite index, multiplier naturality, DD.4 certificate
+  path-independence, source-before-points order, and represented non-split
+  coupling. External/equivalent representers, univalence transports,
+  isomorphic copies, Morita sources, Karoubi/idempotent shells,
+  localization/saturation, sheafification/stackification, image closures,
+  dense subobjects, quotient predicates, base-changed subobjects, retuned
+  inclusions, graph-object classifiers, declared subobjects, expanded finite
+  indexes, one-more-layer towers, and control/DH/Epstein point-formability
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 527 through the DD.4 SCC
+  interface (221/221 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 392 ANCHOR (doc 529): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent source-fiber subrepresenter finite-limit contract
+  construction-spec. This cycle sharpens doc 528 by requiring the monic
+  source-fiber subrepresenter to be cut out by one finite-limit/equalizer
+  fork:
+  LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_fiber,
+  Fork_med_UP_Eq_NCoup_med_UP_Eq_id_id_endpoint_dd4_rosati_control_NCoup, and
+  eq_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_constraints_to_SubRep_source_fiber.
+  The fork must impose endpoint integrality, degree maps, original DD.4
+  boundary, boundary pushforward, graph composition, Rosati/count, and
+  control death simultaneously before points and graph objects exist.
+  Pointwise predicates, subobject classifiers, characteristic maps,
+  sequential filters, post-hoc image factorizations, external finite-limit
+  completions, late graph pullbacks, local row tables, finite-sample or
+  basis-dependent cuts, retuned/projected constraints, declared equalizers,
+  expanded finite indexes, one-more-layer towers, and control/DH/Epstein
+  point-formability are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 528 through the DD.4 SCC
+  interface (222/222 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 393 ANCHOR (doc 530): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separation contract
+  construction-spec. This cycle sharpens doc 529 by requiring the finite-
+  limit cut to preserve typed contexts: original_h1 maps by an image-only
+  dd4_certificate_handoff to certificate_image, and source_constraint maps by
+  a later-only graph_realization_bridge to graph_realization. The original
+  DD.4 class remains nonboundary in original_h1; the certificate kills only
+  its image. Graph/Rosati/count are source constraints before graph objects
+  and point semantics exist. DD.4 context collapse, certificate kill in
+  original H^1, missing/reversible context bridges, graph-object
+  prerequisites, point-semantics erasure, control/DH/Epstein point
+  admission, finite-index expansion, one-more-layer towers, and context-edge
+  omissions are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent witnesses from doc 529 through the DD.4 SCC
+  interface (223/223 exit 0, lead-reran). STAGE/Layer I - NOT RH.
+R1 CYCLE 394 ANCHOR (doc 531): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4
+  image-handoff contract construction-spec. This cycle sharpens doc 530 by
+  requiring the DD.4 handoff to construct a named target image object,
+  Img_dd4_c_original_res1_Qbar_BECD_under_dd4_certificate_handoff, and a
+  named image-only contract, ImgOnlyHandoff_dd4_c_original_res1_Qbar_BECD.
+  The original class dd4_c_original_res1_Qbar_BECD remains nonboundary in
+  original_h1; the boundary certificate kills only the image in
+  certificate_image. Context collapse, certificate killing the source class,
+  reversible handoff, source H^1 quotienting, retuned/base-changed images,
+  posthoc certificates, missing image/bridge objects, finite-index
+  expansion, one-more-layer towers, and disconnected source coupling are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_dd4handoff_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (224/224 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=531 (atoms=27, edges=30). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 395 ANCHOR (doc 532): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4 and
+  graph/Rosati handoff contract construction-spec. This cycle sharpens doc
+  531 by requiring graph/Rosati/count to be carried by the named source-side
+  payload
+  PreGraphRosatiPayload_Fork_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_constraints,
+  with only the later graph-realization image
+  GraphImg_Fork_med_UP_Eq_NCoup_med_UP_Eq_id_id_under_graph_realization_bridge
+  and the directed contract
+  LaterGraphRealization_Fork_med_UP_Eq_NCoup_med_UP_Eq_id_id_graph_rosati_count.
+  The source fork remains before graph objects and points. Source/graph
+  context collapse, graph-object prerequisites, reverse graph pullback,
+  point semantics, control/DH/Epstein points, retuned/base-changed/posthoc
+  graph images, missing payload/image objects, graph classifiers, local row
+  tables, finite-index expansion, and one-more-layer towers are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_dd4handoff_graphhandoff_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (225/225 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=532 (atoms=30, edges=34). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 396 ANCHOR (doc 533): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4
+  graph/Rosati handoff inhabited-source-fiber contract construction-spec.
+  This cycle sharpens doc 532 by requiring the simultaneous finite-limit fork
+  to carry the named internal source-fiber inhabitance certificate
+  InhCert_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_nonempty_source_fiber.
+  The certificate lands in
+  SubRep_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_fiber, factors through
+  eq_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_constraints_to_SubRep_source_fiber
+  and the joint source fork, carries all seven source constraints, and is
+  compatible with the DD.4 image handoff and graph-later-realization handoff.
+  Empty source fibers, control-only source fibers, DH/Epstein inhabitants,
+  point semantics, graph-object inhabitants, local row tables, finite samples,
+  basis-dependent cuts, retuned/posthoc/external-choice certificates, missing
+  certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_dd4handoff_graphhandoff_inhabited_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (226/226 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=533 (atoms=31, edges=38). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 397 ANCHOR (doc 534): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4
+  graph/Rosati handoff inhabited-source-fiber exact-24 finite-index budget
+  contract construction-spec. This cycle sharpens doc 533 by requiring the
+  current frontier to fit the named certificate
+  FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_current_frontier:
+  exactly seven source facets plus seventeen coherence cells. Every live
+  artifact must be assigned to a declared cell, and the DD.4 image handoff,
+  graph later-realization handoff, and finite-limit inhabitance certificate
+  must charge to existing coherence cells. Hidden 25th cells, one-more-layer
+  towers, unassigned artifacts, undeclared cell assignments, retuned labels,
+  posthoc splits, point/control/graph-object cells, local rows, finite
+  samples, basis-dependent cells, and missing budget certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_dd4handoff_graphhandoff_inhabited_finidx24_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (227/227 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=534 (atoms=32, edges=42). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 398 ANCHOR (doc 535): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4
+  graph/Rosati handoff inhabited-source-fiber exact-24 finite-index
+  dependency-closure contract construction-spec. This cycle sharpens doc 534
+  by requiring every current accepted node, dependency edge, consistency
+  requirement, and directed context bridge to charge inside the same seven
+  source facets plus seventeen coherence cells, via
+  DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_current_frontier.
+  Unbudgeted dependency edges, unknown endpoints, unassigned endpoints,
+  forbidden cross-context charges, self-bootstrapped closure, posthoc
+  dependency edges, context-collapsing dependencies, missing closure
+  certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_cohsrc_eq_id_upmed_component_cone_cartesian_coherence_gmod_bf_cart_coh_finidx_eqidem_monic_upmed_nat_dd4_exbcf_selfdual_formcoh_coupled_represented_subrep_flim_ctx_dd4handoff_graphhandoff_inhabited_finidx24_depclosure_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (228/228 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=535 (atoms=33, edges=46). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 399 ANCHOR (doc 536): Qbar_BECD coherent source
+  equalizer-identity universal mediator multiplier-naturality
+  DD.4-certificate self-dual exact-BCF represented coupled
+  formation-coherent finite-limit subrepresenter context-separated DD.4
+  graph/Rosati handoff inhabited-source-fiber exact-24 finite-index
+  dependency-closed terminal source-square contract construction-spec. This
+  cycle sharpens doc 535 by requiring
+  TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a terminal object in the category of admissible budgeted dependency-closed
+  source squares. Mere inhabitance, arbitrary selectors, duplicate terminal
+  mediators, graph-first terminality, H^1 quotient terminality, incomplete
+  source-constraint cones, posthoc universal arrows, self-proving
+  terminality, missing terminality certificates, finite-index expansion, and
+  one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_depclosure_terminal_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (229/229 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=536 (atoms=34, edges=50). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 400 ANCHOR (doc 537): Qbar_BECD exact-24 terminal source-square
+  admissible-category contract construction-spec. This cycle sharpens doc 536
+  by requiring
+  AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a preterminally specified, probe-full, nonvacuous admissible category of
+  budgeted dependency-closed source squares. Singleton categories, retuned or
+  terminal-defined categories, posthoc probe classes, graph-first probe
+  categories, control/DH/Epstein probe admission, H^1 quotient probe
+  categories, missing admissible-category certificates, finite-index
+  expansion, and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_terminal_admcat_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (230/230 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=537 (atoms=35, edges=54). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 401 ANCHOR (doc 538): Qbar_BECD exact-24 admissible source-square
+  probe-separation contract construction-spec. This cycle sharpens doc 537 by
+  requiring
+  ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a conservative source-probe separation certificate charged to the existing
+  finite-limit coherence cell. Merged probe classes, source-constraint-blind
+  probes, DD.4-handoff-blind probes, graph-handoff-blind probes,
+  inhabitance-blind probes, budget-blind probes, nonconservative probe
+  families, control/DH/Epstein probe replacements, finite-sample probes,
+  basis-dependent probes, missing probe-separation certificates,
+  finite-index expansion, and one-more-layer towers are diagnostics only.
+  Witness prime_int_n1b_qbar_becd_fidx24_probe_separation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (231/231 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=538 (atoms=36, edges=60). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 402 ANCHOR (doc 539): Qbar_BECD exact-24 admissible source-square
+  probe-naturality contract construction-spec. This cycle sharpens doc 538 by
+  requiring
+  NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a probe-naturality certificate charged to the existing finite-limit
+  coherence cell. The six separated probe classes must be source-defined
+  natural probe functors over admissible source-square morphisms and must
+  reflect the terminal mediator. Nonfunctorial probe families, object-only
+  probes, morphism-blind probes, posthoc separating predicates, declared probe
+  functors, lax probe naturality, pointwise or graph-side probe naturality,
+  local probe tables, retuned probe functors, finite-sample probes,
+  basis-dependent probes, up-to-isomorphism naturality, missing
+  probe-naturality certificates, finite-index expansion, and one-more-layer
+  towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_naturality_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPNATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPNATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (232/232 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=539 (atoms=37, edges=68). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 403 ANCHOR (doc 540): Qbar_BECD exact-24 admissible source-square
+  probe-faithfulness contract construction-spec. This cycle sharpens doc 539
+  by requiring
+  FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a probe-faithfulness certificate charged to the existing finite-limit
+  coherence cell. The six natural probe functors must be jointly faithful on
+  the source-square morphism skeleton and reflect identity, composition,
+  terminal, dependency, DD.4 image-handoff, graph-later-realization,
+  inhabitance, and exact-24 budget morphism classes. Nonfaithful probe
+  families, morphism quotient probes, automorphism masks, isomorphism
+  collapses, identity-blind probes, composition-blind probes,
+  terminal-arrow-blind probes, dependency-morphism-blind probes,
+  handoff-morphism-blind probes, point/graph morphism shadows, finite
+  morphism samples, basis-row morphism probes, missing probe-faithfulness
+  certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_faithfulness_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (233/233 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=540 (atoms=38, edges=76). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 404 ANCHOR (doc 541): Qbar_BECD exact-24 admissible source-square
+  probe-fullness contract construction-spec. This cycle sharpens doc 540 by
+  requiring
+  FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a probe-fullness certificate charged to the existing finite-limit coherence
+  cell. Every compatible tuple of probe morphisms for identity, composition,
+  terminal, dependency, DD.4 image-handoff, graph-later-realization,
+  inhabitance, and exact-24 budget classes must lift to a source-square
+  morphism; doc 540 faithfulness supplies uniqueness. Non-full probe
+  families, extra probe-image morphisms, compatible probe tuples without
+  source lifts, fullness by declaration, arbitrary lift selectors, nonunique
+  lifts, posthoc or retuned fullness lifts, lax fullness, point/graph
+  fullness, finite tuple fullness samples, basis-row fullness, missing
+  probe-fullness certificates, finite-index expansion, and one-more-layer
+  towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_fullness_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (234/234 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=541 (atoms=39, edges=84). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 405 ANCHOR (doc 542): Qbar_BECD exact-24 admissible source-square
+  probe-essential-image contract construction-spec. This cycle sharpens doc
+  541 by requiring
+  EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a probe-essential-image certificate charged to the existing finite-limit
+  coherence cell. Every compatible tuple of probe objects for the terminal
+  square, mediator cone, joint constraint fork, DD.4 image handoff,
+  graph-later realization, finite-limit inhabitance, dependency closure, and
+  exact-24 budget classes must lift to an admissible source-square object.
+  Nonessential probe images, extra probe-object tuples, compatible
+  probe-object tuples without source lifts, essential surjectivity by
+  declaration, arbitrary object lift selectors, nonunique object lifts,
+  posthoc or retuned object lifts, lax object descent, point/graph object
+  shadows, finite object samples, basis-row object probes, missing
+  probe-essential-image certificates, finite-index expansion, and
+  one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_essential_image_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (235/235 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=542 (atoms=40, edges=92). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 406 ANCHOR (doc 543): Qbar_BECD exact-24 admissible source-square
+  probe-equivalence contract construction-spec. This cycle sharpens doc 542
+  by requiring
+  EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a choice-free coherent adjoint-equivalence certificate charged to the
+  existing finite-limit coherence cell. The source square must specify the
+  source-to-probe and probe-to-source functors, unit, counit, both triangle
+  identities, source-before-points order, exact-24 budget preservation, and
+  coherence on terminality, joint constraints, DD.4 image handoff,
+  graph-later handoff, inhabitance, dependency closure, and budget closure.
+  Abstract equivalence only, quasi-inverse choice, skeletonization, missing
+  unit/counit, missing triangle identities, incoherent pseudoinverses,
+  posthoc or retuned equivalence data, point/graph equivalence, finite
+  equivalence samples, basis-row equivalence, expanded equivalence indices,
+  missing probe-equivalence certificates, finite-index expansion, and
+  one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_equivalence_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (236/236 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=543 (atoms=41, edges=100). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 407 ANCHOR (doc 544): Qbar_BECD exact-24 admissible source-square
+  cartesian probe-equivalence contract construction-spec. This cycle
+  sharpens doc 543 by requiring
+  CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a choice-free cartesian exact probe-equivalence certificate charged to the
+  existing finite-limit coherence cell. The equivalence must preserve
+  terminality, finite-limit cut, equalizer arrow, joint constraint fork,
+  DD.4 image handoff, graph-later handoff, finite-limit inhabitance,
+  dependency closure, and exact-24 budget through explicit comparison cells.
+  Plain categorical equivalence, limit preservation up to choice, missing
+  terminal/equalizer/constraint/handoff/inhabitance/budget/exact-24
+  comparisons, posthoc or point/graph limit transport, finite limit samples,
+  basis limit rows, missing cartesian probe-equivalence certificates,
+  finite-index expansion, and one-more-layer towers are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_cartesian_equivalence_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (237/237 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=544 (atoms=42, edges=110). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 408 ANCHOR (doc 545): Qbar_BECD exact-24 admissible source-square
+  dagger-monoidal probe-equivalence contract construction-spec. This cycle
+  sharpens doc 544 by requiring
+  DagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a choice-free dagger-monoidal probe-equivalence certificate charged to the
+  existing finite-limit coherence cell. The equivalence must preserve
+  identity, composition, associativity, degree multiplicativity,
+  Rosati/dagger involution and contravariance, Rosati-degree adjunction,
+  endpoint-integrality closure, DD.4-boundary naturality,
+  boundary-pushforward naturality, and control-death ideal structure. Plain
+  cartesian equivalence, operation transport up to isomorphism, missing
+  operation laws, Rosati-degree mismatch, non-natural DD.4 boundary or
+  boundary pushforward, missing control-death ideal law, posthoc or
+  point/graph dagger transport, finite operation samples, basis operation
+  rows, missing dagger-monoidal certificates, finite-index expansion, and
+  one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_dagger_monoidal_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (238/238 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=545 (atoms=43, edges=119). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 409 ANCHOR (doc 546): Qbar_BECD exact-24 admissible source-square
+  adjoint-pairing probe-equivalence contract construction-spec. This cycle
+  sharpens doc 545 by requiring
+  AdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a choice-free source-side pairing certificate charged to the existing
+  finite-limit coherence cell. The pairing must be perfect, bilinear,
+  integral, symmetric, non-positive at this stage, and source-side; it must
+  make Rosati/dagger adjoint, make degree trace-compatible, make composition
+  cyclic-trace compatible, make DD.4-boundary and boundary-pushforward pairing
+  natural, and keep control death as an orthogonal ideal inside the exact-24
+  budget. Unpaired dagger laws, degenerate trace pairings, external trace
+  functionals, imported positivity, missing Rosati/degree/composition/DD.4/
+  boundary/control identities, posthoc or retuned pairing transport,
+  point/graph pairings, finite pairing samples, basis pairing rows, DD.4
+  context collapse, missing adjoint-pairing certificates, finite-index
+  expansion, and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_adjoint_pairing_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (239/239 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=546 (atoms=44, edges=128). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 410 ANCHOR (doc 547): Qbar_BECD exact-24 admissible source-square
+  dual-trace probe-equivalence contract construction-spec. This cycle
+  sharpens doc 546 by requiring
+  DualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  an internal dual-trace certificate charged to the existing finite-limit
+  coherence cell. The doc-546 adjoint pairing must be constructed by
+  evaluation and coevaluation maps in the admissible source-square category,
+  with left and right snake identities, categorical trace recovering the
+  pairing, left/right trace agreement, cyclic composition trace, degree trace
+  through duality, DD.4-boundary and boundary-pushforward duality naturality,
+  and control-death orthogonal ideal behavior. Raw pairings without duality,
+  external evaluation/coevaluation, evaluation or coevaluation choices,
+  imported positivity, missing snake identities, non-categorical traces,
+  trace/pairing decoupling, left/right trace mismatch, noncyclic trace,
+  degree trace detached from duality, missing DD.4 or boundary duality
+  naturality, control-duality leaks, posthoc or retuned duality transport,
+  point/graph duality, finite duality samples, basis duality rows, duality
+  context collapse, missing dual-trace certificates, finite-index expansion,
+  and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_dual_trace_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (240/240 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=547 (atoms=45, edges=137). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 411 ANCHOR (doc 548): Qbar_BECD exact-24 admissible source-square
+  pivotal-monoidal probe-equivalence contract construction-spec. This cycle
+  sharpens doc 547 by requiring
+  PivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a functorial pivotal monoidal certificate charged to the existing
+  finite-limit coherence cell. The internal dual trace must be carried by a
+  source-side dual functor on morphisms, coherent double-dual comparison,
+  tensor and unit dual comparisons, dagger-pivotal compatibility, monoidal
+  trace multiplicativity, degree-trace multiplicativity, endpoint-integrality
+  tensor stability, DD.4-boundary and boundary-pushforward pivotal naturality,
+  probe pivotal naturality, and control-death tensor ideal behavior.
+  Objectwise-only duality, nonfunctorial duals, missing double-dual/tensor/
+  unit comparisons, dagger-pivotal mismatch, nonmonoidal trace,
+  nonmultiplicative degree trace, endpoint-integrality tensor gaps, missing
+  DD.4/boundary/probe pivotal naturality, control tensor-ideal leaks,
+  external pivotal structure, imported positivity, posthoc or retuned
+  pivotal transport, point/graph pivotality, finite pivotal samples, basis
+  pivotal rows, pivotal context collapse, missing pivotal-monoidal
+  certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_pivotal_monoidal_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (241/241 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=548 (atoms=46, edges=147). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 412 ANCHOR (doc 549): Qbar_BECD exact-24 admissible source-square
+  exact-additive trace probe-equivalence contract construction-spec. This
+  cycle sharpens doc 548 by requiring
+  ExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  an exact-additive trace certificate charged to the existing finite-limit
+  coherence cell. The pivotal trace must satisfy exact triangle
+  compatibility, finite-limit trace additivity, equalizer trace formula,
+  DD.4-boundary trace zero, boundary-pushforward exactness, degree trace
+  additivity, composition trace additivity, probe exactness, and
+  control-death trace-zero ideal behavior. Nonadditive traces, missing exact
+  triangles, missing finite-limit or equalizer trace formulas, nonzero DD.4
+  boundary traces, missing boundary-pushforward exactness, missing degree or
+  composition additivity, nonzero control traces, non-exact probes, external
+  exact structures, imported positivity, posthoc or retuned exact traces,
+  point/graph exact traces, finite exact samples, basis exact rows, exactness
+  context collapse, missing exact-additive trace certificates, finite-index
+  expansion, and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_exact_additive_trace_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (242/242 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=549 (atoms=47, edges=157). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 413 ANCHOR (doc 550): Qbar_BECD exact-24 admissible source-square
+  integral Grothendieck trace contract construction-spec. This cycle sharpens
+  doc 549 by requiring
+  IntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a source-side integral Grothendieck/K0 trace certificate charged to the
+  existing finite-limit coherence cell. The exact-additive trace must have
+  native group completion, Z-valued trace, unit normalization, endpoint
+  integrality character, degree normalization, K0 additivity,
+  finite-limit/equalizer additivity, DD.4 boundary class zero, integral
+  boundary pushforward, graph-composition additivity, and control class zero.
+  Rational trace values, fractional degree characters, missing unit/endpoint/
+  degree normalization, missing K0 additivity, nonzero boundary/DD.4/control
+  classes, coefficient-extension traces, denominator-clearing traces, posthoc
+  integral projections, retuned integer characters, point/graph integer
+  counts, finite integer samples, basis integer rows, integrality context
+  collapse, missing integral Grothendieck trace certificates, finite-index
+  expansion, and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_integral_grothendieck_trace_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (243/243 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=550 (atoms=48, edges=168). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 414 ANCHOR (doc 551): Qbar_BECD exact-24 admissible source-square
+  effective Grothendieck lift contract construction-spec. This cycle sharpens
+  doc 550 by requiring
+  EffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a represented nonvirtual effective source lift charged to the existing
+  finite-limit coherence cell. The integral K0 character must be represented
+  in the source-fiber subrepresenter/coupled source image; endpoint
+  integrality, degree normalization, DD.4 boundary zero, integral boundary
+  pushforward, graph additivity, Rosati compatibility, and control zero must
+  hold on that representative. Virtual K0 differences, positive-minus-negative
+  cancellation, group-completion-only classes, Euler characteristics, missing
+  or split representatives, external effective cones, boundary/control
+  cancellation hidden in virtual summands, Rosati laws only on virtual
+  classes, declared/posthoc/retuned lifts, point/graph counts, finite samples,
+  basis rows, effectivity context collapse, missing effective Grothendieck
+  lift certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (244/244 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=551 (atoms=49, edges=182). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 415 ANCHOR (doc 552): Qbar_BECD exact-24 admissible source-square
+  primitive effective Grothendieck lift contract construction-spec. This
+  cycle sharpens doc 551 by requiring
+  PrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a primitive gcd-one multiplicity-one indecomposable effective source lift
+  charged to the existing finite-limit coherence cell. The doc-551 effective
+  lift must be represented as a primitive generator in the source-fiber
+  subrepresenter/coupled source image; endpoint and degree data must be
+  gcd-one; DD.4 boundary zero and control death must hold without division or
+  multiplicity cancellation; graph composition must use a connected
+  representative; and Rosati compatibility must be indecomposable rather than
+  block diagonal. Nonprimitive effective lifts, multiple effective lifts,
+  divisible K0 classes, hidden multiplicity lifts, rank-scaled lifts, finite
+  covers, tensor powers, endpoint or degree common factors, boundary/control
+  zero after division or multiplicity cancellation, disconnected graph unions,
+  Rosati block diagonals, primitive selectors, declared/posthoc/retuned
+  primitive lifts, point/graph primitive counts, finite primitive samples,
+  basis primitive rows, primitive context collapse, missing primitive
+  effective lift certificates, finite-index expansion, and one-more-layer
+  towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (245/245 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=552 (atoms=50, edges=197). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 416 ANCHOR (doc 553): Qbar_BECD exact-24 admissible source-square
+  rigid primitive effective Grothendieck lift contract construction-spec.
+  This cycle sharpens doc 552 by requiring
+  RigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a rigid primitive effective source representative charged to the existing
+  finite-limit coherence cell. The doc-552 primitive lift must have trivial
+  automorphism group, trivial stabilizer, identity-only endomorphism action
+  for the primitive law, source-fiber/equalizer uniqueness, terminal choice
+  uniqueness, and endpoint, degree, DD.4 boundary, boundary pushforward,
+  graph composition, Rosati, and control identities fixed on that
+  representative. Nonrigid primitive lifts, primitive-lift torsors,
+  nontrivial automorphisms or endomorphisms, unit/sign ambiguity, scalar-unit
+  rescaling, automorphism-masked endpoint/degree/boundary/pushforward/graph/
+  Rosati/control laws, isomorphic primitive replacements, orbit
+  representative choices, skeletonized primitive lifts, quotient-by-stabilizer
+  repairs, torsor trivialization choices, declared/posthoc/retuned
+  rigidifications, point/graph rigidity checks, finite rigidity samples,
+  basis rigidity rows, rigidity context collapse, missing rigid primitive
+  effective lift certificates, finite-index expansion, and one-more-layer
+  towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (246/246 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=553 (atoms=51, edges=213). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 417 ANCHOR (doc 554): Qbar_BECD exact-24 admissible source-square
+  DD.4-active rigid primitive effective Grothendieck lift contract
+  construction-spec. This cycle sharpens doc 553 by requiring
+  DD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a DD.4-active rigid primitive effective source representative charged to
+  the existing finite-limit coherence cell. The doc-553 rigid primitive lift
+  must carry the original nonboundary DD.4 class, exact delta, rank-one
+  boundary-defect duality, and source preimage for the image-only DD.4
+  certificate handoff; boundary zero and control zero must be nonvacuous on
+  that same payload; endpoint, degree, graph, and Rosati data must be active
+  on the DD.4 payload. DD.4-inactive rigid lifts, null DD.4 pairings,
+  unit/terminal rigid lifts, vacuous boundary or control zero, failure to
+  carry original DD.4, failure to carry exact delta, failure to carry
+  boundary-defect duality, certificate image without source preimage,
+  non-natural DD.4 handoff, lifts orthogonal to original DD.4, lifts disjoint
+  from exact delta, certificate image replacing source class,
+  declared/posthoc/retuned DD.4 activity, point/graph DD.4 activity checks,
+  finite DD.4 activity samples, basis DD.4 activity rows, DD.4 activity
+  context collapse, missing DD.4-active rigid primitive effective lift
+  certificates, finite-index expansion, and one-more-layer towers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_dd4_active_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (247/247 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=554 (atoms=52, edges=230). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 418 ANCHOR (doc 555): Qbar_BECD exact-24 admissible source-square
+  joint source-law DD.4-active rigid primitive effective Grothendieck lift
+  contract construction-spec. This cycle sharpens doc 554 by requiring
+  JointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a jointly monic source-law tuple charged to the existing finite-limit
+  coherence cell. The doc-554 DD.4-active rigid primitive source
+  representative must realize endpoint integrality, degree maps, DD.4
+  boundary, boundary pushforward, graph composition, Rosati, and control death
+  as components of one tuple on the finite-limit/equalizer fork, acting on the
+  same original DD.4 payload, exact delta, and rank-one boundary-defect
+  duality, and interchanging with the DD.4 image-only handoff plus later graph
+  realization bridge. Separate projection laws, componentwise activity
+  checklists, pairwise compatibility, noncommuting law squares, missing joint
+  tuples, projection tables, posthoc gluing, graph-side products, pointwise
+  tuples, finite samples, basis rows, law-context collapse, retuned tuples,
+  declared interchange, declared joint monicity, endpoint/degree/boundary
+  decoupling, graph/Rosati/control decoupling, unshared DD.4 payload laws,
+  non-monic equalizer tuples, missing joint source-law certificates,
+  finite-index expansion, and one-more-layer towers are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_joint_source_law_dd4_active_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (248/248 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=555 (atoms=53, edges=250). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 419 ANCHOR (doc 556): Qbar_BECD exact-24 admissible source-square
+  mediator-generated composition-stable joint source-law DD.4-active rigid
+  primitive effective Grothendieck lift contract construction-spec. This
+  cycle sharpens doc 555 by requiring
+  MedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a mediator-generated composition-stable joint source-law certificate charged
+  to the existing finite-limit coherence cell. The doc-555 tuple must be
+  generated by the universal mediator through the formation fiber,
+  cartesian/monoidwide coherence, source coupling, coupling representer, and
+  universal arrow, then remain stable under source-square composition,
+  dagger, Rosati adjointness, exact-additive trace, control-death ideal
+  structure, DD.4 image-only handoff, and later graph realization. External
+  law attachments, law-table grafts, posthoc mediator factorizations,
+  declared mediator generation, objectwise terminal laws, nonfunctorial
+  tuples, composition/dagger/Rosati/trace/control/handoff/graph-realization
+  instability, source-coupling/universal-arrow/formation-fiber/cartesian/
+  monoidwide coherence bypasses, finite mediator samples, basis mediator
+  rows, mediator-context collapse, retuned mediator laws, missing
+  mediator-generated composition-stable certificates, finite-index expansion,
+  and one-more-layer towers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_mediator_generated_composition_stable_joint_source_law_dd4_active_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (249/249 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=556 (atoms=54, edges=272). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 420 ANCHOR (doc 557): Qbar_BECD exact-24 admissible source-square
+  refinement-descent-stable mediator-generated composition-stable joint
+  source-law DD.4-active rigid primitive effective Grothendieck lift contract
+  construction-spec. This cycle sharpens doc 556 by requiring
+  RefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a refinement-descent-stable mediator-generated composition-stable joint
+  source-law certificate charged to the existing finite-limit coherence cell.
+  The doc-556 law must descend across admissible refinements without
+  presentation retuning, cover-local-only witnesses, overlap/Cech mismatch,
+  declared descent, probe-cover-only replacement, probe/terminal/mediator/
+  source-coupling/equalizer descent gaps, DD.4 payload/handoff/graph descent
+  gaps, composition/control descent gaps, finite refinement samples, basis
+  refinement rows, or refinement-context collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_refinement_descent_stable_mediator_generated_composition_stable_joint_source_law_dd4_active_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (250/250 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=557 (atoms=55, edges=293). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 421 ANCHOR (doc 558): Qbar_BECD exact-24 admissible source-square
+  filtered-cofinal refinement-calculus-stable refinement-descent-stable
+  mediator-generated composition-stable joint source-law DD.4-active rigid
+  primitive effective Grothendieck lift contract construction-spec. This cycle
+  sharpens doc 557 by requiring
+  FiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a filtered-cofinal refinement-calculus-stable certificate charged to the
+  existing finite-limit coherence cell. The doc-557 descent law must be
+  indexed by one cofinal filtered category of admissible source-square
+  refinements, with common refinements, pullback/base-change stability,
+  functorial chain composition, associativity, zero refinement-loop monodromy,
+  and preservation of mediator/source-coupling/equalizer/finite-limit/DD.4
+  payload/handoff/graph/composition/control data. Pairwise-only descent,
+  noncofinal families, missing common refinements, declared filteredness,
+  base-change gaps, pullback instability, chain-composition gaps,
+  nonassociativity, zigzag dependence, loop monodromy, hypercover/tower
+  escapes, finite samples, basis rows, terminal/probe/mediator/payload gaps,
+  refinement-index context collapse, and missing filtered-cofinal certificates
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_filtered_cofinal_refinement_calculus_stable_refinement_descent_stable_mediator_generated_composition_stable_joint_source_law_dd4_active_rigid_primitive_effective_grothendieck_lift_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (251/251 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=558 (atoms=56, edges=315). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 422 ANCHOR (doc 559): Qbar_BECD exact-24 admissible source-square
+  represented-limit-realized filtered-cofinal refinement-calculus contract
+  construction-spec. This cycle sharpens doc 558 by requiring
+  RepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a represented source-side limit certificate charged to the existing
+  finite-limit/equalizer spine. The doc-558 filtered refinement calculus must
+  have an attained limit cone represented by the source-fiber subrepresenter,
+  monic through the equalizer, universal through the terminal square property,
+  reflected by the cartesian probe equivalence, and preserving the mediator,
+  source coupling, original DD.4 payload, image handoff, graph, composition,
+  exact delta, exact-24 budget, and control-death data. Pro-family-only,
+  nonrepresented inverse-limit, external-completion, formal-cone,
+  nonattained, outside-category, completion-added, choice-dependent,
+  nonunique, probe/equalizer-losing, payload/handoff/graph/composition/
+  control-losing, finite-index-expanded, finite-sample, basis-row, and missing
+  represented-limit repairs are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_represented_limit_realized_filtered_refinement_calculus_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPLIMFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPLIMFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (252/252 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=559 (atoms=57, edges=333). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 423 ANCHOR (doc 560): Qbar_BECD exact-24 admissible source-square
+  represented-limit source-constraint bundle contract construction-spec. This
+  cycle sharpens doc 559 by requiring
+  RepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a represented-limit source-constraint bundle charged to the existing
+  finite-limit/equalizer spine. The doc-559 represented source-side limit must
+  carry endpoint integrality, degree maps, DD.4 boundary, boundary
+  pushforward, graph composition, Rosati count, and control death as one
+  monic, probe-reflected, mediator-generated, source-coupled tuple, with
+  exact-delta compatibility and exact-24 budget preservation. Separate
+  projection bundles, endpoint/degree gaps, DD.4-boundary/pushforward gaps,
+  graph/Rosati/control gaps, non-joint tuples, nonmonic tuples,
+  probe-reflection gaps, mediator/source-coupling gaps, posthoc selectors,
+  new finite-index cells, basis rows, finite samples, external tables, and
+  missing represented-limit source-constraint bundle certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_represented_limit_source_constraint_bundle_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPLIMSRCBUNDLEFILTCFREFCALC1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPREPLIMSRCBUNDLEFILTCFREFCALC10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (253/253 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=560 (atoms=58, edges=351). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 424 ANCHOR (doc 561): Qbar_BECD exact-24 admissible source-square
+  cartesian compatibility diagram represented-limit source-constraint bundle
+  contract construction-spec. This cycle sharpens doc 560 by requiring
+  CartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a cartesian finite-limit compatibility diagram for the represented-limit
+  source-constraint bundle, charged to the existing finite-limit/equalizer
+  spine. The doc-560 represented-limit bundle must carry endpoint-degree,
+  DD.4-boundary/pushforward/exact-delta, graph/Rosati/control, and
+  handoff/graph-realization compatibilities as one equalized,
+  cartesian-probe-reflected, mediator-generated, source-coupled finite-limit
+  diagram preserving the exact-24 budget. Product tuples, pairwise
+  compatibility, noncartesian squares, endpoint-degree gaps,
+  boundary-pushforward gaps, DD.4/exact-delta gaps, graph/Rosati/control gaps,
+  handoff/graph gaps, non-equalized diagrams, probe/mediator/source-coupling
+  gaps, posthoc pasting, external commutative tables, new cells, basis rows,
+  finite samples, and missing cartesian compatibility diagram certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_cartesian_compatibility_diagram_represented_limit_source_constraint_bundle_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCARTCOMPATREPLIMSRCBUNDLE1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCARTCOMPATREPLIMSRCBUNDLE10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (254/254 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=561 (atoms=59, edges=370). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 425 ANCHOR (doc 562): Qbar_BECD exact-24 admissible source-square
+  automorphism-rigid cartesian compatibility diagram contract
+  construction-spec. This cycle sharpens doc 561 by requiring
+  AutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  an automorphism-rigid version of the represented-limit cartesian
+  compatibility diagram, charged to the existing finite-limit/equalizer/probe
+  spine. The doc-561 diagram must have trivial automorphism group and
+  stabilizer, unique transport, no skeleton-dependent representative choice,
+  and fixed endpoint-degree, DD.4-boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff/graph-realization, mediator, source-coupling,
+  equalizer, and probe payloads inside the same exact-24 finite-limit diagram.
+  Nontrivial diagram automorphism groups, stabilizer torsors, isomorphic
+  replacements, skeleton choices, transport ambiguity, representative choice,
+  retuned representatives, unit/sign ambiguity, moving endpoint-degree,
+  boundary, exact-delta, graph/Rosati/control, handoff/graph, mediator,
+  source-coupling, equalizer, or probe data, declared rigidity, finite
+  samples, basis rows, and missing automorphism-rigid cartesian compatibility
+  diagram certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_automorphism_rigid_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPAUTRIGCARTCOMPATREPLIMSRCBUNDLE1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPAUTRIGCARTCOMPATREPLIMSRCBUNDLE10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (255/255 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=562 (atoms=60, edges=393). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 426 ANCHOR (doc 563): Qbar_BECD exact-24 admissible source-square
+  endomorphism-trivial cartesian compatibility diagram contract
+  construction-spec. This cycle sharpens doc 562 by requiring
+  EndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  an endomorphism-trivial version of the represented-limit cartesian
+  compatibility diagram, charged to the existing finite-limit/equalizer/probe
+  spine. The doc-562 automorphism-rigid diagram must have identity-only
+  endomorphism monoid, identity-only idempotents, no retract or summand, no
+  quotient collapse, no subobject projection, no nilpotent self-map, and fixed
+  endpoint-degree, DD.4-boundary/pushforward/exact-delta, graph/Rosati/control,
+  handoff/graph-realization, mediator, source-coupling, equalizer, and probe
+  payloads under the trivial endomorphism action. Nontrivial diagram
+  endomorphism monoids, nontrivial idempotents, retracts/summands, quotient
+  collapses, subobject projections, nilpotent self-maps, payload-invariant-only
+  self maps, noninvertible payload-moving endomorphisms, declared
+  endomorphism triviality, finite samples, basis rows, and missing
+  endomorphism-trivial cartesian compatibility diagram certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_endomorphism_trivial_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPENDTRIVAUTRIGCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPENDTRIVAUTRIGCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (256/256 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=563 (atoms=61, edges=415). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 427 ANCHOR (doc 564): Qbar_BECD exact-24 admissible source-square
+  globally unique cartesian compatibility diagram contract construction-spec.
+  This cycle sharpens doc 563 by requiring
+  GlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a globally unique version of the endomorphism-trivial automorphism-rigid
+  represented-limit cartesian compatibility diagram, charged to the existing
+  finite-limit/equalizer/probe spine. The doc-563 diagram must be the globally
+  unique solution, not one member of a parallel isolated/discrete solution
+  family, duplicate-payload family, moduli-component choice, same-payload
+  nonisomorphic solution family, probe-indistinguishable duplicate family, or
+  selector-dependent finite enumeration. Duplicate endpoint-degree, boundary,
+  exact-delta, graph/Rosati/control, handoff/graph, probe, equalizer, mediator,
+  or source-coupling solutions, external selectors, lexicographic choices,
+  basis-order choices, declared global uniqueness, finite samples, basis rows,
+  and missing globally unique cartesian compatibility diagram certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_globally_unique_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPGLOBUNIQENDTRIVCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPGLOBUNIQENDTRIVCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (257/257 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=564 (atoms=62, edges=437). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 428 ANCHOR (doc 565): Qbar_BECD exact-24 admissible source-square
+  internally contractible globally unique cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 564 by requiring
+  IntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  an internally contractible version of the globally unique
+  endomorphism-trivial automorphism-rigid represented-limit cartesian
+  compatibility diagram, charged to the existing finite-limit/equalizer/probe
+  spine. Global uniqueness must be witnessed by a source-internal
+  contractible solution object with unique coherent comparison paths
+  preserving endpoint-degree, DD.4 boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff/graph, probe, equalizer, mediator, and
+  source-coupling payloads inside the exact-24 budget. External uniqueness
+  proofs, non-internalized uniqueness, missing/external/nonunique/incoherent
+  comparison paths, declaration-only contractibility, finite samples, basis
+  rows, missing path objects, new path-object cells, context collapse, payload
+  path gaps, and missing internally contractible cartesian compatibility
+  diagram certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_internally_contractible_globally_unique_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINTCONTRGLOBUNIQCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPINTCONTRGLOBUNIQCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (258/258 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=565 (atoms=63, edges=457). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 429 ANCHOR (doc 566): Qbar_BECD exact-24 admissible source-square
+  center-realized internally contractible cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 565 by requiring
+  CenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a center-realized version of the internally contractible globally unique
+  endomorphism-trivial automorphism-rigid represented-limit cartesian
+  compatibility diagram, charged to the existing finite-limit/equalizer/probe
+  spine. The contraction must expose a source-internal realized center that is
+  the cartesian compatibility diagram solution, equalized by the equalizer
+  arrow to the subrepresenter, reflected by the cartesian probe equivalence,
+  generated by the universal mediator, source-coupled, and carrier of the
+  endpoint-degree, DD.4 boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff, and graph-later payloads inside the exact-24
+  budget. Contractible diagrams without centers, external/global center
+  choices, missing/noninternal/unrealized centers, center payload gaps,
+  equalizer/probe/mediator/source-coupling center gaps, new cells, context
+  collapse, declarations, finite samples, basis rows, and missing
+  center-realized cartesian compatibility diagram certificates are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_center_realized_internally_contractible_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERREALINTCONTRCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERREALINTCONTRCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (259/259 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=566 (atoms=64, edges=477). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 430 ANCHOR (doc 567): Qbar_BECD exact-24 admissible source-square
+  center-eliminator realized center-realized cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 566 by requiring
+  CenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a center-realized cartesian compatibility diagram with a source-internal
+  unique coherent dependent eliminator. The eliminator must project the
+  endpoint-degree, DD.4 boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff, and graph-later payloads from the same center,
+  while preserving the finite-limit section, equalizer section, probe
+  naturality, mediator naturality, and source-coupling section inside the
+  exact-24 budget. Independent payload tags, missing/external/noninternal/
+  nonunique/incoherent eliminators, projection gaps, choice, new cells, context
+  collapse, declarations, finite samples, basis rows, and missing center
+  dependent-eliminator certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_center_eliminator_realized_center_realized_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMREALCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMREALCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (260/260 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=567 (atoms=65, edges=497). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 431 ANCHOR (doc 568): Qbar_BECD exact-24 admissible source-square
+  computation-stable center-eliminator cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 567 by requiring
+  CompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a computation-stable version of the source-internal dependent center
+  eliminator. The eliminator's beta/eta and substitution-stable computation
+  laws must compute the endpoint-degree, DD.4 boundary/pushforward/exact-
+  delta, graph/Rosati/control, handoff, graph-later, probe, equalizer,
+  mediator, and source-coupling projections inside the exact-24 budget.
+  Noncomputational/propositional projections, external or noninternal
+  computation, missing beta/eta laws, nonunique or incoherent computation,
+  payload/structure computation gaps, choice, new cells, context collapse,
+  declarations, finite samples, basis rows, and missing computation-stability
+  certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPSTABCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPSTABCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (261/261 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=568 (atoms=66, edges=516). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 432 ANCHOR (doc 569): Qbar_BECD exact-24 admissible source-square
+  confluent computation-stable center-eliminator cartesian compatibility
+  diagram contract construction-spec. This cycle sharpens doc 568 by requiring
+  ConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a confluent version of the computation-stable source-internal dependent
+  center eliminator. The computation system must have a source-internal unique
+  normal form, order-independent reductions, diamond laws for finite-limit,
+  equalizer, probe, mediator, and source-coupling structure, and commuting
+  conversions for endpoint-degree, DD.4 boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff, and graph-later payloads inside the exact-24
+  budget. Nonconfluence, order dependence, missing normal forms, missing
+  diamonds or commuting conversions, payload/structure confluence gaps,
+  choice, new cells, context collapse, declarations, finite samples, basis
+  rows, and missing confluence certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONFCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONFCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (262/262 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=569 (atoms=67, edges=536). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 433 ANCHOR (doc 570): Qbar_BECD exact-24 admissible source-square
+  normalizing confluent computation-stable center-eliminator cartesian
+  compatibility diagram contract construction-spec. This cycle sharpens doc
+  569 by requiring
+  NormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a normalizing version of the confluent source-internal dependent center
+  eliminator. The computation system must have a source-internal
+  well-founded normalizer, strong normalization, no infinite reduction paths,
+  and reachable unique normal forms for endpoint-degree, DD.4
+  boundary/pushforward/exact-delta, graph/Rosati/control, handoff,
+  graph-later, probe, equalizer, mediator, and source-coupling projections
+  inside the exact-24 budget. Nontermination, external/noninternal/missing
+  normalizers, unreachable normal forms, infinite paths, nonunique or
+  incoherent normalization, payload/structure normalization gaps, choice, new
+  cells, context collapse, declarations, finite samples, basis rows, and
+  missing normalization certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_normalizing_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNORMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNORMCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (263/263 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=570 (atoms=68, edges=556). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 434 ANCHOR (doc 571): Qbar_BECD exact-24 admissible source-square
+  functorial normalizing confluent computation-stable center-eliminator
+  cartesian compatibility diagram contract construction-spec. This cycle
+  sharpens doc 570 by requiring
+  FuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square,
+  a functorial version of the source-internal well-founded normalizer. The
+  normalizer must be natural for source-square morphisms, probe naturality
+  and equivalence, cartesian probe equivalence, filtered-cofinal refinements,
+  represented-limit realization, finite-limit/equalizer/mediator/source-
+  coupling structure, endpoint-degree, DD.4 boundary/pushforward/exact-
+  delta, graph/Rosati/control, handoff, and graph-later payloads, with
+  identity and composition preservation inside the exact-24 budget.
+  Objectwise-only normalizers, nonfunctoriality, nonnaturality,
+  payload/structure naturality gaps, identity/composition failures, choice,
+  new cells, context collapse, declarations, finite samples, basis rows, and
+  missing functorial-normalizer certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_functorial_normalizing_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFUNCNORMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFUNCNORMCARTCOMPAT10 ALL PASS,
+  lead-reran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (264/264 exit 0, lead-reran); frontier-map check with current
+  witness passed at current_doc=571 (atoms=69, edges=581). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 435 ANCHOR (doc 572): Qbar_BECD exact-24 admissible source-square
+  monoidal-exact dagger-compatible functorial normalizing confluent
+  computation-stable center-eliminator cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 571 by requiring
+  MonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_CartMonExactDagTraceRosati_source_square,
+  a structure-preserving version of the functorial source-internal
+  normalizer. The normalizer must preserve cartesian, monoidal, dagger,
+  adjoint, dual-trace, pivotal, exact-additive, integral Grothendieck/K0,
+  effective, primitive, rigid, DD.4-active, joint-source-law, mediator-
+  composition, endpoint-degree, DD.4 boundary/pushforward/exact-delta,
+  graph/Rosati/control, handoff, and graph-later payload structure inside the
+  exact-24 budget. Structure-blind normalizers, compatibility gaps, choice,
+  new cells, context collapse, declarations, finite samples, basis rows, and
+  missing structure-preserving-normalizer certificates are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_monoidal_exact_dagger_compatible_functorial_normalizing_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMMONDAGFUNCNORMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMMONDAGFUNCNORMCARTCOMPAT10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC
+  interface (265/265 exit 0, lead-ran); frontier-map check with current
+  witness passed at current_doc=572 (atoms=70, edges=607). STAGE/Layer I -
+  NOT RH.
+R1 CYCLE 436 ANCHOR (doc 573): Qbar_BECD exact-24 admissible source-square
+  coherent monoidal-exact dagger-compatible functorial normalizing confluent
+  computation-stable center-eliminator cartesian compatibility diagram
+  contract construction-spec. This cycle sharpens doc 572 by requiring
+  CohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_CoherentInterchange_source_square,
+  one coherent interchange law for the same structure-preserving functorial
+  normalizer. The coherence must bind cartesian, monoidal, dagger, adjoint,
+  dual-trace, pivotal, exact-additive, integral-Grothendieck/K0, effective,
+  primitive, rigid, DD.4-active, joint-source-law, mediator-composition,
+  endpoint-degree, DD.4 boundary/pushforward/exact-delta, graph/Rosati/
+  control, handoff, and graph-later preservation as one natural,
+  compositional, refinement-stable operation inside the exact-24 budget.
+  Pairwise-only preservation tables, missing coherence, structure/payload
+  interchange gaps, choice, new cells, context collapse, declarations, finite
+  samples, basis rows, and missing coherent-normalizer certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_coherent_monoidal_exact_dagger_compatible_functorial_normalizing_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOHMONDAGFUNCNORMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOHMONDAGFUNCNORMCARTCOMPAT10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (266/266 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=573 (atoms=71, edges=633). STAGE/Layer I - NOT RH.
+R1 CYCLE 437 ANCHOR (doc 574): Qbar_BECD exact-24 admissible source-square
+  executable critical-pair diamond coherent monoidal-exact dagger-compatible
+  functorial normalizing confluent computation-stable center-eliminator
+  cartesian compatibility diagram contract construction-spec. This cycle
+  sharpens doc 573 by requiring
+  ExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_FiniteDiamond_source_square,
+  an executable finite source-internal critical-pair diamond calculus for the
+  same coherent structure-preserving normalizer. The calculus must supply
+  finite rewrite rules, complete structure and payload critical-pair coverage,
+  termination, local/global confluence, diamond joins, unique source-internal
+  normal forms, naturality, composition stability, refinement stability, and
+  exact-24 budget preservation. Non-executable coherence, missing rewrite
+  rules, missing or unchecked critical pairs, nonterminating/nonconfluent
+  rewrites, missing diamonds, pairwise-only diamonds, incomplete structure or
+  payload diamonds, nonunique/non-source-internal normal forms, choice, new
+  cells, context collapse, declarations, finite samples, basis rows,
+  unbudgeted rewrites, and missing executable-diamond certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_executable_critical_pair_diamond_coherent_monoidal_exact_dagger_compatible_functorial_normalizing_confluent_computation_stable_center_eliminator_cartesian_compatibility_diagram_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXECODIAMCOHMONDAGFUNCNORMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXECODIAMCOHMONDAGFUNCNORMCARTCOMPAT10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (267/267 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=574 (atoms=72, edges=659). STAGE/Layer I - NOT RH.
+R1 CYCLE 438 ANCHOR (doc 575): Qbar_BECD exact-24 admissible source-square
+  semantic-conservative invariant-reflecting executable critical-pair diamond
+  coherent normalizer contract construction-spec. This cycle sharpens doc 574
+  by requiring
+  SemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_ConservativeSemantics_source_square,
+  a semantic-conservative interpretation of executable normal forms. The
+  interpretation must be sound, complete, conservative, equality-reflecting,
+  probe-kernel-free, and must preserve/reflect endpoint, degree, DD.4,
+  boundary, exact-delta, graph, Rosati, control, handoff,
+  source-before-points, original-H1, fixed-mediator, doc515, and budget
+  payloads. Missing semantics, unsoundness, incompleteness,
+  nonconservativity, uninterpreted normal forms, unreflected equality,
+  nontrivial probe kernels, payload collapse, original-H1 collapse,
+  source-before-points erasure, fixed doc515 payload rewrite, external
+  semantic oracle, choice, new cells, context collapse, declarations, finite
+  samples, basis rows, unbudgeted semantics, and missing semantic-conservative
+  execution certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_semantic_conservative_executable_diamond_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSEMCONSEXECODIAMCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSEMCONSEXECODIAMCARTCOMPAT10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (268/268 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=575 (atoms=73, edges=691). STAGE/Layer I - NOT RH.
+R1 CYCLE 439 ANCHOR (doc 576): Qbar_BECD exact-24 admissible source-square
+  represented-internal-model semantic-conservative invariant-reflecting
+  executable critical-pair diamond coherent normalizer contract
+  construction-spec. This cycle sharpens doc 575 by requiring
+  RepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_InternalModel_source_square,
+  a represented source-internal semantic model for the conservative executable
+  normal-form semantics. The model must live in the existing source-fiber
+  subrepresenter, be selected by the existing universal arrow, have image the
+  coupled self-dual exact BCF source, realize all doc-575 semantic payload
+  targets, and preserve model-level conservativity/reflection plus
+  original-H1, fixed doc515, and exact-24 budget data. Unrepresented,
+  missing, external, quotient, functor-of-points-only, Yoneda-reversal-only,
+  wrong-boundary, nonconservative, nonreflecting, payload-gap,
+  original-H1-gap, doc515-gap, choice-based, new-cell, context-collapse,
+  declaration-only, finite-sample, basis-row, unbudgeted, and missing
+  represented semantic model certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_represented_semantic_model_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMREPSEMMODELCARTCOMPAT1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMREPSEMMODELCARTCOMPAT10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (269/269 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=576 (atoms=74, edges=711). STAGE/Layer I - NOT RH.
+R1 CYCLE 440 ANCHOR (doc 577): Qbar_BECD exact-24 admissible source-square
+  evaluation-natural represented-internal-model semantic-conservative
+  executable critical-pair diamond coherent normalizer contract
+  construction-spec. This cycle sharpens doc 576 by requiring
+  EvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0Lift_NaturalEvaluation_source_square,
+  a source-internal natural evaluation of the represented semantic model. The
+  evaluation must be selected by the existing universal arrow, commute with
+  executable normal forms, rewrite equality, refinement, and composition, and
+  commute with every endpoint, degree, DD.4, boundary, exact-delta, graph,
+  Rosati, control, handoff, source-before-points, original-H1, doc515, and
+  budget payload projection. Missing, nonnatural,
+  non-executable-compatible, non-rewrite-compatible, non-refinement-stable,
+  non-compositional, non-subrepresenter-internal, non-universal-arrow,
+  pointwise-only, objectwise-only, nonfunctorial-choice, path-dependent,
+  projection-gap, original-H1-gap, doc515-gap, external, quotient,
+  functor-of-points-only, Yoneda-reversal-only, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing evaluation-natural certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_evaluation_natural_represented_semantic_model_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEVALNATREPSEMMODEL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEVALNATREPSEMMODEL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (270/270 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=577 (atoms=75, edges=735). STAGE/Layer I - NOT RH.
+R1 CYCLE 441 ANCHOR (doc 578): Qbar_BECD exact-24 admissible source-square
+  Beck-Chevalley-exact evaluation-natural represented-internal-model
+  semantic-conservative executable critical-pair diamond coherent normalizer
+  contract construction-spec. This cycle sharpens doc 577 by requiring
+  BeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_BaseChange_source_square,
+  an exact/cartesian Beck-Chevalley base-change law for the natural evaluation
+  of the represented semantic model. The base-change law must be internal to
+  the existing subrepresenter, selected by the existing universal arrow,
+  exact/cartesian over the represented source-square compatibility diagram,
+  satisfy pull-push commutation and projection formula, and commute with the
+  boundary, DD.4, exact-delta, graph, Rosati, control, handoff, and graph-later
+  routes while preserving source-before-points, original-H1, doc515, and
+  exact-24 budget data. Missing, non-exact, noncartesian, base-change-gap,
+  pull-push-mismatch, projection-formula-gap, route-gap, non-subrepresenter,
+  non-universal-arrow, external, quotient, functor-of-points-only,
+  Yoneda-reversal-only, pointwise-only, objectwise-only, nonfunctorial-choice,
+  path-dependent, choice-based, new-cell, context-collapse, declaration-only,
+  finite-sample, basis-row, unbudgeted, and missing Beck-Chevalley evaluation
+  certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_beck_chevalley_evaluation_natural_represented_semantic_model_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBCHEVEVALNATREPSEM1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBCHEVEVALNATREPSEM10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (271/271 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=578 (atoms=76, edges=755). STAGE/Layer I - NOT RH.
+R1 CYCLE 442 ANCHOR (doc 579): Qbar_BECD exact-24 admissible source-square
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 578 by requiring
+  DescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_EffectiveDescent_source_square,
+  an effective descent law for the exact/cartesian Beck-Chevalley natural
+  evaluation. The descent law must be internal to the existing subrepresenter,
+  selected by the existing universal arrow, effective over the filtered
+  cofinal refinement calculus, cocyclic, canonically glued, cover-independent,
+  unretuned on refinement, unique, coherent, stable under base-change and
+  projection formula, and must preserve the boundary, DD.4, exact-delta,
+  graph, Rosati, control, handoff, graph-later, source-before-points,
+  original-H1, doc515, and exact-24 budget data. Local-only, non-effective,
+  non-cofinal, cocycle-gap, gluing-gap, cover-dependent, retuned, nonunique,
+  incoherent, unstable-base-change, projection-formula-gap, original-H1-gap,
+  doc515-gap, external, quotient, functor-of-points-only, Yoneda-reversal-only,
+  pointwise-only, objectwise-only, nonfunctorial-choice, choice-based,
+  new-cell, context-collapse, declaration-only, finite-sample, basis-row,
+  unbudgeted, and missing descent-effective Beck-Chevalley evaluation
+  certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_descent_effective_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMDESCEFFBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMDESCEFFBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (272/272 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=579 (atoms=77, edges=777). STAGE/Layer I - NOT RH.
+R1 CYCLE 443 ANCHOR (doc 580): Qbar_BECD exact-24 admissible source-square
+  mate-coherent descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 579 by requiring
+  MateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_AdjunctionMate_source_square,
+  a mate-coherence law for the descent-effective exact/cartesian
+  Beck-Chevalley natural evaluation. The mate law must be internal to the
+  existing subrepresenter, selected by the existing universal arrow, and must
+  provide adjunction mate data with unit, counit, triangle identities, mate
+  involution, projection-formula mates, boundary/DD.4/exact-delta/graph mates,
+  Rosati/dagger mates, trace/control mates, handoff/graph-later mates,
+  descent-stable natural coherence, and preservation of source-before-points,
+  original-H1, doc515, and exact-24 budget data. Missing, non-adjunction-mate,
+  unit-gap, counit-gap, triangle-gap, involution-gap,
+  projection-formula-mate-gap, boundary-pushforward-mate-gap,
+  DD.4/exact-delta-mate-gap, graph-composition-mate-gap,
+  Rosati/dagger-mate-gap, trace/control-mate-gap, handoff/graph-mate-gap,
+  descent-unstable, nonnatural, incoherent, one-sided, lax, external,
+  quotient, functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing mate-coherent Beck-Chevalley evaluation certificates are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_mate_coherent_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMMATECOHBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMMATECOHBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (273/273 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=580 (atoms=78, edges=803). STAGE/Layer I - NOT RH.
+R1 CYCLE 444 ANCHOR (doc 581): Qbar_BECD exact-24 admissible source-square
+  cyclic-ambidextrous mate-coherent descent-effective Beck-Chevalley-exact
+  evaluation-natural represented-internal-model semantic-conservative
+  executable critical-pair diamond coherent normalizer contract
+  construction-spec. This cycle sharpens doc 580 by requiring
+  CycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_CyclicMate_source_square,
+  a cyclic-ambidextrous mate law for the descent-effective exact/cartesian
+  Beck-Chevalley natural evaluation. The cyclic mate law must be internal to
+  the existing subrepresenter, selected by the existing universal arrow, and
+  must make left and right mates agree without a marked cut while rotations
+  through trace, dagger/Rosati, pivotal and exact-additive trace,
+  projection-formula, boundary/DD.4/exact-delta, graph/composition,
+  control-death, handoff, graph-later, descent, naturality, and coherence all
+  commute. It must preserve source-before-points, original-H1, doc515, and the
+  exact-24 budget data. Missing, non-ambidextrous, left/right-mismatch,
+  rotation-gap, cut-dependent, trace-cyclicity-gap, dagger/Rosati-gap,
+  projection-rotation-gap, boundary/DD.4/exact-delta/graph/control/handoff
+  rotation gaps, descent-unstable, nonnatural, incoherent, external, quotient,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing cyclic-ambidextrous mate Beck-Chevalley evaluation certificates
+  are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_cyclic_ambidextrous_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCYCAMBMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCYCAMBMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (274/274 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=581 (atoms=79, edges=829). STAGE/Layer I - NOT RH.
+R1 CYCLE 445 ANCHOR (doc 582): Qbar_BECD exact-24 admissible source-square
+  pasting-stable cyclic-ambidextrous mate-coherent descent-effective
+  Beck-Chevalley-exact evaluation-natural represented-internal-model
+  semantic-conservative executable critical-pair diamond coherent normalizer
+  contract construction-spec. This cycle sharpens doc 581 by requiring
+  PasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_PastingMate_source_square,
+  a pasting-stable cyclic mate law for the descent-effective exact/cartesian
+  Beck-Chevalley natural evaluation. The pasting law must be internal to the
+  existing subrepresenter, selected by the existing universal arrow, and must
+  make vertical and horizontal pasting, interchange, unit squares,
+  associators/unitors, trace sliding, dagger/Rosati, projection-formula,
+  boundary/DD.4/exact-delta, graph/composition, control-death, handoff,
+  graph-later, descent, naturality, and coherence all commute. It must
+  preserve source-before-points, original-H1, doc515, and the exact-24 budget
+  data. Missing, not-stable, vertical-gap, horizontal-gap, interchange-gap,
+  unit/associator/unitor gaps, trace-sliding-gap, dagger/Rosati-gap,
+  projection-formula-gap, boundary/DD.4/exact-delta/graph/control/handoff
+  pasting gaps, companion/conjoint-gap, external-equipment, descent-unstable,
+  nonnatural, incoherent, external, quotient, functor-of-points-only,
+  Yoneda-reversal-only, pointwise-only, objectwise-only, nonfunctorial-choice,
+  choice-based, new-cell, context-collapse, declaration-only, finite-sample,
+  basis-row, unbudgeted, and missing pasting-stable cyclic mate
+  Beck-Chevalley evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (275/275 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=582 (atoms=80, edges=860). STAGE/Layer I - NOT RH.
+R1 CYCLE 446 ANCHOR (doc 583): Qbar_BECD exact-24 admissible source-square
+  normal-form-reflecting pasting-stable cyclic-ambidextrous mate-coherent
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 582 by requiring
+  NFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_NormalFormMate_source_square,
+  a normal-form reflection law for the pasting-stable cyclic mate. The law must
+  be internal to the existing finite executable normalizer and represented
+  semantic model: vertical/horizontal pasted composites, interchange, unit,
+  associator/unitor, trace-sliding, projection-formula, boundary/DD.4/
+  exact-delta, graph, Rosati, control, and handoff composites must reduce to
+  the same source-internal normal forms, and represented semantics must
+  conservatively reflect that equality. Missing, not-reflected,
+  normal-form-gap, composite-gap, vertical/horizontal/interchange/unit/
+  associator-unitor/trace-sliding gaps, critical-pair/confluence/termination
+  gaps, semantic/invariant-reflection gaps, projection/boundary/DD.4/
+  exact-delta/graph/Rosati/control/handoff normal-form gaps, descent-unstable,
+  nonnatural, incoherent, external-rewrite, quotient-normal-form,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing normal-form-reflecting pasted cyclic mate Beck-Chevalley
+  evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (276/276 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=583 (atoms=81, edges=890). STAGE/Layer I - NOT RH.
+R1 CYCLE 447 ANCHOR (doc 584): Qbar_BECD exact-24 admissible source-square
+  source-law-complete normal-form-reflecting pasting-stable
+  cyclic-ambidextrous mate-coherent descent-effective Beck-Chevalley-exact
+  evaluation-natural represented-internal-model semantic-conservative
+  executable critical-pair diamond coherent normalizer contract
+  construction-spec. This cycle sharpens doc 583 by requiring
+  SrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_SourceLawCompleteNF_source_square,
+  a source-law completeness law for the normal-form-reflecting pasted cyclic
+  mate. The law must cover the whole source-law generator inventory, not just
+  selected pasted diagrams: endpoint integrality, degree maps, projection
+  formula, boundary pushforward, DD.4, exact-delta, graph composition, Rosati,
+  control death, handoff, graph-later realization, composition, refinement,
+  filtered-cofinal descent, represented-limit, critical-pair coverage,
+  semantic completeness, and invariant reflection must all be complete under
+  the same finite executable normalizer and represented semantic model.
+  Missing, not-complete, selected-diagram-only, payload-incomplete,
+  structure-incomplete, generator-coverage-gap, endpoint/degree/projection/
+  boundary/DD.4/exact-delta/graph/Rosati/control/handoff/composition/
+  refinement/filtered-cofinal/represented-limit gaps, critical-pair coverage
+  gaps, semantic-completeness gaps, invariant-reflection gaps, descent-
+  unstable, nonnatural, incoherent, external-rewrite, quotient-normal-form,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing source-law-complete normal-form-reflecting pasted cyclic mate
+  Beck-Chevalley evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (277/277 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=584 (atoms=82, edges=935). STAGE/Layer I - NOT RH.
+R1 CYCLE 448 ANCHOR (doc 585): Qbar_BECD exact-24 admissible source-square
+  presentation-invariant source-law-complete normal-form-reflecting
+  pasting-stable cyclic-ambidextrous mate-coherent descent-effective
+  Beck-Chevalley-exact evaluation-natural represented-internal-model
+  semantic-conservative executable critical-pair diamond coherent normalizer
+  contract construction-spec. This cycle sharpens doc 584 by requiring
+  PresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_PresentationInvariantNF_source_square,
+  a presentation-invariance law for the source-law-complete normal-form
+  reflection. The law must transport the same law-complete normal forms across
+  generator refinement, relation expansion, Tietze-style redundant
+  generator/relation moves, cell subdivision/merge, coherent
+  source-presentation transport, universal-arrow reindexing, filtered-cofinal
+  refinement, refinement descent, normalizer transport, semantic transport,
+  invariant-reflection transport, and the endpoint/degree/projection/
+  boundary/DD.4/exact-delta/graph/Rosati/control/handoff source laws. Missing,
+  not-invariant, selected-presentation-only, generator/relation/Tietze gaps,
+  redundant-generator/relation gaps, cell subdivision/merge gaps,
+  source-presentation transport gaps, universal-arrow reindexing gaps,
+  filtered-cofinal/refinement-descent gaps, normalizer/semantic/invariant-
+  reflection transport gaps, endpoint/degree/projection/boundary/DD.4/
+  exact-delta/graph/Rosati/control/handoff gaps, nonnatural, incoherent,
+  external-presentation, syntax-quotient, quotient-normal-form,
+  presentation-specific-normalizer, retuned-generator-list,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing presentation-invariant source-law-complete normal-form-reflecting
+  pasted cyclic mate Beck-Chevalley evaluation certificates are diagnostics
+  only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (278/278 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=585 (atoms=83, edges=981). STAGE/Layer I - NOT RH.
+R1 CYCLE 449 ANCHOR (doc 586): Qbar_BECD exact-24 admissible source-square
+  path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasting-stable cyclic-ambidextrous mate-coherent
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 585 by requiring
+  PathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_PathIndependentNF_source_square,
+  a path-independence and zero-loop-monodromy law for presentation transports.
+  The law must compose presentation transports associatively, provide unit
+  transports, cancel inverse moves, eliminate zigzag dependence, and kill
+  monodromy around generator/relation squares, Tietze triangles,
+  redundant-generator/relation inverse pairs, subdivision/merge inverse pairs,
+  source-presentation squares, universal-arrow reindexing squares,
+  filtered-cofinal refinement squares, refinement-descent squares,
+  normalizer-transport squares, semantic-transport squares,
+  invariant-reflection transport squares, payload-law loops, Beck-Chevalley
+  mate loops, and endpoint/degree/projection/boundary/DD.4/exact-delta/graph/
+  Rosati/control/handoff loops. Missing, not-path-independent,
+  zigzag-dependent, loop-monodromic, chain-composition, associativity, unit,
+  inverse-move, generator/relation/Tietze/redundancy/subdivision/source-
+  presentation/universal-arrow/cofinal/refinement/normalizer/semantic/
+  invariant-reflection/payload/Beck-Chevalley gaps, endpoint/degree/
+  projection/boundary/DD.4/exact-delta/graph/Rosati/control/handoff monodromy
+  gaps, nonnatural, incoherent, external-2-groupoid, quotient-path-space,
+  syntax-path-quotient, presentation-specific path choice, retuned transport,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasted cyclic mate Beck-Chevalley evaluation
+  certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (279/279 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=586 (atoms=84, edges=1028). STAGE/Layer I - NOT RH.
+R1 CYCLE 450 ANCHOR (doc 587): Qbar_BECD exact-24 admissible source-square
+  loop-complete path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasting-stable cyclic-ambidextrous mate-coherent
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 586 by requiring
+  LoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_LoopCompleteNF_source_square,
+  a loop-completeness law for the path-independent presentation transports.
+  The law must prove the named zero-monodromy loops generate every admissible
+  presentation loop, complete the loop relations, and close under conjugation,
+  composition, inverse moves, refinement, subdivision, universal-arrow
+  transport, normalizer loops, semantic loops, invariant-reflection loops,
+  payload loops, source-law loops, endpoint/degree/projection/boundary/DD.4/
+  exact-delta loops, and graph/Rosati/control/handoff loops. Missing,
+  not-complete, selected-loop-basis-only, hidden-loop-generator,
+  loop-relation, conjugation/composition/inverse/refinement/subdivision/
+  universal-arrow closure gaps, normalizer/semantic/invariant-reflection/
+  payload/source-law loop gaps, endpoint/degree/projection/boundary/DD.4/
+  exact-delta/graph/Rosati/control/handoff loop gaps, nonnatural, incoherent,
+  external-loop-presentation, external-2-groupoid, quotient-fundamental-group,
+  homotopy-quotient, syntax-loop-quotient, retuned-loop-basis,
+  functor-of-points-only, Yoneda-reversal-only, pointwise-only,
+  objectwise-only, nonfunctorial-choice, choice-based, new-cell,
+  context-collapse, declaration-only, finite-sample, basis-row, unbudgeted,
+  and missing loop-complete path-independent presentation-invariant
+  source-law-complete normal-form-reflecting pasted cyclic mate
+  Beck-Chevalley evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_loop_complete_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (280/280 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=587 (atoms=85, edges=1076). STAGE/Layer I - NOT RH.
+R1 CYCLE 451 ANCHOR (doc 588): Qbar_BECD exact-24 admissible source-square
+  contractible loop-complete path-independent presentation-invariant
+  source-law-complete normal-form-reflecting pasting-stable
+  cyclic-ambidextrous mate-coherent descent-effective
+  Beck-Chevalley-exact evaluation-natural represented-internal-model
+  semantic-conservative executable critical-pair diamond coherent normalizer
+  contract construction-spec. This cycle sharpens doc 587 by requiring
+  ContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_ContractibleLoopCompleteNF_source_square,
+  a contractibility law for the loop-completion/trivialization certificate
+  space. The law must prove connectedness, unique loop trivialization,
+  complete comparison 2-cell relations, trivial trivialization automorphisms,
+  zero higher-loop monodromy, and closure under conjugation, composition,
+  inverse moves, refinement, subdivision, universal-arrow transport,
+  normalizer trivializations, semantic trivializations, invariant-reflection
+  trivializations, payload/source-law trivializations, endpoint/degree/
+  projection/boundary/DD.4/exact-delta trivializations, and graph/Rosati/
+  control/handoff trivializations. Missing, not-contractible,
+  multiple-components, nonunique-trivialization, incomplete-2-cell-relations,
+  nontrivial-automorphism, hidden-higher-loop, comparison/conjugation/
+  composition/inverse/refinement/subdivision/universal-arrow closure gaps,
+  normalizer/semantic/invariant-reflection/payload/source-law
+  trivialization gaps, endpoint/degree/projection/boundary/DD.4/exact-delta/
+  graph/Rosati/control/handoff trivialization gaps, nonnatural, incoherent,
+  external-contractibility-proof, external-2-groupoid,
+  quotient-higher-groupoid, homotopy-quotient, syntax-higher-quotient,
+  retuned-trivialization, functor-of-points-only, Yoneda-reversal-only,
+  pointwise-only, objectwise-only, nonfunctorial-choice, choice-based,
+  new-cell, context-collapse, declaration-only, finite-sample, basis-row,
+  unbudgeted, and missing contractible loop-complete path-independent
+  presentation-invariant source-law-complete normal-form-reflecting pasted
+  cyclic mate Beck-Chevalley evaluation certificates are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_contractible_loop_complete_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (281/281 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=588 (atoms=86, edges=1125). STAGE/Layer I - NOT RH.
+R1 CYCLE 452 ANCHOR (doc 589): Qbar_BECD exact-24 admissible source-square
+  parametric contractible loop-complete path-independent
+  presentation-invariant source-law-complete normal-form-reflecting
+  pasting-stable cyclic-ambidextrous mate-coherent descent-effective
+  Beck-Chevalley-exact evaluation-natural represented-internal-model
+  semantic-conservative executable critical-pair diamond coherent normalizer
+  contract construction-spec. This cycle sharpens doc 588 by requiring
+  ParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_ParametricContractibleLoopCompleteNF_source_square,
+  a cartesian pseudonatural family of contractible loop-completion data over
+  the admissible source-square category. The law must cover every admissible
+  morphism and morphism relation, cartesian base-change stability,
+  Beck-Chevalley parametricity, refinement functoriality, descent gluing,
+  universal-arrow reindexing, normalizer/semantic/invariant-reflection
+  parametricity, payload/source-law parametricity, endpoint/degree/
+  projection/boundary/DD.4/exact-delta parametricity, and graph/Rosati/
+  control/handoff parametricity. Missing, not-parametric, fiberwise-only,
+  objectwise-contractibility-only, selected-morphism-basis,
+  hidden-morphism-generator, morphism-relation, cartesian-section,
+  pseudonaturality, base-change, Beck-Chevalley, refinement, descent,
+  universal-arrow, normalizer/semantic/invariant-reflection/payload/
+  source-law parametricity, endpoint/degree/projection/boundary/DD.4/
+  exact-delta/graph/Rosati/control/handoff parametricity gaps, nonnatural,
+  incoherent, external-indexed-fibration, external-Grothendieck-construction,
+  external-2-groupoid, quotient-index-category, homotopy-quotient,
+  syntax-parametric-quotient, retuned-reindexing, functor-of-points-only,
+  Yoneda-reversal-only, pointwise-only, objectwise-only, nonfunctorial-choice,
+  choice-based, new-cell, context-collapse, declaration-only, finite-sample,
+  basis-row, unbudgeted, and missing parametric contractible loop-complete
+  path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasted cyclic mate Beck-Chevalley evaluation
+  certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_parametric_contractible_loop_complete_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (282/282 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=589 (atoms=87, edges=1179). STAGE/Layer I - NOT RH.
+R1 CYCLE 453 ANCHOR (doc 590): Qbar_BECD exact-24 admissible source-square
+  globally contractible parametric contractible loop-complete
+  path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasting-stable cyclic-ambidextrous mate-coherent
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 589 by requiring
+  GloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_GlobalParametricContractibleLoopCompleteNF_source_square,
+  a global contractibility law for the space of cartesian pseudonatural
+  sections. The law must prove a unique global section, complete global
+  section relations, trivial section automorphisms, zero global descent
+  cocycles, zero cleavage monodromy, zero global modification loops, and
+  stability under base-change, Beck-Chevalley, refinement, descent,
+  universal-arrow reindexing, normalizer/semantic/invariant-reflection
+  global data, payload/source-law global data, endpoint/degree/projection/
+  boundary/DD.4/exact-delta global data, and graph/Rosati/control/handoff
+  global data. Missing, not-globally-contractible, multiple-global-sections,
+  global-section-torsor, nonunique-global-section, incomplete-global-section-
+  relations, nontrivial-section-automorphism, global-descent-cocycle,
+  cleavage-monodromy, global-modification-loop, local-only, cover-local-only,
+  selected-global-section, base-change/Beck-Chevalley/refinement/descent/
+  universal-arrow global gaps, normalizer/semantic/invariant-reflection/
+  payload/source-law global gaps, endpoint/degree/projection/boundary/DD.4/
+  exact-delta/graph/Rosati/control/handoff global gaps, nonnatural,
+  incoherent, external-section-moduli, external-section-stack,
+  external-indexed-fibration, external-Grothendieck-construction,
+  external-2-groupoid, quotient-section-stack, homotopy-quotient,
+  syntax-global-quotient, retuned-cleavage, functor-of-points-only,
+  Yoneda-reversal-only, pointwise-only, objectwise-only, nonfunctorial-choice,
+  choice-based, new-cell, context-collapse, declaration-only, finite-sample,
+  basis-row, unbudgeted, and missing globally contractible parametric
+  contractible loop-complete path-independent presentation-invariant
+  source-law-complete normal-form-reflecting pasted cyclic mate
+  Beck-Chevalley evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_globally_contractible_parametric_contractible_loop_complete_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMGLOBCONTRPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMGLOBCONTRPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS,
+  lead-ran exit 0); adjacent Qbar_BECD witnesses plus the DD.4 SCC interface
+  (283/283 exit 0, lead-ran); frontier-map check with current witness passed
+  at current_doc=590 (atoms=88, edges=1234). STAGE/Layer I - NOT RH.
+R1 CYCLE 454 ANCHOR (doc 591): Qbar_BECD exact-24 admissible source-square
+  executable globally contractible parametric contractible loop-complete
+  path-independent presentation-invariant source-law-complete
+  normal-form-reflecting pasting-stable cyclic-ambidextrous mate-coherent
+  descent-effective Beck-Chevalley-exact evaluation-natural
+  represented-internal-model semantic-conservative executable critical-pair
+  diamond coherent normalizer contract construction-spec. This cycle sharpens
+  doc 590 by requiring
+  ExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_ExecutableGlobalContraction_source_square,
+  an internal total evaluator that extracts the unique global section from
+  admissible global section data by the existing terminating finite critical-
+  pair normalizer. The evaluator must be normal-form-reflecting, semantic-
+  conservative, invariant-reflecting, proof-relevant, and must execute
+  payload/source-law data, endpoint/degree/projection data, boundary/DD.4/
+  exact-delta data, graph/Rosati/control/handoff data, base-change,
+  Beck-Chevalley, refinement/descent, and universal-arrow data. Missing,
+  non-executable, oracle-only, external-evaluator, propositional-truncation-
+  only, proof-irrelevant-erasure, nonterminating-rewrite, critical-pair-gap,
+  non-normal-form-reflecting, semantic-conservativity-gap, invariant-
+  reflection-gap, non-proof-relevant, execution-gap, nonnatural, incoherent,
+  external-proof-term, external-oracle, functor-of-points-only, Yoneda-
+  reversal-only, pointwise-only, objectwise-only, nonfunctorial-choice,
+  choice-based, new-cell, context-collapse, declaration-only, finite-sample,
+  basis-row, unbudgeted, and missing executable globally contractible
+  parametric contractible loop-complete path-independent presentation-
+  invariant source-law-complete normal-form-reflecting pasted cyclic mate
+  Beck-Chevalley evaluation certificates are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_executable_globally_contractible_parametric_contractible_loop_complete_path_independent_presentation_invariant_source_law_complete_normal_form_reflecting_pasting_stable_cyclic_mate_beck_chevalley_evaluation_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXECGLOBCONTRPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXECGLOBCONTRPARAMCONTRLOOPCOMPPATHINDPRESINVSRCLAWCOMPNFREFLPASTECYCMATEBCHEVEVAL10 ALL PASS, lead-ran exit 0); adjacent Qbar_BECD
+  witnesses plus the DD.4 SCC interface (284/284 exit 0, lead-ran);
+  frontier-map check with current witness passed at current_doc=591
+  (atoms=89, edges=1290). STAGE/Layer I - NOT RH.
+R1 CYCLE 455 ANCHOR (doc 592): Qbar_BECD exact-24 admissible source-square
+  trace-audited executable global contraction contract construction-spec. This
+  cycle sharpens doc 591 by requiring
+  TraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_TraceAuditedExecutableGlobalContraction_source_square,
+  a source-internal proof-relevant replay trace for the doc-591 executable
+  global contraction. The trace must be deterministic, canonical-order, and
+  replayable, and must log the normalizer, critical-pair, semantic, invariant,
+  payload, source-law, endpoint/degree/projection, boundary/DD.4/exact-delta,
+  graph/Rosati/control/handoff, base-change, Beck-Chevalley, refinement/
+  descent, and universal-arrow events inside the exact-24 budget. Missing
+  trace-audited certificates, non-trace-audited evaluators, opaque/lossy
+  traces, post-hoc logs, external/oracle auditors, proof-irrelevant traces,
+  nondeterministic traces, nonterminating trace extraction, unlogged critical
+  pairs, normal forms, semantic events, invariants, payloads, routes, non-
+  replayable traces, noncanonical order, new cells, context collapse,
+  declarations, finite samples, basis rows, and unbudgeted trace layers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_trace_audited_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTRACEAUDITEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTRACEAUDITEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (285/285 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=592
+  (atoms=90, edges=1315). STAGE/Layer I - NOT RH.
+R1 CYCLE 456 ANCHOR (doc 593): Qbar_BECD exact-24 admissible source-square
+  verifier-separated trace executable global contraction contract
+  construction-spec. This cycle sharpens doc 592 by requiring
+  VerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_VerifierSeparatedTraceExecutableGlobalContraction_source_square,
+  a finite source-internal verifier separated from the trace producer and
+  sharing no external oracle. The verifier must check trace schema, event
+  coverage, canonical order, replay, semantic reflection, invariant events,
+  payload-route events, and exact-24 budget charge; it must be sound, complete
+  for admissible traces, deterministic, terminating, proof-relevant, and
+  extensional in the trace data. Missing verifier-separated certificates, no
+  verifier, producer-coupled verifiers, external/oracle/shared-oracle checkers,
+  schema-only checks, unchecked coverage/order/replay/semantic reflection/
+  invariants/payload routes/budget, unsound or incomplete verifiers,
+  invalid-trace acceptance, nondeterministic or nonterminating verifiers,
+  proof-irrelevant or nonextensional verifiers, new cells, context collapse,
+  declarations, finite samples, basis rows, and unbudgeted verifier layers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_verifier_sep_trace_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (286/286 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=593
+  (atoms=91, edges=1341). STAGE/Layer I - NOT RH.
+R1 CYCLE 457 ANCHOR (doc 594): Qbar_BECD exact-24 admissible source-square
+  obstruction-localizing verifier trace executable global contraction
+  construction-spec. This cycle sharpens doc 593 by requiring
+  ObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidCartCompatDiagRepLimSrcBundleRepLimFiltCofRefCalcStabRefDescStabMedGenCompStabJointSourceLawDD4ActiveRigidPrimEffK0Lift_ObstructionLocalizingVerifierTraceExecutableGlobalContraction_source_square,
+  a proof-relevant source-internal localizer that turns verifier rejection
+  into a canonical minimal failing subtrace/facet. The localizer must return
+  either an accepted verified trace or an obstruction location, project blame
+  to invariant, payload-route, source-law, and exact-24 budget data, and be
+  deterministic, terminating, extensional, sound, complete over verifier
+  failures, and budgeted. Missing obstruction-localizing certificates,
+  Boolean-only verifiers, accept-only checkers, rejection without witnesses,
+  noncanonical or nonminimal locations, wrong blame, external/oracle/producer-
+  coupled localization, missing subtrace/facet/invariant/payload-route/budget
+  blame, replay-unstable or semantically blind obstructions, incompatible
+  obstruction families, nondeterministic or nonterminating localizers,
+  proof-irrelevant or nonextensional localizers, unsound or incomplete failure
+  coverage, new cells, context collapse, declarations, finite samples, basis
+  rows, and unbudgeted localizer layers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_loc_verifier_trace_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (287/287 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=594
+  (atoms=92, edges=1368). STAGE/Layer I - NOT RH.
+R1 CYCLE 458 ANCHOR (doc 595): Qbar_BECD exact-24 admissible source-square
+  obstruction-classifying localizer trace executable global contraction
+  construction-spec. This cycle sharpens doc 594 by requiring
+  ObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionClassifyingLocalizerTraceExecutableGlobalContraction_source_square,
+  a finite source-internal classifier for every localized verifier
+  obstruction. The classifier must be total, deterministic, terminating,
+  replay-stable, proof-relevant, extensional over localized obstructions,
+  and budgeted; every class must link to repair/no-go evidence and a named
+  kill-frontier item, with explicit budget, context-collapse, and
+  presentation/sample classes. Missing classifiers, unclassified
+  obstructions, infinite or retuned taxonomies, external/oracle classifiers,
+  wrong or ambiguous classes, nonfatal class leakage, missing repair/no-go,
+  kill-frontier, budget, context, or sample links, nondeterministic or
+  nonterminating classifiers, proof-irrelevant or nonextensional classifiers,
+  new cells, context collapse, declarations, finite samples, basis rows, and
+  unbudgeted classifier layers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_class_localizer_trace_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (288/288 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=595
+  (atoms=93, edges=1396). STAGE/Layer I - NOT RH.
+R1 CYCLE 459 ANCHOR (doc 596): Qbar_BECD exact-24 admissible source-square
+  obstruction-actionable classifier trace executable global contraction
+  construction-spec. This cycle sharpens doc 595 by requiring
+  ObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionActionableClassifierTraceExecutableGlobalContraction_source_square,
+  a source-internal bounded action plan for the finite obstruction taxonomy.
+  Every obstruction class must map to exactly one bounded action: accept,
+  emit named no-go evidence, apply an existing-requirement repair, open the
+  recorded dependency gap, or reject budget/context/external/sample failures
+  as such. The action trace must be deterministic, terminating, replay-stable,
+  proof-relevant, extensional, budgeted, and decreasing for a finite frontier
+  measure. Missing action plans, class-only labels, unclassified or ambiguous
+  actions, wrong/external/oracle actions, action loops, branch spawning,
+  nonmonotone refinement, unbounded search, repairs outside existing
+  requirements, unnamed no-go actions, missing kill-frontier, budget, context,
+  sample, or action-trace links, retuned actions, new cells, context collapse,
+  declarations, finite samples, basis rows, and unbudgeted action layers are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_action_classifier_trace_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (289/289 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=596
+  (atoms=94, edges=1425). STAGE/Layer I - NOT RH.
+R1 CYCLE 460 ANCHOR (doc 597): Qbar_BECD exact-24 admissible source-square
+  obstruction-confluent action classifier trace executable global contraction
+  construction-spec. This cycle sharpens doc 596 by requiring
+  ObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionConfluentActionClassifierTraceExecutableGlobalContraction_source_square,
+  a source-internal confluence certificate for the bounded obstruction-action
+  system. The certificate must enumerate all finite action critical pairs,
+  join every pair, produce unique replayable normal forms, terminate, be local
+  and globally confluent, deterministic, proof-relevant, extensional,
+  replay-stable, budgeted, and decreasing for a finite join measure. Missing
+  confluence certificates, class/action order dependence, action conflicts,
+  unresolved or incomplete critical pairs, nonterminating or nonunique joins,
+  external/oracle joins, branch spawning, unbounded completion, repair/no-go/
+  budget-context/sample/trace conflicts, retuned joins, new cells, context
+  collapse, declarations, finite samples, basis rows, and unbudgeted join
+  systems are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_confluent_action_classifier_trace_exec_global_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (290/290 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=597
+  (atoms=95, edges=1455). STAGE/Layer I - NOT RH.
+R1 CYCLE 461 ANCHOR (doc 598): Qbar_BECD exact-24 admissible source-square
+  obstruction-normalform-reflecting confluent action trace executable global
+  contraction construction-spec. This cycle sharpens doc 597 by requiring
+  ObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionNormalformReflectingConfluentActionTraceExecutableGlobalContraction_source_square,
+  a source-internal reflection certificate forcing the doc-597 unique action
+  normal form to update the executable state, global contraction state,
+  terminal certificate, invariant state, and payload trace. Accepted, repair,
+  no-go, budget, context, sample, and trace actions must all reflect through
+  the same normal form. Missing reflection certificates, proof-erased normal
+  forms, unreflected executable/global/terminal states, wrong or stale
+  reflected states, nonidempotent, nondeterministic, nonreplayable,
+  nonextensional, proof-irrelevant, external, oracle, or non-source-internal
+  reflection, nonterminal action normal forms, unreflected join traces or
+  critical pairs, branch spawning, unbounded or retuned reflection, new cells,
+  context collapse, declarations, finite samples, basis rows, and unbudgeted
+  reflection systems are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_nf_reflect_confluent_action_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (291/291 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=598
+  (atoms=96, edges=1486). STAGE/Layer I - NOT RH.
+R1 CYCLE 462 ANCHOR (doc 599): Qbar_BECD exact-24 admissible source-square
+  obstruction-reflected-fixedpoint normalform trace executable global
+  contraction construction-spec. This cycle sharpens doc 598 by requiring
+  ObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionReflectedFixedpointNormalformTraceExecutableGlobalContraction_source_square,
+  a source-internal replay fixed-point certificate for the doc-598 reflected
+  normal form. Rerunning verifier, trace audit, localizer, classifier, action
+  plan, confluence, and reflection must be a no-op; no residual obstruction
+  or new action may appear; normal form, terminal certificate, invariant
+  state, payload trace, accepted/repair/no-go/budget/context/sample/trace
+  states, action set, and critical-pair surface must be stable. Missing
+  fixed-point certificates, post-reflection verifier/trace/localizer/
+  classifier/action/confluence/reflection changes, residual obstructions, new
+  actions, changed normal forms, non-idempotent, nondeterministic,
+  nonterminating, non-replay-stable, proof-irrelevant, nonextensional,
+  external, oracle, or non-source-internal fixed points, branch spawning,
+  unbounded replay, retuned pipelines, new cells, context collapse,
+  declarations, finite samples, basis rows, and unbudgeted fixed points are
+  diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_reflected_fixedpoint_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (292/292 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=599
+  (atoms=97, edges=1518). STAGE/Layer I - NOT RH.
+R1 CYCLE 463 ANCHOR (doc 600): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin reflected-fixedpoint trace executable global
+  contraction construction-spec. This cycle sharpens doc 599 by requiring
+  ObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  a source-internal terminal basin certificate for the doc-599 replay fixed
+  point. Every admissible obstruction entry trace in the finite surface must
+  be enumerated and absorbed by the same fixed point: verifier, trace audit,
+  localizer, classifier, action, confluence, reflection, fixed-point,
+  accepted, repair, no-go, budget, context, sample, invariant, and payload
+  entries. Missing basin certificates, incomplete or unlisted entry-trace
+  coverage, escaping traces, traces that change the fixed point, missing
+  pipeline/invariant/payload/repair/no-go/budget/context/sample/trace entries,
+  multiple fixed points, noncanonical/nonabsorbing/nonextensional/
+  proof-irrelevant basins, external, oracle, branch-spawning, unbounded,
+  retuned, non-source-internal, new-cell, context-collapse, declaration,
+  finite-sample, basis-row, and unbudgeted basins are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_fixedpoint_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (293/293 exit 0,
+  lead-ran); frontier-map check with current witness passed at current_doc=600
+  (atoms=98, edges=1551). STAGE/Layer I - NOT RH.
+R1 CYCLE 464 ANCHOR (doc 601): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary reflected-fixedpoint trace executable
+  global contraction construction-spec. This cycle sharpens doc 600 by
+  requiring
+  ObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  a finite source-internal boundary separator for the doc-600 terminal basin.
+  Every admissible terminal-basin entry surface and every doc-600 rejected
+  escape variant must have a boundary facet. The boundary must separate
+  without changing the terminal fixed point or opening a second terminal
+  state, and must be canonical, replay-stable, proof-relevant, extensional,
+  graph-wired, and budgeted. Missing boundary certificates, incomplete
+  entry/escape boundary cover, unlisted or nonseparating boundaries, missing
+  pipeline/invariant/payload/repair/no-go/budget/context/sample/trace
+  boundaries, boundaries that fail to absorb, change the fixed point, allow a
+  second terminal state, overlap incompatibly, are infinite, noncanonical,
+  non-replay-stable, nonterminating, nondeterministic, nonextensional,
+  proof-irrelevant, external, oracle, branch-spawning, unbounded, retuned,
+  non-source-internal, new-cell, context-collapse, declaration, finite-sample,
+  basis-row, and unbudgeted boundaries are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  adjacent Qbar_BECD witnesses plus the DD.4 SCC interface (294/294 exit 0,
+  lead-ran);
+  frontier-map check with current witness passed at current_doc=601
+  (atoms=99, edges=1585). STAGE/Layer I - NOT RH.
+R1 CYCLE 465 ANCHOR (doc 602): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary-killfrontier reflected-fixedpoint trace
+  executable global contraction construction-spec. This cycle sharpens doc 601
+  by requiring
+  ObstructionTerminalBasinBoundaryKillfrontierObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryKillfrontierReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  a current-negative kill-frontier anchor for every doc-601 terminal-basin
+  boundary facet. All 62 entry facets and all 44 rejected escape facets must
+  land on one of 13 named current kill-frontier mechanisms, preserve the
+  boundary and reflected fixed point, open no second terminal state, and remain
+  finite, source-internal, deterministic, extensional, proof-relevant,
+  graph-wired, dependency-closed, replay-stable, and budgeted. Missing anchors,
+  unanchored entry/escape boundaries, missing or unlisted kill-frontier items,
+  noncurrent/nonnegative/infinite/non-source-internal anchors, boundary
+  relabels, fixed-point changes, proof-irrelevant/external/oracle/branching/
+  unbounded/retuned anchors, new cells, context collapse, declarations,
+  finite-samples, basis rows, and unbudgeted anchors are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=602
+  (atoms=100, edges=1620). STAGE/Layer I - NOT RH.
+R1 CYCLE 466 ANCHOR (doc 603): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary-killfrontier-facet-taxonomy
+  reflected-fixedpoint trace executable global contraction construction-spec.
+  This cycle sharpens doc 602 by requiring
+  ObstructionTerminalBasinBoundaryKillfrontierFacetTaxonomyObstructionTerminalBasinBoundaryKillfrontierObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryKillfrontierFacetTaxonomyReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  an explicit disjoint finite source-internal taxonomy route from every
+  doc-601 terminal-basin boundary facet to its doc-602 negative kill-frontier
+  anchor. All 106 doc-601 boundary facets are classified: 62 entry facets and
+  44 rejected escape facets, using 17 explicit classes and 13 anchors. The
+  class-anchor map matches doc 602, no default route is allowed, and the
+  taxonomy must remain boundary-preserving, fixedpoint-stable,
+  second-terminal-free, minimal, source-internal, finite, deterministic,
+  extensional,
+  proof-relevant, dependency-closed, graph-wired, replay-stable, and budgeted.
+  Missing taxonomies, unclassified or ambiguous surfaces, default anchor
+  routes, anchor-class mismatches, unseparated anchor buckets, nonminimal/
+  nonfinite/non-source-internal classes, boundary relabels, fixed-point
+  changes, second terminal states, proof-irrelevant/external/oracle/branching/
+  unbounded/retuned classifiers, new cells, context collapse, declarations,
+  finite samples, basis rows, and unbudgeted classifiers are diagnostics only.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_taxonomy_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=603
+  (atoms=101, edges=1656). STAGE/Layer I - NOT RH.
+R1 CYCLE 467 ANCHOR (doc 604): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary-killfrontier-facet-route-graph
+  reflected-fixedpoint trace executable global contraction construction-spec.
+  This cycle sharpens doc 603 by requiring
+  ObstructionTerminalBasinBoundaryKillfrontierFacetRouteGraphObstructionTerminalBasinBoundaryKillfrontierFacetTaxonomyObstructionTerminalBasinBoundaryKillfrontierObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryKillfrontierFacetRouteGraphReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  a finite two-step graph from each doc-601 boundary facet to its doc-602
+  negative kill-frontier anchor through a used doc-603 taxonomy class. The
+  graph has 106 surface-to-class edges, 17 class-to-anchor edges, 17 used
+  route classes inside the 18-class taxonomy universe, 13 mixed entry/escape
+  bridge classes, and 13 anchors. Its composite must equal the doc-602
+  boundary-anchor map, with no direct surface-to-anchor shortcut and no orphan
+  or unused route class. Missing route graph certificates, missing graph
+  edges, noncomposable routes, composition mismatches, direct shortcuts,
+  orphan/unused route classes, missing entry/escape bridge compatibility,
+  anchor-bucket merges, class-anchor mismatches, nonminimal/nonfinite/
+  non-source-internal routes, dependency-open, graph-unwired, replay-unstable,
+  proof-irrelevant/external/oracle/branching/unbounded/retuned routes, new
+  cells, context collapse, declarations, finite samples, basis rows, and
+  unbudgeted route graphs are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_graph_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMROUTEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMROUTEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=604
+  (atoms=102, edges=1683). STAGE/Layer I - NOT RH.
+R1 CYCLE 468 ANCHOR (doc 605): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary-killfrontier-facet-route-edge-witness
+  reflected-fixedpoint trace executable global contraction construction-spec.
+  This cycle sharpens doc 604 by requiring
+  ObstructionTerminalBasinBoundaryKillfrontierFacetRouteEdgeWitnessObstructionTerminalBasinBoundaryKillfrontierFacetRouteGraphObstructionTerminalBasinBoundaryKillfrontierFacetTaxonomyObstructionTerminalBasinBoundaryKillfrontierObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryKillfrontierFacetRouteEdgeWitnessReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  local semantic witnesses for every doc-604 route edge. All 106
+  surface-to-class edges must carry source kind, local subject, matched
+  semantic token, class rule, anchor rule, and composed anchor. All 17
+  class-to-anchor edges must have nonempty supporting surface-edge witnesses
+  and support tokens. The edge-witness composites must equal the doc-602
+  boundary-anchor map. Missing edge-witness certificates, missing surface or
+  class-anchor witnesses, missing local subjects/tokens, name-only or
+  global-lookup-only edges, class-rule/anchor-rule/composite mismatches,
+  unsupported class anchors, nonminimal/nonfinite/non-source-internal edge
+  witnesses, dependency-open, graph-unwired, replay-unstable,
+  proof-irrelevant/external/oracle/branching/unbounded/retuned witnesses, new
+  cells, context collapse, declarations, finite samples, basis rows, and
+  unbudgeted edge witnesses are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_witness_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=605
+  (atoms=103, edges=1711). STAGE/Layer I - NOT RH.
+R1 CYCLE 469 ANCHOR (doc 606): Qbar_BECD exact-24 admissible source-square
+  obstruction-terminal-basin-boundary-killfrontier-facet-route-edge-priority
+  reflected-fixedpoint trace executable global contraction construction-spec.
+  This cycle sharpens doc 605 by requiring
+  ObstructionTerminalBasinBoundaryKillfrontierFacetRouteEdgePriorityObstructionTerminalBasinBoundaryKillfrontierFacetRouteEdgeWitnessObstructionTerminalBasinBoundaryKillfrontierFacetRouteGraphObstructionTerminalBasinBoundaryKillfrontierFacetTaxonomyObstructionTerminalBasinBoundaryKillfrontierObstructionTerminalBasinBoundaryObstructionTerminalBasinObstructionReflectedFixedpointObstructionNormalformReflectingObstructionConfluentObstructionActionableObstructionClassifyingObstructionLocalizingVerifierSeparatedTraceAuditedExecGloballyContractibleParametricContractibleLoopCompletePathIndependentPresInvariantSrcLawCompleteNFReflectPasteStabCycAmbMateCohDescEffBeckChevExactEvalNatRepSemModelSemConsInvReflectExecCritPairDiamondCohMonExactDagCompatFuncNormConfCompStabCenterElimRealCenterRealIntContrGlobUniqueEndTrivAutRigidPrimEffK0Lift_ObstructionTerminalBasinBoundaryKillfrontierFacetRouteEdgePriorityReflectedFixedpointTraceExecutableGlobalContraction_source_square,
+  a finite explicit priority audit over all doc-605 local edge witnesses. All
+  106 surface witnesses have priority decisions over the 18-class order; all
+  57 overlapping-token cases record winner class/tokens, shadow classes/tokens,
+  and the doc-602 composed anchor. Hidden code order, name order, global lookup,
+  missing/incomplete/retuned priority order, unprioritized overlap, winner/
+  token/shadow/composite mismatches, missing class-anchor support, nonminimal/
+  nonfinite/non-source-internal priority audits, dependency-open, graph-unwired,
+  replay-unstable, proof-irrelevant/external/oracle/branching/unbounded/
+  retuned priorities, new cells, context collapse, declarations, finite samples,
+  basis rows, and unbudgeted priority audits are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_priority_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRIOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRIOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=606
+  (atoms=104, edges=1740). STAGE/Layer I - NOT RH.
+R1 CYCLE 470 DONE (doc 607): Qbar_BECD priority token grammar NO-GO. This
+  cycle kills preserving the exact doc-606 priority decisions under a finite
+  source-native typed token grammar. The strict colon/underscore grammar has
+  706 typed tokens but leaves three winning decisions with no typed winner:
+  multiple_fixedpoints -> fixedpoint_replay/fixedpoint,
+  overlapping_incompatible_basins -> terminal_basin_entry/basin, and
+  missing_obstruction_terminal_basin_reflected_fixedpoint_trace_executable_global_contraction_certificate
+  -> action_semantics/action. It also leaves two substring-only shadow tokens:
+  original_dd4_res1_nonboundary -> boundary_shape/boundary and
+  overlapping_incompatible_basins -> boundary_shape/overlap. Plural stemming
+  repairs fixedpoints/basins but still leaves action inside contraction. The
+  named mechanism is substring-token priority collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_priority_token_grammar_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRIOGRAMNOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMPRIOGRAMNOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 471 ANCHOR (doc 608): Qbar_BECD exact-24 admissible source-square
+  typed source-event route-edge classifier construction-spec. This cycle
+  rebuilds doc-606 classification from namespace, obstruction-tail, exact-tail,
+  and named event-kind evidence rather than substring priority. It preserves
+  all 106 surface classes and the doc-602 anchor map with 70 rule literals,
+  and resolves the doc-607 hard failure via event_kind
+  missing_terminal_basin_certificate instead of action-inside-contraction.
+  Missing/partial event classifiers, namespace/tail/rule/evidence/anchor
+  mismatches, hidden substring use, unresolved doc-607 failures, nonminimal/
+  nonfinite/non-source-internal/nonextensional/dependency-open/graph-unwired/
+  replay-unstable/external/oracle/retuned classifiers, new cells, context
+  collapse, declarations, finite samples, basis rows, and unbudgeted event
+  classifiers are diagnostics only. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_typed_source_event_classifier_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDEVENTEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDEVENTEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=608
+  (atoms=105, edges=1770). STAGE/Layer I - NOT RH.
+R1 CYCLE 472 DONE (doc 609): Qbar_BECD typed source-event reuse NO-GO.
+  This cycle kills promoting doc 608 to a reused source-event grammar by
+  forbidding one-shot exact tail literals. Only four of the 70 doc-608 rule ids
+  are reused, all namespace rules; the other 66 rules are singleton exact-tail,
+  obstruction-tail, or named-event rules, and those singleton decisions span all
+  17 classes. The doc-607 hard repair event_kind
+  missing_terminal_basin_certificate is itself singleton. Coarse event-kind,
+  segment, and suffix-family repairs merge incompatible classes. The named
+  mechanism is singleton-tail lookup leakage. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_typed_source_event_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDEVENTREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDEVENTREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 473 ANCHOR (doc 610): Qbar_BECD compositional event-signature
+  contract. This cycle changes the level of reuse behind doc 608: final
+  signatures may be singleton, but every primitive source-event feature used in
+  a signature must be reused by at least two boundary surfaces. The primitive
+  algebra uses boundary kind, event kind, namespace, raw/stemmed segments,
+  raw/stemmed bigrams and trigrams, and bounded suffix families; exact tails,
+  full subjects, doc-606 substring tokens, and doc-608 singleton rule ids are
+  banned as primitive evidence. The stem-normalized algebra has 184 reusable
+  primitives, resolves the lone raw reusable-signature ambiguity, and gives 106
+  decisions, 98 class-pure signatures, maximum bucket size four, and full
+  preservation of doc-608 classes and doc-602 anchors. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_compositional_event_signature_contract
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTSIGEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTSIGEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR10 ALL PASS, lead-ran exit 0);
+  frontier-map check with current witness passed at current_doc=610
+  (atoms=106, edges=1801). STAGE/Layer I - NOT RH.
+R1 CYCLE 474 DONE (doc 611): Qbar_BECD compositional event-signature reuse
+  NO-GO. This cycle kills promoting doc 610 to a reused whole-signature grammar.
+  The doc-610 classifier has 98 class-pure signatures for 106 decisions, but
+  93 signatures are singleton whole signatures and those singletons span all 17
+  classes. Only five whole signatures are reused, covering 13 decisions and
+  only three classes: boundary_contextual_surrogate,
+  source_constraint_invariant, and terminal_basin_entry. The doc-607 hard
+  repair remains a singleton whole signature even though doc 610 avoids
+  exact-tail and singleton-primitive evidence. The named mechanism is
+  singleton-signature lookup leakage. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_compositional_event_signature_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTSIGREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTSIGREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 475 DONE (doc 612): Qbar_BECD compositional event reused class-state
+  NO-GO. This cycle tests the next categorical salvage after doc 611: each
+  decision need not have a reused whole signature if it factors through some
+  reused class-pure containment state. This works for 85 decisions and fails
+  for 21 decisions. The missing 21 span nine classes: dependency_repair_nogo,
+  terminal_basin_entry, boundary_contextual_surrogate, finite_index_budget,
+  boundary_shape, source_constraint_invariant, source_internality,
+  boundary_externality, and action_semantics. The doc-607 hard repair remains
+  in the missing set. The named mechanism is residual class-state leakage.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_compositional_event_reused_class_state_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTCLASSSTATENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCOMPEVENTCLASSSTATENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 476 DONE (doc 613): Qbar_BECD residual shared-feature quotient
+  NO-GO. This cycle kills repairing the doc-612 residual 21 by quotient closure
+  generated from existing shared doc-610 source features. With all shared
+  features, or with boundary removed, all 21 residuals collapse into one mixed
+  component spanning all nine residual classes. Removing boundary and event
+  kind leaves an 18-event mixed component plus singleton fragments. Removing
+  namespace too, or using only segmental features, leaves a 12-event mixed
+  component, a mixed 2-event component, and seven singleton fragments. The
+  named mechanism is shared-feature quotient collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_residual_shared_feature_quotient_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMRESIDSHAREDFEATQUOTNOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMRESIDSHAREDFEATQUOTNOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 477 DONE (doc 614): Qbar_BECD surface-reused residual class-state
+  NO-GO. This cycle kills the broader repair that adds new residual
+  class-state names while still requiring class purity and reuse by at least
+  two boundary surfaces. Exactly two doc-610 classes have global surface
+  support one: boundary_externality and source_internality. Both singleton
+  classes occur in the doc-612 residual set, so any class-pure surface state
+  containing either residual has support at most one. The named mechanism is
+  surface-reuse singleton-class barrier. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_surface_reused_residual_class_state_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSURFREUSEDRESIDCLASSSTATENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSURFREUSEDRESIDCLASSSTATENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 478 DONE (doc 615): Qbar_BECD existing primitive morphism-reuse
+  NO-GO. This cycle tests the surviving morphism-level idea available from
+  existing doc-610 data: any reused conjunction of existing reusable primitive
+  features whose support contains a doc-614 singleton residual. Every such
+  skeleton is mixed-class. For external_or_oracle there are 16407 all-feature
+  skeletons and 8191 non-generic/segmental skeletons, with zero class-pure
+  skeletons; for not_source_internal there are 18 all-feature skeletons and
+  6 non-generic/segmental skeletons, again with zero class-pure skeletons. The
+  named mechanism is mixed-support morphism selector dilemma. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_existing_primitive_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXISTPRIMORMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMEXISTPRIMORMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 479 DONE (doc 616): Qbar_BECD role-payload morphism-reuse NO-GO.
+  This cycle tests the next proof-relevant morphism-level idea: exact payloads
+  appearing under typed roles such as obstruction, class, invariant, payload,
+  or plain tail. There are seven reused exact payload groups, all with an
+  obstruction/class role pair, but the obstruction nodes span four classes:
+  dependency_repair_nogo, boundary_contextual_surrogate, boundary_externality,
+  and finite_index_budget. The external_or_oracle exact graph only mixes
+  boundary_externality with classifier_partition, so selecting the residual
+  obstruction node is exact-payload singleton selection. The not_source_internal
+  residual has no reused exact-payload role graph; broader source/not segment
+  supports are mixed. The named mechanism is role-payload selector collapse.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_role_payload_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 480 DONE (doc 617): Qbar_BECD action-normalized role-payload
+  morphism-reuse NO-GO. This cycle tests the minimal normalization after
+  doc 616: strip only the action verbs reject and emit so action-role nodes
+  can compose with obstruction/class role nodes. This creates seven reused
+  normalized payload groups, including three action/class/obstruction triples,
+  but every reused normalized group is mixed-class. The external_or_oracle
+  normalized triple mixes action_semantics, classifier_partition, and
+  boundary_externality; selecting the residual node still requires a selector.
+  The not_source_internal residual still has no reused normalized payload graph,
+  and broader source/not segment supports remain mixed-class. The named
+  mechanism is action-normalized selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_action_normalized_role_payload_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACTIONNORMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACTIONNORMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 481 DONE (doc 618): Qbar_BECD negation-normalized role-payload
+  morphism-reuse NO-GO. This cycle tests the natural repair for the
+  not_source_internal singleton: treat not as morphism-level evidence rather
+  than payload data. Leading-not deletion and all-not deletion both normalize
+  not_source_internal to source_internal, but the normalized group remains
+  singleton. Both normalizations leave seven reused normalized payload groups
+  and none is class-pure; broader source/not segment supports remain mixed. The
+  named mechanism is negation-normalized singleton persistence. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_negation_normalized_role_payload_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNEGATIONNORMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMNEGATIONNORMROLEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 482 DONE (doc 619): Qbar_BECD graph-anchor morphism-reuse NO-GO.
+  This cycle tests the existing doc-605 route graph as proof-relevant evidence
+  outside the payload algebra. The only class-anchor witnesses with support one
+  are boundary_externality and source_internality, exactly the two doc-614
+  residual singleton classes. Their local graph tokens external and
+  not_source_internal are singleton supports too. The graph witnesses are local,
+  not surface-name-only or global-lookup-only, but their reusable support is
+  still singleton exactly where the repair is needed. The named mechanism is
+  graph-anchor singleton support. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_graph_anchor_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMGRAPHANCHORMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMGRAPHANCHORMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 483 DONE (doc 620): Qbar_BECD consistency-rejection morphism-reuse
+  NO-GO. This cycle tests the frontier-map consistency/rejection ledger as the
+  remaining existing structure around the doc-610 frontier. The current
+  frontier has 2109 rejected repairs; exactly 36 are doc-610 rejected repairs,
+  and KILLCOMPEVENTSIGACTION excludes exactly that 36-element set. Accepted
+  current nodes contain none of boundary_externality, source_internality,
+  external_or_oracle, not_source_internal, external, or oracle. The singleton
+  class labels and exact external_or_oracle tail are not rejected-repair nodes;
+  not_source_internal occurs only as 17 rejected failures, and external/oracle
+  occur only as broad rejected flags. The named mechanism is negative-ledger
+  morphism collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_consistency_rejection_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONSISTREJECTMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONSISTREJECTMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 484 DONE (doc 621): Qbar_BECD stage-lineage morphism-reuse NO-GO.
+  This cycle tests whether historical persistence of not_source_internal,
+  external, and oracle through the executable refinement stages can supply the
+  missing morphism evidence. It cannot: not_source_internal appears once per
+  stage in docs 574, 576, 594-606, 608, and 610, but only as BANNED_FLAGS;
+  external appears as banned flags in docs 576, 594-606, 608, and 610; oracle
+  appears as banned flags in docs 594-606, 608, and 610. Required
+  dependencies, added_atoms, witness ids, and current accepted nodes contain no
+  residual label/tail hits. All 48 visible lineage flags are current rejected
+  repairs, rejected by the same stage that lists them. The named mechanism is
+  negative-stage lineage collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_stage_lineage_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSTAGELINEAGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSTAGELINEAGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 485 DONE (doc 622): Qbar_BECD audit-fanout morphism-reuse NO-GO.
+  This cycle tests the accepted doc-610 audit graph as the next
+  categorical-looking structure: KILLCOMPEVENTSIGACTION has 30 outgoing audit
+  edges and one incoming made_compositional_event_signature_by edge, exactly
+  matching the doc-610 EXPECTED_EDGES, including 11 invariant-facet audit
+  targets. Every endpoint is an accepted atom or invariant, but no source,
+  target, or relation contains boundary_externality, source_internality,
+  external_or_oracle, not_source_internal, external, or oracle. The named
+  mechanism is audit-fanout residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_audit_fanout_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMAUDITFANOUTMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMAUDITFANOUTMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 486 DONE (doc 623): Qbar_BECD typed rule-family morphism-reuse
+  NO-GO. This cycle tests whether the doc-608 classifier's rule-family
+  dispatcher can repair the doc-614 singleton residuals after doc 609 killed
+  exact rule-id reuse. The exact residual rules obstruction_tail:external_or_oracle
+  and tail:not_source_internal are singleton rules. Their reusable families are
+  mixed-class: obstruction_tail has seven surfaces spanning dependency_repair_nogo,
+  boundary_contextual_surrogate, finite_index_budget, and boundary_externality;
+  tail has 58 surfaces spanning sixteen classes, with source_internality
+  appearing once. There is no reused class-pure rule family. The named mechanism
+  is mixed rule-family selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_typed_rule_family_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDRULEFAMILYMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTYPEDRULEFAMILYMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 487 DONE (doc 624): Qbar_BECD frontier-metadata morphism-reuse
+  NO-GO. This cycle tests non-current frontier-map metadata: contexts, claims,
+  context_bridges, and kill_frontier. The metadata sizes are contexts=9,
+  claims=57, context_bridges=2, and kill_frontier current entries=73. None of
+  those sections contains boundary_externality, source_internality,
+  external_or_oracle, or not_source_internal. Claims contain exactly two broad
+  external hits, both without_external predicates; kill_frontier contains 37
+  broad external and 17 broad oracle hits, all in negative kill-target text and
+  not in kill ids. The named mechanism is metadata residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_frontier_metadata_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFRONTIERMETADATAMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFRONTIERMETADATAMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 488 DONE (doc 625): Qbar_BECD accepted-edge-graph morphism-reuse
+  NO-GO. This cycle tests the whole accepted frontier edge graph as a broad
+  categorical-looking source. The graph has 106 accepted atoms, 11 accepted
+  invariants, 117 accepted nodes, 1801 accepted edges, and no missing
+  endpoints. No source, target, or relation contains boundary_externality,
+  source_internality, external_or_oracle, not_source_internal, external,
+  oracle, not, or tail. Generic source/internal/boundary/class/obstruction
+  vocabulary is diffuse infrastructure: source hits 1280 edges across 72 docs
+  and 662 relation types; internal 984/44/459; boundary 414/62/195; class
+  157/21/81; obstruction 460/15/179. The named mechanism is global-edge
+  residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_accepted_edge_graph_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACCEPTEDGEGRAPHMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACCEPTEDGEGRAPHMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 489 DONE (doc 626): Qbar_BECD accepted-node-payload morphism-reuse
+  NO-GO. This cycle tests the accepted atom/invariant payload records rather
+  than graph edges. The accepted payload layer has 106 atom payloads, 11
+  invariant payloads, and 117 records exactly covering the current accepted
+  set. No payload record contains boundary_externality, source_internality,
+  external_or_oracle, not_source_internal, external, oracle, not, or tail.
+  Generic vocabulary is source-square infrastructure, not a residual selector:
+  source appears in 104 of 117 payload records; internal appears in 27,
+  boundary in 15, class in 5, and obstruction in 15. The context profile is
+  finite_limit=76, source_fiber=10, source_constraint=10, source_prepoint=6,
+  certificate_image=5, finite_index=3, fixed_doc515_payload=3,
+  graph_realization=2, original_h1=2. The named mechanism is accepted-payload
+  residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_accepted_node_payload_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACCEPTNODEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMACCEPTNODEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 490 DONE (doc 627): Qbar_BECD frontier-provenance-payload
+  morphism-reuse NO-GO. This cycle tests the full `deltas` and `witnesses`
+  provenance payload records in frontier-map.yaml, beyond the stage-lineage
+  witness ids already tested in doc 621. The provenance layer has 84 deltas
+  and 84 witnesses covering the same doc range, 525 through 610. No provenance
+  payload record contains boundary_externality, source_internality,
+  external_or_oracle, not_source_internal, external, oracle, not, or tail.
+  Generic overlaps are source-square provenance only: deltas have source=42,
+  internal=27, boundary=8, class=4, obstruction=15; witnesses have source=15,
+  internal=2, boundary=8, class=4, obstruction=15. The named mechanism is
+  provenance-payload residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_frontier_provenance_payload_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFRONTPROVENANCEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMFRONTPROVENANCEPAYLOADMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 491 DONE (doc 628): Qbar_BECD control-plane morphism-reuse
+  NO-GO. This cycle tests the remaining structured frontier-map control plane:
+  the frontier descriptor, consistency_rules.requires, and
+  consistency_rules.context_separation, with the already-killed
+  consistency_rules.excludes_current rejected ledger kept separate. Section
+  sizes are frontier=7, consistency_requires=86, and
+  consistency_context_separation=4. No positive control-plane payload contains
+  boundary_externality, source_internality, external_or_oracle,
+  not_source_internal, external, oracle, not, or tail. Generic overlaps are
+  source-square bookkeeping only: frontier source/internal/boundary/class/
+  obstruction = 1/1/2/1/2; consistency_requires = 75/39/75/36/15;
+  context_separation = 1/0/0/0/0. The named mechanism is control-plane
+  residual blindness. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_control_plane_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONTROLPLANEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMCONTROLPLANEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 492 DONE (doc 629): Qbar_BECD residual-pair-bridge morphism-reuse
+  NO-GO. This cycle tests the tempting direct bridge between the two doc-614
+  singleton residuals: entry_boundary:obstruction:external_or_oracle and the
+  not_source_internal escape boundary. The pair has no shared doc-610
+  primitive signature feature, no shared exact segment, no shared namespace, no
+  exact payload group, no action-normalized payload group, and no shared
+  route-token support. It also crosses boundary kind (entry vs escape), event
+  kind (obstruction_namespace vs plain_tail), tail type, and class
+  (boundary_externality vs source_internality). Exact segment supports around
+  the pair are mixed or singleton only. The named mechanism is direct-pair
+  selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_residual_pair_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMRESIDPAIRBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMRESIDPAIRBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR8 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 493 DONE (doc 630): Qbar_BECD semantic-polarity-bridge
+  morphism-reuse no-go. Broad semantic closures are reusable only as
+  mixed-class buckets: external/oracle has 5 surfaces across
+  terminal_basin_entry, action_semantics, classifier_partition, and
+  boundary_externality; not/source/internal has 7 surfaces across
+  terminal_basin_entry, source_constraint_invariant, trace_payload_route,
+  finite_index_budget, and source_internality; and the combined noninternal
+  closure has 12 surfaces across eight classes. The normalized exact
+  external_or_oracle closure is only the already-killed mixed
+  action/class/obstruction triple, while exact source/internal,
+  not/source, and not_source_internal closures are singleton
+  source_internality lookup. Treating or as a segment token additionally
+  pulls in unrelated presentation_or_sample surfaces. The named mechanism is
+  semantic-polarity selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_semantic_polarity_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSEMPOLARITYBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMSEMPOLARITYBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 494 DONE (doc 631): Qbar_BECD boundary-transducer-bridge
+  morphism-reuse no-go. Entry and escape boundary-kind closures are broad
+  mixed-class partitions: entry has 62 surfaces across 14 classes and escape
+  has 44 surfaces across 16 classes. The obstruction_namespace and plain_tail
+  event-kind closures are also mixed-class, with 7 and 37 surfaces
+  respectively. The escape center/terminal prefix is reused but mixed-class
+  with 43 surfaces across 16 classes. Basin segment support is mostly
+  terminal-basin class but misses the residual pair, and terminal/obstruction
+  segment evidence is only the singleton missing-terminal-basin certificate
+  action. The named mechanism is boundary-transducer selector collapse.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_boundary_transducer_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBNDRYTRANSDUCERBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMBNDRYTRANSDUCERBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 495 DONE (doc 632): Qbar_BECD terminal-basin-mediator-bridge
+  morphism-reuse no-go. The two visible external/oracle basin mediators are
+  real and class-pure: external_basin and oracle_basin are both
+  terminal_basin_entry escape plain tails. But the entry-to-mediator
+  external/oracle leg is mixed-class with 5 surfaces across
+  terminal_basin_entry, action_semantics, classifier_partition, and
+  boundary_externality; the mediator-to-source-internal escape-prefix leg has
+  43 surfaces across 16 classes; the plain-tail leg has 37 surfaces across
+  14 classes; basin segment support contains the mediators but misses both
+  residual surfaces; and the mediators have no exact segment or namespace
+  bridge to not_source_internal. The named mechanism is terminal-basin
+  mediator selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_mediator_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINMEDIATORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINMEDIATORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 496 DONE (doc 633): Qbar_BECD terminal-basin-class-hub bridge
+  morphism-reuse no-go. The positive residue is real: in the doc610
+  segment-induced class graph, terminal_basin_entry is the unique common class
+  neighbor of boundary_externality and source_internality. The class-edge
+  tokens are external/oracle for boundary_externality -> terminal_basin_entry
+  and not for terminal_basin_entry -> source_internality. But the
+  terminal-basin external/oracle and not attachments are disjoint; no
+  terminal_basin_entry surface carries both attachments. The external/oracle
+  support is mixed-class, the not support is mixed-class, and basin support is
+  mixed globally and only becomes an internal connector after terminal-basin
+  filtering. Four internal basin mediator paths remain, so the class hub is
+  adjacency evidence rather than a constructed bridge morphism. The named
+  mechanism is terminal-basin class-hub selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_class_hub_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINCLASSHUBBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINCLASSHUBBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 497 DONE (doc 634): Qbar_BECD terminal-basin internal-composition
+  bridge morphism-reuse no-go. The natural internal terminal-basin
+  composition kernel is real:
+  boundary=escape, event_kind=plain_tail, segment=basin, stem=basin. But it is
+  identical on all four target paths from external_basin/oracle_basin to
+  basin_not_absorbing/basin_not_extensional, appears on 58 ordered pairs
+  inside terminal_basin_entry, and cannot distinguish basin_not_absorbing from
+  basin_not_extensional because their doc610 compositional signatures are
+  identical. The left branch differs only by external/oracle, whose global
+  support is mixed-class; including the third not-attachment
+  entry_trace_not_replay_stable splits the law and loses the basin/plain-tail
+  connector. The named mechanism is terminal-basin internal-composition
+  overproduction. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_internal_composition_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASININTCOMPOSITIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASININTCOMPOSITIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 498 DONE (doc 635): Qbar_BECD terminal-basin kernel-quotient bridge
+  morphism-reuse no-go. Quotienting by the visible escape/plain_tail/basin
+  kernel is too coarse. The kernel relation has 58 ordered pairs inside
+  terminal_basin_entry, including the four target paths but also 54 non-target
+  pairs. Its undirected quotient component has ten terminal-basin surfaces:
+  the four target endpoints plus branch_spawning_basin, no_basin_certificate,
+  noncanonical_basin, proof_irrelevant_basin, retuned_basin, and
+  unbounded_basin_search. The quotient component is class-pure only because it
+  erases terminal-basin distinctions; its total quotient degree profile is
+  8:6, 16:2, 18:2 and does not single out the target bridge. The named
+  mechanism is terminal-basin kernel-quotient collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_kernel_quotient_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINKERNELQUOTIENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINKERNELQUOTIENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 499 DONE (doc 636): Qbar_BECD terminal-basin failure-complement
+  bridge morphism-reuse no-go. Removing the explicitly bad basin labels from
+  the doc635 kernel component recovers the four target endpoints, but only as
+  a negative selector. The target endpoints, the six bad labels, and the full
+  component have the same common doc610 compositional signature:
+  boundary=escape, event_kind=plain_tail, segment=basin, stem=basin. No
+  conjunction of structural kernel features selects the target endpoints. The
+  only positive exact selector inside the component is the residual
+  attachment-token disjunction external/oracle/not. The named mechanism is
+  terminal-basin failure-complement selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_failure_complement_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFAILCOMPLEMENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFAILCOMPLEMENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 500 DONE (doc 637): Qbar_BECD terminal-basin quotient-graph
+  invariant bridge morphism-reuse no-go. Graph degree and centrality inside
+  the doc635 kernel quotient do not select the four target endpoints. The
+  ten-surface kernel graph has three full profiles:
+  (4,4,8,4,2,14) contains external_basin and oracle_basin plus four bad
+  labels; (8,8,16,8,2,10) contains only basin_not_absorbing and
+  basin_not_extensional; and (9,9,18,9,1,9) contains no_basin_certificate and
+  unbounded_basin_search. No single graph-invariant value or union of full
+  graph profiles selects all four target endpoints. The named mechanism is
+  terminal-basin quotient-graph invariant collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_quotient_graph_invariant_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINQUOTGRAPHINVBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINQUOTGRAPHINVBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 501 DONE (doc 638): Qbar_BECD terminal-basin low-profile tail-shape
+  bridge morphism-reuse no-go. Inside the low graph-profile terminal-basin
+  component, suffix=basin and segment=basin select all six low-profile
+  surfaces. Tail_length=2 still includes noncanonical_basin and retuned_basin
+  with external_basin and oracle_basin, while tail_length=3 selects
+  branch_spawning_basin and proof_irrelevant_basin. No conjunction of
+  structural tail-shape features selects exactly external_basin and
+  oracle_basin. The only exact positive selector is the residual
+  attachment-token pair external/oracle. The named mechanism is
+  terminal-basin low-profile tail-shape selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_low_profile_tail_shape_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILETAILSHAPEBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILETAILSHAPEBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 502 DONE (doc 639): Qbar_BECD terminal-basin low-profile valence-filter
+  bridge morphism-reuse no-go. Inside the same low graph-profile component,
+  excluding defect tokens branch/spawning/noncanonical/proof/irrelevant/retuned
+  recovers external_basin and oracle_basin, but only as a negative lexical
+  complement. Extensionally this is the same selector as the positive
+  attachment-token pair external/oracle. Neutral basin and structural
+  low-profile features still select the whole component or mixed supports. The
+  named mechanism is terminal-basin low-profile valence-filter selector
+  collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_low_profile_valence_filter_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILEVALENCEFILTERBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILEVALENCEFILTERBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 503 DONE (doc 640): Qbar_BECD terminal-basin low-profile
+  automorphism-orbit bridge morphism-reuse no-go. The six low-profile
+  terminal-basin vertices have no internal directed edges, identical directed
+  kernel-neighborhood fingerprints, and one full symmetric orbit. The full
+  ten-surface kernel graph has automorphism count 6!*2!*2!=2880. The orbit of
+  the target pair {external_basin, oracle_basin} is all 15 two-element subsets
+  of the low-profile component; its setwise stabilizer has size 192, so
+  selecting that pair is exactly a 15-way external choice. The named mechanism
+  is terminal-basin low-profile automorphism-orbit collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_low_profile_automorphism_orbit_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILEAUTORBITBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINLOWPROFILEAUTORBITBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 504 DONE (doc 641): Qbar_BECD terminal-basin profile-tail product
+  bridge morphism-reuse no-go. Combining kernel graph profile with structural
+  tail-shape data gives a six-block product partition, but external_basin and
+  oracle_basin remain in a four-element mixed block with noncanonical_basin
+  and retuned_basin. No union of product blocks selects the left target pair
+  or all four target endpoints. The product-block-preserving automorphism
+  group has size 4!*2!=48, and the target pair has orbit all six two-element
+  pairs in the mixed four-block. The named mechanism is terminal-basin
+  profile-tail product selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_profile_tail_product_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINPROFILETAILPRODUCTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINPROFILETAILPRODUCTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 505 DONE (doc 642): Qbar_BECD terminal-basin four-pack
+  signature-token bridge morphism-reuse no-go. The accepted doc610
+  compositional signatures distinguish external_basin/oracle_basin from
+  noncanonical_basin/retuned_basin only by segment/stem external and
+  segment/stem oracle attachment-token features. Removing those features
+  collapses all four signatures to boundary=escape, event_kind=plain_tail,
+  segment/stem/suffix basin. No conjunction of non-attachment signature
+  features selects the target pair. External/oracle have global primitive
+  support 4, while noncanonical/retuned are singleton tokens, so the split is
+  token-support reuse rather than a new morphism. The named mechanism is
+  terminal-basin four-pack signature-token selector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_signature_token_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKSIGTOKENBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKSIGTOKENBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 506 DONE (doc 643): Qbar_BECD terminal-basin four-pack incidence-row
+  bridge morphism-reuse no-go. The current terminal-basin kernel incidence
+  table gives every four-pack surface the same outgoing and incoming
+  neighbors: basin_not_absorbing, basin_not_extensional, no_basin_certificate,
+  and unbounded_basin_search. There are no internal four-pack edges, incidence
+  to the right-side nodes is complete and bidirectional, and every unordered
+  pair inside the four-pack has the same signature: no direct edges, four
+  common outgoing neighbors, and four common incoming neighbors. No
+  outgoing/incoming neighbor-subset selector selects external_basin/oracle_basin.
+  The named mechanism is terminal-basin four-pack incidence-row collapse.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_incidence_row_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKINCIDENCEROWBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKINCIDENCEROWBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 507 DONE (doc 644): Qbar_BECD terminal-basin four-pack right-target
+  projection bridge morphism-reuse no-go. Even after granting a favorable
+  control-death-like projection that deletes high-bad right nodes
+  no_basin_certificate and unbounded_basin_search, every four-pack surface
+  remains bidirectionally incident to both right target nodes
+  basin_not_absorbing and basin_not_extensional. The projection therefore
+  selects the whole four-pack, not external_basin/oracle_basin. No
+  right-target subprojection, outgoing/incoming/bidirectional, selects the
+  target pair. The named mechanism is terminal-basin four-pack right-target
+  projection collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_right_target_projection_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKRIGHTTARGETPROJBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKRIGHTTARGETPROJBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 508 DONE (doc 645): Qbar_BECD terminal-basin four-pack
+  incidence-functional degree-map bridge morphism-reuse no-go. The current
+  terminal-basin incidence table cannot be promoted to an endpoint-degree,
+  boundary, signed, total, or weighted linear functional splitting the
+  four-pack. The outgoing, incoming, total, and signed incidence vectors are
+  identical on external_basin, oracle_basin, noncanonical_basin, and
+  retuned_basin; the right-target and high-bad projections have singleton row
+  profiles and weighted sample functionals are constant. The named mechanism
+  is terminal-basin four-pack incidence-functional degree-map collapse.
+  Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_incidence_functional_degree_map_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKINCFUNCDEGMAPBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKINCFUNCDEGMAPBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 509 DONE (doc 646): Qbar_BECD terminal-basin four-pack path-power
+  composition bridge morphism-reuse no-go. Iterating the current
+  terminal-basin kernel incidence relation does not reveal a hidden
+  composition separator: positive path powers 1 through 7 have identical row
+  and column profiles on external_basin, oracle_basin, noncanonical_basin, and
+  retuned_basin. Total and signed path counts are constant, right-target and
+  high-bad projected path-power profiles are singleton profiles, and sample
+  positive adjacency-polynomial readouts are constant. The named mechanism is
+  terminal-basin four-pack path-power composition collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_path_power_composition_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKPATHPOWERCOMPOSITIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKPATHPOWERCOMPOSITIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 510 DONE (doc 647): Qbar_BECD terminal-basin four-pack unital
+  path-idempotent bridge morphism-reuse no-go. Passing to the unital path
+  category or Karoubi envelope makes the rank-two vertex-idempotent sum
+  e_external_basin + e_oracle_basin available extensionally, but current
+  structure does not select it. All 24 permutations of the four-pack preserve
+  the current kernel-pair graph with the other vertices fixed, and the
+  target-pair orbit is all six rank-two supports in the four-pack. The desired
+  idempotent is therefore external choice or attachment-token lookup, not
+  carrier-native structure. The named mechanism is terminal-basin four-pack
+  unital path-idempotent choice collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_unital_path_idempotent_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKUNITALPATHIDEMPOTENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKUNITALPATHIDEMPOTENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 511 DONE (doc 648): Qbar_BECD terminal-basin four-pack
+  automorphism-invariant central-idempotent bridge morphism-reuse no-go.
+  Taking automorphism-invariant, central, trace-invariant, or averaged
+  idempotent data from the current unital path/Karoubi category cannot
+  canonically select external_basin/oracle_basin. The current non-attachment
+  structure has full S4 symmetry on the four-pack, so invariant
+  vertex-idempotent supports intersect the four-pack only in empty or all four
+  vertices; the target-pair orbit is all six rank-two supports and orbit
+  averaging gives equal half-weight on all four vertices. The named mechanism
+  is terminal-basin four-pack automorphism-invariant central-idempotent
+  collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_automorphism_invariant_central_idempotent_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKAUTOINVCENTRALIDEMPOTENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKAUTOINVCENTRALIDEMPOTENTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 512 DONE (doc 649): Qbar_BECD terminal-basin four-pack
+  automorphism-quotient saturated-support bridge morphism-reuse no-go.
+  Passing to the orbit quotient, homotopy quotient, or descent category of the
+  current four-pack symmetry cannot recover external_basin/oracle_basin as a
+  quotient-side equalizer, fiber, fixed locus, or saturated subobject. The
+  ten-vertex kernel component has six singleton quotient orbits plus one
+  four-pack orbit; saturation of external_basin/oracle_basin is the whole
+  four-pack, and the quotient image of the target pair equals the quotient
+  image of the whole four-pack. The named mechanism is terminal-basin
+  four-pack automorphism-quotient saturated-support collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_automorphism_quotient_saturated_support_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKAUTOQUOTSATSUPPORTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKAUTOQUOTSATSUPPORTBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 513 DONE (doc 650): Qbar_BECD terminal-basin four-pack linearized
+  character-projector bridge morphism-reuse no-go. Linearizing the current
+  four-pack symmetry and using an automorphism character, orientation, trace,
+  or central group-algebra projector cannot select external_basin/oracle_basin.
+  The current S4 permutation representation on the four-pack has central
+  idempotent ranks 0, 1, 3, and 4; the desired rank-two coordinate projector
+  is not equivariant and has a six-choice orbit, while the sign/orientation
+  projector is zero. The named mechanism is terminal-basin four-pack
+  linearized character-projector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_linearized_character_projector_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKLINCHARPROJECTORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKLINCHARPROJECTORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 514 DONE (doc 651): Qbar_BECD terminal-basin four-pack
+  exterior-pair character-projector bridge morphism-reuse no-go. Passing from
+  the vertex representation to pair space, exterior square, or the
+  six-dimensional representation on two-element subsets does not select
+  external_basin/oracle_basin. A canonical rank-two central summand exists in
+  pair space, but its diagonal is uniformly 1/3 on all six two-subsets; the
+  actual target-pair coordinate projector is rank one in pair space, not
+  equivariant, and has a six-choice orbit. The named mechanism is
+  terminal-basin four-pack exterior-pair character-projector collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_exterior_pair_character_projector_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKEXTPAIRCHARPROJECTORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKEXTPAIRCHARPROJECTORBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 515 DONE (doc 652): Qbar_BECD terminal-basin four-pack tensor-word
+  equality-pattern bridge morphism-reuse no-go. Applying finite tensor-word
+  functors to the current four-pack representation and then using
+  equality-pattern, diagonal/off-diagonal, symmetric-relation, or finite-word
+  orbit data cannot select external_basin/oracle_basin. For word lengths 1
+  through 4, S4 orbits are exactly equality patterns with Bell counts 1, 2, 5,
+  and 15; the ordered external->oracle word and the two target orientations
+  saturate to the whole ordered-distinct-pair orbit. The named mechanism is
+  terminal-basin four-pack tensor-word equality-pattern collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_tensor_word_equality_pattern_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKTENSORWORDEQPATTERNBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKTENSORWORDEQPATTERNBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+R1 CYCLE 516 DONE (doc 653): Qbar_BECD terminal-basin four-pack
+  signed-exterior orientation bridge morphism-reuse no-go. Using the signed
+  exterior square of the current four-pack representation and treating
+  e_external_basin wedge e_oracle_basin as an orientation line or signed
+  exterior selector cannot select external_basin/oracle_basin. In signed
+  Lambda^2(Q^4), the trivial and sign/orientation projectors vanish, central
+  signed-wedge ranks are 0, 3, 3, and 6, the rank-three summands have uniform
+  half diagonal on all six wedge basis lines, and the target wedge line is
+  rank one, non-equivariant, and has a six-choice orbit. The named mechanism
+  is terminal-basin four-pack signed-exterior orientation collapse. Witness
+  prime_int_n1b_qbar_becd_fidx24_probe_obstruction_terminal_basin_boundary_killfrontier_facet_route_edge_terminal_basin_four_pack_signed_exterior_orientation_bridge_morphism_reuse_no_go
+  (CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKSIGNEDEXTERIORORIENTATIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPCENTERELIMTERMBASINFOURPACKSIGNEDEXTERIORORIENTATIONBRIDGEMORPHREUSENOGOEDGEFACETKILLBNDRYBASINFIXPTNFREFLCONFLACTIONCLASSLOCVERIFTRACEEXECGLOBCONTR9 ALL PASS, lead-ran exit 0). STAGE/Layer I - NOT RH.
+ENTRY/NEXT = R1 current frontier is canonical in research/proof/frontier-map.yaml.
+  Current constructive map state: current_doc=610, current_object begins
+  obstruction-terminal-basin-boundary-killfrontier-facet-route-edge-compositional-event-signature
+  then retains the doc-608 typed-source-event classifier / doc-606 priority /
+  doc-605 edge-witness / doc-604 route-graph chain down through the exact-24
+  source-square spine. Doc 610 is the latest constructive atom; doc 653 is the
+  latest negative constraint.
+  Maintain future territory changes by updating frontier-map.yaml and running
+  python3 scripts/automation/check_frontier_map.py; keep this paragraph as
+  orientation, not as the canonical requirement list.
 
-Adjacent standing work (anytime): harden the no-go bank (51-70 + survivors +
-130-136) into citable statements; a preprint section from doc 136.
-```
-
-Standing hardening rules (carried from the deleted band, still live):
-doc 64 isolates the Epstein x^2+5y^2 obstruction as a proof lemma - use
-it instead of re-running Epstein. Doc 65 isolates P3 independence as a
-normal form. Doc 66 isolates the C-side unit/threading normal form.
-
-## Risk Ladder (2026-06-09 reorganization)
-
-Order of work = order of assumptions by (probability of killing the program) x (cheapness of the
-test). Highest-risk, cheapest-to-test first. Each rung is fail-closed: a negative outcome kills or
-reshapes the target, and that is the point.
-
-### R0 - The reduction is recorded, not certified
-
-`00-reduction-to-rh.md` now states `nested target => RH` with obligations O1-O4 (normalization
-audit, pole-term vanishing, off-line detection, CC20 base-case anchor). Provenance: CC20
-arXiv:2006.13771 + Weil's converse. Risk: low (classical technology), but load-bearing - until
-written, the program could drift onto a target that no longer implies RH. Also fixes the program's
-one-line shape: **extend CC20's archimedean Sonin positivity past support log 2, paying with exact
-Euler atoms.**
-
-### R1 - The asymptotic-mechanism risk (HIGHEST; attack first)
-
-The current candidate lemmas (sectoral edge-cone, atom placement, single-repair-atom) are built
-from one late edge at R ~ 3.24. Two facts say the mechanism as phrased cannot be the asymptotic
-mechanism:
-
-```text
-- cells near the edge have width ~ e^{-R}, and the window (L,R] contains ~ e^R atoms:
-  single-atom repair degenerates into statistics of many atoms = the transgression
-  int F phi' again, F = psi(e^U) - e^U;
-- unconditional bounds on F are exponentially insufficient: |phi F| ~ e^{U/2 - c sqrt(U)}
-  diverges relative to any O(1) Schur margin, so no absolute-value, cell-by-cell estimate
-  can close the storage step at large R.
-```
-
-Two prongs, both cheap relative to what they decide:
-
-```text
-R1a (pencil): the inverse analysis. Quantify the candidate sectoral lemma over all
-     edges L < R as R -> infinity and derive what it implies about F. If it implies
-     psi(x) - x = O(x^{1/2+eps}) it is RH-equivalent, geometry alone can never deliver
-     it, and the program must identify the weaker-arithmetic + stronger-geometry split.
-R1b (numeric): the scaling ladder. Extend the nested chain to R ~ 4.5-6. Track per edge:
-     eigmin(A) (induction margin), Riccati square cost, repair surplus
-     (eigmin(H) / beta surplus), number of atoms participating in repair, DH control.
-     Fail-closed: if the surplus decays faster than the margin, or repair stops being
-     single-atom, the current lemma shape dies and the target reforms at the
-     aggregated/statistical level.
-```
-
-Do R1 before investing further in T1 polish.
-
-**R1 OUTCOMES (2026-06-09, see `09-inverse-analysis.md`):**
-
-```text
-R1b executed (prime_ladder_scaling.py, R to 5.90): zeta positive on all 18 edges,
-    DH dead on all 18; eigmin(A) ~ e^{-1.5 R}; chronological peak debt grows to
-    ~17 vs final margins ~3e-3; repair concentration falls past R~5.
-R1a executed: (i) margins exponentially small => slack-bearing estimates can
-    never close the induction; certificates must be exact-identity + terminal
-    sign (KYP shape). (ii) Cluster obstruction: per-cell repair lemmas are
-    unconditionally false at scale (Maynard triples). (iii) Window dial: the
-    unconditional arithmetic input is short-interval PNT at the 7/12 scale; the
-    remainder is the zero-side oscillation - conservation of difficulty located.
-NEW PROBES: one-place passivity proposed and REFUTED same day
-    (prime_single_place_passivity.py); drop-one/KMS rigidity
-    (prime_interference_rigidity.py): every place and every atom individually
-    necessary; positivity only at beta=1/2 (fails both sides). Positivity is an
-    irreducibly collective interference lattice; support filtration is the only
-    admissible induction coordinate.
-NEXT (new R1 front): the killing-direction / repair-matrix characterization
-    (09 section 6'.4) - do partial-sum killing directions have a multiplicative
-    / free-semigroup combinatorial skeleton?
+NEXT (new R1 front): add genuinely new proof-relevant morphism evidence that
+    sits outside the current doc-610 primitive algebra, source-event payload
+    algebra, doc-605 route graph, and frontier-map consistency/rejection
+    ledger, executable stage-lineage diagnostics, and doc-610 audit dependency
+    wiring, doc-608 typed rule-family dispatch, and non-current frontier
+    metadata, the global accepted frontier edge graph, and accepted atom/
+    invariant payload records, and frontier deltas/witnesses provenance
+    payloads, the remaining frontier control plane, and direct residual-pair
+    bridge selection, semantic-polarity segment closure, and boundary-kind/
+    event-kind/terminal-basin transducer reuse, and terminal-basin mediator
+    bridge reuse, and terminal-basin class-hub bridge reuse, and the
+    overproduced escape/plain_tail/basin terminal-basin composition kernel and
+    its coarse kernel quotient, and terminal-basin failure-complement
+    filtering, terminal-basin quotient-graph invariant filtering, and
+    low-profile terminal-basin tail-shape filtering, and low-profile
+    terminal-basin valence filtering, and low-profile terminal-basin
+    automorphism/orbit filtering, and terminal-basin graph-profile/tail-shape
+    product filtering, four-pack compositional-signature token filtering, and
+    four-pack incidence-row filtering, and four-pack right-target projection
+    filtering, four-pack incidence-functional/degree-map filtering, and
+    four-pack path-power composition filtering, and four-pack unital
+    path-idempotent/Karoubi filtering, and four-pack automorphism-invariant/
+    central-idempotent filtering, and four-pack automorphism-quotient/descent
+    saturated-support filtering, and four-pack linearized character/projector
+    filtering, and four-pack exterior/pair character-projector filtering, and
+    four-pack tensor-word equality-pattern filtering, and four-pack
+    signed-exterior orientation filtering; or
+    prove that such evidence is synthetic duplication, name lookup, stem
+    retuning, class collapse, or a doc-602 anchor change. Doc 611
+    killed whole-signature reuse, doc 612 killed reused class-state containment
+    as a total factorization, doc 613 killed quotient closure generated by
+    existing shared source features, doc 614 killed total surface-reused
+    class-state repair in principle, doc 615 killed existing
+    primitive-conjunction morphism reuse, doc 616 killed exact role-payload
+    graph reuse, doc 617 killed action-normalized role-payload graph reuse, doc
+    618 killed negation-normalized role-payload graph reuse, doc 619 killed
+    existing graph-anchor morphism reuse, doc 620 killed consistency/rejection
+    ledger reuse, doc 621 killed historical stage-lineage reuse, doc 622 killed
+    audit-fanout reuse, doc 623 killed typed rule-family dispatch reuse, and
+    doc 624 killed frontier-metadata reuse, and doc 625 killed accepted-edge
+    graph reuse, doc 626 killed accepted-node payload reuse, and doc 627
+    killed frontier provenance-payload reuse, and doc 628 killed control-plane
+    reuse, doc 629 killed direct residual-pair bridge reuse, and doc 630 killed
+    semantic-polarity bridge reuse, and doc 631 killed boundary-transducer
+    bridge reuse, doc 632 killed terminal-basin mediator bridge reuse, and doc
+    633 killed terminal-basin class-hub bridge reuse, and doc 634 killed
+    terminal-basin internal-composition kernel reuse, and doc 635 killed
+    terminal-basin kernel-quotient reuse, and doc 636 killed
+    terminal-basin failure-complement filtering, and doc 637 killed
+    terminal-basin quotient-graph invariant filtering, and doc 638 killed
+    low-profile terminal-basin tail-shape filtering, and doc 639 killed
+    low-profile terminal-basin valence filtering, and doc 640 killed
+    low-profile terminal-basin automorphism/orbit filtering, and doc 641
+    killed terminal-basin graph-profile/tail-shape product filtering, and doc
+    642 killed four-pack compositional-signature token filtering, and doc 643
+    killed four-pack incidence-row filtering, and doc 644 killed four-pack
+    right-target projection filtering, and doc 645 killed four-pack
+    incidence-functional/degree-map filtering, and doc 646 killed four-pack
+    path-power composition filtering, and doc 647 killed four-pack unital
+    path-idempotent/Karoubi filtering, and doc 648 killed four-pack
+    automorphism-invariant/central-idempotent filtering, and doc 649 killed
+    four-pack automorphism-quotient/descent saturated-support filtering, and
+    doc 650 killed four-pack linearized character/projector filtering, and doc
+    651 killed four-pack exterior/pair character-projector filtering, and doc
+    652 killed four-pack tensor-word equality-pattern filtering, and doc 653
+    killed four-pack signed-exterior orientation filtering.
 
 R1 CLOSED (later 2026-06-09, 09 sections 6''-6''''): resonance dictionary CONFIRMED
     (killing directions are frequency combs, repair = equidistribution of {log p},

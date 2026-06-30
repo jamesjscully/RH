@@ -1,0 +1,112 @@
+{
+  "arc": "global-frobenius",
+  "opened": "2026-06-29",
+  "charter": "research/global-frobenius/CHARTER.md",
+  "pivot_charter": "research/global-frobenius/05-dichotomy-pivot-charter.md",
+  "atlas": "research/global-frobenius/ATLAS.md",
+  "discipline": "research/global-frobenius/DISCIPLINE.md",
+  "regime": "dichotomy-pivot (committed 2026-06-29): PRIMARY = prove the integrality-summability dichotomy fundamental (bounded-negative); STANDING DUAL = the far-side ATLAS (5 faces of one missing object = a canonical multiplicative Frobenius at infinity) so a stall stays productive. Dual rule: every cycle ships a THEOREM step OR an ATLAS step. Phase 1: close W1 + pin class C; hard checkpoint (A=continue / B=leak=>swing positive / D=RH-equivalence=>bank wall + full atlas). Anti-trap: theorem step needing an RH-input => reassign to atlas.",
+  "target": "global/archimedean Frobenius F on bar(Spec Z), purity |eig F| = N^(w/2); square End, duality, Rosati positivity (<=> RH) derived",
+  "foundation": "Connes-Consani curve-level integer RR + Pontryagin-Serre duality (arXiv:2205.01391, 2306.00456) + Pic/Jacobian",
+  "primary_wall": "carrier wall: multiplicativity (Euler product) must be structure, not property",
+  "scope": "existence => RH (NOT iff); negative bounds the route not RH; no unknowable branch (RH is Pi_1)",
+  "current_cycle": 6,
+  "deliverables": [
+    {
+      "cycle": "5 (close O1 + shut the door)",
+      "T_step_O1": {
+        "doc": "10-o1-trace-reduction.md",
+        "result": "O1 REDUCED from modeling assumption to a trace theorem + one sharp residual. <Delta,Delta> = tr(id) = Euler characteristic chi (the diagonal's normal bundle is T_X); for a localizing invariant E and a DUALIZABLE object, E(<Delta,Delta>)=chi_E=alternating tower sum [Ponto-Shulman additivity of traces, Theorem]. Over bar(Spec Z) NOT dualizable (non-properness, infinite tower) => no honest trace => <Delta,Delta> only via regularization = the regularized tower sum (what doc04/W1 analyze). The TRUE residual (iv): regularization-uniqueness -- canonicity (S1) forces the zeta-type regularization. RH-clean (chi is structural, no zeros).",
+        "grade": "O1 reduced to a cited trace theorem + the regularization-uniqueness residual; load-bearing identification now a theorem not a guess"
+      },
+      "T_step_door": {
+        "doc": "11-multiplicative-extension-no-canonical-generator.md",
+        "result": "The MULTIPLICATIVE door SHUTS for all known canonical structures. Named mechanism: R+^* has NO canonical generator. A discrete archimedean Frobenius = a canonical generator of the value group = a canonical q at infinity; R+^* ~= (R,+) connected, Aut transitive, no distinguished element => the choice is non-canonical => forbidden by S1. Finite place p^Z~=Z HAS a canonical generator (Frobenius p); infinity does not. R+^* connected => continuous spectrum (Connes) => self-intersection -zeta'(0) transcendental (Lindemann, certified). Norm at infinity = Z/2 conjugation (trivial); delta/Lambda-rings have no psi at infinity. So the dichotomy extends additive->known-multiplicative; the bounded-negative branch is COMPLETE over the known canonical class. SOLE RESIDUAL = an unknown exotic canonical q at infinity = the F_1 problem (the positive escape). RH-clean.",
+        "grade": "structural (named mechanism: no canonical generator) + Certified link continuous->transcendental (Lindemann)"
+      }
+    },
+    {
+      "cycle": "4 (Phase-2: theorem + door)",
+      "T_step": {
+        "doc": "08-fundamentality-theorem.md",
+        "result": "DRAFTED the bounded-negative theorem (additive form): no integer-valued additive/localizing invariant over bar(Spec Z) yields a finite integer self-product intersection form; (A) effective => diverges (W1 + no-leak doc 04), (B) scale-blind => no content (Efimov). Assembled from Certified witnesses + Efimov. Residual obligations named: O1 (MEDIUM, the soft spot) self-intersection=additive tower sum general form (Reading); O2 (LOW) precise Efimov statement (cited); O3 (LOW, routine) general EM write-up of W1.",
+        "grade": "Theorem at program rigor; side A Certified; O1 the gate to full rigor"
+      },
+      "M_step": {
+        "doc": "09-door-archimedean-frobenius.md",
+        "result": "Walked through the F1 door: it is OCCUPIED (the scaling flow R+^* / Deninger Theta = a canonical multiplicative structure at infinity) but does NOT escape -- continuous spectrum => self-intersection -zeta'(0) transcendental. Second dichotomy: discrete (finite place, lattice {q^w/2}, integer-compatible) vs continuous (archimedean flow, transcendental). LINDEMANN ANCHOR: -zeta'(0)=(1/2)log2pi=(1/2)log2+(1/2)logpi; (1/2)logpi NOT in Q-span{log p} (else pi algebraic), so the archimedean value is PROVABLY not finite-place type. F2 hardened to a theorem; F5 unified to one deficit (infinity's Frobenius is not discretized); the program reduces to Q: does a canonical DISCRETE archimedean Frobenius (discretization of Theta) exist? NEW THEOREM TARGET: 'canonical archimedean multiplicative => continuous spectrum' would extend the theorem from additive to the full canonical class.",
+        "witness": "gf_archimedean_no_finite_q (new, exit 0): V=-zeta'(0)=(1/2)log2+(1/2)logpi, archimedean part not finite-place type",
+        "grade": "Reading (map) + Theorem-anchor (Lindemann) + Certified identity"
+      }
+    },
+    {
+      "cycle": "3 (Phase-1 dual)",
+      "T_step": {
+        "doc": "06-w1-sawtooth-lemma.md",
+        "result": "Lemma W1 proved (modulo routine Euler-Maclaurin bookkeeping): the staircase-defect series D_delta(s) has a simple pole at s=0 with residue a fixed nonzero multiple of 1/log b, SHAPE-INDEPENDENT (bounded offsets move only the finite part). Side A of the dichotomy now holds for the WHOLE effective-integer class, not just CC's ceiling. Reduction: D_delta = F + zeta'/log b, F=Sum_j zeta(s,n_j), pole routed via g(w)=Sum_j n_j^{-w}, Res_{w=0} g = 1/log b offset-independent (the new step).",
+        "witness": "gf_w1_residue_offset_independence (new, exit 0): ceiling vs offset residues agree to 3e-5/7e-5; linear-spacing control gives residue 0",
+        "grade": "Theorem modulo routine EM write-up; the one non-routine step (offset-independence) Certified"
+      },
+      "M_step": {
+        "doc": "07-class-boundary-additive-line.md",
+        "result": "Pinned class C = integer-valued additive/localizing invariants (additivity is load-bearing: forces <Delta,Delta> = the divergent additive tower sum). The boundary of C = the additive/MULTIPLICATIVE line = the F1 door. CORRECTED doc 03's squeeze: 'canonical' does NOT force 'additive' -- canonical multiplicative structures (norm/Frobenius/delta) are canonical yet non-additive, so the squeeze does NOT close; it LOCATES the door precisely = a canonical multiplicative structure at the archimedean place = the program's original target. Atlas F4 RESOLVED, F1 SHARPENED.",
+        "grade": "Reading (characterization; honest correction of doc 03)"
+      }
+    },
+    {
+      "cycle": 2,
+      "doc": "04-selfproduct-no-leak-no-go.md",
+      "type": "no-go",
+      "mechanism": "finite <=> alternating <=> transcendental: closing the decisive weak link W2. A finite diagonal self-intersection needs the alternating/Tate (derived) structure, which over Z yields the archimedean transcendental -zeta'(0)/log b; an integer needs the non-alternating ceiling, which diverges. All three natural 2-variable self-product models are polar on the diagonal (M1 product H^1(x)H^1: double pole r^2; M2 additive: simple pole -r; M3 antisymmetric/normal-bundle: double pole -r); the only finite value is the certified non-integer transcendental. The square supplies no properness; it double-diverges the genuine 2-dim content. W2 does NOT leak.",
+      "witness": "gf_selfproduct_pole_escape (new, exit 0): M1/M2/M3 nonzero poles, derived value -zeta'(0)/log b finite + certified non-integer (b=2,3)",
+      "grade": "Certified (natural 2-variable models + additive class) + Reading (no exotic non-additive escape)",
+      "convergence": "fifth venue; finite<=>alternating<=>transcendental = properness wall (18/19) = carrier wall (02) = dichotomy. CLOSES W2 in the non-leak direction => fork resolves toward bounded-negative.",
+      "scope": "bounds the route (no additive 2-var self-product gives a finite integer intersection form), NOT RH; existence => RH not iff"
+    },
+    {
+      "cycle": 1,
+      "doc": "02-cc-dim-kunneth-no-go.md",
+      "type": "no-go",
+      "mechanism": "integrality-summability dichotomy: CC's integer dimension is a ceiling (Prop 3.3: dim = ceil(log_3(2n+1)); RR: chi = ceil(deg'+log'2) - 1_L). The ceiling buys level-wise integrality but the regularized tower diverges (simple pole at s=0, residue -1/(2 log 3), on ramification set {3^j}; finite part rational b/(b-1)-5/4 = scheme-laden). An integer intersection form on a self-product needs BOTH integral level dims AND a finite regularizable pairing; the dichotomy forbids both. No Kunneth/self-product extension of CC's integer dimension.",
+      "ground": "arXiv:2205.01391 body (ar5iv): Prop 3.3 integer dim = ceil(log_3(2n+1)); Thm 1.1 RR; Thm 1.2 Serre duality (K=-2{2}, U(1)_{1/4}); NO product/Kunneth/intersection theory in the paper",
+      "witness": "prime_cc_quantization_defect (reused, lead-reran base-3 branch, exit 0): pole residue -1/(2 log 3), FP = b/(b-1)-5/4",
+      "grade": "Certified (dichotomy for ceiling-of-log_3 = CC's dim) + Reading (fundamentality open)",
+      "carrier_guard": "PASS (Epstein dies at integer-dimension step: no finite generating set for a continuum lattice)",
+      "dof": "PASS/kill: pole residue and FP are base/scheme-dependent => a would-be intersection number is calibration not structure",
+      "scope": "bounds the route (extend CC integer-dim), not RH; fundamentality of the dichotomy is open",
+      "deep_reading": "the dichotomy may be the FINAL form of the carrier wall: over Z the archimedean place forces a regularization (zeta'(0)) irreconcilable with the integral/counting structure a Frobenius needs; over F_q no archimedean place => no tension => the form exists. If fundamental => the bounded-negative terminus (route-dead, RH-neutral, does NOT disprove RH). Hypothesis, not result."
+    },
+    {
+      "cycle": 0,
+      "doc": "01-cc-frobenius-free-no-go.md",
+      "type": "no-go",
+      "mechanism": "Frobenius-free Riemann-Roch: CC reproduce the RR/Serre-duality FE-layer via Pontryagin duality as a Frobenius surrogate and route the Jacobian to the rank-1 adele class space, not a self-product; the RH-grade primitive (integer intersection form on a self-product = Frobenius graph with purity = positive Rosati) is the residue this design omits and is RH-equivalent",
+      "ground": "arXiv:2205.01391 (RR, integer dim, Serre duality), arXiv:2602.15941 (Jacobian = adele class space, rank-1 generalized Pic)",
+      "witness": "prime_int_genus_audit (reused, lead-reran, exit 0)",
+      "grade": "Reading (structural) + Certified (foundation reproduces)",
+      "carrier_guard": "PASS (FE-layer shared with controls by design; primitive must die on DH by non-existence; Epstein dies at unique factorization)",
+      "scope": "Layer I / FE-layer, RH-neutral; bounds the route not RH"
+    }
+  ],
+  "convergence_checks": [
+    {
+      "cycle": 0,
+      "result": "FIRES: product-joint break in CC venue = missing integer intersection form / Frobenius purity = the carrier wall = same wall found analytically (132-136) and homotopically (138-340). Three venues, one wall. Venue change shed the p-local Z/2 Weyl-shear artifact (confirms it was an artifact). Wall is venue-independent."
+    },
+    {
+      "cycle": 1,
+      "result": "FIRES, now quantitative+certified: the integrality-summability dichotomy = the carrier wall = 'discreteness is the entire cost' (16-17) made a simple pole, residue -1/(2 log 3), CC's exact base. FOUR venues, one wall, same shape each time (integral structure vs archimedean regularization cannot coexist). First candidate STRUCTURAL CAUSE for the wall rather than a list of failed machines."
+    }
+  ],
+  "investigations": [
+    {
+      "doc": "03-dichotomy-fundamentality-investigation.md",
+      "question": "is the integrality-summability dichotomy fundamental (a provable theorem)?",
+      "finding": "PLAUSIBLE as a BOUNDED fundamentality theorem over the class C = additive/localizing integer-valued invariants (contains every tested construction: CC dim, dim_S, THH, K-theory ranks, Euler char, Bost-Connes, Borisov, Efimov). Two-sided: (A) scale-aware => geometric jumps (density 1/log b, Census-certified universal across ceil/floor/round/offst, both bases) => simple pole at s=0 => divergent regularized total => no finite integer intersection number; (B) scale-blind => no intersection content (Efimov arXiv:2405.12169, already a theorem). Side A reduces to ONE elementary Dirichlet lemma (sawtooth regular at s=0). The SQUEEZE: fundamentality (no additive route) meets rigidity spec S1 (object must be canonical=additive) => impossible within the canonical class = bounded-negative terminus.",
+      "witness": "gf_dichotomy_jump_density (new, exit 0): universal geometric jump density 1/log b",
+      "weak_links": "W1 (low): general-staircase sawtooth lemma unproven. W2 (MEDIUM, decisive): is <Delta,Delta> = regularized dimension tower, or does a 2-VARIABLE self-product zeta escape the s=0 pole (finite where 1-variable poles)? If W2 leaks, the leak IS the construction handle (swing positive).",
+      "recommendation": "PURSUE, no full pivot yet. Gate the pivot on one focused cycle closing W1 + W2. W2 is decisive: fundamental => bounded-negative pivot; leaks => the 2-variable regularization is the missing self-product structure."
+    }
+  ],
+  "current_target": "TERMINUS REACHED (docs 10+11). O1 reduced to a trace theorem (residual: regularization-uniqueness via S1); the multiplicative door SHUT for all known canonical structures (R+^* has no canonical generator). The bounded-negative branch is COMPLETE over the known canonical class -- additive (08+10) and multiplicative (11). The wall is fully drawn; there is exactly ONE door = a canonical q at the archimedean place = the F_1 problem, which the program cannot adjudicate from inside. TWO NAMED RESIDUALS: (O1-iv) regularization-uniqueness; (F_1) an unknown canonical archimedean discretization (= the positive escape). TWO END-STATES for review: (a) BANK -- write the combined theorem (08+10+11) with both residuals named (RECOMMENDED, the durable mapped wall); (b) ATTACK F_1 directly (the open frontier, unbounded). Witnesses all exit 0: prime_cc_quantization_defect, gf_dichotomy_jump_density, gf_selfproduct_pole_escape, gf_w1_residue_offset_independence, gf_archimedean_no_finite_q."
+}

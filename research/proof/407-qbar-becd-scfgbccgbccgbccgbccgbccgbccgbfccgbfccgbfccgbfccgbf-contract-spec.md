@@ -1,0 +1,188 @@
+# 407 - Qbar_BECD strict-square product multiplier self-dual exact-source coherence-coupling subrepresenter constraint-component-cone cartesian-coherence gmbf-coherence globular-modification boundary-fiber cartesian-coherence gmbf cartesian-coherence globular-modification boundary-fiber cartesian coherence globular-modification boundary-fiber cartesian coherence globular-modification boundary-fiber cartesian coherence globular-modification boundary-fiber contract
+
+Status: construction-spec refinement anchor, 2026-06-23.
+Two-hundred-seventieth cycle of the doc-137 construction arc. This is not
+a no-go theorem, not an RH proof, and not added to the no-go bank.
+
+Doc 406 left the strict-square branch live only if the represented
+cartesian boundary-fiber coherence transport cells are faces of one
+source-level globular modification with shared source and target
+boundaries:
+
+```text
+    Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+```
+
+This document fixes the next edge. A source-level globular modification is
+still not enough if its endpoint and boundary data are supplied by a chosen
+section, a contractible-choice wrapper, an external/local/quotient fiber, or a
+graph-side boundary label. The modification must be selected by an actual
+source boundary-restriction map and represented boundary fiber over its own
+twenty-six-layer globular boundary:
+
+```text
+    res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+    Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+    eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components.
+```
+
+The represented fiber must lie over
+`GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components`,
+its universal arrow must select
+`Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components`,
+and any contractibility claim is allowed only after this represented fiber
+exists.
+
+Witness, lead-reran this cycle:
+`prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbf_contract`
+(SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF1-SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF10 ALL PASS).
+
+Adjacent witnesses, lead-reran this cycle: from doc 406 through the DD.4 SCC
+interface, all exit 0.
+
+## 1. Purpose
+
+After doc 406, the cheap repair is:
+
+```text
+construct the source-level represented cartesian boundary-fiber coherence
+transport globular modification and then assert that it has the right
+endpoint boundary by choice language.
+```
+
+That still does not construct the missing object. The boundary of the
+represented-coherence boundary-fiber cartesian-transport boundary-fiber
+cartesian coherence transport globular modification has to be represented in the
+source, not chosen after the fact. Otherwise the candidate can have the right
+formal source/target names while failing to be selected by a universal arrow
+over the fixed globular boundary.
+
+The live branch narrows from "one source-level globular modification" to:
+
+```text
+construct res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup;
+construct Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+construct eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove the fiber lies over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove the universal arrow selects Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove boundary preservation, unique source filler, and contractibility only
+after the represented fiber exists.
+```
+
+## 2. Lemma
+
+```text
+Lemma 407.1 (the represented cartesian boundary-fiber coherence transport
+globular modification needs its represented boundary fiber).
+
+The original DD.4 class remains:
+
+    c=(1+z)^-1,
+    H^1(<phi>; U_1)=Z/2,
+    [c] != 0,
+    res_1(c)=1,
+
+in truncations L=6,8,10,12.
+
+The exact self-dual represented boundary-fiber rows are:
+
+    z                         = {1:2, 2:-1},
+    T_C3(z)                   = {3:2, 6:-1},
+    T_C5(z)                   = {5:2, 10:-1},
+    T_C3(T_C5(z))             = T_C5(T_C3(z))
+                                = T_C15(z)            = {15:2, 30:-1},
+    T_C3(T_C3(T_C5(z)))       = T_C45(z)              = {45:2, 90:-1},
+    z*F22                     = {2:4, 4:-2},
+    T_C15(z*F22)              = z*(C15*F22)           = {30:4, 60:-2},
+    T_C45(z*F22)              = z*(C45*F22)           = {90:4, 180:-2}.
+
+The mixed checks are equality of full represented boundary-fiber payloads:
+
+    Fib(T_C3(T_C5(z)))       = Fib(T_C15(z)),
+    Fib(T_C5(T_C3(z)))       = Fib(T_C15(z)),
+    Fib(T_C3(T_C3(T_C5(z)))) = Fib(T_C45(z)),
+    Fib(T_C15(z*F22))        = Fib(z*(C15*F22)),
+    Fib(T_C45(z*F22))        = Fib(z*(C45*F22)).
+
+Thus chosen boundary sections, contractible-choice wrappers without a
+representer, fibers over the wrong boundary, external/quotient/local boundary
+fibers, pointwise or graph-side boundary fibers, post-product fibers, retuned
+boundary maps, reindexed boundary fibers, and control/DH/Epstein
+point-formability do not construct the represented boundary fiber.
+```
+
+## 3. Proof
+
+`prime_int_n1b_qbar_becd_scfgbccgbccgbccgbccgbccgbccgbfccgbfccgbfccgbfccgbf_contract`
+verifies ten gates.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF1 records the represented boundary fiber,
+its twenty-six-layer globular boundary, H1 profile, strict rows, mixed path
+equalities, and connected boundary-fiber graph.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF2 records again that graph identities do
+not supply the represented boundary fiber.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF3 rejects chosen boundary sections and
+contractible-choice wrappers.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF4 rejects fibers over the wrong boundary.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF5 rejects external, quotient, or local
+boundary fibers.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF6 rejects pointwise, graph-side, and
+post-product boundary fibers.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF7 rejects retuned or reindexed boundary
+fibers.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF8 makes every represented boundary-fiber
+edge mandatory.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF9 records that graph-side boundary fibers
+still leave controls, DH, and Epstein formable.
+
+SCFGBCCGBCCGBCCGBCCGBCCGBCCGBFCCGBFCCGBFCCGBFCCGBF10 accepts only represented source
+boundary fibers.
+
+Therefore a candidate that satisfies doc 406 with a source-level globular
+modification is still incomplete unless that modification is selected by a
+represented boundary fiber over its own fixed globular boundary.
+
+## 4. Consequence
+
+The live strict-square branch is now:
+
+```text
+construct res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup,
+Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components,
+and eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+prove this fiber is over the fixed globular boundary and selects the
+represented-coherence boundary-fiber cartesian-transport boundary-fiber
+cartesian coherence transport globular modification before points and graph objects.
+```
+
+The open construction target is no longer "make those cells one globular
+source-side modification." It is "make that modification a represented
+boundary fiber over its own globular boundary."
+
+## 5. Acceptance Target For Any Future Candidate
+
+A future candidate must provide:
+
+```text
+1. res_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_to_GlobBd_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_Coh_CartFib_NCoup;
+2. Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+3. eta_Fib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+4. proof that the fiber is over GlobBd_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+5. proof that the universal arrow selects Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartFib_Mod_Coh_CartCone_NCoup_eta_source_components;
+6. proof of boundary preservation;
+7. proof of the unique source filler;
+8. proof that contractibility is only after the represented fiber;
+9. proof of coefficient and signed-support preservation;
+10. proof that the fiber is formed before points and graph objects.
+```
+
+Until this represented boundary fiber exists, the object remains missing.

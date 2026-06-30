@@ -32,6 +32,9 @@ if [ "$fail" -eq 0 ]; then
   python3 scripts/automation/check_proof_targets.py || fail=1
 fi
 if [ "$fail" -eq 0 ]; then
+  python3 scripts/automation/check_frontier_map.py || fail=1
+fi
+if [ "$fail" -eq 0 ]; then
   python3 scripts/automation/test_check_proof_targets.py || fail=1
 fi
 

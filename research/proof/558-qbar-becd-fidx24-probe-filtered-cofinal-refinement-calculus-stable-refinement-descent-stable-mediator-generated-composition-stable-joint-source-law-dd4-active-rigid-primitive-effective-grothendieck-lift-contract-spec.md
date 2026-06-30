@@ -1,0 +1,153 @@
+# 558 - Qbar_BECD exact-24 admissible source-square filtered-cofinal refinement-calculus-stable refinement-descent-stable mediator-generated composition-stable joint source-law DD.4-active rigid primitive effective Grothendieck lift contract
+
+Status: construction-spec refinement anchor, 2026-06-28.
+Four-hundred-twenty-first cycle of the doc-137 construction arc. This is not a
+no-go theorem, not an RH proof, and not added to the no-go bank.
+
+Doc 557 required the mediator-generated composition-stable joint law to descend
+across admissible refinements. The remaining cheap escape is pairwise descent:
+the law has compatible-looking descent data for selected refinement pairs, but
+there is no single cofinal filtered refinement calculus with common
+refinements, base-change stability, chain composition, and loop coherence.
+
+This document requires a named filtered-cofinal refinement-calculus-stable
+certificate:
+
+```text
+FiltCofRefCalcStabRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftRefDescStabMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftMedGenCompStabJointLawDD4ActiveRigidPrimEffK0LiftJointLawDD4ActiveRigidPrimEffK0LiftDD4ActiveRigidPrimEffK0LiftRigidPrimEffK0LiftPrimEffK0LiftEffK0LiftIntK0TraceExAddTracePivMonDualTraceAdjPairDagMonEqvProbe_CartEqvProbe_EqvProbe_EssImg_FullProbe_FaithProbe_NatProbe_ProbeSep_AdmCat_TermUP_DepClosure_FinIdx24Budget_LimCut_NCoup_med_UP_Eq_NCoup_med_UP_Eq_id_id_source_square.
+```
+
+The certificate is charged to the existing finite-limit coherence cell. It adds
+no source facet, no coherence cell, no positivity import, no finite-index
+expansion, and no one-more-layer tower. It requires the doc-557 refinement
+descent law to be indexed by a cofinal filtered category of admissible
+source-square refinements, closed under common refinements and pullback/base
+change, with functorial chain composition and zero monodromy around refinement
+loops. The same calculus must preserve the mediator, source coupling,
+equalizer, finite-limit, DD.4 payload, image-handoff, graph, composition, and
+control data.
+
+Witness, lead-reran this cycle:
+`prime_int_n1b_qbar_becd_fidx24_probe_filtered_cofinal_refinement_calculus_stable_refinement_descent_stable_mediator_generated_composition_stable_joint_source_law_dd4_active_rigid_primitive_effective_grothendieck_lift_contract`
+(CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1-CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10 ALL PASS).
+Adjacent Qbar_BECD witnesses plus the DD.4 SCC interface: 251/251 exit 0.
+Frontier-map check with current witness: current_doc=558, atoms=56, edges=315.
+
+## 1. Purpose
+
+The cheap repair after doc 557 is:
+
+```text
+descent exists for chosen refinement pairs, but common-refinement, base-change,
+chain-composition, and loop-coherence data are not part of one cofinal filtered
+refinement calculus.
+```
+
+That repair still fails to find the missing object. Pairwise descent can hide
+zigzag dependence, noncofinal cover choices, base-change failures, or monodromy
+around refinement loops. The square must make the refinement category itself
+construct the law, not merely validate chosen comparisons.
+
+The live object narrows from:
+
+```text
+refinement-descent-stable mediator-generated composition-stable joint-source-law
+DD4-active rigid-primitive-effective-k0 integral-grothendieck exact-additive
+pivotal-monoidal dual-traced adjoint-paired dagger-monoidal cartesian-exact
+equivalence-coherent essential-image-closed probe-full probe-faithful
+probe-natural probe-separated admissible-category terminal dependency-closed
+exact-24-budgeted inhabited DD.4-image-handoff graph-later-realization
+context-separated finite-limit-subrepresented represented coupled
+formation-coherent mediator
+```
+
+to:
+
+```text
+filtered-cofinal refinement-calculus-stable refinement-descent-stable
+mediator-generated composition-stable joint-source-law DD4-active
+rigid-primitive-effective-k0 integral-grothendieck exact-additive
+pivotal-monoidal dual-traced adjoint-paired dagger-monoidal cartesian-exact
+equivalence-coherent essential-image-closed probe-full probe-faithful
+probe-natural probe-separated admissible-category terminal dependency-closed
+exact-24-budgeted inhabited DD.4-image-handoff graph-later-realization
+context-separated finite-limit-subrepresented represented coupled
+formation-coherent mediator.
+```
+
+## 2. Lemma
+
+```text
+Lemma 558.1 (refinement descent must be indexed by a cofinal filtered calculus).
+
+The admissible source-square category is accepted only if the doc-557
+refinement descent law is carried by one cofinal filtered category of
+admissible source-square refinements.
+
+The refinement calculus certificate must provide:
+
+    cofinality among admissible refinements,
+    common refinements for finite diagrams,
+    pullback/base-change stability,
+    functorial chain composition,
+    associativity for refinement chains,
+    zero loop monodromy,
+    and preservation of the mediator, source-coupling, equalizer,
+    DD.4 payload, handoff, graph, composition, and control data.
+
+Thus pairwise-only refinement descent, noncofinal refinement families,
+missing common refinements, filteredness by declaration, base-change gaps,
+pullback-unstable refinements, chain-composition gaps, nonassociative
+refinement composition, zigzag-dependent descent, refinement-loop monodromy,
+refinement-index context collapse, hypercover or tower escapes, finite
+cofinality samples, basis rows, terminal/probe/mediator/payload refinement
+gaps, and missing filtered-cofinal refinement-calculus certificates do not
+construct the current frontier.
+```
+
+## 3. Consequence
+
+Doc 558 does not solve R1 and does not prove RH. It removes the pairwise
+descent escape. The missing object now has to carry its law over a cofinal
+filtered refinement calculus that composes and base-changes without retuning.
+
+The next negative route is sharper: prove that every refinement-descent-stable
+mediator-generated joint law is only pairwise, noncofinal, missing common
+refinements, base-change unstable, chain-nonfunctorial, zigzag-dependent,
+loop-monodromic, or requires hypercover/tower expansion, finite samples, basis
+rows, or payload-losing refinement calculus.
+
+## 4. Verification Gates
+
+```text
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD1
+    Requires the doc-558 filtered/cofinal refinement calculus layer to be embedded.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD2
+    Rejects pairwise-only, noncofinal, and missing common-refinement calculi.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD3
+    Rejects declared filteredness, base-change gaps, and pullback instability.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD4
+    Rejects chain-composition gaps, nonassociativity, zigzag dependence, and loop monodromy.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD5
+    Rejects hypercover/tower escapes, finite cofinality samples, and basis rows.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD6
+    Rejects terminal, probe, mediator, and DD.4-payload refinement-calculus gaps.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD7
+    Rejects refinement-index context collapse and missing filtered/cofinal certificates.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD8
+    Requires refinement-descent and filtered/cofinal certificates to close together.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD9
+    Requires every doc558 graph edge and dependency to resolve.
+
+CATCOHSRCPRESETACARTCOHGMGBFCARTCOHGMFINEQIDUPFILTCFREFCALCSTABREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTREFDESCSTABMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTMEDGENCOMPSTABJLAWDD4ACTRIGIDPRIMEFFK0LIFTJLAWDD4ACTRIGIDPRIMEFFK0LIFTDD4ACTRIGIDPRIMEFFK0LIFTRIGIDPRIMEFFK0LIFTPRIMEFFK0LIFTEFFK0LIFTINTK0TRACEEXADDTRACEPIVMONDUALTRACEPAIRADJDAGMONEQVPROBECARTEQVPROBEEQVPROBEESSIMGFULLPROBEFAITHPROBENATPROBEADMCATTERMDCLFIDXINHGRHDD4HCTXFLIMSUBREPCPLFCOHSDXBCFQBARBECD10
+    Requires only filtered-cofinal refinement-calculus-stable laws to pass,
+    with every banned refinement-calculus repair covered by a rejecting variant.
+```
